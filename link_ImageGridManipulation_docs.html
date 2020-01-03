@@ -1,0 +1,428 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Image Grid Manipulation &mdash; SimpleITK 1.2.0.dev documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script type="text/javascript" src="_static/jquery.js"></script>
+        <script type="text/javascript" src="_static/underscore.js"></script>
+        <script type="text/javascript" src="_static/doctools.js"></script>
+        <script type="text/javascript" src="_static/language_data.js"></script>
+        <script type="text/javascript" src="_static/sphinx_tabs/semantic-ui-2.4.1/tab.min.js"></script>
+        <script type="text/javascript" src="_static/sphinx_tabs/tabs.js"></script>
+        <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="_static/sphinx_tabs/semantic-ui-2.4.1/segment.min.css" type="text/css" />
+  <link rel="stylesheet" href="_static/sphinx_tabs/semantic-ui-2.4.1/menu.min.css" type="text/css" />
+  <link rel="stylesheet" href="_static/sphinx_tabs/semantic-ui-2.4.1/tab.min.css" type="text/css" />
+  <link rel="stylesheet" href="_static/sphinx_tabs/tabs.css" type="text/css" />
+  <link rel="stylesheet" href="_static/style.css" type="text/css" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Image Registration Method 1" href="link_ImageRegistrationMethod1_docs.html" />
+    <link rel="prev" title="Filter Progress Reporting" href="link_FilterProgressReporting_docs.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html" class="icon icon-home"> SimpleITK
+          
+
+          
+            
+            <img src="_static/simpleitk_logo.png" class="logo" alt="Logo"/>
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                1.2
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Table of Contents</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="installation.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="fundamentalConcepts.html">Fundamental Concepts</a></li>
+<li class="toctree-l1"><a class="reference internal" href="registrationOverview.html">Registration Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="conventions.html">Common Conventions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="IO.html">Reading and Writing for Images and Transforms</a></li>
+<li class="toctree-l1"><a class="reference internal" href="filters.html">SimpleITK Filters</a></li>
+<li class="toctree-l1"><a class="reference internal" href="building.html">Building SimpleITK</a></li>
+<li class="toctree-l1"><a class="reference internal" href="setUp.html">Setting Up Eclipse and Visual Studio</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tutorialsAndCourses.html">Tutorials and Courses</a></li>
+<li class="toctree-l1"><a class="reference internal" href="faq.html">Frequently Asked Questions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="FilterTemplates.html">Developer</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="link_examples.html">Examples</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="link_HelloWorld_docs.html">Hello World</a></li>
+<li class="toctree-l2"><a class="reference internal" href="link_CSharp_docs.html">CSharp Integration</a></li>
+<li class="toctree-l2"><a class="reference internal" href="link_DemonsRegistration1_docs.html">DemonsRegistration1</a></li>
+<li class="toctree-l2"><a class="reference internal" href="link_DemonsRegistration2_docs.html">DemonsRegistration2</a></li>
+<li class="toctree-l2"><a class="reference internal" href="link_DicomImagePrintTags_docs.html">Read Image Meta-Data Dictionary and Print</a></li>
+<li class="toctree-l2"><a class="reference internal" href="link_DicomSeriesReader_docs.html">Dicom Series Reader</a></li>
+<li class="toctree-l2"><a class="reference internal" href="link_DicomSeriesReadModifyWrite_docs.html">Dicom Series Read Modify Write</a></li>
+<li class="toctree-l2"><a class="reference internal" href="link_DicomSeriesFromArray_docs.html">Dicom Series From Array</a></li>
+<li class="toctree-l2"><a class="reference internal" href="link_FastMarchingSegmentation_docs.html">Fast Marching Segmentation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="link_FilterProgressReporting_docs.html">Filter Progress Reporting</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Image Grid Manipulation</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#overview">Overview</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#comparisons">Comparisons</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#composition-filters">Composition Filters</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#extraction-filters">Extraction Filters</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#code">Code</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="link_ImageRegistrationMethod1_docs.html">Image Registration Method 1</a></li>
+<li class="toctree-l2"><a class="reference internal" href="link_ImageRegistrationMethod2_docs.html">Image Registration Method 2</a></li>
+<li class="toctree-l2"><a class="reference internal" href="link_ImageRegistrationMethod3_docs.html">Image Registration Method 3</a></li>
+<li class="toctree-l2"><a class="reference internal" href="link_ImageRegistrationMethod4_docs.html">Image Registration Method 4</a></li>
+<li class="toctree-l2"><a class="reference internal" href="link_ImageRegistrationMethodBSpline1_docs.html">Image Registration Method BSpline 1</a></li>
+<li class="toctree-l2"><a class="reference internal" href="link_ImageRegistrationMethodBSpline2_docs.html">Image Registration Method BSpline 2</a></li>
+<li class="toctree-l2"><a class="reference internal" href="link_ImageRegistrationMethodBSpline3_docs.html">Image Registration Method BSpline 3</a></li>
+<li class="toctree-l2"><a class="reference internal" href="link_ImageRegistrationMethodDisplacement1_docs.html">Image Registration Method Displacement 1</a></li>
+<li class="toctree-l2"><a class="reference internal" href="link_ImageRegistrationMethodExhaustive_docs.html">Image Registration Method Exhaustive</a></li>
+<li class="toctree-l2"><a class="reference internal" href="link_ITKIntegration_docs.html">Integration with ITK</a></li>
+<li class="toctree-l2"><a class="reference internal" href="link_N4BiasFieldCorrection_docs.html">N4 Bias Field Correction</a></li>
+<li class="toctree-l2"><a class="reference internal" href="link_SimpleGaussian_docs.html">Reading-Gaussian Blurring-Writing</a></li>
+<li class="toctree-l2"><a class="reference internal" href="link_ImageViewing_docs.html">Image Viewing</a></li>
+<li class="toctree-l2"><a class="reference internal" href="link_AdvancedImageReading_docs.html">Advanced Image Reading</a></li>
+<li class="toctree-l2"><a class="reference internal" href="link_ImageIOSelection_docs.html">IO Selection for Image Reading</a></li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">SimpleITK</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="link_examples.html">Examples</a> &raquo;</li>
+        
+      <li>Image Grid Manipulation</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/link_ImageGridManipulation_docs.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="image-grid-manipulation">
+<h1>Image Grid Manipulation<a class="headerlink" href="#image-grid-manipulation" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="overview">
+<h2>Overview<a class="headerlink" href="#overview" title="Permalink to this headline">¶</a></h2>
+<p>There are numerous SimpleITK filters that have similar functions, but very
+important differences. The filters that will be compared are:</p>
+<blockquote>
+<div><ul class="simple">
+<li><code class="docutils literal notranslate"><span class="pre">JoinSeriesImageFilter()</span></code> - Joins multiple N-D images into an (N+1)-D image</li>
+<li><code class="docutils literal notranslate"><span class="pre">ComposeImageFilter()</span></code> - Combines several scalar images into a multicomponent vector image</li>
+<li><code class="docutils literal notranslate"><span class="pre">VectorIndexSelectionCastImageFilter()</span></code> - Extracts the selected index of the input pixel
+type vector (the input image pixel type must be a vector and the output a scalar). Additionally,
+this filter can cast the output pixel type (SetOutputPixelType method).</li>
+<li><code class="docutils literal notranslate"><span class="pre">ExtractImageFilter()</span></code> - Crops an image to the selected region bounds using vectors;
+Collapses dimensions unless dimension is two</li>
+<li><code class="docutils literal notranslate"><span class="pre">CropImageFilter()</span></code> - Similar to <code class="docutils literal notranslate"><span class="pre">ExtractImageFilter()</span></code>, but crops an image by an
+<code class="docutils literal notranslate"><span class="pre">itk::Size</span></code> at upper and lower bounds</li>
+<li>Image Slicing Operator - Uses slicing (<code class="docutils literal notranslate"><span class="pre">img[i:j,</span> <span class="pre">k:l]</span></code>) to extract a subregion of an image</li>
+</ul>
+</div></blockquote>
+<p>All of these operations will maintain the physical location of the pixels,
+instead modifying the image’s metadata.</p>
+</div>
+<div class="section" id="comparisons">
+<h2>Comparisons<a class="headerlink" href="#comparisons" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="composition-filters">
+<h3>Composition Filters<a class="headerlink" href="#composition-filters" title="Permalink to this headline">¶</a></h3>
+<p>While <code class="docutils literal notranslate"><span class="pre">JoinSeriesImageFilter()</span></code> merges multiple images of the same pixel
+type in N dimensions into an image in N+1 dimensions, <code class="docutils literal notranslate"><span class="pre">ComposeImageFilter()</span></code>
+will combine scalar images into a vector image of the same dimension. The
+former is useful for connecting a series of contiguous images while the latter
+is more useful for merging multiple channels of the same object into one image
+(such as RGB).</p>
+</div>
+<div class="section" id="extraction-filters">
+<h3>Extraction Filters<a class="headerlink" href="#extraction-filters" title="Permalink to this headline">¶</a></h3>
+<p><code class="docutils literal notranslate"><span class="pre">VectorIndexSelectionCastImageFilter()</span></code> will isolate a single channel in a
+vector image and return a scalar image. On the other hand,
+<code class="docutils literal notranslate"><span class="pre">ExtractImageFilter()</span></code> and <code class="docutils literal notranslate"><span class="pre">CropImageFilter()</span></code> will extract and return a
+subregion of an image, using an ExtractionRegion size and index and
+<code class="docutils literal notranslate"><span class="pre">itk::Size</span></code>’s respectively. However, note that only the
+<code class="docutils literal notranslate"><span class="pre">ExtractImageFilter()</span></code> collapses dimensions. The image slicing operator
+can also serve the same purpose.</p>
+</div>
+</div>
+<div class="section" id="code">
+<h2>Code<a class="headerlink" href="#code" title="Permalink to this headline">¶</a></h2>
+<div class="sphinx-tabs docutils container">
+<div class="ui top attached tabular menu sphinx-menu docutils container">
+<div class="active item sphinx-data-tab-0-0 docutils container">
+<div class="docutils container">
+Python</div>
+</div>
+<div class="item sphinx-data-tab-0-1 docutils container">
+<div class="docutils container">
+R</div>
+</div>
+</div>
+<div class="ui bottom attached sphinx-tab tab segment sphinx-data-tab-0-0 active docutils container">
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="ch">#!/usr/bin/env python</span>
+
+<span class="kn">from</span> <span class="nn">__future__</span> <span class="kn">import</span> <span class="n">print_function</span>
+
+<span class="kn">import</span> <span class="nn">SimpleITK</span> <span class="kn">as</span> <span class="nn">sitk</span>
+<span class="kn">import</span> <span class="nn">sys</span>
+
+<span class="k">if</span> <span class="nb">len</span> <span class="p">(</span> <span class="n">sys</span><span class="o">.</span><span class="n">argv</span> <span class="p">)</span> <span class="o">&lt;</span> <span class="mi">3</span><span class="p">:</span>
+    <span class="k">print</span><span class="p">(</span> <span class="s2">&quot;Usage: &quot;</span> <span class="o">+</span><span class="n">sys</span><span class="o">.</span><span class="n">argv</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">+</span> <span class="s2">&quot; &lt;input-1&gt; &lt;input-2&gt;&quot;</span> <span class="p">)</span>
+    <span class="n">sys</span><span class="o">.</span><span class="n">exit</span> <span class="p">(</span> <span class="mi">1</span> <span class="p">)</span>
+
+<span class="c1"># Two vector images of same pixel type and dimension expected</span>
+<span class="n">image_1</span> <span class="o">=</span> <span class="n">sitk</span><span class="o">.</span><span class="n">ReadImage</span><span class="p">(</span><span class="n">sys</span><span class="o">.</span><span class="n">argv</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span>
+<span class="n">image_2</span> <span class="o">=</span> <span class="n">sitk</span><span class="o">.</span><span class="n">ReadImage</span><span class="p">(</span><span class="n">sys</span><span class="o">.</span><span class="n">argv</span><span class="p">[</span><span class="mi">2</span><span class="p">])</span>
+
+<span class="c1"># Join two N-D Vector images to form an (N+1)-D image</span>
+<span class="n">join</span> <span class="o">=</span> <span class="n">sitk</span><span class="o">.</span><span class="n">JoinSeriesImageFilter</span><span class="p">()</span>
+<span class="n">joined_image</span> <span class="o">=</span> <span class="n">join</span><span class="o">.</span><span class="n">Execute</span><span class="p">(</span><span class="n">image_1</span><span class="p">,</span> <span class="n">image_2</span><span class="p">)</span>
+
+<span class="c1"># Extract first three channels of joined image (assuming RGB)</span>
+<span class="n">select</span> <span class="o">=</span> <span class="n">sitk</span><span class="o">.</span><span class="n">VectorIndexSelectionCastImageFilter</span><span class="p">()</span>
+<span class="n">channel1_image</span> <span class="o">=</span> <span class="n">select</span><span class="o">.</span><span class="n">Execute</span><span class="p">(</span><span class="n">joined_image</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="n">sitk</span><span class="o">.</span><span class="n">sitkUInt8</span><span class="p">)</span>
+<span class="n">channel2_image</span> <span class="o">=</span> <span class="n">select</span><span class="o">.</span><span class="n">Execute</span><span class="p">(</span><span class="n">joined_image</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="n">sitk</span><span class="o">.</span><span class="n">sitkUInt8</span><span class="p">)</span>
+<span class="n">channel3_image</span> <span class="o">=</span> <span class="n">select</span><span class="o">.</span><span class="n">Execute</span><span class="p">(</span><span class="n">joined_image</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="n">sitk</span><span class="o">.</span><span class="n">sitkUInt8</span><span class="p">)</span>
+
+<span class="c1"># Recompose image (should be same as joined_image)</span>
+<span class="n">compose</span> <span class="o">=</span> <span class="n">sitk</span><span class="o">.</span><span class="n">ComposeImageFilter</span><span class="p">()</span>
+<span class="n">composed_image</span> <span class="o">=</span> <span class="n">compose</span><span class="o">.</span><span class="n">Execute</span><span class="p">(</span><span class="n">channel1_image</span><span class="p">,</span> <span class="n">channel2_image</span><span class="p">,</span> <span class="n">channel3_image</span><span class="p">)</span>
+
+<span class="c1"># Select same subregion using image slicing operator</span>
+<span class="n">sliced_image</span> <span class="o">=</span> <span class="n">composed_image</span><span class="p">[</span><span class="mi">100</span><span class="p">:</span><span class="mi">400</span><span class="p">,</span> <span class="mi">100</span><span class="p">:</span><span class="mi">400</span><span class="p">,</span> <span class="mi">0</span><span class="p">]</span>
+
+<span class="c1"># Select same subregion using ExtractImageFilter</span>
+<span class="n">extract</span> <span class="o">=</span> <span class="n">sitk</span><span class="o">.</span><span class="n">ExtractImageFilter</span><span class="p">()</span>
+<span class="n">extract</span><span class="o">.</span><span class="n">SetSize</span><span class="p">([</span><span class="mi">300</span><span class="p">,</span> <span class="mi">300</span><span class="p">,</span> <span class="mi">0</span><span class="p">])</span>
+<span class="n">extract</span><span class="o">.</span><span class="n">SetIndex</span><span class="p">([</span><span class="mi">100</span><span class="p">,</span> <span class="mi">100</span><span class="p">,</span> <span class="mi">0</span><span class="p">])</span>
+<span class="n">extracted_image</span> <span class="o">=</span> <span class="n">extract</span><span class="o">.</span><span class="n">Execute</span><span class="p">(</span><span class="n">composed_image</span><span class="p">)</span>
+
+<span class="c1"># Select same subregion using CropImageFilter (NOTE: CropImageFilter cannot reduce dimensions</span>
+<span class="c1"># unlike ExtractImageFilter, so cropped_image is a three dimensional image with depth of 1)</span>
+<span class="n">crop</span> <span class="o">=</span> <span class="n">sitk</span><span class="o">.</span><span class="n">CropImageFilter</span><span class="p">()</span>
+<span class="n">crop</span><span class="o">.</span><span class="n">SetLowerBoundaryCropSize</span><span class="p">([</span><span class="mi">100</span><span class="p">,</span> <span class="mi">100</span><span class="p">,</span> <span class="mi">0</span><span class="p">])</span>
+<span class="n">crop</span><span class="o">.</span><span class="n">SetUpperBoundaryCropSize</span><span class="p">([</span><span class="n">composed_image</span><span class="o">.</span><span class="n">GetWidth</span><span class="p">()</span><span class="o">-</span><span class="mi">400</span><span class="p">,</span> <span class="n">composed_image</span><span class="o">.</span><span class="n">GetHeight</span><span class="p">()</span><span class="o">-</span><span class="mi">400</span><span class="p">,</span> <span class="mi">1</span><span class="p">])</span>
+<span class="n">cropped_image</span> <span class="o">=</span> <span class="n">crop</span><span class="o">.</span><span class="n">Execute</span><span class="p">(</span><span class="n">composed_image</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="ui bottom attached sphinx-tab tab segment sphinx-data-tab-0-1 docutils container">
+<div class="highlight-R notranslate"><div class="highlight"><pre><span></span><span class="c1"># Run with:</span>
+<span class="c1">#</span>
+<span class="c1"># Rscript --vanilla ImageGridManipulation.R input-1 input-2</span>
+<span class="c1">#</span>
+
+<span class="nf">library</span><span class="p">(</span><span class="n">SimpleITK</span><span class="p">)</span>
+
+<span class="n">args</span> <span class="o">&lt;-</span> <span class="nf">commandArgs</span><span class="p">(</span> <span class="kc">TRUE</span> <span class="p">)</span>
+
+<span class="nf">if </span><span class="p">(</span><span class="nf">length</span><span class="p">(</span><span class="n">args</span><span class="p">)</span> <span class="o">&lt;</span>  <span class="m">2</span><span class="p">){</span>
+   <span class="nf">write</span><span class="p">(</span><span class="s">&quot;Usage arguments: &lt;input-1&gt; &lt;input-2&gt;&quot;</span><span class="p">,</span> <span class="nf">stderr</span><span class="p">())</span>
+   <span class="nf">quit</span><span class="p">(</span><span class="n">save</span><span class="o">=</span><span class="s">&quot;no&quot;</span><span class="p">,</span> <span class="n">status</span><span class="o">=</span><span class="m">1</span><span class="p">)</span>
+<span class="p">}</span>
+
+<span class="c1"># Two vector images of same pixel type and dimension expected</span>
+<span class="n">reader</span> <span class="o">&lt;-</span> <span class="nf">ImageFileReader</span><span class="p">()</span>
+<span class="n">reader</span><span class="o">$</span><span class="nf">SetFileName</span><span class="p">(</span><span class="n">args[[1]]</span><span class="p">)</span>
+<span class="n">image_1</span> <span class="o">&lt;-</span> <span class="n">reader</span><span class="o">$</span><span class="nf">Execute</span><span class="p">()</span>
+<span class="n">reader</span><span class="o">$</span><span class="nf">SetFileName</span><span class="p">(</span><span class="n">args[[2]]</span><span class="p">)</span>
+<span class="n">image_2</span> <span class="o">&lt;-</span> <span class="n">reader</span><span class="o">$</span><span class="nf">Execute</span><span class="p">()</span>
+
+<span class="c1"># Join two N-D Vector images to form an (N+1)-D image</span>
+<span class="n">join</span> <span class="o">&lt;-</span> <span class="nf">JoinSeriesImageFilter</span><span class="p">()</span>
+<span class="n">joined_image</span> <span class="o">&lt;-</span> <span class="n">join</span><span class="o">$</span><span class="nf">Execute</span><span class="p">(</span> <span class="n">image_1</span><span class="p">,</span> <span class="n">image_2</span> <span class="p">)</span>
+
+<span class="c1"># Extract first three channels of joined image (assuming RGB)</span>
+<span class="n">select</span> <span class="o">&lt;-</span> <span class="nf">VectorIndexSelectionCastImageFilter</span><span class="p">()</span>
+<span class="n">channel1_image</span> <span class="o">&lt;-</span> <span class="n">select</span><span class="o">$</span><span class="nf">Execute</span><span class="p">(</span><span class="n">joined_image</span><span class="p">,</span> <span class="m">0</span><span class="p">,</span> <span class="s">&quot;sitkUInt8&quot;</span><span class="p">)</span>
+<span class="n">channel2_image</span> <span class="o">&lt;-</span> <span class="n">select</span><span class="o">$</span><span class="nf">Execute</span><span class="p">(</span><span class="n">joined_image</span><span class="p">,</span> <span class="m">1</span><span class="p">,</span> <span class="s">&quot;sitkUInt8&quot;</span><span class="p">)</span>
+<span class="n">channel3_image</span> <span class="o">&lt;-</span> <span class="n">select</span><span class="o">$</span><span class="nf">Execute</span><span class="p">(</span><span class="n">joined_image</span><span class="p">,</span> <span class="m">2</span><span class="p">,</span> <span class="s">&quot;sitkUInt8&quot;</span><span class="p">)</span>
+
+<span class="c1"># Recompose image (should be same as joined_image)</span>
+<span class="n">compose</span> <span class="o">&lt;-</span> <span class="nf">ComposeImageFilter</span><span class="p">()</span>
+<span class="n">composed_image</span> <span class="o">&lt;-</span> <span class="n">compose</span><span class="o">$</span><span class="nf">Execute</span><span class="p">(</span><span class="n">channel1_image</span><span class="p">,</span> <span class="n">channel2_image</span><span class="p">,</span> <span class="n">channel3_image</span><span class="p">)</span>
+
+<span class="c1"># Select same subregion using image slicing operator</span>
+<span class="n">sliced_image</span> <span class="o">=</span> <span class="n">composed_image[101</span><span class="o">:</span><span class="m">400</span><span class="p">,</span> <span class="m">101</span><span class="o">:</span><span class="m">400</span><span class="p">,</span> <span class="m">1</span><span class="n">]</span>
+
+<span class="c1"># Select same subregion using ExtractImageFilter</span>
+<span class="n">extract</span> <span class="o">&lt;-</span> <span class="nf">ExtractImageFilter</span><span class="p">()</span>
+<span class="n">extract</span><span class="o">$</span><span class="nf">SetSize</span><span class="p">(</span> <span class="nf">list</span><span class="p">(</span><span class="m">300</span><span class="p">,</span> <span class="m">300</span><span class="p">,</span> <span class="m">0</span><span class="p">)</span> <span class="p">)</span>
+<span class="n">extract</span><span class="o">$</span><span class="nf">SetIndex</span><span class="p">(</span> <span class="nf">list</span><span class="p">(</span><span class="m">100</span><span class="p">,</span> <span class="m">100</span><span class="p">,</span> <span class="m">0</span><span class="p">)</span> <span class="p">)</span>
+<span class="n">extracted_image</span> <span class="o">&lt;-</span> <span class="n">extract</span><span class="o">$</span><span class="nf">Execute</span><span class="p">(</span><span class="n">composed_image</span><span class="p">)</span>
+
+<span class="c1"># Select same subregion using CropImageFilter (NOTE: CropImageFilter cannot reduce dimensions</span>
+<span class="c1"># unlike ExtractImageFilter, so cropped_image is a three dimensional image with depth of 1)</span>
+<span class="n">crop</span> <span class="o">&lt;-</span> <span class="nf">CropImageFilter</span><span class="p">()</span>
+<span class="n">crop</span><span class="o">$</span><span class="nf">SetLowerBoundaryCropSize</span><span class="p">(</span> <span class="nf">list</span><span class="p">(</span><span class="m">100</span><span class="p">,</span> <span class="m">100</span><span class="p">,</span> <span class="m">0</span><span class="p">)</span> <span class="p">)</span>
+<span class="n">crop</span><span class="o">$</span><span class="nf">SetUpperBoundaryCropSize</span><span class="p">(</span> <span class="nf">list</span><span class="p">(</span><span class="n">composed_image</span><span class="o">$</span><span class="nf">GetWidth</span><span class="p">()</span><span class="m">-400</span><span class="p">,</span> <span class="n">composed_image</span><span class="o">$</span><span class="nf">GetHeight</span><span class="p">()</span><span class="m">-400</span><span class="p">,</span> <span class="m">1</span><span class="p">)</span> <span class="p">)</span>
+<span class="n">cropped_image</span> <span class="o">&lt;-</span> <span class="n">crop</span><span class="o">$</span><span class="nf">Execute</span><span class="p">(</span><span class="n">composed_image</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="link_ImageRegistrationMethod1_docs.html" class="btn btn-neutral float-right" title="Image Registration Method 1" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="link_FilterProgressReporting_docs.html" class="btn btn-neutral float-left" title="Filter Progress Reporting" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019, Insight Software Consortium
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

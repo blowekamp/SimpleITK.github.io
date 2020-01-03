@@ -1,0 +1,599 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Reading-Gaussian Blurring-Writing &mdash; SimpleITK 1.2.0.dev documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script type="text/javascript" src="_static/jquery.js"></script>
+        <script type="text/javascript" src="_static/underscore.js"></script>
+        <script type="text/javascript" src="_static/doctools.js"></script>
+        <script type="text/javascript" src="_static/language_data.js"></script>
+        <script type="text/javascript" src="_static/sphinx_tabs/semantic-ui-2.4.1/tab.min.js"></script>
+        <script type="text/javascript" src="_static/sphinx_tabs/tabs.js"></script>
+        <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="_static/sphinx_tabs/semantic-ui-2.4.1/segment.min.css" type="text/css" />
+  <link rel="stylesheet" href="_static/sphinx_tabs/semantic-ui-2.4.1/menu.min.css" type="text/css" />
+  <link rel="stylesheet" href="_static/sphinx_tabs/semantic-ui-2.4.1/tab.min.css" type="text/css" />
+  <link rel="stylesheet" href="_static/sphinx_tabs/tabs.css" type="text/css" />
+  <link rel="stylesheet" href="_static/style.css" type="text/css" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Image Viewing" href="link_ImageViewing_docs.html" />
+    <link rel="prev" title="N4 Bias Field Correction" href="link_N4BiasFieldCorrection_docs.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html" class="icon icon-home"> SimpleITK
+          
+
+          
+            
+            <img src="_static/simpleitk_logo.png" class="logo" alt="Logo"/>
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                1.2
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Table of Contents</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="installation.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="fundamentalConcepts.html">Fundamental Concepts</a></li>
+<li class="toctree-l1"><a class="reference internal" href="registrationOverview.html">Registration Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="conventions.html">Common Conventions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="IO.html">Reading and Writing for Images and Transforms</a></li>
+<li class="toctree-l1"><a class="reference internal" href="filters.html">SimpleITK Filters</a></li>
+<li class="toctree-l1"><a class="reference internal" href="building.html">Building SimpleITK</a></li>
+<li class="toctree-l1"><a class="reference internal" href="setUp.html">Setting Up Eclipse and Visual Studio</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tutorialsAndCourses.html">Tutorials and Courses</a></li>
+<li class="toctree-l1"><a class="reference internal" href="faq.html">Frequently Asked Questions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="FilterTemplates.html">Developer</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="link_examples.html">Examples</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="link_HelloWorld_docs.html">Hello World</a></li>
+<li class="toctree-l2"><a class="reference internal" href="link_CSharp_docs.html">CSharp Integration</a></li>
+<li class="toctree-l2"><a class="reference internal" href="link_DemonsRegistration1_docs.html">DemonsRegistration1</a></li>
+<li class="toctree-l2"><a class="reference internal" href="link_DemonsRegistration2_docs.html">DemonsRegistration2</a></li>
+<li class="toctree-l2"><a class="reference internal" href="link_DicomImagePrintTags_docs.html">Read Image Meta-Data Dictionary and Print</a></li>
+<li class="toctree-l2"><a class="reference internal" href="link_DicomSeriesReader_docs.html">Dicom Series Reader</a></li>
+<li class="toctree-l2"><a class="reference internal" href="link_DicomSeriesReadModifyWrite_docs.html">Dicom Series Read Modify Write</a></li>
+<li class="toctree-l2"><a class="reference internal" href="link_DicomSeriesFromArray_docs.html">Dicom Series From Array</a></li>
+<li class="toctree-l2"><a class="reference internal" href="link_FastMarchingSegmentation_docs.html">Fast Marching Segmentation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="link_FilterProgressReporting_docs.html">Filter Progress Reporting</a></li>
+<li class="toctree-l2"><a class="reference internal" href="link_ImageGridManipulation_docs.html">Image Grid Manipulation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="link_ImageRegistrationMethod1_docs.html">Image Registration Method 1</a></li>
+<li class="toctree-l2"><a class="reference internal" href="link_ImageRegistrationMethod2_docs.html">Image Registration Method 2</a></li>
+<li class="toctree-l2"><a class="reference internal" href="link_ImageRegistrationMethod3_docs.html">Image Registration Method 3</a></li>
+<li class="toctree-l2"><a class="reference internal" href="link_ImageRegistrationMethod4_docs.html">Image Registration Method 4</a></li>
+<li class="toctree-l2"><a class="reference internal" href="link_ImageRegistrationMethodBSpline1_docs.html">Image Registration Method BSpline 1</a></li>
+<li class="toctree-l2"><a class="reference internal" href="link_ImageRegistrationMethodBSpline2_docs.html">Image Registration Method BSpline 2</a></li>
+<li class="toctree-l2"><a class="reference internal" href="link_ImageRegistrationMethodBSpline3_docs.html">Image Registration Method BSpline 3</a></li>
+<li class="toctree-l2"><a class="reference internal" href="link_ImageRegistrationMethodDisplacement1_docs.html">Image Registration Method Displacement 1</a></li>
+<li class="toctree-l2"><a class="reference internal" href="link_ImageRegistrationMethodExhaustive_docs.html">Image Registration Method Exhaustive</a></li>
+<li class="toctree-l2"><a class="reference internal" href="link_ITKIntegration_docs.html">Integration with ITK</a></li>
+<li class="toctree-l2"><a class="reference internal" href="link_N4BiasFieldCorrection_docs.html">N4 Bias Field Correction</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Reading-Gaussian Blurring-Writing</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#overview">Overview</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#code">Code</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="link_ImageViewing_docs.html">Image Viewing</a></li>
+<li class="toctree-l2"><a class="reference internal" href="link_AdvancedImageReading_docs.html">Advanced Image Reading</a></li>
+<li class="toctree-l2"><a class="reference internal" href="link_ImageIOSelection_docs.html">IO Selection for Image Reading</a></li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">SimpleITK</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="link_examples.html">Examples</a> &raquo;</li>
+        
+      <li>Reading-Gaussian Blurring-Writing</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/link_SimpleGaussian_docs.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="reading-gaussian-blurring-writing">
+<h1>Reading-Gaussian Blurring-Writing<a class="headerlink" href="#reading-gaussian-blurring-writing" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="overview">
+<h2>Overview<a class="headerlink" href="#overview" title="Permalink to this headline">¶</a></h2>
+<p>Introductory example which demotrates the basics of reading, filtering,
+and writing an image. This examples works for any scalar or vector
+image type. It processes the image with a Gaussian blurring filter,
+which produces an image with floating point pixel type, then cast the
+output back to the input before writing the image to a file.</p>
+<p>This example uses the object oriented (OO) interface to SimpleITK
+classes. The OO style produces more verbose code which clearly labels the
+parameters set by class member functions.</p>
+</div>
+<div class="section" id="code">
+<h2>Code<a class="headerlink" href="#code" title="Permalink to this headline">¶</a></h2>
+<div class="sphinx-tabs docutils container">
+<div class="ui top attached tabular menu sphinx-menu docutils container">
+<div class="active item sphinx-data-tab-0-0 docutils container">
+<div class="docutils container">
+C#</div>
+</div>
+<div class="item sphinx-data-tab-0-1 docutils container">
+<div class="docutils container">
+C++</div>
+</div>
+<div class="item sphinx-data-tab-0-2 docutils container">
+<div class="docutils container">
+Java</div>
+</div>
+<div class="item sphinx-data-tab-0-3 docutils container">
+<div class="docutils container">
+Lua</div>
+</div>
+<div class="item sphinx-data-tab-0-4 docutils container">
+<div class="docutils container">
+Python</div>
+</div>
+<div class="item sphinx-data-tab-0-5 docutils container">
+<div class="docutils container">
+R</div>
+</div>
+<div class="item sphinx-data-tab-0-6 docutils container">
+<div class="docutils container">
+Ruby</div>
+</div>
+<div class="item sphinx-data-tab-0-7 docutils container">
+<div class="docutils container">
+Tcl</div>
+</div>
+</div>
+<div class="ui bottom attached sphinx-tab tab segment sphinx-data-tab-0-0 active docutils container">
+<div class="highlight-c# notranslate"><div class="highlight"><pre><span></span><span class="k">using</span> <span class="nn">System</span><span class="p">;</span>
+<span class="k">using</span> <span class="nn">itk.simple</span><span class="p">;</span>
+
+<span class="k">namespace</span> <span class="nn">itk.simple.examples</span> <span class="p">{</span>
+    <span class="k">class</span> <span class="nc">SimpleGaussian</span> <span class="p">{</span>
+        <span class="k">static</span> <span class="k">void</span> <span class="nf">Main</span><span class="p">(</span><span class="kt">string</span><span class="p">[]</span> <span class="n">args</span><span class="p">)</span> <span class="p">{</span>
+            <span class="k">try</span> <span class="p">{</span>
+                <span class="k">if</span> <span class="p">(</span><span class="n">args</span><span class="p">.</span><span class="n">Length</span> <span class="p">&lt;</span> <span class="m">3</span><span class="p">)</span> <span class="p">{</span>
+                    <span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">&quot;Usage: SimpleGaussian &lt;input&gt; &lt;sigma&gt; &lt;output&gt;&quot;</span><span class="p">);</span>
+                    <span class="k">return</span><span class="p">;</span>
+                <span class="p">}</span>
+                <span class="c1">// Read input image</span>
+                <span class="n">ImageFileReader</span> <span class="n">reader</span> <span class="p">=</span> <span class="k">new</span> <span class="n">ImageFileReader</span><span class="p">();</span>
+                <span class="n">reader</span><span class="p">.</span><span class="n">SetFileName</span><span class="p">(</span><span class="n">args</span><span class="p">[</span><span class="m">0</span><span class="p">]);</span>
+                <span class="n">Image</span> <span class="n">image</span> <span class="p">=</span> <span class="n">reader</span><span class="p">.</span><span class="n">Execute</span><span class="p">();</span>
+
+                <span class="c1">// Execute Gaussian smoothing filter</span>
+                <span class="n">SmoothingRecursiveGaussianImageFilter</span> <span class="n">gaussian</span> <span class="p">=</span> <span class="k">new</span> <span class="n">SmoothingRecursiveGaussianImageFilter</span><span class="p">();</span>
+                <span class="n">gaussian</span><span class="p">.</span><span class="n">SetSigma</span><span class="p">(</span><span class="n">Double</span><span class="p">.</span><span class="n">Parse</span><span class="p">(</span><span class="n">args</span><span class="p">[</span><span class="m">1</span><span class="p">]));</span>
+                <span class="n">Image</span> <span class="n">blurredImage</span> <span class="p">=</span> <span class="n">gaussian</span><span class="p">.</span><span class="n">Execute</span><span class="p">(</span><span class="n">image</span><span class="p">);</span>
+                
+                <span class="c1">// Covert the real output image back to the original pixel type , to</span>
+                <span class="c1">// make writing easier , as many file formats don &#39;t support real</span>
+                <span class="c1">// pixels .</span>
+                <span class="n">CastImageFilter</span> <span class="n">castFilter</span> <span class="p">=</span> <span class="k">new</span> <span class="n">CastImageFilter</span><span class="p">();</span>
+                <span class="n">castFilter</span><span class="p">.</span><span class="n">SetOutputPixelType</span><span class="p">(</span><span class="n">image</span><span class="p">.</span><span class="n">GetPixelID</span><span class="p">());</span>
+                <span class="n">Image</span> <span class="n">destImage</span> <span class="p">=</span> <span class="n">castFilter</span><span class="p">.</span><span class="n">Execute</span><span class="p">(</span><span class="n">blurredImage</span><span class="p">);</span>
+
+                <span class="c1">// Write output image</span>
+                <span class="n">ImageFileWriter</span> <span class="n">writer</span> <span class="p">=</span> <span class="k">new</span> <span class="n">ImageFileWriter</span><span class="p">();</span>
+                <span class="n">writer</span><span class="p">.</span><span class="n">SetFileName</span><span class="p">(</span><span class="n">args</span><span class="p">[</span><span class="m">2</span><span class="p">]);</span>
+                <span class="n">writer</span><span class="p">.</span><span class="n">Execute</span><span class="p">(</span><span class="n">destImage</span><span class="p">);</span>
+
+            <span class="p">}</span> <span class="k">catch</span> <span class="p">(</span><span class="n">Exception</span> <span class="n">ex</span><span class="p">)</span> <span class="p">{</span>
+                <span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="n">ex</span><span class="p">);</span>
+            <span class="p">}</span>
+        <span class="p">}</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</div>
+<div class="ui bottom attached sphinx-tab tab segment sphinx-data-tab-0-1 docutils container">
+<div class="highlight-c++ notranslate"><div class="highlight"><pre><span></span><span class="c1">// This one header will include all SimpleITK filters and external</span>
+<span class="c1">// objects.</span>
+<span class="cp">#include</span> <span class="cpf">&lt;SimpleITK.h&gt;</span><span class="cp"></span>
+<span class="cp">#include</span> <span class="cpf">&lt;iostream&gt;</span><span class="cp"></span>
+<span class="cp">#include</span> <span class="cpf">&lt;stdlib.h&gt;</span><span class="cp"></span>
+
+
+<span class="c1">// create convenient namespace alias</span>
+<span class="k">namespace</span> <span class="n">sitk</span> <span class="o">=</span> <span class="n">itk</span><span class="o">::</span><span class="n">simple</span><span class="p">;</span>
+
+<span class="kt">int</span> <span class="nf">main</span> <span class="p">(</span> <span class="kt">int</span> <span class="n">argc</span><span class="p">,</span> <span class="kt">char</span><span class="o">*</span> <span class="n">argv</span><span class="p">[]</span> <span class="p">)</span> <span class="p">{</span>
+
+  <span class="k">if</span> <span class="p">(</span> <span class="n">argc</span> <span class="o">&lt;</span> <span class="mi">4</span> <span class="p">)</span> <span class="p">{</span>
+    <span class="n">std</span><span class="o">::</span><span class="n">cerr</span> <span class="o">&lt;&lt;</span> <span class="s">&quot;Usage: &quot;</span> <span class="o">&lt;&lt;</span> <span class="n">argv</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">&lt;&lt;</span> <span class="s">&quot; &lt;input&gt; &lt;sigma&gt; &lt;output&gt;</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">;</span>
+    <span class="k">return</span> <span class="mi">1</span><span class="p">;</span>
+  <span class="p">}</span>
+
+  <span class="c1">// Read the image file</span>
+  <span class="n">sitk</span><span class="o">::</span><span class="n">ImageFileReader</span> <span class="n">reader</span><span class="p">;</span>
+  <span class="n">reader</span><span class="p">.</span><span class="n">SetFileName</span> <span class="p">(</span> <span class="n">std</span><span class="o">::</span><span class="n">string</span> <span class="p">(</span> <span class="n">argv</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="p">)</span> <span class="p">);</span>
+  <span class="n">sitk</span><span class="o">::</span><span class="n">Image</span> <span class="n">image</span> <span class="o">=</span> <span class="n">reader</span><span class="p">.</span><span class="n">Execute</span><span class="p">();</span>
+
+  <span class="c1">// This filters perform a gaussian bluring with sigma in physical</span>
+  <span class="c1">// space. The output image will be of real type.</span>
+  <span class="n">sitk</span><span class="o">::</span><span class="n">SmoothingRecursiveGaussianImageFilter</span> <span class="n">gaussian</span><span class="p">;</span>
+  <span class="n">gaussian</span><span class="p">.</span><span class="n">SetSigma</span> <span class="p">(</span> <span class="n">atof</span> <span class="p">(</span> <span class="n">argv</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span> <span class="p">)</span> <span class="p">);</span>
+  <span class="n">sitk</span><span class="o">::</span><span class="n">Image</span> <span class="n">blurredImage</span> <span class="o">=</span> <span class="n">gaussian</span><span class="p">.</span><span class="n">Execute</span> <span class="p">(</span> <span class="n">image</span> <span class="p">);</span>
+
+  <span class="c1">// Covert the real output image back to the original pixel type, to</span>
+  <span class="c1">// make writing easier, as many file formats don&#39;t support real</span>
+  <span class="c1">// pixels.</span>
+  <span class="n">sitk</span><span class="o">::</span><span class="n">CastImageFilter</span> <span class="n">caster</span><span class="p">;</span>
+  <span class="n">caster</span><span class="p">.</span><span class="n">SetOutputPixelType</span><span class="p">(</span> <span class="n">image</span><span class="p">.</span><span class="n">GetPixelID</span><span class="p">()</span> <span class="p">);</span>
+  <span class="n">sitk</span><span class="o">::</span><span class="n">Image</span> <span class="n">outputImage</span> <span class="o">=</span> <span class="n">caster</span><span class="p">.</span><span class="n">Execute</span><span class="p">(</span> <span class="n">blurredImage</span> <span class="p">);</span>
+
+  <span class="c1">// write the image</span>
+  <span class="n">sitk</span><span class="o">::</span><span class="n">ImageFileWriter</span> <span class="n">writer</span><span class="p">;</span>
+  <span class="n">writer</span><span class="p">.</span><span class="n">SetFileName</span> <span class="p">(</span> <span class="n">std</span><span class="o">::</span><span class="n">string</span> <span class="p">(</span> <span class="n">argv</span><span class="p">[</span><span class="mi">3</span><span class="p">]</span> <span class="p">)</span> <span class="p">);</span>
+  <span class="n">writer</span><span class="p">.</span><span class="n">Execute</span> <span class="p">(</span> <span class="n">outputImage</span> <span class="p">);</span>
+
+  <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</div>
+<div class="ui bottom attached sphinx-tab tab segment sphinx-data-tab-0-2 docutils container">
+<div class="highlight-java notranslate"><div class="highlight"><pre><span></span><span class="cm">/**</span>
+<span class="cm"> * Simple test of SimpleITK&#39;s java wrapping</span>
+<span class="cm"> */</span>
+
+
+<span class="kn">import</span> <span class="nn">org.itk.simple.*</span><span class="o">;</span>
+
+<span class="kd">class</span> <span class="nc">SimpleGaussian</span> <span class="o">{</span>
+ 
+  <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="n">String</span> <span class="n">argv</span><span class="o">[])</span> <span class="o">{</span>
+
+    <span class="k">if</span> <span class="o">(</span> <span class="n">argv</span><span class="o">.</span><span class="na">length</span> <span class="o">&lt;</span> <span class="mi">3</span> <span class="o">)</span> <span class="o">{</span>
+      <span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">&quot;Usage: java SimpleGaussian &lt;input&gt; &lt;sigma&gt; &lt;output&gt;&quot;</span><span class="o">);</span>
+      <span class="k">return</span><span class="o">;</span>
+    <span class="o">}</span>
+
+    <span class="n">org</span><span class="o">.</span><span class="na">itk</span><span class="o">.</span><span class="na">simple</span><span class="o">.</span><span class="na">ImageFileReader</span> <span class="n">reader</span> <span class="o">=</span> <span class="k">new</span> <span class="n">org</span><span class="o">.</span><span class="na">itk</span><span class="o">.</span><span class="na">simple</span><span class="o">.</span><span class="na">ImageFileReader</span><span class="o">();</span>
+    <span class="n">reader</span><span class="o">.</span><span class="na">setFileName</span><span class="o">(</span><span class="n">argv</span><span class="o">[</span><span class="mi">0</span><span class="o">]);</span>
+    <span class="n">Image</span> <span class="n">img</span> <span class="o">=</span> <span class="n">reader</span><span class="o">.</span><span class="na">execute</span><span class="o">();</span>
+
+    <span class="n">SmoothingRecursiveGaussianImageFilter</span> <span class="n">filter</span> <span class="o">=</span> <span class="k">new</span> <span class="n">SmoothingRecursiveGaussianImageFilter</span><span class="o">();</span>
+    <span class="n">filter</span><span class="o">.</span><span class="na">setSigma</span><span class="o">(</span> <span class="n">Double</span><span class="o">.</span><span class="na">valueOf</span><span class="o">(</span> <span class="n">argv</span><span class="o">[</span><span class="mi">1</span><span class="o">]</span> <span class="o">).</span><span class="na">doubleValue</span><span class="o">()</span> <span class="o">);</span>
+    <span class="n">Image</span> <span class="n">blurredImg</span> <span class="o">=</span> <span class="n">filter</span><span class="o">.</span><span class="na">execute</span><span class="o">(</span><span class="n">img</span><span class="o">);</span>
+
+    <span class="n">CastImageFilter</span> <span class="n">caster</span> <span class="o">=</span> <span class="k">new</span> <span class="n">CastImageFilter</span><span class="o">();</span>
+    <span class="n">caster</span><span class="o">.</span><span class="na">setOutputPixelType</span><span class="o">(</span> <span class="n">img</span><span class="o">.</span><span class="na">getPixelID</span><span class="o">()</span> <span class="o">);</span>
+    <span class="n">Image</span> <span class="n">castImg</span> <span class="o">=</span> <span class="n">caster</span><span class="o">.</span><span class="na">execute</span><span class="o">(</span> <span class="n">blurredImg</span> <span class="o">);</span>
+
+    <span class="n">ImageFileWriter</span> <span class="n">writer</span> <span class="o">=</span> <span class="k">new</span> <span class="n">ImageFileWriter</span><span class="o">();</span>
+    <span class="n">writer</span><span class="o">.</span><span class="na">setFileName</span><span class="o">(</span><span class="n">argv</span><span class="o">[</span><span class="mi">2</span><span class="o">]);</span>
+    <span class="n">writer</span><span class="o">.</span><span class="na">execute</span><span class="o">(</span> <span class="n">castImg</span> <span class="o">);</span> 
+
+  <span class="o">}</span>
+
+<span class="o">}</span>
+</pre></div>
+</div>
+</div>
+<div class="ui bottom attached sphinx-tab tab segment sphinx-data-tab-0-3 docutils container">
+<div class="highlight-lua notranslate"><div class="highlight"><pre><span></span><span class="nb">require</span> <span class="s2">&quot;SimpleITK&quot;</span>
+
+<span class="kr">if</span> <span class="o">#</span><span class="n">arg</span> <span class="o">&lt;</span> <span class="mi">3</span> <span class="kr">then</span>
+  <span class="nb">print</span> <span class="p">(</span> <span class="s2">&quot;Usage: SimpleGaussian &lt;input&gt; &lt;sigma&gt; &lt;output&gt;&quot;</span> <span class="p">)</span>
+  <span class="nb">os.exit</span> <span class="p">(</span> <span class="mi">1</span> <span class="p">)</span>
+<span class="kr">end</span>
+
+<span class="n">reader</span> <span class="o">=</span> <span class="n">SimpleITK</span><span class="p">.</span><span class="n">ImageFileReader</span><span class="p">()</span>
+<span class="c1">-- Remember that Lua arrays are 1-based, and that arg does not contain the application name!</span>
+<span class="n">reader</span><span class="p">:</span><span class="n">SetFileName</span> <span class="p">(</span> <span class="n">arg</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="p">)</span>
+<span class="n">image</span> <span class="o">=</span> <span class="n">reader</span><span class="p">:</span><span class="n">Execute</span><span class="p">();</span>
+
+<span class="n">inputPixelType</span> <span class="o">=</span> <span class="n">image</span><span class="p">:</span><span class="n">GetPixelID</span><span class="p">()</span>
+
+<span class="n">gaussian</span> <span class="o">=</span> <span class="n">SimpleITK</span><span class="p">.</span><span class="n">SmoothingRecursiveGaussianImageFilter</span><span class="p">()</span>
+<span class="n">gaussian</span><span class="p">:</span><span class="n">SetSigma</span> <span class="p">(</span> <span class="n">arg</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span> <span class="p">)</span>
+<span class="n">image</span> <span class="o">=</span> <span class="n">gaussian</span><span class="p">:</span><span class="n">Execute</span> <span class="p">(</span> <span class="n">image</span> <span class="p">);</span>
+
+<span class="n">caster</span> <span class="o">=</span> <span class="n">SimpleITK</span><span class="p">.</span><span class="n">CastImageFilter</span><span class="p">();</span>
+<span class="n">caster</span><span class="p">:</span><span class="n">SetOutputPixelType</span><span class="p">(</span> <span class="n">inputPixelType</span> <span class="p">);</span>
+<span class="n">image</span> <span class="o">=</span> <span class="n">caster</span><span class="p">:</span><span class="n">Execute</span><span class="p">(</span> <span class="n">image</span> <span class="p">)</span>
+
+<span class="n">writer</span> <span class="o">=</span> <span class="n">SimpleITK</span><span class="p">.</span><span class="n">ImageFileWriter</span><span class="p">()</span>
+<span class="n">writer</span><span class="p">:</span><span class="n">SetFileName</span> <span class="p">(</span> <span class="n">arg</span><span class="p">[</span><span class="mi">3</span><span class="p">]</span> <span class="p">)</span>
+<span class="n">writer</span><span class="p">:</span><span class="n">Execute</span> <span class="p">(</span> <span class="n">image</span> <span class="p">);</span>
+</pre></div>
+</div>
+</div>
+<div class="ui bottom attached sphinx-tab tab segment sphinx-data-tab-0-4 docutils container">
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="ch">#!/usr/bin/env python</span>
+
+<span class="kn">from</span> <span class="nn">__future__</span> <span class="kn">import</span> <span class="n">print_function</span>
+
+<span class="kn">import</span> <span class="nn">SimpleITK</span> <span class="kn">as</span> <span class="nn">sitk</span>
+<span class="kn">import</span> <span class="nn">sys</span>
+<span class="kn">import</span> <span class="nn">os</span>
+
+<span class="k">if</span> <span class="nb">len</span> <span class="p">(</span> <span class="n">sys</span><span class="o">.</span><span class="n">argv</span> <span class="p">)</span> <span class="o">&lt;</span> <span class="mi">4</span><span class="p">:</span>
+    <span class="k">print</span><span class="p">(</span> <span class="s2">&quot;Usage: SimpleGaussian &lt;input&gt; &lt;sigma&gt; &lt;output&gt;&quot;</span> <span class="p">)</span>
+    <span class="n">sys</span><span class="o">.</span><span class="n">exit</span> <span class="p">(</span> <span class="mi">1</span> <span class="p">)</span>
+
+
+<span class="n">reader</span> <span class="o">=</span> <span class="n">sitk</span><span class="o">.</span><span class="n">ImageFileReader</span><span class="p">()</span>
+<span class="n">reader</span><span class="o">.</span><span class="n">SetFileName</span> <span class="p">(</span> <span class="n">sys</span><span class="o">.</span><span class="n">argv</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="p">)</span>
+<span class="n">image</span> <span class="o">=</span> <span class="n">reader</span><span class="o">.</span><span class="n">Execute</span><span class="p">()</span>
+
+<span class="n">pixelID</span> <span class="o">=</span> <span class="n">image</span><span class="o">.</span><span class="n">GetPixelID</span><span class="p">()</span>
+
+<span class="n">gaussian</span> <span class="o">=</span> <span class="n">sitk</span><span class="o">.</span><span class="n">SmoothingRecursiveGaussianImageFilter</span><span class="p">()</span>
+<span class="n">gaussian</span><span class="o">.</span><span class="n">SetSigma</span> <span class="p">(</span> <span class="nb">float</span> <span class="p">(</span> <span class="n">sys</span><span class="o">.</span><span class="n">argv</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span> <span class="p">)</span> <span class="p">)</span>
+<span class="n">image</span> <span class="o">=</span> <span class="n">gaussian</span><span class="o">.</span><span class="n">Execute</span> <span class="p">(</span> <span class="n">image</span> <span class="p">)</span>
+
+<span class="n">caster</span> <span class="o">=</span> <span class="n">sitk</span><span class="o">.</span><span class="n">CastImageFilter</span><span class="p">()</span>
+<span class="n">caster</span><span class="o">.</span><span class="n">SetOutputPixelType</span><span class="p">(</span> <span class="n">pixelID</span> <span class="p">)</span>
+<span class="n">image</span> <span class="o">=</span> <span class="n">caster</span><span class="o">.</span><span class="n">Execute</span><span class="p">(</span> <span class="n">image</span> <span class="p">)</span>
+
+<span class="n">writer</span> <span class="o">=</span> <span class="n">sitk</span><span class="o">.</span><span class="n">ImageFileWriter</span><span class="p">()</span>
+<span class="n">writer</span><span class="o">.</span><span class="n">SetFileName</span> <span class="p">(</span> <span class="n">sys</span><span class="o">.</span><span class="n">argv</span><span class="p">[</span><span class="mi">3</span><span class="p">]</span> <span class="p">)</span>
+<span class="n">writer</span><span class="o">.</span><span class="n">Execute</span> <span class="p">(</span> <span class="n">image</span> <span class="p">);</span>
+
+
+<span class="k">if</span> <span class="p">(</span> <span class="ow">not</span> <span class="s2">&quot;SITK_NOSHOW&quot;</span> <span class="ow">in</span> <span class="n">os</span><span class="o">.</span><span class="n">environ</span> <span class="p">):</span>
+    <span class="n">sitk</span><span class="o">.</span><span class="n">Show</span><span class="p">(</span> <span class="n">image</span><span class="p">,</span> <span class="s2">&quot;Simple Gaussian&quot;</span> <span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="ui bottom attached sphinx-tab tab segment sphinx-data-tab-0-5 docutils container">
+<div class="highlight-r notranslate"><div class="highlight"><pre><span></span><span class="c1"># Run with:</span>
+<span class="c1">#</span>
+<span class="c1"># Rscript --vanilla SimpleGaussian.R  input sigma output</span>
+<span class="c1">#</span>
+
+<span class="nf">library</span><span class="p">(</span><span class="n">SimpleITK</span><span class="p">)</span>
+
+<span class="n">args</span> <span class="o">&lt;-</span> <span class="nf">commandArgs</span><span class="p">(</span> <span class="kc">TRUE</span> <span class="p">)</span>
+
+<span class="n">myreader</span> <span class="o">&lt;-</span> <span class="nf">ImageFileReader</span><span class="p">()</span>
+<span class="n">myreader</span><span class="o">$</span><span class="nf">SetFileName</span><span class="p">(</span><span class="n">args[[1]]</span> <span class="p">)</span>
+<span class="n">myimage</span> <span class="o">&lt;-</span> <span class="n">myreader</span><span class="o">$</span><span class="nf">Execute</span><span class="p">()</span>
+
+<span class="n">pixeltype</span> <span class="o">&lt;-</span> <span class="n">myimage</span><span class="o">$</span><span class="nf">GetPixelID</span><span class="p">()</span>
+
+<span class="n">myfilter</span> <span class="o">&lt;-</span> <span class="nf">SmoothingRecursiveGaussianImageFilter</span><span class="p">()</span>
+<span class="n">myfilter</span><span class="o">$</span><span class="nf">SetSigma</span><span class="p">(</span><span class="nf">as.numeric</span><span class="p">(</span><span class="n">args[2]</span><span class="p">)</span> <span class="p">)</span>
+<span class="n">smoothedimage</span> <span class="o">&lt;-</span> <span class="n">myfilter</span><span class="o">$</span><span class="nf">Execute</span><span class="p">(</span><span class="n">myimage</span> <span class="p">)</span>
+
+<span class="n">mycaster</span> <span class="o">&lt;-</span> <span class="nf">CastImageFilter</span><span class="p">()</span>
+<span class="n">mycaster</span><span class="o">$</span><span class="nf">SetOutputPixelType</span><span class="p">(</span><span class="n">pixeltype</span> <span class="p">)</span>
+<span class="n">castedimage</span> <span class="o">&lt;-</span> <span class="n">mycaster</span><span class="o">$</span><span class="nf">Execute</span><span class="p">(</span><span class="n">smoothedimage</span> <span class="p">)</span>
+
+<span class="n">mywriter</span> <span class="o">&lt;-</span> <span class="nf">ImageFileWriter</span><span class="p">()</span>
+<span class="n">mywriter</span><span class="o">$</span><span class="nf">SetFileName</span><span class="p">(</span><span class="n">args[[3]]</span> <span class="p">)</span>
+<span class="n">mywriter</span><span class="o">$</span><span class="nf">Execute</span><span class="p">(</span><span class="n">castedimage</span> <span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="ui bottom attached sphinx-tab tab segment sphinx-data-tab-0-6 docutils container">
+<div class="highlight-ruby notranslate"><div class="highlight"><pre><span></span><span class="nb">require</span> <span class="s1">&#39;simpleitk&#39;</span>
+
+<span class="k">if</span> <span class="no">ARGV</span><span class="o">.</span><span class="n">length</span> <span class="o">!=</span> <span class="mi">3</span> <span class="k">then</span>
+  <span class="nb">puts</span> <span class="s2">&quot;Usage: SimpleGaussian &lt;input&gt; &lt;sigma&gt; &lt;output&gt;&quot;</span><span class="p">;</span>
+  <span class="nb">exit</span><span class="p">(</span> <span class="mi">1</span> <span class="p">)</span>
+<span class="k">end</span>
+
+<span class="n">reader</span> <span class="o">=</span> <span class="no">Simpleitk</span><span class="o">::</span><span class="no">ImageFileReader</span><span class="o">.</span><span class="n">new</span>
+<span class="n">reader</span><span class="o">.</span><span class="n">set_file_name</span><span class="p">(</span> <span class="no">ARGV</span><span class="o">[</span><span class="mi">0</span><span class="o">]</span> <span class="p">)</span>
+<span class="n">image</span> <span class="o">=</span> <span class="n">reader</span><span class="o">.</span><span class="n">execute</span>
+
+<span class="n">inputPixelType</span> <span class="o">=</span> <span class="n">image</span><span class="o">.</span><span class="n">get_pixel_idvalue</span>
+  
+<span class="n">gaussian</span> <span class="o">=</span> <span class="no">Simpleitk</span><span class="o">::</span><span class="no">SmoothingRecursiveGaussianImageFilter</span><span class="o">.</span><span class="n">new</span>
+<span class="n">gaussian</span><span class="o">.</span><span class="n">set_sigma</span> <span class="no">ARGV</span><span class="o">[</span><span class="mi">1</span><span class="o">].</span><span class="n">to_f</span>
+<span class="n">image</span> <span class="o">=</span> <span class="n">gaussian</span><span class="o">.</span><span class="n">execute</span> <span class="n">image</span><span class="p">;</span>
+
+<span class="n">caster</span> <span class="o">=</span> <span class="no">Simpleitk</span><span class="o">::</span><span class="no">CastImageFilter</span><span class="o">.</span><span class="n">new</span>
+<span class="n">caster</span><span class="o">.</span><span class="n">set_output_pixel_type</span> <span class="n">inputPixelType</span>
+<span class="n">image</span> <span class="o">=</span> <span class="n">caster</span><span class="o">.</span><span class="n">execute</span> <span class="n">image</span>
+
+<span class="n">writer</span> <span class="o">=</span> <span class="no">Simpleitk</span><span class="o">::</span><span class="no">ImageFileWriter</span><span class="o">.</span><span class="n">new</span>
+<span class="n">writer</span><span class="o">.</span><span class="n">set_file_name</span> <span class="no">ARGV</span><span class="o">[</span><span class="mi">2</span><span class="o">]</span> 
+<span class="n">writer</span><span class="o">.</span><span class="n">execute</span> <span class="n">image</span>
+</pre></div>
+</div>
+</div>
+<div class="ui bottom attached sphinx-tab tab segment sphinx-data-tab-0-7 docutils container">
+<div class="highlight-tcl notranslate"><div class="highlight"><pre><span></span><span class="k">if</span> <span class="k">{</span> <span class="nv">$argc</span> <span class="o">&lt;</span> <span class="nv">3</span> <span class="k">}</span> <span class="k">{</span>
+    <span class="nb">puts</span> <span class="s2">&quot;Usage: SimpleGaussian &lt;input&gt; &lt;sigma&gt; &lt;output&gt;&quot;</span>
+    <span class="nb">exit</span> <span class="mi">1</span>
+<span class="k">}</span>
+
+<span class="nv">ImageFileReader</span> reader
+<span class="nv">reader</span> SetFileName <span class="k">[</span> <span class="nb">lindex</span> <span class="nv">$argv</span> <span class="mi">0</span> <span class="k">]</span>
+<span class="k">set</span> image <span class="k">[</span> <span class="nv">reader</span> Execute <span class="k">]</span>
+
+<span class="k">set</span> pixelID <span class="k">[</span> <span class="nv">$image</span> <span class="nv">GetPixelID</span> <span class="k">]</span>
+
+<span class="nv">SmoothingRecursiveGaussianImageFilter</span> gaussian
+<span class="nv">gaussian</span> SetSigma <span class="k">[</span> <span class="nb">lindex</span> <span class="nv">$argv</span> <span class="mi">1</span> <span class="k">]</span>
+<span class="k">set</span> image <span class="k">[</span> <span class="nv">gaussian</span> Execute <span class="nv">$image</span> <span class="k">]</span>
+
+<span class="nv">CastImageFilter</span> caster
+<span class="nv">caster</span> SetOutputPixelType <span class="nv">$pixelID</span>
+<span class="k">set</span> image <span class="k">[</span> <span class="nv">caster</span> Execute <span class="nv">$image</span> <span class="k">]</span>
+
+<span class="nv">ImageFileWriter</span> writer
+<span class="nv">writer</span> SetFileName <span class="k">[</span> <span class="nb">lindex</span> <span class="nv">$argv</span> <span class="mi">2</span><span class="k">]</span>
+<span class="nv">writer</span> Execute <span class="nv">$image</span>
+
+<span class="c"># Tcl requires explicit cleanup Cleanup</span>
+<span class="nv">reader</span> <span class="o">-</span>delete
+<span class="nv">gaussian</span> <span class="o">-</span>delete
+<span class="nv">caster</span> <span class="o">-</span>delete
+<span class="nv">$image</span> <span class="nv">-delete</span>
+<span class="nv">writer</span> <span class="o">-</span>delete
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="link_ImageViewing_docs.html" class="btn btn-neutral float-right" title="Image Viewing" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="link_N4BiasFieldCorrection_docs.html" class="btn btn-neutral float-left" title="N4 Bias Field Correction" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019, Insight Software Consortium
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

@@ -1,0 +1,445 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Integration with ITK &mdash; SimpleITK 1.2.0.dev documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script type="text/javascript" src="_static/jquery.js"></script>
+        <script type="text/javascript" src="_static/underscore.js"></script>
+        <script type="text/javascript" src="_static/doctools.js"></script>
+        <script type="text/javascript" src="_static/language_data.js"></script>
+        <script type="text/javascript" src="_static/sphinx_tabs/semantic-ui-2.4.1/tab.min.js"></script>
+        <script type="text/javascript" src="_static/sphinx_tabs/tabs.js"></script>
+        <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="_static/sphinx_tabs/semantic-ui-2.4.1/segment.min.css" type="text/css" />
+  <link rel="stylesheet" href="_static/sphinx_tabs/semantic-ui-2.4.1/menu.min.css" type="text/css" />
+  <link rel="stylesheet" href="_static/sphinx_tabs/semantic-ui-2.4.1/tab.min.css" type="text/css" />
+  <link rel="stylesheet" href="_static/sphinx_tabs/tabs.css" type="text/css" />
+  <link rel="stylesheet" href="_static/style.css" type="text/css" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="N4 Bias Field Correction" href="link_N4BiasFieldCorrection_docs.html" />
+    <link rel="prev" title="Image Registration Method Exhaustive" href="link_ImageRegistrationMethodExhaustive_docs.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html" class="icon icon-home"> SimpleITK
+          
+
+          
+            
+            <img src="_static/simpleitk_logo.png" class="logo" alt="Logo"/>
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                1.2
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Table of Contents</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="installation.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="fundamentalConcepts.html">Fundamental Concepts</a></li>
+<li class="toctree-l1"><a class="reference internal" href="registrationOverview.html">Registration Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="conventions.html">Common Conventions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="IO.html">Reading and Writing for Images and Transforms</a></li>
+<li class="toctree-l1"><a class="reference internal" href="filters.html">SimpleITK Filters</a></li>
+<li class="toctree-l1"><a class="reference internal" href="building.html">Building SimpleITK</a></li>
+<li class="toctree-l1"><a class="reference internal" href="setUp.html">Setting Up Eclipse and Visual Studio</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tutorialsAndCourses.html">Tutorials and Courses</a></li>
+<li class="toctree-l1"><a class="reference internal" href="faq.html">Frequently Asked Questions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="FilterTemplates.html">Developer</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="link_examples.html">Examples</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="link_HelloWorld_docs.html">Hello World</a></li>
+<li class="toctree-l2"><a class="reference internal" href="link_CSharp_docs.html">CSharp Integration</a></li>
+<li class="toctree-l2"><a class="reference internal" href="link_DemonsRegistration1_docs.html">DemonsRegistration1</a></li>
+<li class="toctree-l2"><a class="reference internal" href="link_DemonsRegistration2_docs.html">DemonsRegistration2</a></li>
+<li class="toctree-l2"><a class="reference internal" href="link_DicomImagePrintTags_docs.html">Read Image Meta-Data Dictionary and Print</a></li>
+<li class="toctree-l2"><a class="reference internal" href="link_DicomSeriesReader_docs.html">Dicom Series Reader</a></li>
+<li class="toctree-l2"><a class="reference internal" href="link_DicomSeriesReadModifyWrite_docs.html">Dicom Series Read Modify Write</a></li>
+<li class="toctree-l2"><a class="reference internal" href="link_DicomSeriesFromArray_docs.html">Dicom Series From Array</a></li>
+<li class="toctree-l2"><a class="reference internal" href="link_FastMarchingSegmentation_docs.html">Fast Marching Segmentation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="link_FilterProgressReporting_docs.html">Filter Progress Reporting</a></li>
+<li class="toctree-l2"><a class="reference internal" href="link_ImageGridManipulation_docs.html">Image Grid Manipulation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="link_ImageRegistrationMethod1_docs.html">Image Registration Method 1</a></li>
+<li class="toctree-l2"><a class="reference internal" href="link_ImageRegistrationMethod2_docs.html">Image Registration Method 2</a></li>
+<li class="toctree-l2"><a class="reference internal" href="link_ImageRegistrationMethod3_docs.html">Image Registration Method 3</a></li>
+<li class="toctree-l2"><a class="reference internal" href="link_ImageRegistrationMethod4_docs.html">Image Registration Method 4</a></li>
+<li class="toctree-l2"><a class="reference internal" href="link_ImageRegistrationMethodBSpline1_docs.html">Image Registration Method BSpline 1</a></li>
+<li class="toctree-l2"><a class="reference internal" href="link_ImageRegistrationMethodBSpline2_docs.html">Image Registration Method BSpline 2</a></li>
+<li class="toctree-l2"><a class="reference internal" href="link_ImageRegistrationMethodBSpline3_docs.html">Image Registration Method BSpline 3</a></li>
+<li class="toctree-l2"><a class="reference internal" href="link_ImageRegistrationMethodDisplacement1_docs.html">Image Registration Method Displacement 1</a></li>
+<li class="toctree-l2"><a class="reference internal" href="link_ImageRegistrationMethodExhaustive_docs.html">Image Registration Method Exhaustive</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Integration with ITK</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#overview">Overview</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#code">Code</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="link_N4BiasFieldCorrection_docs.html">N4 Bias Field Correction</a></li>
+<li class="toctree-l2"><a class="reference internal" href="link_SimpleGaussian_docs.html">Reading-Gaussian Blurring-Writing</a></li>
+<li class="toctree-l2"><a class="reference internal" href="link_ImageViewing_docs.html">Image Viewing</a></li>
+<li class="toctree-l2"><a class="reference internal" href="link_AdvancedImageReading_docs.html">Advanced Image Reading</a></li>
+<li class="toctree-l2"><a class="reference internal" href="link_ImageIOSelection_docs.html">IO Selection for Image Reading</a></li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">SimpleITK</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="link_examples.html">Examples</a> &raquo;</li>
+        
+      <li>Integration with ITK</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/link_ITKIntegration_docs.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="integration-with-itk">
+<h1>Integration with ITK<a class="headerlink" href="#integration-with-itk" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="overview">
+<h2>Overview<a class="headerlink" href="#overview" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="code">
+<h2>Code<a class="headerlink" href="#code" title="Permalink to this headline">¶</a></h2>
+<div class="sphinx-tabs docutils container">
+<div class="ui top attached tabular menu sphinx-menu docutils container">
+<div class="active item sphinx-data-tab-0-0 docutils container">
+<div class="docutils container">
+C++</div>
+</div>
+</div>
+<div class="ui bottom attached sphinx-tab tab segment sphinx-data-tab-0-0 active docutils container">
+<div class="highlight-c++ notranslate"><div class="highlight"><pre><span></span><span class="cp">#if defined(_MSC_VER)</span>
+<span class="cp">#pragma warning ( disable : 4786 )</span>
+<span class="cp">#endif</span>
+
+<span class="c1">// SimpleITK includes</span>
+<span class="cp">#include</span> <span class="cpf">&quot;SimpleITK.h&quot;</span><span class="cp"></span>
+
+<span class="c1">// ITK includes</span>
+<span class="cp">#include</span> <span class="cpf">&quot;itkImage.h&quot;</span><span class="cp"></span>
+<span class="cp">#include</span> <span class="cpf">&quot;itkCurvatureFlowImageFilter.h&quot;</span><span class="cp"></span>
+
+<span class="c1">// create convenient namespace alias</span>
+<span class="k">namespace</span> <span class="n">sitk</span> <span class="o">=</span> <span class="n">itk</span><span class="o">::</span><span class="n">simple</span><span class="p">;</span>
+
+<span class="cm">/**</span>
+<span class="cm"> * This example shows how ITK and SimpleITK can be used together to work</span>
+<span class="cm"> * on the same data. We use the same example application as the one presented</span>
+<span class="cm"> * in the Segmentation/ConnectedThresholdImageFilter.cxx example, but we</span>
+<span class="cm"> * replace the SimpleITK version of CurvatureFlowImageFilter with the</span>
+<span class="cm"> * corresponding ITK version. While not terribly useful in this situation since</span>
+<span class="cm"> * CurvatureFlowImageFilter is already available in SimpleITK this demonstrates</span>
+<span class="cm"> * how ITK filters that have not been converted for SimpleITK can still be used</span>
+<span class="cm"> * in a SimpleITK context</span>
+<span class="cm"> */</span>
+<span class="kt">int</span> <span class="nf">main</span><span class="p">(</span> <span class="kt">int</span> <span class="n">argc</span><span class="p">,</span> <span class="kt">char</span> <span class="o">*</span><span class="n">argv</span><span class="p">[])</span>
+<span class="p">{</span>
+
+  <span class="c1">//</span>
+  <span class="c1">// Check command line parameters</span>
+  <span class="c1">//</span>
+  <span class="k">if</span><span class="p">(</span> <span class="n">argc</span> <span class="o">&lt;</span> <span class="mi">7</span> <span class="p">)</span>
+    <span class="p">{</span>
+    <span class="n">std</span><span class="o">::</span><span class="n">cerr</span> <span class="o">&lt;&lt;</span> <span class="s">&quot;Missing Parameters &quot;</span> <span class="o">&lt;&lt;</span> <span class="n">std</span><span class="o">::</span><span class="n">endl</span><span class="p">;</span>
+    <span class="n">std</span><span class="o">::</span><span class="n">cerr</span> <span class="o">&lt;&lt;</span> <span class="s">&quot;Usage: &quot;</span> <span class="o">&lt;&lt;</span> <span class="n">argv</span><span class="p">[</span><span class="mi">0</span><span class="p">];</span>
+    <span class="n">std</span><span class="o">::</span><span class="n">cerr</span> <span class="o">&lt;&lt;</span> <span class="s">&quot; inputImage outputImage lowerThreshold upperThreshold &quot;</span>
+      <span class="s">&quot;seedX seedY [seed2X seed2Y ... ]&quot;</span> <span class="o">&lt;&lt;</span> <span class="n">std</span><span class="o">::</span><span class="n">endl</span><span class="p">;</span>
+    <span class="k">return</span> <span class="mi">1</span><span class="p">;</span>
+    <span class="p">}</span>
+
+
+  <span class="c1">//</span>
+  <span class="c1">// Read the image</span>
+  <span class="c1">//</span>
+  <span class="n">sitk</span><span class="o">::</span><span class="n">ImageFileReader</span> <span class="n">reader</span><span class="p">;</span>
+  <span class="n">reader</span><span class="p">.</span><span class="n">SetFileName</span><span class="p">(</span> <span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="p">(</span> <span class="n">argv</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="p">)</span> <span class="p">);</span>
+  <span class="n">sitk</span><span class="o">::</span><span class="n">Image</span> <span class="n">image</span> <span class="o">=</span> <span class="n">reader</span><span class="p">.</span><span class="n">Execute</span><span class="p">();</span>
+
+
+  <span class="c1">//</span>
+  <span class="c1">// Set up writer</span>
+  <span class="c1">//</span>
+  <span class="n">sitk</span><span class="o">::</span><span class="n">ImageFileWriter</span> <span class="n">writer</span><span class="p">;</span>
+  <span class="n">writer</span><span class="p">.</span><span class="n">SetFileName</span><span class="p">(</span> <span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="p">(</span> <span class="n">argv</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span> <span class="p">)</span> <span class="p">);</span>
+
+  <span class="c1">//////</span>
+  <span class="c1">// Blur using CurvatureFlowImageFilter</span>
+  <span class="c1">//</span>
+  <span class="c1">// Here we demonstrate the use of the ITK version of CurvatureFlowImageFilter</span>
+  <span class="c1">// instead of the SimpleITK version.</span>
+  <span class="c1">//////</span>
+
+  <span class="c1">//</span>
+  <span class="c1">// First, define the typedefs that correspond to the types of the input</span>
+  <span class="c1">// image. This requires foreknowlege of the data type of the input image.</span>
+  <span class="c1">//</span>
+  <span class="k">const</span> <span class="kt">unsigned</span> <span class="kt">int</span>                                 <span class="n">Dimension</span> <span class="o">=</span> <span class="mi">2</span><span class="p">;</span>
+  <span class="k">typedef</span> <span class="kt">float</span>                                      <span class="n">InternalPixelType</span><span class="p">;</span>
+  <span class="k">typedef</span> <span class="n">itk</span><span class="o">::</span><span class="n">Image</span><span class="o">&lt;</span> <span class="n">InternalPixelType</span><span class="p">,</span> <span class="n">Dimension</span> <span class="o">&gt;</span> <span class="n">InternalImageType</span><span class="p">;</span>
+
+  <span class="c1">//</span>
+  <span class="c1">// We must check the image dimension and the pixel type of the</span>
+  <span class="c1">// SimpleITK image match the ITK image we will cast to.s</span>
+  <span class="c1">//</span>
+  <span class="k">if</span> <span class="p">(</span> <span class="n">image</span><span class="p">.</span><span class="n">GetDimension</span><span class="p">()</span> <span class="o">!=</span> <span class="n">Dimension</span> <span class="p">)</span>
+    <span class="p">{</span>
+    <span class="n">std</span><span class="o">::</span><span class="n">cerr</span> <span class="o">&lt;&lt;</span> <span class="s">&quot;Input image is not a &quot;</span> <span class="o">&lt;&lt;</span> <span class="n">Dimension</span> <span class="o">&lt;&lt;</span> <span class="s">&quot; dimensional image as expected!&quot;</span> <span class="o">&lt;&lt;</span> <span class="n">std</span><span class="o">::</span><span class="n">endl</span><span class="p">;</span>
+    <span class="k">return</span> <span class="mi">1</span><span class="p">;</span>
+    <span class="p">}</span>
+
+  <span class="c1">//</span>
+  <span class="c1">// The read sitk::Image could be any pixel type. Cast the image, to</span>
+  <span class="c1">// float so we know what type we have.</span>
+  <span class="c1">//</span>
+  <span class="n">sitk</span><span class="o">::</span><span class="n">CastImageFilter</span> <span class="n">caster</span><span class="p">;</span>
+  <span class="n">caster</span><span class="p">.</span><span class="n">SetOutputPixelType</span><span class="p">(</span> <span class="n">sitk</span><span class="o">::</span><span class="n">sitkFloat32</span> <span class="p">);</span>
+  <span class="n">image</span> <span class="o">=</span> <span class="n">caster</span><span class="p">.</span><span class="n">Execute</span><span class="p">(</span> <span class="n">image</span> <span class="p">);</span>
+
+  <span class="c1">//</span>
+  <span class="c1">// Extract the itk image from the SimpleITK image</span>
+  <span class="c1">//</span>
+  <span class="n">InternalImageType</span><span class="o">::</span><span class="n">Pointer</span> <span class="n">itkImage</span> <span class="o">=</span>
+    <span class="k">dynamic_cast</span> <span class="o">&lt;</span><span class="n">InternalImageType</span><span class="o">*&gt;</span><span class="p">(</span> <span class="n">image</span><span class="p">.</span><span class="n">GetITKBase</span><span class="p">()</span> <span class="p">);</span>
+
+  <span class="c1">//</span>
+  <span class="c1">// Always check the results of dynamic_casts</span>
+  <span class="c1">//</span>
+  <span class="k">if</span> <span class="p">(</span> <span class="n">itkImage</span><span class="p">.</span><span class="n">IsNull</span><span class="p">()</span> <span class="p">)</span>
+    <span class="p">{</span>
+    <span class="n">std</span><span class="o">::</span><span class="n">cerr</span> <span class="o">&lt;&lt;</span> <span class="s">&quot;Unexpected error converting SimpleITK image to ITK image!&quot;</span> <span class="o">&lt;&lt;</span> <span class="n">std</span><span class="o">::</span><span class="n">endl</span><span class="p">;</span>
+    <span class="k">return</span> <span class="mi">1</span><span class="p">;</span>
+    <span class="p">}</span>
+
+  <span class="c1">//</span>
+  <span class="c1">// Set up the blur filter and attach it to the pipeline.</span>
+  <span class="c1">//</span>
+  <span class="k">typedef</span> <span class="n">itk</span><span class="o">::</span><span class="n">CurvatureFlowImageFilter</span><span class="o">&lt;</span> <span class="n">InternalImageType</span><span class="p">,</span> <span class="n">InternalImageType</span> <span class="o">&gt;</span>
+                                                     <span class="n">BlurFilterType</span><span class="p">;</span>
+  <span class="n">BlurFilterType</span><span class="o">::</span><span class="n">Pointer</span> <span class="n">blurFilter</span> <span class="o">=</span> <span class="n">BlurFilterType</span><span class="o">::</span><span class="n">New</span><span class="p">();</span>
+  <span class="n">blurFilter</span><span class="o">-&gt;</span><span class="n">SetInput</span><span class="p">(</span> <span class="n">itkImage</span> <span class="p">);</span>
+  <span class="n">blurFilter</span><span class="o">-&gt;</span><span class="n">SetNumberOfIterations</span><span class="p">(</span> <span class="mi">5</span> <span class="p">);</span>
+  <span class="n">blurFilter</span><span class="o">-&gt;</span><span class="n">SetTimeStep</span><span class="p">(</span> <span class="mf">0.125</span> <span class="p">);</span>
+
+
+
+  <span class="c1">//</span>
+  <span class="c1">// Execute the  Blur pipeline by calling Update() on the blur filter.</span>
+  <span class="c1">//</span>
+  <span class="n">blurFilter</span><span class="o">-&gt;</span><span class="n">Update</span><span class="p">();</span>
+
+
+  <span class="c1">//</span>
+  <span class="c1">// Return to the simpleITK setting by making a SimpleITK image using the</span>
+  <span class="c1">// output of the blur filter.</span>
+  <span class="c1">//</span>
+  <span class="n">sitk</span><span class="o">::</span><span class="n">Image</span> <span class="n">blurredImage</span> <span class="o">=</span> <span class="n">sitk</span><span class="o">::</span><span class="n">Image</span><span class="p">(</span> <span class="n">blurFilter</span><span class="o">-&gt;</span><span class="n">GetOutput</span><span class="p">()</span> <span class="p">);</span>
+
+
+  <span class="c1">//////</span>
+  <span class="c1">// Now that we have finished the ITK section, we return to the SimpleITK API</span>
+  <span class="c1">//////</span>
+
+
+  <span class="c1">//</span>
+  <span class="c1">// Set up ConnectedThresholdImageFilter for segmentation</span>
+  <span class="c1">//</span>
+  <span class="n">sitk</span><span class="o">::</span><span class="n">ConnectedThresholdImageFilter</span> <span class="n">segmentationFilter</span><span class="p">;</span>
+  <span class="n">segmentationFilter</span><span class="p">.</span><span class="n">SetLower</span><span class="p">(</span> <span class="n">atof</span><span class="p">(</span> <span class="n">argv</span><span class="p">[</span><span class="mi">3</span><span class="p">]</span> <span class="p">)</span> <span class="p">);</span>
+  <span class="n">segmentationFilter</span><span class="p">.</span><span class="n">SetUpper</span><span class="p">(</span> <span class="n">atof</span><span class="p">(</span> <span class="n">argv</span><span class="p">[</span><span class="mi">4</span><span class="p">]</span> <span class="p">)</span> <span class="p">);</span>
+  <span class="n">segmentationFilter</span><span class="p">.</span><span class="n">SetReplaceValue</span><span class="p">(</span> <span class="mi">255</span> <span class="p">);</span>
+
+  <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">5</span><span class="p">;</span> <span class="n">i</span><span class="o">+</span><span class="mi">1</span> <span class="o">&lt;</span> <span class="n">argc</span><span class="p">;</span> <span class="n">i</span><span class="o">+=</span><span class="mi">2</span><span class="p">)</span>
+    <span class="p">{</span>
+    <span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="kt">unsigned</span> <span class="kt">int</span><span class="o">&gt;</span> <span class="n">seed</span><span class="p">;</span>
+    <span class="n">seed</span><span class="p">.</span><span class="n">push_back</span><span class="p">(</span><span class="n">atoi</span><span class="p">(</span><span class="n">argv</span><span class="p">[</span><span class="n">i</span><span class="p">]));</span>
+    <span class="n">seed</span><span class="p">.</span><span class="n">push_back</span><span class="p">(</span><span class="n">atoi</span><span class="p">(</span><span class="n">argv</span><span class="p">[</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">]));</span>
+    <span class="n">segmentationFilter</span><span class="p">.</span><span class="n">AddSeed</span><span class="p">(</span><span class="n">seed</span><span class="p">);</span>
+    <span class="n">std</span><span class="o">::</span><span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">&quot;Adding a seed at &quot;</span><span class="p">;</span>
+    <span class="k">for</span><span class="p">(</span> <span class="kt">unsigned</span> <span class="kt">int</span> <span class="n">j</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">j</span> <span class="o">&lt;</span> <span class="n">seed</span><span class="p">.</span><span class="n">size</span><span class="p">();</span> <span class="o">++</span><span class="n">i</span> <span class="p">)</span>
+      <span class="p">{</span>
+      <span class="n">std</span><span class="o">::</span><span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="n">seed</span><span class="p">[</span><span class="n">j</span><span class="p">]</span> <span class="o">&lt;&lt;</span> <span class="s">&quot; &quot;</span><span class="p">;</span>
+      <span class="p">}</span>
+    <span class="n">std</span><span class="o">::</span><span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="n">std</span><span class="o">::</span><span class="n">endl</span><span class="p">;</span>
+    <span class="p">}</span>
+
+  <span class="n">sitk</span><span class="o">::</span><span class="n">Image</span> <span class="n">outImage</span> <span class="o">=</span> <span class="n">segmentationFilter</span><span class="p">.</span><span class="n">Execute</span><span class="p">(</span><span class="n">blurredImage</span><span class="p">);</span>
+
+
+  <span class="c1">//</span>
+  <span class="c1">// Write out the resulting file</span>
+  <span class="c1">//</span>
+  <span class="n">writer</span><span class="p">.</span><span class="n">Execute</span><span class="p">(</span><span class="n">outImage</span><span class="p">);</span>
+
+  <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="link_N4BiasFieldCorrection_docs.html" class="btn btn-neutral float-right" title="N4 Bias Field Correction" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="link_ImageRegistrationMethodExhaustive_docs.html" class="btn btn-neutral float-left" title="Image Registration Method Exhaustive" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019, Insight Software Consortium
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>
