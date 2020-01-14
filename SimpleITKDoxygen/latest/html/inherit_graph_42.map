@@ -1,0 +1,4 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="node1" href="$structitk_1_1simple_1_1IsInstantiated.html" title="itk::simple::IsInstantiated\l\&lt; ImageTypeToPixelID\&lt; itk\l::LabelMap\&lt; itk::LabelObject\l\&lt; TLabelType, VImageDimension\l \&gt; \&gt; \&gt;::PixelIDType, VImageDimension \&gt;" alt="" coords="5,5,291,91"/>
+<area shape="rect" id="node2" href="$structitk_1_1simple_1_1IsInstantiated_3_01itk_1_1LabelMap_3_01itk_1_1LabelObject_3_01TLabelType_8c9763b073bdea276b13f9d4c521053d.html" title="itk::simple::IsInstantiated\l\&lt; itk::LabelMap\&lt; itk::LabelObject\l\&lt; TLabelType, VImageDimension \&gt; \&gt;, 0 \&gt;" alt="" coords="339,20,631,76"/>
+</map>
