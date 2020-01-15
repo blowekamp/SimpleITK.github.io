@@ -1,0 +1,11 @@
+<map id="itk::simple::AffineTransform::MyVisitor" name="itk::simple::AffineTransform::MyVisitor">
+<area shape="rect" id="node2" href="/work/SimpleITK-build/SimpleITK-build/Documentation/Doxygen/InsightDoxygen.tag$classitk_1_1TransformBaseTemplate.html" title="itk::TransformBaseTemplate\l\&lt; TParametersValueType \&gt;" alt="" coords="165,267,363,309"/>
+<area shape="rect" id="node3" href="/work/SimpleITK-build/SimpleITK-build/Documentation/Doxygen/InsightDoxygen.tag$classitk_1_1Object.html" title="itk::Object" alt="" coords="221,189,307,216"/>
+<area shape="rect" id="node4" href="/work/SimpleITK-build/SimpleITK-build/Documentation/Doxygen/InsightDoxygen.tag$classitk_1_1LightObject.html" title="itk::LightObject" alt="" coords="5,99,121,125"/>
+<area shape="rect" id="node5" title="STL class. " alt="" coords="147,99,233,125"/>
+<area shape="rect" id="node6" title="STL class. " alt="" coords="122,6,259,47"/>
+<area shape="rect" id="node7" href="/work/SimpleITK-build/SimpleITK-build/Documentation/Doxygen/InsightDoxygen.tag$classitk_1_1MetaDataDictionary.html" title="itk::MetaDataDictionary" alt="" coords="258,99,429,125"/>
+<area shape="rect" id="node8" href="/work/SimpleITK-build/SimpleITK-build/Documentation/Doxygen/InsightDoxygen.tag$classitk_1_1TimeStamp.html" title="itk::TimeStamp" alt="" coords="461,99,579,125"/>
+<area shape="rect" id="node9" href="$classitk_1_1simple_1_1AffineTransform.html" title="An affine transformation about a fixed center with translation for a 2D or 3D coordinate. " alt="" coords="388,275,583,301"/>
+<area shape="rect" id="node10" href="$classitk_1_1simple_1_1Transform.html" title="A simplified wrapper around a variety of ITK transforms. " alt="" coords="406,189,564,216"/>
+</map>

@@ -1,0 +1,27 @@
+<map id="sitkBinaryProjectionImageFilter.h" name="sitkBinaryProjectionImageFilter.h">
+<area shape="rect" id="node3" href="$sitkBasicFilters_8h.html" title="sitkBasicFilters.h" alt="" coords="1342,171,1468,197"/>
+<area shape="rect" id="node39" href="$sitkImageFilter_8h.html" title="sitkImageFilter.h" alt="" coords="1764,96,1889,123"/>
+<area shape="rect" id="node4" href="$sitkMacro_8h.html" title="sitkMacro.h" alt="" coords="1633,709,1727,736"/>
+<area shape="rect" id="node11" href="$sitkInterpolator_8h.html" title="sitkInterpolator.h" alt="" coords="1611,477,1740,504"/>
+<area shape="rect" id="node14" href="$sitkRandomSeed_8h.html" title="sitkRandomSeed.h" alt="" coords="1334,245,1476,272"/>
+<area shape="rect" id="node15" href="$sitkTransform_8h.html" title="sitkTransform.h" alt="" coords="1191,245,1309,272"/>
+<area shape="rect" id="node10" href="$sitkConfigure_8h.html" title="sitkConfigure.h" alt="" coords="367,784,483,811"/>
+<area shape="rect" id="node12" href="$sitkCommon_8h.html" title="sitkCommon.h" alt="" coords="1623,635,1737,661"/>
+<area shape="rect" id="node16" href="$sitkExceptionObject_8h.html" title="sitkExceptionObject.h" alt="" coords="1961,477,2119,504"/>
+<area shape="rect" id="node17" href="$sitkImage_8h.html" title="sitkImage.h" alt="" coords="947,320,1043,347"/>
+<area shape="rect" id="node18" href="$sitkTemplateFunctions_8h.html" title="sitkTemplateFunctions.h" alt="" coords="1814,395,1988,421"/>
+<area shape="rect" id="node21" href="$sitkDetail_8h.html" title="sitkDetail.h" alt="" coords="864,395,957,421"/>
+<area shape="rect" id="node32" href="$sitkPixelIDTokens_8h.html" title="sitkPixelIDTokens.h" alt="" coords="699,395,839,421"/>
+<area shape="rect" id="node35" href="$type__traits_8h.html" title="nsstd/type_traits.h" alt="" coords="156,477,296,504"/>
+<area shape="rect" id="node37" href="$sitkEnableIf_8h.html" title="sitkEnableIf.h" alt="" coords="1134,395,1239,421"/>
+<area shape="rect" id="node38" href="$auto__ptr_8h.html" title="nsstd/auto_ptr.h" alt="" coords="131,395,257,421"/>
+<area shape="rect" id="node22" href="$sitkMemberFunctionFactoryBase_8h.html" title="sitkMemberFunctionFactory\lBase.h" alt="" coords="782,470,977,511"/>
+<area shape="rect" id="node23" href="$functional_8h.html" title="nsstd/functional.h" alt="" coords="626,560,760,587"/>
+<area shape="rect" id="node25" href="$sitkPixelIDTypes_8h.html" title="sitkPixelIDTypes.h" alt="" coords="788,635,921,661"/>
+<area shape="rect" id="node26" href="$sitkPixelIDTypeLists_8h.html" title="sitkPixelIDTypeLists.h" alt="" coords="887,560,1040,587"/>
+<area shape="rect" id="node29" href="$sitkNonCopyable_8h.html" title="sitkNonCopyable.h" alt="" coords="1476,560,1616,587"/>
+<area shape="rect" id="node33" href="$sitkPixelIDValues_8h.html" title="sitkPixelIDValues.h" alt="" coords="1394,477,1533,504"/>
+<area shape="rect" id="node40" href="$sitkMemberFunctionFactory_8h.html" title="sitkMemberFunctionFactory.h" alt="" coords="1417,320,1623,347"/>
+<area shape="rect" id="node42" href="$sitkProcessObject_8h.html" title="sitkProcessObject.h" alt="" coords="1928,245,2075,272"/>
+<area shape="rect" id="node43" href="$sitkEvent_8h.html" title="sitkEvent.h" alt="" coords="2143,477,2235,504"/>
+</map>

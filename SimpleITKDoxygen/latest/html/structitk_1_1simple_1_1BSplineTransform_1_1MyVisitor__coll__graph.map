@@ -1,0 +1,11 @@
+<map id="itk::simple::BSplineTransform::MyVisitor" name="itk::simple::BSplineTransform::MyVisitor">
+<area shape="rect" id="node2" href="$classitk_1_1simple_1_1BSplineTransform.html" title="A deformable transform over a bounded spatial domain using a BSpline representation for a 2D or 3D co..." alt="" coords="5,275,211,301"/>
+<area shape="rect" id="node3" href="$classitk_1_1simple_1_1Transform.html" title="A simplified wrapper around a variety of ITK transforms. " alt="" coords="29,189,187,216"/>
+<area shape="rect" id="node4" href="/work/SimpleITK-build/SimpleITK-build/Documentation/Doxygen/InsightDoxygen.tag$classitk_1_1TransformBaseTemplate.html" title="itk::TransformBaseTemplate\l\&lt; TParametersValueType \&gt;" alt="" coords="235,267,433,309"/>
+<area shape="rect" id="node5" href="/work/SimpleITK-build/SimpleITK-build/Documentation/Doxygen/InsightDoxygen.tag$classitk_1_1Object.html" title="itk::Object" alt="" coords="291,189,377,216"/>
+<area shape="rect" id="node6" href="/work/SimpleITK-build/SimpleITK-build/Documentation/Doxygen/InsightDoxygen.tag$classitk_1_1LightObject.html" title="itk::LightObject" alt="" coords="73,99,189,125"/>
+<area shape="rect" id="node7" title="STL class. " alt="" coords="215,99,301,125"/>
+<area shape="rect" id="node8" title="STL class. " alt="" coords="190,6,327,47"/>
+<area shape="rect" id="node9" href="/work/SimpleITK-build/SimpleITK-build/Documentation/Doxygen/InsightDoxygen.tag$classitk_1_1MetaDataDictionary.html" title="itk::MetaDataDictionary" alt="" coords="326,99,497,125"/>
+<area shape="rect" id="node10" href="/work/SimpleITK-build/SimpleITK-build/Documentation/Doxygen/InsightDoxygen.tag$classitk_1_1TimeStamp.html" title="itk::TimeStamp" alt="" coords="529,99,647,125"/>
+</map>

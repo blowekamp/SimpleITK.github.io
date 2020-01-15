@@ -1,0 +1,20 @@
+<map id="sitkVersorRigid3DTransform.h" name="sitkVersorRigid3DTransform.h">
+<area shape="rect" id="node2" href="$sitkCommon_8h.html" title="sitkCommon.h" alt="" coords="459,469,573,496"/>
+<area shape="rect" id="node10" href="$sitkTransform_8h.html" title="sitkTransform.h" alt="" coords="369,80,487,107"/>
+<area shape="rect" id="node3" href="$sitkMacro_8h.html" title="sitkMacro.h" alt="" coords="510,544,604,571"/>
+<area shape="rect" id="node9" href="$sitkConfigure_8h.html" title="sitkConfigure.h" alt="" coords="1275,619,1391,645"/>
+<area shape="rect" id="node11" href="$sitkExceptionObject_8h.html" title="sitkExceptionObject.h" alt="" coords="5,395,163,421"/>
+<area shape="rect" id="node12" href="$sitkImage_8h.html" title="sitkImage.h" alt="" coords="587,155,683,181"/>
+<area shape="rect" id="node13" href="$sitkTemplateFunctions_8h.html" title="sitkTemplateFunctions.h" alt="" coords="290,312,464,339"/>
+<area shape="rect" id="node17" href="$sitkDetail_8h.html" title="sitkDetail.h" alt="" coords="1609,229,1703,256"/>
+<area shape="rect" id="node28" href="$sitkPixelIDTokens_8h.html" title="sitkPixelIDTokens.h" alt="" coords="900,229,1040,256"/>
+<area shape="rect" id="node31" href="$type__traits_8h.html" title="nsstd/type_traits.h" alt="" coords="1008,312,1148,339"/>
+<area shape="rect" id="node33" href="$sitkEnableIf_8h.html" title="sitkEnableIf.h" alt="" coords="466,229,571,256"/>
+<area shape="rect" id="node34" href="$auto__ptr_8h.html" title="nsstd/auto_ptr.h" alt="" coords="698,229,824,256"/>
+<area shape="rect" id="node18" href="$sitkMemberFunctionFactoryBase_8h.html" title="sitkMemberFunctionFactory\lBase.h" alt="" coords="1558,305,1753,346"/>
+<area shape="rect" id="node19" href="$functional_8h.html" title="nsstd/functional.h" alt="" coords="1795,395,1929,421"/>
+<area shape="rect" id="node21" href="$sitkPixelIDTypes_8h.html" title="sitkPixelIDTypes.h" alt="" coords="1587,469,1720,496"/>
+<area shape="rect" id="node22" href="$sitkPixelIDTypeLists_8h.html" title="sitkPixelIDTypeLists.h" alt="" coords="1339,395,1492,421"/>
+<area shape="rect" id="node25" href="$sitkNonCopyable_8h.html" title="sitkNonCopyable.h" alt="" coords="1123,395,1263,421"/>
+<area shape="rect" id="node29" href="$sitkPixelIDValues_8h.html" title="sitkPixelIDValues.h" alt="" coords="691,312,831,339"/>
+</map>

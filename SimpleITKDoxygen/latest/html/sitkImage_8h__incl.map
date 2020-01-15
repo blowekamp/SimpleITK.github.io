@@ -1,0 +1,18 @@
+<map id="sitkImage.h" name="sitkImage.h">
+<area shape="rect" id="node2" href="$sitkCommon_8h.html" title="sitkCommon.h" alt="" coords="569,320,684,347"/>
+<area shape="rect" id="node10" href="$sitkTemplateFunctions_8h.html" title="sitkTemplateFunctions.h" alt="" coords="222,163,396,189"/>
+<area shape="rect" id="node15" href="$sitkDetail_8h.html" title="sitkDetail.h" alt="" coords="1269,80,1363,107"/>
+<area shape="rect" id="node26" href="$sitkPixelIDTokens_8h.html" title="sitkPixelIDTokens.h" alt="" coords="1511,80,1651,107"/>
+<area shape="rect" id="node29" href="$type__traits_8h.html" title="nsstd/type_traits.h" alt="" coords="1792,163,1932,189"/>
+<area shape="rect" id="node31" href="$sitkEnableIf_8h.html" title="sitkEnableIf.h" alt="" coords="1727,80,1832,107"/>
+<area shape="rect" id="node32" href="$auto__ptr_8h.html" title="nsstd/auto_ptr.h" alt="" coords="1882,80,2008,107"/>
+<area shape="rect" id="node3" href="$sitkMacro_8h.html" title="sitkMacro.h" alt="" coords="687,395,781,421"/>
+<area shape="rect" id="node9" href="$sitkConfigure_8h.html" title="sitkConfigure.h" alt="" coords="1476,469,1592,496"/>
+<area shape="rect" id="node11" href="$sitkExceptionObject_8h.html" title="sitkExceptionObject.h" alt="" coords="150,245,308,272"/>
+<area shape="rect" id="node16" href="$sitkMemberFunctionFactoryBase_8h.html" title="sitkMemberFunctionFactory\lBase.h" alt="" coords="1015,155,1211,197"/>
+<area shape="rect" id="node17" href="$functional_8h.html" title="nsstd/functional.h" alt="" coords="915,245,1049,272"/>
+<area shape="rect" id="node19" href="$sitkPixelIDTypes_8h.html" title="sitkPixelIDTypes.h" alt="" coords="1129,320,1263,347"/>
+<area shape="rect" id="node20" href="$sitkPixelIDTypeLists_8h.html" title="sitkPixelIDTypeLists.h" alt="" coords="1480,245,1633,272"/>
+<area shape="rect" id="node23" href="$sitkNonCopyable_8h.html" title="sitkNonCopyable.h" alt="" coords="699,245,839,272"/>
+<area shape="rect" id="node27" href="$sitkPixelIDValues_8h.html" title="sitkPixelIDValues.h" alt="" coords="1487,163,1627,189"/>
+</map>
