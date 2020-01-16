@@ -1,0 +1,11 @@
+<map id="itk::simple::ScaleTransform::MyVisitor" name="itk::simple::ScaleTransform::MyVisitor">
+<area shape="rect" id="node2" href="$classitk_1_1simple_1_1ScaleTransform.html" title="A 2D or 3D anisotropic scale of coordinate space around a fixed center. " alt="" coords="5,275,187,301"/>
+<area shape="rect" id="node3" href="$classitk_1_1simple_1_1Transform.html" title="A simplified wrapper around a variety of ITK transforms. " alt="" coords="21,189,169,216"/>
+<area shape="rect" id="node4" href="/work/SimpleITK-build/SimpleITK-build/Documentation/Doxygen/InsightDoxygen.tag$classitk_1_1TransformBaseTemplate.html" title="itk::TransformBaseTemplate\l\&lt; TParametersValueType \&gt;" alt="" coords="212,267,399,309"/>
+<area shape="rect" id="node5" href="/work/SimpleITK-build/SimpleITK-build/Documentation/Doxygen/InsightDoxygen.tag$classitk_1_1Object.html" title="itk::Object" alt="" coords="264,189,345,216"/>
+<area shape="rect" id="node6" href="/work/SimpleITK-build/SimpleITK-build/Documentation/Doxygen/InsightDoxygen.tag$classitk_1_1LightObject.html" title="itk::LightObject" alt="" coords="58,99,168,125"/>
+<area shape="rect" id="node7" title="STL class. " alt="" coords="193,99,272,125"/>
+<area shape="rect" id="node8" title="STL class. " alt="" coords="170,6,296,47"/>
+<area shape="rect" id="node9" href="/work/SimpleITK-build/SimpleITK-build/Documentation/Doxygen/InsightDoxygen.tag$classitk_1_1MetaDataDictionary.html" title="itk::MetaDataDictionary" alt="" coords="297,99,456,125"/>
+<area shape="rect" id="node10" href="/work/SimpleITK-build/SimpleITK-build/Documentation/Doxygen/InsightDoxygen.tag$classitk_1_1TimeStamp.html" title="itk::TimeStamp" alt="" coords="486,99,596,125"/>
+</map>
