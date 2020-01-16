@@ -1,0 +1,12 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="node1" href="/work/SimpleITK-build/SimpleITK-build/Documentation/Doxygen/InsightDoxygen.tag$structitk_1_1ImageSourceCommon.html" title="itk::ImageSourceCommon" alt="" coords="297,5,471,32"/>
+<area shape="rect" id="node2" href="/work/SimpleITK-build/SimpleITK-build/Documentation/Doxygen/InsightDoxygen.tag$classitk_1_1ImageSource.html" title="itk::ImageSource\&lt; TOutput\lImage \&gt;" alt="" coords="537,23,717,65"/>
+<area shape="rect" id="node3" href="/work/SimpleITK-build/SimpleITK-build/Documentation/Doxygen/InsightDoxygen.tag$classitk_1_1ImageToImageFilter.html" title="itk::ImageToImageFilter\l\&lt; TInputImage, TOutputImage \&gt;" alt="" coords="781,53,992,94"/>
+<area shape="rect" id="node4" href="/work/SimpleITK-build/SimpleITK-build/Documentation/Doxygen/InsightDoxygen.tag$classitk_1_1InPlaceImageFilter.html" title="itk::InPlaceImageFilter\l\&lt; TInputImage, TOutputImage \&gt;" alt="" coords="1040,53,1251,94"/>
+<area shape="rect" id="node5" href="/work/SimpleITK-build/SimpleITK-build/Documentation/Doxygen/InsightDoxygen.tag$classitk_1_1CastImageFilter.html" title="itk::CastImageFilter\l\&lt; TImageType, TImageType \&gt;" alt="" coords="1299,53,1499,94"/>
+<area shape="rect" id="node6" href="$classitk_1_1HashImageFilter.html" title="Generates a hash string from an image. " alt="" coords="1547,53,1687,94"/>
+<area shape="rect" id="node7" href="/work/SimpleITK-build/SimpleITK-build/Documentation/Doxygen/InsightDoxygen.tag$classitk_1_1ImageToImageFilterCommon.html" title="itk::ImageToImageFilterCommon" alt="" coords="520,89,733,116"/>
+<area shape="rect" id="node8" href="/work/SimpleITK-build/SimpleITK-build/Documentation/Doxygen/InsightDoxygen.tag$classitk_1_1LightObject.html" title="itk::LightObject" alt="" coords="6,56,117,83"/>
+<area shape="rect" id="node9" href="/work/SimpleITK-build/SimpleITK-build/Documentation/Doxygen/InsightDoxygen.tag$classitk_1_1Object.html" title="itk::Object" alt="" coords="165,56,248,83"/>
+<area shape="rect" id="node10" href="/work/SimpleITK-build/SimpleITK-build/Documentation/Doxygen/InsightDoxygen.tag$classitk_1_1ProcessObject.html" title="itk::ProcessObject" alt="" coords="319,56,449,83"/>
+</map>

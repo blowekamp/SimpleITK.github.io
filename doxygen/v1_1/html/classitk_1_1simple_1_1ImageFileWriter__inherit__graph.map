@@ -1,0 +1,4 @@
+<map id="itk::simple::ImageFileWriter" name="itk::simple::ImageFileWriter">
+<area shape="rect" id="node2" href="$classitk_1_1simple_1_1ProcessObject.html" title="Base class for SimpleITK classes based on ProcessObject. " alt="" coords="8,80,184,107"/>
+<area shape="rect" id="node3" href="$classitk_1_1simple_1_1NonCopyable.html" title="An inheratable class to disable copying of a class. " alt="" coords="11,5,180,32"/>
+</map>

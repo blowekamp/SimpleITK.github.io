@@ -1,0 +1,26 @@
+<map id="sitkCenteredTransformInitializerFilter.h" name="sitkCenteredTransformInitializerFilter.h">
+<area shape="rect" id="node3" href="$sitkBasicFilters_8h.html" title="sitkBasicFilters.h" alt="" coords="1474,96,1597,123"/>
+<area shape="rect" id="node39" href="$sitkProcessObject_8h.html" title="sitkProcessObject.h" alt="" coords="1858,171,1997,197"/>
+<area shape="rect" id="node43" href="$sitkMemberFunctionFactory_8h.html" title="sitkMemberFunctionFactory.h" alt="" coords="698,245,893,272"/>
+<area shape="rect" id="node4" href="$sitkMacro_8h.html" title="sitkMacro.h" alt="" coords="1116,635,1206,661"/>
+<area shape="rect" id="node11" href="$sitkInterpolator_8h.html" title="sitkInterpolator.h" alt="" coords="2008,403,2126,429"/>
+<area shape="rect" id="node14" href="$sitkRandomSeed_8h.html" title="sitkRandomSeed.h" alt="" coords="1625,171,1758,197"/>
+<area shape="rect" id="node15" href="$sitkTransform_8h.html" title="sitkTransform.h" alt="" coords="1479,171,1592,197"/>
+<area shape="rect" id="node10" href="$sitkConfigure_8h.html" title="sitkConfigure.h" alt="" coords="778,709,888,736"/>
+<area shape="rect" id="node12" href="$sitkCommon_8h.html" title="sitkCommon.h" alt="" coords="1594,560,1701,587"/>
+<area shape="rect" id="node16" href="$sitkExceptionObject_8h.html" title="sitkExceptionObject.h" alt="" coords="1348,403,1498,429"/>
+<area shape="rect" id="node17" href="$sitkImage_8h.html" title="sitkImage.h" alt="" coords="1285,245,1376,272"/>
+<area shape="rect" id="node18" href="$sitkTemplateFunctions_8h.html" title="sitkTemplateFunctions.h" alt="" coords="1818,320,1982,347"/>
+<area shape="rect" id="node21" href="$sitkDetail_8h.html" title="sitkDetail.h" alt="" coords="562,320,650,347"/>
+<area shape="rect" id="node32" href="$sitkPixelIDTokens_8h.html" title="sitkPixelIDTokens.h" alt="" coords="726,320,865,347"/>
+<area shape="rect" id="node35" href="$type__traits_8h.html" title="nsstd/type_traits.h" alt="" coords="822,403,952,429"/>
+<area shape="rect" id="node37" href="$sitkEnableIf_8h.html" title="sitkEnableIf.h" alt="" coords="1043,320,1145,347"/>
+<area shape="rect" id="node38" href="$auto__ptr_8h.html" title="nsstd/auto_ptr.h" alt="" coords="1272,320,1388,347"/>
+<area shape="rect" id="node22" href="$sitkMemberFunctionFactoryBase_8h.html" title="sitkMemberFunctionFactory\lBase.h" alt="" coords="205,395,389,437"/>
+<area shape="rect" id="node23" href="$functional_8h.html" title="nsstd/functional.h" alt="" coords="22,485,148,512"/>
+<area shape="rect" id="node25" href="$sitkPixelIDTypes_8h.html" title="sitkPixelIDTypes.h" alt="" coords="254,560,388,587"/>
+<area shape="rect" id="node26" href="$sitkPixelIDTypeLists_8h.html" title="sitkPixelIDTypeLists.h" alt="" coords="540,485,693,512"/>
+<area shape="rect" id="node29" href="$sitkNonCopyable_8h.html" title="sitkNonCopyable.h" alt="" coords="1685,485,1818,512"/>
+<area shape="rect" id="node33" href="$sitkPixelIDValues_8h.html" title="sitkPixelIDValues.h" alt="" coords="978,403,1114,429"/>
+<area shape="rect" id="node40" href="$sitkEvent_8h.html" title="sitkEvent.h" alt="" coords="2202,403,2290,429"/>
+</map>
