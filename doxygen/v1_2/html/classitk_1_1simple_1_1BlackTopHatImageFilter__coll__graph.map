@@ -1,0 +1,21 @@
+<map id="itk::simple::BlackTopHatImageFilter" name="itk::simple::BlackTopHatImageFilter">
+<area shape="rect" id="node2" href="$classitk_1_1simple_1_1ImageFilter.html" title="itk::simple::ImageFilter\&lt; 1 \&gt;" alt="" coords="2464,521,2651,548"/>
+<area shape="rect" id="node3" href="$classitk_1_1simple_1_1ProcessObject.html" title="Base class for SimpleITK classes based on ProcessObject. " alt="" coords="1963,572,2139,599"/>
+<area shape="rect" id="node28" href="$classitk_1_1simple_1_1ImageFilter.html" title="The base interface for SimpleITK filters that take one input image. " alt="" coords="2189,572,2379,599"/>
+<area shape="rect" id="node4" href="$classitk_1_1simple_1_1NonCopyable.html" title="An inheratable class to disable copying of a class. " alt="" coords="485,784,654,811"/>
+<area shape="rect" id="node7" href="$classitk_1_1simple_1_1Command.html" title="An implementation of the Command design pattern for callback. " alt="" coords="911,804,1062,831"/>
+<area shape="rect" id="node6" href="$structitk_1_1simple_1_1ProcessObject_1_1EventCommand.html" title="itk::simple::ProcessObject\l::EventCommand" alt="" coords="1309,802,1485,843"/>
+<area shape="rect" id="node9" title="STL class. " alt="" coords="143,723,241,749"/>
+<area shape="rect" id="node22" title="STL class. " alt="" coords="508,507,631,533"/>
+<area shape="rect" id="node11" title="STL class. " alt="" coords="529,557,609,584"/>
+<area shape="rect" id="node16" href="/work/SimpleITK-build/SimpleITK-build/Documentation/Doxygen/InsightDoxygen.tag$classitk_1_1Object.html" title="itk::Object" alt="" coords="945,299,1028,325"/>
+<area shape="rect" id="node12" title="STL class. " alt="" coords="129,645,255,686"/>
+<area shape="rect" id="node13" title="STL class. " alt="" coords="730,644,827,671"/>
+<area shape="rect" id="node24" title="STL class. " alt="" coords="511,56,627,83"/>
+<area shape="rect" id="node15" href="/work/SimpleITK-build/SimpleITK-build/Documentation/Doxygen/InsightDoxygen.tag$classitk_1_1ProcessObject.html" title="itk::ProcessObject" alt="" coords="1332,344,1463,371"/>
+<area shape="rect" id="node17" href="/work/SimpleITK-build/SimpleITK-build/Documentation/Doxygen/InsightDoxygen.tag$classitk_1_1LightObject.html" title="itk::LightObject" alt="" coords="514,188,625,215"/>
+<area shape="rect" id="node18" href="/work/SimpleITK-build/SimpleITK-build/Documentation/Doxygen/InsightDoxygen.tag$classitk_1_1MetaDataDictionary.html" title="itk::MetaDataDictionary" alt="" coords="489,305,649,332"/>
+<area shape="rect" id="node19" href="/work/SimpleITK-build/SimpleITK-build/Documentation/Doxygen/InsightDoxygen.tag$classitk_1_1TimeStamp.html" title="itk::TimeStamp" alt="" coords="514,128,625,155"/>
+<area shape="rect" id="node25" href="/work/SimpleITK-build/SimpleITK-build/Documentation/Doxygen/InsightDoxygen.tag$classitk_1_1SmartPointer.html" title="itk::SmartPointer\&lt;\l Self \&gt;" alt="" coords="505,239,633,281"/>
+<area shape="rect" id="node26" href="/work/SimpleITK-build/SimpleITK-build/Documentation/Doxygen/InsightDoxygen.tag$classitk_1_1SmartPointer.html" title="itk::SmartPointer\&lt;\l TObjectType \&gt;" alt="" coords="128,239,256,281"/>
+</map>
