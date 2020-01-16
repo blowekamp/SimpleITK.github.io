@@ -1,0 +1,18 @@
+<map id="sitkImage.h" name="sitkImage.h">
+<area shape="rect" id="node2" href="$sitkCommon_8h.html" title="sitkCommon.h" alt="" coords="547,320,653,347"/>
+<area shape="rect" id="node10" href="$sitkTemplateFunctions_8h.html" title="sitkTemplateFunctions.h" alt="" coords="212,163,376,189"/>
+<area shape="rect" id="node15" href="$sitkDetail_8h.html" title="sitkDetail.h" alt="" coords="1219,80,1307,107"/>
+<area shape="rect" id="node26" href="$sitkPixelIDTokens_8h.html" title="sitkPixelIDTokens.h" alt="" coords="1454,80,1593,107"/>
+<area shape="rect" id="node29" href="$type__traits_8h.html" title="nsstd/type_traits.h" alt="" coords="1732,163,1861,189"/>
+<area shape="rect" id="node31" href="$sitkEnableIf_8h.html" title="sitkEnableIf.h" alt="" coords="1670,80,1772,107"/>
+<area shape="rect" id="node32" href="$auto__ptr_8h.html" title="nsstd/auto_ptr.h" alt="" coords="1821,80,1936,107"/>
+<area shape="rect" id="node3" href="$sitkMacro_8h.html" title="sitkMacro.h" alt="" coords="659,395,749,421"/>
+<area shape="rect" id="node9" href="$sitkConfigure_8h.html" title="sitkConfigure.h" alt="" coords="1427,469,1537,496"/>
+<area shape="rect" id="node11" href="$sitkExceptionObject_8h.html" title="sitkExceptionObject.h" alt="" coords="143,245,293,272"/>
+<area shape="rect" id="node16" href="$sitkMemberFunctionFactoryBase_8h.html" title="sitkMemberFunctionFactory\lBase.h" alt="" coords="972,155,1156,197"/>
+<area shape="rect" id="node17" href="$functional_8h.html" title="nsstd/functional.h" alt="" coords="876,245,1001,272"/>
+<area shape="rect" id="node19" href="$sitkPixelIDTypes_8h.html" title="sitkPixelIDTypes.h" alt="" coords="1084,320,1217,347"/>
+<area shape="rect" id="node20" href="$sitkPixelIDTypeLists_8h.html" title="sitkPixelIDTypeLists.h" alt="" coords="1423,245,1576,272"/>
+<area shape="rect" id="node23" href="$sitkNonCopyable_8h.html" title="sitkNonCopyable.h" alt="" coords="668,245,801,272"/>
+<area shape="rect" id="node27" href="$sitkPixelIDValues_8h.html" title="sitkPixelIDValues.h" alt="" coords="1431,163,1568,189"/>
+</map>
