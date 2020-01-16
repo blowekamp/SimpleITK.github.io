@@ -1,0 +1,296 @@
+\batchmode
+\documentclass{article}
+\usepackage{epsfig}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\pagestyle{empty}
+\begin{document}
+\[ w(x) = 0.54 + 0.46 cos(\frac{\pi x}{m} ) \]
+\pagebreak
+
+\[ w(x) = cos(\frac{\pi x}{2 m} ) \]
+\pagebreak
+
+\[ w(x) = 1 - ( \frac{x^2}{m^2} ) \]
+\pagebreak
+
+\[ w(x) = \textrm{sinc} ( \frac{x}{m} ) \]
+\pagebreak
+
+\[ w(x) = 0.42 + 0.5 cos(\frac{\pi x}{m}) + 0.08 cos(\frac{2 \pi x}{m}) \]
+\pagebreak
+
+$[1,2,3,4,5,6]$
+\pagebreak
+
+\[ \left[\begin{array}{ccc} 1 & 2 & 3 \\ 4 & 5 & 6 \end{array}\right] \]
+\pagebreak
+
+$ I = I_0 + N $
+\pagebreak
+
+$ I $
+\pagebreak
+
+$ I_0 $
+\pagebreak
+
+$ N $
+\pagebreak
+
+$ \mu $
+\pagebreak
+
+$ \sigma^2 $
+\pagebreak
+
+$ N \sim \mathcal{N}(\mu, \sigma^2) $
+\pagebreak
+
+$ \phi $
+\pagebreak
+
+\[ u_{i,j,k}^{n+1} = \left\{ \begin{array}{ll} \mbox{max} (u_{i,j,k}^{n} + \Delta t H_{i,j,k}^{n}, 0) & \mbox{\f$B_{i,j,k} = 1\f$} \\ \mbox{min} (u_{i,j,k}^{n} + \Delta t H_{i,j,k}^{n}, 0) & \mbox{\f$B_{i,j,k} = -1\f$} \end{array}\right. \]
+\pagebreak
+
+$ u_{i,j,k}^{n} $
+\pagebreak
+
+$ (i,j,k) $
+\pagebreak
+
+$ n $
+\pagebreak
+
+$ H $
+\pagebreak
+
+$ B $
+\pagebreak
+
+\[ I_t = F_{\mbox{minmax}} |\nabla I| \]
+\pagebreak
+
+$ F_{\mbox{minmax}} = \min(\kappa,0) $
+\pagebreak
+
+$ \mbox{Avg}_{\mbox{stencil}}(x) $
+\pagebreak
+
+$ T_{thresold} $
+\pagebreak
+
+$ \max(\kappa,0) $
+\pagebreak
+
+$ \kappa $
+\pagebreak
+
+$ x $
+\pagebreak
+
+$ R $
+\pagebreak
+
+$ T_{threshold} $
+\pagebreak
+
+\[ Output(x_i) = \begin{cases} InsideValue & \text{if \f$LowerThreshold \leq x_i \leq UpperThreshold\f$} \\ OutsideValue & \text{otherwise} \end{cases} \]
+\pagebreak
+
+\[ \mathsf{I}_{out}(x_o,x_1) = \frac{\sum_{i=0}^{f_0}\sum_{j=0}^{f_1}\mathsf{I}_{in}(f_0 x_o+i,f_1 x_1+j)}{f_0 f_1} \]
+\pagebreak
+
+$ \lfloor (2*i+s-1)/2 \rfloor $
+\pagebreak
+
+$i$
+\pagebreak
+
+$s$
+\pagebreak
+
+\[ I_t = \kappa |\nabla I| \]
+\pagebreak
+
+$ f(\mathbf{x}) = f^*(-\mathbf{x}) $
+\pagebreak
+
+\[ g(I) = 1 / ( 1 + | (\nabla * G)(I)| ) \]
+\pagebreak
+
+\[ g(I) = \exp^{-|(\nabla * G)(I)|} \]
+\pagebreak
+
+$ (\nabla * G) $
+\pagebreak
+
+$ c $
+\pagebreak
+
+\[ H(A,B) = \max(h(A,B),h(B,A)) \]
+\pagebreak
+
+\[ h(A,B) = \max_{a \in A} \min_{b \in B} \| a - b\| \]
+\pagebreak
+
+$A$
+\pagebreak
+
+$B$
+\pagebreak
+
+\[ hat{F}(\omega) = \begin{cases} G(\omega) / H(\omega) & \text{if \f$|H(\omega)| \geq \epsilon\f$} \\ 0 & \text{otherwise} \end{cases} \]
+\pagebreak
+
+$\hat{F}(\omega)$
+\pagebreak
+
+$G(\omega)$
+\pagebreak
+
+$H(\omega)$
+\pagebreak
+
+$\epsilon$
+\pagebreak
+
+$||f \otimes h - g||$
+\pagebreak
+
+$f$
+\pagebreak
+
+$\otimes$
+\pagebreak
+
+$h$
+\pagebreak
+
+$g$
+\pagebreak
+
+$ F_{\mbox{minmax}} = \max(\kappa,0) $
+\pagebreak
+
+$ \min(\kappa,0) $
+\pagebreak
+
+\[ \frac{ 1 }{ \sigma \sqrt{ 2 \pi } } \exp{ \left( - \frac{x^2}{ 2 \sigma^2 } \right) } \]
+\pagebreak
+
+\[ L(x; t) = g(x; t) \ast f(x) \]
+\pagebreak
+
+\[ f(x) \]
+\pagebreak
+
+\[ g(x; t) = \frac{1}{ \sqrt{ 2 \pi t} } \exp{ \left( -\frac{x^2}{ 2 t } \right) } \]
+\pagebreak
+
+\[\ast\]
+\pagebreak
+
+\[ t = \sigma^2 \]
+\pagebreak
+
+\[ \partial_\xi = \sqrt{t} \partial_x \]
+\pagebreak
+
+\[ \sigma^N \]
+\pagebreak
+
+\[ outputPixel = ( inputPixel - inputMin) \cdot \frac{(outputMax - outputMin )}{(inputMax - inputMin)} + outputMin \]
+\pagebreak
+
+$\pm 1.0$
+\pagebreak
+
+$ \epsilon $
+\pagebreak
+
+$ I = N(I_0) $
+\pagebreak
+
+$ N(I_0) $
+\pagebreak
+
+$ I = \frac{N(I_0 \times s)}{s} $
+\pagebreak
+
+$ s $
+\pagebreak
+
+$ \lambda $
+\pagebreak
+
+$ \begin{array}{l} k \leftarrow 0 \\ p \leftarrow 1 \\ \textbf{repeat} \\ \left\{ \begin{array}{l} k \leftarrow k+1 \\ p \leftarrow p \ast U() \end{array} \right. \\ \textbf{until } p > e^{\lambda} \\ \textbf{return} (k) \end{array} $
+\pagebreak
+
+$ U() $
+\pagebreak
+
+$ [0,1] $
+\pagebreak
+
+$ \lambda + \sqrt{\lambda} \times N()$
+\pagebreak
+
+$ N() $
+\pagebreak
+
+\[ f(x) = (Max-Min) \cdot \frac{1}{\left(1+e^{- \frac{ x - \beta }{\alpha}}\right)} + Min \]
+\pagebreak
+
+\[ S = \frac{2 | A \cap B |}{|A| + |B|} \]
+\pagebreak
+
+$|\cdot|$
+\pagebreak
+
+$\cap$
+\pagebreak
+
+$S$
+\pagebreak
+
+\[ ||\hat{f} \otimes h - g||_{L_2}^2 + \mu||\hat{f}||^2 \]
+\pagebreak
+
+$\hat{f}$
+\pagebreak
+
+$\mu$
+\pagebreak
+
+$H^*(\omega) / (|H(\omega)|^2 + \mu)$
+\pagebreak
+
+\[ p_{in} = p_{out} + d \]
+\pagebreak
+
+$W(\omega) = H^*(\omega) / (|H(\omega)|^2 + (1 / SNR(\omega)))$
+\pagebreak
+
+$SNR(\omega)$
+\pagebreak
+
+$P_f(\omega) / P_n(\omega)$
+\pagebreak
+
+$P_f(\omega)$
+\pagebreak
+
+$P_n(\omega)$
+\pagebreak
+
+$\hat{f}(x)$
+\pagebreak
+
+$f(x)$
+\pagebreak
+
+$\omega$
+\pagebreak
+
+\end{document}

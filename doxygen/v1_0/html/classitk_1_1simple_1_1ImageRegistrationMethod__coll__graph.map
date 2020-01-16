@@ -1,0 +1,22 @@
+<map id="itk::simple::ImageRegistrationMethod" name="itk::simple::ImageRegistrationMethod">
+<area shape="rect" id="node2" href="$classitk_1_1simple_1_1ProcessObject.html" title="Base class for SimpleITK classes based on ProcessObject. " alt="" coords="2157,868,2333,895"/>
+<area shape="rect" id="node3" href="$classitk_1_1simple_1_1NonCopyable.html" title="An inheratable class to disable copying of a class. " alt="" coords="485,1089,654,1116"/>
+<area shape="rect" id="node6" href="$classitk_1_1simple_1_1Command.html" title="An implementation of the Command design pattern for callback. " alt="" coords="911,1036,1062,1063"/>
+<area shape="rect" id="node5" href="$structitk_1_1simple_1_1ProcessObject_1_1EventCommand.html" title="itk::simple::ProcessObject\l::EventCommand" alt="" coords="1309,1029,1485,1070"/>
+<area shape="rect" id="node8" title="STL class. " alt="" coords="143,889,241,916"/>
+<area shape="rect" id="node21" title="STL class. " alt="" coords="508,609,631,636"/>
+<area shape="rect" id="node10" title="STL class. " alt="" coords="529,815,609,841"/>
+<area shape="rect" id="node15" href="/work/SimpleITK-build/SimpleITK-build/Documentation/Doxygen/InsightDoxygen.tag$classitk_1_1Object.html" title="itk::Object" alt="" coords="945,629,1028,656"/>
+<area shape="rect" id="node11" title="STL class. " alt="" coords="129,807,255,849"/>
+<area shape="rect" id="node12" title="STL class. " alt="" coords="730,1001,827,1028"/>
+<area shape="rect" id="node23" title="STL class. " alt="" coords="511,239,627,265"/>
+<area shape="rect" id="node14" href="/work/SimpleITK-build/SimpleITK-build/Documentation/Doxygen/InsightDoxygen.tag$classitk_1_1ProcessObject.html" title="itk::ProcessObject" alt="" coords="1332,604,1463,631"/>
+<area shape="rect" id="node16" href="/work/SimpleITK-build/SimpleITK-build/Documentation/Doxygen/InsightDoxygen.tag$classitk_1_1LightObject.html" title="itk::LightObject" alt="" coords="514,660,625,687"/>
+<area shape="rect" id="node17" href="/work/SimpleITK-build/SimpleITK-build/Documentation/Doxygen/InsightDoxygen.tag$classitk_1_1MetaDataDictionary.html" title="itk::MetaDataDictionary" alt="" coords="489,511,649,537"/>
+<area shape="rect" id="node18" href="/work/SimpleITK-build/SimpleITK-build/Documentation/Doxygen/InsightDoxygen.tag$classitk_1_1TimeStamp.html" title="itk::TimeStamp" alt="" coords="514,441,625,468"/>
+<area shape="rect" id="node24" href="/work/SimpleITK-build/SimpleITK-build/Documentation/Doxygen/InsightDoxygen.tag$classitk_1_1SmartPointer.html" title="itk::SmartPointer\&lt;\l Self \&gt;" alt="" coords="505,369,633,410"/>
+<area shape="rect" id="node25" href="/work/SimpleITK-build/SimpleITK-build/Documentation/Doxygen/InsightDoxygen.tag$classitk_1_1SmartPointer.html" title="itk::SmartPointer\&lt;\l TObjectType \&gt;" alt="" coords="128,369,256,410"/>
+<area shape="rect" id="node28" href="$classitk_1_1simple_1_1Image.html" title="The main Image class for SimpleITK. " alt="" coords="2182,1028,2309,1055"/>
+<area shape="rect" id="node29" href="$classitk_1_1simple_1_1PimpleImageBase.html" title="Private implementation idiom image base class. " alt="" coords="1722,1028,1918,1055"/>
+<area shape="rect" id="node31" href="$classitk_1_1simple_1_1Transform.html" title="A simplified wrapper around a variety of ITK transforms. " alt="" coords="2171,1101,2320,1128"/>
+</map>
