@@ -1,6 +1,13 @@
 <map id="sitkCommand.h" name="sitkCommand.h">
-<area shape="rect" id="node2" href="$sitkCommon_8h.html" title="sitkCommon.h" alt="" coords="223,155,337,181"/>
-<area shape="rect" id="node10" href="$sitkNonCopyable_8h.html" title="sitkNonCopyable.h" alt="" coords="264,80,404,107"/>
-<area shape="rect" id="node3" href="$sitkMacro_8h.html" title="sitkMacro.h" alt="" coords="233,229,327,256"/>
-<area shape="rect" id="node9" href="$sitkConfigure_8h.html" title="sitkConfigure.h" alt="" coords="469,304,585,331"/>
+<area shape="rect" id="node1" title=" " alt="" coords="275,5,401,32"/>
+<area shape="rect" id="node2" href="$sitkCommon_8h.html" title=" " alt="" coords="223,155,341,181"/>
+<area shape="rect" id="node10" href="$sitkNonCopyable_8h.html" title=" " alt="" coords="265,80,411,107"/>
+<area shape="rect" id="node11" title=" " alt="" coords="435,80,478,107"/>
+<area shape="rect" id="node3" href="$sitkMacro_8h.html" title=" " alt="" coords="233,229,331,256"/>
+<area shape="rect" id="node4" title=" " alt="" coords="5,304,76,331"/>
+<area shape="rect" id="node5" title=" " alt="" coords="101,304,175,331"/>
+<area shape="rect" id="node6" title=" " alt="" coords="199,304,269,331"/>
+<area shape="rect" id="node7" title=" " alt="" coords="293,304,367,331"/>
+<area shape="rect" id="node8" title=" " alt="" coords="391,304,450,331"/>
+<area shape="rect" id="node9" href="$sitkConfigure_8h.html" title=" " alt="" coords="474,304,594,331"/>
 </map>

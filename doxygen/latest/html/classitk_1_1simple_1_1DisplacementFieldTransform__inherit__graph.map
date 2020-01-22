@@ -1,3 +1,4 @@
 <map id="itk::simple::DisplacementFieldTransform" name="itk::simple::DisplacementFieldTransform">
-<area shape="rect" id="node2" href="$classitk_1_1simple_1_1Transform.html" title="A simplified wrapper around a variety of ITK transforms. " alt="" coords="17,5,175,32"/>
+<area shape="rect" id="node1" title="A dense deformable transform over a bounded spatial domain for 2D or 3D coordinates space." alt="" coords="5,80,195,121"/>
+<area shape="rect" id="node2" href="$classitk_1_1simple_1_1Transform.html" title="A simplified wrapper around a variety of ITK transforms." alt="" coords="18,5,182,32"/>
 </map>

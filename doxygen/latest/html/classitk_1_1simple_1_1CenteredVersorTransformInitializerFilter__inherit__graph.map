@@ -1,4 +1,5 @@
 <map id="itk::simple::CenteredVersorTransformInitializerFilter" name="itk::simple::CenteredVersorTransformInitializerFilter">
-<area shape="rect" id="node2" href="$classitk_1_1simple_1_1ProcessObject.html" title="Base class for SimpleITK classes based on ProcessObject. " alt="" coords="9,80,196,107"/>
-<area shape="rect" id="node3" href="$classitk_1_1simple_1_1NonCopyable.html" title="An inheratable class to disable copying of a class. " alt="" coords="13,5,192,32"/>
+<area shape="rect" id="node1" title="CenteredVersorTransformInitializerFilter is a helper class intended to initialize the center of rotat..." alt="" coords="5,155,204,196"/>
+<area shape="rect" id="node2" href="$classitk_1_1simple_1_1ProcessObject.html" title="Base class for SimpleITK classes based on ProcessObject." alt="" coords="9,80,200,107"/>
+<area shape="rect" id="node3" href="$classitk_1_1simple_1_1NonCopyable.html" title="An inheratable class to disable copying of a class." alt="" coords="11,5,198,32"/>
 </map>

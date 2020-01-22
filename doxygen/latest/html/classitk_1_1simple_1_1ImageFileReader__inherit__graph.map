@@ -1,5 +1,6 @@
 <map id="itk::simple::ImageFileReader" name="itk::simple::ImageFileReader">
-<area shape="rect" id="node2" href="$classitk_1_1simple_1_1ImageReaderBase.html" title="An abract base class for image readers. " alt="" coords="4,155,213,181"/>
-<area shape="rect" id="node3" href="$classitk_1_1simple_1_1ProcessObject.html" title="Base class for SimpleITK classes based on ProcessObject. " alt="" coords="16,80,203,107"/>
-<area shape="rect" id="node4" href="$classitk_1_1simple_1_1NonCopyable.html" title="An inheratable class to disable copying of a class. " alt="" coords="19,5,199,32"/>
+<area shape="rect" id="node1" title="Read an image file and return a SimpleITK Image." alt="" coords="11,229,217,256"/>
+<area shape="rect" id="node2" href="$classitk_1_1simple_1_1ImageReaderBase.html" title="An abract base class for image readers." alt="" coords="5,155,223,181"/>
+<area shape="rect" id="node3" href="$classitk_1_1simple_1_1ProcessObject.html" title="Base class for SimpleITK classes based on ProcessObject." alt="" coords="19,80,209,107"/>
+<area shape="rect" id="node4" href="$classitk_1_1simple_1_1NonCopyable.html" title="An inheratable class to disable copying of a class." alt="" coords="21,5,207,32"/>
 </map>

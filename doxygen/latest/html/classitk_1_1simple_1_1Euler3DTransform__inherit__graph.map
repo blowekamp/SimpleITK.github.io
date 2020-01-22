@@ -1,3 +1,4 @@
 <map id="itk::simple::Euler3DTransform" name="itk::simple::Euler3DTransform">
-<area shape="rect" id="node2" href="$classitk_1_1simple_1_1Transform.html" title="A simplified wrapper around a variety of ITK transforms. " alt="" coords="30,5,188,32"/>
+<area shape="rect" id="node1" title="A rigid 3D transform with rotation in radians around a fixed center with translation." alt="" coords="5,80,220,107"/>
+<area shape="rect" id="node2" href="$classitk_1_1simple_1_1Transform.html" title="A simplified wrapper around a variety of ITK transforms." alt="" coords="31,5,195,32"/>
 </map>

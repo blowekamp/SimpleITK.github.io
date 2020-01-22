@@ -1,51 +1,52 @@
 <map id="sitkDetail.h" name="sitkDetail.h">
-<area shape="rect" id="node2" href="$SimpleITK_8h.html" title="SimpleITK.h" alt="" coords="3402,576,3498,603"/>
-<area shape="rect" id="node3" href="$sitkImage_8h.html" title="sitkImage.h" alt="" coords="1190,80,1286,107"/>
-<area shape="rect" id="node39" href="$sitkImageRegistrationMethod_8h.html" title="sitkImageRegistrationMethod.h" alt="" coords="63,312,282,339"/>
-<area shape="rect" id="node49" href="$sitkDualMemberFunctionFactory_8h.html" title="sitkDualMemberFunctionFactory.h" alt="" coords="2811,312,3045,339"/>
-<area shape="rect" id="node50" href="$sitkMemberFunctionFactory_8h.html" title="sitkMemberFunctionFactory.h" alt="" coords="565,229,771,256"/>
-<area shape="rect" id="node4" href="$sitkAdditionalProcedures_8h.html" title="sitkAdditionalProcedures.h" alt="" coords="3945,312,4135,339"/>
-<area shape="rect" id="node5" href="$sitkHashImageFilter_8h.html" title="sitkHashImageFilter.h" alt="" coords="1179,403,1337,429"/>
-<area shape="rect" id="node6" href="$sitkTransform_8h.html" title="sitkTransform.h" alt="" coords="4453,155,4571,181"/>
-<area shape="rect" id="node40" href="$sitkProcessObject_8h.html" title="sitkProcessObject.h" alt="" coords="1165,229,1311,256"/>
-<area shape="rect" id="node42" href="$sitkImageFileReader_8h.html" title="sitkImageFileReader.h" alt="" coords="603,403,761,429"/>
-<area shape="rect" id="node43" href="$sitkImageSeriesReader_8h.html" title="sitkImageSeriesReader.h" alt="" coords="209,403,387,429"/>
-<area shape="rect" id="node44" href="$sitkImportImageFilter_8h.html" title="sitkImportImageFilter.h" alt="" coords="412,403,578,429"/>
-<area shape="rect" id="node45" href="$sitkImageFileWriter_8h.html" title="sitkImageFileWriter.h" alt="" coords="707,312,857,339"/>
-<area shape="rect" id="node46" href="$sitkImageSeriesWriter_8h.html" title="sitkImageSeriesWriter.h" alt="" coords="882,312,1053,339"/>
-<area shape="rect" id="node47" href="$sitkImageViewer_8h.html" title="sitkImageViewer.h" alt="" coords="1604,312,1741,339"/>
-<area shape="rect" id="node48" href="$sitkShow_8h.html" title="sitkShow.h" alt="" coords="1868,312,1957,339"/>
-<area shape="rect" id="node7" href="$sitkBasicFilters_8h.html" title="sitkBasicFilters.h" alt="" coords="2611,229,2737,256"/>
-<area shape="rect" id="node26" href="$sitkBSplineTransform_8h.html" title="sitkBSplineTransform.h" alt="" coords="3564,493,3730,520"/>
-<area shape="rect" id="node27" href="$sitkDisplacementFieldTransform_8h.html" title="sitkDisplacementFieldTransform.h" alt="" coords="3754,493,3987,520"/>
-<area shape="rect" id="node28" href="$sitkAffineTransform_8h.html" title="sitkAffineTransform.h" alt="" coords="4013,493,4166,520"/>
-<area shape="rect" id="node29" href="$sitkEuler2DTransform_8h.html" title="sitkEuler2DTransform.h" alt="" coords="4192,493,4361,520"/>
-<area shape="rect" id="node30" href="$sitkEuler3DTransform_8h.html" title="sitkEuler3DTransform.h" alt="" coords="4385,493,4554,520"/>
-<area shape="rect" id="node31" href="$sitkScaleTransform_8h.html" title="sitkScaleTransform.h" alt="" coords="4579,493,4733,520"/>
-<area shape="rect" id="node32" href="$sitkScaleSkewVersor3DTransform_8h.html" title="sitkScaleSkewVersor3DTransform.h" alt="" coords="4757,493,5003,520"/>
-<area shape="rect" id="node33" href="$sitkScaleVersor3DTransform_8h.html" title="sitkScaleVersor3DTransform.h" alt="" coords="4677,229,4890,256"/>
-<area shape="rect" id="node34" href="$sitkSimilarity2DTransform_8h.html" title="sitkSimilarity2DTransform.h" alt="" coords="4915,229,5110,256"/>
-<area shape="rect" id="node35" href="$sitkSimilarity3DTransform_8h.html" title="sitkSimilarity3DTransform.h" alt="" coords="5135,229,5330,256"/>
-<area shape="rect" id="node36" href="$sitkTranslationTransform_8h.html" title="sitkTranslationTransform.h" alt="" coords="5355,229,5542,256"/>
-<area shape="rect" id="node37" href="$sitkVersorTransform_8h.html" title="sitkVersorTransform.h" alt="" coords="5566,229,5725,256"/>
-<area shape="rect" id="node38" href="$sitkVersorRigid3DTransform_8h.html" title="sitkVersorRigid3DTransform.h" alt="" coords="5750,229,5958,256"/>
-<area shape="rect" id="node8" href="$sitkImageFilter_8h.html" title="sitkImageFilter.h" alt="" coords="2561,312,2686,339"/>
-<area shape="rect" id="node10" href="$sitkClampImageFilter_8h.html" title="sitkClampImageFilter.h" alt="" coords="3851,403,4017,429"/>
-<area shape="rect" id="node13" href="$sitkLabelIntensityStatisticsImageFilter_8h.html" title="sitkLabelIntensityStatistics\lImageFilter.h" alt="" coords="1515,395,1705,437"/>
-<area shape="rect" id="node14" href="$sitkLabelMapContourOverlayImageFilter_8h.html" title="sitkLabelMapContourOverlay\lImageFilter.h" alt="" coords="1729,395,1933,437"/>
-<area shape="rect" id="node15" href="$sitkLabelMapMaskImageFilter_8h.html" title="sitkLabelMapMaskImageFilter.h" alt="" coords="1958,403,2177,429"/>
-<area shape="rect" id="node16" href="$sitkLabelMapOverlayImageFilter_8h.html" title="sitkLabelMapOverlayImage\lFilter.h" alt="" coords="2201,395,2394,437"/>
-<area shape="rect" id="node17" href="$sitkLabelOverlayImageFilter_8h.html" title="sitkLabelOverlayImageFilter.h" alt="" coords="2419,403,2625,429"/>
-<area shape="rect" id="node18" href="$sitkLabelStatisticsImageFilter_8h.html" title="sitkLabelStatisticsImage\lFilter.h" alt="" coords="2649,395,2826,437"/>
-<area shape="rect" id="node19" href="$sitkMaskImageFilter_8h.html" title="sitkMaskImageFilter.h" alt="" coords="2851,403,3009,429"/>
-<area shape="rect" id="node20" href="$sitkMorphologicalWatershedFromMarkersImageFilter_8h.html" title="sitkMorphologicalWatershed\lFromMarkersImageFilter.h" alt="" coords="3033,395,3231,437"/>
-<area shape="rect" id="node21" href="$sitkResampleImageFilter_8h.html" title="sitkResampleImageFilter.h" alt="" coords="3257,403,3443,429"/>
-<area shape="rect" id="node22" href="$sitkVectorIndexSelectionCastImageFilter_8h.html" title="sitkVectorIndexSelection\lCastImageFilter.h" alt="" coords="3467,395,3646,437"/>
-<area shape="rect" id="node23" href="$sitkWarpImageFilter_8h.html" title="sitkWarpImageFilter.h" alt="" coords="3671,403,3826,429"/>
-<area shape="rect" id="node24" href="$sitkCenteredTransformInitializerFilter_8h.html" title="sitkCenteredTransformInitializer\lFilter.h" alt="" coords="1127,305,1349,346"/>
-<area shape="rect" id="node25" href="$sitkCenteredVersorTransformInitializerFilter_8h.html" title="sitkCenteredVersorTransform\lInitializerFilter.h" alt="" coords="1373,305,1579,346"/>
-<area shape="rect" id="node9" href="$sitkCastImageFilter_8h.html" title="sitkCastImageFilter.h" alt="" coords="4042,403,4195,429"/>
-<area shape="rect" id="node11" href="$CMakeTmp_2SimpleITKBasicFiltersGeneratedHeaders_8h.html" title="SimpleITKBasicFiltersGenerated\lHeaders.h" alt="" coords="2627,486,2849,527"/>
-<area shape="rect" id="node12" href="$include_2SimpleITKBasicFiltersGeneratedHeaders_8h.html" title="SimpleITKBasicFiltersGenerated\lHeaders.h" alt="" coords="2873,486,3095,527"/>
-<area shape="rect" id="node41" href="$sitkImageReaderBase_8h.html" title="sitkImageReaderBase.h" alt="" coords="408,312,579,339"/>
+<area shape="rect" id="node1" title=" " alt="" coords="1213,5,1310,32"/>
+<area shape="rect" id="node2" href="$SimpleITK_8h.html" title=" " alt="" coords="3442,572,3542,599"/>
+<area shape="rect" id="node3" href="$sitkImage_8h.html" title=" " alt="" coords="1212,80,1311,107"/>
+<area shape="rect" id="node39" href="$sitkImageRegistrationMethod_8h.html" title=" " alt="" coords="58,311,283,338"/>
+<area shape="rect" id="node49" href="$sitkDualMemberFunctionFactory_8h.html" title=" " alt="" coords="2872,311,3112,338"/>
+<area shape="rect" id="node50" href="$sitkMemberFunctionFactory_8h.html" title=" " alt="" coords="567,229,777,256"/>
+<area shape="rect" id="node4" href="$sitkAdditionalProcedures_8h.html" title=" " alt="" coords="4041,311,4237,338"/>
+<area shape="rect" id="node5" href="$sitkHashImageFilter_8h.html" title=" " alt="" coords="1193,401,1356,427"/>
+<area shape="rect" id="node6" href="$sitkTransform_8h.html" title=" " alt="" coords="4553,155,4676,181"/>
+<area shape="rect" id="node40" href="$sitkProcessObject_8h.html" title=" " alt="" coords="1186,229,1337,256"/>
+<area shape="rect" id="node42" href="$sitkImageFileReader_8h.html" title=" " alt="" coords="609,401,775,427"/>
+<area shape="rect" id="node43" href="$sitkImageSeriesReader_8h.html" title=" " alt="" coords="205,401,387,427"/>
+<area shape="rect" id="node44" href="$sitkImportImageFilter_8h.html" title=" " alt="" coords="412,401,585,427"/>
+<area shape="rect" id="node45" href="$sitkImageFileWriter_8h.html" title=" " alt="" coords="710,311,869,338"/>
+<area shape="rect" id="node46" href="$sitkImageSeriesWriter_8h.html" title=" " alt="" coords="893,311,1070,338"/>
+<area shape="rect" id="node47" href="$sitkImageViewer_8h.html" title=" " alt="" coords="1635,311,1778,338"/>
+<area shape="rect" id="node48" href="$sitkShow_8h.html" title=" " alt="" coords="1905,311,1997,338"/>
+<area shape="rect" id="node7" href="$sitkBasicFilters_8h.html" title=" " alt="" coords="2665,229,2797,256"/>
+<area shape="rect" id="node26" href="$sitkBSplineTransform_8h.html" title=" " alt="" coords="3606,490,3778,517"/>
+<area shape="rect" id="node27" href="$sitkDisplacementFieldTransform_8h.html" title=" " alt="" coords="3803,490,4045,517"/>
+<area shape="rect" id="node28" href="$sitkAffineTransform_8h.html" title=" " alt="" coords="4070,490,4231,517"/>
+<area shape="rect" id="node29" href="$sitkEuler2DTransform_8h.html" title=" " alt="" coords="4255,490,4430,517"/>
+<area shape="rect" id="node30" href="$sitkEuler3DTransform_8h.html" title=" " alt="" coords="4454,490,4629,517"/>
+<area shape="rect" id="node31" href="$sitkScaleTransform_8h.html" title=" " alt="" coords="4653,490,4811,517"/>
+<area shape="rect" id="node32" href="$sitkScaleSkewVersor3DTransform_8h.html" title=" " alt="" coords="4835,490,5087,517"/>
+<area shape="rect" id="node33" href="$sitkScaleVersor3DTransform_8h.html" title=" " alt="" coords="4779,229,4997,256"/>
+<area shape="rect" id="node34" href="$sitkSimilarity2DTransform_8h.html" title=" " alt="" coords="5021,229,5225,256"/>
+<area shape="rect" id="node35" href="$sitkSimilarity3DTransform_8h.html" title=" " alt="" coords="5249,229,5453,256"/>
+<area shape="rect" id="node36" href="$sitkTranslationTransform_8h.html" title=" " alt="" coords="5477,229,5672,256"/>
+<area shape="rect" id="node37" href="$sitkVersorTransform_8h.html" title=" " alt="" coords="5697,229,5861,256"/>
+<area shape="rect" id="node38" href="$sitkVersorRigid3DTransform_8h.html" title=" " alt="" coords="5885,229,6099,256"/>
+<area shape="rect" id="node8" href="$sitkImageFilter_8h.html" title=" " alt="" coords="2613,311,2744,338"/>
+<area shape="rect" id="node10" href="$sitkClampImageFilter_8h.html" title=" " alt="" coords="3943,401,4115,427"/>
+<area shape="rect" id="node13" href="$sitkLabelIntensityStatisticsImageFilter_8h.html" title=" " alt="" coords="1531,393,1730,435"/>
+<area shape="rect" id="node14" href="$sitkLabelMapContourOverlayImageFilter_8h.html" title=" " alt="" coords="1753,393,1964,435"/>
+<area shape="rect" id="node15" href="$sitkLabelMapMaskImageFilter_8h.html" title=" " alt="" coords="1988,401,2215,427"/>
+<area shape="rect" id="node16" href="$sitkLabelMapOverlayImageFilter_8h.html" title=" " alt="" coords="2239,393,2439,435"/>
+<area shape="rect" id="node17" href="$sitkLabelOverlayImageFilter_8h.html" title=" " alt="" coords="2463,401,2679,427"/>
+<area shape="rect" id="node18" href="$sitkLabelStatisticsImageFilter_8h.html" title=" " alt="" coords="2703,393,2886,435"/>
+<area shape="rect" id="node19" href="$sitkMaskImageFilter_8h.html" title=" " alt="" coords="2910,401,3074,427"/>
+<area shape="rect" id="node20" href="$sitkMorphologicalWatershedFromMarkersImageFilter_8h.html" title=" " alt="" coords="3098,393,3305,435"/>
+<area shape="rect" id="node21" href="$sitkResampleImageFilter_8h.html" title=" " alt="" coords="3329,401,3524,427"/>
+<area shape="rect" id="node22" href="$sitkVectorIndexSelectionCastImageFilter_8h.html" title=" " alt="" coords="3549,393,3731,435"/>
+<area shape="rect" id="node23" href="$sitkWarpImageFilter_8h.html" title=" " alt="" coords="3756,401,3919,427"/>
+<area shape="rect" id="node24" href="$sitkCenteredTransformInitializerFilter_8h.html" title=" " alt="" coords="1146,304,1377,345"/>
+<area shape="rect" id="node25" href="$sitkCenteredVersorTransformInitializerFilter_8h.html" title=" " alt="" coords="1401,304,1612,345"/>
+<area shape="rect" id="node9" href="$sitkCastImageFilter_8h.html" title=" " alt="" coords="4139,401,4298,427"/>
+<area shape="rect" id="node11" href="$CMakeTmp_2SimpleITKBasicFiltersGeneratedHeaders_8h.html" title=" " alt="" coords="2679,483,2910,524"/>
+<area shape="rect" id="node12" href="$include_2SimpleITKBasicFiltersGeneratedHeaders_8h.html" title=" " alt="" coords="2934,483,3165,524"/>
+<area shape="rect" id="node41" href="$sitkImageReaderBase_8h.html" title=" " alt="" coords="408,311,584,338"/>
 </map>

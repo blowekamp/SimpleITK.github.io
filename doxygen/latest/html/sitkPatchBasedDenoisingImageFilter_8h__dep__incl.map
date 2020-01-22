@@ -1,6 +1,7 @@
 <map id="sitkPatchBasedDenoisingImageFilter.h" name="sitkPatchBasedDenoisingImageFilter.h">
-<area shape="rect" id="node2" href="$sitkAdditionalProcedures_8h.html" title="sitkAdditionalProcedures.h" alt="" coords="5,104,195,131"/>
-<area shape="rect" id="node4" href="$CMakeTmp_2SimpleITKBasicFiltersGeneratedHeaders_8h.html" title="SimpleITKBasicFiltersGenerated\lHeaders.h" alt="" coords="219,97,441,138"/>
-<area shape="rect" id="node5" href="$include_2SimpleITKBasicFiltersGeneratedHeaders_8h.html" title="SimpleITKBasicFiltersGenerated\lHeaders.h" alt="" coords="466,97,688,138"/>
-<area shape="rect" id="node3" href="$SimpleITK_8h.html" title="SimpleITK.h" alt="" coords="291,187,387,213"/>
+<area shape="rect" id="node1" title=" " alt="" coords="227,5,454,47"/>
+<area shape="rect" id="node2" href="$sitkAdditionalProcedures_8h.html" title=" " alt="" coords="5,102,201,129"/>
+<area shape="rect" id="node4" href="$CMakeTmp_2SimpleITKBasicFiltersGeneratedHeaders_8h.html" title=" " alt="" coords="225,95,456,136"/>
+<area shape="rect" id="node5" href="$include_2SimpleITKBasicFiltersGeneratedHeaders_8h.html" title=" " alt="" coords="480,95,711,136"/>
+<area shape="rect" id="node3" href="$SimpleITK_8h.html" title=" " alt="" coords="299,184,399,211"/>
 </map>

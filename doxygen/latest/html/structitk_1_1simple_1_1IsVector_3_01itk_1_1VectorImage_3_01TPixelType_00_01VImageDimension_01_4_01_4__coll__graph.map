@@ -1,4 +1,5 @@
 <map id="itk::simple::IsVector&lt; itk::VectorImage&lt; TPixelType, VImageDimension &gt; &gt;" name="itk::simple::IsVector&lt; itk::VectorImage&lt; TPixelType, VImageDimension &gt; &gt;">
-<area shape="rect" id="node2" href="$structitk_1_1simple_1_1IsVector.html" title="itk::simple::IsVector\l\&lt; ImageTypeToPixelID\l\&lt; itk::VectorImage\&lt; TPixelType,\l VImageDimension \&gt; \&gt;::PixelIDType \&gt;" alt="" coords="445,14,712,85"/>
-<area shape="rect" id="node3" href="$structitk_1_1simple_1_1IsVector.html" title="itk::simple::IsVector\l\&lt; TPixelIDType \&gt;" alt="" coords="5,29,152,70"/>
+<area shape="rect" id="node1" title=" " alt="" coords="781,21,1015,77"/>
+<area shape="rect" id="node2" href="$structitk_1_1simple_1_1IsVector.html" title=" " alt="" coords="457,14,732,85"/>
+<area shape="rect" id="node3" href="$structitk_1_1simple_1_1IsVector.html" title=" " alt="" coords="5,29,156,70"/>
 </map>

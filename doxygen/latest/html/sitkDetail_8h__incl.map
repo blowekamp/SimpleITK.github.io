@@ -1,10 +1,21 @@
 <map id="sitkDetail.h" name="sitkDetail.h">
-<area shape="rect" id="node2" href="$sitkMemberFunctionFactoryBase_8h.html" title="sitkMemberFunctionFactory\lBase.h" alt="" coords="565,81,760,122"/>
-<area shape="rect" id="node3" href="$sitkConfigure_8h.html" title="sitkConfigure.h" alt="" coords="223,395,339,421"/>
-<area shape="rect" id="node4" href="$functional_8h.html" title="nsstd/functional.h" alt="" coords="5,171,139,197"/>
-<area shape="rect" id="node6" href="$sitkPixelIDTypes_8h.html" title="sitkPixelIDTypes.h" alt="" coords="215,245,348,272"/>
-<area shape="rect" id="node7" href="$sitkPixelIDTypeLists_8h.html" title="sitkPixelIDTypeLists.h" alt="" coords="427,171,580,197"/>
-<area shape="rect" id="node11" href="$sitkMacro_8h.html" title="sitkMacro.h" alt="" coords="702,320,796,347"/>
-<area shape="rect" id="node16" href="$sitkNonCopyable_8h.html" title="sitkNonCopyable.h" alt="" coords="800,171,940,197"/>
-<area shape="rect" id="node17" href="$sitkCommon_8h.html" title="sitkCommon.h" alt="" coords="799,245,913,272"/>
+<area shape="rect" id="node1" title=" " alt="" coords="701,5,798,32"/>
+<area shape="rect" id="node2" href="$sitkMemberFunctionFactoryBase_8h.html" title=" " alt="" coords="581,80,781,121"/>
+<area shape="rect" id="node18" title=" " alt="" coords="989,169,1173,196"/>
+<area shape="rect" id="node3" href="$sitkConfigure_8h.html" title=" " alt="" coords="229,393,349,420"/>
+<area shape="rect" id="node4" href="$functional_8h.html" title=" " alt="" coords="5,169,144,196"/>
+<area shape="rect" id="node6" href="$sitkPixelIDTypes_8h.html" title=" " alt="" coords="219,244,360,271"/>
+<area shape="rect" id="node7" href="$sitkPixelIDTypeLists_8h.html" title=" " alt="" coords="419,169,583,196"/>
+<area shape="rect" id="node9" title=" " alt="" coords="590,244,738,271"/>
+<area shape="rect" id="node11" href="$sitkMacro_8h.html" title=" " alt="" coords="722,319,819,345"/>
+<area shape="rect" id="node16" href="$sitkNonCopyable_8h.html" title=" " alt="" coords="819,169,965,196"/>
+<area shape="rect" id="node19" title=" " alt="" coords="744,169,795,196"/>
+<area shape="rect" id="node5" title=" " alt="" coords="6,244,93,271"/>
+<area shape="rect" id="node8" title=" " alt="" coords="526,393,597,420"/>
+<area shape="rect" id="node10" title=" " alt="" coords="435,244,514,271"/>
+<area shape="rect" id="node12" title=" " alt="" coords="820,393,895,420"/>
+<area shape="rect" id="node13" title=" " alt="" coords="919,393,988,420"/>
+<area shape="rect" id="node14" title=" " alt="" coords="639,393,713,420"/>
+<area shape="rect" id="node15" title=" " alt="" coords="737,393,796,420"/>
+<area shape="rect" id="node17" href="$sitkCommon_8h.html" title=" " alt="" coords="827,244,944,271"/>
 </map>
