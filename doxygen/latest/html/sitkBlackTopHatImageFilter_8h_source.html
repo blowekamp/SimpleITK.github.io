@@ -19,7 +19,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">SimpleITK
-   &#160;<span id="projectnumber">2.0.0.dev70</span>
+   &#160;<span id="projectnumber">2.0.0.dev80</span>
    </div>
   </td>
  </tr>
@@ -132,7 +132,7 @@ $(function() {
 <div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160; </div>
 <div class="line"><a name="l00123"></a><span class="lineno"><a class="line" href="classitk_1_1simple_1_1BlackTopHatImageFilter.html#af82f64823e6df0f5b2063b8fc7dd0c26">  123</a></span>&#160;      <span class="keyword">friend</span> <span class="keyword">struct </span><a class="code" href="structitk_1_1simple_1_1detail_1_1MemberFunctionAddressor.html">detail::MemberFunctionAddressor</a>&lt;MemberFunctionType&gt;;</div>
 <div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160; </div>
-<div class="line"><a name="l00125"></a><span class="lineno"><a class="line" href="classitk_1_1simple_1_1BlackTopHatImageFilter.html#a7ced91ce2643644ddbd0af58843c2d5d">  125</a></span>&#160;      nsstd::auto_ptr&lt;detail::MemberFunctionFactory&lt;MemberFunctionType&gt; &gt; <a class="code" href="classitk_1_1simple_1_1BlackTopHatImageFilter.html#a7ced91ce2643644ddbd0af58843c2d5d">m_MemberFactory</a>;</div>
+<div class="line"><a name="l00125"></a><span class="lineno"><a class="line" href="classitk_1_1simple_1_1BlackTopHatImageFilter.html#aea60cb7bba43fb21dcc26a8091b8cba5">  125</a></span>&#160;      std::unique_ptr&lt;detail::MemberFunctionFactory&lt;MemberFunctionType&gt; &gt; <a class="code" href="classitk_1_1simple_1_1BlackTopHatImageFilter.html#aea60cb7bba43fb21dcc26a8091b8cba5">m_MemberFactory</a>;</div>
 <div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160; </div>
 <div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160; </div>
 <div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;      <span class="comment">/*  */</span></div>
@@ -157,9 +157,8 @@ $(function() {
 <div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;}</div>
 <div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;<span class="preprocessor">#endif</span></div>
 </div><!-- fragment --></div><!-- contents -->
-<div class="ttc" id="aclassitk_1_1simple_1_1Image_html"><div class="ttname"><a href="classitk_1_1simple_1_1Image.html">itk::simple::Image</a></div><div class="ttdoc">The Image class for SimpleITK.</div><div class="ttdef"><b>Definition:</b> <a href="sitkImage_8h_source.html#l00078">sitkImage.h:78</a></div></div>
+<div class="ttc" id="aclassitk_1_1simple_1_1Image_html"><div class="ttname"><a href="classitk_1_1simple_1_1Image.html">itk::simple::Image</a></div><div class="ttdoc">The Image class for SimpleITK.</div><div class="ttdef"><b>Definition:</b> <a href="sitkImage_8h_source.html#l00077">sitkImage.h:77</a></div></div>
 <div class="ttc" id="asitkBasicFilters_8h_html"><div class="ttname"><a href="sitkBasicFilters_8h.html">sitkBasicFilters.h</a></div></div>
-<div class="ttc" id="aclassitk_1_1simple_1_1BlackTopHatImageFilter_html_a7ced91ce2643644ddbd0af58843c2d5d"><div class="ttname"><a href="classitk_1_1simple_1_1BlackTopHatImageFilter.html#a7ced91ce2643644ddbd0af58843c2d5d">itk::simple::BlackTopHatImageFilter::m_MemberFactory</a></div><div class="ttdeci">nsstd::auto_ptr&lt; detail::MemberFunctionFactory&lt; MemberFunctionType &gt; &gt; m_MemberFactory</div><div class="ttdef"><b>Definition:</b> <a href="sitkBlackTopHatImageFilter_8h_source.html#l00125">sitkBlackTopHatImageFilter.h:125</a></div></div>
 <div class="ttc" id="astructitk_1_1simple_1_1detail_1_1MemberFunctionAddressor_html"><div class="ttname"><a href="structitk_1_1simple_1_1detail_1_1MemberFunctionAddressor.html">itk::simple::detail::MemberFunctionAddressor</a></div><div class="ttdef"><b>Definition:</b> <a href="sitkDetail_8h_source.html#l00032">sitkDetail.h:32</a></div></div>
 <div class="ttc" id="anamespaceitk_1_1simple_html_a38998f2c7b469b1ad8e337a0c6c0697ba97ac5518857aa8c827fe8a44655824c5"><div class="ttname"><a href="namespaceitk_1_1simple.html#a38998f2c7b469b1ad8e337a0c6c0697ba97ac5518857aa8c827fe8a44655824c5">itk::simple::sitkBox</a></div><div class="ttdeci">@ sitkBox</div><div class="ttdef"><b>Definition:</b> <a href="sitkKernel_8h_source.html#l00032">sitkKernel.h:32</a></div></div>
 <div class="ttc" id="aclassitk_1_1simple_1_1BlackTopHatImageFilter_html_ac6fb8af19729a92139113cad3afa479a"><div class="ttname"><a href="classitk_1_1simple_1_1BlackTopHatImageFilter.html#ac6fb8af19729a92139113cad3afa479a">itk::simple::BlackTopHatImageFilter::SafeBorderOn</a></div><div class="ttdeci">Self &amp; SafeBorderOn()</div><div class="ttdef"><b>Definition:</b> <a href="sitkBlackTopHatImageFilter_8h_source.html#l00072">sitkBlackTopHatImageFilter.h:72</a></div></div>
@@ -176,6 +175,7 @@ $(function() {
 <div class="ttc" id="anamespaceitk_1_1simple_html_a38998f2c7b469b1ad8e337a0c6c0697b"><div class="ttname"><a href="namespaceitk_1_1simple.html#a38998f2c7b469b1ad8e337a0c6c0697b">itk::simple::KernelEnum</a></div><div class="ttdeci">KernelEnum</div><div class="ttdef"><b>Definition:</b> <a href="sitkKernel_8h_source.html#l00029">sitkKernel.h:29</a></div></div>
 <div class="ttc" id="anamespaceitk_1_1simple_html_a38998f2c7b469b1ad8e337a0c6c0697ba9eea4fac2f5e148b15e2fa5bdb7ee5ef"><div class="ttname"><a href="namespaceitk_1_1simple.html#a38998f2c7b469b1ad8e337a0c6c0697ba9eea4fac2f5e148b15e2fa5bdb7ee5ef">itk::simple::sitkCross</a></div><div class="ttdeci">@ sitkCross</div><div class="ttdef"><b>Definition:</b> <a href="sitkKernel_8h_source.html#l00033">sitkKernel.h:33</a></div></div>
 <div class="ttc" id="aclassitk_1_1simple_1_1BlackTopHatImageFilter_html_a3ec09048e7b368d436295685a9bfa19f"><div class="ttname"><a href="classitk_1_1simple_1_1BlackTopHatImageFilter.html#a3ec09048e7b368d436295685a9bfa19f">itk::simple::BlackTopHatImageFilter::SafeBorderOff</a></div><div class="ttdeci">Self &amp; SafeBorderOff()</div><div class="ttdef"><b>Definition:</b> <a href="sitkBlackTopHatImageFilter_8h_source.html#l00073">sitkBlackTopHatImageFilter.h:73</a></div></div>
+<div class="ttc" id="aclassitk_1_1simple_1_1BlackTopHatImageFilter_html_aea60cb7bba43fb21dcc26a8091b8cba5"><div class="ttname"><a href="classitk_1_1simple_1_1BlackTopHatImageFilter.html#aea60cb7bba43fb21dcc26a8091b8cba5">itk::simple::BlackTopHatImageFilter::m_MemberFactory</a></div><div class="ttdeci">std::unique_ptr&lt; detail::MemberFunctionFactory&lt; MemberFunctionType &gt; &gt; m_MemberFactory</div><div class="ttdef"><b>Definition:</b> <a href="sitkBlackTopHatImageFilter_8h_source.html#l00125">sitkBlackTopHatImageFilter.h:125</a></div></div>
 <div class="ttc" id="aclassitk_1_1simple_1_1BlackTopHatImageFilter_html_a586367ef79414ecfb36848a0e9c6c556"><div class="ttname"><a href="classitk_1_1simple_1_1BlackTopHatImageFilter.html#a586367ef79414ecfb36848a0e9c6c556">itk::simple::BlackTopHatImageFilter::Self</a></div><div class="ttdeci">BlackTopHatImageFilter Self</div><div class="ttdef"><b>Definition:</b> <a href="sitkBlackTopHatImageFilter_8h_source.html#l00049">sitkBlackTopHatImageFilter.h:49</a></div></div>
 <div class="ttc" id="aclassitk_1_1simple_1_1BlackTopHatImageFilter_html_a144c8c88e13fe1e277366dd26c6f9671"><div class="ttname"><a href="classitk_1_1simple_1_1BlackTopHatImageFilter.html#a144c8c88e13fe1e277366dd26c6f9671">itk::simple::BlackTopHatImageFilter::m_KernelRadius</a></div><div class="ttdeci">std::vector&lt; uint32_t &gt; m_KernelRadius</div><div class="ttdef"><b>Definition:</b> <a href="sitkBlackTopHatImageFilter_8h_source.html#l00132">sitkBlackTopHatImageFilter.h:132</a></div></div>
 <div class="ttc" id="aclassCross_html"><div class="ttname"><a href="https://www.itk.org/Doxygen/html/classCross.html">Cross</a></div></div>
@@ -189,7 +189,7 @@ $(function() {
 <div class="ttc" id="aclassitk_1_1simple_1_1BlackTopHatImageFilter_html_a3bf4fb5d4d8c0710e4919829ba9d6c40"><div class="ttname"><a href="classitk_1_1simple_1_1BlackTopHatImageFilter.html#a3bf4fb5d4d8c0710e4919829ba9d6c40">itk::simple::BlackTopHatImageFilter::SetSafeBorder</a></div><div class="ttdeci">Self &amp; SetSafeBorder(bool SafeBorder)</div><div class="ttdef"><b>Definition:</b> <a href="sitkBlackTopHatImageFilter_8h_source.html#l00069">sitkBlackTopHatImageFilter.h:69</a></div></div>
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Feb 14 2020 03:24:26 for SimpleITK by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Feb 15 2020 03:22:57 for SimpleITK by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

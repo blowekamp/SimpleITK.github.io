@@ -19,7 +19,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">SimpleITK
-   &#160;<span id="projectnumber">2.0.0.dev70</span>
+   &#160;<span id="projectnumber">2.0.0.dev80</span>
    </div>
   </td>
  </tr>
@@ -121,7 +121,7 @@ $(function() {
 <div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160; </div>
 <div class="line"><a name="l00112"></a><span class="lineno"><a class="line" href="classitk_1_1simple_1_1BinaryFillholeImageFilter.html#af82f64823e6df0f5b2063b8fc7dd0c26">  112</a></span>&#160;      <span class="keyword">friend</span> <span class="keyword">struct </span><a class="code" href="structitk_1_1simple_1_1detail_1_1MemberFunctionAddressor.html">detail::MemberFunctionAddressor</a>&lt;MemberFunctionType&gt;;</div>
 <div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160; </div>
-<div class="line"><a name="l00114"></a><span class="lineno"><a class="line" href="classitk_1_1simple_1_1BinaryFillholeImageFilter.html#ad941be777c948bef67b603defd15c4a5">  114</a></span>&#160;      nsstd::auto_ptr&lt;detail::MemberFunctionFactory&lt;MemberFunctionType&gt; &gt; <a class="code" href="classitk_1_1simple_1_1BinaryFillholeImageFilter.html#ad941be777c948bef67b603defd15c4a5">m_MemberFactory</a>;</div>
+<div class="line"><a name="l00114"></a><span class="lineno"><a class="line" href="classitk_1_1simple_1_1BinaryFillholeImageFilter.html#aea5096550233c79a73549d85bd7b6c14">  114</a></span>&#160;      std::unique_ptr&lt;detail::MemberFunctionFactory&lt;MemberFunctionType&gt; &gt; <a class="code" href="classitk_1_1simple_1_1BinaryFillholeImageFilter.html#aea5096550233c79a73549d85bd7b6c14">m_MemberFactory</a>;</div>
 <div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160; </div>
 <div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160; </div>
 <div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;      <span class="comment">/*  */</span></div>
@@ -136,8 +136,8 @@ $(function() {
 <div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;}</div>
 <div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;<span class="preprocessor">#endif</span></div>
 </div><!-- fragment --></div><!-- contents -->
-<div class="ttc" id="aclassitk_1_1simple_1_1Image_html"><div class="ttname"><a href="classitk_1_1simple_1_1Image.html">itk::simple::Image</a></div><div class="ttdoc">The Image class for SimpleITK.</div><div class="ttdef"><b>Definition:</b> <a href="sitkImage_8h_source.html#l00078">sitkImage.h:78</a></div></div>
-<div class="ttc" id="aclassitk_1_1simple_1_1BinaryFillholeImageFilter_html_ad941be777c948bef67b603defd15c4a5"><div class="ttname"><a href="classitk_1_1simple_1_1BinaryFillholeImageFilter.html#ad941be777c948bef67b603defd15c4a5">itk::simple::BinaryFillholeImageFilter::m_MemberFactory</a></div><div class="ttdeci">nsstd::auto_ptr&lt; detail::MemberFunctionFactory&lt; MemberFunctionType &gt; &gt; m_MemberFactory</div><div class="ttdef"><b>Definition:</b> <a href="sitkBinaryFillholeImageFilter_8h_source.html#l00114">sitkBinaryFillholeImageFilter.h:114</a></div></div>
+<div class="ttc" id="aclassitk_1_1simple_1_1Image_html"><div class="ttname"><a href="classitk_1_1simple_1_1Image.html">itk::simple::Image</a></div><div class="ttdoc">The Image class for SimpleITK.</div><div class="ttdef"><b>Definition:</b> <a href="sitkImage_8h_source.html#l00077">sitkImage.h:77</a></div></div>
+<div class="ttc" id="aclassitk_1_1simple_1_1BinaryFillholeImageFilter_html_aea5096550233c79a73549d85bd7b6c14"><div class="ttname"><a href="classitk_1_1simple_1_1BinaryFillholeImageFilter.html#aea5096550233c79a73549d85bd7b6c14">itk::simple::BinaryFillholeImageFilter::m_MemberFactory</a></div><div class="ttdeci">std::unique_ptr&lt; detail::MemberFunctionFactory&lt; MemberFunctionType &gt; &gt; m_MemberFactory</div><div class="ttdef"><b>Definition:</b> <a href="sitkBinaryFillholeImageFilter_8h_source.html#l00114">sitkBinaryFillholeImageFilter.h:114</a></div></div>
 <div class="ttc" id="asitkBasicFilters_8h_html"><div class="ttname"><a href="sitkBasicFilters_8h.html">sitkBasicFilters.h</a></div></div>
 <div class="ttc" id="astructitk_1_1simple_1_1detail_1_1MemberFunctionAddressor_html"><div class="ttname"><a href="structitk_1_1simple_1_1detail_1_1MemberFunctionAddressor.html">itk::simple::detail::MemberFunctionAddressor</a></div><div class="ttdef"><b>Definition:</b> <a href="sitkDetail_8h_source.html#l00032">sitkDetail.h:32</a></div></div>
 <div class="ttc" id="aclassitk_1_1simple_1_1BinaryFillholeImageFilter_html_a203ca2988fa9bc5d26e19c56f168db2a"><div class="ttname"><a href="classitk_1_1simple_1_1BinaryFillholeImageFilter.html#a203ca2988fa9bc5d26e19c56f168db2a">itk::simple::BinaryFillholeImageFilter::FullyConnectedOn</a></div><div class="ttdeci">Self &amp; FullyConnectedOn()</div><div class="ttdef"><b>Definition:</b> <a href="sitkBinaryFillholeImageFilter_8h_source.html#l00073">sitkBinaryFillholeImageFilter.h:73</a></div></div>
@@ -161,7 +161,7 @@ $(function() {
 <div class="ttc" id="anamespaceitk_1_1simple_html_a471d433ce5ac8ee3fb8477f5002a2629"><div class="ttname"><a href="namespaceitk_1_1simple.html#a471d433ce5ac8ee3fb8477f5002a2629">itk::simple::IntegerPixelIDTypeList</a></div><div class="ttdeci">typelist::MakeTypeList&lt; BasicPixelID&lt; int8_t &gt;, BasicPixelID&lt; uint8_t &gt;, BasicPixelID&lt; int16_t &gt;, BasicPixelID&lt; uint16_t &gt;, BasicPixelID&lt; int32_t &gt;, BasicPixelID&lt; uint32_t &gt; &gt;::Type IntegerPixelIDTypeList</div><div class="ttdef"><b>Definition:</b> <a href="sitkPixelIDTypeLists_8h_source.html#l00076">sitkPixelIDTypeLists.h:76</a></div></div>
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Feb 14 2020 03:24:26 for SimpleITK by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Feb 15 2020 03:22:57 for SimpleITK by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

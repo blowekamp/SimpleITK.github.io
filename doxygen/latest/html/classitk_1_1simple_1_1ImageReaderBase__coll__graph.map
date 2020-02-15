@@ -2,7 +2,7 @@
 <area shape="rect" id="node1" title="An abract base class for image readers." alt="" coords="2685,483,2903,509"/>
 <area shape="rect" id="node2" href="$classitk_1_1simple_1_1ProcessObject.html" title="Base class for SimpleITK classes based on ProcessObject." alt="" coords="2411,456,2601,483"/>
 <area shape="rect" id="node9" title=" " alt="" coords="2717,615,2871,657"/>
-<area shape="rect" id="node3" href="$classitk_1_1simple_1_1NonCopyable.html" title="An inheratable class to disable copying of a class." alt="" coords="1973,568,2159,595"/>
+<area shape="rect" id="node3" href="$classitk_1_1simple_1_1NonCopyable.html" title="An inheritable class to disable copying of a class." alt="" coords="1973,568,2159,595"/>
 <area shape="rect" id="node6" href="$classitk_1_1simple_1_1Command.html" title="An implementation of the Command design pattern for callback." alt="" coords="3097,623,3264,649"/>
 <area shape="rect" id="node4" title=" " alt="" coords="3708,615,3957,657"/>
 <area shape="rect" id="node5" href="$structitk_1_1simple_1_1ProcessObject_1_1EventCommand.html" title=" " alt="" coords="3404,615,3595,657"/>

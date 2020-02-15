@@ -19,7 +19,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">SimpleITK
-   &#160;<span id="projectnumber">2.0.0.dev70</span>
+   &#160;<span id="projectnumber">2.0.0.dev80</span>
    </div>
   </td>
  </tr>
@@ -115,7 +115,7 @@ $(function() {
 <div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160; </div>
 <div class="line"><a name="l00100"></a><span class="lineno"><a class="line" href="classitk_1_1simple_1_1BinShrinkImageFilter.html#af82f64823e6df0f5b2063b8fc7dd0c26">  100</a></span>&#160;      <span class="keyword">friend</span> <span class="keyword">struct </span><a class="code" href="structitk_1_1simple_1_1detail_1_1MemberFunctionAddressor.html">detail::MemberFunctionAddressor</a>&lt;MemberFunctionType&gt;;</div>
 <div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160; </div>
-<div class="line"><a name="l00102"></a><span class="lineno"><a class="line" href="classitk_1_1simple_1_1BinShrinkImageFilter.html#a6847f07884e9a088d0301e95f2508ab0">  102</a></span>&#160;      nsstd::auto_ptr&lt;detail::MemberFunctionFactory&lt;MemberFunctionType&gt; &gt; <a class="code" href="classitk_1_1simple_1_1BinShrinkImageFilter.html#a6847f07884e9a088d0301e95f2508ab0">m_MemberFactory</a>;</div>
+<div class="line"><a name="l00102"></a><span class="lineno"><a class="line" href="classitk_1_1simple_1_1BinShrinkImageFilter.html#a2fbffd6bfe88836a5251642b28739c2e">  102</a></span>&#160;      std::unique_ptr&lt;detail::MemberFunctionFactory&lt;MemberFunctionType&gt; &gt; <a class="code" href="classitk_1_1simple_1_1BinShrinkImageFilter.html#a2fbffd6bfe88836a5251642b28739c2e">m_MemberFactory</a>;</div>
 <div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160; </div>
 <div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160; </div>
 <div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;      <span class="comment">/*  */</span></div>
@@ -129,11 +129,12 @@ $(function() {
 <div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;}</div>
 <div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;<span class="preprocessor">#endif</span></div>
 </div><!-- fragment --></div><!-- contents -->
-<div class="ttc" id="aclassitk_1_1simple_1_1Image_html"><div class="ttname"><a href="classitk_1_1simple_1_1Image.html">itk::simple::Image</a></div><div class="ttdoc">The Image class for SimpleITK.</div><div class="ttdef"><b>Definition:</b> <a href="sitkImage_8h_source.html#l00078">sitkImage.h:78</a></div></div>
+<div class="ttc" id="aclassitk_1_1simple_1_1Image_html"><div class="ttname"><a href="classitk_1_1simple_1_1Image.html">itk::simple::Image</a></div><div class="ttdoc">The Image class for SimpleITK.</div><div class="ttdef"><b>Definition:</b> <a href="sitkImage_8h_source.html#l00077">sitkImage.h:77</a></div></div>
 <div class="ttc" id="aclassitk_1_1simple_1_1BinShrinkImageFilter_html_a1206d28e452360de0a9a6e32e21432d7"><div class="ttname"><a href="classitk_1_1simple_1_1BinShrinkImageFilter.html#a1206d28e452360de0a9a6e32e21432d7">itk::simple::BinShrinkImageFilter::m_ShrinkFactors</a></div><div class="ttdeci">std::vector&lt; unsigned int &gt; m_ShrinkFactors</div><div class="ttdef"><b>Definition:</b> <a href="sitkBinShrinkImageFilter_8h_source.html#l00106">sitkBinShrinkImageFilter.h:106</a></div></div>
 <div class="ttc" id="asitkBasicFilters_8h_html"><div class="ttname"><a href="sitkBasicFilters_8h.html">sitkBasicFilters.h</a></div></div>
 <div class="ttc" id="astructitk_1_1simple_1_1detail_1_1MemberFunctionAddressor_html"><div class="ttname"><a href="structitk_1_1simple_1_1detail_1_1MemberFunctionAddressor.html">itk::simple::detail::MemberFunctionAddressor</a></div><div class="ttdef"><b>Definition:</b> <a href="sitkDetail_8h_source.html#l00032">sitkDetail.h:32</a></div></div>
 <div class="ttc" id="aclassitk_1_1simple_1_1BinShrinkImageFilter_html_a594c192d8c1ca9330849b09c96f6a991"><div class="ttname"><a href="classitk_1_1simple_1_1BinShrinkImageFilter.html#a594c192d8c1ca9330849b09c96f6a991">itk::simple::BinShrinkImageFilter::GetName</a></div><div class="ttdeci">std::string GetName() const</div><div class="ttdef"><b>Definition:</b> <a href="sitkBinShrinkImageFilter_8h_source.html#l00079">sitkBinShrinkImageFilter.h:79</a></div></div>
+<div class="ttc" id="aclassitk_1_1simple_1_1BinShrinkImageFilter_html_a2fbffd6bfe88836a5251642b28739c2e"><div class="ttname"><a href="classitk_1_1simple_1_1BinShrinkImageFilter.html#a2fbffd6bfe88836a5251642b28739c2e">itk::simple::BinShrinkImageFilter::m_MemberFactory</a></div><div class="ttdeci">std::unique_ptr&lt; detail::MemberFunctionFactory&lt; MemberFunctionType &gt; &gt; m_MemberFactory</div><div class="ttdef"><b>Definition:</b> <a href="sitkBinShrinkImageFilter_8h_source.html#l00102">sitkBinShrinkImageFilter.h:102</a></div></div>
 <div class="ttc" id="anamespaceitk_1_1simple_html_a2f8f400753fad302b76722e34ea84bb4"><div class="ttname"><a href="namespaceitk_1_1simple.html#a2f8f400753fad302b76722e34ea84bb4">itk::simple::NonLabelPixelIDTypeList</a></div><div class="ttdeci">typelist::Append&lt; typelist::Append&lt; BasicPixelIDTypeList, ComplexPixelIDTypeList &gt;::Type, VectorPixelIDTypeList &gt;::Type NonLabelPixelIDTypeList</div><div class="ttdef"><b>Definition:</b> <a href="sitkPixelIDTypeLists_8h_source.html#l00180">sitkPixelIDTypeLists.h:180</a></div></div>
 <div class="ttc" id="aclassitk_1_1simple_1_1BinShrinkImageFilter_html"><div class="ttname"><a href="classitk_1_1simple_1_1BinShrinkImageFilter.html">itk::simple::BinShrinkImageFilter</a></div><div class="ttdoc">Reduce the size of an image by an integer factor in each dimension while performing averaging of an i...</div><div class="ttdef"><b>Definition:</b> <a href="sitkBinShrinkImageFilter_8h_source.html#l00051">sitkBinShrinkImageFilter.h:51</a></div></div>
 <div class="ttc" id="asitkImageFilter_8h_html"><div class="ttname"><a href="sitkImageFilter_8h.html">sitkImageFilter.h</a></div></div>
@@ -145,12 +146,11 @@ $(function() {
 <div class="ttc" id="anamespaceitk_html"><div class="ttname"><a href="namespaceitk.html">itk</a></div></div>
 <div class="ttc" id="aclassitk_1_1simple_1_1ImageFilter_html"><div class="ttname"><a href="classitk_1_1simple_1_1ImageFilter.html">itk::simple::ImageFilter</a></div><div class="ttdoc">The base interface for SimpleITK filters that take one input image.</div><div class="ttdef"><b>Definition:</b> <a href="sitkImageFilter_8h_source.html#l00037">sitkImageFilter.h:37</a></div></div>
 <div class="ttc" id="aclassitk_1_1simple_1_1ProcessObject_html"><div class="ttname"><a href="classitk_1_1simple_1_1ProcessObject.html">itk::simple::ProcessObject</a></div><div class="ttdoc">Base class for SimpleITK classes based on ProcessObject.</div><div class="ttdef"><b>Definition:</b> <a href="sitkProcessObject_8h_source.html#l00050">sitkProcessObject.h:50</a></div></div>
-<div class="ttc" id="aclassitk_1_1simple_1_1BinShrinkImageFilter_html_a6847f07884e9a088d0301e95f2508ab0"><div class="ttname"><a href="classitk_1_1simple_1_1BinShrinkImageFilter.html#a6847f07884e9a088d0301e95f2508ab0">itk::simple::BinShrinkImageFilter::m_MemberFactory</a></div><div class="ttdeci">nsstd::auto_ptr&lt; detail::MemberFunctionFactory&lt; MemberFunctionType &gt; &gt; m_MemberFactory</div><div class="ttdef"><b>Definition:</b> <a href="sitkBinShrinkImageFilter_8h_source.html#l00102">sitkBinShrinkImageFilter.h:102</a></div></div>
 <div class="ttc" id="aclassitk_1_1simple_1_1BinShrinkImageFilter_html_a8b5eb98506bfa42496db4953557c6246"><div class="ttname"><a href="classitk_1_1simple_1_1BinShrinkImageFilter.html#a8b5eb98506bfa42496db4953557c6246">itk::simple::BinShrinkImageFilter::SetShrinkFactors</a></div><div class="ttdeci">Self &amp; SetShrinkFactors(const std::vector&lt; unsigned int &gt; &amp;ShrinkFactors)</div><div class="ttdef"><b>Definition:</b> <a href="sitkBinShrinkImageFilter_8h_source.html#l00072">sitkBinShrinkImageFilter.h:72</a></div></div>
 <div class="ttc" id="aclassitk_1_1simple_1_1BinShrinkImageFilter_html_ae6967cc2d8ee8699d07da95a57fb48e2"><div class="ttname"><a href="classitk_1_1simple_1_1BinShrinkImageFilter.html#ae6967cc2d8ee8699d07da95a57fb48e2">itk::simple::BinShrinkImageFilter::Self</a></div><div class="ttdeci">BinShrinkImageFilter Self</div><div class="ttdef"><b>Definition:</b> <a href="sitkBinShrinkImageFilter_8h_source.html#l00053">sitkBinShrinkImageFilter.h:53</a></div></div>
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Feb 14 2020 03:24:26 for SimpleITK by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Feb 15 2020 03:22:57 for SimpleITK by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

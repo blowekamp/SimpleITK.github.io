@@ -19,7 +19,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">SimpleITK
-   &#160;<span id="projectnumber">2.0.0.dev70</span>
+   &#160;<span id="projectnumber">2.0.0.dev80</span>
    </div>
   </td>
  </tr>
@@ -173,7 +173,7 @@ $(function() {
 <div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;  <span class="keywordtype">void</span> RegisterMemberFactory3v();</div>
 <div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;  <span class="keywordtype">void</span> RegisterMemberFactory3l();</div>
 <div class="line"><a name="l00172"></a><span class="lineno"><a class="line" href="classitk_1_1simple_1_1CastImageFilter.html#a70f2210335c5960cb6cd17c535ca9f24">  172</a></span>&#160;  <span class="keyword">typedef</span> <a class="code" href="classitk_1_1simple_1_1Image.html">Image</a> (<a class="code" href="classitk_1_1simple_1_1CastImageFilter.html">Self</a>::*MemberFunctionType)( <span class="keyword">const</span> <a class="code" href="classitk_1_1simple_1_1Image.html">Image</a>&amp; );</div>
-<div class="line"><a name="l00173"></a><span class="lineno"><a class="line" href="classitk_1_1simple_1_1CastImageFilter.html#af12feb617f40b53dd8bb172036d8917b">  173</a></span>&#160;  nsstd::auto_ptr&lt;detail::DualMemberFunctionFactory&lt;MemberFunctionType&gt; &gt; <a class="code" href="classitk_1_1simple_1_1CastImageFilter.html#af12feb617f40b53dd8bb172036d8917b">m_DualMemberFactory</a>;</div>
+<div class="line"><a name="l00173"></a><span class="lineno"><a class="line" href="classitk_1_1simple_1_1CastImageFilter.html#acec14ad94138a27bfa812a3fc91b5773">  173</a></span>&#160;  std::unique_ptr&lt;detail::DualMemberFunctionFactory&lt;MemberFunctionType&gt; &gt; <a class="code" href="classitk_1_1simple_1_1CastImageFilter.html#acec14ad94138a27bfa812a3fc91b5773">m_DualMemberFactory</a>;</div>
 <div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160; </div>
 <div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;};</div>
 <div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160; </div>
@@ -183,7 +183,7 @@ $(function() {
 <div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;}</div>
 <div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;<span class="preprocessor">#endif</span></div>
 </div><!-- fragment --></div><!-- contents -->
-<div class="ttc" id="aclassitk_1_1simple_1_1Image_html"><div class="ttname"><a href="classitk_1_1simple_1_1Image.html">itk::simple::Image</a></div><div class="ttdoc">The Image class for SimpleITK.</div><div class="ttdef"><b>Definition:</b> <a href="sitkImage_8h_source.html#l00078">sitkImage.h:78</a></div></div>
+<div class="ttc" id="aclassitk_1_1simple_1_1Image_html"><div class="ttname"><a href="classitk_1_1simple_1_1Image.html">itk::simple::Image</a></div><div class="ttdoc">The Image class for SimpleITK.</div><div class="ttdef"><b>Definition:</b> <a href="sitkImage_8h_source.html#l00077">sitkImage.h:77</a></div></div>
 <div class="ttc" id="astructitk_1_1simple_1_1CastImageFilter_1_1CastAddressor_html_a1523a40a097ac06dde19f27f91a412b8"><div class="ttname"><a href="structitk_1_1simple_1_1CastImageFilter_1_1CastAddressor.html#a1523a40a097ac06dde19f27f91a412b8">itk::simple::CastImageFilter::CastAddressor::ObjectType</a></div><div class="ttdeci">::detail::FunctionTraits&lt; TMemberFunctionPointer &gt;::ClassType ObjectType</div><div class="ttdef"><b>Definition:</b> <a href="sitkCastImageFilter_8h_source.html#l00103">sitkCastImageFilter.h:103</a></div></div>
 <div class="ttc" id="astructitk_1_1simple_1_1CastImageFilter_1_1ToLabelAddressor_html_adf936e1594e1545156656cb8a73bbf77"><div class="ttname"><a href="structitk_1_1simple_1_1CastImageFilter_1_1ToLabelAddressor.html#adf936e1594e1545156656cb8a73bbf77">itk::simple::CastImageFilter::ToLabelAddressor::ObjectType</a></div><div class="ttdeci">::detail::FunctionTraits&lt; TMemberFunctionPointer &gt;::ClassType ObjectType</div><div class="ttdef"><b>Definition:</b> <a href="sitkCastImageFilter_8h_source.html#l00133">sitkCastImageFilter.h:133</a></div></div>
 <div class="ttc" id="aclassitk_1_1simple_1_1CastImageFilter_html_aa371d9f2d9be825d36b4f32d8458a91a"><div class="ttname"><a href="classitk_1_1simple_1_1CastImageFilter.html#aa371d9f2d9be825d36b4f32d8458a91a">itk::simple::CastImageFilter::m_OutputPixelType</a></div><div class="ttdeci">PixelIDValueEnum m_OutputPixelType</div><div class="ttdef"><b>Definition:</b> <a href="sitkCastImageFilter_8h_source.html#l00070">sitkCastImageFilter.h:70</a></div></div>
@@ -197,7 +197,7 @@ $(function() {
 <div class="ttc" id="aclassitk_1_1simple_1_1CastImageFilter_html_a9584c2ada109eebf655f08239c5d31e4"><div class="ttname"><a href="classitk_1_1simple_1_1CastImageFilter.html#a9584c2ada109eebf655f08239c5d31e4">itk::simple::CastImageFilter::GetName</a></div><div class="ttdeci">std::string GetName() const</div><div class="ttdef"><b>Definition:</b> <a href="sitkCastImageFilter_8h_source.html#l00060">sitkCastImageFilter.h:60</a></div></div>
 <div class="ttc" id="aclassitk_1_1simple_1_1CastImageFilter_html"><div class="ttname"><a href="classitk_1_1simple_1_1CastImageFilter.html">itk::simple::CastImageFilter</a></div><div class="ttdoc">A hybrid cast image filter to convert images to other types of images.</div><div class="ttdef"><b>Definition:</b> <a href="sitkCastImageFilter_8h_source.html#l00041">sitkCastImageFilter.h:41</a></div></div>
 <div class="ttc" id="asitkDualMemberFunctionFactory_8h_html"><div class="ttname"><a href="sitkDualMemberFunctionFactory_8h.html">sitkDualMemberFunctionFactory.h</a></div></div>
-<div class="ttc" id="aclassitk_1_1simple_1_1CastImageFilter_html_af12feb617f40b53dd8bb172036d8917b"><div class="ttname"><a href="classitk_1_1simple_1_1CastImageFilter.html#af12feb617f40b53dd8bb172036d8917b">itk::simple::CastImageFilter::m_DualMemberFactory</a></div><div class="ttdeci">nsstd::auto_ptr&lt; detail::DualMemberFunctionFactory&lt; MemberFunctionType &gt; &gt; m_DualMemberFactory</div><div class="ttdef"><b>Definition:</b> <a href="sitkCastImageFilter_8h_source.html#l00173">sitkCastImageFilter.h:173</a></div></div>
+<div class="ttc" id="aclassitk_1_1simple_1_1CastImageFilter_html_acec14ad94138a27bfa812a3fc91b5773"><div class="ttname"><a href="classitk_1_1simple_1_1CastImageFilter.html#acec14ad94138a27bfa812a3fc91b5773">itk::simple::CastImageFilter::m_DualMemberFactory</a></div><div class="ttdeci">std::unique_ptr&lt; detail::DualMemberFunctionFactory&lt; MemberFunctionType &gt; &gt; m_DualMemberFactory</div><div class="ttdef"><b>Definition:</b> <a href="sitkCastImageFilter_8h_source.html#l00173">sitkCastImageFilter.h:173</a></div></div>
 <div class="ttc" id="asitkBasicFilters_8h_html_a8c00663d3a7bae36066e320f83381283"><div class="ttname"><a href="sitkBasicFilters_8h.html#a8c00663d3a7bae36066e320f83381283">SITKBasicFilters_EXPORT</a></div><div class="ttdeci">#define SITKBasicFilters_EXPORT</div><div class="ttdef"><b>Definition:</b> <a href="sitkBasicFilters_8h_source.html#l00050">sitkBasicFilters.h:50</a></div></div>
 <div class="ttc" id="astructitk_1_1simple_1_1CastImageFilter_1_1ToLabelAddressor_html"><div class="ttname"><a href="structitk_1_1simple_1_1CastImageFilter_1_1ToLabelAddressor.html">itk::simple::CastImageFilter::ToLabelAddressor</a></div><div class="ttdef"><b>Definition:</b> <a href="sitkCastImageFilter_8h_source.html#l00131">sitkCastImageFilter.h:131</a></div></div>
 <div class="ttc" id="asitkPixelIDTokens_8h_html"><div class="ttname"><a href="sitkPixelIDTokens_8h.html">sitkPixelIDTokens.h</a></div></div>
@@ -207,7 +207,7 @@ $(function() {
 <div class="ttc" id="aclassitk_1_1simple_1_1CastImageFilter_html_a849a8827d2101d37f7d964a7b6890d8b"><div class="ttname"><a href="classitk_1_1simple_1_1CastImageFilter.html#a849a8827d2101d37f7d964a7b6890d8b">itk::simple::CastImageFilter::Self</a></div><div class="ttdeci">CastImageFilter Self</div><div class="ttdef"><b>Definition:</b> <a href="sitkCastImageFilter_8h_source.html#l00045">sitkCastImageFilter.h:45</a></div></div>
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Feb 14 2020 03:24:26 for SimpleITK by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Feb 15 2020 03:22:57 for SimpleITK by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

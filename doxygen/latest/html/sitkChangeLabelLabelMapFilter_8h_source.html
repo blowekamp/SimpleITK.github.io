@@ -19,7 +19,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">SimpleITK
-   &#160;<span id="projectnumber">2.0.0.dev70</span>
+   &#160;<span id="projectnumber">2.0.0.dev80</span>
    </div>
   </td>
  </tr>
@@ -114,7 +114,7 @@ $(function() {
 <div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160; </div>
 <div class="line"><a name="l00095"></a><span class="lineno"><a class="line" href="classitk_1_1simple_1_1ChangeLabelLabelMapFilter.html#af82f64823e6df0f5b2063b8fc7dd0c26">   95</a></span>&#160;      <span class="keyword">friend</span> <span class="keyword">struct </span><a class="code" href="structitk_1_1simple_1_1detail_1_1MemberFunctionAddressor.html">detail::MemberFunctionAddressor</a>&lt;MemberFunctionType&gt;;</div>
 <div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160; </div>
-<div class="line"><a name="l00097"></a><span class="lineno"><a class="line" href="classitk_1_1simple_1_1ChangeLabelLabelMapFilter.html#a6c95f1a0d80b3efc55131d92739fb898">   97</a></span>&#160;      nsstd::auto_ptr&lt;detail::MemberFunctionFactory&lt;MemberFunctionType&gt; &gt; <a class="code" href="classitk_1_1simple_1_1ChangeLabelLabelMapFilter.html#a6c95f1a0d80b3efc55131d92739fb898">m_MemberFactory</a>;</div>
+<div class="line"><a name="l00097"></a><span class="lineno"><a class="line" href="classitk_1_1simple_1_1ChangeLabelLabelMapFilter.html#ac81aba8ad3dcfcc330e16c3ea3246429">   97</a></span>&#160;      std::unique_ptr&lt;detail::MemberFunctionFactory&lt;MemberFunctionType&gt; &gt; <a class="code" href="classitk_1_1simple_1_1ChangeLabelLabelMapFilter.html#ac81aba8ad3dcfcc330e16c3ea3246429">m_MemberFactory</a>;</div>
 <div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160; </div>
 <div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160; </div>
 <div class="line"><a name="l00100"></a><span class="lineno"><a class="line" href="classitk_1_1simple_1_1ChangeLabelLabelMapFilter.html#abc438e9e0201666b8697b02e40af3bd7">  100</a></span>&#160;      std::map&lt;double,double&gt;  <a class="code" href="classitk_1_1simple_1_1ChangeLabelLabelMapFilter.html#abc438e9e0201666b8697b02e40af3bd7">m_ChangeMap</a>;</div>
@@ -127,15 +127,15 @@ $(function() {
 <div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;}</div>
 <div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;<span class="preprocessor">#endif</span></div>
 </div><!-- fragment --></div><!-- contents -->
-<div class="ttc" id="aclassitk_1_1simple_1_1Image_html"><div class="ttname"><a href="classitk_1_1simple_1_1Image.html">itk::simple::Image</a></div><div class="ttdoc">The Image class for SimpleITK.</div><div class="ttdef"><b>Definition:</b> <a href="sitkImage_8h_source.html#l00078">sitkImage.h:78</a></div></div>
+<div class="ttc" id="aclassitk_1_1simple_1_1Image_html"><div class="ttname"><a href="classitk_1_1simple_1_1Image.html">itk::simple::Image</a></div><div class="ttdoc">The Image class for SimpleITK.</div><div class="ttdef"><b>Definition:</b> <a href="sitkImage_8h_source.html#l00077">sitkImage.h:77</a></div></div>
 <div class="ttc" id="asitkBasicFilters_8h_html"><div class="ttname"><a href="sitkBasicFilters_8h.html">sitkBasicFilters.h</a></div></div>
 <div class="ttc" id="aclassitk_1_1simple_1_1ChangeLabelLabelMapFilter_html_a0befe061e59c9089086f11a50113ef9b"><div class="ttname"><a href="classitk_1_1simple_1_1ChangeLabelLabelMapFilter.html#a0befe061e59c9089086f11a50113ef9b">itk::simple::ChangeLabelLabelMapFilter::GetChangeMap</a></div><div class="ttdeci">std::map&lt; double, double &gt; GetChangeMap() const</div><div class="ttdef"><b>Definition:</b> <a href="sitkChangeLabelLabelMapFilter_8h_source.html#l00072">sitkChangeLabelLabelMapFilter.h:72</a></div></div>
 <div class="ttc" id="anamespaceitk_1_1simple_html_a8d18479d452ab45bac70830b7daf13a0"><div class="ttname"><a href="namespaceitk_1_1simple.html#a8d18479d452ab45bac70830b7daf13a0">itk::simple::ChangeLabelLabelMap</a></div><div class="ttdeci">Image ChangeLabelLabelMap(const Image &amp;image1, std::map&lt; double, double &gt; changeMap=std::map&lt; double, double &gt;())</div><div class="ttdoc">Replace the label Ids of selected LabelObjects with new label Ids.</div></div>
 <div class="ttc" id="astructitk_1_1simple_1_1detail_1_1MemberFunctionAddressor_html"><div class="ttname"><a href="structitk_1_1simple_1_1detail_1_1MemberFunctionAddressor.html">itk::simple::detail::MemberFunctionAddressor</a></div><div class="ttdef"><b>Definition:</b> <a href="sitkDetail_8h_source.html#l00032">sitkDetail.h:32</a></div></div>
 <div class="ttc" id="aclassitk_1_1simple_1_1ChangeLabelLabelMapFilter_html_abc438e9e0201666b8697b02e40af3bd7"><div class="ttname"><a href="classitk_1_1simple_1_1ChangeLabelLabelMapFilter.html#abc438e9e0201666b8697b02e40af3bd7">itk::simple::ChangeLabelLabelMapFilter::m_ChangeMap</a></div><div class="ttdeci">std::map&lt; double, double &gt; m_ChangeMap</div><div class="ttdef"><b>Definition:</b> <a href="sitkChangeLabelLabelMapFilter_8h_source.html#l00100">sitkChangeLabelLabelMapFilter.h:100</a></div></div>
 <div class="ttc" id="asitkImageFilter_8h_html"><div class="ttname"><a href="sitkImageFilter_8h.html">sitkImageFilter.h</a></div></div>
+<div class="ttc" id="aclassitk_1_1simple_1_1ChangeLabelLabelMapFilter_html_ac81aba8ad3dcfcc330e16c3ea3246429"><div class="ttname"><a href="classitk_1_1simple_1_1ChangeLabelLabelMapFilter.html#ac81aba8ad3dcfcc330e16c3ea3246429">itk::simple::ChangeLabelLabelMapFilter::m_MemberFactory</a></div><div class="ttdeci">std::unique_ptr&lt; detail::MemberFunctionFactory&lt; MemberFunctionType &gt; &gt; m_MemberFactory</div><div class="ttdef"><b>Definition:</b> <a href="sitkChangeLabelLabelMapFilter_8h_source.html#l00097">sitkChangeLabelLabelMapFilter.h:97</a></div></div>
 <div class="ttc" id="aclassitk_1_1simple_1_1ChangeLabelLabelMapFilter_html_acf3a4bc8658648488ca3580fdb0c1289"><div class="ttname"><a href="classitk_1_1simple_1_1ChangeLabelLabelMapFilter.html#acf3a4bc8658648488ca3580fdb0c1289">itk::simple::ChangeLabelLabelMapFilter::GetName</a></div><div class="ttdeci">std::string GetName() const</div><div class="ttdef"><b>Definition:</b> <a href="sitkChangeLabelLabelMapFilter_8h_source.html#l00074">sitkChangeLabelLabelMapFilter.h:74</a></div></div>
-<div class="ttc" id="aclassitk_1_1simple_1_1ChangeLabelLabelMapFilter_html_a6c95f1a0d80b3efc55131d92739fb898"><div class="ttname"><a href="classitk_1_1simple_1_1ChangeLabelLabelMapFilter.html#a6c95f1a0d80b3efc55131d92739fb898">itk::simple::ChangeLabelLabelMapFilter::m_MemberFactory</a></div><div class="ttdeci">nsstd::auto_ptr&lt; detail::MemberFunctionFactory&lt; MemberFunctionType &gt; &gt; m_MemberFactory</div><div class="ttdef"><b>Definition:</b> <a href="sitkChangeLabelLabelMapFilter_8h_source.html#l00097">sitkChangeLabelLabelMapFilter.h:97</a></div></div>
 <div class="ttc" id="aclassitk_1_1simple_1_1ChangeLabelLabelMapFilter_html_a59945e8ca4f4cca1517727b58b7fa379"><div class="ttname"><a href="classitk_1_1simple_1_1ChangeLabelLabelMapFilter.html#a59945e8ca4f4cca1517727b58b7fa379">itk::simple::ChangeLabelLabelMapFilter::SetChangeMap</a></div><div class="ttdeci">Self &amp; SetChangeMap(std::map&lt; double, double &gt; ChangeMap)</div><div class="ttdef"><b>Definition:</b> <a href="sitkChangeLabelLabelMapFilter_8h_source.html#l00068">sitkChangeLabelLabelMapFilter.h:68</a></div></div>
 <div class="ttc" id="asitkBasicFilters_8h_html_a8c00663d3a7bae36066e320f83381283"><div class="ttname"><a href="sitkBasicFilters_8h.html#a8c00663d3a7bae36066e320f83381283">SITKBasicFilters_EXPORT</a></div><div class="ttdeci">#define SITKBasicFilters_EXPORT</div><div class="ttdef"><b>Definition:</b> <a href="sitkBasicFilters_8h_source.html#l00050">sitkBasicFilters.h:50</a></div></div>
 <div class="ttc" id="anamespaceitk_html"><div class="ttname"><a href="namespaceitk.html">itk</a></div></div>
@@ -147,7 +147,7 @@ $(function() {
 <div class="ttc" id="aclassitk_1_1simple_1_1ChangeLabelLabelMapFilter_html_aa7e3328237950f3a578a6eddaa1407fd"><div class="ttname"><a href="classitk_1_1simple_1_1ChangeLabelLabelMapFilter.html#aa7e3328237950f3a578a6eddaa1407fd">itk::simple::ChangeLabelLabelMapFilter::Self</a></div><div class="ttdeci">ChangeLabelLabelMapFilter Self</div><div class="ttdef"><b>Definition:</b> <a href="sitkChangeLabelLabelMapFilter_8h_source.html#l00052">sitkChangeLabelLabelMapFilter.h:52</a></div></div>
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Feb 14 2020 03:24:26 for SimpleITK by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Feb 15 2020 03:22:57 for SimpleITK by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

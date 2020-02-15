@@ -1,5 +1,5 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="$classitk_1_1simple_1_1NonCopyable.html" title="An inheratable class to disable copying of a class." alt="" coords="5,9970,192,9997"/>
+<area shape="rect" id="node1" href="$classitk_1_1simple_1_1NonCopyable.html" title="An inheritable class to disable copying of a class." alt="" coords="5,9970,192,9997"/>
 <area shape="rect" id="node2" href="$classitk_1_1simple_1_1Command.html" title="An implementation of the Command design pattern for callback." alt="" coords="265,5643,431,5670"/>
 <area shape="rect" id="node4" href="$classitk_1_1simple_1_1detail_1_1MemberFunctionFactoryBase_3_01TMemberFunctionPointer_00_01TKey_00_010_01_4.html" title=" " alt="" coords="240,9711,456,9781"/>
 <area shape="rect" id="node5" href="$classitk_1_1simple_1_1detail_1_1MemberFunctionFactoryBase_3_01TMemberFunctionPointer_00_01TKey_00_011_01_4.html" title=" " alt="" coords="240,9805,456,9876"/>

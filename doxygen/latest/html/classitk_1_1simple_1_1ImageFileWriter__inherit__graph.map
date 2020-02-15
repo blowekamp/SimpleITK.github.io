@@ -1,5 +1,5 @@
 <map id="itk::simple::ImageFileWriter" name="itk::simple::ImageFileWriter">
 <area shape="rect" id="node1" title="Write out a SimpleITK image to the specified file location." alt="" coords="5,155,207,181"/>
 <area shape="rect" id="node2" href="$classitk_1_1simple_1_1ProcessObject.html" title="Base class for SimpleITK classes based on ProcessObject." alt="" coords="11,80,201,107"/>
-<area shape="rect" id="node3" href="$classitk_1_1simple_1_1NonCopyable.html" title="An inheratable class to disable copying of a class." alt="" coords="13,5,199,32"/>
+<area shape="rect" id="node3" href="$classitk_1_1simple_1_1NonCopyable.html" title="An inheritable class to disable copying of a class." alt="" coords="13,5,199,32"/>
 </map>

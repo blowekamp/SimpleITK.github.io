@@ -19,7 +19,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">SimpleITK
-   &#160;<span id="projectnumber">2.0.0.dev70</span>
+   &#160;<span id="projectnumber">2.0.0.dev80</span>
    </div>
   </td>
  </tr>
@@ -108,7 +108,7 @@ $(function() {
 <div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160; </div>
 <div class="line"><a name="l00091"></a><span class="lineno"><a class="line" href="classitk_1_1simple_1_1AcosImageFilter.html#af82f64823e6df0f5b2063b8fc7dd0c26">   91</a></span>&#160;      <span class="keyword">friend</span> <span class="keyword">struct </span><a class="code" href="structitk_1_1simple_1_1detail_1_1MemberFunctionAddressor.html">detail::MemberFunctionAddressor</a>&lt;MemberFunctionType&gt;;</div>
 <div class="line"><a name="l00092"></a><span class="lineno"><a class="line" href="classitk_1_1simple_1_1AcosImageFilter.html#ac88de73417149bc6fcd4eaff2635786d">   92</a></span>&#160;      <span class="keyword">friend</span> <span class="keyword">struct </span><a class="code" href="structitk_1_1simple_1_1detail_1_1ExecuteInternalVectorImageAddressor.html">detail::ExecuteInternalVectorImageAddressor</a>&lt;MemberFunctionType&gt;;</div>
-<div class="line"><a name="l00093"></a><span class="lineno"><a class="line" href="classitk_1_1simple_1_1AcosImageFilter.html#a8f0dff4aed528ed21985b7d48f3827d8">   93</a></span>&#160;      nsstd::auto_ptr&lt;detail::MemberFunctionFactory&lt;MemberFunctionType&gt; &gt; <a class="code" href="classitk_1_1simple_1_1AcosImageFilter.html#a8f0dff4aed528ed21985b7d48f3827d8">m_MemberFactory</a>;</div>
+<div class="line"><a name="l00093"></a><span class="lineno"><a class="line" href="classitk_1_1simple_1_1AcosImageFilter.html#a3861c945e787de445c085990f8b359ca">   93</a></span>&#160;      std::unique_ptr&lt;detail::MemberFunctionFactory&lt;MemberFunctionType&gt; &gt; <a class="code" href="classitk_1_1simple_1_1AcosImageFilter.html#a3861c945e787de445c085990f8b359ca">m_MemberFactory</a>;</div>
 <div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160; </div>
 <div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160; </div>
 <div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    };</div>
@@ -120,12 +120,12 @@ $(function() {
 <div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;}</div>
 <div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;<span class="preprocessor">#endif</span></div>
 </div><!-- fragment --></div><!-- contents -->
-<div class="ttc" id="aclassitk_1_1simple_1_1Image_html"><div class="ttname"><a href="classitk_1_1simple_1_1Image.html">itk::simple::Image</a></div><div class="ttdoc">The Image class for SimpleITK.</div><div class="ttdef"><b>Definition:</b> <a href="sitkImage_8h_source.html#l00078">sitkImage.h:78</a></div></div>
+<div class="ttc" id="aclassitk_1_1simple_1_1Image_html"><div class="ttname"><a href="classitk_1_1simple_1_1Image.html">itk::simple::Image</a></div><div class="ttdoc">The Image class for SimpleITK.</div><div class="ttdef"><b>Definition:</b> <a href="sitkImage_8h_source.html#l00077">sitkImage.h:77</a></div></div>
 <div class="ttc" id="asitkBasicFilters_8h_html"><div class="ttname"><a href="sitkBasicFilters_8h.html">sitkBasicFilters.h</a></div></div>
 <div class="ttc" id="astructitk_1_1simple_1_1detail_1_1ExecuteInternalVectorImageAddressor_html"><div class="ttname"><a href="structitk_1_1simple_1_1detail_1_1ExecuteInternalVectorImageAddressor.html">itk::simple::detail::ExecuteInternalVectorImageAddressor</a></div><div class="ttdef"><b>Definition:</b> <a href="sitkDetail_8h_source.html#l00059">sitkDetail.h:59</a></div></div>
 <div class="ttc" id="astructitk_1_1simple_1_1detail_1_1MemberFunctionAddressor_html"><div class="ttname"><a href="structitk_1_1simple_1_1detail_1_1MemberFunctionAddressor.html">itk::simple::detail::MemberFunctionAddressor</a></div><div class="ttdef"><b>Definition:</b> <a href="sitkDetail_8h_source.html#l00032">sitkDetail.h:32</a></div></div>
-<div class="ttc" id="aclassitk_1_1simple_1_1AcosImageFilter_html_a8f0dff4aed528ed21985b7d48f3827d8"><div class="ttname"><a href="classitk_1_1simple_1_1AcosImageFilter.html#a8f0dff4aed528ed21985b7d48f3827d8">itk::simple::AcosImageFilter::m_MemberFactory</a></div><div class="ttdeci">nsstd::auto_ptr&lt; detail::MemberFunctionFactory&lt; MemberFunctionType &gt; &gt; m_MemberFactory</div><div class="ttdef"><b>Definition:</b> <a href="sitkAcosImageFilter_8h_source.html#l00093">sitkAcosImageFilter.h:93</a></div></div>
 <div class="ttc" id="aclassitk_1_1simple_1_1AcosImageFilter_html_a520b8f2cf05ff1155245228bbba6e1bf"><div class="ttname"><a href="classitk_1_1simple_1_1AcosImageFilter.html#a520b8f2cf05ff1155245228bbba6e1bf">itk::simple::AcosImageFilter::GetName</a></div><div class="ttdeci">std::string GetName() const</div><div class="ttdef"><b>Definition:</b> <a href="sitkAcosImageFilter_8h_source.html#l00072">sitkAcosImageFilter.h:72</a></div></div>
+<div class="ttc" id="aclassitk_1_1simple_1_1AcosImageFilter_html_a3861c945e787de445c085990f8b359ca"><div class="ttname"><a href="classitk_1_1simple_1_1AcosImageFilter.html#a3861c945e787de445c085990f8b359ca">itk::simple::AcosImageFilter::m_MemberFactory</a></div><div class="ttdeci">std::unique_ptr&lt; detail::MemberFunctionFactory&lt; MemberFunctionType &gt; &gt; m_MemberFactory</div><div class="ttdef"><b>Definition:</b> <a href="sitkAcosImageFilter_8h_source.html#l00093">sitkAcosImageFilter.h:93</a></div></div>
 <div class="ttc" id="anamespaceitk_1_1simple_html_a53bfeb202d5f9e68918553d264b17a91"><div class="ttname"><a href="namespaceitk_1_1simple.html#a53bfeb202d5f9e68918553d264b17a91">itk::simple::BasicPixelIDTypeList</a></div><div class="ttdeci">typelist::MakeTypeList&lt; BasicPixelID&lt; int8_t &gt;, BasicPixelID&lt; uint8_t &gt;, BasicPixelID&lt; int16_t &gt;, BasicPixelID&lt; uint16_t &gt;, BasicPixelID&lt; int32_t &gt;, BasicPixelID&lt; uint32_t &gt;, BasicPixelID&lt; float &gt;, BasicPixelID&lt; double &gt; &gt;::Type BasicPixelIDTypeList</div><div class="ttdef"><b>Definition:</b> <a href="sitkPixelIDTypeLists_8h_source.html#l00053">sitkPixelIDTypeLists.h:53</a></div></div>
 <div class="ttc" id="asitkImageFilter_8h_html"><div class="ttname"><a href="sitkImageFilter_8h.html">sitkImageFilter.h</a></div></div>
 <div class="ttc" id="aclassitk_1_1simple_1_1AcosImageFilter_html"><div class="ttname"><a href="classitk_1_1simple_1_1AcosImageFilter.html">itk::simple::AcosImageFilter</a></div><div class="ttdoc">Computes the inverse cosine of each pixel.</div><div class="ttdef"><b>Definition:</b> <a href="sitkAcosImageFilter_8h_source.html#l00056">sitkAcosImageFilter.h:56</a></div></div>
@@ -138,7 +138,7 @@ $(function() {
 <div class="ttc" id="aclassitk_1_1simple_1_1AcosImageFilter_html_a152f43f49ee17398bc2d0c5b4a5f5d50"><div class="ttname"><a href="classitk_1_1simple_1_1AcosImageFilter.html#a152f43f49ee17398bc2d0c5b4a5f5d50">itk::simple::AcosImageFilter::PixelIDTypeList</a></div><div class="ttdeci">BasicPixelIDTypeList PixelIDTypeList</div><div class="ttdef"><b>Definition:</b> <a href="sitkAcosImageFilter_8h_source.html#l00068">sitkAcosImageFilter.h:68</a></div></div>
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Feb 14 2020 03:24:26 for SimpleITK by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Feb 15 2020 03:22:57 for SimpleITK by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

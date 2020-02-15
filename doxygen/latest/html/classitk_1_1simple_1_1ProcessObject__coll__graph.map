@@ -1,7 +1,7 @@
 <map id="itk::simple::ProcessObject" name="itk::simple::ProcessObject">
 <area shape="rect" id="node1" title="Base class for SimpleITK classes based on ProcessObject." alt="" coords="2411,369,2601,396"/>
 <area shape="rect" id="node8" title=" " alt="" coords="2685,487,2840,529"/>
-<area shape="rect" id="node2" href="$classitk_1_1simple_1_1NonCopyable.html" title="An inheratable class to disable copying of a class." alt="" coords="1973,413,2159,440"/>
+<area shape="rect" id="node2" href="$classitk_1_1simple_1_1NonCopyable.html" title="An inheritable class to disable copying of a class." alt="" coords="1973,413,2159,440"/>
 <area shape="rect" id="node5" href="$classitk_1_1simple_1_1Command.html" title="An implementation of the Command design pattern for callback." alt="" coords="3035,495,3201,521"/>
 <area shape="rect" id="node3" title=" " alt="" coords="3645,487,3895,529"/>
 <area shape="rect" id="node4" href="$structitk_1_1simple_1_1ProcessObject_1_1EventCommand.html" title=" " alt="" coords="3341,487,3532,529"/>

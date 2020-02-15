@@ -19,7 +19,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">SimpleITK
-   &#160;<span id="projectnumber">2.0.0.dev70</span>
+   &#160;<span id="projectnumber">2.0.0.dev80</span>
    </div>
   </td>
  </tr>
@@ -124,7 +124,7 @@ $(function() {
 <div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160; </div>
 <div class="line"><a name="l00128"></a><span class="lineno"><a class="line" href="classitk_1_1simple_1_1ExtractImageFilter.html#af82f64823e6df0f5b2063b8fc7dd0c26">  128</a></span>&#160;      <span class="keyword">friend</span> <span class="keyword">struct </span><a class="code" href="structitk_1_1simple_1_1detail_1_1MemberFunctionAddressor.html">detail::MemberFunctionAddressor</a>&lt;MemberFunctionType&gt;;</div>
 <div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160; </div>
-<div class="line"><a name="l00130"></a><span class="lineno"><a class="line" href="classitk_1_1simple_1_1ExtractImageFilter.html#aa7ac8332c0ad817c6e6b88d40a925690">  130</a></span>&#160;      nsstd::auto_ptr&lt;detail::MemberFunctionFactory&lt;MemberFunctionType&gt; &gt; <a class="code" href="classitk_1_1simple_1_1ExtractImageFilter.html#aa7ac8332c0ad817c6e6b88d40a925690">m_MemberFactory</a>;</div>
+<div class="line"><a name="l00130"></a><span class="lineno"><a class="line" href="classitk_1_1simple_1_1ExtractImageFilter.html#abe8657d1327a6f3e43930bdbaa8d5061">  130</a></span>&#160;      std::unique_ptr&lt;detail::MemberFunctionFactory&lt;MemberFunctionType&gt; &gt; <a class="code" href="classitk_1_1simple_1_1ExtractImageFilter.html#abe8657d1327a6f3e43930bdbaa8d5061">m_MemberFactory</a>;</div>
 <div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160; </div>
 <div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160; </div>
 <div class="line"><a name="l00133"></a><span class="lineno"><a class="line" href="classitk_1_1simple_1_1ExtractImageFilter.html#af5963d6ac1004d1ac775e2bbc313f8ab">  133</a></span>&#160;      std::vector&lt;unsigned int&gt;  <a class="code" href="classitk_1_1simple_1_1ExtractImageFilter.html#af5963d6ac1004d1ac775e2bbc313f8ab">m_Size</a>;</div>
@@ -139,7 +139,7 @@ $(function() {
 <div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;}</div>
 <div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;<span class="preprocessor">#endif</span></div>
 </div><!-- fragment --></div><!-- contents -->
-<div class="ttc" id="aclassitk_1_1simple_1_1Image_html"><div class="ttname"><a href="classitk_1_1simple_1_1Image.html">itk::simple::Image</a></div><div class="ttdoc">The Image class for SimpleITK.</div><div class="ttdef"><b>Definition:</b> <a href="sitkImage_8h_source.html#l00078">sitkImage.h:78</a></div></div>
+<div class="ttc" id="aclassitk_1_1simple_1_1Image_html"><div class="ttname"><a href="classitk_1_1simple_1_1Image.html">itk::simple::Image</a></div><div class="ttdoc">The Image class for SimpleITK.</div><div class="ttdef"><b>Definition:</b> <a href="sitkImage_8h_source.html#l00077">sitkImage.h:77</a></div></div>
 <div class="ttc" id="asitkBasicFilters_8h_html"><div class="ttname"><a href="sitkBasicFilters_8h.html">sitkBasicFilters.h</a></div></div>
 <div class="ttc" id="astructitk_1_1Index_html"><div class="ttname"><a href="https://www.itk.org/Doxygen/html/structitk_1_1Index.html">itk::Index</a></div></div>
 <div class="ttc" id="aclassitk_1_1simple_1_1ExtractImageFilter_html_af5963d6ac1004d1ac775e2bbc313f8ab"><div class="ttname"><a href="classitk_1_1simple_1_1ExtractImageFilter.html#af5963d6ac1004d1ac775e2bbc313f8ab">itk::simple::ExtractImageFilter::m_Size</a></div><div class="ttdeci">std::vector&lt; unsigned int &gt; m_Size</div><div class="ttdef"><b>Definition:</b> <a href="sitkExtractImageFilter_8h_source.html#l00133">sitkExtractImageFilter.h:133</a></div></div>
@@ -161,8 +161,8 @@ $(function() {
 <div class="ttc" id="aclassitk_1_1simple_1_1ExtractImageFilter_html_a8e6e202cc3f99adeff09d1ecdfca5d56"><div class="ttname"><a href="classitk_1_1simple_1_1ExtractImageFilter.html#a8e6e202cc3f99adeff09d1ecdfca5d56">itk::simple::ExtractImageFilter::GetIndex</a></div><div class="ttdeci">std::vector&lt; int &gt; GetIndex() const</div><div class="ttdef"><b>Definition:</b> <a href="sitkExtractImageFilter_8h_source.html#l00087">sitkExtractImageFilter.h:87</a></div></div>
 <div class="ttc" id="asitkBasicFilters_8h_html_a8c00663d3a7bae36066e320f83381283"><div class="ttname"><a href="sitkBasicFilters_8h.html#a8c00663d3a7bae36066e320f83381283">SITKBasicFilters_EXPORT</a></div><div class="ttdeci">#define SITKBasicFilters_EXPORT</div><div class="ttdef"><b>Definition:</b> <a href="sitkBasicFilters_8h_source.html#l00050">sitkBasicFilters.h:50</a></div></div>
 <div class="ttc" id="aclassitk_1_1simple_1_1ExtractImageFilter_html_a9c2003ba686fc54ede3fcdcf59209e28"><div class="ttname"><a href="classitk_1_1simple_1_1ExtractImageFilter.html#a9c2003ba686fc54ede3fcdcf59209e28">itk::simple::ExtractImageFilter::PixelIDTypeList</a></div><div class="ttdeci">NonLabelPixelIDTypeList PixelIDTypeList</div><div class="ttdef"><b>Definition:</b> <a href="sitkExtractImageFilter_8h_source.html#l00068">sitkExtractImageFilter.h:68</a></div></div>
+<div class="ttc" id="aclassitk_1_1simple_1_1ExtractImageFilter_html_abe8657d1327a6f3e43930bdbaa8d5061"><div class="ttname"><a href="classitk_1_1simple_1_1ExtractImageFilter.html#abe8657d1327a6f3e43930bdbaa8d5061">itk::simple::ExtractImageFilter::m_MemberFactory</a></div><div class="ttdeci">std::unique_ptr&lt; detail::MemberFunctionFactory&lt; MemberFunctionType &gt; &gt; m_MemberFactory</div><div class="ttdef"><b>Definition:</b> <a href="sitkExtractImageFilter_8h_source.html#l00130">sitkExtractImageFilter.h:130</a></div></div>
 <div class="ttc" id="aclassitk_1_1simple_1_1ExtractImageFilter_html_a24a7520c552573411d54b76469ebeb80"><div class="ttname"><a href="classitk_1_1simple_1_1ExtractImageFilter.html#a24a7520c552573411d54b76469ebeb80">itk::simple::ExtractImageFilter::GetDirectionCollapseToStrategy</a></div><div class="ttdeci">DirectionCollapseToStrategyType GetDirectionCollapseToStrategy() const</div><div class="ttdef"><b>Definition:</b> <a href="sitkExtractImageFilter_8h_source.html#l00105">sitkExtractImageFilter.h:105</a></div></div>
-<div class="ttc" id="aclassitk_1_1simple_1_1ExtractImageFilter_html_aa7ac8332c0ad817c6e6b88d40a925690"><div class="ttname"><a href="classitk_1_1simple_1_1ExtractImageFilter.html#aa7ac8332c0ad817c6e6b88d40a925690">itk::simple::ExtractImageFilter::m_MemberFactory</a></div><div class="ttdeci">nsstd::auto_ptr&lt; detail::MemberFunctionFactory&lt; MemberFunctionType &gt; &gt; m_MemberFactory</div><div class="ttdef"><b>Definition:</b> <a href="sitkExtractImageFilter_8h_source.html#l00130">sitkExtractImageFilter.h:130</a></div></div>
 <div class="ttc" id="anamespaceitk_html"><div class="ttname"><a href="namespaceitk.html">itk</a></div></div>
 <div class="ttc" id="aclassitk_1_1simple_1_1ExtractImageFilter_html_aeb3454c7136722790d3b657643e2cce8a1ac4c64513f940403ecb72083a88691f"><div class="ttname"><a href="classitk_1_1simple_1_1ExtractImageFilter.html#aeb3454c7136722790d3b657643e2cce8a1ac4c64513f940403ecb72083a88691f">itk::simple::ExtractImageFilter::DIRECTIONCOLLAPSETOGUESS</a></div><div class="ttdeci">@ DIRECTIONCOLLAPSETOGUESS</div><div class="ttdef"><b>Definition:</b> <a href="sitkExtractImageFilter_8h_source.html#l00089">sitkExtractImageFilter.h:89</a></div></div>
 <div class="ttc" id="aclassitk_1_1simple_1_1ExtractImageFilter_html_a2736c4c474991a8e56a561edd157a30f"><div class="ttname"><a href="classitk_1_1simple_1_1ExtractImageFilter.html#a2736c4c474991a8e56a561edd157a30f">itk::simple::ExtractImageFilter::Self</a></div><div class="ttdeci">ExtractImageFilter Self</div><div class="ttdef"><b>Definition:</b> <a href="sitkExtractImageFilter_8h_source.html#l00058">sitkExtractImageFilter.h:58</a></div></div>
@@ -173,7 +173,7 @@ $(function() {
 <div class="ttc" id="anamespaceitk_1_1simple_html_a369ae49fad5abfc96ae9e422b4732a6c"><div class="ttname"><a href="namespaceitk_1_1simple.html#a369ae49fad5abfc96ae9e422b4732a6c">itk::simple::Extract</a></div><div class="ttdeci">Image Extract(const Image &amp;image1, const std::vector&lt; unsigned int &gt; &amp;size=std::vector&lt; unsigned int &gt;(4, 1), const std::vector&lt; int &gt; &amp;index=std::vector&lt; int &gt;(4, 0), ExtractImageFilter::DirectionCollapseToStrategyType directionCollapseToStrategy=itk::simple::ExtractImageFilter::DIRECTIONCOLLAPSETOGUESS)</div><div class="ttdoc">Decrease the image size by cropping the image to the selected region bounds.</div></div>
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Feb 14 2020 03:24:28 for SimpleITK by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Feb 15 2020 03:22:59 for SimpleITK by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

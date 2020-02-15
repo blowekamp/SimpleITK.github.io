@@ -19,7 +19,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">SimpleITK
-   &#160;<span id="projectnumber">2.0.0.dev70</span>
+   &#160;<span id="projectnumber">2.0.0.dev80</span>
    </div>
   </td>
  </tr>
@@ -116,7 +116,7 @@ $(function() {
 <div class="line"><a name="l00073"></a><span class="lineno"><a class="line" href="classitk_1_1simple_1_1HashImageFilter.html#af82f64823e6df0f5b2063b8fc7dd0c26">   73</a></span>&#160;      <span class="keyword">friend</span> <span class="keyword">struct </span><a class="code" href="structitk_1_1simple_1_1detail_1_1MemberFunctionAddressor.html">detail::MemberFunctionAddressor</a>&lt;MemberFunctionType&gt;;</div>
 <div class="line"><a name="l00074"></a><span class="lineno"><a class="line" href="classitk_1_1simple_1_1HashImageFilter.html#ac38e34fa2a8451f3362b88aa66f585c8">   74</a></span>&#160;      <span class="keyword">friend</span> <span class="keyword">struct </span><a class="code" href="structitk_1_1simple_1_1detail_1_1ExecuteInternalLabelImageAddressor.html">detail::ExecuteInternalLabelImageAddressor</a>&lt;MemberFunctionType&gt;;</div>
 <div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160; </div>
-<div class="line"><a name="l00076"></a><span class="lineno"><a class="line" href="classitk_1_1simple_1_1HashImageFilter.html#a0821ad0eb964064f6b37c20457f732d0">   76</a></span>&#160;      nsstd::auto_ptr&lt;detail::MemberFunctionFactory&lt;MemberFunctionType&gt; &gt; <a class="code" href="classitk_1_1simple_1_1HashImageFilter.html#a0821ad0eb964064f6b37c20457f732d0">m_MemberFactory</a>;</div>
+<div class="line"><a name="l00076"></a><span class="lineno"><a class="line" href="classitk_1_1simple_1_1HashImageFilter.html#a354bd5997af95a92283cabd96ef51053">   76</a></span>&#160;      std::unique_ptr&lt;detail::MemberFunctionFactory&lt;MemberFunctionType&gt; &gt; <a class="code" href="classitk_1_1simple_1_1HashImageFilter.html#a354bd5997af95a92283cabd96ef51053">m_MemberFactory</a>;</div>
 <div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    };</div>
 <div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160; </div>
 <div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    <a class="code" href="sitkBasicFilters_8h.html#a8c00663d3a7bae36066e320f83381283">SITKBasicFilters_EXPORT</a> std::string <a class="code" href="namespaceitk_1_1simple.html#aaebfe3a51d1f4a152f6fc2fcd78a9dcd">Hash</a> ( <span class="keyword">const</span> <a class="code" href="classitk_1_1simple_1_1Image.html">Image</a>&amp; image, <a class="code" href="classitk_1_1simple_1_1HashImageFilter.html#a71111181b7163b2a8ff3b54d3739ff1d">HashImageFilter::HashFunction</a> <span class="keyword">function</span> = <a class="code" href="classitk_1_1simple_1_1HashImageFilter.html#a71111181b7163b2a8ff3b54d3739ff1dae6e099ccc967887eccf5810cdba725ba">HashImageFilter::SHA1</a> );</div>
@@ -124,11 +124,11 @@ $(function() {
 <div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;}</div>
 <div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;<span class="preprocessor">#endif</span></div>
 </div><!-- fragment --></div><!-- contents -->
-<div class="ttc" id="aclassitk_1_1simple_1_1Image_html"><div class="ttname"><a href="classitk_1_1simple_1_1Image.html">itk::simple::Image</a></div><div class="ttdoc">The Image class for SimpleITK.</div><div class="ttdef"><b>Definition:</b> <a href="sitkImage_8h_source.html#l00078">sitkImage.h:78</a></div></div>
-<div class="ttc" id="aclassitk_1_1simple_1_1HashImageFilter_html_a0821ad0eb964064f6b37c20457f732d0"><div class="ttname"><a href="classitk_1_1simple_1_1HashImageFilter.html#a0821ad0eb964064f6b37c20457f732d0">itk::simple::HashImageFilter::m_MemberFactory</a></div><div class="ttdeci">nsstd::auto_ptr&lt; detail::MemberFunctionFactory&lt; MemberFunctionType &gt; &gt; m_MemberFactory</div><div class="ttdef"><b>Definition:</b> <a href="sitkHashImageFilter_8h_source.html#l00076">sitkHashImageFilter.h:76</a></div></div>
+<div class="ttc" id="aclassitk_1_1simple_1_1Image_html"><div class="ttname"><a href="classitk_1_1simple_1_1Image.html">itk::simple::Image</a></div><div class="ttdoc">The Image class for SimpleITK.</div><div class="ttdef"><b>Definition:</b> <a href="sitkImage_8h_source.html#l00077">sitkImage.h:77</a></div></div>
 <div class="ttc" id="asitkBasicFilters_8h_html"><div class="ttname"><a href="sitkBasicFilters_8h.html">sitkBasicFilters.h</a></div></div>
 <div class="ttc" id="aclassitk_1_1simple_1_1HashImageFilter_html_a71111181b7163b2a8ff3b54d3739ff1d"><div class="ttname"><a href="classitk_1_1simple_1_1HashImageFilter.html#a71111181b7163b2a8ff3b54d3739ff1d">itk::simple::HashImageFilter::HashFunction</a></div><div class="ttdeci">HashFunction</div><div class="ttdef"><b>Definition:</b> <a href="sitkHashImageFilter_8h_source.html#l00053">sitkHashImageFilter.h:53</a></div></div>
 <div class="ttc" id="astructitk_1_1simple_1_1detail_1_1MemberFunctionAddressor_html"><div class="ttname"><a href="structitk_1_1simple_1_1detail_1_1MemberFunctionAddressor.html">itk::simple::detail::MemberFunctionAddressor</a></div><div class="ttdef"><b>Definition:</b> <a href="sitkDetail_8h_source.html#l00032">sitkDetail.h:32</a></div></div>
+<div class="ttc" id="aclassitk_1_1simple_1_1HashImageFilter_html_a354bd5997af95a92283cabd96ef51053"><div class="ttname"><a href="classitk_1_1simple_1_1HashImageFilter.html#a354bd5997af95a92283cabd96ef51053">itk::simple::HashImageFilter::m_MemberFactory</a></div><div class="ttdeci">std::unique_ptr&lt; detail::MemberFunctionFactory&lt; MemberFunctionType &gt; &gt; m_MemberFactory</div><div class="ttdef"><b>Definition:</b> <a href="sitkHashImageFilter_8h_source.html#l00076">sitkHashImageFilter.h:76</a></div></div>
 <div class="ttc" id="asitkImage_8h_html"><div class="ttname"><a href="sitkImage_8h.html">sitkImage.h</a></div></div>
 <div class="ttc" id="asitkMemberFunctionFactory_8h_html"><div class="ttname"><a href="sitkMemberFunctionFactory_8h.html">sitkMemberFunctionFactory.h</a></div></div>
 <div class="ttc" id="asitkImageFilter_8h_html"><div class="ttname"><a href="sitkImageFilter_8h.html">sitkImageFilter.h</a></div></div>
@@ -148,7 +148,7 @@ $(function() {
 <div class="ttc" id="aclassitk_1_1simple_1_1HashImageFilter_html_a71111181b7163b2a8ff3b54d3739ff1dae6e099ccc967887eccf5810cdba725ba"><div class="ttname"><a href="classitk_1_1simple_1_1HashImageFilter.html#a71111181b7163b2a8ff3b54d3739ff1dae6e099ccc967887eccf5810cdba725ba">itk::simple::HashImageFilter::SHA1</a></div><div class="ttdeci">@ SHA1</div><div class="ttdef"><b>Definition:</b> <a href="sitkHashImageFilter_8h_source.html#l00053">sitkHashImageFilter.h:53</a></div></div>
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Feb 14 2020 03:24:28 for SimpleITK by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Feb 15 2020 03:22:59 for SimpleITK by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

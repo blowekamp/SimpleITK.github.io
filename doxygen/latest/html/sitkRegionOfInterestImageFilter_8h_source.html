@@ -19,7 +19,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">SimpleITK
-   &#160;<span id="projectnumber">2.0.0.dev70</span>
+   &#160;<span id="projectnumber">2.0.0.dev80</span>
    </div>
   </td>
  </tr>
@@ -121,7 +121,7 @@ $(function() {
 <div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160; </div>
 <div class="line"><a name="l00107"></a><span class="lineno"><a class="line" href="classitk_1_1simple_1_1RegionOfInterestImageFilter.html#af82f64823e6df0f5b2063b8fc7dd0c26">  107</a></span>&#160;      <span class="keyword">friend</span> <span class="keyword">struct </span><a class="code" href="structitk_1_1simple_1_1detail_1_1MemberFunctionAddressor.html">detail::MemberFunctionAddressor</a>&lt;MemberFunctionType&gt;;</div>
 <div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160; </div>
-<div class="line"><a name="l00109"></a><span class="lineno"><a class="line" href="classitk_1_1simple_1_1RegionOfInterestImageFilter.html#af70242cf773191a0144eee15d7f7b7a9">  109</a></span>&#160;      nsstd::auto_ptr&lt;detail::MemberFunctionFactory&lt;MemberFunctionType&gt; &gt; <a class="code" href="classitk_1_1simple_1_1RegionOfInterestImageFilter.html#af70242cf773191a0144eee15d7f7b7a9">m_MemberFactory</a>;</div>
+<div class="line"><a name="l00109"></a><span class="lineno"><a class="line" href="classitk_1_1simple_1_1RegionOfInterestImageFilter.html#aea0679acd3c15de7e2205455ee4dc0e1">  109</a></span>&#160;      std::unique_ptr&lt;detail::MemberFunctionFactory&lt;MemberFunctionType&gt; &gt; <a class="code" href="classitk_1_1simple_1_1RegionOfInterestImageFilter.html#aea0679acd3c15de7e2205455ee4dc0e1">m_MemberFactory</a>;</div>
 <div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160; </div>
 <div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160; </div>
 <div class="line"><a name="l00112"></a><span class="lineno"><a class="line" href="classitk_1_1simple_1_1RegionOfInterestImageFilter.html#a0b06ee72cc3db0d3bcc81f9726c27ea4">  112</a></span>&#160;      std::vector&lt;unsigned int&gt;  <a class="code" href="classitk_1_1simple_1_1RegionOfInterestImageFilter.html#a0b06ee72cc3db0d3bcc81f9726c27ea4">m_Size</a>;</div>
@@ -135,7 +135,7 @@ $(function() {
 <div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;}</div>
 <div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;<span class="preprocessor">#endif</span></div>
 </div><!-- fragment --></div><!-- contents -->
-<div class="ttc" id="aclassitk_1_1simple_1_1Image_html"><div class="ttname"><a href="classitk_1_1simple_1_1Image.html">itk::simple::Image</a></div><div class="ttdoc">The Image class for SimpleITK.</div><div class="ttdef"><b>Definition:</b> <a href="sitkImage_8h_source.html#l00078">sitkImage.h:78</a></div></div>
+<div class="ttc" id="aclassitk_1_1simple_1_1Image_html"><div class="ttname"><a href="classitk_1_1simple_1_1Image.html">itk::simple::Image</a></div><div class="ttdoc">The Image class for SimpleITK.</div><div class="ttdef"><b>Definition:</b> <a href="sitkImage_8h_source.html#l00077">sitkImage.h:77</a></div></div>
 <div class="ttc" id="asitkBasicFilters_8h_html"><div class="ttname"><a href="sitkBasicFilters_8h.html">sitkBasicFilters.h</a></div></div>
 <div class="ttc" id="astructitk_1_1Index_html"><div class="ttname"><a href="https://www.itk.org/Doxygen/html/structitk_1_1Index.html">itk::Index</a></div></div>
 <div class="ttc" id="aclassitk_1_1simple_1_1RegionOfInterestImageFilter_html_a10e801c915c50a8c7b9946b92d6dbdae"><div class="ttname"><a href="classitk_1_1simple_1_1RegionOfInterestImageFilter.html#a10e801c915c50a8c7b9946b92d6dbdae">itk::simple::RegionOfInterestImageFilter::GetIndex</a></div><div class="ttdeci">std::vector&lt; int &gt; GetIndex() const</div><div class="ttdef"><b>Definition:</b> <a href="sitkRegionOfInterestImageFilter_8h_source.html#l00080">sitkRegionOfInterestImageFilter.h:80</a></div></div>
@@ -144,7 +144,7 @@ $(function() {
 <div class="ttc" id="anamespaceitk_1_1simple_html_a2f8f400753fad302b76722e34ea84bb4"><div class="ttname"><a href="namespaceitk_1_1simple.html#a2f8f400753fad302b76722e34ea84bb4">itk::simple::NonLabelPixelIDTypeList</a></div><div class="ttdeci">typelist::Append&lt; typelist::Append&lt; BasicPixelIDTypeList, ComplexPixelIDTypeList &gt;::Type, VectorPixelIDTypeList &gt;::Type NonLabelPixelIDTypeList</div><div class="ttdef"><b>Definition:</b> <a href="sitkPixelIDTypeLists_8h_source.html#l00180">sitkPixelIDTypeLists.h:180</a></div></div>
 <div class="ttc" id="anamespaceitk_1_1simple_html_acb564b386f88692ed6a7d812b38fe6b4"><div class="ttname"><a href="namespaceitk_1_1simple.html#acb564b386f88692ed6a7d812b38fe6b4">itk::simple::RegionOfInterest</a></div><div class="ttdeci">Image RegionOfInterest(const Image &amp;image1, const std::vector&lt; unsigned int &gt; &amp;size=std::vector&lt; unsigned int &gt;(3, 1), const std::vector&lt; int &gt; &amp;index=std::vector&lt; int &gt;(3, 0))</div><div class="ttdoc">Extract a region of interest from the input image.</div></div>
 <div class="ttc" id="asitkImageFilter_8h_html"><div class="ttname"><a href="sitkImageFilter_8h.html">sitkImageFilter.h</a></div></div>
-<div class="ttc" id="aclassitk_1_1simple_1_1RegionOfInterestImageFilter_html_af70242cf773191a0144eee15d7f7b7a9"><div class="ttname"><a href="classitk_1_1simple_1_1RegionOfInterestImageFilter.html#af70242cf773191a0144eee15d7f7b7a9">itk::simple::RegionOfInterestImageFilter::m_MemberFactory</a></div><div class="ttdeci">nsstd::auto_ptr&lt; detail::MemberFunctionFactory&lt; MemberFunctionType &gt; &gt; m_MemberFactory</div><div class="ttdef"><b>Definition:</b> <a href="sitkRegionOfInterestImageFilter_8h_source.html#l00109">sitkRegionOfInterestImageFilter.h:109</a></div></div>
+<div class="ttc" id="aclassitk_1_1simple_1_1RegionOfInterestImageFilter_html_aea0679acd3c15de7e2205455ee4dc0e1"><div class="ttname"><a href="classitk_1_1simple_1_1RegionOfInterestImageFilter.html#aea0679acd3c15de7e2205455ee4dc0e1">itk::simple::RegionOfInterestImageFilter::m_MemberFactory</a></div><div class="ttdeci">std::unique_ptr&lt; detail::MemberFunctionFactory&lt; MemberFunctionType &gt; &gt; m_MemberFactory</div><div class="ttdef"><b>Definition:</b> <a href="sitkRegionOfInterestImageFilter_8h_source.html#l00109">sitkRegionOfInterestImageFilter.h:109</a></div></div>
 <div class="ttc" id="aclassitk_1_1simple_1_1RegionOfInterestImageFilter_html_a7ab72879765b7f1b76847629b57360b1"><div class="ttname"><a href="classitk_1_1simple_1_1RegionOfInterestImageFilter.html#a7ab72879765b7f1b76847629b57360b1">itk::simple::RegionOfInterestImageFilter::GetName</a></div><div class="ttdeci">std::string GetName() const</div><div class="ttdef"><b>Definition:</b> <a href="sitkRegionOfInterestImageFilter_8h_source.html#l00082">sitkRegionOfInterestImageFilter.h:82</a></div></div>
 <div class="ttc" id="aclassitk_1_1Region_html"><div class="ttname"><a href="https://www.itk.org/Doxygen/html/classitk_1_1Region.html">itk::Region</a></div></div>
 <div class="ttc" id="aclassitk_1_1simple_1_1RegionOfInterestImageFilter_html_a23700887b988e4658fdfd7a374b9354a"><div class="ttname"><a href="classitk_1_1simple_1_1RegionOfInterestImageFilter.html#a23700887b988e4658fdfd7a374b9354a">itk::simple::RegionOfInterestImageFilter::PixelIDTypeList</a></div><div class="ttdeci">NonLabelPixelIDTypeList PixelIDTypeList</div><div class="ttdef"><b>Definition:</b> <a href="sitkRegionOfInterestImageFilter_8h_source.html#l00060">sitkRegionOfInterestImageFilter.h:60</a></div></div>
@@ -161,7 +161,7 @@ $(function() {
 <div class="ttc" id="aclassitk_1_1simple_1_1RegionOfInterestImageFilter_html"><div class="ttname"><a href="classitk_1_1simple_1_1RegionOfInterestImageFilter.html">itk::simple::RegionOfInterestImageFilter</a></div><div class="ttdoc">Extract a region of interest from the input image.</div><div class="ttdef"><b>Definition:</b> <a href="sitkRegionOfInterestImageFilter_8h_source.html#l00048">sitkRegionOfInterestImageFilter.h:48</a></div></div>
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Feb 14 2020 03:24:31 for SimpleITK by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Feb 15 2020 03:23:02 for SimpleITK by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

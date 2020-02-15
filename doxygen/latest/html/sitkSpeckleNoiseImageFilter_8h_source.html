@@ -19,7 +19,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">SimpleITK
-   &#160;<span id="projectnumber">2.0.0.dev70</span>
+   &#160;<span id="projectnumber">2.0.0.dev80</span>
    </div>
   </td>
  </tr>
@@ -118,7 +118,7 @@ $(function() {
 <div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160; </div>
 <div class="line"><a name="l00114"></a><span class="lineno"><a class="line" href="classitk_1_1simple_1_1SpeckleNoiseImageFilter.html#af82f64823e6df0f5b2063b8fc7dd0c26">  114</a></span>&#160;      <span class="keyword">friend</span> <span class="keyword">struct </span><a class="code" href="structitk_1_1simple_1_1detail_1_1MemberFunctionAddressor.html">detail::MemberFunctionAddressor</a>&lt;MemberFunctionType&gt;;</div>
 <div class="line"><a name="l00115"></a><span class="lineno"><a class="line" href="classitk_1_1simple_1_1SpeckleNoiseImageFilter.html#ac88de73417149bc6fcd4eaff2635786d">  115</a></span>&#160;      <span class="keyword">friend</span> <span class="keyword">struct </span><a class="code" href="structitk_1_1simple_1_1detail_1_1ExecuteInternalVectorImageAddressor.html">detail::ExecuteInternalVectorImageAddressor</a>&lt;MemberFunctionType&gt;;</div>
-<div class="line"><a name="l00116"></a><span class="lineno"><a class="line" href="classitk_1_1simple_1_1SpeckleNoiseImageFilter.html#a897351c1da0971015ffe1af1400ae8fc">  116</a></span>&#160;      nsstd::auto_ptr&lt;detail::MemberFunctionFactory&lt;MemberFunctionType&gt; &gt; <a class="code" href="classitk_1_1simple_1_1SpeckleNoiseImageFilter.html#a897351c1da0971015ffe1af1400ae8fc">m_MemberFactory</a>;</div>
+<div class="line"><a name="l00116"></a><span class="lineno"><a class="line" href="classitk_1_1simple_1_1SpeckleNoiseImageFilter.html#a431f8c8858af7ef840b628ca62e32907">  116</a></span>&#160;      std::unique_ptr&lt;detail::MemberFunctionFactory&lt;MemberFunctionType&gt; &gt; <a class="code" href="classitk_1_1simple_1_1SpeckleNoiseImageFilter.html#a431f8c8858af7ef840b628ca62e32907">m_MemberFactory</a>;</div>
 <div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160; </div>
 <div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160; </div>
 <div class="line"><a name="l00119"></a><span class="lineno"><a class="line" href="classitk_1_1simple_1_1SpeckleNoiseImageFilter.html#a223ea9cec4055e8ec4ea1bd66a4b6b0e">  119</a></span>&#160;      <span class="keywordtype">double</span>  <a class="code" href="classitk_1_1simple_1_1SpeckleNoiseImageFilter.html#a223ea9cec4055e8ec4ea1bd66a4b6b0e">m_StandardDeviation</a>;</div>
@@ -132,7 +132,7 @@ $(function() {
 <div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;}</div>
 <div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;<span class="preprocessor">#endif</span></div>
 </div><!-- fragment --></div><!-- contents -->
-<div class="ttc" id="aclassitk_1_1simple_1_1Image_html"><div class="ttname"><a href="classitk_1_1simple_1_1Image.html">itk::simple::Image</a></div><div class="ttdoc">The Image class for SimpleITK.</div><div class="ttdef"><b>Definition:</b> <a href="sitkImage_8h_source.html#l00078">sitkImage.h:78</a></div></div>
+<div class="ttc" id="aclassitk_1_1simple_1_1Image_html"><div class="ttname"><a href="classitk_1_1simple_1_1Image.html">itk::simple::Image</a></div><div class="ttdoc">The Image class for SimpleITK.</div><div class="ttdef"><b>Definition:</b> <a href="sitkImage_8h_source.html#l00077">sitkImage.h:77</a></div></div>
 <div class="ttc" id="asitkBasicFilters_8h_html"><div class="ttname"><a href="sitkBasicFilters_8h.html">sitkBasicFilters.h</a></div></div>
 <div class="ttc" id="astructitk_1_1simple_1_1detail_1_1ExecuteInternalVectorImageAddressor_html"><div class="ttname"><a href="structitk_1_1simple_1_1detail_1_1ExecuteInternalVectorImageAddressor.html">itk::simple::detail::ExecuteInternalVectorImageAddressor</a></div><div class="ttdef"><b>Definition:</b> <a href="sitkDetail_8h_source.html#l00059">sitkDetail.h:59</a></div></div>
 <div class="ttc" id="astructitk_1_1simple_1_1detail_1_1MemberFunctionAddressor_html"><div class="ttname"><a href="structitk_1_1simple_1_1detail_1_1MemberFunctionAddressor.html">itk::simple::detail::MemberFunctionAddressor</a></div><div class="ttdef"><b>Definition:</b> <a href="sitkDetail_8h_source.html#l00032">sitkDetail.h:32</a></div></div>
@@ -141,7 +141,7 @@ $(function() {
 <div class="ttc" id="asitkImageFilter_8h_html"><div class="ttname"><a href="sitkImageFilter_8h.html">sitkImageFilter.h</a></div></div>
 <div class="ttc" id="aclassitk_1_1simple_1_1SpeckleNoiseImageFilter_html_a8f975d6fac0d936c448a5fedf9db78cd"><div class="ttname"><a href="classitk_1_1simple_1_1SpeckleNoiseImageFilter.html#a8f975d6fac0d936c448a5fedf9db78cd">itk::simple::SpeckleNoiseImageFilter::Self</a></div><div class="ttdeci">SpeckleNoiseImageFilter Self</div><div class="ttdef"><b>Definition:</b> <a href="sitkSpeckleNoiseImageFilter_8h_source.html#l00060">sitkSpeckleNoiseImageFilter.h:60</a></div></div>
 <div class="ttc" id="anamespaceitk_1_1simple_html_a7b398164e6358385443905add101ac00"><div class="ttname"><a href="namespaceitk_1_1simple.html#a7b398164e6358385443905add101ac00">itk::simple::SpeckleNoise</a></div><div class="ttdeci">Image SpeckleNoise(const Image &amp;image1, double standardDeviation=1.0, uint32_t seed=(uint32_t) itk::simple::sitkWallClock)</div><div class="ttdoc">Alter an image with speckle (multiplicative) noise.</div></div>
-<div class="ttc" id="aclassitk_1_1simple_1_1SpeckleNoiseImageFilter_html_a897351c1da0971015ffe1af1400ae8fc"><div class="ttname"><a href="classitk_1_1simple_1_1SpeckleNoiseImageFilter.html#a897351c1da0971015ffe1af1400ae8fc">itk::simple::SpeckleNoiseImageFilter::m_MemberFactory</a></div><div class="ttdeci">nsstd::auto_ptr&lt; detail::MemberFunctionFactory&lt; MemberFunctionType &gt; &gt; m_MemberFactory</div><div class="ttdef"><b>Definition:</b> <a href="sitkSpeckleNoiseImageFilter_8h_source.html#l00116">sitkSpeckleNoiseImageFilter.h:116</a></div></div>
+<div class="ttc" id="aclassitk_1_1simple_1_1SpeckleNoiseImageFilter_html_a431f8c8858af7ef840b628ca62e32907"><div class="ttname"><a href="classitk_1_1simple_1_1SpeckleNoiseImageFilter.html#a431f8c8858af7ef840b628ca62e32907">itk::simple::SpeckleNoiseImageFilter::m_MemberFactory</a></div><div class="ttdeci">std::unique_ptr&lt; detail::MemberFunctionFactory&lt; MemberFunctionType &gt; &gt; m_MemberFactory</div><div class="ttdef"><b>Definition:</b> <a href="sitkSpeckleNoiseImageFilter_8h_source.html#l00116">sitkSpeckleNoiseImageFilter.h:116</a></div></div>
 <div class="ttc" id="asitkBasicFilters_8h_html_a8c00663d3a7bae36066e320f83381283"><div class="ttname"><a href="sitkBasicFilters_8h.html#a8c00663d3a7bae36066e320f83381283">SITKBasicFilters_EXPORT</a></div><div class="ttdeci">#define SITKBasicFilters_EXPORT</div><div class="ttdef"><b>Definition:</b> <a href="sitkBasicFilters_8h_source.html#l00050">sitkBasicFilters.h:50</a></div></div>
 <div class="ttc" id="aclassitk_1_1simple_1_1SpeckleNoiseImageFilter_html_af2c9ddf4b146a29708b74c6c6015f454"><div class="ttname"><a href="classitk_1_1simple_1_1SpeckleNoiseImageFilter.html#af2c9ddf4b146a29708b74c6c6015f454">itk::simple::SpeckleNoiseImageFilter::m_Seed</a></div><div class="ttdeci">uint32_t m_Seed</div><div class="ttdef"><b>Definition:</b> <a href="sitkSpeckleNoiseImageFilter_8h_source.html#l00120">sitkSpeckleNoiseImageFilter.h:120</a></div></div>
 <div class="ttc" id="aclassitk_1_1simple_1_1SpeckleNoiseImageFilter_html_a6f8a88f15ac399734e8a25b9042f2657"><div class="ttname"><a href="classitk_1_1simple_1_1SpeckleNoiseImageFilter.html#a6f8a88f15ac399734e8a25b9042f2657">itk::simple::SpeckleNoiseImageFilter::SetStandardDeviation</a></div><div class="ttdeci">Self &amp; SetStandardDeviation(double StandardDeviation)</div><div class="ttdef"><b>Definition:</b> <a href="sitkSpeckleNoiseImageFilter_8h_source.html#l00077">sitkSpeckleNoiseImageFilter.h:77</a></div></div>
@@ -158,7 +158,7 @@ $(function() {
 <div class="ttc" id="aclassitk_1_1simple_1_1SpeckleNoiseImageFilter_html_a55534b4610df09bfd1b54bd521eb0b9c"><div class="ttname"><a href="classitk_1_1simple_1_1SpeckleNoiseImageFilter.html#a55534b4610df09bfd1b54bd521eb0b9c">itk::simple::SpeckleNoiseImageFilter::GetSeed</a></div><div class="ttdeci">uint32_t GetSeed() const</div><div class="ttdef"><b>Definition:</b> <a href="sitkSpeckleNoiseImageFilter_8h_source.html#l00090">sitkSpeckleNoiseImageFilter.h:90</a></div></div>
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Feb 14 2020 03:24:32 for SimpleITK by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Feb 15 2020 03:23:03 for SimpleITK by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

@@ -5,7 +5,7 @@
 <area shape="rect" id="node48" href="$classitk_1_1simple_1_1ImageFilter.html" title=" " alt="" coords="784,1427,995,1454"/>
 <area shape="rect" id="node49" href="$classitk_1_1simple_1_1ImageFilter.html" title=" " alt="" coords="784,1478,995,1505"/>
 <area shape="rect" id="node2" href="$classitk_1_1simple_1_1ProcessObject.html" title="Base class for SimpleITK classes based on ProcessObject." alt="" coords="241,1402,432,1429"/>
-<area shape="rect" id="node3" href="$classitk_1_1simple_1_1NonCopyable.html" title="An inheratable class to disable copying of a class." alt="" coords="5,1402,192,1429"/>
+<area shape="rect" id="node3" href="$classitk_1_1simple_1_1NonCopyable.html" title="An inheritable class to disable copying of a class." alt="" coords="5,1402,192,1429"/>
 <area shape="rect" id="node5" href="$classitk_1_1simple_1_1CannySegmentationLevelSetImageFilter.html" title="Segments structures in images based on image features derived from pseudo&#45;canny&#45;edges." alt="" coords="1055,5,1285,47"/>
 <area shape="rect" id="node6" href="$classitk_1_1simple_1_1ConnectedComponentImageFilter.html" title="Label the objects in a binary image." alt="" coords="1049,71,1291,112"/>
 <area shape="rect" id="node7" href="$classitk_1_1simple_1_1ConvolutionImageFilter.html" title="Convolve a given image with an arbitrary image kernel." alt="" coords="1081,136,1259,177"/>

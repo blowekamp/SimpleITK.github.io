@@ -13,7 +13,7 @@
 <area shape="rect" id="node47" href="$classitk_1_1simple_1_1ImageReaderBase.html" title="An abract base class for image readers." alt="" coords="484,1601,701,1627"/>
 <area shape="rect" id="node48" href="$classitk_1_1simple_1_1ImageRegistrationMethod.html" title="An interface method to the modular ITKv4 registration framework." alt="" coords="483,1652,702,1693"/>
 <area shape="rect" id="node49" href="$classitk_1_1simple_1_1ImageSeriesWriter.html" title="Writer series of image from a SimpleITK image." alt="" coords="503,1717,683,1759"/>
-<area shape="rect" id="node2" href="$classitk_1_1simple_1_1NonCopyable.html" title="An inheratable class to disable copying of a class." alt="" coords="5,1375,192,1402"/>
+<area shape="rect" id="node2" href="$classitk_1_1simple_1_1NonCopyable.html" title="An inheritable class to disable copying of a class." alt="" coords="5,1375,192,1402"/>
 <area shape="rect" id="node4" href="$classitk_1_1simple_1_1CannySegmentationLevelSetImageFilter.html" title="Segments structures in images based on image features derived from pseudo&#45;canny&#45;edges." alt="" coords="1065,5,1296,47"/>
 <area shape="rect" id="node5" href="$classitk_1_1simple_1_1ConnectedComponentImageFilter.html" title="Label the objects in a binary image." alt="" coords="1059,71,1302,112"/>
 <area shape="rect" id="node6" href="$classitk_1_1simple_1_1ConvolutionImageFilter.html" title="Convolve a given image with an arbitrary image kernel." alt="" coords="1092,136,1269,177"/>

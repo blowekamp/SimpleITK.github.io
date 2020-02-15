@@ -19,7 +19,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">SimpleITK
-   &#160;<span id="projectnumber">2.0.0.dev70</span>
+   &#160;<span id="projectnumber">2.0.0.dev80</span>
    </div>
   </td>
  </tr>
@@ -121,7 +121,7 @@ $(function() {
 <div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160; </div>
 <div class="line"><a name="l00112"></a><span class="lineno"><a class="line" href="classitk_1_1simple_1_1HConcaveImageFilter.html#af82f64823e6df0f5b2063b8fc7dd0c26">  112</a></span>&#160;      <span class="keyword">friend</span> <span class="keyword">struct </span><a class="code" href="structitk_1_1simple_1_1detail_1_1MemberFunctionAddressor.html">detail::MemberFunctionAddressor</a>&lt;MemberFunctionType&gt;;</div>
 <div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160; </div>
-<div class="line"><a name="l00114"></a><span class="lineno"><a class="line" href="classitk_1_1simple_1_1HConcaveImageFilter.html#ace9e4392db05f36b1de950c04ce7565c">  114</a></span>&#160;      nsstd::auto_ptr&lt;detail::MemberFunctionFactory&lt;MemberFunctionType&gt; &gt; <a class="code" href="classitk_1_1simple_1_1HConcaveImageFilter.html#ace9e4392db05f36b1de950c04ce7565c">m_MemberFactory</a>;</div>
+<div class="line"><a name="l00114"></a><span class="lineno"><a class="line" href="classitk_1_1simple_1_1HConcaveImageFilter.html#a5b307c8ca53ddb1190ab782b0bfd349f">  114</a></span>&#160;      std::unique_ptr&lt;detail::MemberFunctionFactory&lt;MemberFunctionType&gt; &gt; <a class="code" href="classitk_1_1simple_1_1HConcaveImageFilter.html#a5b307c8ca53ddb1190ab782b0bfd349f">m_MemberFactory</a>;</div>
 <div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160; </div>
 <div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160; </div>
 <div class="line"><a name="l00117"></a><span class="lineno"><a class="line" href="classitk_1_1simple_1_1HConcaveImageFilter.html#a71eed19b02b90ce827111116564a086a">  117</a></span>&#160;      <span class="keywordtype">double</span>  <a class="code" href="classitk_1_1simple_1_1HConcaveImageFilter.html#a71eed19b02b90ce827111116564a086a">m_Height</a>;</div>
@@ -136,9 +136,8 @@ $(function() {
 <div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;}</div>
 <div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;<span class="preprocessor">#endif</span></div>
 </div><!-- fragment --></div><!-- contents -->
-<div class="ttc" id="aclassitk_1_1simple_1_1Image_html"><div class="ttname"><a href="classitk_1_1simple_1_1Image.html">itk::simple::Image</a></div><div class="ttdoc">The Image class for SimpleITK.</div><div class="ttdef"><b>Definition:</b> <a href="sitkImage_8h_source.html#l00078">sitkImage.h:78</a></div></div>
+<div class="ttc" id="aclassitk_1_1simple_1_1Image_html"><div class="ttname"><a href="classitk_1_1simple_1_1Image.html">itk::simple::Image</a></div><div class="ttdoc">The Image class for SimpleITK.</div><div class="ttdef"><b>Definition:</b> <a href="sitkImage_8h_source.html#l00077">sitkImage.h:77</a></div></div>
 <div class="ttc" id="asitkBasicFilters_8h_html"><div class="ttname"><a href="sitkBasicFilters_8h.html">sitkBasicFilters.h</a></div></div>
-<div class="ttc" id="aclassitk_1_1simple_1_1HConcaveImageFilter_html_ace9e4392db05f36b1de950c04ce7565c"><div class="ttname"><a href="classitk_1_1simple_1_1HConcaveImageFilter.html#ace9e4392db05f36b1de950c04ce7565c">itk::simple::HConcaveImageFilter::m_MemberFactory</a></div><div class="ttdeci">nsstd::auto_ptr&lt; detail::MemberFunctionFactory&lt; MemberFunctionType &gt; &gt; m_MemberFactory</div><div class="ttdef"><b>Definition:</b> <a href="sitkHConcaveImageFilter_8h_source.html#l00114">sitkHConcaveImageFilter.h:114</a></div></div>
 <div class="ttc" id="astructitk_1_1simple_1_1detail_1_1MemberFunctionAddressor_html"><div class="ttname"><a href="structitk_1_1simple_1_1detail_1_1MemberFunctionAddressor.html">itk::simple::detail::MemberFunctionAddressor</a></div><div class="ttdef"><b>Definition:</b> <a href="sitkDetail_8h_source.html#l00032">sitkDetail.h:32</a></div></div>
 <div class="ttc" id="aclassitk_1_1simple_1_1HConcaveImageFilter_html"><div class="ttname"><a href="classitk_1_1simple_1_1HConcaveImageFilter.html">itk::simple::HConcaveImageFilter</a></div><div class="ttdoc">Identify local minima whose depth below the baseline is greater than h.</div><div class="ttdef"><b>Definition:</b> <a href="sitkHConcaveImageFilter_8h_source.html#l00051">sitkHConcaveImageFilter.h:51</a></div></div>
 <div class="ttc" id="aclassitk_1_1simple_1_1HConcaveImageFilter_html_a0822975190c640279564beab4c46023d"><div class="ttname"><a href="classitk_1_1simple_1_1HConcaveImageFilter.html#a0822975190c640279564beab4c46023d">itk::simple::HConcaveImageFilter::GetHeight</a></div><div class="ttdeci">double GetHeight() const</div><div class="ttdef"><b>Definition:</b> <a href="sitkHConcaveImageFilter_8h_source.html#l00075">sitkHConcaveImageFilter.h:75</a></div></div>
@@ -157,11 +156,12 @@ $(function() {
 <div class="ttc" id="aclassitk_1_1simple_1_1ProcessObject_html"><div class="ttname"><a href="classitk_1_1simple_1_1ProcessObject.html">itk::simple::ProcessObject</a></div><div class="ttdoc">Base class for SimpleITK classes based on ProcessObject.</div><div class="ttdef"><b>Definition:</b> <a href="sitkProcessObject_8h_source.html#l00050">sitkProcessObject.h:50</a></div></div>
 <div class="ttc" id="aclassitk_1_1simple_1_1HConcaveImageFilter_html_a6871bb0ab052c75bc8de6f7a63ce5949"><div class="ttname"><a href="classitk_1_1simple_1_1HConcaveImageFilter.html#a6871bb0ab052c75bc8de6f7a63ce5949">itk::simple::HConcaveImageFilter::SetFullyConnected</a></div><div class="ttdeci">Self &amp; SetFullyConnected(bool FullyConnected)</div><div class="ttdef"><b>Definition:</b> <a href="sitkHConcaveImageFilter_8h_source.html#l00080">sitkHConcaveImageFilter.h:80</a></div></div>
 <div class="ttc" id="aclassitk_1_1simple_1_1HConcaveImageFilter_html_a0df82808d70617367652bb01866b4b54"><div class="ttname"><a href="classitk_1_1simple_1_1HConcaveImageFilter.html#a0df82808d70617367652bb01866b4b54">itk::simple::HConcaveImageFilter::Self</a></div><div class="ttdeci">HConcaveImageFilter Self</div><div class="ttdef"><b>Definition:</b> <a href="sitkHConcaveImageFilter_8h_source.html#l00053">sitkHConcaveImageFilter.h:53</a></div></div>
+<div class="ttc" id="aclassitk_1_1simple_1_1HConcaveImageFilter_html_a5b307c8ca53ddb1190ab782b0bfd349f"><div class="ttname"><a href="classitk_1_1simple_1_1HConcaveImageFilter.html#a5b307c8ca53ddb1190ab782b0bfd349f">itk::simple::HConcaveImageFilter::m_MemberFactory</a></div><div class="ttdeci">std::unique_ptr&lt; detail::MemberFunctionFactory&lt; MemberFunctionType &gt; &gt; m_MemberFactory</div><div class="ttdef"><b>Definition:</b> <a href="sitkHConcaveImageFilter_8h_source.html#l00114">sitkHConcaveImageFilter.h:114</a></div></div>
 <div class="ttc" id="aclassitk_1_1simple_1_1HConcaveImageFilter_html_a0ac5e54fb731e53e80c76c3c0865e746"><div class="ttname"><a href="classitk_1_1simple_1_1HConcaveImageFilter.html#a0ac5e54fb731e53e80c76c3c0865e746">itk::simple::HConcaveImageFilter::GetName</a></div><div class="ttdeci">std::string GetName() const</div><div class="ttdef"><b>Definition:</b> <a href="sitkHConcaveImageFilter_8h_source.html#l00091">sitkHConcaveImageFilter.h:91</a></div></div>
 <div class="ttc" id="aclassitk_1_1simple_1_1HConcaveImageFilter_html_a0086f90f11ca6cbd12febaf80f911f06"><div class="ttname"><a href="classitk_1_1simple_1_1HConcaveImageFilter.html#a0086f90f11ca6cbd12febaf80f911f06">itk::simple::HConcaveImageFilter::m_FullyConnected</a></div><div class="ttdeci">bool m_FullyConnected</div><div class="ttdef"><b>Definition:</b> <a href="sitkHConcaveImageFilter_8h_source.html#l00119">sitkHConcaveImageFilter.h:119</a></div></div>
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Feb 14 2020 03:24:28 for SimpleITK by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Feb 15 2020 03:22:59 for SimpleITK by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

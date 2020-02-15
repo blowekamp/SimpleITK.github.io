@@ -19,7 +19,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">SimpleITK
-   &#160;<span id="projectnumber">2.0.0.dev70</span>
+   &#160;<span id="projectnumber">2.0.0.dev80</span>
    </div>
   </td>
  </tr>
@@ -122,7 +122,7 @@ $(function() {
 <div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160; </div>
 <div class="line"><a name="l00110"></a><span class="lineno"><a class="line" href="classitk_1_1simple_1_1ConstantPadImageFilter.html#af82f64823e6df0f5b2063b8fc7dd0c26">  110</a></span>&#160;      <span class="keyword">friend</span> <span class="keyword">struct </span><a class="code" href="structitk_1_1simple_1_1detail_1_1MemberFunctionAddressor.html">detail::MemberFunctionAddressor</a>&lt;MemberFunctionType&gt;;</div>
 <div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160; </div>
-<div class="line"><a name="l00112"></a><span class="lineno"><a class="line" href="classitk_1_1simple_1_1ConstantPadImageFilter.html#a172c38dd1d3eb3b78cf8d6b9bbb26241">  112</a></span>&#160;      nsstd::auto_ptr&lt;detail::MemberFunctionFactory&lt;MemberFunctionType&gt; &gt; <a class="code" href="classitk_1_1simple_1_1ConstantPadImageFilter.html#a172c38dd1d3eb3b78cf8d6b9bbb26241">m_MemberFactory</a>;</div>
+<div class="line"><a name="l00112"></a><span class="lineno"><a class="line" href="classitk_1_1simple_1_1ConstantPadImageFilter.html#abcaadae67e5aae842dc09099bfab0fcc">  112</a></span>&#160;      std::unique_ptr&lt;detail::MemberFunctionFactory&lt;MemberFunctionType&gt; &gt; <a class="code" href="classitk_1_1simple_1_1ConstantPadImageFilter.html#abcaadae67e5aae842dc09099bfab0fcc">m_MemberFactory</a>;</div>
 <div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160; </div>
 <div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160; </div>
 <div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;      <span class="comment">/*  odo what does this itk_type attribute do? */</span></div>
@@ -140,14 +140,14 @@ $(function() {
 <div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;}</div>
 <div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;<span class="preprocessor">#endif</span></div>
 </div><!-- fragment --></div><!-- contents -->
-<div class="ttc" id="aclassitk_1_1simple_1_1Image_html"><div class="ttname"><a href="classitk_1_1simple_1_1Image.html">itk::simple::Image</a></div><div class="ttdoc">The Image class for SimpleITK.</div><div class="ttdef"><b>Definition:</b> <a href="sitkImage_8h_source.html#l00078">sitkImage.h:78</a></div></div>
+<div class="ttc" id="aclassitk_1_1simple_1_1Image_html"><div class="ttname"><a href="classitk_1_1simple_1_1Image.html">itk::simple::Image</a></div><div class="ttdoc">The Image class for SimpleITK.</div><div class="ttdef"><b>Definition:</b> <a href="sitkImage_8h_source.html#l00077">sitkImage.h:77</a></div></div>
 <div class="ttc" id="aclassitk_1_1simple_1_1ConstantPadImageFilter_html_a7889a37932e8571d339c63253d2692a4"><div class="ttname"><a href="classitk_1_1simple_1_1ConstantPadImageFilter.html#a7889a37932e8571d339c63253d2692a4">itk::simple::ConstantPadImageFilter::GetConstant</a></div><div class="ttdeci">double GetConstant() const</div><div class="ttdef"><b>Definition:</b> <a href="sitkConstantPadImageFilter_8h_source.html#l00087">sitkConstantPadImageFilter.h:87</a></div></div>
 <div class="ttc" id="aclassitk_1_1simple_1_1ConstantPadImageFilter_html_a4303831080899e0d2547017bd944d4da"><div class="ttname"><a href="classitk_1_1simple_1_1ConstantPadImageFilter.html#a4303831080899e0d2547017bd944d4da">itk::simple::ConstantPadImageFilter::m_Constant</a></div><div class="ttdeci">double m_Constant</div><div class="ttdef"><b>Definition:</b> <a href="sitkConstantPadImageFilter_8h_source.html#l00120">sitkConstantPadImageFilter.h:120</a></div></div>
 <div class="ttc" id="asitkBasicFilters_8h_html"><div class="ttname"><a href="sitkBasicFilters_8h.html">sitkBasicFilters.h</a></div></div>
 <div class="ttc" id="aclassitk_1_1simple_1_1ConstantPadImageFilter_html_a6385344a0b058ebb9bcf94e68d631b53"><div class="ttname"><a href="classitk_1_1simple_1_1ConstantPadImageFilter.html#a6385344a0b058ebb9bcf94e68d631b53">itk::simple::ConstantPadImageFilter::SetConstant</a></div><div class="ttdeci">Self &amp; SetConstant(double Constant)</div><div class="ttdef"><b>Definition:</b> <a href="sitkConstantPadImageFilter_8h_source.html#l00082">sitkConstantPadImageFilter.h:82</a></div></div>
 <div class="ttc" id="aclassitk_1_1simple_1_1ConstantPadImageFilter_html_a90d7b252a879ee4df073dde049dcaa0e"><div class="ttname"><a href="classitk_1_1simple_1_1ConstantPadImageFilter.html#a90d7b252a879ee4df073dde049dcaa0e">itk::simple::ConstantPadImageFilter::m_PadUpperBound</a></div><div class="ttdeci">std::vector&lt; unsigned int &gt; m_PadUpperBound</div><div class="ttdef"><b>Definition:</b> <a href="sitkConstantPadImageFilter_8h_source.html#l00118">sitkConstantPadImageFilter.h:118</a></div></div>
 <div class="ttc" id="aclassitk_1_1simple_1_1ConstantPadImageFilter_html_aef28cb84a75840998df228b5ecb2f41e"><div class="ttname"><a href="classitk_1_1simple_1_1ConstantPadImageFilter.html#aef28cb84a75840998df228b5ecb2f41e">itk::simple::ConstantPadImageFilter::PixelIDTypeList</a></div><div class="ttdeci">BasicPixelIDTypeList PixelIDTypeList</div><div class="ttdef"><b>Definition:</b> <a href="sitkConstantPadImageFilter_8h_source.html#l00059">sitkConstantPadImageFilter.h:59</a></div></div>
-<div class="ttc" id="aclassitk_1_1simple_1_1ConstantPadImageFilter_html_a172c38dd1d3eb3b78cf8d6b9bbb26241"><div class="ttname"><a href="classitk_1_1simple_1_1ConstantPadImageFilter.html#a172c38dd1d3eb3b78cf8d6b9bbb26241">itk::simple::ConstantPadImageFilter::m_MemberFactory</a></div><div class="ttdeci">nsstd::auto_ptr&lt; detail::MemberFunctionFactory&lt; MemberFunctionType &gt; &gt; m_MemberFactory</div><div class="ttdef"><b>Definition:</b> <a href="sitkConstantPadImageFilter_8h_source.html#l00112">sitkConstantPadImageFilter.h:112</a></div></div>
+<div class="ttc" id="aclassitk_1_1simple_1_1ConstantPadImageFilter_html_abcaadae67e5aae842dc09099bfab0fcc"><div class="ttname"><a href="classitk_1_1simple_1_1ConstantPadImageFilter.html#abcaadae67e5aae842dc09099bfab0fcc">itk::simple::ConstantPadImageFilter::m_MemberFactory</a></div><div class="ttdeci">std::unique_ptr&lt; detail::MemberFunctionFactory&lt; MemberFunctionType &gt; &gt; m_MemberFactory</div><div class="ttdef"><b>Definition:</b> <a href="sitkConstantPadImageFilter_8h_source.html#l00112">sitkConstantPadImageFilter.h:112</a></div></div>
 <div class="ttc" id="astructitk_1_1simple_1_1detail_1_1MemberFunctionAddressor_html"><div class="ttname"><a href="structitk_1_1simple_1_1detail_1_1MemberFunctionAddressor.html">itk::simple::detail::MemberFunctionAddressor</a></div><div class="ttdef"><b>Definition:</b> <a href="sitkDetail_8h_source.html#l00032">sitkDetail.h:32</a></div></div>
 <div class="ttc" id="aclassitk_1_1simple_1_1ConstantPadImageFilter_html_a925f122c32741e0c4d4f79d59af2388a"><div class="ttname"><a href="classitk_1_1simple_1_1ConstantPadImageFilter.html#a925f122c32741e0c4d4f79d59af2388a">itk::simple::ConstantPadImageFilter::m_PadLowerBound</a></div><div class="ttdeci">std::vector&lt; unsigned int &gt; m_PadLowerBound</div><div class="ttdef"><b>Definition:</b> <a href="sitkConstantPadImageFilter_8h_source.html#l00116">sitkConstantPadImageFilter.h:116</a></div></div>
 <div class="ttc" id="aclassitk_1_1simple_1_1ConstantPadImageFilter_html_a89a58defe55f9ee1949f507da814e39b"><div class="ttname"><a href="classitk_1_1simple_1_1ConstantPadImageFilter.html#a89a58defe55f9ee1949f507da814e39b">itk::simple::ConstantPadImageFilter::Self</a></div><div class="ttdeci">ConstantPadImageFilter Self</div><div class="ttdef"><b>Definition:</b> <a href="sitkConstantPadImageFilter_8h_source.html#l00049">sitkConstantPadImageFilter.h:49</a></div></div>
@@ -166,7 +166,7 @@ $(function() {
 <div class="ttc" id="aclassitk_1_1simple_1_1ProcessObject_html"><div class="ttname"><a href="classitk_1_1simple_1_1ProcessObject.html">itk::simple::ProcessObject</a></div><div class="ttdoc">Base class for SimpleITK classes based on ProcessObject.</div><div class="ttdef"><b>Definition:</b> <a href="sitkProcessObject_8h_source.html#l00050">sitkProcessObject.h:50</a></div></div>
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Feb 14 2020 03:24:27 for SimpleITK by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Feb 15 2020 03:22:58 for SimpleITK by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

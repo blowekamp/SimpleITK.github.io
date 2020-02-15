@@ -19,7 +19,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">SimpleITK
-   &#160;<span id="projectnumber">2.0.0.dev70</span>
+   &#160;<span id="projectnumber">2.0.0.dev80</span>
    </div>
   </td>
  </tr>
@@ -119,7 +119,7 @@ $(function() {
 <div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;      <span class="keyword">template</span> &lt;<span class="keyword">class</span> TImageType1, <span class="keyword">class</span> TImageType2&gt; <a class="code" href="classitk_1_1simple_1_1Image.html">Image</a> DualExecuteInternal ( <span class="keyword">const</span> <a class="code" href="classitk_1_1simple_1_1Image.html">Image</a> * image, <span class="keyword">const</span> <a class="code" href="classitk_1_1simple_1_1Image.html">Image</a> * maskImage );</div>
 <div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160; </div>
 <div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160; </div>
-<div class="line"><a name="l00121"></a><span class="lineno"><a class="line" href="classitk_1_1simple_1_1MaskImageFilter.html#a65f987f242af7b007b4a01adc685ee0f">  121</a></span>&#160;      nsstd::auto_ptr&lt;detail::DualMemberFunctionFactory&lt;MemberFunctionType&gt; &gt; <a class="code" href="classitk_1_1simple_1_1MaskImageFilter.html#a65f987f242af7b007b4a01adc685ee0f">m_DualMemberFactory</a>;</div>
+<div class="line"><a name="l00121"></a><span class="lineno"><a class="line" href="classitk_1_1simple_1_1MaskImageFilter.html#a51351a331ae741bcf3676f4ea7b95c70">  121</a></span>&#160;      std::unique_ptr&lt;detail::DualMemberFunctionFactory&lt;MemberFunctionType&gt; &gt; <a class="code" href="classitk_1_1simple_1_1MaskImageFilter.html#a51351a331ae741bcf3676f4ea7b95c70">m_DualMemberFactory</a>;</div>
 <div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160; </div>
 <div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160; </div>
 <div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160; </div>
@@ -135,15 +135,15 @@ $(function() {
 <div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;}</div>
 <div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;<span class="preprocessor">#endif</span></div>
 </div><!-- fragment --></div><!-- contents -->
-<div class="ttc" id="aclassitk_1_1simple_1_1Image_html"><div class="ttname"><a href="classitk_1_1simple_1_1Image.html">itk::simple::Image</a></div><div class="ttdoc">The Image class for SimpleITK.</div><div class="ttdef"><b>Definition:</b> <a href="sitkImage_8h_source.html#l00078">sitkImage.h:78</a></div></div>
+<div class="ttc" id="aclassitk_1_1simple_1_1Image_html"><div class="ttname"><a href="classitk_1_1simple_1_1Image.html">itk::simple::Image</a></div><div class="ttdoc">The Image class for SimpleITK.</div><div class="ttdef"><b>Definition:</b> <a href="sitkImage_8h_source.html#l00077">sitkImage.h:77</a></div></div>
 <div class="ttc" id="asitkBasicFilters_8h_html"><div class="ttname"><a href="sitkBasicFilters_8h.html">sitkBasicFilters.h</a></div></div>
 <div class="ttc" id="aclassitk_1_1simple_1_1MaskImageFilter_html_a8d536f45730fecef00353501d448b523"><div class="ttname"><a href="classitk_1_1simple_1_1MaskImageFilter.html#a8d536f45730fecef00353501d448b523">itk::simple::MaskImageFilter::m_MaskingValue</a></div><div class="ttdeci">double m_MaskingValue</div><div class="ttdef"><b>Definition:</b> <a href="sitkMaskImageFilter_8h_source.html#l00126">sitkMaskImageFilter.h:126</a></div></div>
 <div class="ttc" id="aclassitk_1_1simple_1_1MaskImageFilter_html"><div class="ttname"><a href="classitk_1_1simple_1_1MaskImageFilter.html">itk::simple::MaskImageFilter</a></div><div class="ttdoc">Mask an image with a mask.</div><div class="ttdef"><b>Definition:</b> <a href="sitkMaskImageFilter_8h_source.html#l00064">sitkMaskImageFilter.h:64</a></div></div>
 <div class="ttc" id="anamespaceitk_1_1simple_html_a2f8f400753fad302b76722e34ea84bb4"><div class="ttname"><a href="namespaceitk_1_1simple.html#a2f8f400753fad302b76722e34ea84bb4">itk::simple::NonLabelPixelIDTypeList</a></div><div class="ttdeci">typelist::Append&lt; typelist::Append&lt; BasicPixelIDTypeList, ComplexPixelIDTypeList &gt;::Type, VectorPixelIDTypeList &gt;::Type NonLabelPixelIDTypeList</div><div class="ttdef"><b>Definition:</b> <a href="sitkPixelIDTypeLists_8h_source.html#l00180">sitkPixelIDTypeLists.h:180</a></div></div>
 <div class="ttc" id="aclassitk_1_1simple_1_1MaskImageFilter_html_a2f0221b1f931e8dcc7de753225feb0e3"><div class="ttname"><a href="classitk_1_1simple_1_1MaskImageFilter.html#a2f0221b1f931e8dcc7de753225feb0e3">itk::simple::MaskImageFilter::SetMaskingValue</a></div><div class="ttdeci">Self &amp; SetMaskingValue(double MaskingValue)</div><div class="ttdef"><b>Definition:</b> <a href="sitkMaskImageFilter_8h_source.html#l00092">sitkMaskImageFilter.h:92</a></div></div>
 <div class="ttc" id="anamespaceitk_1_1simple_html_a0ac8aee7cbf6a7d2c280c2b1290cb798"><div class="ttname"><a href="namespaceitk_1_1simple.html#a0ac8aee7cbf6a7d2c280c2b1290cb798">itk::simple::Mask</a></div><div class="ttdeci">Image Mask(const Image &amp;image, const Image &amp;maskImage, double outsideValue=0, double maskingValue=0)</div><div class="ttdoc">Mask an image with a mask.</div></div>
+<div class="ttc" id="aclassitk_1_1simple_1_1MaskImageFilter_html_a51351a331ae741bcf3676f4ea7b95c70"><div class="ttname"><a href="classitk_1_1simple_1_1MaskImageFilter.html#a51351a331ae741bcf3676f4ea7b95c70">itk::simple::MaskImageFilter::m_DualMemberFactory</a></div><div class="ttdeci">std::unique_ptr&lt; detail::DualMemberFunctionFactory&lt; MemberFunctionType &gt; &gt; m_DualMemberFactory</div><div class="ttdef"><b>Definition:</b> <a href="sitkMaskImageFilter_8h_source.html#l00121">sitkMaskImageFilter.h:121</a></div></div>
 <div class="ttc" id="aclassitk_1_1simple_1_1MaskImageFilter_html_a87bb0153a1201dc74866478f930ffdfb"><div class="ttname"><a href="classitk_1_1simple_1_1MaskImageFilter.html#a87bb0153a1201dc74866478f930ffdfb">itk::simple::MaskImageFilter::m_OutsideValue</a></div><div class="ttdeci">double m_OutsideValue</div><div class="ttdef"><b>Definition:</b> <a href="sitkMaskImageFilter_8h_source.html#l00125">sitkMaskImageFilter.h:125</a></div></div>
-<div class="ttc" id="aclassitk_1_1simple_1_1MaskImageFilter_html_a65f987f242af7b007b4a01adc685ee0f"><div class="ttname"><a href="classitk_1_1simple_1_1MaskImageFilter.html#a65f987f242af7b007b4a01adc685ee0f">itk::simple::MaskImageFilter::m_DualMemberFactory</a></div><div class="ttdeci">nsstd::auto_ptr&lt; detail::DualMemberFunctionFactory&lt; MemberFunctionType &gt; &gt; m_DualMemberFactory</div><div class="ttdef"><b>Definition:</b> <a href="sitkMaskImageFilter_8h_source.html#l00121">sitkMaskImageFilter.h:121</a></div></div>
 <div class="ttc" id="asitkImageFilter_8h_html"><div class="ttname"><a href="sitkImageFilter_8h.html">sitkImageFilter.h</a></div></div>
 <div class="ttc" id="aclassitk_1_1simple_1_1MaskImageFilter_html_a6c885b267ee7d7972645ca3e7b41f5ac"><div class="ttname"><a href="classitk_1_1simple_1_1MaskImageFilter.html#a6c885b267ee7d7972645ca3e7b41f5ac">itk::simple::MaskImageFilter::SetOutsideValue</a></div><div class="ttdeci">Self &amp; SetOutsideValue(double OutsideValue)</div><div class="ttdef"><b>Definition:</b> <a href="sitkMaskImageFilter_8h_source.html#l00083">sitkMaskImageFilter.h:83</a></div></div>
 <div class="ttc" id="aclassitk_1_1simple_1_1MaskImageFilter_html_a4539be1e87de1bc21e81c06a1cc07f9b"><div class="ttname"><a href="classitk_1_1simple_1_1MaskImageFilter.html#a4539be1e87de1bc21e81c06a1cc07f9b">itk::simple::MaskImageFilter::PixelIDTypeList</a></div><div class="ttdeci">NonLabelPixelIDTypeList PixelIDTypeList</div><div class="ttdef"><b>Definition:</b> <a href="sitkMaskImageFilter_8h_source.html#l00076">sitkMaskImageFilter.h:76</a></div></div>
@@ -159,7 +159,7 @@ $(function() {
 <div class="ttc" id="aclassitk_1_1simple_1_1MaskImageFilter_html_a35ed0309438b95c479cd4e2c2536ae93"><div class="ttname"><a href="classitk_1_1simple_1_1MaskImageFilter.html#a35ed0309438b95c479cd4e2c2536ae93">itk::simple::MaskImageFilter::GetMaskingValue</a></div><div class="ttdeci">double GetMaskingValue() const</div><div class="ttdef"><b>Definition:</b> <a href="sitkMaskImageFilter_8h_source.html#l00097">sitkMaskImageFilter.h:97</a></div></div>
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Feb 14 2020 03:24:30 for SimpleITK by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Feb 15 2020 03:23:01 for SimpleITK by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

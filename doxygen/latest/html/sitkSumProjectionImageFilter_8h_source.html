@@ -19,7 +19,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">SimpleITK
-   &#160;<span id="projectnumber">2.0.0.dev70</span>
+   &#160;<span id="projectnumber">2.0.0.dev80</span>
    </div>
   </td>
  </tr>
@@ -114,7 +114,7 @@ $(function() {
 <div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160; </div>
 <div class="line"><a name="l00106"></a><span class="lineno"><a class="line" href="classitk_1_1simple_1_1SumProjectionImageFilter.html#af82f64823e6df0f5b2063b8fc7dd0c26">  106</a></span>&#160;      <span class="keyword">friend</span> <span class="keyword">struct </span><a class="code" href="structitk_1_1simple_1_1detail_1_1MemberFunctionAddressor.html">detail::MemberFunctionAddressor</a>&lt;MemberFunctionType&gt;;</div>
 <div class="line"><a name="l00107"></a><span class="lineno"><a class="line" href="classitk_1_1simple_1_1SumProjectionImageFilter.html#ac88de73417149bc6fcd4eaff2635786d">  107</a></span>&#160;      <span class="keyword">friend</span> <span class="keyword">struct </span><a class="code" href="structitk_1_1simple_1_1detail_1_1ExecuteInternalVectorImageAddressor.html">detail::ExecuteInternalVectorImageAddressor</a>&lt;MemberFunctionType&gt;;</div>
-<div class="line"><a name="l00108"></a><span class="lineno"><a class="line" href="classitk_1_1simple_1_1SumProjectionImageFilter.html#ac5d504d5d2e1899a1e17199bc9812dcb">  108</a></span>&#160;      nsstd::auto_ptr&lt;detail::MemberFunctionFactory&lt;MemberFunctionType&gt; &gt; <a class="code" href="classitk_1_1simple_1_1SumProjectionImageFilter.html#ac5d504d5d2e1899a1e17199bc9812dcb">m_MemberFactory</a>;</div>
+<div class="line"><a name="l00108"></a><span class="lineno"><a class="line" href="classitk_1_1simple_1_1SumProjectionImageFilter.html#a1a2bf964b4c8d42397e503c3b55604d6">  108</a></span>&#160;      std::unique_ptr&lt;detail::MemberFunctionFactory&lt;MemberFunctionType&gt; &gt; <a class="code" href="classitk_1_1simple_1_1SumProjectionImageFilter.html#a1a2bf964b4c8d42397e503c3b55604d6">m_MemberFactory</a>;</div>
 <div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160; </div>
 <div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160; </div>
 <div class="line"><a name="l00111"></a><span class="lineno"><a class="line" href="classitk_1_1simple_1_1SumProjectionImageFilter.html#afe8dab41318fc78f2d70fad92cbf7e89">  111</a></span>&#160;      <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span>  <a class="code" href="classitk_1_1simple_1_1SumProjectionImageFilter.html#afe8dab41318fc78f2d70fad92cbf7e89">m_ProjectionDimension</a>;</div>
@@ -127,8 +127,9 @@ $(function() {
 <div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;}</div>
 <div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;<span class="preprocessor">#endif</span></div>
 </div><!-- fragment --></div><!-- contents -->
-<div class="ttc" id="aclassitk_1_1simple_1_1Image_html"><div class="ttname"><a href="classitk_1_1simple_1_1Image.html">itk::simple::Image</a></div><div class="ttdoc">The Image class for SimpleITK.</div><div class="ttdef"><b>Definition:</b> <a href="sitkImage_8h_source.html#l00078">sitkImage.h:78</a></div></div>
+<div class="ttc" id="aclassitk_1_1simple_1_1Image_html"><div class="ttname"><a href="classitk_1_1simple_1_1Image.html">itk::simple::Image</a></div><div class="ttdoc">The Image class for SimpleITK.</div><div class="ttdef"><b>Definition:</b> <a href="sitkImage_8h_source.html#l00077">sitkImage.h:77</a></div></div>
 <div class="ttc" id="asitkBasicFilters_8h_html"><div class="ttname"><a href="sitkBasicFilters_8h.html">sitkBasicFilters.h</a></div></div>
+<div class="ttc" id="aclassitk_1_1simple_1_1SumProjectionImageFilter_html_a1a2bf964b4c8d42397e503c3b55604d6"><div class="ttname"><a href="classitk_1_1simple_1_1SumProjectionImageFilter.html#a1a2bf964b4c8d42397e503c3b55604d6">itk::simple::SumProjectionImageFilter::m_MemberFactory</a></div><div class="ttdeci">std::unique_ptr&lt; detail::MemberFunctionFactory&lt; MemberFunctionType &gt; &gt; m_MemberFactory</div><div class="ttdef"><b>Definition:</b> <a href="sitkSumProjectionImageFilter_8h_source.html#l00108">sitkSumProjectionImageFilter.h:108</a></div></div>
 <div class="ttc" id="astructitk_1_1simple_1_1detail_1_1ExecuteInternalVectorImageAddressor_html"><div class="ttname"><a href="structitk_1_1simple_1_1detail_1_1ExecuteInternalVectorImageAddressor.html">itk::simple::detail::ExecuteInternalVectorImageAddressor</a></div><div class="ttdef"><b>Definition:</b> <a href="sitkDetail_8h_source.html#l00059">sitkDetail.h:59</a></div></div>
 <div class="ttc" id="aclassitk_1_1simple_1_1SumProjectionImageFilter_html_ab7183aebd4a02e91f6458b633ab50209"><div class="ttname"><a href="classitk_1_1simple_1_1SumProjectionImageFilter.html#ab7183aebd4a02e91f6458b633ab50209">itk::simple::SumProjectionImageFilter::SetProjectionDimension</a></div><div class="ttdeci">Self &amp; SetProjectionDimension(unsigned int ProjectionDimension)</div><div class="ttdef"><b>Definition:</b> <a href="sitkSumProjectionImageFilter_8h_source.html#l00078">sitkSumProjectionImageFilter.h:78</a></div></div>
 <div class="ttc" id="astructitk_1_1simple_1_1detail_1_1MemberFunctionAddressor_html"><div class="ttname"><a href="structitk_1_1simple_1_1detail_1_1MemberFunctionAddressor.html">itk::simple::detail::MemberFunctionAddressor</a></div><div class="ttdef"><b>Definition:</b> <a href="sitkDetail_8h_source.html#l00032">sitkDetail.h:32</a></div></div>
@@ -145,10 +146,9 @@ $(function() {
 <div class="ttc" id="aclassitk_1_1simple_1_1ImageFilter_html"><div class="ttname"><a href="classitk_1_1simple_1_1ImageFilter.html">itk::simple::ImageFilter</a></div><div class="ttdoc">The base interface for SimpleITK filters that take one input image.</div><div class="ttdef"><b>Definition:</b> <a href="sitkImageFilter_8h_source.html#l00037">sitkImageFilter.h:37</a></div></div>
 <div class="ttc" id="aclassitk_1_1simple_1_1ProcessObject_html"><div class="ttname"><a href="classitk_1_1simple_1_1ProcessObject.html">itk::simple::ProcessObject</a></div><div class="ttdoc">Base class for SimpleITK classes based on ProcessObject.</div><div class="ttdef"><b>Definition:</b> <a href="sitkProcessObject_8h_source.html#l00050">sitkProcessObject.h:50</a></div></div>
 <div class="ttc" id="aclassitk_1_1simple_1_1SumProjectionImageFilter_html"><div class="ttname"><a href="classitk_1_1simple_1_1SumProjectionImageFilter.html">itk::simple::SumProjectionImageFilter</a></div><div class="ttdoc">Sum projection.</div><div class="ttdef"><b>Definition:</b> <a href="sitkSumProjectionImageFilter_8h_source.html#l00060">sitkSumProjectionImageFilter.h:60</a></div></div>
-<div class="ttc" id="aclassitk_1_1simple_1_1SumProjectionImageFilter_html_ac5d504d5d2e1899a1e17199bc9812dcb"><div class="ttname"><a href="classitk_1_1simple_1_1SumProjectionImageFilter.html#ac5d504d5d2e1899a1e17199bc9812dcb">itk::simple::SumProjectionImageFilter::m_MemberFactory</a></div><div class="ttdeci">nsstd::auto_ptr&lt; detail::MemberFunctionFactory&lt; MemberFunctionType &gt; &gt; m_MemberFactory</div><div class="ttdef"><b>Definition:</b> <a href="sitkSumProjectionImageFilter_8h_source.html#l00108">sitkSumProjectionImageFilter.h:108</a></div></div>
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Feb 14 2020 03:24:32 for SimpleITK by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Feb 15 2020 03:23:03 for SimpleITK by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

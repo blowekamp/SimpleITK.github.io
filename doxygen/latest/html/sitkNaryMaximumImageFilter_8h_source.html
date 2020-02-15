@@ -19,7 +19,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">SimpleITK
-   &#160;<span id="projectnumber">2.0.0.dev70</span>
+   &#160;<span id="projectnumber">2.0.0.dev80</span>
    </div>
   </td>
  </tr>
@@ -121,7 +121,7 @@ $(function() {
 <div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160; </div>
 <div class="line"><a name="l00114"></a><span class="lineno"><a class="line" href="classitk_1_1simple_1_1NaryMaximumImageFilter.html#af82f64823e6df0f5b2063b8fc7dd0c26">  114</a></span>&#160;      <span class="keyword">friend</span> <span class="keyword">struct </span><a class="code" href="structitk_1_1simple_1_1detail_1_1MemberFunctionAddressor.html">detail::MemberFunctionAddressor</a>&lt;MemberFunctionType&gt;;</div>
 <div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160; </div>
-<div class="line"><a name="l00116"></a><span class="lineno"><a class="line" href="classitk_1_1simple_1_1NaryMaximumImageFilter.html#ad7a19c8be09e7e3010f73cad8fae6363">  116</a></span>&#160;      nsstd::auto_ptr&lt;detail::MemberFunctionFactory&lt;MemberFunctionType&gt; &gt; <a class="code" href="classitk_1_1simple_1_1NaryMaximumImageFilter.html#ad7a19c8be09e7e3010f73cad8fae6363">m_MemberFactory</a>;</div>
+<div class="line"><a name="l00116"></a><span class="lineno"><a class="line" href="classitk_1_1simple_1_1NaryMaximumImageFilter.html#aa3897cacc20504d2c410c38653cb3e09">  116</a></span>&#160;      std::unique_ptr&lt;detail::MemberFunctionFactory&lt;MemberFunctionType&gt; &gt; <a class="code" href="classitk_1_1simple_1_1NaryMaximumImageFilter.html#aa3897cacc20504d2c410c38653cb3e09">m_MemberFactory</a>;</div>
 <div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160; </div>
 <div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160; </div>
 <div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;    };</div>
@@ -139,8 +139,9 @@ $(function() {
 <div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;}</div>
 <div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;<span class="preprocessor">#endif</span></div>
 </div><!-- fragment --></div><!-- contents -->
-<div class="ttc" id="aclassitk_1_1simple_1_1Image_html"><div class="ttname"><a href="classitk_1_1simple_1_1Image.html">itk::simple::Image</a></div><div class="ttdoc">The Image class for SimpleITK.</div><div class="ttdef"><b>Definition:</b> <a href="sitkImage_8h_source.html#l00078">sitkImage.h:78</a></div></div>
+<div class="ttc" id="aclassitk_1_1simple_1_1Image_html"><div class="ttname"><a href="classitk_1_1simple_1_1Image.html">itk::simple::Image</a></div><div class="ttdoc">The Image class for SimpleITK.</div><div class="ttdef"><b>Definition:</b> <a href="sitkImage_8h_source.html#l00077">sitkImage.h:77</a></div></div>
 <div class="ttc" id="asitkBasicFilters_8h_html"><div class="ttname"><a href="sitkBasicFilters_8h.html">sitkBasicFilters.h</a></div></div>
+<div class="ttc" id="aclassitk_1_1simple_1_1NaryMaximumImageFilter_html_aa3897cacc20504d2c410c38653cb3e09"><div class="ttname"><a href="classitk_1_1simple_1_1NaryMaximumImageFilter.html#aa3897cacc20504d2c410c38653cb3e09">itk::simple::NaryMaximumImageFilter::m_MemberFactory</a></div><div class="ttdeci">std::unique_ptr&lt; detail::MemberFunctionFactory&lt; MemberFunctionType &gt; &gt; m_MemberFactory</div><div class="ttdef"><b>Definition:</b> <a href="sitkNaryMaximumImageFilter_8h_source.html#l00116">sitkNaryMaximumImageFilter.h:116</a></div></div>
 <div class="ttc" id="astructitk_1_1simple_1_1detail_1_1MemberFunctionAddressor_html"><div class="ttname"><a href="structitk_1_1simple_1_1detail_1_1MemberFunctionAddressor.html">itk::simple::detail::MemberFunctionAddressor</a></div><div class="ttdef"><b>Definition:</b> <a href="sitkDetail_8h_source.html#l00032">sitkDetail.h:32</a></div></div>
 <div class="ttc" id="aclassitk_1_1simple_1_1NaryMaximumImageFilter_html"><div class="ttname"><a href="classitk_1_1simple_1_1NaryMaximumImageFilter.html">itk::simple::NaryMaximumImageFilter</a></div><div class="ttdoc">Computes the pixel-wise maximum of several images.</div><div class="ttdef"><b>Definition:</b> <a href="sitkNaryMaximumImageFilter_8h_source.html#l00067">sitkNaryMaximumImageFilter.h:67</a></div></div>
 <div class="ttc" id="anamespaceitk_1_1simple_html_a185dd2449802b4528184fa160bf5ad3a"><div class="ttname"><a href="namespaceitk_1_1simple.html#a185dd2449802b4528184fa160bf5ad3a">itk::simple::NaryMaximum</a></div><div class="ttdeci">Image NaryMaximum(const std::vector&lt; Image &gt; &amp;images)</div><div class="ttdoc">Computes the pixel-wise maximum of several images.</div></div>
@@ -153,10 +154,9 @@ $(function() {
 <div class="ttc" id="aclassitk_1_1simple_1_1ImageFilter_html"><div class="ttname"><a href="classitk_1_1simple_1_1ImageFilter.html">itk::simple::ImageFilter</a></div><div class="ttdoc">The base interface for SimpleITK filters that take one input image.</div><div class="ttdef"><b>Definition:</b> <a href="sitkImageFilter_8h_source.html#l00037">sitkImageFilter.h:37</a></div></div>
 <div class="ttc" id="aclassitk_1_1simple_1_1ProcessObject_html"><div class="ttname"><a href="classitk_1_1simple_1_1ProcessObject.html">itk::simple::ProcessObject</a></div><div class="ttdoc">Base class for SimpleITK classes based on ProcessObject.</div><div class="ttdef"><b>Definition:</b> <a href="sitkProcessObject_8h_source.html#l00050">sitkProcessObject.h:50</a></div></div>
 <div class="ttc" id="aclassitk_1_1simple_1_1NaryMaximumImageFilter_html_ae2674ebd904c7a004f3be9c4c82fd850"><div class="ttname"><a href="classitk_1_1simple_1_1NaryMaximumImageFilter.html#ae2674ebd904c7a004f3be9c4c82fd850">itk::simple::NaryMaximumImageFilter::Self</a></div><div class="ttdeci">NaryMaximumImageFilter Self</div><div class="ttdef"><b>Definition:</b> <a href="sitkNaryMaximumImageFilter_8h_source.html#l00071">sitkNaryMaximumImageFilter.h:71</a></div></div>
-<div class="ttc" id="aclassitk_1_1simple_1_1NaryMaximumImageFilter_html_ad7a19c8be09e7e3010f73cad8fae6363"><div class="ttname"><a href="classitk_1_1simple_1_1NaryMaximumImageFilter.html#ad7a19c8be09e7e3010f73cad8fae6363">itk::simple::NaryMaximumImageFilter::m_MemberFactory</a></div><div class="ttdeci">nsstd::auto_ptr&lt; detail::MemberFunctionFactory&lt; MemberFunctionType &gt; &gt; m_MemberFactory</div><div class="ttdef"><b>Definition:</b> <a href="sitkNaryMaximumImageFilter_8h_source.html#l00116">sitkNaryMaximumImageFilter.h:116</a></div></div>
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Feb 14 2020 03:24:30 for SimpleITK by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Feb 15 2020 03:23:02 for SimpleITK by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

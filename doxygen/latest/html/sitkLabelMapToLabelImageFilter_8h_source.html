@@ -19,7 +19,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">SimpleITK
-   &#160;<span id="projectnumber">2.0.0.dev70</span>
+   &#160;<span id="projectnumber">2.0.0.dev80</span>
    </div>
   </td>
  </tr>
@@ -108,7 +108,7 @@ $(function() {
 <div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160; </div>
 <div class="line"><a name="l00082"></a><span class="lineno"><a class="line" href="classitk_1_1simple_1_1LabelMapToLabelImageFilter.html#af82f64823e6df0f5b2063b8fc7dd0c26">   82</a></span>&#160;      <span class="keyword">friend</span> <span class="keyword">struct </span><a class="code" href="structitk_1_1simple_1_1detail_1_1MemberFunctionAddressor.html">detail::MemberFunctionAddressor</a>&lt;MemberFunctionType&gt;;</div>
 <div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160; </div>
-<div class="line"><a name="l00084"></a><span class="lineno"><a class="line" href="classitk_1_1simple_1_1LabelMapToLabelImageFilter.html#a21eea5c4b6f87bd8556cc1f5351eb9e8">   84</a></span>&#160;      nsstd::auto_ptr&lt;detail::MemberFunctionFactory&lt;MemberFunctionType&gt; &gt; <a class="code" href="classitk_1_1simple_1_1LabelMapToLabelImageFilter.html#a21eea5c4b6f87bd8556cc1f5351eb9e8">m_MemberFactory</a>;</div>
+<div class="line"><a name="l00084"></a><span class="lineno"><a class="line" href="classitk_1_1simple_1_1LabelMapToLabelImageFilter.html#a378ea9a65ea5e757cc873970d6ca242d">   84</a></span>&#160;      std::unique_ptr&lt;detail::MemberFunctionFactory&lt;MemberFunctionType&gt; &gt; <a class="code" href="classitk_1_1simple_1_1LabelMapToLabelImageFilter.html#a378ea9a65ea5e757cc873970d6ca242d">m_MemberFactory</a>;</div>
 <div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160; </div>
 <div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160; </div>
 <div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    };</div>
@@ -120,7 +120,7 @@ $(function() {
 <div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;}</div>
 <div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;<span class="preprocessor">#endif</span></div>
 </div><!-- fragment --></div><!-- contents -->
-<div class="ttc" id="aclassitk_1_1simple_1_1Image_html"><div class="ttname"><a href="classitk_1_1simple_1_1Image.html">itk::simple::Image</a></div><div class="ttdoc">The Image class for SimpleITK.</div><div class="ttdef"><b>Definition:</b> <a href="sitkImage_8h_source.html#l00078">sitkImage.h:78</a></div></div>
+<div class="ttc" id="aclassitk_1_1simple_1_1Image_html"><div class="ttname"><a href="classitk_1_1simple_1_1Image.html">itk::simple::Image</a></div><div class="ttdoc">The Image class for SimpleITK.</div><div class="ttdef"><b>Definition:</b> <a href="sitkImage_8h_source.html#l00077">sitkImage.h:77</a></div></div>
 <div class="ttc" id="asitkBasicFilters_8h_html"><div class="ttname"><a href="sitkBasicFilters_8h.html">sitkBasicFilters.h</a></div></div>
 <div class="ttc" id="aclassitk_1_1simple_1_1LabelMapToLabelImageFilter_html_a6862cf9c21da579e7d8b7761a8d69ead"><div class="ttname"><a href="classitk_1_1simple_1_1LabelMapToLabelImageFilter.html#a6862cf9c21da579e7d8b7761a8d69ead">itk::simple::LabelMapToLabelImageFilter::GetName</a></div><div class="ttdeci">std::string GetName() const</div><div class="ttdef"><b>Definition:</b> <a href="sitkLabelMapToLabelImageFilter_8h_source.html#l00064">sitkLabelMapToLabelImageFilter.h:64</a></div></div>
 <div class="ttc" id="aclassitk_1_1simple_1_1LabelMapToLabelImageFilter_html_a1fad855c6c537a007da1c6cd097647c3"><div class="ttname"><a href="classitk_1_1simple_1_1LabelMapToLabelImageFilter.html#a1fad855c6c537a007da1c6cd097647c3">itk::simple::LabelMapToLabelImageFilter::Self</a></div><div class="ttdeci">LabelMapToLabelImageFilter Self</div><div class="ttdef"><b>Definition:</b> <a href="sitkLabelMapToLabelImageFilter_8h_source.html#l00050">sitkLabelMapToLabelImageFilter.h:50</a></div></div>
@@ -128,16 +128,16 @@ $(function() {
 <div class="ttc" id="aclassitk_1_1simple_1_1LabelMapToLabelImageFilter_html"><div class="ttname"><a href="classitk_1_1simple_1_1LabelMapToLabelImageFilter.html">itk::simple::LabelMapToLabelImageFilter</a></div><div class="ttdoc">Converts a LabelMap to a labeled image.</div><div class="ttdef"><b>Definition:</b> <a href="sitkLabelMapToLabelImageFilter_8h_source.html#l00048">sitkLabelMapToLabelImageFilter.h:48</a></div></div>
 <div class="ttc" id="asitkImageFilter_8h_html"><div class="ttname"><a href="sitkImageFilter_8h.html">sitkImageFilter.h</a></div></div>
 <div class="ttc" id="aclassitk_1_1simple_1_1LabelMapToLabelImageFilter_html_a82b4179f054af8d01478e6d60663afeb"><div class="ttname"><a href="classitk_1_1simple_1_1LabelMapToLabelImageFilter.html#a82b4179f054af8d01478e6d60663afeb">itk::simple::LabelMapToLabelImageFilter::PixelIDTypeList</a></div><div class="ttdeci">LabelPixelIDTypeList PixelIDTypeList</div><div class="ttdef"><b>Definition:</b> <a href="sitkLabelMapToLabelImageFilter_8h_source.html#l00060">sitkLabelMapToLabelImageFilter.h:60</a></div></div>
+<div class="ttc" id="aclassitk_1_1simple_1_1LabelMapToLabelImageFilter_html_a378ea9a65ea5e757cc873970d6ca242d"><div class="ttname"><a href="classitk_1_1simple_1_1LabelMapToLabelImageFilter.html#a378ea9a65ea5e757cc873970d6ca242d">itk::simple::LabelMapToLabelImageFilter::m_MemberFactory</a></div><div class="ttdeci">std::unique_ptr&lt; detail::MemberFunctionFactory&lt; MemberFunctionType &gt; &gt; m_MemberFactory</div><div class="ttdef"><b>Definition:</b> <a href="sitkLabelMapToLabelImageFilter_8h_source.html#l00084">sitkLabelMapToLabelImageFilter.h:84</a></div></div>
 <div class="ttc" id="asitkBasicFilters_8h_html_a8c00663d3a7bae36066e320f83381283"><div class="ttname"><a href="sitkBasicFilters_8h.html#a8c00663d3a7bae36066e320f83381283">SITKBasicFilters_EXPORT</a></div><div class="ttdeci">#define SITKBasicFilters_EXPORT</div><div class="ttdef"><b>Definition:</b> <a href="sitkBasicFilters_8h_source.html#l00050">sitkBasicFilters.h:50</a></div></div>
 <div class="ttc" id="anamespaceitk_html"><div class="ttname"><a href="namespaceitk.html">itk</a></div></div>
 <div class="ttc" id="anamespaceitk_1_1simple_html_ad2d01c2f755f3a47cc970c73f8e01373"><div class="ttname"><a href="namespaceitk_1_1simple.html#ad2d01c2f755f3a47cc970c73f8e01373">itk::simple::LabelMapToLabel</a></div><div class="ttdeci">Image LabelMapToLabel(const Image &amp;image1)</div><div class="ttdoc">Converts a LabelMap to a labeled image.</div></div>
 <div class="ttc" id="aclassitk_1_1simple_1_1ImageFilter_html"><div class="ttname"><a href="classitk_1_1simple_1_1ImageFilter.html">itk::simple::ImageFilter</a></div><div class="ttdoc">The base interface for SimpleITK filters that take one input image.</div><div class="ttdef"><b>Definition:</b> <a href="sitkImageFilter_8h_source.html#l00037">sitkImageFilter.h:37</a></div></div>
 <div class="ttc" id="aclassitk_1_1simple_1_1ProcessObject_html"><div class="ttname"><a href="classitk_1_1simple_1_1ProcessObject.html">itk::simple::ProcessObject</a></div><div class="ttdoc">Base class for SimpleITK classes based on ProcessObject.</div><div class="ttdef"><b>Definition:</b> <a href="sitkProcessObject_8h_source.html#l00050">sitkProcessObject.h:50</a></div></div>
-<div class="ttc" id="aclassitk_1_1simple_1_1LabelMapToLabelImageFilter_html_a21eea5c4b6f87bd8556cc1f5351eb9e8"><div class="ttname"><a href="classitk_1_1simple_1_1LabelMapToLabelImageFilter.html#a21eea5c4b6f87bd8556cc1f5351eb9e8">itk::simple::LabelMapToLabelImageFilter::m_MemberFactory</a></div><div class="ttdeci">nsstd::auto_ptr&lt; detail::MemberFunctionFactory&lt; MemberFunctionType &gt; &gt; m_MemberFactory</div><div class="ttdef"><b>Definition:</b> <a href="sitkLabelMapToLabelImageFilter_8h_source.html#l00084">sitkLabelMapToLabelImageFilter.h:84</a></div></div>
 <div class="ttc" id="anamespaceitk_1_1simple_html_a95aa438e47b67a83e00f422005bc060a"><div class="ttname"><a href="namespaceitk_1_1simple.html#a95aa438e47b67a83e00f422005bc060a">itk::simple::LabelPixelIDTypeList</a></div><div class="ttdeci">typelist::MakeTypeList&lt; LabelPixelID&lt; uint8_t &gt;, LabelPixelID&lt; uint16_t &gt;, LabelPixelID&lt; uint32_t &gt; &gt;::Type LabelPixelIDTypeList</div><div class="ttdef"><b>Definition:</b> <a href="sitkPixelIDTypeLists_8h_source.html#l00165">sitkPixelIDTypeLists.h:165</a></div></div>
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Feb 14 2020 03:24:29 for SimpleITK by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Feb 15 2020 03:23:01 for SimpleITK by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

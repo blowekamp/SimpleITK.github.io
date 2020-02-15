@@ -19,7 +19,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">SimpleITK
-   &#160;<span id="projectnumber">2.0.0.dev70</span>
+   &#160;<span id="projectnumber">2.0.0.dev80</span>
    </div>
   </td>
  </tr>
@@ -134,7 +134,7 @@ $(function() {
 <div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160; </div>
 <div class="line"><a name="l00118"></a><span class="lineno"><a class="line" href="classitk_1_1simple_1_1MergeLabelMapFilter.html#af82f64823e6df0f5b2063b8fc7dd0c26">  118</a></span>&#160;      <span class="keyword">friend</span> <span class="keyword">struct </span><a class="code" href="structitk_1_1simple_1_1detail_1_1MemberFunctionAddressor.html">detail::MemberFunctionAddressor</a>&lt;MemberFunctionType&gt;;</div>
 <div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160; </div>
-<div class="line"><a name="l00120"></a><span class="lineno"><a class="line" href="classitk_1_1simple_1_1MergeLabelMapFilter.html#a939b8a83592fcb66bb67e3a03d9f4f3a">  120</a></span>&#160;      nsstd::auto_ptr&lt;detail::MemberFunctionFactory&lt;MemberFunctionType&gt; &gt; <a class="code" href="classitk_1_1simple_1_1MergeLabelMapFilter.html#a939b8a83592fcb66bb67e3a03d9f4f3a">m_MemberFactory</a>;</div>
+<div class="line"><a name="l00120"></a><span class="lineno"><a class="line" href="classitk_1_1simple_1_1MergeLabelMapFilter.html#afd5bee2f0b4df1252d2c0d3765ca3ca4">  120</a></span>&#160;      std::unique_ptr&lt;detail::MemberFunctionFactory&lt;MemberFunctionType&gt; &gt; <a class="code" href="classitk_1_1simple_1_1MergeLabelMapFilter.html#afd5bee2f0b4df1252d2c0d3765ca3ca4">m_MemberFactory</a>;</div>
 <div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160; </div>
 <div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160; </div>
 <div class="line"><a name="l00123"></a><span class="lineno"><a class="line" href="classitk_1_1simple_1_1MergeLabelMapFilter.html#a9950e404cb47c5bf7f216d1e8f080f38">  123</a></span>&#160;      <a class="code" href="classitk_1_1simple_1_1MergeLabelMapFilter.html#a62e4b170e015b060f7a69a5ae7187772">MethodType</a>  <a class="code" href="classitk_1_1simple_1_1MergeLabelMapFilter.html#a9950e404cb47c5bf7f216d1e8f080f38">m_Method</a>;</div>
@@ -153,8 +153,7 @@ $(function() {
 <div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;}</div>
 <div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;<span class="preprocessor">#endif</span></div>
 </div><!-- fragment --></div><!-- contents -->
-<div class="ttc" id="aclassitk_1_1simple_1_1Image_html"><div class="ttname"><a href="classitk_1_1simple_1_1Image.html">itk::simple::Image</a></div><div class="ttdoc">The Image class for SimpleITK.</div><div class="ttdef"><b>Definition:</b> <a href="sitkImage_8h_source.html#l00078">sitkImage.h:78</a></div></div>
-<div class="ttc" id="aclassitk_1_1simple_1_1MergeLabelMapFilter_html_a939b8a83592fcb66bb67e3a03d9f4f3a"><div class="ttname"><a href="classitk_1_1simple_1_1MergeLabelMapFilter.html#a939b8a83592fcb66bb67e3a03d9f4f3a">itk::simple::MergeLabelMapFilter::m_MemberFactory</a></div><div class="ttdeci">nsstd::auto_ptr&lt; detail::MemberFunctionFactory&lt; MemberFunctionType &gt; &gt; m_MemberFactory</div><div class="ttdef"><b>Definition:</b> <a href="sitkMergeLabelMapFilter_8h_source.html#l00120">sitkMergeLabelMapFilter.h:120</a></div></div>
+<div class="ttc" id="aclassitk_1_1simple_1_1Image_html"><div class="ttname"><a href="classitk_1_1simple_1_1Image.html">itk::simple::Image</a></div><div class="ttdoc">The Image class for SimpleITK.</div><div class="ttdef"><b>Definition:</b> <a href="sitkImage_8h_source.html#l00077">sitkImage.h:77</a></div></div>
 <div class="ttc" id="asitkBasicFilters_8h_html"><div class="ttname"><a href="sitkBasicFilters_8h.html">sitkBasicFilters.h</a></div></div>
 <div class="ttc" id="aclassitk_1_1simple_1_1MergeLabelMapFilter_html_a37fd14158764d0248653d7362efb0429"><div class="ttname"><a href="classitk_1_1simple_1_1MergeLabelMapFilter.html#a37fd14158764d0248653d7362efb0429">itk::simple::MergeLabelMapFilter::GetMethod</a></div><div class="ttdeci">MethodType GetMethod() const</div><div class="ttdef"><b>Definition:</b> <a href="sitkMergeLabelMapFilter_8h_source.html#l00081">sitkMergeLabelMapFilter.h:81</a></div></div>
 <div class="ttc" id="astructitk_1_1simple_1_1detail_1_1MemberFunctionAddressor_html"><div class="ttname"><a href="structitk_1_1simple_1_1detail_1_1MemberFunctionAddressor.html">itk::simple::detail::MemberFunctionAddressor</a></div><div class="ttdef"><b>Definition:</b> <a href="sitkDetail_8h_source.html#l00032">sitkDetail.h:32</a></div></div>
@@ -168,6 +167,7 @@ $(function() {
 <div class="ttc" id="aclassitk_1_1simple_1_1MergeLabelMapFilter_html_a62e4b170e015b060f7a69a5ae7187772"><div class="ttname"><a href="classitk_1_1simple_1_1MergeLabelMapFilter.html#a62e4b170e015b060f7a69a5ae7187772">itk::simple::MergeLabelMapFilter::MethodType</a></div><div class="ttdeci">MethodType</div><div class="ttdef"><b>Definition:</b> <a href="sitkMergeLabelMapFilter_8h_source.html#l00071">sitkMergeLabelMapFilter.h:71</a></div></div>
 <div class="ttc" id="asitkBasicFilters_8h_html_a8c00663d3a7bae36066e320f83381283"><div class="ttname"><a href="sitkBasicFilters_8h.html#a8c00663d3a7bae36066e320f83381283">SITKBasicFilters_EXPORT</a></div><div class="ttdeci">#define SITKBasicFilters_EXPORT</div><div class="ttdef"><b>Definition:</b> <a href="sitkBasicFilters_8h_source.html#l00050">sitkBasicFilters.h:50</a></div></div>
 <div class="ttc" id="anamespaceitk_html"><div class="ttname"><a href="namespaceitk.html">itk</a></div></div>
+<div class="ttc" id="aclassitk_1_1simple_1_1MergeLabelMapFilter_html_afd5bee2f0b4df1252d2c0d3765ca3ca4"><div class="ttname"><a href="classitk_1_1simple_1_1MergeLabelMapFilter.html#afd5bee2f0b4df1252d2c0d3765ca3ca4">itk::simple::MergeLabelMapFilter::m_MemberFactory</a></div><div class="ttdeci">std::unique_ptr&lt; detail::MemberFunctionFactory&lt; MemberFunctionType &gt; &gt; m_MemberFactory</div><div class="ttdef"><b>Definition:</b> <a href="sitkMergeLabelMapFilter_8h_source.html#l00120">sitkMergeLabelMapFilter.h:120</a></div></div>
 <div class="ttc" id="aclassitk_1_1simple_1_1MergeLabelMapFilter_html_a4ba77b0245a3ab9b67a73c6c0796146a"><div class="ttname"><a href="classitk_1_1simple_1_1MergeLabelMapFilter.html#a4ba77b0245a3ab9b67a73c6c0796146a">itk::simple::MergeLabelMapFilter::PixelIDTypeList</a></div><div class="ttdeci">LabelPixelIDTypeList PixelIDTypeList</div><div class="ttdef"><b>Definition:</b> <a href="sitkMergeLabelMapFilter_8h_source.html#l00066">sitkMergeLabelMapFilter.h:66</a></div></div>
 <div class="ttc" id="aclassitk_1_1simple_1_1ImageFilter_html"><div class="ttname"><a href="classitk_1_1simple_1_1ImageFilter.html">itk::simple::ImageFilter</a></div><div class="ttdoc">The base interface for SimpleITK filters that take one input image.</div><div class="ttdef"><b>Definition:</b> <a href="sitkImageFilter_8h_source.html#l00037">sitkImageFilter.h:37</a></div></div>
 <div class="ttc" id="aclassitk_1_1simple_1_1ProcessObject_html"><div class="ttname"><a href="classitk_1_1simple_1_1ProcessObject.html">itk::simple::ProcessObject</a></div><div class="ttdoc">Base class for SimpleITK classes based on ProcessObject.</div><div class="ttdef"><b>Definition:</b> <a href="sitkProcessObject_8h_source.html#l00050">sitkProcessObject.h:50</a></div></div>
@@ -175,7 +175,7 @@ $(function() {
 <div class="ttc" id="anamespaceitk_1_1simple_html_a95aa438e47b67a83e00f422005bc060a"><div class="ttname"><a href="namespaceitk_1_1simple.html#a95aa438e47b67a83e00f422005bc060a">itk::simple::LabelPixelIDTypeList</a></div><div class="ttdeci">typelist::MakeTypeList&lt; LabelPixelID&lt; uint8_t &gt;, LabelPixelID&lt; uint16_t &gt;, LabelPixelID&lt; uint32_t &gt; &gt;::Type LabelPixelIDTypeList</div><div class="ttdef"><b>Definition:</b> <a href="sitkPixelIDTypeLists_8h_source.html#l00165">sitkPixelIDTypeLists.h:165</a></div></div>
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Feb 14 2020 03:24:30 for SimpleITK by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Feb 15 2020 03:23:02 for SimpleITK by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

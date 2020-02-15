@@ -19,7 +19,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">SimpleITK
-   &#160;<span id="projectnumber">2.0.0.dev70</span>
+   &#160;<span id="projectnumber">2.0.0.dev80</span>
    </div>
   </td>
  </tr>
@@ -136,7 +136,7 @@ $(function() {
 <div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160; </div>
 <div class="line"><a name="l00126"></a><span class="lineno"><a class="line" href="classitk_1_1simple_1_1PhysicalPointImageSource.html#af82f64823e6df0f5b2063b8fc7dd0c26">  126</a></span>&#160;      <span class="keyword">friend</span> <span class="keyword">struct </span><a class="code" href="structitk_1_1simple_1_1detail_1_1MemberFunctionAddressor.html">detail::MemberFunctionAddressor</a>&lt;MemberFunctionType&gt;;</div>
 <div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160; </div>
-<div class="line"><a name="l00128"></a><span class="lineno"><a class="line" href="classitk_1_1simple_1_1PhysicalPointImageSource.html#a3eed1234757473f89c21f59db227d788">  128</a></span>&#160;      nsstd::auto_ptr&lt;detail::MemberFunctionFactory&lt;MemberFunctionType&gt; &gt; <a class="code" href="classitk_1_1simple_1_1PhysicalPointImageSource.html#a3eed1234757473f89c21f59db227d788">m_MemberFactory</a>;</div>
+<div class="line"><a name="l00128"></a><span class="lineno"><a class="line" href="classitk_1_1simple_1_1PhysicalPointImageSource.html#a7c8c5e8b03a8ab8dd2ae2b18d702fa91">  128</a></span>&#160;      std::unique_ptr&lt;detail::MemberFunctionFactory&lt;MemberFunctionType&gt; &gt; <a class="code" href="classitk_1_1simple_1_1PhysicalPointImageSource.html#a7c8c5e8b03a8ab8dd2ae2b18d702fa91">m_MemberFactory</a>;</div>
 <div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160; </div>
 <div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160; </div>
 <div class="line"><a name="l00131"></a><span class="lineno"><a class="line" href="classitk_1_1simple_1_1PhysicalPointImageSource.html#ac07863d1e13b18918397749edb844ee2">  131</a></span>&#160;      <a class="code" href="namespaceitk_1_1simple.html#ae40bd64640f4014fba1a8a872ab4df98">PixelIDValueEnum</a>  <a class="code" href="classitk_1_1simple_1_1PhysicalPointImageSource.html#ac07863d1e13b18918397749edb844ee2">m_OutputPixelType</a>;</div>
@@ -157,8 +157,9 @@ $(function() {
 <div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;}</div>
 <div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;<span class="preprocessor">#endif</span></div>
 </div><!-- fragment --></div><!-- contents -->
-<div class="ttc" id="aclassitk_1_1simple_1_1Image_html"><div class="ttname"><a href="classitk_1_1simple_1_1Image.html">itk::simple::Image</a></div><div class="ttdoc">The Image class for SimpleITK.</div><div class="ttdef"><b>Definition:</b> <a href="sitkImage_8h_source.html#l00078">sitkImage.h:78</a></div></div>
+<div class="ttc" id="aclassitk_1_1simple_1_1Image_html"><div class="ttname"><a href="classitk_1_1simple_1_1Image.html">itk::simple::Image</a></div><div class="ttdoc">The Image class for SimpleITK.</div><div class="ttdef"><b>Definition:</b> <a href="sitkImage_8h_source.html#l00077">sitkImage.h:77</a></div></div>
 <div class="ttc" id="asitkBasicFilters_8h_html"><div class="ttname"><a href="sitkBasicFilters_8h.html">sitkBasicFilters.h</a></div></div>
+<div class="ttc" id="aclassitk_1_1simple_1_1PhysicalPointImageSource_html_a7c8c5e8b03a8ab8dd2ae2b18d702fa91"><div class="ttname"><a href="classitk_1_1simple_1_1PhysicalPointImageSource.html#a7c8c5e8b03a8ab8dd2ae2b18d702fa91">itk::simple::PhysicalPointImageSource::m_MemberFactory</a></div><div class="ttdeci">std::unique_ptr&lt; detail::MemberFunctionFactory&lt; MemberFunctionType &gt; &gt; m_MemberFactory</div><div class="ttdef"><b>Definition:</b> <a href="sitkPhysicalPointImageSource_8h_source.html#l00128">sitkPhysicalPointImageSource.h:128</a></div></div>
 <div class="ttc" id="aclassitk_1_1simple_1_1PhysicalPointImageSource_html_ac07863d1e13b18918397749edb844ee2"><div class="ttname"><a href="classitk_1_1simple_1_1PhysicalPointImageSource.html#ac07863d1e13b18918397749edb844ee2">itk::simple::PhysicalPointImageSource::m_OutputPixelType</a></div><div class="ttdeci">PixelIDValueEnum m_OutputPixelType</div><div class="ttdef"><b>Definition:</b> <a href="sitkPhysicalPointImageSource_8h_source.html#l00131">sitkPhysicalPointImageSource.h:131</a></div></div>
 <div class="ttc" id="astructitk_1_1Size_html"><div class="ttname"><a href="https://www.itk.org/Doxygen/html/structitk_1_1Size.html">itk::Size</a></div></div>
 <div class="ttc" id="astructitk_1_1simple_1_1detail_1_1MemberFunctionAddressor_html"><div class="ttname"><a href="structitk_1_1simple_1_1detail_1_1MemberFunctionAddressor.html">itk::simple::detail::MemberFunctionAddressor</a></div><div class="ttdef"><b>Definition:</b> <a href="sitkDetail_8h_source.html#l00032">sitkDetail.h:32</a></div></div>
@@ -168,7 +169,6 @@ $(function() {
 <div class="ttc" id="anamespaceitk_1_1simple_html_ae40bd64640f4014fba1a8a872ab4df98"><div class="ttname"><a href="namespaceitk_1_1simple.html#ae40bd64640f4014fba1a8a872ab4df98">itk::simple::PixelIDValueEnum</a></div><div class="ttdeci">PixelIDValueEnum</div><div class="ttdoc">Enumerated values of pixelIDs.</div><div class="ttdef"><b>Definition:</b> <a href="sitkPixelIDValues_8h_source.html#l00090">sitkPixelIDValues.h:90</a></div></div>
 <div class="ttc" id="asitkImageFilter_8h_html"><div class="ttname"><a href="sitkImageFilter_8h.html">sitkImageFilter.h</a></div></div>
 <div class="ttc" id="aclassitk_1_1simple_1_1PhysicalPointImageSource_html_adf42a4b602aaa35b405ac0170e7839d9"><div class="ttname"><a href="classitk_1_1simple_1_1PhysicalPointImageSource.html#adf42a4b602aaa35b405ac0170e7839d9">itk::simple::PhysicalPointImageSource::m_Direction</a></div><div class="ttdeci">std::vector&lt; double &gt; m_Direction</div><div class="ttdef"><b>Definition:</b> <a href="sitkPhysicalPointImageSource_8h_source.html#l00136">sitkPhysicalPointImageSource.h:136</a></div></div>
-<div class="ttc" id="aclassitk_1_1simple_1_1PhysicalPointImageSource_html_a3eed1234757473f89c21f59db227d788"><div class="ttname"><a href="classitk_1_1simple_1_1PhysicalPointImageSource.html#a3eed1234757473f89c21f59db227d788">itk::simple::PhysicalPointImageSource::m_MemberFactory</a></div><div class="ttdeci">nsstd::auto_ptr&lt; detail::MemberFunctionFactory&lt; MemberFunctionType &gt; &gt; m_MemberFactory</div><div class="ttdef"><b>Definition:</b> <a href="sitkPhysicalPointImageSource_8h_source.html#l00128">sitkPhysicalPointImageSource.h:128</a></div></div>
 <div class="ttc" id="aclassitk_1_1simple_1_1PhysicalPointImageSource_html_aec7e574c57fcab7600c2c6c34821f423"><div class="ttname"><a href="classitk_1_1simple_1_1PhysicalPointImageSource.html#aec7e574c57fcab7600c2c6c34821f423">itk::simple::PhysicalPointImageSource::SetSpacing</a></div><div class="ttdeci">Self &amp; SetSpacing(const std::vector&lt; double &gt; &amp;Spacing)</div><div class="ttdef"><b>Definition:</b> <a href="sitkPhysicalPointImageSource_8h_source.html#l00086">sitkPhysicalPointImageSource.h:86</a></div></div>
 <div class="ttc" id="aclassitk_1_1simple_1_1PhysicalPointImageSource_html_a5812bd2883fbe04c60b5f0ec78928da0"><div class="ttname"><a href="classitk_1_1simple_1_1PhysicalPointImageSource.html#a5812bd2883fbe04c60b5f0ec78928da0">itk::simple::PhysicalPointImageSource::GetDirection</a></div><div class="ttdeci">std::vector&lt; double &gt; GetDirection() const</div><div class="ttdef"><b>Definition:</b> <a href="sitkPhysicalPointImageSource_8h_source.html#l00098">sitkPhysicalPointImageSource.h:98</a></div></div>
 <div class="ttc" id="aclassitk_1_1simple_1_1PhysicalPointImageSource_html_a348fb40d3f9785f43c2406dfe55caa81"><div class="ttname"><a href="classitk_1_1simple_1_1PhysicalPointImageSource.html#a348fb40d3f9785f43c2406dfe55caa81">itk::simple::PhysicalPointImageSource::PixelIDTypeList</a></div><div class="ttdeci">VectorPixelIDTypeList PixelIDTypeList</div><div class="ttdef"><b>Definition:</b> <a href="sitkPhysicalPointImageSource_8h_source.html#l00054">sitkPhysicalPointImageSource.h:54</a></div></div>
@@ -192,7 +192,7 @@ $(function() {
 <div class="ttc" id="aclassitk_1_1simple_1_1PhysicalPointImageSource_html_a4d2b9e40efd3cd4e3fbd6f4ef9748f19"><div class="ttname"><a href="classitk_1_1simple_1_1PhysicalPointImageSource.html#a4d2b9e40efd3cd4e3fbd6f4ef9748f19">itk::simple::PhysicalPointImageSource::m_Origin</a></div><div class="ttdeci">std::vector&lt; double &gt; m_Origin</div><div class="ttdef"><b>Definition:</b> <a href="sitkPhysicalPointImageSource_8h_source.html#l00133">sitkPhysicalPointImageSource.h:133</a></div></div>
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Feb 14 2020 03:24:31 for SimpleITK by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Feb 15 2020 03:23:02 for SimpleITK by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

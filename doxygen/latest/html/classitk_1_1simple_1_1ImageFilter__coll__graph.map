@@ -2,7 +2,7 @@
 <area shape="rect" id="node1" title="The base interface for SimpleITK filters that take one input image." alt="" coords="2685,497,2897,524"/>
 <area shape="rect" id="node2" href="$classitk_1_1simple_1_1ProcessObject.html" title="Base class for SimpleITK classes based on ProcessObject." alt="" coords="2411,447,2601,473"/>
 <area shape="rect" id="node9" title=" " alt="" coords="2714,643,2869,685"/>
-<area shape="rect" id="node3" href="$classitk_1_1simple_1_1NonCopyable.html" title="An inheratable class to disable copying of a class." alt="" coords="1973,327,2159,353"/>
+<area shape="rect" id="node3" href="$classitk_1_1simple_1_1NonCopyable.html" title="An inheritable class to disable copying of a class." alt="" coords="1973,327,2159,353"/>
 <area shape="rect" id="node6" href="$classitk_1_1simple_1_1Command.html" title="An implementation of the Command design pattern for callback." alt="" coords="3092,592,3259,619"/>
 <area shape="rect" id="node4" title=" " alt="" coords="3703,585,3952,626"/>
 <area shape="rect" id="node5" href="$structitk_1_1simple_1_1ProcessObject_1_1EventCommand.html" title=" " alt="" coords="3399,585,3589,626"/>

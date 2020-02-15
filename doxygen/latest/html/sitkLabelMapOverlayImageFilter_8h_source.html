@@ -19,7 +19,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">SimpleITK
-   &#160;<span id="projectnumber">2.0.0.dev70</span>
+   &#160;<span id="projectnumber">2.0.0.dev80</span>
    </div>
   </td>
  </tr>
@@ -119,7 +119,7 @@ $(function() {
 <div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;      <span class="keyword">template</span> &lt;<span class="keyword">class</span> TImageType1, <span class="keyword">class</span> TImageType2&gt; <a class="code" href="classitk_1_1simple_1_1Image.html">Image</a> DualExecuteInternal ( <span class="keyword">const</span> <a class="code" href="classitk_1_1simple_1_1Image.html">Image</a> * labelMapImage, <span class="keyword">const</span> <a class="code" href="classitk_1_1simple_1_1Image.html">Image</a> * featureImage );</div>
 <div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160; </div>
 <div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160; </div>
-<div class="line"><a name="l00109"></a><span class="lineno"><a class="line" href="classitk_1_1simple_1_1LabelMapOverlayImageFilter.html#a17d3a1be96e510d60b1be6767b09856a">  109</a></span>&#160;      nsstd::auto_ptr&lt;detail::DualMemberFunctionFactory&lt;MemberFunctionType&gt; &gt; <a class="code" href="classitk_1_1simple_1_1LabelMapOverlayImageFilter.html#a17d3a1be96e510d60b1be6767b09856a">m_DualMemberFactory</a>;</div>
+<div class="line"><a name="l00109"></a><span class="lineno"><a class="line" href="classitk_1_1simple_1_1LabelMapOverlayImageFilter.html#ad712875e2f805978226248007c4783cb">  109</a></span>&#160;      std::unique_ptr&lt;detail::DualMemberFunctionFactory&lt;MemberFunctionType&gt; &gt; <a class="code" href="classitk_1_1simple_1_1LabelMapOverlayImageFilter.html#ad712875e2f805978226248007c4783cb">m_DualMemberFactory</a>;</div>
 <div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160; </div>
 <div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160; </div>
 <div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160; </div>
@@ -136,7 +136,7 @@ $(function() {
 <div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;}</div>
 <div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;<span class="preprocessor">#endif</span></div>
 </div><!-- fragment --></div><!-- contents -->
-<div class="ttc" id="aclassitk_1_1simple_1_1Image_html"><div class="ttname"><a href="classitk_1_1simple_1_1Image.html">itk::simple::Image</a></div><div class="ttdoc">The Image class for SimpleITK.</div><div class="ttdef"><b>Definition:</b> <a href="sitkImage_8h_source.html#l00078">sitkImage.h:78</a></div></div>
+<div class="ttc" id="aclassitk_1_1simple_1_1Image_html"><div class="ttname"><a href="classitk_1_1simple_1_1Image.html">itk::simple::Image</a></div><div class="ttdoc">The Image class for SimpleITK.</div><div class="ttdef"><b>Definition:</b> <a href="sitkImage_8h_source.html#l00077">sitkImage.h:77</a></div></div>
 <div class="ttc" id="asitkBasicFilters_8h_html"><div class="ttname"><a href="sitkBasicFilters_8h.html">sitkBasicFilters.h</a></div></div>
 <div class="ttc" id="aclassitk_1_1simple_1_1LabelMapOverlayImageFilter_html_a354f3eb6820ff41f7d6524c04e49cc3c"><div class="ttname"><a href="classitk_1_1simple_1_1LabelMapOverlayImageFilter.html#a354f3eb6820ff41f7d6524c04e49cc3c">itk::simple::LabelMapOverlayImageFilter::m_Opacity</a></div><div class="ttdeci">double m_Opacity</div><div class="ttdef"><b>Definition:</b> <a href="sitkLabelMapOverlayImageFilter_8h_source.html#l00114">sitkLabelMapOverlayImageFilter.h:114</a></div></div>
 <div class="ttc" id="aclassitk_1_1simple_1_1LabelMapOverlayImageFilter_html_a2bf6ea2a8b28c7fa2c7cd46b10bd6950"><div class="ttname"><a href="classitk_1_1simple_1_1LabelMapOverlayImageFilter.html#a2bf6ea2a8b28c7fa2c7cd46b10bd6950">itk::simple::LabelMapOverlayImageFilter::m_Colormap</a></div><div class="ttdeci">std::vector&lt; unsigned char &gt; m_Colormap</div><div class="ttdef"><b>Definition:</b> <a href="sitkLabelMapOverlayImageFilter_8h_source.html#l00115">sitkLabelMapOverlayImageFilter.h:115</a></div></div>
@@ -155,12 +155,12 @@ $(function() {
 <div class="ttc" id="aclassitk_1_1simple_1_1ImageFilter_html"><div class="ttname"><a href="classitk_1_1simple_1_1ImageFilter.html">itk::simple::ImageFilter</a></div><div class="ttdoc">The base interface for SimpleITK filters that take one input image.</div><div class="ttdef"><b>Definition:</b> <a href="sitkImageFilter_8h_source.html#l00037">sitkImageFilter.h:37</a></div></div>
 <div class="ttc" id="aclassitk_1_1simple_1_1ProcessObject_html"><div class="ttname"><a href="classitk_1_1simple_1_1ProcessObject.html">itk::simple::ProcessObject</a></div><div class="ttdoc">Base class for SimpleITK classes based on ProcessObject.</div><div class="ttdef"><b>Definition:</b> <a href="sitkProcessObject_8h_source.html#l00050">sitkProcessObject.h:50</a></div></div>
 <div class="ttc" id="aclassitk_1_1simple_1_1LabelMapOverlayImageFilter_html_a97e2b8bb22172aef71e4463465b1ec0f"><div class="ttname"><a href="classitk_1_1simple_1_1LabelMapOverlayImageFilter.html#a97e2b8bb22172aef71e4463465b1ec0f">itk::simple::LabelMapOverlayImageFilter::GetName</a></div><div class="ttdeci">std::string GetName() const</div><div class="ttdef"><b>Definition:</b> <a href="sitkLabelMapOverlayImageFilter_8h_source.html#l00087">sitkLabelMapOverlayImageFilter.h:87</a></div></div>
-<div class="ttc" id="aclassitk_1_1simple_1_1LabelMapOverlayImageFilter_html_a17d3a1be96e510d60b1be6767b09856a"><div class="ttname"><a href="classitk_1_1simple_1_1LabelMapOverlayImageFilter.html#a17d3a1be96e510d60b1be6767b09856a">itk::simple::LabelMapOverlayImageFilter::m_DualMemberFactory</a></div><div class="ttdeci">nsstd::auto_ptr&lt; detail::DualMemberFunctionFactory&lt; MemberFunctionType &gt; &gt; m_DualMemberFactory</div><div class="ttdef"><b>Definition:</b> <a href="sitkLabelMapOverlayImageFilter_8h_source.html#l00109">sitkLabelMapOverlayImageFilter.h:109</a></div></div>
 <div class="ttc" id="anamespaceitk_1_1simple_html_a726131d3dc3c13fc292f48400629d410"><div class="ttname"><a href="namespaceitk_1_1simple.html#a726131d3dc3c13fc292f48400629d410">itk::simple::LabelMapOverlay</a></div><div class="ttdeci">Image LabelMapOverlay(const Image &amp;labelMapImage, const Image &amp;featureImage, double opacity=0.5, std::vector&lt; unsigned char &gt; colormap=std::vector&lt; unsigned char &gt;())</div><div class="ttdoc">Apply a colormap to a label map and superimpose it on an image.</div></div>
+<div class="ttc" id="aclassitk_1_1simple_1_1LabelMapOverlayImageFilter_html_ad712875e2f805978226248007c4783cb"><div class="ttname"><a href="classitk_1_1simple_1_1LabelMapOverlayImageFilter.html#ad712875e2f805978226248007c4783cb">itk::simple::LabelMapOverlayImageFilter::m_DualMemberFactory</a></div><div class="ttdeci">std::unique_ptr&lt; detail::DualMemberFunctionFactory&lt; MemberFunctionType &gt; &gt; m_DualMemberFactory</div><div class="ttdef"><b>Definition:</b> <a href="sitkLabelMapOverlayImageFilter_8h_source.html#l00109">sitkLabelMapOverlayImageFilter.h:109</a></div></div>
 <div class="ttc" id="anamespaceitk_1_1simple_html_a95aa438e47b67a83e00f422005bc060a"><div class="ttname"><a href="namespaceitk_1_1simple.html#a95aa438e47b67a83e00f422005bc060a">itk::simple::LabelPixelIDTypeList</a></div><div class="ttdeci">typelist::MakeTypeList&lt; LabelPixelID&lt; uint8_t &gt;, LabelPixelID&lt; uint16_t &gt;, LabelPixelID&lt; uint32_t &gt; &gt;::Type LabelPixelIDTypeList</div><div class="ttdef"><b>Definition:</b> <a href="sitkPixelIDTypeLists_8h_source.html#l00165">sitkPixelIDTypeLists.h:165</a></div></div>
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Feb 14 2020 03:24:29 for SimpleITK by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Feb 15 2020 03:23:01 for SimpleITK by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>
