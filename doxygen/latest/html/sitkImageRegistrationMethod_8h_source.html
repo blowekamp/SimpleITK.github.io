@@ -19,7 +19,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">SimpleITK
-   &#160;<span id="projectnumber">2.0.0.dev80</span>
+   &#160;<span id="projectnumber">2.0.0.dev84</span>
    </div>
   </td>
  </tr>
@@ -367,19 +367,19 @@ $(function() {
 <div class="line"><a name="l00669"></a><span class="lineno">  669</span>&#160; </div>
 <div class="line"><a name="l00670"></a><span class="lineno">  670</span>&#160;  private:</div>
 <div class="line"><a name="l00671"></a><span class="lineno">  671</span>&#160; </div>
-<div class="line"><a name="l00672"></a><span class="lineno"><a class="line" href="classitk_1_1simple_1_1ImageRegistrationMethod.html#a11da5ac01602aff39b06be30d81c3f7d">  672</a></span>&#160;    nsstd::function&lt;<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span>()&gt; m_pfGetOptimizerIteration;</div>
-<div class="line"><a name="l00673"></a><span class="lineno"><a class="line" href="classitk_1_1simple_1_1ImageRegistrationMethod.html#ae5e7ccf90d5adbfdb7fd67c3944f2d26">  673</a></span>&#160;    nsstd::function&lt;std::vector&lt;<span class="keywordtype">double</span>&gt;()&gt; m_pfGetOptimizerPosition;</div>
-<div class="line"><a name="l00674"></a><span class="lineno"><a class="line" href="classitk_1_1simple_1_1ImageRegistrationMethod.html#afe1885a94c78e29e7802f990eb020b23">  674</a></span>&#160;    nsstd::function&lt;<span class="keywordtype">double</span>()&gt; m_pfGetOptimizerLearningRate;</div>
-<div class="line"><a name="l00675"></a><span class="lineno"><a class="line" href="classitk_1_1simple_1_1ImageRegistrationMethod.html#ac2fcd4beb80c59906f8228b63a5ea66a">  675</a></span>&#160;    nsstd::function&lt;<span class="keywordtype">double</span>()&gt; m_pfGetOptimizerConvergenceValue;</div>
-<div class="line"><a name="l00676"></a><span class="lineno"><a class="line" href="classitk_1_1simple_1_1ImageRegistrationMethod.html#a00b9b3a64376249470766889fd83c37c">  676</a></span>&#160;    nsstd::function&lt;<span class="keywordtype">double</span>()&gt; m_pfGetMetricValue;</div>
-<div class="line"><a name="l00677"></a><span class="lineno"><a class="line" href="classitk_1_1simple_1_1ImageRegistrationMethod.html#a43f3618f459fc2254fd5a988c35fd450">  677</a></span>&#160;    nsstd::function&lt;<a class="codeRef" href="https://www.itk.org/Doxygen/html/namespaceitk.html#a6678d19d4b40c05a613784037bc2bd00">uint64_t</a>()&gt; m_pfGetMetricNumberOfValidPoints;</div>
-<div class="line"><a name="l00678"></a><span class="lineno"><a class="line" href="classitk_1_1simple_1_1ImageRegistrationMethod.html#a28209a222c67dbc62c37fbeb44ab8359">  678</a></span>&#160;    nsstd::function&lt;std::vector&lt;<span class="keywordtype">double</span>&gt;()&gt; m_pfGetOptimizerScales;</div>
-<div class="line"><a name="l00679"></a><span class="lineno"><a class="line" href="classitk_1_1simple_1_1ImageRegistrationMethod.html#a6ba9b5c0a1b1907f95de40040f99c509">  679</a></span>&#160;    nsstd::function&lt;std::<span class="keywordtype">string</span>()&gt; m_pfGetOptimizerStopConditionDescription;</div>
+<div class="line"><a name="l00672"></a><span class="lineno"><a class="line" href="classitk_1_1simple_1_1ImageRegistrationMethod.html#a8169936961f1a9467e0c2c5c3d9c1d3f">  672</a></span>&#160;    std::function&lt;<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span>()&gt; m_pfGetOptimizerIteration;</div>
+<div class="line"><a name="l00673"></a><span class="lineno"><a class="line" href="classitk_1_1simple_1_1ImageRegistrationMethod.html#a642745679c497e3c0f6e3fba72695d1a">  673</a></span>&#160;    std::function&lt;std::vector&lt;<span class="keywordtype">double</span>&gt;()&gt; m_pfGetOptimizerPosition;</div>
+<div class="line"><a name="l00674"></a><span class="lineno"><a class="line" href="classitk_1_1simple_1_1ImageRegistrationMethod.html#acc74b2704b481409bea9a3002baae921">  674</a></span>&#160;    std::function&lt;<span class="keywordtype">double</span>()&gt; m_pfGetOptimizerLearningRate;</div>
+<div class="line"><a name="l00675"></a><span class="lineno"><a class="line" href="classitk_1_1simple_1_1ImageRegistrationMethod.html#ace1ec9fef429430e627eb351545a3409">  675</a></span>&#160;    std::function&lt;<span class="keywordtype">double</span>()&gt; m_pfGetOptimizerConvergenceValue;</div>
+<div class="line"><a name="l00676"></a><span class="lineno"><a class="line" href="classitk_1_1simple_1_1ImageRegistrationMethod.html#ae44c93cbd62f854eb78d22c76e7c37c4">  676</a></span>&#160;    std::function&lt;<span class="keywordtype">double</span>()&gt; m_pfGetMetricValue;</div>
+<div class="line"><a name="l00677"></a><span class="lineno"><a class="line" href="classitk_1_1simple_1_1ImageRegistrationMethod.html#abb8102a6661511630d76aa9f9bd77df2">  677</a></span>&#160;    std::function&lt;<a class="codeRef" href="https://www.itk.org/Doxygen/html/namespaceitk.html#a6678d19d4b40c05a613784037bc2bd00">uint64_t</a>()&gt; m_pfGetMetricNumberOfValidPoints;</div>
+<div class="line"><a name="l00678"></a><span class="lineno"><a class="line" href="classitk_1_1simple_1_1ImageRegistrationMethod.html#a571ed853d861eaf7492ec868ab8de232">  678</a></span>&#160;    std::function&lt;std::vector&lt;<span class="keywordtype">double</span>&gt;()&gt; m_pfGetOptimizerScales;</div>
+<div class="line"><a name="l00679"></a><span class="lineno"><a class="line" href="classitk_1_1simple_1_1ImageRegistrationMethod.html#ad6fa2359904f3a967cd1eef6b9b11195">  679</a></span>&#160;    std::function&lt;std::<span class="keywordtype">string</span>()&gt; m_pfGetOptimizerStopConditionDescription;</div>
 <div class="line"><a name="l00680"></a><span class="lineno">  680</span>&#160; </div>
 <div class="line"><a name="l00681"></a><span class="lineno">  681</span>&#160; </div>
-<div class="line"><a name="l00682"></a><span class="lineno"><a class="line" href="classitk_1_1simple_1_1ImageRegistrationMethod.html#a92b8c904b7741712e284c36ce17ece36">  682</a></span>&#160;    nsstd::function&lt;<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span>()&gt; m_pfGetCurrentLevel;</div>
+<div class="line"><a name="l00682"></a><span class="lineno"><a class="line" href="classitk_1_1simple_1_1ImageRegistrationMethod.html#ace1ad475a4f6709d439c4b64e1a62e7d">  682</a></span>&#160;    std::function&lt;<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span>()&gt; m_pfGetCurrentLevel;</div>
 <div class="line"><a name="l00683"></a><span class="lineno">  683</span>&#160; </div>
-<div class="line"><a name="l00684"></a><span class="lineno"><a class="line" href="classitk_1_1simple_1_1ImageRegistrationMethod.html#a7dd50cb83e80f04f535f5ef4df74c848">  684</a></span>&#160;    nsstd::function&lt;<span class="keywordtype">void</span> (<a class="code" href="namespaceitk.html">itk</a>::<a class="codeRef" href="https://www.itk.org/Doxygen/html/classitk_1_1TransformBaseTemplate.html">TransformBase</a> *outTransform)&gt; m_pfUpdateWithBestValue;</div>
+<div class="line"><a name="l00684"></a><span class="lineno"><a class="line" href="classitk_1_1simple_1_1ImageRegistrationMethod.html#a42b8c0ec375dd91297446b1c3caf77d3">  684</a></span>&#160;    std::function&lt;<span class="keywordtype">void</span> (<a class="code" href="namespaceitk.html">itk</a>::<a class="codeRef" href="https://www.itk.org/Doxygen/html/classitk_1_1TransformBaseTemplate.html">TransformBase</a> *outTransform)&gt; m_pfUpdateWithBestValue;</div>
 <div class="line"><a name="l00685"></a><span class="lineno">  685</span>&#160; </div>
 <div class="line"><a name="l00686"></a><span class="lineno">  686</span>&#160;    template &lt; class TMemberFunctionPointer &gt;</div>
 <div class="line"><a name="l00687"></a><span class="lineno"><a class="line" href="structitk_1_1simple_1_1ImageRegistrationMethod_1_1EvaluateMemberFunctionAddressor.html">  687</a></span>&#160;      struct <a class="code" href="structitk_1_1simple_1_1ImageRegistrationMethod_1_1EvaluateMemberFunctionAddressor.html">EvaluateMemberFunctionAddressor</a></div>
@@ -679,7 +679,7 @@ $(function() {
 <div class="ttc" id="aclassitk_1_1simple_1_1ImageRegistrationMethod_html_a5f76ee76e3d6d4b0461e824850ec0a2baecab6747ba5c12323d0ac60a1e91fd84"><div class="ttname"><a href="classitk_1_1simple_1_1ImageRegistrationMethod.html#a5f76ee76e3d6d4b0461e824850ec0a2baecab6747ba5c12323d0ac60a1e91fd84">itk::simple::ImageRegistrationMethod::JointHistogramMutualInformation</a></div><div class="ttdeci">@ JointHistogramMutualInformation</div><div class="ttdef"><b>Definition:</b> <a href="sitkImageRegistrationMethod_8h_source.html#l00791">sitkImageRegistrationMethod.h:791</a></div></div>
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Feb 15 2020 03:23:00 for SimpleITK by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Feb 19 2020 03:21:40 for SimpleITK by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

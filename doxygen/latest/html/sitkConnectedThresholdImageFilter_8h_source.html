@@ -19,7 +19,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">SimpleITK
-   &#160;<span id="projectnumber">2.0.0.dev80</span>
+   &#160;<span id="projectnumber">2.0.0.dev84</span>
    </div>
   </td>
  </tr>
@@ -107,7 +107,7 @@ $(function() {
 <div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160; </div>
 <div class="line"><a name="l00088"></a><span class="lineno"><a class="line" href="classitk_1_1simple_1_1ConnectedThresholdImageFilter.html#a3bded4cacab6b511a914b5b0598027eca7a80f852de5438e02fe985bdf188abb1">   88</a></span>&#160;      <span class="keyword">typedef</span> <span class="keyword">enum</span> {FaceConnectivity,FullConnectivity} ConnectivityType;</div>
 <div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160; </div>
-<div class="line"><a name="l00093"></a><span class="lineno"><a class="line" href="classitk_1_1simple_1_1ConnectedThresholdImageFilter.html#a000d702b3571099f46577102f8005611">   93</a></span>&#160;      SITK_RETURN_SELF_TYPE_HEADER <a class="code" href="classitk_1_1simple_1_1ConnectedThresholdImageFilter.html#a000d702b3571099f46577102f8005611">SetConnectivity</a> ( <a class="code" href="classitk_1_1simple_1_1ConnectedThresholdImageFilter.html#a3bded4cacab6b511a914b5b0598027ec">ConnectivityType</a> Connectivity ) { this-&gt;m_Connectivity = Connectivity; <span class="keywordflow">return</span> *<span class="keyword">this</span>; }</div>
+<div class="line"><a name="l00093"></a><span class="lineno"><a class="line" href="classitk_1_1simple_1_1ConnectedThresholdImageFilter.html#a000d702b3571099f46577102f8005611">   93</a></span>&#160;      SITK_RETURN_SELF_TYPE_HEADER <a class="code" href="classitk_1_1simple_1_1ConnectedThresholdImageFilter.html#a000d702b3571099f46577102f8005611">SetConnectivity</a> ( <a class="code" href="classitk_1_1simple_1_1ConnectedThresholdImageFilter.html#a3bded4cacab6b511a914b5b0598027ec">ConnectivityType</a> <a class="codeRef" href="https://www.itk.org/Doxygen/html/classConnectivity.html">Connectivity</a> ) { this-&gt;m_Connectivity = <a class="codeRef" href="https://www.itk.org/Doxygen/html/classConnectivity.html">Connectivity</a>; <span class="keywordflow">return</span> *<span class="keyword">this</span>; }</div>
 <div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160; </div>
 <div class="line"><a name="l00098"></a><span class="lineno"><a class="line" href="classitk_1_1simple_1_1ConnectedThresholdImageFilter.html#a9dad1b51ac2b6797d5dd42dbc916d7d0">   98</a></span>&#160;        <a class="code" href="classitk_1_1simple_1_1ConnectedThresholdImageFilter.html#a3bded4cacab6b511a914b5b0598027ec">ConnectivityType</a> <a class="code" href="classitk_1_1simple_1_1ConnectedThresholdImageFilter.html#a9dad1b51ac2b6797d5dd42dbc916d7d0">GetConnectivity</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> this-&gt;m_Connectivity; }</div>
 <div class="line"><a name="l00100"></a><span class="lineno"><a class="line" href="classitk_1_1simple_1_1ConnectedThresholdImageFilter.html#a28aac8873447a45d0f8b7dd66df9f3ed">  100</a></span>&#160;      SITK_RETURN_SELF_TYPE_HEADER <a class="code" href="classitk_1_1simple_1_1ConnectedThresholdImageFilter.html#a28aac8873447a45d0f8b7dd66df9f3ed">SetSeedList</a> ( <span class="keyword">const</span> std::vector&lt; std::vector&lt;unsigned int&gt; &gt; &amp;t )</div>
@@ -179,6 +179,7 @@ $(function() {
 <div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;} <span class="comment">// end namespace itk</span></div>
 <div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;<span class="preprocessor">#endif</span></div>
 </div><!-- fragment --></div><!-- contents -->
+<div class="ttc" id="aclassConnectivity_html"><div class="ttname"><a href="https://www.itk.org/Doxygen/html/classConnectivity.html">Connectivity</a></div></div>
 <div class="ttc" id="aclassitk_1_1simple_1_1Image_html"><div class="ttname"><a href="classitk_1_1simple_1_1Image.html">itk::simple::Image</a></div><div class="ttdoc">The Image class for SimpleITK.</div><div class="ttdef"><b>Definition:</b> <a href="sitkImage_8h_source.html#l00077">sitkImage.h:77</a></div></div>
 <div class="ttc" id="aclassitk_1_1simple_1_1ConnectedThresholdImageFilter_html_a1c5153f04ec6c0493b49ef5c193c967e"><div class="ttname"><a href="classitk_1_1simple_1_1ConnectedThresholdImageFilter.html#a1c5153f04ec6c0493b49ef5c193c967e">itk::simple::ConnectedThresholdImageFilter::ClearSeeds</a></div><div class="ttdeci">Self &amp; ClearSeeds()</div><div class="ttdef"><b>Definition:</b> <a href="sitkConnectedThresholdImageFilter_8h_source.html#l00112">sitkConnectedThresholdImageFilter.h:112</a></div></div>
 <div class="ttc" id="aclassitk_1_1simple_1_1ConnectedThresholdImageFilter_html_ad3b2d7d25b63787b04af7dc04bbff49c"><div class="ttname"><a href="classitk_1_1simple_1_1ConnectedThresholdImageFilter.html#ad3b2d7d25b63787b04af7dc04bbff49c">itk::simple::ConnectedThresholdImageFilter::GetLower</a></div><div class="ttdeci">double GetLower() const</div><div class="ttdef"><b>Definition:</b> <a href="sitkConnectedThresholdImageFilter_8h_source.html#l00066">sitkConnectedThresholdImageFilter.h:66</a></div></div>
@@ -217,7 +218,7 @@ $(function() {
 <div class="ttc" id="aclassitk_1_1simple_1_1ConnectedThresholdImageFilter_html_ae8590a1485a1e0a600b04f7ee97bea73"><div class="ttname"><a href="classitk_1_1simple_1_1ConnectedThresholdImageFilter.html#ae8590a1485a1e0a600b04f7ee97bea73">itk::simple::ConnectedThresholdImageFilter::m_Upper</a></div><div class="ttdeci">double m_Upper</div><div class="ttdef"><b>Definition:</b> <a href="sitkConnectedThresholdImageFilter_8h_source.html#l00161">sitkConnectedThresholdImageFilter.h:161</a></div></div>
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Feb 15 2020 03:22:58 for SimpleITK by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Feb 19 2020 03:21:38 for SimpleITK by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>
