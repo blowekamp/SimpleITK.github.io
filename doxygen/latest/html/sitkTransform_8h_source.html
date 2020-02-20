@@ -19,7 +19,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">SimpleITK
-   &#160;<span id="projectnumber">2.0.0.dev84</span>
+   &#160;<span id="projectnumber">2.0.0.dev92</span>
    </div>
   </td>
  </tr>
@@ -121,10 +121,10 @@ $(function() {
 <div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160; </div>
 <div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;  <span class="keyword">template</span>&lt;<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> NDimension&gt;</div>
 <div class="line"><a name="l00098"></a><span class="lineno"><a class="line" href="classitk_1_1simple_1_1Transform.html#ac3d4d040acaa345d172b006415d270bf">   98</a></span>&#160;  <span class="keyword">explicit</span> <a class="code" href="classitk_1_1simple_1_1Transform.html#ac3d4d040acaa345d172b006415d270bf">Transform</a>( <a class="codeRef" href="https://www.itk.org/Doxygen/html/classitk_1_1CompositeTransform.html">itk::CompositeTransform&lt; double, NDimension &gt;</a>* compositeTransform )</div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    : m_PimpleTransform( <a class="code" href="sitkMacro_8h.html#a357af0756a6eed3cd2b7afdb2f481361">SITK_NULLPTR</a> )</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    : m_PimpleTransform( nullptr )</div>
 <div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    {</div>
 <div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;      static_assert( NDimension == 2 || NDimension == 3, <span class="stringliteral">&quot;Only 2D and 3D transforms are supported&quot;</span> );</div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;      <span class="keywordflow">if</span> ( compositeTransform == <a class="code" href="sitkMacro_8h.html#a357af0756a6eed3cd2b7afdb2f481361">SITK_NULLPTR</a> )</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;      <span class="keywordflow">if</span> ( compositeTransform == <span class="keyword">nullptr</span> )</div>
 <div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;        {</div>
 <div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;        <a class="code" href="sitkMacro_8h.html#abc17b496b9aad95a46e678d306aed675">sitkExceptionMacro</a>( <span class="stringliteral">&quot;Unable to construct a null transform!&quot;</span> );</div>
 <div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;        }</div>
@@ -196,7 +196,7 @@ $(function() {
 <div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;<span class="keyword">private</span>:</div>
 <div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160; </div>
 <div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;  <span class="keyword">template</span>&lt; <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> VDimension&gt;</div>
-<div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;  <span class="keywordtype">void</span> InternalInitialization( <a class="code" href="namespaceitk_1_1simple.html#a527cb966ed81d0bdc65999f4d2d4d852">TransformEnum</a> type, <a class="codeRef" href="https://www.itk.org/Doxygen/html/classitk_1_1TransformBaseTemplate.html">itk::TransformBase</a> *base = <a class="code" href="sitkMacro_8h.html#a357af0756a6eed3cd2b7afdb2f481361">SITK_NULLPTR</a> );</div>
+<div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;  <span class="keywordtype">void</span> InternalInitialization( <a class="code" href="namespaceitk_1_1simple.html#a527cb966ed81d0bdc65999f4d2d4d852">TransformEnum</a> type, <a class="codeRef" href="https://www.itk.org/Doxygen/html/classitk_1_1TransformBaseTemplate.html">itk::TransformBase</a> *base = <span class="keyword">nullptr</span> );</div>
 <div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160; </div>
 <div class="line"><a name="l00276"></a><span class="lineno"><a class="line" href="structitk_1_1simple_1_1Transform_1_1TransformTryCastVisitor.html">  276</a></span>&#160;  <span class="keyword">struct </span><a class="code" href="structitk_1_1simple_1_1Transform_1_1TransformTryCastVisitor.html">TransformTryCastVisitor</a></div>
 <div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;  {</div>
@@ -208,7 +208,7 @@ $(function() {
 <div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160;        TransformType *t = <span class="keyword">dynamic_cast&lt;</span>TransformType*<span class="keyword">&gt;</span>(transform);</div>
 <div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;        <span class="keywordflow">if</span> (t)</div>
 <div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;          {</div>
-<div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160;          that-&gt;<a class="code" href="classitk_1_1simple_1_1Transform.html#ab7ab1845cda6ee9b6043311ad9763c29">InternalInitialization</a>&lt;TransformType&gt;(t);</div>
+<div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160;          that-&gt;<a class="code" href="classitk_1_1simple_1_1Transform.html#a9e81a0cfe39285ec030ddc02bb37e6d0">InternalInitialization</a>&lt;TransformType&gt;(t);</div>
 <div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160;          }</div>
 <div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;      }</div>
 <div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;  };</div>
@@ -261,7 +261,6 @@ $(function() {
 <div class="ttc" id="aclassitk_1_1CompositeTransform_html"><div class="ttname"><a href="https://www.itk.org/Doxygen/html/classitk_1_1CompositeTransform.html">itk::CompositeTransform</a></div><div class="ttdef"><b>Definition:</b> <a href="sitkTransform_8h_source.html#l00041">sitkTransform.h:41</a></div></div>
 <div class="ttc" id="anamespaceitk_1_1simple_html_aaa096d3d36b98fb95bf5eb12e24821f3"><div class="ttname"><a href="namespaceitk_1_1simple.html#aaa096d3d36b98fb95bf5eb12e24821f3">itk::simple::WriteTransform</a></div><div class="ttdeci">SITKCommon_EXPORT void WriteTransform(const Transform &amp;transform, const std::string &amp;filename)</div></div>
 <div class="ttc" id="anamespaceitk_1_1simple_html_a527cb966ed81d0bdc65999f4d2d4d852a85b222a543fa9e3d5f7d5bb1df14e898"><div class="ttname"><a href="namespaceitk_1_1simple.html#a527cb966ed81d0bdc65999f4d2d4d852a85b222a543fa9e3d5f7d5bb1df14e898">itk::simple::sitkBSplineTransform</a></div><div class="ttdeci">@ sitkBSplineTransform</div><div class="ttdef"><b>Definition:</b> <a href="sitkTransform_8h_source.html#l00062">sitkTransform.h:62</a></div></div>
-<div class="ttc" id="aclassitk_1_1simple_1_1Transform_html_ab7ab1845cda6ee9b6043311ad9763c29"><div class="ttname"><a href="classitk_1_1simple_1_1Transform.html#ab7ab1845cda6ee9b6043311ad9763c29">itk::simple::Transform::InternalInitialization</a></div><div class="ttdeci">void InternalInitialization(TransformEnum type, itk::TransformBase *base=SITK_NULLPTR)</div></div>
 <div class="ttc" id="aclassitk_1_1simple_1_1Transform_html"><div class="ttname"><a href="classitk_1_1simple_1_1Transform.html">itk::simple::Transform</a></div><div class="ttdoc">A simplified wrapper around a variety of ITK transforms.</div><div class="ttdef"><b>Definition:</b> <a href="sitkTransform_8h_source.html#l00084">sitkTransform.h:84</a></div></div>
 <div class="ttc" id="anamespaceitk_1_1simple_html_a527cb966ed81d0bdc65999f4d2d4d852ad549b6af3d2cd1d73ea7c92963e46c53"><div class="ttname"><a href="namespaceitk_1_1simple.html#a527cb966ed81d0bdc65999f4d2d4d852ad549b6af3d2cd1d73ea7c92963e46c53">itk::simple::sitkQuaternionRigid</a></div><div class="ttdeci">@ sitkQuaternionRigid</div><div class="ttdef"><b>Definition:</b> <a href="sitkTransform_8h_source.html#l00055">sitkTransform.h:55</a></div></div>
 <div class="ttc" id="asitkCommon_8h_html"><div class="ttname"><a href="sitkCommon_8h.html">sitkCommon.h</a></div></div>
@@ -269,6 +268,7 @@ $(function() {
 <div class="ttc" id="asitkImage_8h_html"><div class="ttname"><a href="sitkImage_8h.html">sitkImage.h</a></div></div>
 <div class="ttc" id="anamespaceitk_1_1simple_html_a527cb966ed81d0bdc65999f4d2d4d852aca1c146adbf39460fa866f8becbefbbf"><div class="ttname"><a href="namespaceitk_1_1simple.html#a527cb966ed81d0bdc65999f4d2d4d852aca1c146adbf39460fa866f8becbefbbf">itk::simple::sitkEuler</a></div><div class="ttdeci">@ sitkEuler</div><div class="ttdef"><b>Definition:</b> <a href="sitkTransform_8h_source.html#l00053">sitkTransform.h:53</a></div></div>
 <div class="ttc" id="anamespaceitk_1_1simple_html_a527cb966ed81d0bdc65999f4d2d4d852a13d149b8276b725bbf9ad17acf6d0f2d"><div class="ttname"><a href="namespaceitk_1_1simple.html#a527cb966ed81d0bdc65999f4d2d4d852a13d149b8276b725bbf9ad17acf6d0f2d">itk::simple::sitkIdentity</a></div><div class="ttdeci">@ sitkIdentity</div><div class="ttdef"><b>Definition:</b> <a href="sitkTransform_8h_source.html#l00049">sitkTransform.h:49</a></div></div>
+<div class="ttc" id="aclassitk_1_1simple_1_1Transform_html_a9e81a0cfe39285ec030ddc02bb37e6d0"><div class="ttname"><a href="classitk_1_1simple_1_1Transform.html#a9e81a0cfe39285ec030ddc02bb37e6d0">itk::simple::Transform::InternalInitialization</a></div><div class="ttdeci">void InternalInitialization(TransformEnum type, itk::TransformBase *base=nullptr)</div></div>
 <div class="ttc" id="asitkExceptionObject_8h_html"><div class="ttname"><a href="sitkExceptionObject_8h.html">sitkExceptionObject.h</a></div></div>
 <div class="ttc" id="anamespaceitk_1_1simple_html_a527cb966ed81d0bdc65999f4d2d4d852a57ab1bba8b471608b043e3a621016334"><div class="ttname"><a href="namespaceitk_1_1simple.html#a527cb966ed81d0bdc65999f4d2d4d852a57ab1bba8b471608b043e3a621016334">itk::simple::sitkTranslation</a></div><div class="ttdeci">@ sitkTranslation</div><div class="ttdef"><b>Definition:</b> <a href="sitkTransform_8h_source.html#l00050">sitkTransform.h:50</a></div></div>
 <div class="ttc" id="asitkCommon_8h_html_ab09867679406ccae193848f08fdc3444"><div class="ttname"><a href="sitkCommon_8h.html#ab09867679406ccae193848f08fdc3444">SITKCommon_EXPORT</a></div><div class="ttdeci">#define SITKCommon_EXPORT</div><div class="ttdef"><b>Definition:</b> <a href="sitkCommon_8h_source.html#l00041">sitkCommon.h:41</a></div></div>
@@ -281,7 +281,6 @@ $(function() {
 <div class="ttc" id="astructitk_1_1simple_1_1Transform_1_1TransformTryCastVisitor_html_a9f51f3c98207319eab0a3aefbca82db9"><div class="ttname"><a href="structitk_1_1simple_1_1Transform_1_1TransformTryCastVisitor.html#a9f51f3c98207319eab0a3aefbca82db9">itk::simple::Transform::TransformTryCastVisitor::that</a></div><div class="ttdeci">Transform * that</div><div class="ttdef"><b>Definition:</b> <a href="sitkTransform_8h_source.html#l00279">sitkTransform.h:279</a></div></div>
 <div class="ttc" id="anamespaceitk_html_aad7d99b5b2fe2dbf1d5e67a1917bf40a"><div class="ttname"><a href="https://www.itk.org/Doxygen/html/namespaceitk.html#aad7d99b5b2fe2dbf1d5e67a1917bf40a">TransformBase</a></div><div class="ttdeci">TransformBaseTemplate&lt; double &gt; TransformBase</div></div>
 <div class="ttc" id="anamespaceitk_1_1simple_html_a527cb966ed81d0bdc65999f4d2d4d852aa333c37f66642d56bd1eb0ece8a02856"><div class="ttname"><a href="namespaceitk_1_1simple.html#a527cb966ed81d0bdc65999f4d2d4d852aa333c37f66642d56bd1eb0ece8a02856">itk::simple::sitkComposite</a></div><div class="ttdeci">@ sitkComposite</div><div class="ttdef"><b>Definition:</b> <a href="sitkTransform_8h_source.html#l00060">sitkTransform.h:60</a></div></div>
-<div class="ttc" id="asitkMacro_8h_html_a357af0756a6eed3cd2b7afdb2f481361"><div class="ttname"><a href="sitkMacro_8h.html#a357af0756a6eed3cd2b7afdb2f481361">SITK_NULLPTR</a></div><div class="ttdeci">#define SITK_NULLPTR</div><div class="ttdef"><b>Definition:</b> <a href="sitkMacro_8h_source.html#l00110">sitkMacro.h:110</a></div></div>
 <div class="ttc" id="aclassitk_1_1simple_1_1Transform_html_a359c7178a78a7e7c4d7e7e33d717e541"><div class="ttname"><a href="classitk_1_1simple_1_1Transform.html#a359c7178a78a7e7c4d7e7e33d717e541">itk::simple::Transform::Self</a></div><div class="ttdeci">Transform Self</div><div class="ttdef"><b>Definition:</b> <a href="sitkTransform_8h_source.html#l00087">sitkTransform.h:87</a></div></div>
 <div class="ttc" id="anamespaceitk_html"><div class="ttname"><a href="namespaceitk.html">itk</a></div></div>
 <div class="ttc" id="astructitk_1_1simple_1_1Transform_1_1TransformTryCastVisitor_html"><div class="ttname"><a href="structitk_1_1simple_1_1Transform_1_1TransformTryCastVisitor.html">itk::simple::Transform::TransformTryCastVisitor</a></div><div class="ttdef"><b>Definition:</b> <a href="sitkTransform_8h_source.html#l00276">sitkTransform.h:276</a></div></div>
@@ -295,7 +294,7 @@ $(function() {
 <div class="ttc" id="asitkMacro_8h_html_abc17b496b9aad95a46e678d306aed675"><div class="ttname"><a href="sitkMacro_8h.html#abc17b496b9aad95a46e678d306aed675">sitkExceptionMacro</a></div><div class="ttdeci">#define sitkExceptionMacro(x)</div><div class="ttdef"><b>Definition:</b> <a href="sitkMacro_8h_source.html#l00088">sitkMacro.h:88</a></div></div>
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Feb 19 2020 03:21:43 for SimpleITK by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Feb 20 2020 03:22:31 for SimpleITK by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

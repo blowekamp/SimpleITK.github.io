@@ -144,6 +144,7 @@ var menudata={children:[
 {text:"Variables",url:"functions_vars.html",children:[
 {text:"d",url:"functions_vars.html#index_d"},
 {text:"m",url:"functions_vars_m.html#index_m"},
+{text:"p",url:"functions_vars_p.html#index_p"},
 {text:"t",url:"functions_vars_t.html#index_t"},
 {text:"v",url:"functions_vars_v.html#index_v"}]},
 {text:"Typedefs",url:"functions_type.html",children:[

@@ -19,7 +19,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">SimpleITK
-   &#160;<span id="projectnumber">2.0.0.dev84</span>
+   &#160;<span id="projectnumber">2.0.0.dev92</span>
    </div>
   </td>
  </tr>
@@ -153,42 +153,35 @@ $(function() {
 <div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;<span class="preprocessor">      }                                                                 \</span></div>
 <div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;<span class="preprocessor">  }</span></div>
 <div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160; </div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;<span class="preprocessor">#if defined(SITK_HAS_CXX11_NULLPTR)</span></div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;<span class="preprocessor">#define SITK_NULLPTR nullptr</span></div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;<span class="preprocessor">#else</span></div>
-<div class="line"><a name="l00110"></a><span class="lineno"><a class="line" href="sitkMacro_8h.html#a357af0756a6eed3cd2b7afdb2f481361">  110</a></span>&#160;<span class="preprocessor">#define SITK_NULLPTR NULL</span></div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160; </div>
+<div class="line"><a name="l00107"></a><span class="lineno"><a class="line" href="sitkMacro_8h.html#a638c3a115877a0999103203144a26ebc">  107</a></span>&#160;<span class="preprocessor">#define sitkMacroJoin( X, Y ) sitkDoMacroJoin( X, Y )</span></div>
+<div class="line"><a name="l00108"></a><span class="lineno"><a class="line" href="sitkMacro_8h.html#a9bc5fc58a97257aaf24f31c899e96d30">  108</a></span>&#160;<span class="preprocessor">#define sitkDoMacroJoin( X, Y ) sitkDoMacroJoin2(X,Y)</span></div>
+<div class="line"><a name="l00109"></a><span class="lineno"><a class="line" href="sitkMacro_8h.html#ab1a757ecfbf753db042794d71c3f59fc">  109</a></span>&#160;<span class="preprocessor">#define sitkDoMacroJoin2( X, Y ) X##Y</span></div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160; </div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;}</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;}</div>
 <div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160; </div>
-<div class="line"><a name="l00114"></a><span class="lineno"><a class="line" href="sitkMacro_8h.html#a638c3a115877a0999103203144a26ebc">  114</a></span>&#160;<span class="preprocessor">#define sitkMacroJoin( X, Y ) sitkDoMacroJoin( X, Y )</span></div>
-<div class="line"><a name="l00115"></a><span class="lineno"><a class="line" href="sitkMacro_8h.html#a9bc5fc58a97257aaf24f31c899e96d30">  115</a></span>&#160;<span class="preprocessor">#define sitkDoMacroJoin( X, Y ) sitkDoMacroJoin2(X,Y)</span></div>
-<div class="line"><a name="l00116"></a><span class="lineno"><a class="line" href="sitkMacro_8h.html#ab1a757ecfbf753db042794d71c3f59fc">  116</a></span>&#160;<span class="preprocessor">#define sitkDoMacroJoin2( X, Y ) X##Y</span></div>
-<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160; </div>
-<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;}</div>
-<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;}</div>
-<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160; </div>
-<div class="line"><a name="l00121"></a><span class="lineno"><a class="line" href="sitkMacro_8h.html#abe0e6b7e6ae16addcb67df3a23df098f">  121</a></span>&#160;<span class="preprocessor">#define sitkPragma(x) _Pragma (#x)</span></div>
-<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160; </div>
-<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;<span class="preprocessor">#if defined(__clang__) &amp;&amp; defined(__has_warning)</span></div>
-<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;<span class="preprocessor">#define sitkClangDiagnosticPush()       sitkPragma( clang diagnostic push )</span></div>
-<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;<span class="preprocessor">#define sitkClangDiagnosticPop()        sitkPragma( clang diagnostic pop )</span></div>
-<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;<span class="preprocessor">#define sitkClangWarningIgnore_0(x)</span></div>
-<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;<span class="preprocessor">#define sitkClangWarningIgnore_1(x)  sitkPragma( clang diagnostic ignored x)</span></div>
-<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;<span class="preprocessor">#define sitkClangWarningIgnore(x)    sitkMacroJoin( sitkClangWarningIgnore_, __has_warning(x) )(x)</span></div>
-<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;<span class="preprocessor">#else</span></div>
-<div class="line"><a name="l00130"></a><span class="lineno"><a class="line" href="sitkMacro_8h.html#a175fb243d488f10cf2ff19be3c283d00">  130</a></span>&#160;<span class="preprocessor">#define sitkClangDiagnosticPush()</span></div>
-<div class="line"><a name="l00131"></a><span class="lineno"><a class="line" href="sitkMacro_8h.html#abb7cb90c3dcd26f95604215f6c34048f">  131</a></span>&#160;<span class="preprocessor">#define sitkClangDiagnosticPop()</span></div>
-<div class="line"><a name="l00132"></a><span class="lineno"><a class="line" href="sitkMacro_8h.html#a932e85e78e260d1a438b042c6ff8eda6">  132</a></span>&#160;<span class="preprocessor">#define sitkClangWarningIgnore(x)</span></div>
-<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160; </div>
-<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160; </div>
-<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00114"></a><span class="lineno"><a class="line" href="sitkMacro_8h.html#abe0e6b7e6ae16addcb67df3a23df098f">  114</a></span>&#160;<span class="preprocessor">#define sitkPragma(x) _Pragma (#x)</span></div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160; </div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;<span class="preprocessor">#if defined(__clang__) &amp;&amp; defined(__has_warning)</span></div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;<span class="preprocessor">#define sitkClangDiagnosticPush()       sitkPragma( clang diagnostic push )</span></div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;<span class="preprocessor">#define sitkClangDiagnosticPop()        sitkPragma( clang diagnostic pop )</span></div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;<span class="preprocessor">#define sitkClangWarningIgnore_0(x)</span></div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;<span class="preprocessor">#define sitkClangWarningIgnore_1(x)  sitkPragma( clang diagnostic ignored x)</span></div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;<span class="preprocessor">#define sitkClangWarningIgnore(x)    sitkMacroJoin( sitkClangWarningIgnore_, __has_warning(x) )(x)</span></div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;<span class="preprocessor">#else</span></div>
+<div class="line"><a name="l00123"></a><span class="lineno"><a class="line" href="sitkMacro_8h.html#a175fb243d488f10cf2ff19be3c283d00">  123</a></span>&#160;<span class="preprocessor">#define sitkClangDiagnosticPush()</span></div>
+<div class="line"><a name="l00124"></a><span class="lineno"><a class="line" href="sitkMacro_8h.html#abb7cb90c3dcd26f95604215f6c34048f">  124</a></span>&#160;<span class="preprocessor">#define sitkClangDiagnosticPop()</span></div>
+<div class="line"><a name="l00125"></a><span class="lineno"><a class="line" href="sitkMacro_8h.html#a932e85e78e260d1a438b042c6ff8eda6">  125</a></span>&#160;<span class="preprocessor">#define sitkClangWarningIgnore(x)</span></div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160; </div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160; </div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;<span class="preprocessor">#endif</span></div>
 </div><!-- fragment --></div><!-- contents -->
 <div class="ttc" id="asitkConfigure_8h_html"><div class="ttname"><a href="sitkConfigure_8h.html">sitkConfigure.h</a></div></div>
 <div class="ttc" id="anamespaceitk_html"><div class="ttname"><a href="namespaceitk.html">itk</a></div></div>
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Feb 19 2020 03:21:41 for SimpleITK by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Feb 20 2020 03:22:30 for SimpleITK by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>
