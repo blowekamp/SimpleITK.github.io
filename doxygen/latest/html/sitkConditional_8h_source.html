@@ -19,7 +19,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">SimpleITK
-   &#160;<span id="projectnumber">2.0.0.dev92</span>
+   &#160;<span id="projectnumber">2.0.0.dev100</span>
    </div>
   </td>
  </tr>
@@ -67,61 +67,53 @@ $(function() {
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor">#ifndef sitkConditional_h</span></div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor">#define sitkConditional_h</span></div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160; </div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespaceitk.html">itk</a></div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;{</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="keyword">namespace </span>simple</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor">#include &lt;type_traits&gt;</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160; </div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespaceitk.html">itk</a></div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;{</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160; </div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="comment">/* \brief An object for selection of a type at compile-time.</span></div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="comment"> * *</span></div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="comment"> * If VCode is true, then the member Type will be TIfTrue, otherwise</span></div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="comment"> * the member typedef Type will be equivalent to TIfFalse.</span></div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="keyword">namespace </span>simple</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;{</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160; </div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="comment">/* \brief An object for selecting an integer value at compile-time.</span></div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="comment"> *</span></div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="comment"> *</span></div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="comment"> */</span></div>
-<div class="line"><a name="l00032"></a><span class="lineno"><a class="line" href="structitk_1_1simple_1_1Conditional.html#a0c79f50cc2c627a6e481554387718fd9">   32</a></span>&#160;<span class="keyword">template</span> &lt;<span class="keywordtype">bool</span> VCond, <span class="keyword">class</span> TIfTrue, <span class="keyword">class</span> TIfFalse&gt; <span class="keyword">struct </span><a class="code" href="structitk_1_1simple_1_1Conditional.html">Conditional</a> { <span class="keyword">typedef</span> TIfTrue <a class="code" href="structitk_1_1simple_1_1Conditional.html#a0c79f50cc2c627a6e481554387718fd9">Type</a>; };</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">class</span> TIfTrue, <span class="keyword">class</span> TIfFalse&gt;</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="keyword">struct </span><a class="code" href="structitk_1_1simple_1_1Conditional.html">Conditional</a>&lt;false, TIfTrue, TIfFalse&gt; { <span class="keyword">typedef</span> TIfFalse <a class="code" href="structitk_1_1simple_1_1Conditional.html#a0c79f50cc2c627a6e481554387718fd9">Type</a>; };</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160; </div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="comment">/* \brief An object for selecting an integer value at compile-time.</span></div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="comment"> *</span></div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="comment"> *</span></div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="comment"> * If VCode is true, then the member Value will be TIfTrue, otherwise</span></div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="comment"> * the member Value  will be equivalent to TIfFalse.</span></div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="comment"> *</span></div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="comment"> * This class also contains a typedef for ValueType, which is an the</span></div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="comment"> * selected integral constant as a type.</span></div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="comment"> */</span></div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="keyword">template</span> &lt;<span class="keywordtype">bool</span> VCond, <span class="keywordtype">int</span> TIfTrue, <span class="keywordtype">int</span> TIfFalse&gt;</div>
-<div class="line"><a name="l00049"></a><span class="lineno"><a class="line" href="structitk_1_1simple_1_1ConditionalValue.html">   49</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structitk_1_1simple_1_1ConditionalValue.html">ConditionalValue</a></div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;  : <span class="keyword">public</span> <a class="code" href="structitk_1_1simple_1_1Conditional.html">itk::simple::Conditional</a>&lt;VCond,</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;                                    nsstd::integral_constant&lt;int, TIfTrue&gt;,</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;                                    nsstd::integral_constant&lt;int, TIfFalse&gt; &gt;<a class="code" href="structitk_1_1simple_1_1ConditionalValue.html#acaac2aab027a39c74b2db9ceab9fe791">::Type</a></div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;{</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00055"></a><span class="lineno"><a class="line" href="structitk_1_1simple_1_1ConditionalValue.html#a196dc9f2c21f3f9db5a97d8f82ff4022">   55</a></span>&#160;  <span class="keyword">typedef</span> <a class="code" href="structitk_1_1simple_1_1ConditionalValue.html">ConditionalValue</a> <a class="code" href="structitk_1_1simple_1_1ConditionalValue.html#a196dc9f2c21f3f9db5a97d8f82ff4022">Self</a>;</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00057"></a><span class="lineno"><a class="line" href="structitk_1_1simple_1_1ConditionalValue.html#a8902a1353357c8c210ead9ad2c9927b1">   57</a></span>&#160;  <span class="keyword">typedef</span> <span class="keyword">typename</span> Self::value_type <a class="code" href="structitk_1_1simple_1_1ConditionalValue.html#a8902a1353357c8c210ead9ad2c9927b1">ValueType</a>;</div>
-<div class="line"><a name="l00058"></a><span class="lineno"><a class="line" href="structitk_1_1simple_1_1ConditionalValue.html#acaac2aab027a39c74b2db9ceab9fe791">   58</a></span>&#160;  <span class="keyword">typedef</span> <span class="keyword">typename</span> Self::type       <a class="code" href="structitk_1_1simple_1_1ConditionalValue.html#acaac2aab027a39c74b2db9ceab9fe791">Type</a>;</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160; </div>
-<div class="line"><a name="l00060"></a><span class="lineno"><a class="line" href="structitk_1_1simple_1_1ConditionalValue.html#aa6846b843c7d10e9a84cde37543fb107">   60</a></span>&#160;  <span class="keyword">static</span> <span class="keyword">const</span> <a class="code" href="structitk_1_1simple_1_1ConditionalValue.html#a8902a1353357c8c210ead9ad2c9927b1">ValueType</a> <a class="code" href="structitk_1_1simple_1_1ConditionalValue.html#aa6846b843c7d10e9a84cde37543fb107">Value</a> = Self::value;</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;};</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160; </div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;}</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;}</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160; </div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;<span class="preprocessor">#endif // sitkConditional_h</span></div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="comment"> * If VCode is true, then the member Value will be TIfTrue, otherwise</span></div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="comment"> * the member Value  will be equivalent to TIfFalse.</span></div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="comment"> *</span></div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="comment"> * This class also contains a typedef for ValueType, which is an the</span></div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="comment"> * selected integral constant as a type.</span></div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="comment"> */</span></div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="keyword">template</span> &lt;<span class="keywordtype">bool</span> VCond, <span class="keywordtype">int</span> TIfTrue, <span class="keywordtype">int</span> TIfFalse&gt;</div>
+<div class="line"><a name="l00038"></a><span class="lineno"><a class="line" href="structitk_1_1simple_1_1ConditionalValue.html">   38</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structitk_1_1simple_1_1ConditionalValue.html">ConditionalValue</a></div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;{</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="structitk_1_1simple_1_1ConditionalValue.html#a196dc9f2c21f3f9db5a97d8f82ff4022">   41</a></span>&#160;  <span class="keyword">typedef</span> <a class="code" href="structitk_1_1simple_1_1ConditionalValue.html">ConditionalValue</a> <a class="code" href="structitk_1_1simple_1_1ConditionalValue.html#a196dc9f2c21f3f9db5a97d8f82ff4022">Self</a>;</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;  <span class="keyword">typedef</span> <span class="keyword">typename</span> std::conditional&lt;VCond,</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;                                    std::integral_constant&lt;int, TIfTrue&gt;,</div>
+<div class="line"><a name="l00044"></a><span class="lineno"><a class="line" href="structitk_1_1simple_1_1ConditionalValue.html#a34554b8d819e0d120260a433305679e4">   44</a></span>&#160;                                    std::integral_constant&lt;int, TIfFalse&gt; &gt;::type <a class="code" href="structitk_1_1simple_1_1ConditionalValue.html#a34554b8d819e0d120260a433305679e4">ConditionalType</a>;</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00046"></a><span class="lineno"><a class="line" href="structitk_1_1simple_1_1ConditionalValue.html#a3e90f5368a1d15abf880ec19a1978338">   46</a></span>&#160;  <span class="keyword">typedef</span> <span class="keyword">typename</span> ConditionalType::type       <a class="code" href="structitk_1_1simple_1_1ConditionalValue.html#a3e90f5368a1d15abf880ec19a1978338">Type</a>;</div>
+<div class="line"><a name="l00047"></a><span class="lineno"><a class="line" href="structitk_1_1simple_1_1ConditionalValue.html#aa67e6426888f97d2918e6d7bcb26f159">   47</a></span>&#160;  <span class="keyword">typedef</span> <span class="keyword">typename</span> ConditionalType::value_type <a class="code" href="structitk_1_1simple_1_1ConditionalValue.html#aa67e6426888f97d2918e6d7bcb26f159">ValueType</a>;</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160; </div>
+<div class="line"><a name="l00049"></a><span class="lineno"><a class="line" href="structitk_1_1simple_1_1ConditionalValue.html#aa6846b843c7d10e9a84cde37543fb107">   49</a></span>&#160;  <span class="keyword">static</span> <span class="keyword">const</span> <a class="code" href="structitk_1_1simple_1_1ConditionalValue.html#aa67e6426888f97d2918e6d7bcb26f159">ValueType</a> <a class="code" href="structitk_1_1simple_1_1ConditionalValue.html#aa6846b843c7d10e9a84cde37543fb107">Value</a> = ConditionalType::value;</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;};</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160; </div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160; </div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;}</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;}</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160; </div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="preprocessor">#endif // sitkConditional_h</span></div>
 </div><!-- fragment --></div><!-- contents -->
-<div class="ttc" id="astructitk_1_1simple_1_1Conditional_html_a0c79f50cc2c627a6e481554387718fd9"><div class="ttname"><a href="structitk_1_1simple_1_1Conditional.html#a0c79f50cc2c627a6e481554387718fd9">itk::simple::Conditional::Type</a></div><div class="ttdeci">TIfTrue Type</div><div class="ttdef"><b>Definition:</b> <a href="sitkConditional_8h_source.html#l00032">sitkConditional.h:32</a></div></div>
-<div class="ttc" id="astructitk_1_1simple_1_1ConditionalValue_html_a196dc9f2c21f3f9db5a97d8f82ff4022"><div class="ttname"><a href="structitk_1_1simple_1_1ConditionalValue.html#a196dc9f2c21f3f9db5a97d8f82ff4022">itk::simple::ConditionalValue::Self</a></div><div class="ttdeci">ConditionalValue Self</div><div class="ttdef"><b>Definition:</b> <a href="sitkConditional_8h_source.html#l00055">sitkConditional.h:55</a></div></div>
-<div class="ttc" id="astructitk_1_1simple_1_1ConditionalValue_html_a8902a1353357c8c210ead9ad2c9927b1"><div class="ttname"><a href="structitk_1_1simple_1_1ConditionalValue.html#a8902a1353357c8c210ead9ad2c9927b1">itk::simple::ConditionalValue::ValueType</a></div><div class="ttdeci">Self::value_type ValueType</div><div class="ttdef"><b>Definition:</b> <a href="sitkConditional_8h_source.html#l00057">sitkConditional.h:57</a></div></div>
-<div class="ttc" id="astructitk_1_1simple_1_1ConditionalValue_html_aa6846b843c7d10e9a84cde37543fb107"><div class="ttname"><a href="structitk_1_1simple_1_1ConditionalValue.html#aa6846b843c7d10e9a84cde37543fb107">itk::simple::ConditionalValue::Value</a></div><div class="ttdeci">static const ValueType Value</div><div class="ttdef"><b>Definition:</b> <a href="sitkConditional_8h_source.html#l00060">sitkConditional.h:60</a></div></div>
-<div class="ttc" id="astructitk_1_1simple_1_1ConditionalValue_html"><div class="ttname"><a href="structitk_1_1simple_1_1ConditionalValue.html">itk::simple::ConditionalValue</a></div><div class="ttdef"><b>Definition:</b> <a href="sitkConditional_8h_source.html#l00049">sitkConditional.h:49</a></div></div>
-<div class="ttc" id="astructitk_1_1simple_1_1Conditional_html"><div class="ttname"><a href="structitk_1_1simple_1_1Conditional.html">itk::simple::Conditional</a></div><div class="ttdef"><b>Definition:</b> <a href="sitkConditional_8h_source.html#l00032">sitkConditional.h:32</a></div></div>
+<div class="ttc" id="astructitk_1_1simple_1_1ConditionalValue_html_a196dc9f2c21f3f9db5a97d8f82ff4022"><div class="ttname"><a href="structitk_1_1simple_1_1ConditionalValue.html#a196dc9f2c21f3f9db5a97d8f82ff4022">itk::simple::ConditionalValue::Self</a></div><div class="ttdeci">ConditionalValue Self</div><div class="ttdef"><b>Definition:</b> <a href="sitkConditional_8h_source.html#l00041">sitkConditional.h:41</a></div></div>
+<div class="ttc" id="astructitk_1_1simple_1_1ConditionalValue_html_a34554b8d819e0d120260a433305679e4"><div class="ttname"><a href="structitk_1_1simple_1_1ConditionalValue.html#a34554b8d819e0d120260a433305679e4">itk::simple::ConditionalValue::ConditionalType</a></div><div class="ttdeci">std::conditional&lt; VCond, std::integral_constant&lt; int, TIfTrue &gt;, std::integral_constant&lt; int, TIfFalse &gt; &gt;::type ConditionalType</div><div class="ttdef"><b>Definition:</b> <a href="sitkConditional_8h_source.html#l00044">sitkConditional.h:44</a></div></div>
+<div class="ttc" id="astructitk_1_1simple_1_1ConditionalValue_html_aa6846b843c7d10e9a84cde37543fb107"><div class="ttname"><a href="structitk_1_1simple_1_1ConditionalValue.html#aa6846b843c7d10e9a84cde37543fb107">itk::simple::ConditionalValue::Value</a></div><div class="ttdeci">static const ValueType Value</div><div class="ttdef"><b>Definition:</b> <a href="sitkConditional_8h_source.html#l00049">sitkConditional.h:49</a></div></div>
+<div class="ttc" id="astructitk_1_1simple_1_1ConditionalValue_html_aa67e6426888f97d2918e6d7bcb26f159"><div class="ttname"><a href="structitk_1_1simple_1_1ConditionalValue.html#aa67e6426888f97d2918e6d7bcb26f159">itk::simple::ConditionalValue::ValueType</a></div><div class="ttdeci">ConditionalType::value_type ValueType</div><div class="ttdef"><b>Definition:</b> <a href="sitkConditional_8h_source.html#l00047">sitkConditional.h:47</a></div></div>
+<div class="ttc" id="astructitk_1_1simple_1_1ConditionalValue_html_a3e90f5368a1d15abf880ec19a1978338"><div class="ttname"><a href="structitk_1_1simple_1_1ConditionalValue.html#a3e90f5368a1d15abf880ec19a1978338">itk::simple::ConditionalValue::Type</a></div><div class="ttdeci">ConditionalType::type Type</div><div class="ttdef"><b>Definition:</b> <a href="sitkConditional_8h_source.html#l00046">sitkConditional.h:46</a></div></div>
+<div class="ttc" id="astructitk_1_1simple_1_1ConditionalValue_html"><div class="ttname"><a href="structitk_1_1simple_1_1ConditionalValue.html">itk::simple::ConditionalValue</a></div><div class="ttdef"><b>Definition:</b> <a href="sitkConditional_8h_source.html#l00038">sitkConditional.h:38</a></div></div>
 <div class="ttc" id="anamespaceitk_html"><div class="ttname"><a href="namespaceitk.html">itk</a></div></div>
-<div class="ttc" id="astructitk_1_1simple_1_1ConditionalValue_html_acaac2aab027a39c74b2db9ceab9fe791"><div class="ttname"><a href="structitk_1_1simple_1_1ConditionalValue.html#acaac2aab027a39c74b2db9ceab9fe791">itk::simple::ConditionalValue::Type</a></div><div class="ttdeci">Self::type Type</div><div class="ttdef"><b>Definition:</b> <a href="sitkConditional_8h_source.html#l00058">sitkConditional.h:58</a></div></div>
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Feb 20 2020 03:22:27 for SimpleITK by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Feb 21 2020 03:21:36 for SimpleITK by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>
