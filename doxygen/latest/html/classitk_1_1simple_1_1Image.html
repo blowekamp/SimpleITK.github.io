@@ -19,7 +19,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">SimpleITK
-   &#160;<span id="projectnumber">2.0.0.dev100</span>
+   &#160;<span id="projectnumber">2.0.0.dev104</span>
    </div>
   </td>
  </tr>
@@ -352,6 +352,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ac6aff1a6853bb021da57e5f21d0b2c36"><td class="memItemLeft" align="right" valign="top">double *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1Image.html#ac6aff1a6853bb021da57e5f21d0b2c36">GetBufferAsDouble</a> ()</td></tr>
 <tr class="memdesc:ac6aff1a6853bb021da57e5f21d0b2c36"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a pointer to the image buffer.  <a href="classitk_1_1simple_1_1Image.html#ac6aff1a6853bb021da57e5f21d0b2c36">More...</a><br /></td></tr>
 <tr class="separator:ac6aff1a6853bb021da57e5f21d0b2c36"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5234c56b7ee5e3cde38fdef9633cdd13"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1Image.html#a5234c56b7ee5e3cde38fdef9633cdd13">GetBufferAsVoid</a> ()</td></tr>
+<tr class="memdesc:a5234c56b7ee5e3cde38fdef9633cdd13"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a pointer to the image buffer.  <a href="classitk_1_1simple_1_1Image.html#a5234c56b7ee5e3cde38fdef9633cdd13">More...</a><br /></td></tr>
+<tr class="separator:a5234c56b7ee5e3cde38fdef9633cdd13"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae720b3b0b895458952be234ec76d2001"><td class="memItemLeft" align="right" valign="top">const <a class="elRef" href="https://www.itk.org/Doxygen/html/namespaceitk.html#abea1263a37f882bc4eaf613b4e84fc2f">int8_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1Image.html#ae720b3b0b895458952be234ec76d2001">GetBufferAsInt8</a> () const</td></tr>
 <tr class="memdesc:ae720b3b0b895458952be234ec76d2001"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a pointer to the image buffer.  <a href="classitk_1_1simple_1_1Image.html#ae720b3b0b895458952be234ec76d2001">More...</a><br /></td></tr>
 <tr class="separator:ae720b3b0b895458952be234ec76d2001"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -382,6 +385,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a373c2fc008dca34f1b27f3e1f824920d"><td class="memItemLeft" align="right" valign="top">const double *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1Image.html#a373c2fc008dca34f1b27f3e1f824920d">GetBufferAsDouble</a> () const</td></tr>
 <tr class="memdesc:a373c2fc008dca34f1b27f3e1f824920d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a pointer to the image buffer.  <a href="classitk_1_1simple_1_1Image.html#a373c2fc008dca34f1b27f3e1f824920d">More...</a><br /></td></tr>
 <tr class="separator:a373c2fc008dca34f1b27f3e1f824920d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4b3d91dadbef9a407dd3c56561c660b4"><td class="memItemLeft" align="right" valign="top">const void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1Image.html#a4b3d91dadbef9a407dd3c56561c660b4">GetBufferAsVoid</a> () const</td></tr>
+<tr class="memdesc:a4b3d91dadbef9a407dd3c56561c660b4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a pointer to the image buffer.  <a href="classitk_1_1simple_1_1Image.html#a4b3d91dadbef9a407dd3c56561c660b4">More...</a><br /></td></tr>
+<tr class="separator:a4b3d91dadbef9a407dd3c56561c660b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
@@ -976,7 +982,7 @@ template&lt;int VPixelIDValue, typename TImageType &gt; </div>
 </div><div class="memdoc">
 <p>Dispatched from the InternalInitialization method. The "enable-if" idiom is used here for method overloading. The second method is for non-instantiated image, which turn into a void pointer for the parameter. However, this second method should never be executed. </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkImage_8h_source.html#l00504">504</a> of file <a class="el" href="sitkImage_8h_source.html">sitkImage.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkImage_8h_source.html#l00506">506</a> of file <a class="el" href="sitkImage_8h_source.html">sitkImage.h</a>.</p>
 
 </div>
 </div>
@@ -1558,6 +1564,58 @@ template&lt;int VPixelIDValue, typename TImageType &gt; </div>
       <table class="memname">
         <tr>
           <td class="memname">const <a class="elRef" href="https://www.itk.org/Doxygen/html/namespaceitk.html#a5037a19c1b11bcb33173a2a3e3d8b8a0">uint8_t</a>* itk::simple::Image::GetBufferAsUInt8 </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get a pointer to the image buffer. </p>
+<dl class="section warning"><dt>Warning</dt><dd>this is dangerous</dd></dl>
+<p>The size of the buffer is the number of components*Xsize*Ysize and then Zsize of a 3D image. The buffer should be accessed as a 1-D array. For example a 3D image buffer should be accessed: </p><div class="fragment"><div class="line"><a class="codeRef" href="https://www.itk.org/Doxygen/html/namespaceitk.html#a5037a19c1b11bcb33173a2a3e3d8b8a0">uint8_t</a> *buffer = img-&gt;GetBufferAsUInt8();</div>
+<div class="line">buffer[c + numComponents*(x+xSize*(y+ySize*z))]</div>
+</div><!-- fragment --><p>The pointer to the buffer is not referenced counted. Additionally, while this image is made unique before returning the pointer, additional copying and usage may introduce unexpected aliasing of the image's buffer.</p>
+<p><a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1Vector.html">Vector</a> and Complex pixel types are both accessed via the appropriate component type method.</p>
+<p>The correct method for the current pixel type of the image must be called or else an exception will be generated. For vector pixel types the type of the component of the vector must be called.</p>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classitk_1_1simple_1_1Image.html#aa446db5af7cf4ba83b7f7e565474c9ce">Image::GetPixelIDValue</a> </dd></dl>
+
+</div>
+</div>
+<a id="a5234c56b7ee5e3cde38fdef9633cdd13"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5234c56b7ee5e3cde38fdef9633cdd13">&#9670;&nbsp;</a></span>GetBufferAsVoid() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void* itk::simple::Image::GetBufferAsVoid </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get a pointer to the image buffer. </p>
+<dl class="section warning"><dt>Warning</dt><dd>this is dangerous</dd></dl>
+<p>The size of the buffer is the number of components*Xsize*Ysize and then Zsize of a 3D image. The buffer should be accessed as a 1-D array. For example a 3D image buffer should be accessed: </p><div class="fragment"><div class="line"><a class="codeRef" href="https://www.itk.org/Doxygen/html/namespaceitk.html#a5037a19c1b11bcb33173a2a3e3d8b8a0">uint8_t</a> *buffer = img-&gt;GetBufferAsUInt8();</div>
+<div class="line">buffer[c + numComponents*(x+xSize*(y+ySize*z))]</div>
+</div><!-- fragment --><p>The pointer to the buffer is not referenced counted. Additionally, while this image is made unique before returning the pointer, additional copying and usage may introduce unexpected aliasing of the image's buffer.</p>
+<p><a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1Vector.html">Vector</a> and Complex pixel types are both accessed via the appropriate component type method.</p>
+<p>The correct method for the current pixel type of the image must be called or else an exception will be generated. For vector pixel types the type of the component of the vector must be called.</p>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classitk_1_1simple_1_1Image.html#aa446db5af7cf4ba83b7f7e565474c9ce">Image::GetPixelIDValue</a> </dd></dl>
+
+</div>
+</div>
+<a id="a4b3d91dadbef9a407dd3c56561c660b4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4b3d91dadbef9a407dd3c56561c660b4">&#9670;&nbsp;</a></span>GetBufferAsVoid() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const void* itk::simple::Image::GetBufferAsVoid </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -3698,7 +3756,7 @@ template&lt;int VPixelIDValue, unsigned int VImageDimension&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkImage_8h_source.html#l00522">522</a> of file <a class="el" href="sitkImage_8h_source.html">sitkImage.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkImage_8h_source.html#l00524">524</a> of file <a class="el" href="sitkImage_8h_source.html">sitkImage.h</a>.</p>
 
 </div>
 </div>
@@ -3709,7 +3767,7 @@ template&lt;int VPixelIDValue, unsigned int VImageDimension&gt; </div>
 <div class="ttc" id="anamespaceitk_html_a5037a19c1b11bcb33173a2a3e3d8b8a0"><div class="ttname"><a href="https://www.itk.org/Doxygen/html/namespaceitk.html#a5037a19c1b11bcb33173a2a3e3d8b8a0">uint8_t</a></div><div class="ttdeci">::uint8_t uint8_t</div></div>
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Feb 21 2020 03:21:59 for SimpleITK by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Feb 22 2020 03:25:13 for SimpleITK by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>
