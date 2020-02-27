@@ -11,7 +11,7 @@
 
     <link rel="icon" type="image/png" href="images/favicon/favicon.png">
 
-    <title>SimpleITK - Home</title>
+    <title>SimpleITK - About</title>
 
     <!-- Feather Icons - Used for main menu dropdown arrows -->
     <script src="https://unpkg.com/feather-icons"></script>
@@ -76,13 +76,13 @@
                     <a class="nav-link dropdown-toggle font-weight-bold" href="#" id="navbarDropdown1" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           Getting Started<span data-feather="chevron-down" class="ml-1"></span>
         </a>
-                    <div class="dropdown-menu px-3 py-4" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item pl-2 text-secondary" href="https://simpleitk.readthedocs.io/en/master/gettingStarted.html#python-binary-files" target="_blank">Python</a>
-                        <a class="dropdown-item pl-2 text-secondary" href="https://simpleitk.readthedocs.io/en/master/gettingStarted.html#c-binary-files" target="_blank">C#</a>
-                        <a class="dropdown-item pl-2 text-secondary" href="https://simpleitk.readthedocs.io/en/master/gettingStarted.html#java-binary-files" target="_blank">Java</a>
-                        <a class="dropdown-item pl-2 text-secondary" href="https://simpleitk.readthedocs.io/en/master/gettingStarted.html#r-binary-files" target="_blank">R</a>
+                  <div class="dropdown-menu px-3 py-4" aria-labelledby="navbarDropdown">
+                      <a class="dropdown-item pl-2 text-secondary" href="https://simpleitk.readthedocs.io/en/master/gettingStarted.html#python-binary-files" target="_blank">Python</a>
+                      <a class="dropdown-item pl-2 text-secondary" href="https://simpleitk.readthedocs.io/en/master/gettingStarted.html#c-binary-files" target="_blank">C#</a>
+                      <a class="dropdown-item pl-2 text-secondary" href="https://simpleitk.readthedocs.io/en/master/gettingStarted.html#java-binary-files" target="_blank">Java</a>
+                      <a class="dropdown-item pl-2 text-secondary" href="https://simpleitk.readthedocs.io/en/master/gettingStarted.html#r-binary-files" target="_blank">R</a>
 
-                    </div>
+                  </div>
                 </li>
                 <li class="nav-item dropdown mx-2">
                     <a class="nav-link dropdown-toggle font-weight-bold" href="#" id="navbarDropdown2" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -131,134 +131,135 @@
         </div>
     </nav>
 
-    <!-- Hero section -->
-    <div class="jumbotron jumbotron-fluid border-bottom hero">
+    <!-- About -->
+    <div class="jumbotron jumbotron-fluid bg-white border-bottom about-hero">
         <div class="container">
             <div class="row">
-                <div class="col-3">
-                    <img src="images/homepage/simpleitk-logo-final.svg" class="img-fluid" alt="SimpleITK logo">
+                <div class="col-12 text-center p-5">
+                    <h2 class="text-brand font-weight-bold mb-5">About SimpleITK</h2>
+                    <p class="">SimpleITK is a simplified programming interface to the algorithms and data structures of the <a class="about-link" href="https://github.com/InsightSoftwareConsortium/ITK" target="_blank">Insight Toolkit</a> (ITK). It supports interfaces for multiple programming languages including C++, Python, R, Java, C#, Lua, Ruby and TCL. These bindings enable scientists to develop image analysis workflows in the programming language they are most familiar with. The toolkit supports more than 15 different image file formats, provides over 280 image analysis filters, and implements a unified interface to the ITK intensity-based registration framework.</p>
                 </div>
-                <div class="col-9 my-md-auto">
-                    <p class="font-weight-bold mb-0 bold-statement">A simplified path to Insight.</p>
-                    <p class="small text-white mb-3 mb-md-5 supporting-statement">Open-source multi-dimensional image analysis in Python, R, Java, C#, Lua, Ruby, TCL and C++. Developed by the Insight Toolkit community for the biomedical sciences and beyond.</p>
+            </div>
 
-                    <div class="">
-                      <!-- <div class="col-12 col-md-6 pb-2"> -->
-                        <a role="button" class="pb-2 btn btn-brand btn-sm font-weight-bold px-5 py-2 index-button" href="https://simpleitk.readthedocs.io/en/master/gettingStarted.html" target="_blank">Getting Started</a>
-                      <!-- </div> -->
-                      <!-- <div class="col-12 col-md-6"> -->
-                        <a role="button" class="btn btn-outline-light btn-sm font-weight-bold px-5 py-2 index-button" href="https://mybinder.org/v2/gh/InsightSoftwareConsortium/SimpleITK-Notebooks/master" target="_blank">Try SimpleITK</a>
-                      <!-- </div> -->
+        </div>
+    </div>
+
+    <!-- Applications and History -->
+    <div class="container">
+        <div class="row no-gutters">
+            <div class="col-12 col-md-6 p-5">
+                <h3 class="text-brand font-weight-bold">Applications</h3>
+                <p>The SimpleITK community includes researchers from a variety of domains that require image analysis capabilities without requiring extensive expertise in software development. Originally the community consisted primarily of researchers from the biomedical sciences, though it has since expanded to many other disciplines. In the context of bio-medicine, the toolkit has been used in the analysis of anatomical structures imaged with CT, MR, and PET, and analysis of cellular structures imaged using dual photon microscopy, focused ion beam scanning electron microscopy and focal plane array microscopy.</p>
+                <p>Outside of bio-medicine the toolkit has been used in a broad range of applications, from <a class="about-link" href="https://link.springer.com/article/10.1007/s00216-018-1156-x" target="_blank">identification of microplastics</a> in micro-Fourier transform infrared microscopy, to <a class="about-link" href="https://www.sciencedirect.com/science/article/pii/S0378775316312381" target="_blank">analysis of fuel cells</a> using X-ray tomography, and for <a class="about-link" href="https://www.sciencedirect.com/science/article/pii/S0034425718304115" target="_blank">alignment of remote sensing images</a> acquired by unmanned aerial systems. Outside of the research setting, the toolkit is used in medical image analysis courses at multiple academic institutions, allowing students to focus more on the algorithms and less on learning complex software interfaces.</p>
+
+            </div>
+            <div class="col-12 col-md-6 p-5">
+                <h3 class="text-brand font-weight-bold">History</h3>
+                <p>SimpleITK was created as part of a concerted effort to simplify the use of the Insight Toolkit, making it more accessible to a wider audience. The initial funding for the toolkit was provided by the United States National Library of Medicine (NLM) under the American Recovery and Reinvestment Act (ARRA), with the initial version of the toolkit developed as a collaboration between The Mayo Clinic, Kitware Inc, The University of Iowa and NLM's intramural research program. The first major release of the toolkit was announced in April-May 2017.</p>
+                <p>Between 2013 and 2019, development was supported by the NLM intramural research program with collaborators at The University of Iowa and Monash University. Since 2019, SimpleITK development is supported by the Office of Cyber Infrastructure and Computational Biology at the National Institute of Allergy and Infectious Diseases.</p>
+
+            </div>
+        </div>
+    </div>
+
+
+     <!-- License -->
+     <div class="jumbotron jumbotron-fluid bg-white border-top about-hero">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 p-5">
+                    <h2 class="text-brand font-weight-bold">License</h2>
+                    <p class="">The SimpleITK project  is part of the <a class="about-link" href="http://www.insightsoftwareconsortium.org" target="_blank">Insight Software Consortium </a> a non-profit educational consortium dedicated to promoting and maintaining open-source, freely available software for medical image analysis. The copyright is held by <a class="about-link" href="https://numfocus.org" target="_blank">NumFOCUS</a>. The SimpleITK software is distributed under the <a class="about-link" href="https://github.com/SimpleITK/SimpleITK/blob/master/LICENSE" target="_blank">Apache License 2.0</a>.</p>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Citations -->
+    <div class="jumbotron jumbotron-fluid bg-white border-top about-hero">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 p-5">
+                    <h2 class="text-brand font-weight-bold">Citation</h2>
+                    <p class="">If you found SimpleITK useful in your research, support our efforts by citing the relevant publication(s):</p>
+                    <ul class="">
+                        <li>R. Beare, B. C. Lowekamp, Z. Yaniv, “Image Segmentation, Registration and Characterization in R with SimpleITK”, J Stat Softw, 86(8), <a class="about-link" target="_blank" href="https://www.jstatsoft.org/article/view/v086i08">doi: 10.18637/jss.v086.i08</a>, 2018.</li>
+                        <li>Z. Yaniv, B. C. Lowekamp, H. J. Johnson, R. Beare, “SimpleITK Image-Analysis Notebooks: a Collaborative Environment for Education and Reproducible Research”, J Digit Imaging., <a class="about-link" target="_blank" href="https://link.springer.com/article/10.1007%2Fs10278-017-0037-8">doi: 10.1007/s10278-017-0037-8, 31(3): 290-303</a>, 2018.</li>
+                        <li>B. C. Lowekamp, D. T. Chen, L. Ibáñez, D. Blezek, “The Design of SimpleITK”, Front. Neuroinform., 7:45. <a class="about-link" target="_blank" href="https://www.frontiersin.org/articles/10.3389/fninf.2013.00045/full">doi: 10.3389/fninf.2013.00045</a>, 2013.</li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- logos -->
+    <div class="jumbotron jumbotron-fluid bg-white border-top about-hero">
+        <div class="container">
+            <div class="row">
+                <div class="col-12  p-5">
+                    <h2 class="text-brand font-weight-bold mb-5 text-center">SimpleITK Logos</h2>
+
+                    <div class="row">
+                        <div class="col-md-12 mb-4">
+                            <div class="card about-card">
+                              <div class="about-full-logos align-self-center">
+                                <img src="images/SimpleITK-Icons/s-name-full-transparent.png" class=" about-full-logos-img" alt="S-full-Transparent">
+                              </div>
+                                <div class="card-body border-top text-center">
+                                    <h5 class="card-title">Download</h5>
+                                    <p> <a role="button" class="btn btn-about-logos" href="images/SimpleITK-Icons/s-name-full-transparent.png" target="_blank"> S Full + Name Transparent (PNG), 1798 × 364, 20KB </a></p>
+                                    <p><a href="images/SimpleITK-Icons/s-name-full-white.jpg" target="_blank" role="button" class="btn btn-about-logos"> S Full + Name White (JPG), 1798 × 364, 81KB </a></p>
+                                    <p><a href="images/SimpleITK-Icons/s-name-full.svg" target="_blank" role="button" class="btn btn-about-logos"> S Full + Name (SVG), 5KB </a></p>
+                                </div>
+
+                              </div>
+                            </div>
+
+                      <div class="col-md-12 mb-4">
+                      <div class="card about-card">
+                          <img src="images/SimpleITK-Icons/s-full-transparent.png" class="align-self-center about-s-logo my-3" alt="S-full-Transparent">
+                          <div class="card-body border-top text-center">
+                              <h5 class="card-title">Download</h5>
+                            <p><a href="images/SimpleITK-Icons/s-full-transparent.png" target="_blank" role="button" class="btn btn-about-logos"> S Full Transparent (PNG), 229 × 337, 6KB </a></p>
+                            <p><a href="images/SimpleITK-Icons/s-small-transparent.png" target="_blank" role="button" class="btn btn-about-logos"> S Small Transparent (PNG), 115 × 169, 3KB </a></p>
+                            <p><a href="images/SimpleITK-Icons/s-small-white.jpg" target="_blank" role="button" class="btn btn-about-logos"> S Small White (JPG), 115 × 169, 27KB </a></p>
+                            <p><a href="images/SimpleITK-Icons/s-small.svg" target="_blank" role="button" class="btn btn-about-logos"> S Small (SVG), 884 bytes </a></p>
+
+                          </div>
+                      </div>
                     </div>
 
-                </div>
-            </div>
+                    </div>
+                    <!-- <div class="row">
+                      <div class="col-12 col-md-6 ">
+                        <img src="images/SimpleITK-Icons/s-full-transparent.png" alt="S-full-Transparent" width="40" height="auto">
+                      </div>
+                      <br>
+                      <div class="col-12 col-md-6">
+                        <h6>S Full Transparent (PNG) - <a href="images/SimpleITK-Icons/s-full-transparent.png"> Download </a></h6>
+                        <h6>S Small Transparent (PNG) - <a href="images/SimpleITK-Icons/s-small-transparent.png"> Download </a></h6>
+                        <h6>S Small White (JPG) - <a href="images/SimpleITK-Icons/s-small-white.jpg"> Download </a></h6>
+                      </div>
+                    </div>
 
-        </div>
-    </div>
+                    <hr>
 
-    <!-- Marketing messaging and featurettes
-  ================================================== -->
-    <!-- Wrap the rest of the page in another container to center all the content. -->
-
-    <div class="container marketing">
-
-        <!-- START THE FEATURETTES -->
-
-        <div class="row featurette">
-            <div class="col-md-6 px-5 pb-5 my-md-auto">
-
-                <p class=""><span class="font-weight-bold text-brand">Images that are considered spatial objects</span> and not arrays of pixels. Computations are performed in physical space, 2D or 3D.</p>
-            </div>
-            <div class="col-md-6">
-                <img class="example-images" src="images/homepage/imageAsSpatialObjectConcept.png" alt="Image as a spatial object">
-            </div>
-        </div>
-
-        <hr class="featurette-divider">
-
-        <div class="row featurette">
-            <div class="col-md-6 order-md-2 px-5 pb-5 my-md-auto">
-
-                <p class=""><span class="font-weight-bold text-brand">Registration framework for fast alignment</span> of 2D and 3D intra and inter-modality images using rigid or deformable transformations.</p>
-            </div>
-            <div class="col-md-6 order-md-1">
-                    <video class="card-img" playsinline="" autoplay="" muted="" loop=""><source src="images/homepage/registration.mp4" type="video/mp4" alt="Inter-Modality"></video>
-            </div>
-        </div>
-
-        <hr class="featurette-divider">
-
-        <div class="row featurette">
-            <div class="col-md-6 px-5 pb-5 my-md-auto">
-
-                <p class=""><span class="font-weight-bold text-brand">An abundance of filters for image segmentation workflows,</span> from classics such as Otsu thresholding to level sets and watersheds.</p>
-            </div>
-            <div class="col-md-6">
-                <img class="example-images" src="images/homepage/spores.png" alt="Spores">
-            </div>
-        </div>
-
-        <hr class="featurette-divider">
-
-        <div class="row featurette">
-            <div class="col-md-6 order-md-2 px-5 pb-5 my-md-auto">
-
-                <p class=""><span class="font-weight-bold text-brand">Tools for evaluating segmentation results</span> (Hausdorff distance, Jaccard and Dice values, surface distances etc.) and analyze the segmented shape characteristics (oriented bounding box, principal moments, perimeter, elongation, Feret diameter etc.).</p>
-            </div>
-            <div class="col-md-6 order-md-1">
-                <img class="segmentation-images" src="images/homepage/segmentation-1.png" alt="Segmentation">
-            </div>
-        </div>
-
-        <hr class="featurette-divider">
-
-        <div class="row featurette">
-            <div class="col-md-6 px-5 pb-5 my-md-auto">
-
-                <p class=""><span class="font-weight-bold text-brand">Image file I/O that support more than 20 image file formats</span> (jpg, png, DICOM, TIFF, etc.) with easy conversion between formats.</p>
-            </div>
-            <div class="col-md-6">
-                <script src="https://gist.github.com/blowekamp/0aa369093459838c66e9cae4fd6736e9.js"></script>
-                <link rel="stylesheet" href="https://github.githubassets.com/assets/gist-embed-31007ea0d3bd9f80540adfbc55afc7bd.css">
-                <div id="gist101652072" class="gist">
+                    <div class="row">
+                        <div class="col-12 col-md-6 ">
+                          <img src="images/SimpleITK-Icons/s-name-full-transparent.png" alt="S-full-Transparent" width="300" height="auto">
+                        </div>
+                        <br>
+                        <div class="col-12 col-md-6">
+                          <h6>S Full Name Transparent (PNG) - <a href="images/SimpleITK-Icons/s-name-full-transparent.png"> Download </a></h6>
+                          <h6>S Full Name White (JPG) - <a href="images/SimpleITK-Icons/s-name-full-white.jpg"> Download </a></h6>
+                        </div>
+                      </div> -->
 
                 </div>
             </div>
-        </div>
-
-        <hr class="featurette-divider">
-
-        <div class="row featurette">
-            <div class="col-md-6 order-md-2 px-5 pb-5 my-md-auto">
-                <p class=""><span class="font-weight-bold text-brand">Readily integrated into parallel processing frameworks</span> on clusters or on desktops via process and thread based parallelization.</p>
-            </div>
-            <div class="col-md-6">
-                <img class="example-images" src="images/homepage/parallel-processing.gif" alt="Parallel processing">
-            </div>
-
-        </div>
-
-        <hr class="featurette-divider">
-
-    </div>
-
-    <!-- Partner logos -->
-
-    <div class="container">
-        <div class="jumbotron bg-white">
-
-            <h4 class="text-center text-muted mb-5">Supported by</h4>
-
-            <ul class="d-flex flex-justify-center flex-items-center flex-wrap list-unstyled mt-2 mt-md-3 grayscale">
-                <li><a class="about-link" href="https://www.nlm.nih.gov" target="_blank"><img alt="NLM" class="logo-img-sm px-2 px-sm-4 px-md-5 my-md-3" src="images/partner-logos/nlm.jpg"></a></li>
-                <li><a class="about-link" href="https://numfocus.org" target="_blank"><img alt="NUMFOCUS" class="logo-img-sm px-2 px-sm-4 px-md-5 my-md-3" src="images/partner-logos/NumFocus.png"></a></li>
-                <li><a class="about-link" href="https://www.niaid.nih.gov" target="_blank"><img alt="NIAID" class="logo-img-sm px-2 px-sm-4 px-md-5 my-md-3" src="images/partner-logos/niaid.jpg"></a></li>
-                <li><a class="about-link" href="https://uiowa.edu" target="_blank"><img alt="University of Iowa" class="logo-img-sm px-2 px-sm-4 px-md-5 my-md-3" src="images/partner-logos/iowa.png"></a></li>
-                <li><a class="about-link" href="https://www.kitware.com" target="_blank"><img alt="Kitware" class="logo-img-sm px-2 px-sm-4 px-md-5 my-md-3" src="images/partner-logos/kitware_logo.jpg"></a></li>
-                <li><a class="about-link" href="https://www.mayoclinic.org" target="_blank"><img alt="Mayo Clinic" class="logo-img-sm px-2 px-sm-4 px-md-5 my-md-3" src="images/partner-logos/mayoclinic.png"></a></li>
-                <li><a class="about-link" href="https://www.monash.edu" target="_blank"><img alt="Monash University" class="logo-img-sm px-2 px-sm-4 px-md-5 my-md-3" src="images/partner-logos/monash_university.png"></a></li>
-            </ul>
 
         </div>
     </div>
@@ -302,8 +303,10 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
     <!-- Main.js -->
     <script src="js/main.js"></script>
+
     <!-- Feather icons -->
     <script>
         feather.replace()

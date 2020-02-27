@@ -1,0 +1,401 @@
+/* Site font */
+
+body {
+    font-family: 'Libre Franklin', sans-serif;
+}
+.topBtn {
+  display: none;
+  position: fixed;
+  bottom: 50px;
+  right: 30px;
+  z-index: 99;
+  border: none;
+  outline: none;
+  opacity: 0.7;
+  background-color: #2a57a3;
+  text-align: center;
+  color: white;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 50%;
+}
+
+.topBtn:hover {
+  /*background-color: #555;*/
+  opacity: 1;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+/* MAIN NAVIGATION
+-------------------------------------------------- */
+
+
+/* Product logo -- size */
+
+.product-logo {
+    width: 200px;
+    height: auto;
+}
+
+@media (max-width: 414px) {
+    .product-logo {
+        width: 150px;
+        height: auto;
+    }
+    .social-media-icons{
+      font-size: 14px;
+    }
+}
+@media (max-width: 334px) {
+  .product-logo {
+    width: 100px;
+    height: auto;
+}
+  .social-media-icons{
+    font-size: 8px;
+  }
+}
+
+
+/* Product logotype -- letter spacing */
+
+.product-logotype {
+    letter-spacing: 5px;
+}
+
+@media (min-width: 768px) {
+    .product-logotype {
+        letter-spacing: 10px;
+    }
+}
+
+
+/* Product logotype -- span, simple name */
+
+.simple-name {
+    color: #2a57a3;
+}
+
+
+/* Dropdown -- custom arrow */
+
+.dropdown-toggle::after {
+    display: none !important;
+}
+
+
+/* Dropdown -- width */
+
+.dropdown-menu {
+    width: 300px;
+}
+
+
+/* Custom navbar toggle */
+
+.navbar-toggle {
+    position: relative;
+    float: right;
+    padding: 9px 20px;
+    margin-top: 26px;
+    margin-right: 8px;
+    margin-bottom: 26px;
+    background-color: transparent;
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius: 4px;
+}
+
+.navbar-toggle {
+    border: none;
+    background: transparent !important;
+}
+
+.navbar-toggle:hover {
+    background: transparent !important;
+}
+
+.navbar-toggler {
+    border: none;
+    background: transparent !important;
+}
+
+.navbar-toggler:focus {
+    outline: none;
+    background: transparent !important;
+}
+
+.navbar-toggler .icon-bar {
+    background-color: #20558A;
+    transform: rotate(0deg) translate(0px, 0px);
+    transition: ease all .2s;
+}
+
+.navbar-toggler .icon-bar {
+    display: block;
+    width: 22px;
+    height: 2px;
+    border-radius: 1px;
+}
+
+.navbar-toggler .icon-bar+.icon-bar {
+    margin-top: 4px;
+}
+
+.icon-bar:nth-child(2) {
+    width: 16px;
+    transition: ease all .2s;
+}
+
+.navbar-toggler:hover>.icon-bar:nth-child(2) {
+    width: 22px;
+    transition: ease all .2s;
+}
+
+.navbar-toggler:active>.icon-bar:nth-child(2) {
+    width: 22px;
+    transition: ease all .2s;
+}
+
+.navbar-toggler:not(.collapsed) .icon-bar:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 4px);
+    transition: ease all .2s;
+}
+
+.navbar-toggler:not(.collapsed) .icon-bar:nth-child(2) {
+    opacity: 0;
+    transition: ease all .2s;
+}
+
+.navbar-toggler:not(.collapsed) .icon-bar:nth-child(3) {
+    transform: rotate(-45deg) translate(4px, -4px);
+    transition: ease all .2s;
+}
+
+
+/* HERO
+-------------------------------------------------- */
+
+
+/* Hero -- background gradient */
+
+.hero {
+    background: #BBD2C5;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to top, #ffffff, #292E49, #536976, #BBD2C5, #ffffff);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to top, #ffffff, #292E49, #536976, #BBD2C5, #ffffff);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    padding: 100px 0px;
+}
+
+
+/* About Hero */
+
+.about-hero {
+    padding: 25px 0px;
+}
+
+.about-card{
+-webkit-box-shadow: 0px 0px 19px 0px rgba(0, 0, 0, 0.16);
+-moz-box-shadow: 0px 0px 19px 0px rgba(0, 0, 0, 0.16);
+box-shadow: 0px 0px 19px 0px rgba(0, 0, 0, 0.16);
+}
+.about-link {
+  color: #337ab7;
+}
+
+.about-link:hover,
+.about-link:focus {
+  text-decoration: none;
+  background-color: transparent;
+}
+
+.about-full-logos{
+  padding: 40px;
+}
+.about-full-logos-img{
+  width: 300px;
+  height: auto;
+}
+.about-s-logo{
+  width: 60px;
+  height: auto;
+}
+
+.btn-about-logos {
+  background-color: #2a57a3;
+  color: white;
+  border-radius: 25px;
+}
+
+.btn-about-logos:hover {
+  background-color: #E7B120;
+  color: black;
+}
+
+@media (max-width: 768px) {
+  .about-s-logo{
+    width: 55px;
+    height: auto;
+  }
+}
+@media (max-width: 414px) {
+  .about-full-logos-img{
+    width: 200px;
+    height: auto;
+  }
+  .about-s-logo{
+    width: 45px;
+    height: auto;
+  }
+}
+@media (max-width: 314px) {
+  .about-full-logos-img{
+    width: 150px;
+    height: auto;
+  }
+  .about-s-logo{
+    width: 35px;
+    height: auto;
+  }
+}
+/* Main and supporting statement on homepage */
+
+.bold-statement {
+    font-size: .9rem;
+    line-height: 1.1;
+}
+.index-button{
+  display: inline-block;
+  margin: 10px;
+}
+
+@media all and (max-width: 768px){
+.index-button{
+  display: block;
+  margin: 0.4em;
+ }
+}
+
+@media (min-width: 768px) {
+    .bold-statement {
+        font-size: 2.8rem;
+        line-height: 1.1;
+    }
+    .supporting-statement {
+        font-size: 1.25rem;
+    }
+}
+
+
+/* MARKETING CONTENT
+-------------------------------------------------- */
+
+
+/* Center align the text within the three columns below the carousel */
+
+.marketing .col-lg-4 {
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.marketing h2 {
+    font-weight: 400;
+}
+
+.marketing .col-lg-4 p {
+    margin-right: .75rem;
+    margin-left: .75rem;
+}
+
+
+/* Featurettes
+------------------------- */
+
+.featurette-divider {
+    margin: 2.5rem 0;
+    /* Space out the Bootstrap <hr> more */
+}
+
+
+/* FOOTER
+-------------------------------------------------- */
+
+
+/* Footer divider -- shown on mobile */
+
+.footer-divider {
+    margin: 2.5rem 0;
+    /* Space out the Bootstrap <hr> more */
+    border-top: 1px solid #fff;
+}
+
+
+/* ADDITIONAL CUSTOM CLASSES
+-------------------------------------------------- */
+
+.btn-brand {
+    background-color: #2a57a3;
+    color: white;
+}
+
+.btn-brand:hover {
+    background-color: #E7B120;
+    color: black;
+}
+
+.text-brand {
+    color: #2a57a3;
+}
+
+.example-images {
+    width: 100%;
+    height: auto;
+}
+
+.segmentation-images {
+  width: 300px;
+  height: auto;
+  margin-left: 100px;
+  border-radius: 2px;
+}
+
+.grayscale {
+    filter: grayscale(100%);
+}
+
+.logo-img-sm {
+    width: auto;
+    height: 55px;
+    margin: 10px;
+}
+
+@media (min-width: 768px) {
+    .logo-img-sm {
+        width: auto;
+        height: 110px;
+        margin: 20px;
+    }
+
+}
+@media (min-width: 768px) and (max-width: 992px){
+  .segmentation-images {
+    margin-left: 0px;
+  }
+}
+@media (max-width: 576px){
+  .segmentation-images {
+    width: 200px;
+    margin-left: 70px;
+  }
+}
+@media (max-width: 410px){
+  .segmentation-images {
+    width: 200px;
+    margin-left: 50px;
+  }
+  /* .main-logo{
+    width: 150px;
+  } */
+}
