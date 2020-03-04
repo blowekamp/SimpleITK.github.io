@@ -19,7 +19,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">SimpleITK
-   &#160;<span id="projectnumber">2.0.0.dev108</span>
+   &#160;<span id="projectnumber">2.0.0.dev117</span>
    </div>
   </td>
  </tr>
@@ -91,18 +91,18 @@ $(function() {
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <span class="keyword">public</span> std::exception</div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;{</div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;  <a class="code" href="classitk_1_1simple_1_1GenericException.html">GenericException</a>()  <a class="code" href="sitkMacro_8h.html#ae9317d59106434f09846b0a4b3f05ac0">SITK_NOEXCEPT</a>;</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;  <a class="code" href="classitk_1_1simple_1_1GenericException.html">GenericException</a>( <span class="keyword">const</span> <a class="code" href="classitk_1_1simple_1_1GenericException.html">GenericException</a> &amp;e )  <a class="code" href="sitkMacro_8h.html#ae9317d59106434f09846b0a4b3f05ac0">SITK_NOEXCEPT</a>;</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;  <a class="code" href="classitk_1_1simple_1_1GenericException.html">GenericException</a>()  noexcept;</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;  <a class="code" href="classitk_1_1simple_1_1GenericException.html">GenericException</a>( <span class="keyword">const</span> <a class="code" href="classitk_1_1simple_1_1GenericException.html">GenericException</a> &amp;e )  noexcept;</div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160; </div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;  <a class="code" href="classitk_1_1simple_1_1GenericException.html">GenericException</a>(<span class="keyword">const</span> <span class="keywordtype">char</span> *file, <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> lineNumber) <a class="code" href="sitkMacro_8h.html#ae9317d59106434f09846b0a4b3f05ac0">SITK_NOEXCEPT</a>;</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;  <a class="code" href="classitk_1_1simple_1_1GenericException.html">GenericException</a>(<span class="keyword">const</span> <span class="keywordtype">char</span> *file, <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> lineNumber) noexcept;</div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160; </div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;  <a class="code" href="classitk_1_1simple_1_1GenericException.html">GenericException</a>(<span class="keyword">const</span> std::string &amp; file, <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> lineNumber) <a class="code" href="sitkMacro_8h.html#ae9317d59106434f09846b0a4b3f05ac0">SITK_NOEXCEPT</a>;</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;  <a class="code" href="classitk_1_1simple_1_1GenericException.html">GenericException</a>(<span class="keyword">const</span> std::string &amp; file, <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> lineNumber) noexcept;</div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160; </div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;  <a class="code" href="classitk_1_1simple_1_1GenericException.html">GenericException</a>(<span class="keyword">const</span> std::string &amp; file,</div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;                   <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> lineNumber,</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;                   <span class="keyword">const</span> std::string &amp; desc) <a class="code" href="sitkMacro_8h.html#ae9317d59106434f09846b0a4b3f05ac0">SITK_NOEXCEPT</a>;</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;                   <span class="keyword">const</span> std::string &amp; desc) noexcept;</div>
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160; </div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;  <span class="keyword">virtual</span> ~<a class="code" href="classitk_1_1simple_1_1GenericException.html">GenericException</a>() <a class="code" href="sitkMacro_8h.html#ae9317d59106434f09846b0a4b3f05ac0">SITK_NOEXCEPT</a>;</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;  <span class="keyword">virtual</span> ~<a class="code" href="classitk_1_1simple_1_1GenericException.html">GenericException</a>() noexcept;</div>
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160; </div>
 <div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;  <a class="code" href="classitk_1_1simple_1_1GenericException.html">GenericException</a> &amp; operator=(<span class="keyword">const</span> <a class="code" href="classitk_1_1simple_1_1GenericException.html">GenericException</a> &amp; orig);</div>
 <div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160; </div>
@@ -111,7 +111,7 @@ $(function() {
 <div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160; </div>
 <div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;  std::string ToString() <span class="keyword">const</span>;</div>
 <div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160; </div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;  <span class="keyword">const</span> <span class="keywordtype">char</span> * what() <span class="keyword">const</span> <a class="code" href="sitkMacro_8h.html#ae9317d59106434f09846b0a4b3f05ac0">SITK_NOEXCEPT</a>;</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;  <span class="keyword">const</span> <span class="keywordtype">char</span> * what() <span class="keyword">const</span> noexcept;</div>
 <div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160; </div>
 <div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;  <span class="keyword">virtual</span> <span class="keyword">const</span> <span class="keywordtype">char</span> * GetNameOfClass() <span class="keyword">const</span>;</div>
 <div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160; </div>
@@ -132,7 +132,6 @@ $(function() {
 <div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160; </div>
 <div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;<span class="preprocessor">#endif // sitkExceptionObject_h</span></div>
 </div><!-- fragment --></div><!-- contents -->
-<div class="ttc" id="asitkMacro_8h_html_ae9317d59106434f09846b0a4b3f05ac0"><div class="ttname"><a href="sitkMacro_8h.html#ae9317d59106434f09846b0a4b3f05ac0">SITK_NOEXCEPT</a></div><div class="ttdeci">#define SITK_NOEXCEPT</div><div class="ttdef"><b>Definition:</b> <a href="sitkMacro_8h_source.html#l00068">sitkMacro.h:68</a></div></div>
 <div class="ttc" id="aclassitk_1_1simple_1_1GenericException_html_a20cdbd5ef6f556801964ea2b560cc109"><div class="ttname"><a href="classitk_1_1simple_1_1GenericException.html#a20cdbd5ef6f556801964ea2b560cc109">itk::simple::GenericException::m_PimpleException</a></div><div class="ttdeci">const ExceptionObject * m_PimpleException</div><div class="ttdef"><b>Definition:</b> <a href="sitkExceptionObject_8h_source.html#l00092">sitkExceptionObject.h:92</a></div></div>
 <div class="ttc" id="asitkCommon_8h_html"><div class="ttname"><a href="sitkCommon_8h.html">sitkCommon.h</a></div></div>
 <div class="ttc" id="asitkMacro_8h_html"><div class="ttname"><a href="sitkMacro_8h.html">sitkMacro.h</a></div></div>
@@ -142,7 +141,7 @@ $(function() {
 <div class="ttc" id="aclassitk_1_1simple_1_1GenericException_html"><div class="ttname"><a href="classitk_1_1simple_1_1GenericException.html">itk::simple::GenericException</a></div><div class="ttdoc">The base SimpleITK exception class.</div><div class="ttdef"><b>Definition:</b> <a href="sitkExceptionObject_8h_source.html#l00044">sitkExceptionObject.h:44</a></div></div>
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Feb 29 2020 03:21:53 for SimpleITK by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Mar 4 2020 03:22:04 for SimpleITK by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

@@ -19,7 +19,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">SimpleITK
-   &#160;<span id="projectnumber">2.0.0.dev108</span>
+   &#160;<span id="projectnumber">2.0.0.dev117</span>
    </div>
   </td>
  </tr>
@@ -184,7 +184,7 @@ $(function() {
 <div class="line"><a name="l00262"></a><span class="lineno"><a class="line" href="classitk_1_1simple_1_1ProcessObject.html#ac6dde7676946af45502b712fbf816b3f">  262</a></span>&#160;      <span class="keyword">friend</span> <span class="keyword">class </span><a class="code" href="classitk_1_1simple_1_1Command.html">itk::simple::Command</a>;</div>
 <div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;      <span class="comment">// method call by command when it&#39;s deleted, maintains internal</span></div>
 <div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;      <span class="comment">// references between command and process objects.</span></div>
-<div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;      <span class="keyword">virtual</span> <span class="keywordtype">void</span> onCommandDelete(<span class="keyword">const</span> <a class="code" href="classitk_1_1simple_1_1Command.html">itk::simple::Command</a> *cmd) <a class="code" href="sitkMacro_8h.html#ae9317d59106434f09846b0a4b3f05ac0">SITK_NOEXCEPT</a>;</div>
+<div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;      <span class="keyword">virtual</span> <span class="keywordtype">void</span> onCommandDelete(<span class="keyword">const</span> <a class="code" href="classitk_1_1simple_1_1Command.html">itk::simple::Command</a> *cmd) noexcept;</div>
 <div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;<span class="preprocessor">      #endif</span></div>
 <div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160; </div>
 <div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160; </div>
@@ -284,7 +284,6 @@ $(function() {
 <div class="ttc" id="aclassitk_1_1simple_1_1ProcessObject_html_a6babc7ad2c4441fd6b302cdb13d54882"><div class="ttname"><a href="classitk_1_1simple_1_1ProcessObject.html#a6babc7ad2c4441fd6b302cdb13d54882">itk::simple::ProcessObject::Self</a></div><div class="ttdeci">ProcessObject Self</div><div class="ttdef"><b>Definition:</b> <a href="sitkProcessObject_8h_source.html#l00054">sitkProcessObject.h:54</a></div></div>
 <div class="ttc" id="astructitk_1_1simple_1_1ProcessObject_1_1EventCommand_html_a6cc88992d7a59c224b15826b7d464fc0"><div class="ttname"><a href="structitk_1_1simple_1_1ProcessObject_1_1EventCommand.html#a6cc88992d7a59c224b15826b7d464fc0">itk::simple::ProcessObject::EventCommand::m_Command</a></div><div class="ttdeci">Command * m_Command</div><div class="ttdef"><b>Definition:</b> <a href="sitkProcessObject_8h_source.html#l00230">sitkProcessObject.h:230</a></div></div>
 <div class="ttc" id="aclassitk_1_1simple_1_1ProcessObject_html_a5dbd376e2bffbbc62b15d7025b8e7ed7"><div class="ttname"><a href="classitk_1_1simple_1_1ProcessObject.html#a5dbd376e2bffbbc62b15d7025b8e7ed7">itk::simple::ProcessObject::m_Commands</a></div><div class="ttdeci">std::list&lt; EventCommand &gt; m_Commands</div><div class="ttdef"><b>Definition:</b> <a href="sitkProcessObject_8h_source.html#l00356">sitkProcessObject.h:356</a></div></div>
-<div class="ttc" id="asitkMacro_8h_html_ae9317d59106434f09846b0a4b3f05ac0"><div class="ttname"><a href="sitkMacro_8h.html#ae9317d59106434f09846b0a4b3f05ac0">SITK_NOEXCEPT</a></div><div class="ttdeci">#define SITK_NOEXCEPT</div><div class="ttdef"><b>Definition:</b> <a href="sitkMacro_8h_source.html#l00068">sitkMacro.h:68</a></div></div>
 <div class="ttc" id="asitkTemplateFunctions_8h_html"><div class="ttname"><a href="sitkTemplateFunctions_8h.html">sitkTemplateFunctions.h</a></div></div>
 <div class="ttc" id="asitkNonCopyable_8h_html"><div class="ttname"><a href="sitkNonCopyable_8h.html">sitkNonCopyable.h</a></div></div>
 <div class="ttc" id="aclassitk_1_1simple_1_1Image_html_aae85b77dbf3dd2d38089f7a39f83078b"><div class="ttname"><a href="classitk_1_1simple_1_1Image.html#aae85b77dbf3dd2d38089f7a39f83078b">itk::simple::Image::GetITKBase</a></div><div class="ttdeci">itk::DataObject * GetITKBase(void)</div></div>
@@ -320,13 +319,13 @@ $(function() {
 <div class="ttc" id="astructitk_1_1simple_1_1ProcessObject_1_1EventCommand_html_ac3263557e661c8b523153dfc526f5169"><div class="ttname"><a href="structitk_1_1simple_1_1ProcessObject_1_1EventCommand.html#ac3263557e661c8b523153dfc526f5169">itk::simple::ProcessObject::EventCommand::operator&lt;</a></div><div class="ttdeci">bool operator&lt;(const EventCommand &amp;o) const</div><div class="ttdef"><b>Definition:</b> <a href="sitkProcessObject_8h_source.html#l00237">sitkProcessObject.h:237</a></div></div>
 <div class="ttc" id="aclassitk_1_1ImageRegion_html_a3869e176baeb0833cc46def514f0a46f"><div class="ttname"><a href="https://www.itk.org/Doxygen/html/classitk_1_1ImageRegion.html#a3869e176baeb0833cc46def514f0a46f">itk::ImageRegion::GetNumberOfPixels</a></div><div class="ttdeci">SizeValueType GetNumberOfPixels() const</div></div>
 <div class="ttc" id="aclassitk_1_1simple_1_1ProcessObject_html_adaf3d80da77d09da69a35af6dfadf234"><div class="ttname"><a href="classitk_1_1simple_1_1ProcessObject.html#adaf3d80da77d09da69a35af6dfadf234">itk::simple::ProcessObject::CastITKToImage</a></div><div class="ttdeci">static Image CastITKToImage(TImageType *img)</div><div class="ttdef"><b>Definition:</b> <a href="sitkProcessObject_8h_source.html#l00288">sitkProcessObject.h:288</a></div></div>
-<div class="ttc" id="asitkMacro_8h_html_abc17b496b9aad95a46e678d306aed675"><div class="ttname"><a href="sitkMacro_8h.html#abc17b496b9aad95a46e678d306aed675">sitkExceptionMacro</a></div><div class="ttdeci">#define sitkExceptionMacro(x)</div><div class="ttdef"><b>Definition:</b> <a href="sitkMacro_8h_source.html#l00088">sitkMacro.h:88</a></div></div>
+<div class="ttc" id="asitkMacro_8h_html_abc17b496b9aad95a46e678d306aed675"><div class="ttname"><a href="sitkMacro_8h.html#abc17b496b9aad95a46e678d306aed675">sitkExceptionMacro</a></div><div class="ttdeci">#define sitkExceptionMacro(x)</div><div class="ttdef"><b>Definition:</b> <a href="sitkMacro_8h_source.html#l00071">sitkMacro.h:71</a></div></div>
 <div class="ttc" id="aclassitk_1_1simple_1_1ProcessObject_html_af780ef8c7fc1b712f585bbb04deb6221"><div class="ttname"><a href="classitk_1_1simple_1_1ProcessObject.html#af780ef8c7fc1b712f585bbb04deb6221">itk::simple::ProcessObject::CastITKToImage</a></div><div class="ttdeci">static Image CastITKToImage(itk::Image&lt; TVector&lt; TPixelType, VLength &gt;, VImageDimension &gt; *img)</div><div class="ttdef"><b>Definition:</b> <a href="sitkProcessObject_8h_source.html#l00296">sitkProcessObject.h:296</a></div></div>
 <div class="ttc" id="aclassitk_1_1simple_1_1ProcessObject_html_a0a7bd7ac012339b7d4ed0fc003632fda"><div class="ttname"><a href="classitk_1_1simple_1_1ProcessObject.html#a0a7bd7ac012339b7d4ed0fc003632fda">itk::simple::ProcessObject::ToStringHelper</a></div><div class="ttdeci">static std::ostream &amp; ToStringHelper(std::ostream &amp;os, const T &amp;v)</div><div class="ttdef"><b>Definition:</b> <a href="sitkProcessObject_8h_source.html#l00328">sitkProcessObject.h:328</a></div></div>
 <div class="ttc" id="astructitk_1_1simple_1_1ProcessObject_1_1EventCommand_html_adc9986481fd1d5154a4c41612215eafd"><div class="ttname"><a href="structitk_1_1simple_1_1ProcessObject_1_1EventCommand.html#adc9986481fd1d5154a4c41612215eafd">itk::simple::ProcessObject::EventCommand::EventCommand</a></div><div class="ttdeci">EventCommand(EventEnum e, Command *c)</div><div class="ttdef"><b>Definition:</b> <a href="sitkProcessObject_8h_source.html#l00226">sitkProcessObject.h:226</a></div></div>
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Feb 29 2020 03:21:56 for SimpleITK by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Mar 4 2020 03:22:08 for SimpleITK by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

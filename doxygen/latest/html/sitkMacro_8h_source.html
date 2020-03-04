@@ -19,7 +19,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">SimpleITK
-   &#160;<span id="projectnumber">2.0.0.dev108</span>
+   &#160;<span id="projectnumber">2.0.0.dev117</span>
    </div>
   </td>
  </tr>
@@ -100,88 +100,71 @@ $(function() {
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="preprocessor">  #endif</span></div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160; </div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160; </div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="preprocessor">#if __cplusplus &gt;= 201103L</span></div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="comment">// In c++11 the override keyword allows you to explicitly define that a function</span></div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="comment">// is intended to override the base-class version.  This makes the code more</span></div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="comment">// manageable and fixes a set of common hard-to-find bugs.</span></div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;<span class="preprocessor">#define SITK_OVERRIDE override</span></div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="comment">// In C++11 the throw-list specification has been deprecated,</span></div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="comment">// replaced with the noexcept specifier. Using this function</span></div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<span class="comment">// specification adds the run-time check that the method does not</span></div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<span class="comment">// throw. If it does throw then std::terminate will be called.</span></div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<span class="comment">// Use cautiously.</span></div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<span class="preprocessor">#define SITK_NOEXCEPT noexcept</span></div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;<span class="preprocessor">#else</span></div>
-<div class="line"><a name="l00067"></a><span class="lineno"><a class="line" href="sitkMacro_8h.html#ae1baf5af62d73b0b88599c8815fc7469">   67</a></span>&#160;<span class="preprocessor">#define SITK_OVERRIDE</span></div>
-<div class="line"><a name="l00068"></a><span class="lineno"><a class="line" href="sitkMacro_8h.html#ae9317d59106434f09846b0a4b3f05ac0">   68</a></span>&#160;<span class="preprocessor">#define SITK_NOEXCEPT throw()</span></div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="preprocessor">#if defined(SITK_HAS_TEMPLATE_DISAMBIGUATOR_DEPENDENT_NAME)</span></div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="preprocessor">#define CLANG_TEMPLATE template</span></div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="preprocessor">#else</span></div>
+<div class="line"><a name="l00057"></a><span class="lineno"><a class="line" href="sitkMacro_8h.html#a354579cf9a0ecfd74980d6bb9d11fd68">   57</a></span>&#160;<span class="preprocessor">#define CLANG_TEMPLATE</span></div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160; </div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160; </div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="preprocessor">#if  !defined(SITK_RETURN_SELF_TYPE_HEADER)</span></div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<span class="preprocessor">#define SITK_RETURN_SELF_TYPE_HEADER Self &amp;</span></div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160; </div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespaceitk.html">itk</a> {</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160; </div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;<span class="keyword">namespace </span>simple {</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160; </div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;<span class="keyword">class </span>GenericException;</div>
 <div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160; </div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;<span class="preprocessor">#if defined(SITK_HAS_TEMPLATE_DISAMBIGUATOR_DEPENDENT_NAME)</span></div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;<span class="preprocessor">#define CLANG_TEMPLATE template</span></div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;<span class="preprocessor">#else</span></div>
-<div class="line"><a name="l00074"></a><span class="lineno"><a class="line" href="sitkMacro_8h.html#a354579cf9a0ecfd74980d6bb9d11fd68">   74</a></span>&#160;<span class="preprocessor">#define CLANG_TEMPLATE</span></div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160; </div>
+<div class="line"><a name="l00071"></a><span class="lineno"><a class="line" href="sitkMacro_8h.html#abc17b496b9aad95a46e678d306aed675">   71</a></span>&#160;<span class="preprocessor">#define sitkExceptionMacro(x)                                           \</span></div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;<span class="preprocessor">  {                                                                     \</span></div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;<span class="preprocessor">    std::ostringstream message;                                         \</span></div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;<span class="preprocessor">    message &lt;&lt; &quot;sitk::ERROR: &quot; x;                                       \</span></div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;<span class="preprocessor">    throw ::itk::simple::GenericException(__FILE__, __LINE__, message.str().c_str()); \</span></div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;<span class="preprocessor">  }</span></div>
 <div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160; </div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;<span class="preprocessor">#if  !defined(SITK_RETURN_SELF_TYPE_HEADER)</span></div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;<span class="preprocessor">#define SITK_RETURN_SELF_TYPE_HEADER Self &amp;</span></div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160; </div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespaceitk.html">itk</a> {</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160; </div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;<span class="keyword">namespace </span>simple {</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160; </div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;<span class="keyword">class </span>GenericException;</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160; </div>
-<div class="line"><a name="l00088"></a><span class="lineno"><a class="line" href="sitkMacro_8h.html#abc17b496b9aad95a46e678d306aed675">   88</a></span>&#160;<span class="preprocessor">#define sitkExceptionMacro(x)                                           \</span></div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;<span class="preprocessor">  {                                                                     \</span></div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;<span class="preprocessor">    std::ostringstream message;                                         \</span></div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;<span class="preprocessor">    message &lt;&lt; &quot;sitk::ERROR: &quot; x;                                       \</span></div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;<span class="preprocessor">    throw ::itk::simple::GenericException(__FILE__, __LINE__, message.str().c_str()); \</span></div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;<span class="preprocessor">  }</span></div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160; </div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160; </div>
-<div class="line"><a name="l00096"></a><span class="lineno"><a class="line" href="sitkMacro_8h.html#a3456496e5451ed4d8687d75b1aca8af4">   96</a></span>&#160;<span class="preprocessor">#define sitkDebugMacro(x) \</span></div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;<span class="preprocessor">  {\</span></div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;<span class="preprocessor">  if (this-&gt;GetDebug())                                                 \</span></div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;<span class="preprocessor">      {                                                                 \</span></div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;<span class="preprocessor">      std::ostringstream msg;                                           \</span></div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;<span class="preprocessor">      msg &lt;&lt; &quot;Debug: &quot; &lt;&lt; this-&gt;GetName() &lt;&lt; &quot; (&quot; &lt;&lt; this &lt;&lt; &quot;): &quot; x    \</span></div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;<span class="preprocessor">          &lt;&lt; &quot;\n\n&quot;;                                                    \</span></div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;<span class="preprocessor">      ::itk::OutputWindowDisplayDebugText( msg.str().c_str() );         \</span></div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;<span class="preprocessor">      }                                                                 \</span></div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;<span class="preprocessor">  }</span></div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160; </div>
-<div class="line"><a name="l00107"></a><span class="lineno"><a class="line" href="sitkMacro_8h.html#a638c3a115877a0999103203144a26ebc">  107</a></span>&#160;<span class="preprocessor">#define sitkMacroJoin( X, Y ) sitkDoMacroJoin( X, Y )</span></div>
-<div class="line"><a name="l00108"></a><span class="lineno"><a class="line" href="sitkMacro_8h.html#a9bc5fc58a97257aaf24f31c899e96d30">  108</a></span>&#160;<span class="preprocessor">#define sitkDoMacroJoin( X, Y ) sitkDoMacroJoin2(X,Y)</span></div>
-<div class="line"><a name="l00109"></a><span class="lineno"><a class="line" href="sitkMacro_8h.html#ab1a757ecfbf753db042794d71c3f59fc">  109</a></span>&#160;<span class="preprocessor">#define sitkDoMacroJoin2( X, Y ) X##Y</span></div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160; </div>
+<div class="line"><a name="l00079"></a><span class="lineno"><a class="line" href="sitkMacro_8h.html#a3456496e5451ed4d8687d75b1aca8af4">   79</a></span>&#160;<span class="preprocessor">#define sitkDebugMacro(x) \</span></div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;<span class="preprocessor">  {\</span></div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;<span class="preprocessor">  if (this-&gt;GetDebug())                                                 \</span></div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;<span class="preprocessor">      {                                                                 \</span></div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;<span class="preprocessor">      std::ostringstream msg;                                           \</span></div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;<span class="preprocessor">      msg &lt;&lt; &quot;Debug: &quot; &lt;&lt; this-&gt;GetName() &lt;&lt; &quot; (&quot; &lt;&lt; this &lt;&lt; &quot;): &quot; x    \</span></div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;<span class="preprocessor">          &lt;&lt; &quot;\n\n&quot;;                                                    \</span></div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;<span class="preprocessor">      ::itk::OutputWindowDisplayDebugText( msg.str().c_str() );         \</span></div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;<span class="preprocessor">      }                                                                 \</span></div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;<span class="preprocessor">  }</span></div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160; </div>
+<div class="line"><a name="l00090"></a><span class="lineno"><a class="line" href="sitkMacro_8h.html#a638c3a115877a0999103203144a26ebc">   90</a></span>&#160;<span class="preprocessor">#define sitkMacroJoin( X, Y ) sitkDoMacroJoin( X, Y )</span></div>
+<div class="line"><a name="l00091"></a><span class="lineno"><a class="line" href="sitkMacro_8h.html#a9bc5fc58a97257aaf24f31c899e96d30">   91</a></span>&#160;<span class="preprocessor">#define sitkDoMacroJoin( X, Y ) sitkDoMacroJoin2(X,Y)</span></div>
+<div class="line"><a name="l00092"></a><span class="lineno"><a class="line" href="sitkMacro_8h.html#ab1a757ecfbf753db042794d71c3f59fc">   92</a></span>&#160;<span class="preprocessor">#define sitkDoMacroJoin2( X, Y ) X##Y</span></div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160; </div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;}</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;}</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160; </div>
+<div class="line"><a name="l00097"></a><span class="lineno"><a class="line" href="sitkMacro_8h.html#abe0e6b7e6ae16addcb67df3a23df098f">   97</a></span>&#160;<span class="preprocessor">#define sitkPragma(x) _Pragma (#x)</span></div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160; </div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;<span class="preprocessor">#if defined(__clang__) &amp;&amp; defined(__has_warning)</span></div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;<span class="preprocessor">#define sitkClangDiagnosticPush()       sitkPragma( clang diagnostic push )</span></div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;<span class="preprocessor">#define sitkClangDiagnosticPop()        sitkPragma( clang diagnostic pop )</span></div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;<span class="preprocessor">#define sitkClangWarningIgnore_0(x)</span></div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;<span class="preprocessor">#define sitkClangWarningIgnore_1(x)  sitkPragma( clang diagnostic ignored x)</span></div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;<span class="preprocessor">#define sitkClangWarningIgnore(x)    sitkMacroJoin( sitkClangWarningIgnore_, __has_warning(x) )(x)</span></div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;<span class="preprocessor">#else</span></div>
+<div class="line"><a name="l00106"></a><span class="lineno"><a class="line" href="sitkMacro_8h.html#a175fb243d488f10cf2ff19be3c283d00">  106</a></span>&#160;<span class="preprocessor">#define sitkClangDiagnosticPush()</span></div>
+<div class="line"><a name="l00107"></a><span class="lineno"><a class="line" href="sitkMacro_8h.html#abb7cb90c3dcd26f95604215f6c34048f">  107</a></span>&#160;<span class="preprocessor">#define sitkClangDiagnosticPop()</span></div>
+<div class="line"><a name="l00108"></a><span class="lineno"><a class="line" href="sitkMacro_8h.html#a932e85e78e260d1a438b042c6ff8eda6">  108</a></span>&#160;<span class="preprocessor">#define sitkClangWarningIgnore(x)</span></div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160; </div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;}</div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;}</div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160; </div>
-<div class="line"><a name="l00114"></a><span class="lineno"><a class="line" href="sitkMacro_8h.html#abe0e6b7e6ae16addcb67df3a23df098f">  114</a></span>&#160;<span class="preprocessor">#define sitkPragma(x) _Pragma (#x)</span></div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160; </div>
-<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;<span class="preprocessor">#if defined(__clang__) &amp;&amp; defined(__has_warning)</span></div>
-<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;<span class="preprocessor">#define sitkClangDiagnosticPush()       sitkPragma( clang diagnostic push )</span></div>
-<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;<span class="preprocessor">#define sitkClangDiagnosticPop()        sitkPragma( clang diagnostic pop )</span></div>
-<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;<span class="preprocessor">#define sitkClangWarningIgnore_0(x)</span></div>
-<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;<span class="preprocessor">#define sitkClangWarningIgnore_1(x)  sitkPragma( clang diagnostic ignored x)</span></div>
-<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;<span class="preprocessor">#define sitkClangWarningIgnore(x)    sitkMacroJoin( sitkClangWarningIgnore_, __has_warning(x) )(x)</span></div>
-<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;<span class="preprocessor">#else</span></div>
-<div class="line"><a name="l00123"></a><span class="lineno"><a class="line" href="sitkMacro_8h.html#a175fb243d488f10cf2ff19be3c283d00">  123</a></span>&#160;<span class="preprocessor">#define sitkClangDiagnosticPush()</span></div>
-<div class="line"><a name="l00124"></a><span class="lineno"><a class="line" href="sitkMacro_8h.html#abb7cb90c3dcd26f95604215f6c34048f">  124</a></span>&#160;<span class="preprocessor">#define sitkClangDiagnosticPop()</span></div>
-<div class="line"><a name="l00125"></a><span class="lineno"><a class="line" href="sitkMacro_8h.html#a932e85e78e260d1a438b042c6ff8eda6">  125</a></span>&#160;<span class="preprocessor">#define sitkClangWarningIgnore(x)</span></div>
-<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160; </div>
-<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160; </div>
-<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160; </div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;<span class="preprocessor">#endif</span></div>
 </div><!-- fragment --></div><!-- contents -->
 <div class="ttc" id="asitkConfigure_8h_html"><div class="ttname"><a href="sitkConfigure_8h.html">sitkConfigure.h</a></div></div>
 <div class="ttc" id="anamespaceitk_html"><div class="ttname"><a href="namespaceitk.html">itk</a></div></div>
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Feb 29 2020 03:21:55 for SimpleITK by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Mar 4 2020 03:22:07 for SimpleITK by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

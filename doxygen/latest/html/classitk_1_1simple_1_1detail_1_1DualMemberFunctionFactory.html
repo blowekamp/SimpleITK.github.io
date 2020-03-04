@@ -19,7 +19,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">SimpleITK
-   &#160;<span id="projectnumber">2.0.0.dev108</span>
+   &#160;<span id="projectnumber">2.0.0.dev117</span>
    </div>
   </td>
  </tr>
@@ -104,9 +104,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a0f354d50de8dff16b6d9159315396060"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classitk_1_1simple_1_1detail_1_1DualMemberFunctionFactory.html#a034a3c0f1a0258c12fea60a3277a26c6">FunctionObjectType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1detail_1_1DualMemberFunctionFactory.html#a0f354d50de8dff16b6d9159315396060">GetMemberFunction</a> (<a class="el" href="namespaceitk_1_1simple.html#a5f7941a19eca02cbc08e86ea0d024f72">PixelIDValueType</a> pixelID1, <a class="el" href="namespaceitk_1_1simple.html#a5f7941a19eca02cbc08e86ea0d024f72">PixelIDValueType</a> pixelID2, unsigned int imageDimension)</td></tr>
 <tr class="memdesc:a0f354d50de8dff16b6d9159315396060"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a function object for the combination of PixelID1 and PixelID2, and image dimension.  <a href="classitk_1_1simple_1_1detail_1_1DualMemberFunctionFactory.html#a0f354d50de8dff16b6d9159315396060">More...</a><br /></td></tr>
 <tr class="separator:a0f354d50de8dff16b6d9159315396060"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a85db7658e1a5e436be58b03f4b1facc2"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1detail_1_1DualMemberFunctionFactory.html#a85db7658e1a5e436be58b03f4b1facc2">HasMemberFunction</a> (<a class="el" href="namespaceitk_1_1simple.html#a5f7941a19eca02cbc08e86ea0d024f72">PixelIDValueType</a> pixelID1, <a class="el" href="namespaceitk_1_1simple.html#a5f7941a19eca02cbc08e86ea0d024f72">PixelIDValueType</a> pixelID2, unsigned int imageDimension) const <a class="el" href="sitkMacro_8h.html#ae9317d59106434f09846b0a4b3f05ac0">SITK_NOEXCEPT</a></td></tr>
-<tr class="memdesc:a85db7658e1a5e436be58b03f4b1facc2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Query to determine if an member function has been registered for pixelID1, pixelID2 and imageDimension.  <a href="classitk_1_1simple_1_1detail_1_1DualMemberFunctionFactory.html#a85db7658e1a5e436be58b03f4b1facc2">More...</a><br /></td></tr>
-<tr class="separator:a85db7658e1a5e436be58b03f4b1facc2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abcf66f48ab85d634e3fce41c7f68ec75"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1detail_1_1DualMemberFunctionFactory.html#abcf66f48ab85d634e3fce41c7f68ec75">HasMemberFunction</a> (<a class="el" href="namespaceitk_1_1simple.html#a5f7941a19eca02cbc08e86ea0d024f72">PixelIDValueType</a> pixelID1, <a class="el" href="namespaceitk_1_1simple.html#a5f7941a19eca02cbc08e86ea0d024f72">PixelIDValueType</a> pixelID2, unsigned int imageDimension) const noexcept</td></tr>
+<tr class="memdesc:abcf66f48ab85d634e3fce41c7f68ec75"><td class="mdescLeft">&#160;</td><td class="mdescRight">Query to determine if an member function has been registered for pixelID1, pixelID2 and imageDimension.  <a href="classitk_1_1simple_1_1detail_1_1DualMemberFunctionFactory.html#abcf66f48ab85d634e3fce41c7f68ec75">More...</a><br /></td></tr>
+<tr class="separator:abcf66f48ab85d634e3fce41c7f68ec75"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af8a57bde4966dc6c99c440dce7003b46"><td class="memTemplParams" colspan="2">template&lt;typename TImageType1 , typename TImageType2 &gt; </td></tr>
 <tr class="memitem:af8a57bde4966dc6c99c440dce7003b46"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1detail_1_1DualMemberFunctionFactory.html#af8a57bde4966dc6c99c440dce7003b46">Register</a> (<a class="el" href="classitk_1_1simple_1_1detail_1_1DualMemberFunctionFactory.html#a258cd0e75148683e6f31477ccbcf8fa1">MemberFunctionType</a> pfunc, TImageType1 *, TImageType2 *)</td></tr>
 <tr class="memdesc:af8a57bde4966dc6c99c440dce7003b46"><td class="mdescLeft">&#160;</td><td class="mdescRight">Registers a specific member function.  <a href="classitk_1_1simple_1_1detail_1_1DualMemberFunctionFactory.html#af8a57bde4966dc6c99c440dce7003b46">More...</a><br /></td></tr>
@@ -306,13 +306,16 @@ template&lt;typename TMemberFunctionPointer &gt; </div>
 
 </div>
 </div>
-<a id="a85db7658e1a5e436be58b03f4b1facc2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a85db7658e1a5e436be58b03f4b1facc2">&#9670;&nbsp;</a></span>HasMemberFunction()</h2>
+<a id="abcf66f48ab85d634e3fce41c7f68ec75"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abcf66f48ab85d634e3fce41c7f68ec75">&#9670;&nbsp;</a></span>HasMemberFunction()</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
 template&lt;typename TMemberFunctionPointer &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">bool <a class="el" href="classitk_1_1simple_1_1detail_1_1DualMemberFunctionFactory.html">itk::simple::detail::DualMemberFunctionFactory</a>&lt; TMemberFunctionPointer &gt;::HasMemberFunction </td>
@@ -338,6 +341,11 @@ template&lt;typename TMemberFunctionPointer &gt; </div>
           <td></td><td> const</td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 <p>Query to determine if an member function has been registered for pixelID1, pixelID2 and imageDimension. </p>
@@ -521,7 +529,7 @@ template&lt;typename TMemberFunctionPointer &gt; </div>
 <div class="ttc" id="aclassitk_1_1simple_1_1detail_1_1DualMemberFunctionFactory_html_a258cd0e75148683e6f31477ccbcf8fa1"><div class="ttname"><a href="classitk_1_1simple_1_1detail_1_1DualMemberFunctionFactory.html#a258cd0e75148683e6f31477ccbcf8fa1">itk::simple::detail::DualMemberFunctionFactory::MemberFunctionType</a></div><div class="ttdeci">TMemberFunctionPointer MemberFunctionType</div><div class="ttdef"><b>Definition:</b> <a href="sitkDualMemberFunctionFactory_8h_source.html#l00074">sitkDualMemberFunctionFactory.h:74</a></div></div>
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Feb 29 2020 03:22:20 for SimpleITK by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Mar 4 2020 03:22:33 for SimpleITK by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

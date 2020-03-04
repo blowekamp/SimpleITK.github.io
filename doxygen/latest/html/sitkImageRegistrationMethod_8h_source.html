@@ -19,7 +19,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">SimpleITK
-   &#160;<span id="projectnumber">2.0.0.dev108</span>
+   &#160;<span id="projectnumber">2.0.0.dev117</span>
    </div>
   </td>
  </tr>
@@ -361,7 +361,7 @@ $(function() {
 <div class="line"><a name="l00663"></a><span class="lineno">  663</span>&#160;        TRegistrationMethod* method);</div>
 <div class="line"><a name="l00664"></a><span class="lineno">  664</span>&#160; </div>
 <div class="line"><a name="l00665"></a><span class="lineno">  665</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> PreUpdate( <a class="codeRef" href="https://www.itk.org/Doxygen/html/classitk_1_1ProcessObject.html">itk::ProcessObject</a> *p );</div>
-<div class="line"><a name="l00666"></a><span class="lineno">  666</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> OnActiveProcessDelete( ) <a class="code" href="sitkMacro_8h.html#ae9317d59106434f09846b0a4b3f05ac0">SITK_NOEXCEPT</a>;</div>
+<div class="line"><a name="l00666"></a><span class="lineno">  666</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> OnActiveProcessDelete( ) noexcept;</div>
 <div class="line"><a name="l00667"></a><span class="lineno">  667</span>&#160;    virtual <span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> AddITKObserver(const <a class="code" href="namespaceitk.html">itk</a>::<a class="codeRef" href="https://www.itk.org/Doxygen/html/classitk_1_1EventObject.html">EventObject</a> &amp;, <a class="code" href="namespaceitk.html">itk</a>::<a class="code" href="classitk_1_1simple_1_1Command.html">Command</a> *);</div>
 <div class="line"><a name="l00668"></a><span class="lineno">  668</span>&#160;    virtual <span class="keywordtype">void</span> RemoveITKObserver( EventCommand &amp;e );</div>
 <div class="line"><a name="l00669"></a><span class="lineno">  669</span>&#160; </div>
@@ -544,7 +544,6 @@ $(function() {
 <div class="ttc" id="aclassitk_1_1simple_1_1ImageRegistrationMethod_html_a4e488fdfa272ef1b7d50607abeb71ed1"><div class="ttname"><a href="classitk_1_1simple_1_1ImageRegistrationMethod.html#a4e488fdfa272ef1b7d50607abeb71ed1">itk::simple::ImageRegistrationMethod::m_OptimizerConvergenceMinimumValue</a></div><div class="ttdeci">double m_OptimizerConvergenceMinimumValue</div><div class="ttdef"><b>Definition:</b> <a href="sitkImageRegistrationMethod_8h_source.html#l00739">sitkImageRegistrationMethod.h:739</a></div></div>
 <div class="ttc" id="aclassitk_1_1simple_1_1Transform_html"><div class="ttname"><a href="classitk_1_1simple_1_1Transform.html">itk::simple::Transform</a></div><div class="ttdoc">A simplified wrapper around a variety of ITK transforms.</div><div class="ttdef"><b>Definition:</b> <a href="sitkTransform_8h_source.html#l00084">sitkTransform.h:84</a></div></div>
 <div class="ttc" id="astructitk_1_1simple_1_1detail_1_1MemberFunctionAddressor_html"><div class="ttname"><a href="structitk_1_1simple_1_1detail_1_1MemberFunctionAddressor.html">itk::simple::detail::MemberFunctionAddressor</a></div><div class="ttdef"><b>Definition:</b> <a href="sitkDetail_8h_source.html#l00032">sitkDetail.h:32</a></div></div>
-<div class="ttc" id="asitkMacro_8h_html_ae9317d59106434f09846b0a4b3f05ac0"><div class="ttname"><a href="sitkMacro_8h.html#ae9317d59106434f09846b0a4b3f05ac0">SITK_NOEXCEPT</a></div><div class="ttdeci">#define SITK_NOEXCEPT</div><div class="ttdef"><b>Definition:</b> <a href="sitkMacro_8h_source.html#l00068">sitkMacro.h:68</a></div></div>
 <div class="ttc" id="aclassitk_1_1simple_1_1ImageRegistrationMethod_html_a89981c2f3b48b595d57402ffb821f1af"><div class="ttname"><a href="classitk_1_1simple_1_1ImageRegistrationMethod.html#a89981c2f3b48b595d57402ffb821f1af">itk::simple::ImageRegistrationMethod::m_MetricUseFixedImageGradientFilter</a></div><div class="ttdeci">bool m_MetricUseFixedImageGradientFilter</div><div class="ttdef"><b>Definition:</b> <a href="sitkImageRegistrationMethod_8h_source.html#l00808">sitkImageRegistrationMethod.h:808</a></div></div>
 <div class="ttc" id="aclassitk_1_1simple_1_1ImageRegistrationMethod_html_adf831a242fe8a065e7af5935108551b9a558420451055ac35f49c45c13abed38c"><div class="ttname"><a href="classitk_1_1simple_1_1ImageRegistrationMethod.html#adf831a242fe8a065e7af5935108551b9a558420451055ac35f49c45c13abed38c">itk::simple::ImageRegistrationMethod::Jacobian</a></div><div class="ttdeci">@ Jacobian</div><div class="ttdef"><b>Definition:</b> <a href="sitkImageRegistrationMethod_8h_source.html#l00778">sitkImageRegistrationMethod.h:778</a></div></div>
 <div class="ttc" id="aclassitk_1_1simple_1_1ImageRegistrationMethod_html_a8e5f6c017f815d0642396c6132523eed"><div class="ttname"><a href="classitk_1_1simple_1_1ImageRegistrationMethod.html#a8e5f6c017f815d0642396c6132523eed">itk::simple::ImageRegistrationMethod::m_OptimizerLowerBound</a></div><div class="ttdeci">double m_OptimizerLowerBound</div><div class="ttdef"><b>Definition:</b> <a href="sitkImageRegistrationMethod_8h_source.html#l00745">sitkImageRegistrationMethod.h:745</a></div></div>
@@ -679,7 +678,7 @@ $(function() {
 <div class="ttc" id="aclassitk_1_1simple_1_1ImageRegistrationMethod_html_a5f76ee76e3d6d4b0461e824850ec0a2baecab6747ba5c12323d0ac60a1e91fd84"><div class="ttname"><a href="classitk_1_1simple_1_1ImageRegistrationMethod.html#a5f76ee76e3d6d4b0461e824850ec0a2baecab6747ba5c12323d0ac60a1e91fd84">itk::simple::ImageRegistrationMethod::JointHistogramMutualInformation</a></div><div class="ttdeci">@ JointHistogramMutualInformation</div><div class="ttdef"><b>Definition:</b> <a href="sitkImageRegistrationMethod_8h_source.html#l00791">sitkImageRegistrationMethod.h:791</a></div></div>
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Feb 29 2020 03:21:54 for SimpleITK by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Mar 4 2020 03:22:06 for SimpleITK by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>
