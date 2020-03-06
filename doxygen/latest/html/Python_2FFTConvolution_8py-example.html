@@ -19,7 +19,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">SimpleITK
-   &#160;<span id="projectnumber">2.0.0.dev117</span>
+   &#160;<span id="projectnumber">2.0.0.dev125</span>
    </div>
   </td>
  </tr>
@@ -87,7 +87,7 @@ $(function() {
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;pixelID = img.GetPixelID()</div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160; </div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="comment"># pad the image </span></div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;img = <a class="code" href="namespaceitk_1_1simple.html#ae685540c3a8ee09635a7384a2ef22cfe">sitk.MirrorPad</a>( img, [128] *2, [128]*2 )</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;img = <a class="code" href="namespaceitk_1_1simple.html#a00dac9751225a04f47c3ec60bf64a5a5">sitk.MirrorPad</a>( img, [128] *2, [128]*2 )</div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;size = img.GetSize();</div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160; </div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="comment"># perform the FFT</span></div>
@@ -142,7 +142,6 @@ $(function() {
 <div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;    <a class="code" href="namespaceitk_1_1simple.html#a86cb9e226d455efca3ba034dc2154605">sitk.Show</a>( <a class="code" href="namespaceitk_1_1simple.html#a62a1be75703e22b14339e6409858ab61">sitk.ReadImage</a>( kernelFileName ), <span class="stringliteral">&quot;kernel&quot;</span> )</div>
 <div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;    <a class="code" href="namespaceitk_1_1simple.html#a86cb9e226d455efca3ba034dc2154605">sitk.Show</a>( <a class="code" href="namespaceitk_1_1simple.html#af8c9d7cc96a299a05890e9c3db911885">sitk.Cast</a>( img, pixelID ), <span class="stringliteral">&quot;FFT_Convolution&quot;</span> )</div>
 </div><!-- fragment --> </div><!-- contents -->
-<div class="ttc" id="anamespaceitk_1_1simple_html_ae685540c3a8ee09635a7384a2ef22cfe"><div class="ttname"><a href="namespaceitk_1_1simple.html#ae685540c3a8ee09635a7384a2ef22cfe">itk::simple::MirrorPad</a></div><div class="ttdeci">Image MirrorPad(const Image &amp;image1, const std::vector&lt; unsigned int &gt; &amp;padLowerBound=std::vector&lt; unsigned int &gt;(3, 0), const std::vector&lt; unsigned int &gt; &amp;padUpperBound=std::vector&lt; unsigned int &gt;(3, 0))</div><div class="ttdoc">Increase the image size by padding with replicants of the input image value.</div></div>
 <div class="ttc" id="anamespaceitk_1_1simple_html_a8537644286a43ff1566326c2109057ab"><div class="ttname"><a href="namespaceitk_1_1simple.html#a8537644286a43ff1566326c2109057ab">itk::simple::WriteImage</a></div><div class="ttdeci">SITKIO_EXPORT void WriteImage(const Image &amp;image, const std::vector&lt; std::string &gt; &amp;fileNames, bool useCompression=false, int compressionLevel=-1)</div></div>
 <div class="ttc" id="aclassitk_1_1simple_1_1StatisticsImageFilter_html"><div class="ttname"><a href="classitk_1_1simple_1_1StatisticsImageFilter.html">itk::simple::StatisticsImageFilter</a></div><div class="ttdoc">Compute min. max, variance and mean of an Image .</div><div class="ttdef"><b>Definition:</b> <a href="sitkStatisticsImageFilter_8h_source.html#l00044">sitkStatisticsImageFilter.h:44</a></div></div>
 <div class="ttc" id="anamespaceitk_1_1simple_html_a86cb9e226d455efca3ba034dc2154605"><div class="ttname"><a href="namespaceitk_1_1simple.html#a86cb9e226d455efca3ba034dc2154605">itk::simple::Show</a></div><div class="ttdeci">void SITKIO_EXPORT Show(const Image &amp;image, const std::string &amp;title=&quot;&quot;, const bool debugOn=ProcessObject::GetGlobalDefaultDebug())</div></div>
@@ -152,11 +151,12 @@ $(function() {
 <div class="ttc" id="anamespaceitk_1_1simple_html_af8c9d7cc96a299a05890e9c3db911885"><div class="ttname"><a href="namespaceitk_1_1simple.html#af8c9d7cc96a299a05890e9c3db911885">itk::simple::Cast</a></div><div class="ttdeci">Image Cast(const Image &amp;image, PixelIDValueEnum pixelID)</div></div>
 <div class="ttc" id="anamespaceitk_1_1simple_html_a4ece0a3d7787e70a2895d19559cb96e3"><div class="ttname"><a href="namespaceitk_1_1simple.html#a4ece0a3d7787e70a2895d19559cb96e3">itk::simple::ForwardFFT</a></div><div class="ttdeci">Image ForwardFFT(const Image &amp;image1)</div><div class="ttdoc">Base class for forward Fast Fourier Transform .</div></div>
 <div class="ttc" id="anamespaceitk_1_1simple_html_a161ea30ad2c62ea4f2a29ef82e053e43"><div class="ttname"><a href="namespaceitk_1_1simple.html#a161ea30ad2c62ea4f2a29ef82e053e43">itk::simple::InverseFFT</a></div><div class="ttdeci">Image InverseFFT(const Image &amp;image1)</div><div class="ttdoc">Base class for inverse Fast Fourier Transform .</div></div>
+<div class="ttc" id="anamespaceitk_1_1simple_html_a00dac9751225a04f47c3ec60bf64a5a5"><div class="ttname"><a href="namespaceitk_1_1simple.html#a00dac9751225a04f47c3ec60bf64a5a5">itk::simple::MirrorPad</a></div><div class="ttdeci">Image MirrorPad(const Image &amp;image1, const std::vector&lt; unsigned int &gt; &amp;padLowerBound=std::vector&lt; unsigned int &gt;(3, 0), const std::vector&lt; unsigned int &gt; &amp;padUpperBound=std::vector&lt; unsigned int &gt;(3, 0), double decayBase=1.0)</div><div class="ttdoc">Increase the image size by padding with replicants of the input image value.</div></div>
 <div class="ttc" id="anamespaceitk_1_1simple_html_a1da5a974c4f843d9ef2bed41eb57fb03"><div class="ttname"><a href="namespaceitk_1_1simple.html#a1da5a974c4f843d9ef2bed41eb57fb03">itk::simple::FFTShift</a></div><div class="ttdeci">Image FFTShift(const Image &amp;image1, bool inverse=false)</div><div class="ttdoc">Shift the zero-frequency components of a Fourier transform to the center of the image.</div></div>
 <div class="ttc" id="anamespaceitk_1_1simple_html_a4458c40720e7d78ace07181e13064865"><div class="ttname"><a href="namespaceitk_1_1simple.html#a4458c40720e7d78ace07181e13064865">itk::simple::Crop</a></div><div class="ttdeci">Image Crop(const Image &amp;image1, const std::vector&lt; unsigned int &gt; &amp;lowerBoundaryCropSize=std::vector&lt; unsigned int &gt;(3, 0), const std::vector&lt; unsigned int &gt; &amp;upperBoundaryCropSize=std::vector&lt; unsigned int &gt;(3, 0))</div><div class="ttdoc">Decrease the image size by cropping the image by an itk::Size at both the upper and lower bounds of t...</div></div>
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Mar 4 2020 03:22:03 for SimpleITK by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Mar 6 2020 03:33:33 for SimpleITK by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>
