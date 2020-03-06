@@ -1,4 +1,3 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="$classitk_1_1simple_1_1detail_1_1MemberFunctionFactoryBase.html" title="itk::simple::detail\l::MemberFunctionFactoryBase\l\&lt; EvaluateMemberFunctionType, int \&gt;" alt="" coords="5,4,251,60"/>
-<area shape="rect" id="node2" href="$classitk_1_1simple_1_1detail_1_1MemberFunctionFactory.html" title="itk::simple::detail\l::MemberFunctionFactory\l\&lt; EvaluateMemberFunctionType \&gt;" alt="" coords="299,4,522,60"/>
+<area shape="rect" id="node1" href="$classitk_1_1simple_1_1detail_1_1MemberFunctionFactoryBase.html" title="A base class for the MemberFunctionFactory." alt="" coords="5,5,221,47"/>
 </map>

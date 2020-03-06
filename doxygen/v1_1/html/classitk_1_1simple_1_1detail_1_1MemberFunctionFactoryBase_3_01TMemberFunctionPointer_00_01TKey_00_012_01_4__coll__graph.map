@@ -1,4 +1,9 @@
 <map id="itk::simple::detail::MemberFunctionFactoryBase&lt; TMemberFunctionPointer, TKey, 2 &gt;" name="itk::simple::detail::MemberFunctionFactoryBase&lt; TMemberFunctionPointer, TKey, 2 &gt;">
-<area shape="rect" id="node2" href="$classitk_1_1simple_1_1NonCopyable.html" title="An inheratable class to disable copying of a class. " alt="" coords="5,195,173,221"/>
-<area shape="rect" id="node5" title="STL class. " alt="" coords="292,96,415,123"/>
+<area shape="rect" id="node1" title=" " alt="" coords="12,317,228,388"/>
+<area shape="rect" id="node2" href="$classitk_1_1simple_1_1NonCopyable.html" title="An inheratable class to disable copying of a class." alt="" coords="5,191,192,218"/>
+<area shape="rect" id="node3" title=" " alt="" coords="217,184,405,225"/>
+<area shape="rect" id="node4" title=" " alt="" coords="217,95,292,121"/>
+<area shape="rect" id="node5" title="STL class." alt="" coords="317,95,451,121"/>
+<area shape="rect" id="node6" title=" " alt="" coords="331,5,370,32"/>
+<area shape="rect" id="node7" title=" " alt="" coords="398,5,437,32"/>
 </map>

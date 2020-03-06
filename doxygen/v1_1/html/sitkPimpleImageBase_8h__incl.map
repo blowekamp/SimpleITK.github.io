@@ -1,12 +1,25 @@
 <map id="sitkPimpleImageBase.h" name="sitkPimpleImageBase.h">
-<area shape="rect" id="node3" href="$sitkPixelIDTokens_8h.html" title="sitkPixelIDTokens.h" alt="" coords="171,80,311,107"/>
-<area shape="rect" id="node21" href="$sitkTemplateFunctions_8h.html" title="sitkTemplateFunctions.h" alt="" coords="453,80,617,107"/>
-<area shape="rect" id="node4" href="$sitkConfigure_8h.html" title="sitkConfigure.h" alt="" coords="5,379,115,405"/>
-<area shape="rect" id="node5" href="$sitkPixelIDValues_8h.html" title="sitkPixelIDValues.h" alt="" coords="226,155,363,181"/>
-<area shape="rect" id="node19" href="$type__traits_8h.html" title="nsstd/type_traits.h" alt="" coords="20,155,149,181"/>
-<area shape="rect" id="node6" href="$sitkCommon_8h.html" title="sitkCommon.h" alt="" coords="503,229,609,256"/>
-<area shape="rect" id="node13" href="$sitkPixelIDTypeLists_8h.html" title="sitkPixelIDTypeLists.h" alt="" coords="233,304,387,331"/>
-<area shape="rect" id="node7" href="$sitkMacro_8h.html" title="sitkMacro.h" alt="" coords="631,304,721,331"/>
-<area shape="rect" id="node14" href="$sitkPixelIDTypes_8h.html" title="sitkPixelIDTypes.h" alt="" coords="235,379,368,405"/>
-<area shape="rect" id="node22" href="$sitkExceptionObject_8h.html" title="sitkExceptionObject.h" alt="" coords="573,155,723,181"/>
+<area shape="rect" id="node1" title=" " alt="" coords="364,5,540,32"/>
+<area shape="rect" id="node2" title=" " alt="" coords="425,155,487,181"/>
+<area shape="rect" id="node3" href="$sitkPixelIDTokens_8h.html" title=" " alt="" coords="197,80,347,107"/>
+<area shape="rect" id="node21" href="$sitkTemplateFunctions_8h.html" title=" " alt="" coords="489,80,668,107"/>
+<area shape="rect" id="node4" href="$sitkConfigure_8h.html" title=" " alt="" coords="5,379,125,405"/>
+<area shape="rect" id="node5" href="$sitkPixelIDValues_8h.html" title=" " alt="" coords="253,155,400,181"/>
+<area shape="rect" id="node19" href="$type__traits_8h.html" title=" " alt="" coords="35,155,178,181"/>
+<area shape="rect" id="node6" href="$sitkCommon_8h.html" title=" " alt="" coords="539,229,656,256"/>
+<area shape="rect" id="node13" href="$sitkPixelIDTypeLists_8h.html" title=" " alt="" coords="261,304,425,331"/>
+<area shape="rect" id="node17" title=" " alt="" coords="253,229,312,256"/>
+<area shape="rect" id="node18" title=" " alt="" coords="415,229,491,256"/>
+<area shape="rect" id="node7" href="$sitkMacro_8h.html" title=" " alt="" coords="673,304,770,331"/>
+<area shape="rect" id="node8" title=" " alt="" coords="591,379,662,405"/>
+<area shape="rect" id="node9" title=" " alt="" coords="961,379,1036,405"/>
+<area shape="rect" id="node10" title=" " alt="" coords="687,379,756,405"/>
+<area shape="rect" id="node11" title=" " alt="" coords="780,379,855,405"/>
+<area shape="rect" id="node12" title=" " alt="" coords="879,379,937,405"/>
+<area shape="rect" id="node14" href="$sitkPixelIDTypes_8h.html" title=" " alt="" coords="253,379,395,405"/>
+<area shape="rect" id="node15" title=" " alt="" coords="419,379,567,405"/>
+<area shape="rect" id="node16" title=" " alt="" coords="150,379,229,405"/>
+<area shape="rect" id="node20" title=" " alt="" coords="86,229,178,256"/>
+<area shape="rect" id="node22" href="$sitkExceptionObject_8h.html" title=" " alt="" coords="614,155,778,181"/>
+<area shape="rect" id="node23" title=" " alt="" coords="854,155,925,181"/>
 </map>

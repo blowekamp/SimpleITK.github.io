@@ -1,19 +1,34 @@
 <map id="itk::simple::CenteredVersorTransformInitializerFilter" name="itk::simple::CenteredVersorTransformInitializerFilter">
-<area shape="rect" id="node2" href="$classitk_1_1simple_1_1ProcessObject.html" title="Base class for SimpleITK classes based on ProcessObject. " alt="" coords="1963,688,2139,715"/>
-<area shape="rect" id="node3" href="$classitk_1_1simple_1_1NonCopyable.html" title="An inheratable class to disable copying of a class. " alt="" coords="485,667,654,693"/>
-<area shape="rect" id="node6" href="$classitk_1_1simple_1_1Command.html" title="An implementation of the Command design pattern for callback. " alt="" coords="911,789,1062,816"/>
-<area shape="rect" id="node5" href="$structitk_1_1simple_1_1ProcessObject_1_1EventCommand.html" title="itk::simple::ProcessObject\l::EventCommand" alt="" coords="1309,790,1485,831"/>
-<area shape="rect" id="node8" title="STL class. " alt="" coords="143,477,241,504"/>
-<area shape="rect" id="node21" title="STL class. " alt="" coords="508,179,631,205"/>
-<area shape="rect" id="node10" title="STL class. " alt="" coords="529,381,609,408"/>
-<area shape="rect" id="node15" href="/work/SimpleITK-build/SimpleITK-build/Documentation/Doxygen/InsightDoxygen.tag$classitk_1_1Object.html" title="itk::Object" alt="" coords="945,531,1028,557"/>
-<area shape="rect" id="node11" title="STL class. " alt="" coords="129,411,255,453"/>
-<area shape="rect" id="node12" title="STL class. " alt="" coords="730,721,827,748"/>
-<area shape="rect" id="node23" title="STL class. " alt="" coords="511,272,627,299"/>
-<area shape="rect" id="node14" href="/work/SimpleITK-build/SimpleITK-build/Documentation/Doxygen/InsightDoxygen.tag$classitk_1_1ProcessObject.html" title="itk::ProcessObject" alt="" coords="1332,373,1463,400"/>
-<area shape="rect" id="node16" href="/work/SimpleITK-build/SimpleITK-build/Documentation/Doxygen/InsightDoxygen.tag$classitk_1_1LightObject.html" title="itk::LightObject" alt="" coords="514,515,625,541"/>
-<area shape="rect" id="node17" href="/work/SimpleITK-build/SimpleITK-build/Documentation/Doxygen/InsightDoxygen.tag$classitk_1_1MetaDataDictionary.html" title="itk::MetaDataDictionary" alt="" coords="489,565,649,592"/>
-<area shape="rect" id="node18" href="/work/SimpleITK-build/SimpleITK-build/Documentation/Doxygen/InsightDoxygen.tag$classitk_1_1TimeStamp.html" title="itk::TimeStamp" alt="" coords="514,616,625,643"/>
-<area shape="rect" id="node24" href="/work/SimpleITK-build/SimpleITK-build/Documentation/Doxygen/InsightDoxygen.tag$classitk_1_1SmartPointer.html" title="itk::SmartPointer\&lt;\l Self \&gt;" alt="" coords="505,22,633,63"/>
-<area shape="rect" id="node25" href="/work/SimpleITK-build/SimpleITK-build/Documentation/Doxygen/InsightDoxygen.tag$classitk_1_1SmartPointer.html" title="itk::SmartPointer\&lt;\l TObjectType \&gt;" alt="" coords="128,22,256,63"/>
+<area shape="rect" id="node1" title="CenteredVersorTransformInitializerFilter is a helper class intended to initialize the center of rotat..." alt="" coords="2685,313,2884,354"/>
+<area shape="rect" id="node2" href="$classitk_1_1simple_1_1ProcessObject.html" title="Base class for SimpleITK classes based on ProcessObject." alt="" coords="2411,320,2601,347"/>
+<area shape="rect" id="node9" title=" " alt="" coords="2707,195,2862,237"/>
+<area shape="rect" id="node3" href="$classitk_1_1simple_1_1NonCopyable.html" title="An inheratable class to disable copying of a class." alt="" coords="1973,277,2159,304"/>
+<area shape="rect" id="node6" href="$classitk_1_1simple_1_1Command.html" title="An implementation of the Command design pattern for callback." alt="" coords="3079,232,3245,259"/>
+<area shape="rect" id="node4" title=" " alt="" coords="3689,371,3939,413"/>
+<area shape="rect" id="node5" href="$structitk_1_1simple_1_1ProcessObject_1_1EventCommand.html" title=" " alt="" coords="3385,283,3576,325"/>
+<area shape="rect" id="node7" title="STL class." alt="" coords="1121,208,1208,235"/>
+<area shape="rect" id="node15" href="/work/SimpleITK-build/SimpleITK-build/Documentation/Doxygen/InsightDoxygen.tag$classitk_1_1Object.html" title=" " alt="" coords="1565,403,1655,429"/>
+<area shape="rect" id="node24" title=" " alt="" coords="1502,125,1718,166"/>
+<area shape="rect" id="node25" title=" " alt="" coords="1497,190,1723,231"/>
+<area shape="rect" id="node30" title=" " alt="" coords="1497,314,1723,355"/>
+<area shape="rect" id="node8" title="STL class." alt="" coords="661,205,799,246"/>
+<area shape="rect" id="node10" title="STL class." alt="" coords="1110,31,1219,57"/>
+<area shape="rect" id="node11" title=" " alt="" coords="5,151,44,177"/>
+<area shape="rect" id="node21" title="STL class." alt="" coords="185,277,320,304"/>
+<area shape="rect" id="node12" title="STL class." alt="" coords="429,711,537,737"/>
+<area shape="rect" id="node13" title=" " alt="" coords="5,512,44,539"/>
+<area shape="rect" id="node18" title="STL class." alt="" coords="186,512,319,539"/>
+<area shape="rect" id="node22" title="STL class." alt="" coords="174,424,331,451"/>
+<area shape="rect" id="node29" title="STL class." alt="" coords="188,588,317,615"/>
+<area shape="rect" id="node14" href="/work/SimpleITK-build/SimpleITK-build/Documentation/Doxygen/InsightDoxygen.tag$classitk_1_1ProcessObject.html" title=" " alt="" coords="1997,380,2135,407"/>
+<area shape="rect" id="node16" href="/work/SimpleITK-build/SimpleITK-build/Documentation/Doxygen/InsightDoxygen.tag$classitk_1_1LightObject.html" title=" " alt="" coords="1104,456,1225,483"/>
+<area shape="rect" id="node17" title=" " alt="" coords="659,460,801,487"/>
+<area shape="rect" id="node23" href="/work/SimpleITK-build/SimpleITK-build/Documentation/Doxygen/InsightDoxygen.tag$classitk_1_1TimeStamp.html" title=" " alt="" coords="1103,512,1226,539"/>
+<area shape="rect" id="node26" title=" " alt="" coords="870,575,1049,601"/>
+<area shape="rect" id="node19" href="/work/SimpleITK-build/SimpleITK-build/Documentation/Doxygen/InsightDoxygen.tag$classitk_1_1MetaDataDictionary.html" title=" " alt="" coords="1076,401,1253,428"/>
+<area shape="rect" id="node20" title=" " alt="" coords="631,394,829,435"/>
+<area shape="rect" id="node27" title=" " alt="" coords="617,629,843,670"/>
+<area shape="rect" id="node28" title="STL iterator class." alt="" coords="157,663,348,689"/>
+<area shape="rect" id="node31" href="/work/SimpleITK-build/SimpleITK-build/Documentation/Doxygen/InsightDoxygen.tag$classitk_1_1SmartPointer.html" title=" " alt="" coords="1093,331,1236,373"/>
+<area shape="rect" id="node32" href="/work/SimpleITK-build/SimpleITK-build/Documentation/Doxygen/InsightDoxygen.tag$classitk_1_1SmartPointer.html" title=" " alt="" coords="659,329,801,370"/>
 </map>

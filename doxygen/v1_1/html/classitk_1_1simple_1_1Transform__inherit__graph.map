@@ -1,15 +1,16 @@
 <map id="itk::simple::Transform" name="itk::simple::Transform">
-<area shape="rect" id="node2" href="$classitk_1_1simple_1_1AffineTransform.html" title="An affine transformation about a fixed center with translation for a 2D or 3D coordinate. " alt="" coords="213,5,395,32"/>
-<area shape="rect" id="node3" href="$classitk_1_1simple_1_1BSplineTransform.html" title="A deformable transform over a bounded spatial domain using a BSpline representation for a 2D or 3D co..." alt="" coords="207,56,401,83"/>
-<area shape="rect" id="node4" href="$classitk_1_1simple_1_1DisplacementFieldTransform.html" title="A dense deformable transform over a bounded spatial domain for 2D or 3D coordinates space..." alt="" coords="219,107,389,149"/>
-<area shape="rect" id="node5" href="$classitk_1_1simple_1_1Euler2DTransform.html" title="A rigid 2D transform with rotation in radians around a fixed center with translation. " alt="" coords="206,173,402,200"/>
-<area shape="rect" id="node6" href="$classitk_1_1simple_1_1Euler3DTransform.html" title="A rigid 3D transform with rotation in radians around a fixed center with translation. " alt="" coords="206,224,402,251"/>
-<area shape="rect" id="node7" href="$classitk_1_1simple_1_1ScaleSkewVersor3DTransform.html" title="A over parameterized 3D Affine transform composed of the addition of a versor rotation matrix..." alt="" coords="203,275,405,317"/>
-<area shape="rect" id="node8" href="$classitk_1_1simple_1_1ScaleTransform.html" title="A 2D or 3D anisotropic scale of coordinate space around a fixed center. " alt="" coords="213,341,395,368"/>
-<area shape="rect" id="node9" href="$classitk_1_1simple_1_1ScaleVersor3DTransform.html" title="A parameterized 3D transform composed of the addition of a versor rotation matrix and a scale matrix ..." alt="" coords="220,393,388,434"/>
-<area shape="rect" id="node10" href="$classitk_1_1simple_1_1Similarity2DTransform.html" title="A similarity 2D transform with rotation in radians and isotropic scaling around a fixed center with t..." alt="" coords="229,458,379,499"/>
-<area shape="rect" id="node11" href="$classitk_1_1simple_1_1Similarity3DTransform.html" title="A similarity 3D transform with rotation as a versor, and isotropic scaling around a fixed center with..." alt="" coords="229,523,379,565"/>
-<area shape="rect" id="node12" href="$classitk_1_1simple_1_1TranslationTransform.html" title="Translation of a 2D or 3D coordinate space. " alt="" coords="227,589,381,630"/>
-<area shape="rect" id="node13" href="$classitk_1_1simple_1_1VersorRigid3DTransform.html" title="A rotation as a versor around a fixed center with translation of a 3D coordinate space. " alt="" coords="221,654,387,695"/>
-<area shape="rect" id="node14" href="$classitk_1_1simple_1_1VersorTransform.html" title="A 3D rotation transform with rotation as a versor around a fixed center. " alt="" coords="211,720,397,747"/>
+<area shape="rect" id="node1" title="A simplified wrapper around a variety of ITK transforms." alt="" coords="5,341,169,368"/>
+<area shape="rect" id="node2" href="$classitk_1_1simple_1_1AffineTransform.html" title="An affine transformation about a fixed center with translation for a 2D or 3D coordinate." alt="" coords="225,5,428,32"/>
+<area shape="rect" id="node3" href="$classitk_1_1simple_1_1BSplineTransform.html" title="A deformable transform over a bounded spatial domain using a BSpline representation for a 2D or 3D co..." alt="" coords="220,56,433,83"/>
+<area shape="rect" id="node4" href="$classitk_1_1simple_1_1DisplacementFieldTransform.html" title="A dense deformable transform over a bounded spatial domain for 2D or 3D coordinates space." alt="" coords="232,107,421,149"/>
+<area shape="rect" id="node5" href="$classitk_1_1simple_1_1Euler2DTransform.html" title="A rigid 2D transform with rotation in radians around a fixed center with translation." alt="" coords="219,173,434,200"/>
+<area shape="rect" id="node6" href="$classitk_1_1simple_1_1Euler3DTransform.html" title="A rigid 3D transform with rotation in radians around a fixed center with translation." alt="" coords="219,224,434,251"/>
+<area shape="rect" id="node7" href="$classitk_1_1simple_1_1ScaleSkewVersor3DTransform.html" title="A over parameterized 3D Affine transform composed of the addition of a versor rotation matrix,..." alt="" coords="217,275,436,317"/>
+<area shape="rect" id="node8" href="$classitk_1_1simple_1_1ScaleTransform.html" title="A 2D or 3D anisotropic scale of coordinate space around a fixed center." alt="" coords="227,341,426,368"/>
+<area shape="rect" id="node9" href="$classitk_1_1simple_1_1ScaleVersor3DTransform.html" title="A parameterized 3D transform composed of the addition of a versor rotation matrix and a scale matrix ..." alt="" coords="235,393,418,434"/>
+<area shape="rect" id="node10" href="$classitk_1_1simple_1_1Similarity2DTransform.html" title="A similarity 2D transform with rotation in radians and isotropic scaling around a fixed center with t..." alt="" coords="241,458,412,499"/>
+<area shape="rect" id="node11" href="$classitk_1_1simple_1_1Similarity3DTransform.html" title="A similarity 3D transform with rotation as a versor, and isotropic scaling around a fixed center with..." alt="" coords="241,523,412,565"/>
+<area shape="rect" id="node12" href="$classitk_1_1simple_1_1TranslationTransform.html" title="Translation of a 2D or 3D coordinate space." alt="" coords="241,589,412,630"/>
+<area shape="rect" id="node13" href="$classitk_1_1simple_1_1VersorRigid3DTransform.html" title="A rotation as a versor around a fixed center with translation of a 3D coordinate space." alt="" coords="236,654,417,695"/>
+<area shape="rect" id="node14" href="$classitk_1_1simple_1_1VersorTransform.html" title="A 3D rotation transform with rotation as a versor around a fixed center." alt="" coords="224,720,429,747"/>
 </map>

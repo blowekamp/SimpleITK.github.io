@@ -1,8 +1,17 @@
 \batchmode
 \documentclass{article}
+\usepackage{ifthen}
 \usepackage{epsfig}
+\usepackage[utf8]{inputenc}
+% Packages requested by user
 \usepackage{amsmath}
 \usepackage{amsfonts}
+
+\usepackage{newunicodechar}
+  \newunicodechar{⁻}{${}^{-}$}% Superscript minus
+  \newunicodechar{²}{${}^{2}$}% Superscript two
+  \newunicodechar{³}{${}^{3}$}% Superscript three
+
 \pagestyle{empty}
 \begin{document}
 \[ w(x) = 0.54 + 0.46 cos(\frac{\pi x}{m} ) \]
@@ -24,9 +33,6 @@ $[1,2,3,4,5,6]$
 \pagebreak
 
 \[ \left[\begin{array}{ccc} 1 & 2 & 3 \\ 4 & 5 & 6 \end{array}\right] \]
-\pagebreak
-
-$[idx_x, idx_y, idx_z, size_x, size_y, size_z]$
 \pagebreak
 
 $ I = I_0 + N $
@@ -179,15 +185,6 @@ $ F_{\mbox{minmax}} = \max(\kappa,0) $
 $ \min(\kappa,0) $
 \pagebreak
 
-$ | \lambda_1 | < | \lambda_2 | < |\lambda_3 | $
-\pagebreak
-
-\[ R_A = \frac{|\lambda_2|}{|\lambda_3|}, \; R_B = \frac{|\lambda_2|}{|\lambda_2\lambda_3|}, \; S = \sqrt{\lambda_1^2+\lambda_2^2+\lambda_3^2} \]
-\pagebreak
-
-\[ V_{\sigma}= \begin{cases} (1-e^{-\frac{R_A^2}{2\alpha^2}}) \cdot e^{\frac{R_B^2}{2\beta^2}} \cdot (1-e^{-\frac{S^2}{2\gamma^2}}) & \text{if } \lambda_2<0 \text{ and } \lambda_3<0 \text{,}\\ 0 & \text{otherwise} \end{cases} \]
-\pagebreak
-
 \[ \frac{ 1 }{ \sigma \sqrt{ 2 \pi } } \exp{ \left( - \frac{x^2}{ 2 \sigma^2 } \right) } \]
 \pagebreak
 
@@ -213,24 +210,6 @@ $ | \lambda_1 | < | \lambda_2 | < |\lambda_3 | $
 \pagebreak
 
 \[ outputPixel = ( inputPixel - inputMin) \cdot \frac{(outputMax - outputMin )}{(inputMax - inputMin)} + outputMin \]
-\pagebreak
-
-$ I = \begin{cases} M, & \quad \text{if } U < p/2 \\ m, & \quad \text{if } U > 1 - p/2 \\ I_0, & \quad \text{if } p/2 \geq U \leq 1 - p/2 \end{cases} $
-\pagebreak
-
-$ p $
-\pagebreak
-
-$ U $
-\pagebreak
-
-$ [0,1] $
-\pagebreak
-
-$ M $
-\pagebreak
-
-$ m $
 \pagebreak
 
 $\pm 1.0$
@@ -260,6 +239,9 @@ $ \begin{array}{l} k \leftarrow 0 \\ p \leftarrow 1 \\ \textbf{repeat} \\ \left\
 $ U() $
 \pagebreak
 
+$ [0,1] $
+\pagebreak
+
 $ \lambda + \sqrt{\lambda} \times N()$
 \pagebreak
 
@@ -279,15 +261,6 @@ $\cap$
 \pagebreak
 
 $S$
-\pagebreak
-
-$ I = I_0 \ast G $
-\pagebreak
-
-$ G $
-\pagebreak
-
-$ G \sim \Gamma(\frac{1}{\sigma^2}, \sigma^2) $
 \pagebreak
 
 \[ ||\hat{f} \otimes h - g||_{L_2}^2 + \mu||\hat{f}||^2 \]

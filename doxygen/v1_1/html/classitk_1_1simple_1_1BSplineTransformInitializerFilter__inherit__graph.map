@@ -1,4 +1,5 @@
 <map id="itk::simple::BSplineTransformInitializerFilter" name="itk::simple::BSplineTransformInitializerFilter">
-<area shape="rect" id="node2" href="$classitk_1_1simple_1_1ProcessObject.html" title="Base class for SimpleITK classes based on ProcessObject. " alt="" coords="15,80,191,107"/>
-<area shape="rect" id="node3" href="$classitk_1_1simple_1_1NonCopyable.html" title="An inheratable class to disable copying of a class. " alt="" coords="18,5,187,32"/>
+<area shape="rect" id="node1" title="BSplineTransformInitializerFilter is a helper class intended to initialize the control point grid suc..." alt="" coords="5,155,219,196"/>
+<area shape="rect" id="node2" href="$classitk_1_1simple_1_1ProcessObject.html" title="Base class for SimpleITK classes based on ProcessObject." alt="" coords="17,80,207,107"/>
+<area shape="rect" id="node3" href="$classitk_1_1simple_1_1NonCopyable.html" title="An inheratable class to disable copying of a class." alt="" coords="19,5,205,32"/>
 </map>

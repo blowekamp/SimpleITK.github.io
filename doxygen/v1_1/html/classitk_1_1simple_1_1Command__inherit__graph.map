@@ -1,4 +1,5 @@
 <map id="itk::simple::Command" name="itk::simple::Command">
-<area shape="rect" id="node3" href="$classitk_1_1simple_1_1FunctionCommand.html" title="A Command class which allows setting an external function, or member function. " alt="" coords="4,155,203,181"/>
-<area shape="rect" id="node2" href="$classitk_1_1simple_1_1NonCopyable.html" title="An inheratable class to disable copying of a class. " alt="" coords="19,5,188,32"/>
+<area shape="rect" id="node1" title="An implementation of the Command design pattern for callback." alt="" coords="32,80,199,107"/>
+<area shape="rect" id="node3" href="$classitk_1_1simple_1_1FunctionCommand.html" title="A Command class which allows setting an external function, or member function." alt="" coords="5,155,225,181"/>
+<area shape="rect" id="node2" href="$classitk_1_1simple_1_1NonCopyable.html" title="An inheratable class to disable copying of a class." alt="" coords="22,5,209,32"/>
 </map>

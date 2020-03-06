@@ -1,51 +1,52 @@
 <map id="sitkConfigure.h" name="sitkConfigure.h">
-<area shape="rect" id="node2" href="$auto__ptr_8h.html" title="auto_ptr.h" alt="" coords="2051,80,2129,107"/>
-<area shape="rect" id="node32" href="$functional_8h.html" title="functional.h" alt="" coords="2954,155,3043,181"/>
-<area shape="rect" id="node33" href="$sitkMemberFunctionFactoryBase_8h.html" title="sitkMemberFunctionFactory\lBase.h" alt="" coords="2709,230,2893,271"/>
-<area shape="rect" id="node38" href="$type__traits_8h.html" title="type_traits.h" alt="" coords="2115,237,2209,264"/>
-<area shape="rect" id="node39" href="$sitkPixelIDTokens_8h.html" title="sitkPixelIDTokens.h" alt="" coords="2166,320,2305,347"/>
-<area shape="rect" id="node41" href="$unordered__map_8h.html" title="unordered_map.h" alt="" coords="3004,80,3127,107"/>
-<area shape="rect" id="node42" href="$sitkMacro_8h.html" title="sitkMacro.h" alt="" coords="1607,80,1697,107"/>
-<area shape="rect" id="node50" href="$sitkPixelIDTypeLists_8h.html" title="sitkPixelIDTypeLists.h" alt="" coords="2724,155,2877,181"/>
-<area shape="rect" id="node3" href="$sitkImage_8h.html" title="sitkImage.h" alt="" coords="1980,395,2071,421"/>
-<area shape="rect" id="node4" href="$sitkAdditionalProcedures_8h.html" title="sitkAdditionalProcedures.h" alt="" coords="2323,627,2500,653"/>
-<area shape="rect" id="node5" href="$SimpleITK_8h.html" title="SimpleITK.h" alt="" coords="2542,800,2636,827"/>
-<area shape="rect" id="node6" href="$sitkHashImageFilter_8h.html" title="sitkHashImageFilter.h" alt="" coords="347,717,497,744"/>
-<area shape="rect" id="node7" href="$sitkTransform_8h.html" title="sitkTransform.h" alt="" coords="1873,469,1985,496"/>
-<area shape="rect" id="node23" href="$sitkImageRegistrationMethod_8h.html" title="sitkImageRegistrationMethod.h" alt="" coords="2576,544,2779,571"/>
-<area shape="rect" id="node24" href="$sitkProcessObject_8h.html" title="sitkProcessObject.h" alt="" coords="907,469,1047,496"/>
-<area shape="rect" id="node25" href="$sitkImageFileWriter_8h.html" title="sitkImageFileWriter.h" alt="" coords="512,544,659,571"/>
-<area shape="rect" id="node26" href="$sitkImageSeriesWriter_8h.html" title="sitkImageSeriesWriter.h" alt="" coords="683,544,845,571"/>
-<area shape="rect" id="node27" href="$sitkImageViewer_8h.html" title="sitkImageViewer.h" alt="" coords="195,544,324,571"/>
-<area shape="rect" id="node28" href="$sitkShow_8h.html" title="sitkShow.h" alt="" coords="350,544,436,571"/>
-<area shape="rect" id="node29" href="$sitkImageFileReader_8h.html" title="sitkImageFileReader.h" alt="" coords="2803,544,2956,571"/>
-<area shape="rect" id="node30" href="$sitkImageSeriesReader_8h.html" title="sitkImageSeriesReader.h" alt="" coords="2382,544,2551,571"/>
-<area shape="rect" id="node31" href="$sitkImportImageFilter_8h.html" title="sitkImportImageFilter.h" alt="" coords="2150,544,2305,571"/>
-<area shape="rect" id="node8" href="$sitkBasicFilters_8h.html" title="sitkBasicFilters.h" alt="" coords="1588,544,1711,571"/>
-<area shape="rect" id="node9" href="$sitkBSplineTransformInitializerFilter_8h.html" title="sitkBSplineTransformInitializer\lFilter.h" alt="" coords="2133,710,2331,751"/>
-<area shape="rect" id="node10" href="$sitkImageFilter_8h.html" title="sitkImageFilter.h" alt="" coords="1427,627,1545,653"/>
-<area shape="rect" id="node12" href="$sitkLandmarkBasedTransformInitializerFilter_8h.html" title="sitkLandmarkBasedTransform\lInitializerFilter.h" alt="" coords="2355,710,2551,751"/>
-<area shape="rect" id="node13" href="$sitkAbsImageFilter_8h.html" title="sitkAbsImageFilter.h" alt="" coords="1582,717,1724,744"/>
-<area shape="rect" id="node14" href="$sitkAbsoluteValueDifferenceImageFilter_8h.html" title="sitkAbsoluteValueDifference\lImageFilter.h" alt="" coords="1749,710,1936,751"/>
-<area shape="rect" id="node15" href="$sitkAcosImageFilter_8h.html" title="sitkAcosImageFilter.h" alt="" coords="1960,717,2108,744"/>
-<area shape="rect" id="node16" href="$sitkAdaptiveHistogramEqualizationImageFilter_8h.html" title="sitkAdaptiveHistogramEqualization\lImageFilter.h" alt="" coords="522,710,747,751"/>
-<area shape="rect" id="node17" href="$sitkAddImageFilter_8h.html" title="sitkAddImageFilter.h" alt="" coords="771,717,913,744"/>
-<area shape="rect" id="node18" href="$sitkAdditiveGaussianNoiseImageFilter_8h.html" title="sitkAdditiveGaussianNoise\lImageFilter.h" alt="" coords="939,710,1117,751"/>
-<area shape="rect" id="node19" href="$sitkAggregateLabelMapFilter_8h.html" title="sitkAggregateLabelMapFilter.h" alt="" coords="1142,717,1340,744"/>
-<area shape="rect" id="node20" href="$sitkAndImageFilter_8h.html" title="sitkAndImageFilter.h" alt="" coords="1415,717,1557,744"/>
-<area shape="rect" id="node21" href="$sitkCenteredTransformInitializerFilter_8h.html" title="sitkCenteredTransformInitializer\lFilter.h" alt="" coords="1875,619,2081,661"/>
-<area shape="rect" id="node22" href="$sitkCenteredVersorTransformInitializerFilter_8h.html" title="sitkCenteredVersorTransform\lInitializerFilter.h" alt="" coords="2106,619,2299,661"/>
-<area shape="rect" id="node11" href="$sitkCastImageFilter_8h.html" title="sitkCastImageFilter.h" alt="" coords="2981,717,3128,744"/>
-<area shape="rect" id="node37" href="$sitkFunctionCommand_8h.html" title="sitkFunctionCommand.h" alt="" coords="3254,395,3417,421"/>
-<area shape="rect" id="node34" href="$sitkDetail_8h.html" title="sitkDetail.h" alt="" coords="2721,320,2809,347"/>
-<area shape="rect" id="node35" href="$sitkDualMemberFunctionFactory_8h.html" title="sitkDualMemberFunctionFactory.h" alt="" coords="2735,395,2957,421"/>
-<area shape="rect" id="node36" href="$sitkMemberFunctionFactory_8h.html" title="sitkMemberFunctionFactory.h" alt="" coords="2112,469,2307,496"/>
-<area shape="rect" id="node40" href="$sitkPimpleImageBase_8h.html" title="sitkPimpleImageBase.h" alt="" coords="1744,395,1903,421"/>
-<area shape="rect" id="node43" href="$sitkCommon_8h.html" title="sitkCommon.h" alt="" coords="1700,155,1807,181"/>
-<area shape="rect" id="node44" href="$sitkTemplateFunctions_8h.html" title="sitkTemplateFunctions.h" alt="" coords="1740,320,1904,347"/>
-<area shape="rect" id="node45" href="$sitkExceptionObject_8h.html" title="sitkExceptionObject.h" alt="" coords="1791,237,1941,264"/>
-<area shape="rect" id="node47" href="$sitkExplicit_8h.html" title="sitkExplicit.h" alt="" coords="1314,155,1411,181"/>
-<area shape="rect" id="node48" href="$sitkIO_8h.html" title="sitkIO.h" alt="" coords="417,469,484,496"/>
-<area shape="rect" id="node49" href="$sitkRegistration_8h.html" title="sitkRegistration.h" alt="" coords="2573,320,2696,347"/>
-<area shape="rect" id="node46" href="$sitkPixelIDValues_8h.html" title="sitkPixelIDValues.h" alt="" coords="2286,237,2423,264"/>
+<area shape="rect" id="node1" title=" " alt="" coords="3657,5,3777,32"/>
+<area shape="rect" id="node2" href="$auto__ptr_8h.html" title=" " alt="" coords="3102,80,3189,107"/>
+<area shape="rect" id="node32" href="$functional_8h.html" title=" " alt="" coords="4020,155,4119,181"/>
+<area shape="rect" id="node33" href="$sitkMemberFunctionFactoryBase_8h.html" title=" " alt="" coords="3693,229,3893,271"/>
+<area shape="rect" id="node38" href="$type__traits_8h.html" title=" " alt="" coords="3072,237,3176,263"/>
+<area shape="rect" id="node39" href="$sitkPixelIDTokens_8h.html" title=" " alt="" coords="3092,319,3241,345"/>
+<area shape="rect" id="node41" href="$unordered__map_8h.html" title=" " alt="" coords="3932,80,4068,107"/>
+<area shape="rect" id="node42" href="$sitkMacro_8h.html" title=" " alt="" coords="2671,80,2769,107"/>
+<area shape="rect" id="node50" href="$sitkPixelIDTypeLists_8h.html" title=" " alt="" coords="3831,155,3995,181"/>
+<area shape="rect" id="node3" href="$sitkImage_8h.html" title=" " alt="" coords="2868,393,2967,420"/>
+<area shape="rect" id="node4" href="$sitkAdditionalProcedures_8h.html" title=" " alt="" coords="1986,625,2182,651"/>
+<area shape="rect" id="node5" href="$SimpleITK_8h.html" title=" " alt="" coords="2965,796,3065,823"/>
+<area shape="rect" id="node6" href="$sitkHashImageFilter_8h.html" title=" " alt="" coords="2547,714,2709,741"/>
+<area shape="rect" id="node7" href="$sitkTransform_8h.html" title=" " alt="" coords="2205,468,2328,495"/>
+<area shape="rect" id="node24" href="$sitkImageRegistrationMethod_8h.html" title=" " alt="" coords="3171,543,3397,569"/>
+<area shape="rect" id="node25" href="$sitkProcessObject_8h.html" title=" " alt="" coords="2505,468,2655,495"/>
+<area shape="rect" id="node26" href="$sitkImageFileWriter_8h.html" title=" " alt="" coords="2837,543,2995,569"/>
+<area shape="rect" id="node27" href="$sitkImageSeriesWriter_8h.html" title=" " alt="" coords="2519,543,2697,569"/>
+<area shape="rect" id="node28" href="$sitkShow_8h.html" title=" " alt="" coords="2721,543,2813,569"/>
+<area shape="rect" id="node29" href="$sitkImageFileReader_8h.html" title=" " alt="" coords="3679,543,3844,569"/>
+<area shape="rect" id="node30" href="$sitkImageSeriesReader_8h.html" title=" " alt="" coords="3421,543,3603,569"/>
+<area shape="rect" id="node31" href="$sitkImportImageFilter_8h.html" title=" " alt="" coords="3868,543,4041,569"/>
+<area shape="rect" id="node8" href="$sitkBasicFilters_8h.html" title=" " alt="" coords="1667,543,1799,569"/>
+<area shape="rect" id="node9" href="$sitkBSplineTransformInitializerFilter_8h.html" title=" " alt="" coords="1960,707,2181,748"/>
+<area shape="rect" id="node10" href="$sitkImageFilter_8h.html" title=" " alt="" coords="1527,625,1657,651"/>
+<area shape="rect" id="node12" href="$sitkLandmarkBasedTransformInitializerFilter_8h.html" title=" " alt="" coords="2205,707,2421,748"/>
+<area shape="rect" id="node13" href="$sitkAbsImageFilter_8h.html" title=" " alt="" coords="395,714,549,741"/>
+<area shape="rect" id="node14" href="$sitkAbsoluteValueDifferenceImageFilter_8h.html" title=" " alt="" coords="574,707,781,748"/>
+<area shape="rect" id="node15" href="$sitkAcosImageFilter_8h.html" title=" " alt="" coords="805,714,966,741"/>
+<area shape="rect" id="node16" href="$sitkAdaptiveHistogramEqualizationImageFilter_8h.html" title=" " alt="" coords="990,707,1242,748"/>
+<area shape="rect" id="node17" href="$sitkAddImageFilter_8h.html" title=" " alt="" coords="1267,714,1421,741"/>
+<area shape="rect" id="node18" href="$sitkAdditiveGaussianNoiseImageFilter_8h.html" title=" " alt="" coords="1496,707,1693,748"/>
+<area shape="rect" id="node19" href="$sitkAggregateLabelMapFilter_8h.html" title=" " alt="" coords="1717,714,1936,741"/>
+<area shape="rect" id="node20" href="$sitkAndImageFilter_8h.html" title=" " alt="" coords="5,714,160,741"/>
+<area shape="rect" id="node21" href="$sitkAntiAliasBinaryImageFilter_8h.html" title=" " alt="" coords="184,707,371,748"/>
+<area shape="rect" id="node22" href="$sitkCenteredTransformInitializerFilter_8h.html" title=" " alt="" coords="2695,617,2926,659"/>
+<area shape="rect" id="node23" href="$sitkCenteredVersorTransformInitializerFilter_8h.html" title=" " alt="" coords="2460,617,2671,659"/>
+<area shape="rect" id="node11" href="$sitkCastImageFilter_8h.html" title=" " alt="" coords="3950,714,4109,741"/>
+<area shape="rect" id="node37" href="$sitkFunctionCommand_8h.html" title=" " alt="" coords="4268,393,4447,420"/>
+<area shape="rect" id="node34" href="$sitkDetail_8h.html" title=" " alt="" coords="3665,319,3762,345"/>
+<area shape="rect" id="node35" href="$sitkDualMemberFunctionFactory_8h.html" title=" " alt="" coords="3729,393,3969,420"/>
+<area shape="rect" id="node36" href="$sitkMemberFunctionFactory_8h.html" title=" " alt="" coords="3041,468,3252,495"/>
+<area shape="rect" id="node40" href="$sitkPimpleImageBase_8h.html" title=" " alt="" coords="2668,393,2844,420"/>
+<area shape="rect" id="node43" href="$sitkCommon_8h.html" title=" " alt="" coords="2565,155,2683,181"/>
+<area shape="rect" id="node44" href="$sitkTemplateFunctions_8h.html" title=" " alt="" coords="2567,319,2745,345"/>
+<area shape="rect" id="node45" href="$sitkExceptionObject_8h.html" title=" " alt="" coords="2403,237,2567,263"/>
+<area shape="rect" id="node47" href="$sitkExplicit_8h.html" title=" " alt="" coords="2024,155,2131,181"/>
+<area shape="rect" id="node48" href="$sitkIO_8h.html" title=" " alt="" coords="2731,468,2802,495"/>
+<area shape="rect" id="node49" href="$sitkRegistration_8h.html" title=" " alt="" coords="3316,319,3452,345"/>
+<area shape="rect" id="node46" href="$sitkPixelIDValues_8h.html" title=" " alt="" coords="3200,237,3347,263"/>
 </map>

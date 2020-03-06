@@ -1,3 +1,4 @@
 <map id="itk::simple::GenericException" name="itk::simple::GenericException">
-<area shape="rect" id="node2" title="STL class. " alt="" coords="49,5,153,32"/>
+<area shape="rect" id="node1" title="The base SimpleITK exception class." alt="" coords="5,80,219,107"/>
+<area shape="rect" id="node2" title="STL class." alt="" coords="55,5,169,32"/>
 </map>

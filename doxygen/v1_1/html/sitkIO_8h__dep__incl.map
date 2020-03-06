@@ -1,11 +1,11 @@
 <map id="sitkIO.h" name="sitkIO.h">
-<area shape="rect" id="node2" href="$sitkImageReaderBase_8h.html" title="sitkImageReaderBase.h" alt="" coords="243,80,405,107"/>
-<area shape="rect" id="node7" href="$sitkImageFileWriter_8h.html" title="sitkImageFileWriter.h" alt="" coords="556,155,703,181"/>
-<area shape="rect" id="node8" href="$sitkImageSeriesWriter_8h.html" title="sitkImageSeriesWriter.h" alt="" coords="539,80,701,107"/>
-<area shape="rect" id="node9" href="$sitkImageViewer_8h.html" title="sitkImageViewer.h" alt="" coords="725,80,855,107"/>
-<area shape="rect" id="node10" href="$sitkShow_8h.html" title="sitkShow.h" alt="" coords="881,80,967,107"/>
-<area shape="rect" id="node3" href="$sitkImageFileReader_8h.html" title="sitkImageFileReader.h" alt="" coords="5,155,157,181"/>
-<area shape="rect" id="node5" href="$sitkImageSeriesReader_8h.html" title="sitkImageSeriesReader.h" alt="" coords="182,155,351,181"/>
-<area shape="rect" id="node6" href="$sitkImportImageFilter_8h.html" title="sitkImportImageFilter.h" alt="" coords="375,155,531,181"/>
-<area shape="rect" id="node4" href="$SimpleITK_8h.html" title="SimpleITK.h" alt="" coords="582,229,676,256"/>
+<area shape="rect" id="node1" title=" " alt="" coords="670,5,741,32"/>
+<area shape="rect" id="node2" href="$sitkImageReaderBase_8h.html" title=" " alt="" coords="355,80,531,107"/>
+<area shape="rect" id="node7" href="$sitkImageFileWriter_8h.html" title=" " alt="" coords="601,155,759,181"/>
+<area shape="rect" id="node8" href="$sitkImageSeriesWriter_8h.html" title=" " alt="" coords="681,80,858,107"/>
+<area shape="rect" id="node9" href="$sitkShow_8h.html" title=" " alt="" coords="882,80,974,107"/>
+<area shape="rect" id="node3" href="$sitkImageFileReader_8h.html" title=" " alt="" coords="5,155,171,181"/>
+<area shape="rect" id="node5" href="$sitkImageSeriesReader_8h.html" title=" " alt="" coords="195,155,378,181"/>
+<area shape="rect" id="node6" href="$sitkImportImageFilter_8h.html" title=" " alt="" coords="403,155,576,181"/>
+<area shape="rect" id="node4" href="$SimpleITK_8h.html" title=" " alt="" coords="534,229,634,256"/>
 </map>
