@@ -19,7 +19,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">SimpleITK
-   &#160;<span id="projectnumber">2.0.0.dev127</span>
+   &#160;<span id="projectnumber">2.0.0rc1</span>
    </div>
   </td>
  </tr>
@@ -324,7 +324,7 @@ Additional Inherited Members</h2></td></tr>
 <p><a class="elRef" href="https://www.itk.org/Doxygen/html/classLabel.html">Label</a> voting is a simple method of classifier combination applied to image segmentation. Typically, the accuracy of the combined segmentation exceeds the accuracy of any of the input segmentations. Voting is therefore commonly used as a way of boosting segmentation performance.</p>
 <p>The use of label voting for combination of multiple segmentations is described in</p>
 <p>T. Rohlfing and C. R. Maurer, Jr., "Multi-classifier framework for
-atlas-based image segmentation," Pattern Recognition Letters, 2005.</p>
+ atlas-based image segmentation," Pattern Recognition Letters, 2005.</p>
 <dl class="section user"><dt>INPUTS</dt><dd>All input volumes to this filter must be segmentations of an image, that is, they must have discrete pixel values where each value represents a different segmented object.</dd></dl>
 <p>Input volumes must all contain the same size RequestedRegions. <a class="elRef" href="https://www.itk.org/Doxygen/html/structitk_1_1Not.html">Not</a> all input images must contain all possible labels, but all label values must have the same meaning in all images.</p>
 <dl class="section user"><dt>OUTPUTS</dt><dd>The voting filter produces a single output volume. Each output pixel contains the label that occurred most often among the labels assigned to this pixel in all the input volumes, that is, the label that received the maximum number of "votes" from the input pixels.. If the maximum number of votes is not unique, i.e., if more than one label have a maximum number of votes, an "undecided" label is assigned to that output pixel.</dd></dl>
@@ -333,7 +333,7 @@ atlas-based image segmentation," Pattern Recognition Letters, 2005.</p>
 <dl class="section author"><dt>Author</dt><dd>Torsten Rohlfing, SRI International, Neuroscience Program</dd></dl>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="namespaceitk_1_1simple.html#a77eb54201950933586fa170b0f8db1d1" title="This filter performs pixelwise voting among an arbitrary number of input images, where each of them r...">itk::simple::LabelVoting</a> for the procedural interface </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="sitkLabelVotingImageFilter_8h_source.html#l00063">63</a> of file <a class="el" href="sitkLabelVotingImageFilter_8h_source.html">sitkLabelVotingImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkLabelVotingImageFilter_8h_source.html#l00066">66</a> of file <a class="el" href="sitkLabelVotingImageFilter_8h_source.html">sitkLabelVotingImageFilter.h</a>.</p>
 </div><h2 class="groupheader">Member Typedef Documentation</h2>
 <a id="a22adc533caf7c7439ef69b8bc7dce96b"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a22adc533caf7c7439ef69b8bc7dce96b">&#9670;&nbsp;</a></span>MemberFunctionType</h2>
@@ -356,7 +356,7 @@ atlas-based image segmentation," Pattern Recognition Letters, 2005.</p>
 </div><div class="memdoc">
 <p>Setup for member function dispatching </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkLabelVotingImageFilter_8h_source.html#l00123">123</a> of file <a class="el" href="sitkLabelVotingImageFilter_8h_source.html">sitkLabelVotingImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkLabelVotingImageFilter_8h_source.html#l00126">126</a> of file <a class="el" href="sitkLabelVotingImageFilter_8h_source.html">sitkLabelVotingImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -373,7 +373,7 @@ atlas-based image segmentation," Pattern Recognition Letters, 2005.</p>
 </div><div class="memdoc">
 <p>Define the pixels types supported by this filter </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkLabelVotingImageFilter_8h_source.html#l00078">78</a> of file <a class="el" href="sitkLabelVotingImageFilter_8h_source.html">sitkLabelVotingImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkLabelVotingImageFilter_8h_source.html#l00081">81</a> of file <a class="el" href="sitkLabelVotingImageFilter_8h_source.html">sitkLabelVotingImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -389,7 +389,7 @@ atlas-based image segmentation," Pattern Recognition Letters, 2005.</p>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkLabelVotingImageFilter_8h_source.html#l00067">67</a> of file <a class="el" href="sitkLabelVotingImageFilter_8h_source.html">sitkLabelVotingImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkLabelVotingImageFilter_8h_source.html#l00070">70</a> of file <a class="el" href="sitkLabelVotingImageFilter_8h_source.html">sitkLabelVotingImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -905,7 +905,7 @@ template&lt;class TImageType &gt; </div>
 </div><div class="memdoc">
 <p>Get label value used for undecided pixels. After updating the filter, this function returns the actual label value used for undecided pixels in the current output. Note that this value is overwritten when SetLabelForUndecidedPixels is called and the new value only becomes effective upon the next filter update. </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkLabelVotingImageFilter_8h_source.html#l00091">91</a> of file <a class="el" href="sitkLabelVotingImageFilter_8h_source.html">sitkLabelVotingImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkLabelVotingImageFilter_8h_source.html#l00094">94</a> of file <a class="el" href="sitkLabelVotingImageFilter_8h_source.html">sitkLabelVotingImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -935,7 +935,7 @@ template&lt;class TImageType &gt; </div>
 
 <p>Implements <a class="el" href="classitk_1_1simple_1_1ProcessObject.html#ac8ab837a83ee6ad83c2e2e71b1e98386">itk::simple::ProcessObject</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="sitkLabelVotingImageFilter_8h_source.html#l00093">93</a> of file <a class="el" href="sitkLabelVotingImageFilter_8h_source.html">sitkLabelVotingImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkLabelVotingImageFilter_8h_source.html#l00096">96</a> of file <a class="el" href="sitkLabelVotingImageFilter_8h_source.html">sitkLabelVotingImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -964,7 +964,7 @@ template&lt;class TImageType &gt; </div>
 </div><div class="memdoc">
 <p>Set label value for undecided pixels. </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkLabelVotingImageFilter_8h_source.html#l00086">86</a> of file <a class="el" href="sitkLabelVotingImageFilter_8h_source.html">sitkLabelVotingImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkLabelVotingImageFilter_8h_source.html#l00089">89</a> of file <a class="el" href="sitkLabelVotingImageFilter_8h_source.html">sitkLabelVotingImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -1017,7 +1017,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkLabelVotingImageFilter_8h_source.html#l00128">128</a> of file <a class="el" href="sitkLabelVotingImageFilter_8h_source.html">sitkLabelVotingImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkLabelVotingImageFilter_8h_source.html#l00131">131</a> of file <a class="el" href="sitkLabelVotingImageFilter_8h_source.html">sitkLabelVotingImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -1042,7 +1042,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkLabelVotingImageFilter_8h_source.html#l00133">133</a> of file <a class="el" href="sitkLabelVotingImageFilter_8h_source.html">sitkLabelVotingImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkLabelVotingImageFilter_8h_source.html#l00136">136</a> of file <a class="el" href="sitkLabelVotingImageFilter_8h_source.html">sitkLabelVotingImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -1066,7 +1066,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkLabelVotingImageFilter_8h_source.html#l00130">130</a> of file <a class="el" href="sitkLabelVotingImageFilter_8h_source.html">sitkLabelVotingImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkLabelVotingImageFilter_8h_source.html#l00133">133</a> of file <a class="el" href="sitkLabelVotingImageFilter_8h_source.html">sitkLabelVotingImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -1076,7 +1076,7 @@ template&lt;class TImageType &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Mar 7 2020 03:21:31 for SimpleITK by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Mar 10 2020 03:49:22 for SimpleITK by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

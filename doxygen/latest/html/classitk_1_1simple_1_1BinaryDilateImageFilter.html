@@ -19,7 +19,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">SimpleITK
-   &#160;<span id="projectnumber">2.0.0.dev127</span>
+   &#160;<span id="projectnumber">2.0.0rc1</span>
    </div>
   </td>
  </tr>
@@ -56,7 +56,7 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
-<p>Fast binary dilation.  
+<p>Fast binary dilation of a single intensity value in the image.  
  <a href="classitk_1_1simple_1_1BinaryDilateImageFilter.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="sitkBinaryDilateImageFilter_8h_source.html">sitkBinaryDilateImageFilter.h</a>&gt;</code></p>
@@ -67,7 +67,7 @@ $(function() {
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="classitk_1_1simple_1_1BinaryDilateImageFilter__inherit__graph.png" border="0" usemap="#itk_1_1simple_1_1BinaryDilateImageFilter_inherit__map" alt="Inheritance graph"/></div>
 <map name="itk_1_1simple_1_1BinaryDilateImageFilter_inherit__map" id="itk_1_1simple_1_1BinaryDilateImageFilter_inherit__map">
-<area shape="rect" title="Fast binary dilation." alt="" coords="21,323,201,364"/>
+<area shape="rect" title="Fast binary dilation of a single intensity value in the image." alt="" coords="21,323,201,364"/>
 <area shape="rect" href="classitk_1_1simple_1_1ImageFilter.html" title=" " alt="" coords="5,247,216,273"/>
 <area shape="rect" href="classitk_1_1simple_1_1ProcessObject.html" title="Base class for SimpleITK classes based on ProcessObject." alt="" coords="10,81,201,108"/>
 <area shape="rect" href="classitk_1_1simple_1_1ImageFilter.html" title="The base interface for SimpleITK filters that take one input image." alt="" coords="126,157,338,184"/>
@@ -81,7 +81,7 @@ $(function() {
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="classitk_1_1simple_1_1BinaryDilateImageFilter__coll__graph.png" border="0" usemap="#itk_1_1simple_1_1BinaryDilateImageFilter_coll__map" alt="Collaboration graph"/></div>
 <map name="itk_1_1simple_1_1BinaryDilateImageFilter_coll__map" id="itk_1_1simple_1_1BinaryDilateImageFilter_coll__map">
-<area shape="rect" title="Fast binary dilation." alt="" coords="3683,682,3863,723"/>
+<area shape="rect" title="Fast binary dilation of a single intensity value in the image." alt="" coords="3683,682,3863,723"/>
 <area shape="rect" href="classitk_1_1simple_1_1ImageFilter.html" title=" " alt="" coords="3273,505,3484,532"/>
 <area shape="rect" href="classitk_1_1simple_1_1ProcessObject.html" title="Base class for SimpleITK classes based on ProcessObject." alt="" coords="2425,404,2615,431"/>
 <area shape="rect" title=" " alt="" coords="2875,338,3030,379"/>
@@ -344,20 +344,21 @@ Additional Inherited Members</h2></td></tr>
 <tr class="separator:a2ecfdd88b16dd793b6f0b804b8e3d2ab inherit pro_static_methods_classitk_1_1simple_1_1ProcessObject"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Fast binary dilation. </p>
-<p><a class="el" href="classitk_1_1simple_1_1BinaryDilateImageFilter.html" title="Fast binary dilation.">BinaryDilateImageFilter</a> is a binary dilation morphologic operation. This implementation is based on the papers:</p>
+<div class="textblock"><p>Fast binary dilation of a single intensity value in the image. </p>
+<p><a class="el" href="classitk_1_1simple_1_1BinaryDilateImageFilter.html" title="Fast binary dilation of a single intensity value in the image.">BinaryDilateImageFilter</a> is a binary dilation morphologic operation on the foreground of an image. Only the value designated by the intensity value "SetForegroundValue()" (alias as SetDilateValue() ) is considered as foreground, and other intensity values are considered background.</p>
+<p>Gray scale images can be processed as binary images by selecting a "ForegroundValue" (alias "DilateValue"). Pixel values matching the dilate value are considered the "foreground" and all other pixels are "background". This is useful in processing segmented images where all pixels in segment #1 have value 1 and pixels in segment #2 have value 2, etc. A particular "segment number" can be processed. ForegroundValue defaults to the maximum possible value of the PixelType.</p>
+<p>The structuring element is assumed to be composed of binary values (zero or one). Only elements of the structuring element having values &gt; 0 are candidates for affecting the center pixel. A reasonable choice of structuring element is <a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1BinaryBallStructuringElement.html">itk::BinaryBallStructuringElement</a> .</p>
+<p>This implementation is based on the papers:</p>
 <p>L.Vincent "Morphological transformations of binary images with
 arbitrary structuring elements", and</p>
 <p>N.Nikopoulos et al. "An efficient algorithm for 3d binary morphological transformations with 3d structuring elements for arbitrary size and shape". IEEE Transactions on <a class="el" href="classitk_1_1simple_1_1Image.html" title="The Image class for SimpleITK.">Image</a> Processing. Vol. 9. No. 3. 2000. pp. 283-286.</p>
-<p>Gray scale images can be processed as binary images by selecting a "DilateValue". Pixel values matching the dilate value are considered the "foreground" and all other pixels are "background". This is useful in processing segmented images where all pixels in segment #1 have value 1 and pixels in segment #2 have value 2, etc. A particular "segment number" can be processed. DilateValue defaults to the maximum possible value of the PixelType.</p>
-<p>The structuring element is assumed to be composed of binary values (zero or one). Only elements of the structuring element having values &gt; 0 are candidates for affecting the center pixel. A reasonable choice of structuring element is <a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1BinaryBallStructuringElement.html">itk::BinaryBallStructuringElement</a> .</p>
-<dl class="section see"><dt>See also</dt><dd><a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1ImageToImageFilter.html">ImageToImageFilter</a> <a class="el" href="classitk_1_1simple_1_1BinaryErodeImageFilter.html" title="Fast binary erosion.">BinaryErodeImageFilter</a> <a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1BinaryMorphologyImageFilter.html">BinaryMorphologyImageFilter</a> </dd>
+<dl class="section see"><dt>See also</dt><dd><a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1ImageToImageFilter.html">ImageToImageFilter</a> <a class="el" href="classitk_1_1simple_1_1BinaryErodeImageFilter.html" title="Fast binary erosion of a single intensity value in the image.">BinaryErodeImageFilter</a> <a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1BinaryMorphologyImageFilter.html">BinaryMorphologyImageFilter</a> </dd>
 <dd>
 <a class="el" href="namespaceitk_1_1simple.html#ae9132eb16d94e77cb50379cd359c1b4f">itk::simple::BinaryDilate</a> for the procedural interface </dd>
 <dd>
 <a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1BinaryDilateImageFilter.html">itk::BinaryDilateImageFilter</a> for the Doxygen on the original ITK class. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="sitkBinaryDilateImageFilter_8h_source.html#l00054">54</a> of file <a class="el" href="sitkBinaryDilateImageFilter_8h_source.html">sitkBinaryDilateImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkBinaryDilateImageFilter_8h_source.html#l00056">56</a> of file <a class="el" href="sitkBinaryDilateImageFilter_8h_source.html">sitkBinaryDilateImageFilter.h</a>.</p>
 </div><h2 class="groupheader">Member Typedef Documentation</h2>
 <a id="a72ca27bd8ebafe0f06b51909c8f26e0f"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a72ca27bd8ebafe0f06b51909c8f26e0f">&#9670;&nbsp;</a></span>MemberFunctionType</h2>
@@ -380,7 +381,7 @@ arbitrary structuring elements", and</p>
 </div><div class="memdoc">
 <p>Setup for member function dispatching </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkBinaryDilateImageFilter_8h_source.html#l00140">140</a> of file <a class="el" href="sitkBinaryDilateImageFilter_8h_source.html">sitkBinaryDilateImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkBinaryDilateImageFilter_8h_source.html#l00142">142</a> of file <a class="el" href="sitkBinaryDilateImageFilter_8h_source.html">sitkBinaryDilateImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -397,7 +398,7 @@ arbitrary structuring elements", and</p>
 </div><div class="memdoc">
 <p>Define the pixels types supported by this filter </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkBinaryDilateImageFilter_8h_source.html#l00066">66</a> of file <a class="el" href="sitkBinaryDilateImageFilter_8h_source.html">sitkBinaryDilateImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkBinaryDilateImageFilter_8h_source.html#l00068">68</a> of file <a class="el" href="sitkBinaryDilateImageFilter_8h_source.html">sitkBinaryDilateImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -413,7 +414,7 @@ arbitrary structuring elements", and</p>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkBinaryDilateImageFilter_8h_source.html#l00056">56</a> of file <a class="el" href="sitkBinaryDilateImageFilter_8h_source.html">sitkBinaryDilateImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkBinaryDilateImageFilter_8h_source.html#l00058">58</a> of file <a class="el" href="sitkBinaryDilateImageFilter_8h_source.html">sitkBinaryDilateImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -437,7 +438,7 @@ arbitrary structuring elements", and</p>
 <tr><td class="fieldname"><a id="a1a3a9ff2a1863f6749a90a057cd480c6a64e2077c9c6fe9a82f771c7e786569d9"></a>Cross&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
-<p class="definition">Definition at line <a class="el" href="sitkBinaryDilateImageFilter_8h_source.html#l00069">69</a> of file <a class="el" href="sitkBinaryDilateImageFilter_8h_source.html">sitkBinaryDilateImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkBinaryDilateImageFilter_8h_source.html#l00071">71</a> of file <a class="el" href="sitkBinaryDilateImageFilter_8h_source.html">sitkBinaryDilateImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -510,7 +511,7 @@ arbitrary structuring elements", and</p>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkBinaryDilateImageFilter_8h_source.html#l00095">95</a> of file <a class="el" href="sitkBinaryDilateImageFilter_8h_source.html">sitkBinaryDilateImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkBinaryDilateImageFilter_8h_source.html#l00097">97</a> of file <a class="el" href="sitkBinaryDilateImageFilter_8h_source.html">sitkBinaryDilateImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -538,7 +539,7 @@ arbitrary structuring elements", and</p>
 </div><div class="memdoc">
 <p>Set the value of BoundaryToForeground to true or false respectfully. </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkBinaryDilateImageFilter_8h_source.html#l00094">94</a> of file <a class="el" href="sitkBinaryDilateImageFilter_8h_source.html">sitkBinaryDilateImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkBinaryDilateImageFilter_8h_source.html#l00096">96</a> of file <a class="el" href="sitkBinaryDilateImageFilter_8h_source.html">sitkBinaryDilateImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -653,7 +654,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkBinaryDilateImageFilter_8h_source.html#l00079">79</a> of file <a class="el" href="sitkBinaryDilateImageFilter_8h_source.html">sitkBinaryDilateImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkBinaryDilateImageFilter_8h_source.html#l00081">81</a> of file <a class="el" href="sitkBinaryDilateImageFilter_8h_source.html">sitkBinaryDilateImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -680,7 +681,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkBinaryDilateImageFilter_8h_source.html#l00099">99</a> of file <a class="el" href="sitkBinaryDilateImageFilter_8h_source.html">sitkBinaryDilateImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkBinaryDilateImageFilter_8h_source.html#l00101">101</a> of file <a class="el" href="sitkBinaryDilateImageFilter_8h_source.html">sitkBinaryDilateImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -707,7 +708,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkBinaryDilateImageFilter_8h_source.html#l00087">87</a> of file <a class="el" href="sitkBinaryDilateImageFilter_8h_source.html">sitkBinaryDilateImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkBinaryDilateImageFilter_8h_source.html#l00089">89</a> of file <a class="el" href="sitkBinaryDilateImageFilter_8h_source.html">sitkBinaryDilateImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -771,7 +772,7 @@ template&lt;class TImageType &gt; </div>
 
 <p>Implements <a class="el" href="classitk_1_1simple_1_1ProcessObject.html#ac8ab837a83ee6ad83c2e2e71b1e98386">itk::simple::ProcessObject</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="sitkBinaryDilateImageFilter_8h_source.html#l00122">122</a> of file <a class="el" href="sitkBinaryDilateImageFilter_8h_source.html">sitkBinaryDilateImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkBinaryDilateImageFilter_8h_source.html#l00124">124</a> of file <a class="el" href="sitkBinaryDilateImageFilter_8h_source.html">sitkBinaryDilateImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -799,7 +800,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkBinaryDilateImageFilter_8h_source.html#l00075">75</a> of file <a class="el" href="sitkBinaryDilateImageFilter_8h_source.html">sitkBinaryDilateImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkBinaryDilateImageFilter_8h_source.html#l00077">77</a> of file <a class="el" href="sitkBinaryDilateImageFilter_8h_source.html">sitkBinaryDilateImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -827,7 +828,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkBinaryDilateImageFilter_8h_source.html#l00091">91</a> of file <a class="el" href="sitkBinaryDilateImageFilter_8h_source.html">sitkBinaryDilateImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkBinaryDilateImageFilter_8h_source.html#l00093">93</a> of file <a class="el" href="sitkBinaryDilateImageFilter_8h_source.html">sitkBinaryDilateImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -855,7 +856,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkBinaryDilateImageFilter_8h_source.html#l00083">83</a> of file <a class="el" href="sitkBinaryDilateImageFilter_8h_source.html">sitkBinaryDilateImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkBinaryDilateImageFilter_8h_source.html#l00085">85</a> of file <a class="el" href="sitkBinaryDilateImageFilter_8h_source.html">sitkBinaryDilateImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -984,7 +985,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkBinaryDilateImageFilter_8h_source.html#l00144">144</a> of file <a class="el" href="sitkBinaryDilateImageFilter_8h_source.html">sitkBinaryDilateImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkBinaryDilateImageFilter_8h_source.html#l00146">146</a> of file <a class="el" href="sitkBinaryDilateImageFilter_8h_source.html">sitkBinaryDilateImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -1009,7 +1010,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkBinaryDilateImageFilter_8h_source.html#l00150">150</a> of file <a class="el" href="sitkBinaryDilateImageFilter_8h_source.html">sitkBinaryDilateImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkBinaryDilateImageFilter_8h_source.html#l00152">152</a> of file <a class="el" href="sitkBinaryDilateImageFilter_8h_source.html">sitkBinaryDilateImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -1033,7 +1034,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkBinaryDilateImageFilter_8h_source.html#l00154">154</a> of file <a class="el" href="sitkBinaryDilateImageFilter_8h_source.html">sitkBinaryDilateImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkBinaryDilateImageFilter_8h_source.html#l00156">156</a> of file <a class="el" href="sitkBinaryDilateImageFilter_8h_source.html">sitkBinaryDilateImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -1057,7 +1058,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkBinaryDilateImageFilter_8h_source.html#l00152">152</a> of file <a class="el" href="sitkBinaryDilateImageFilter_8h_source.html">sitkBinaryDilateImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkBinaryDilateImageFilter_8h_source.html#l00154">154</a> of file <a class="el" href="sitkBinaryDilateImageFilter_8h_source.html">sitkBinaryDilateImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -1081,7 +1082,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkBinaryDilateImageFilter_8h_source.html#l00157">157</a> of file <a class="el" href="sitkBinaryDilateImageFilter_8h_source.html">sitkBinaryDilateImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkBinaryDilateImageFilter_8h_source.html#l00159">159</a> of file <a class="el" href="sitkBinaryDilateImageFilter_8h_source.html">sitkBinaryDilateImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -1106,7 +1107,7 @@ template&lt;class TImageType &gt; </div>
 </div><div class="memdoc">
 <p>KernelType </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkBinaryDilateImageFilter_8h_source.html#l00160">160</a> of file <a class="el" href="sitkBinaryDilateImageFilter_8h_source.html">sitkBinaryDilateImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkBinaryDilateImageFilter_8h_source.html#l00162">162</a> of file <a class="el" href="sitkBinaryDilateImageFilter_8h_source.html">sitkBinaryDilateImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -1130,7 +1131,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkBinaryDilateImageFilter_8h_source.html#l00146">146</a> of file <a class="el" href="sitkBinaryDilateImageFilter_8h_source.html">sitkBinaryDilateImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkBinaryDilateImageFilter_8h_source.html#l00148">148</a> of file <a class="el" href="sitkBinaryDilateImageFilter_8h_source.html">sitkBinaryDilateImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -1140,7 +1141,7 @@ template&lt;class TImageType &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Mar 7 2020 03:21:26 for SimpleITK by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Mar 10 2020 03:49:17 for SimpleITK by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

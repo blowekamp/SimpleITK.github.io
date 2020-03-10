@@ -19,7 +19,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">SimpleITK
-   &#160;<span id="projectnumber">2.0.0.dev127</span>
+   &#160;<span id="projectnumber">2.0.0rc1</span>
    </div>
   </td>
  </tr>
@@ -308,7 +308,7 @@ Additional Inherited Members</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Computes the inverse of a displacement field. </p>
 <p><a class="el" href="classitk_1_1simple_1_1IterativeInverseDisplacementFieldImageFilter.html" title="Computes the inverse of a displacement field.">IterativeInverseDisplacementFieldImageFilter</a> takes a displacement field as input and computes the displacement field that is its inverse. If the input displacement field was mapping coordinates from a space A into a space B, the output of this filter will map coordinates from the space B into the space A.</p>
-<p>The algorithm implemented in this filter uses an iterative method for progresively refining the values of the inverse field. Starting from the direct field, at every pixel the direct mapping of this point is found, and a the nevative of the current displacement is stored in the inverse field at the nearest pixel. Then, subsequent iterations verify if any of the neigbor pixels provide a better return to the current pixel, in which case its value is taken for updating the vector in the inverse field.</p>
+<p>The algorithm implemented in this filter uses an iterative method for progressively refining the values of the inverse field. Starting from the direct field, at every pixel the direct mapping of this point is found, and a the negative of the current displacement is stored in the inverse field at the nearest pixel. Then, subsequent iterations verify if any of the neighbor pixels provide a better return to the current pixel, in which case its value is taken for updating the vector in the inverse field.</p>
 <p>This method was discussed in the users-list during February 2004.</p>
 <dl class="section author"><dt>Author</dt><dd>Corinne Mattmann </dd></dl>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="namespaceitk_1_1simple.html#aa5d69cbc41c1173e7130444a0e4e619f" title="Computes the inverse of a displacement field.">itk::simple::IterativeInverseDisplacementField</a> for the procedural interface </dd>
@@ -775,7 +775,7 @@ template&lt;class TImageType &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Mar 7 2020 03:21:30 for SimpleITK by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Mar 10 2020 03:49:21 for SimpleITK by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

@@ -19,7 +19,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">SimpleITK
-   &#160;<span id="projectnumber">2.0.0.dev127</span>
+   &#160;<span id="projectnumber">2.0.0rc1</span>
    </div>
   </td>
  </tr>
@@ -300,13 +300,15 @@ Additional Inherited Members</h2></td></tr>
 <div class="textblock"><p>Implements pixel-wise generic operation on one image. </p>
 <p>This class is parameterized over the type of the input image and the type of the output image. It is also parameterized by the operation to be applied, using a <a class="elRef" href="https://www.itk.org/Doxygen/html/namespaceitk_1_1Functor.html">Functor</a> style.</p>
 <p><a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1UnaryFunctorImageFilter.html">UnaryFunctorImageFilter</a> allows the output dimension of the filter to be larger than the input dimension. Thus subclasses of the <a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1UnaryFunctorImageFilter.html">UnaryFunctorImageFilter</a> (like the <a class="el" href="classitk_1_1simple_1_1CastImageFilter.html" title="A hybrid cast image filter to convert images to other types of images.">CastImageFilter</a> ) can be used to promote a 2D image to a 3D image, etc.</p>
-<dl class="section see"><dt>See also</dt><dd><a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1BinaryFunctorImageFilter.html">BinaryFunctorImageFilter</a> <a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1TernaryFunctorImageFilter.html">TernaryFunctorImageFilter</a> </dd>
+<dl class="section see"><dt>See also</dt><dd><a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1UnaryGeneratorImageFilter.html">UnaryGeneratorImageFilter</a></dd>
+<dd>
+<a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1BinaryFunctorImageFilter.html">BinaryFunctorImageFilter</a> <a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1TernaryFunctorImageFilter.html">TernaryFunctorImageFilter</a> </dd>
 <dd>
 <a class="el" href="namespaceitk_1_1simple.html#a4649d8168183f0f5ec487122feca5a48" title="Implements pixel-wise generic operation on one image.">itk::simple::UnaryMinus</a> for the procedural interface </dd>
 <dd>
 <a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1UnaryFunctorImageFilter.html">itk::UnaryFunctorImageFilter</a> for the Doxygen on the original ITK class. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="sitkUnaryMinusImageFilter_8h_source.html#l00046">46</a> of file <a class="el" href="sitkUnaryMinusImageFilter_8h_source.html">sitkUnaryMinusImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkUnaryMinusImageFilter_8h_source.html#l00049">49</a> of file <a class="el" href="sitkUnaryMinusImageFilter_8h_source.html">sitkUnaryMinusImageFilter.h</a>.</p>
 </div><h2 class="groupheader">Member Typedef Documentation</h2>
 <a id="aee25b0ca7972f6161997cd97dec9626c"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aee25b0ca7972f6161997cd97dec9626c">&#9670;&nbsp;</a></span>MemberFunctionType</h2>
@@ -329,7 +331,7 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 <p>Setup for member function dispatching </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkUnaryMinusImageFilter_8h_source.html#l00076">76</a> of file <a class="el" href="sitkUnaryMinusImageFilter_8h_source.html">sitkUnaryMinusImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkUnaryMinusImageFilter_8h_source.html#l00079">79</a> of file <a class="el" href="sitkUnaryMinusImageFilter_8h_source.html">sitkUnaryMinusImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -346,7 +348,7 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 <p>Define the pixels types supported by this filter </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkUnaryMinusImageFilter_8h_source.html#l00058">58</a> of file <a class="el" href="sitkUnaryMinusImageFilter_8h_source.html">sitkUnaryMinusImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkUnaryMinusImageFilter_8h_source.html#l00061">61</a> of file <a class="el" href="sitkUnaryMinusImageFilter_8h_source.html">sitkUnaryMinusImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -362,7 +364,7 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkUnaryMinusImageFilter_8h_source.html#l00048">48</a> of file <a class="el" href="sitkUnaryMinusImageFilter_8h_source.html">sitkUnaryMinusImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkUnaryMinusImageFilter_8h_source.html#l00051">51</a> of file <a class="el" href="sitkUnaryMinusImageFilter_8h_source.html">sitkUnaryMinusImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -514,7 +516,7 @@ template&lt;class TImageType &gt; </div>
 
 <p>Implements <a class="el" href="classitk_1_1simple_1_1ProcessObject.html#ac8ab837a83ee6ad83c2e2e71b1e98386">itk::simple::ProcessObject</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="sitkUnaryMinusImageFilter_8h_source.html#l00062">62</a> of file <a class="el" href="sitkUnaryMinusImageFilter_8h_source.html">sitkUnaryMinusImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkUnaryMinusImageFilter_8h_source.html#l00065">65</a> of file <a class="el" href="sitkUnaryMinusImageFilter_8h_source.html">sitkUnaryMinusImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -567,7 +569,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkUnaryMinusImageFilter_8h_source.html#l00082">82</a> of file <a class="el" href="sitkUnaryMinusImageFilter_8h_source.html">sitkUnaryMinusImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkUnaryMinusImageFilter_8h_source.html#l00085">85</a> of file <a class="el" href="sitkUnaryMinusImageFilter_8h_source.html">sitkUnaryMinusImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -591,7 +593,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkUnaryMinusImageFilter_8h_source.html#l00081">81</a> of file <a class="el" href="sitkUnaryMinusImageFilter_8h_source.html">sitkUnaryMinusImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkUnaryMinusImageFilter_8h_source.html#l00084">84</a> of file <a class="el" href="sitkUnaryMinusImageFilter_8h_source.html">sitkUnaryMinusImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -616,7 +618,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkUnaryMinusImageFilter_8h_source.html#l00083">83</a> of file <a class="el" href="sitkUnaryMinusImageFilter_8h_source.html">sitkUnaryMinusImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkUnaryMinusImageFilter_8h_source.html#l00086">86</a> of file <a class="el" href="sitkUnaryMinusImageFilter_8h_source.html">sitkUnaryMinusImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -626,7 +628,7 @@ template&lt;class TImageType &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Mar 7 2020 03:21:34 for SimpleITK by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Mar 10 2020 03:49:25 for SimpleITK by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

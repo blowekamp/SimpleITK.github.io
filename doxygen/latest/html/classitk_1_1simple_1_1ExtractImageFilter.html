@@ -19,7 +19,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">SimpleITK
-   &#160;<span id="projectnumber">2.0.0.dev127</span>
+   &#160;<span id="projectnumber">2.0.0rc1</span>
    </div>
   </td>
  </tr>
@@ -331,15 +331,15 @@ Additional Inherited Members</h2></td></tr>
 <p>The number of dimension in ExtractionRegion.Size and <a class="elRef" href="https://www.itk.org/Doxygen/html/structitk_1_1Index.html">Index</a> must = InputImageDimension. The number of non-zero dimensions in ExtractionRegion.Size must = OutputImageDimension.</p>
 <p>The output image produced by this filter will have the same origin as the input image, while the <a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1ImageRegion.html">ImageRegion</a> of the output image will start at the starting index value provided in the ExtractRegion parameter. If you are looking for a filter that will re-compute the origin of the output image, and provide an output image region whose index is set to zeros, then you may want to use the <a class="el" href="classitk_1_1simple_1_1RegionOfInterestImageFilter.html" title="Extract a region of interest from the input image.">RegionOfInterestImageFilter</a> . The output spacing is is simply the collapsed version of the input spacing.</p>
 <p>Determining the direction of the collapsed output image from an larger dimensional input space is an ill defined problem in general. It is required that the application developer select the desired transformation strategy for collapsing direction cosines. It is REQUIRED that a strategy be explicitly requested (i.e. there is no working default). Direction Collapsing Strategies: 1) DirectionCollapseToUnknown(); This is the default and the filter can not run when this is set. The reason is to explicitly force the application developer to define their desired behavior. 1) DirectionCollapseToIdentity(); Output has identity direction no matter what 2) DirectionCollapseToSubmatrix(); Output direction is the sub-matrix if it is positive definite, else throw an exception.</p>
-<p>This filter is implemented as a multithreaded filter. It provides a ThreadedGenerateData() method for its implementation.</p>
-<dl class="section note"><dt>Note</dt><dd>This filter is derived from <a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1InPlaceImageFilter.html">InPlaceImageFilter</a> . When the input to this filter matched the output requirested region, like with streaming filter for input, then setting this filter to run in-place will result in no copying of the bulk pixel data.</dd></dl>
+<p>This filter is implemented as a multithreaded filter. It provides a DynamicThreadedGenerateData() method for its implementation.</p>
+<dl class="section note"><dt>Note</dt><dd>This filter is derived from <a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1InPlaceImageFilter.html">InPlaceImageFilter</a> . When the input to this filter matched the output requested region, like with streaming filter for input, then setting this filter to run in-place will result in no copying of the bulk pixel data.</dd></dl>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="classitk_1_1simple_1_1CropImageFilter.html" title="Decrease the image size by cropping the image by an itk::Size at both the upper and lower bounds of t...">CropImageFilter</a> </dd>
 <dd>
 <a class="el" href="namespaceitk_1_1simple.html#a369ae49fad5abfc96ae9e422b4732a6c" title="Decrease the image size by cropping the image to the selected region bounds.">itk::simple::Extract</a> for the procedural interface </dd>
 <dd>
 <a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1ExtractImageFilter.html">itk::ExtractImageFilter</a>&lt;InputImageType, typename InputImageType::template Rebind for the Doxygen on the original ITK class. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="sitkExtractImageFilter_8h_source.html#l00056">56</a> of file <a class="el" href="sitkExtractImageFilter_8h_source.html">sitkExtractImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkExtractImageFilter_8h_source.html#l00057">57</a> of file <a class="el" href="sitkExtractImageFilter_8h_source.html">sitkExtractImageFilter.h</a>.</p>
 </div><h2 class="groupheader">Member Typedef Documentation</h2>
 <a id="aa307321f10c81f0ee93f5f9ee17cb5bf"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aa307321f10c81f0ee93f5f9ee17cb5bf">&#9670;&nbsp;</a></span>MemberFunctionType</h2>
@@ -362,7 +362,7 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 <p>Setup for member function dispatching </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkExtractImageFilter_8h_source.html#l00124">124</a> of file <a class="el" href="sitkExtractImageFilter_8h_source.html">sitkExtractImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkExtractImageFilter_8h_source.html#l00125">125</a> of file <a class="el" href="sitkExtractImageFilter_8h_source.html">sitkExtractImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -379,7 +379,7 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 <p>Define the pixels types supported by this filter </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkExtractImageFilter_8h_source.html#l00068">68</a> of file <a class="el" href="sitkExtractImageFilter_8h_source.html">sitkExtractImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkExtractImageFilter_8h_source.html#l00069">69</a> of file <a class="el" href="sitkExtractImageFilter_8h_source.html">sitkExtractImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -395,7 +395,7 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkExtractImageFilter_8h_source.html#l00058">58</a> of file <a class="el" href="sitkExtractImageFilter_8h_source.html">sitkExtractImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkExtractImageFilter_8h_source.html#l00059">59</a> of file <a class="el" href="sitkExtractImageFilter_8h_source.html">sitkExtractImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -418,7 +418,7 @@ Additional Inherited Members</h2></td></tr>
 <tr><td class="fieldname"><a id="aeb3454c7136722790d3b657643e2cce8a1ac4c64513f940403ecb72083a88691f"></a>DIRECTIONCOLLAPSETOGUESS&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
-<p class="definition">Definition at line <a class="el" href="sitkExtractImageFilter_8h_source.html#l00089">89</a> of file <a class="el" href="sitkExtractImageFilter_8h_source.html">sitkExtractImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkExtractImageFilter_8h_source.html#l00090">90</a> of file <a class="el" href="sitkExtractImageFilter_8h_source.html">sitkExtractImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -580,7 +580,7 @@ template&lt;class TImageType &gt; </div>
 </div><div class="memdoc">
 <p>NOTE: The SetDirectionCollapseToUknown is explicitly not defined. It is a state that a filter can be in only when it is first instantiate prior to being initialized. Get the currently set strategy for collapsing directions of physical space. </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkExtractImageFilter_8h_source.html#l00105">105</a> of file <a class="el" href="sitkExtractImageFilter_8h_source.html">sitkExtractImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkExtractImageFilter_8h_source.html#l00106">106</a> of file <a class="el" href="sitkExtractImageFilter_8h_source.html">sitkExtractImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -607,7 +607,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkExtractImageFilter_8h_source.html#l00087">87</a> of file <a class="el" href="sitkExtractImageFilter_8h_source.html">sitkExtractImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkExtractImageFilter_8h_source.html#l00088">88</a> of file <a class="el" href="sitkExtractImageFilter_8h_source.html">sitkExtractImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -637,7 +637,7 @@ template&lt;class TImageType &gt; </div>
 
 <p>Implements <a class="el" href="classitk_1_1simple_1_1ProcessObject.html#ac8ab837a83ee6ad83c2e2e71b1e98386">itk::simple::ProcessObject</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="sitkExtractImageFilter_8h_source.html#l00107">107</a> of file <a class="el" href="sitkExtractImageFilter_8h_source.html">sitkExtractImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkExtractImageFilter_8h_source.html#l00108">108</a> of file <a class="el" href="sitkExtractImageFilter_8h_source.html">sitkExtractImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -664,7 +664,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkExtractImageFilter_8h_source.html#l00078">78</a> of file <a class="el" href="sitkExtractImageFilter_8h_source.html">sitkExtractImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkExtractImageFilter_8h_source.html#l00079">79</a> of file <a class="el" href="sitkExtractImageFilter_8h_source.html">sitkExtractImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -691,12 +691,12 @@ template&lt;class TImageType &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
-<pre class="fragment">     Set the strategy to be used to collapse physical space dimensions.
+<pre class="fragment">     Backwards compatibility for enum values Set the strategy to be used to collapse physical space dimensions.
 </pre><p>itk::itkExtractImageFilter::DIRECTIONCOLLAPSETOIDENTITY Set the strategy so that all collapsed images have an identity direction. Use this strategy when you know that retention of the physical space orientation of the collapsed image is not important.</p>
-<p>itk::itkExtractImageFilter::DIRECTIONCOLLAPSETOGUESS Set the strategy so that all collapsed images where output direction is the sub-matrix if it is positive definite, else return identity. This is backwards compatible with ITKv3, but is highly discouraged because the results are difficult to anticipate under differing data scenerios.</p>
+<p>itk::itkExtractImageFilter::DIRECTIONCOLLAPSETOGUESS Set the strategy so that all collapsed images where output direction is the sub-matrix if it is positive definite, else return identity. This is backwards compatible with ITKv3, but is highly discouraged because the results are difficult to anticipate under differing data scenarios.</p>
 <p>itk::itkExtractImageFilter::DIRECTIONCOLLAPSETOSUBMATRIX Set the strategy so that all collapsed images where output direction is the sub-matrix if it is positive definite, else throw an exception. Use this strategy when it is known that properly identified physical space sub-volumes can be reliably extracted from a higher dimensional space. For example when the application programmer knows that a 4D image is 3D+time, and that the 3D sub-space is properly defined. </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkExtractImageFilter_8h_source.html#l00100">100</a> of file <a class="el" href="sitkExtractImageFilter_8h_source.html">sitkExtractImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkExtractImageFilter_8h_source.html#l00101">101</a> of file <a class="el" href="sitkExtractImageFilter_8h_source.html">sitkExtractImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -725,7 +725,7 @@ template&lt;class TImageType &gt; </div>
 </div><div class="memdoc">
 <p>odo the internal setting of the method needs work!!! </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkExtractImageFilter_8h_source.html#l00083">83</a> of file <a class="el" href="sitkExtractImageFilter_8h_source.html">sitkExtractImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkExtractImageFilter_8h_source.html#l00084">84</a> of file <a class="el" href="sitkExtractImageFilter_8h_source.html">sitkExtractImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -753,7 +753,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkExtractImageFilter_8h_source.html#l00074">74</a> of file <a class="el" href="sitkExtractImageFilter_8h_source.html">sitkExtractImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkExtractImageFilter_8h_source.html#l00075">75</a> of file <a class="el" href="sitkExtractImageFilter_8h_source.html">sitkExtractImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -806,7 +806,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkExtractImageFilter_8h_source.html#l00128">128</a> of file <a class="el" href="sitkExtractImageFilter_8h_source.html">sitkExtractImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkExtractImageFilter_8h_source.html#l00129">129</a> of file <a class="el" href="sitkExtractImageFilter_8h_source.html">sitkExtractImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -831,7 +831,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkExtractImageFilter_8h_source.html#l00135">135</a> of file <a class="el" href="sitkExtractImageFilter_8h_source.html">sitkExtractImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkExtractImageFilter_8h_source.html#l00136">136</a> of file <a class="el" href="sitkExtractImageFilter_8h_source.html">sitkExtractImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -855,7 +855,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkExtractImageFilter_8h_source.html#l00134">134</a> of file <a class="el" href="sitkExtractImageFilter_8h_source.html">sitkExtractImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkExtractImageFilter_8h_source.html#l00135">135</a> of file <a class="el" href="sitkExtractImageFilter_8h_source.html">sitkExtractImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -879,7 +879,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkExtractImageFilter_8h_source.html#l00130">130</a> of file <a class="el" href="sitkExtractImageFilter_8h_source.html">sitkExtractImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkExtractImageFilter_8h_source.html#l00131">131</a> of file <a class="el" href="sitkExtractImageFilter_8h_source.html">sitkExtractImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -903,7 +903,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkExtractImageFilter_8h_source.html#l00133">133</a> of file <a class="el" href="sitkExtractImageFilter_8h_source.html">sitkExtractImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkExtractImageFilter_8h_source.html#l00134">134</a> of file <a class="el" href="sitkExtractImageFilter_8h_source.html">sitkExtractImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -913,7 +913,7 @@ template&lt;class TImageType &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Mar 7 2020 03:21:29 for SimpleITK by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Mar 10 2020 03:49:19 for SimpleITK by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

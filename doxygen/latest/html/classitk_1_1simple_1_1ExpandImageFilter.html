@@ -19,7 +19,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">SimpleITK
-   &#160;<span id="projectnumber">2.0.0.dev127</span>
+   &#160;<span id="projectnumber">2.0.0rc1</span>
    </div>
   </td>
  </tr>
@@ -324,19 +324,16 @@ Additional Inherited Members</h2></td></tr>
 <p>OutputSpacing[j] = InputSpacing[j] / ExpandFactors[j]</p>
 <p>The filter is templated over the input image type and the output image type.</p>
 <p>This filter is implemented as a multithreaded filter and supports streaming.</p>
-<dl class="section warning"><dt>Warning</dt><dd>This filter only works for image with scalar pixel types. For vector images use VectorExpandImageFilter .</dd></dl>
 <p>This filter assumes that the input and output image has the same number of dimensions.</p>
 <dl class="section see"><dt>See also</dt><dd><a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1InterpolateImageFunction.html">InterpolateImageFunction</a></dd>
 <dd>
-LinearInterpolationImageFunction</dd>
-<dd>
-VectorExpandImageFilter </dd>
+LinearInterpolationImageFunction </dd>
 <dd>
 <a class="el" href="namespaceitk_1_1simple.html#af5b120b23cf2f8169b6bb15ad88d31e5" title="Expand the size of an image by an integer factor in each dimension.">itk::simple::Expand</a> for the procedural interface </dd>
 <dd>
 <a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1ExpandImageFilter.html">itk::ExpandImageFilter</a> for the Doxygen on the original ITK class. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="sitkExpandImageFilter_8h_source.html#l00064">64</a> of file <a class="el" href="sitkExpandImageFilter_8h_source.html">sitkExpandImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkExpandImageFilter_8h_source.html#l00061">61</a> of file <a class="el" href="sitkExpandImageFilter_8h_source.html">sitkExpandImageFilter.h</a>.</p>
 </div><h2 class="groupheader">Member Typedef Documentation</h2>
 <a id="acafd7d10a0907bc84fb5f08bf01e3e11"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#acafd7d10a0907bc84fb5f08bf01e3e11">&#9670;&nbsp;</a></span>MemberFunctionType</h2>
@@ -359,7 +356,7 @@ VectorExpandImageFilter </dd>
 </div><div class="memdoc">
 <p>Setup for member function dispatching </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkExpandImageFilter_8h_source.html#l00123">123</a> of file <a class="el" href="sitkExpandImageFilter_8h_source.html">sitkExpandImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkExpandImageFilter_8h_source.html#l00120">120</a> of file <a class="el" href="sitkExpandImageFilter_8h_source.html">sitkExpandImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -376,7 +373,7 @@ VectorExpandImageFilter </dd>
 </div><div class="memdoc">
 <p>Define the pixels types supported by this filter </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkExpandImageFilter_8h_source.html#l00076">76</a> of file <a class="el" href="sitkExpandImageFilter_8h_source.html">sitkExpandImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkExpandImageFilter_8h_source.html#l00073">73</a> of file <a class="el" href="sitkExpandImageFilter_8h_source.html">sitkExpandImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -392,7 +389,7 @@ VectorExpandImageFilter </dd>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkExpandImageFilter_8h_source.html#l00066">66</a> of file <a class="el" href="sitkExpandImageFilter_8h_source.html">sitkExpandImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkExpandImageFilter_8h_source.html#l00063">63</a> of file <a class="el" href="sitkExpandImageFilter_8h_source.html">sitkExpandImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -577,7 +574,7 @@ template&lt;class TImageType &gt; </div>
 </div><div class="memdoc">
 <p>Get the expand factors. </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkExpandImageFilter_8h_source.html#l00094">94</a> of file <a class="el" href="sitkExpandImageFilter_8h_source.html">sitkExpandImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkExpandImageFilter_8h_source.html#l00091">91</a> of file <a class="el" href="sitkExpandImageFilter_8h_source.html">sitkExpandImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -605,7 +602,7 @@ template&lt;class TImageType &gt; </div>
 </div><div class="memdoc">
 <p>Get/Set the interpolator function. </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkExpandImageFilter_8h_source.html#l00104">104</a> of file <a class="el" href="sitkExpandImageFilter_8h_source.html">sitkExpandImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkExpandImageFilter_8h_source.html#l00101">101</a> of file <a class="el" href="sitkExpandImageFilter_8h_source.html">sitkExpandImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -635,7 +632,7 @@ template&lt;class TImageType &gt; </div>
 
 <p>Implements <a class="el" href="classitk_1_1simple_1_1ProcessObject.html#ac8ab837a83ee6ad83c2e2e71b1e98386">itk::simple::ProcessObject</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="sitkExpandImageFilter_8h_source.html#l00106">106</a> of file <a class="el" href="sitkExpandImageFilter_8h_source.html">sitkExpandImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkExpandImageFilter_8h_source.html#l00103">103</a> of file <a class="el" href="sitkExpandImageFilter_8h_source.html">sitkExpandImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -664,7 +661,7 @@ template&lt;class TImageType &gt; </div>
 </div><div class="memdoc">
 <p>Custom public declarations </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkExpandImageFilter_8h_source.html#l00078">78</a> of file <a class="el" href="sitkExpandImageFilter_8h_source.html">sitkExpandImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkExpandImageFilter_8h_source.html#l00075">75</a> of file <a class="el" href="sitkExpandImageFilter_8h_source.html">sitkExpandImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -693,7 +690,7 @@ template&lt;class TImageType &gt; </div>
 </div><div class="memdoc">
 <p>Set the expand factors. Values are clamped to a minimum value of 1. Default is 1 for all dimensions. </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkExpandImageFilter_8h_source.html#l00085">85</a> of file <a class="el" href="sitkExpandImageFilter_8h_source.html">sitkExpandImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkExpandImageFilter_8h_source.html#l00082">82</a> of file <a class="el" href="sitkExpandImageFilter_8h_source.html">sitkExpandImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -722,7 +719,7 @@ template&lt;class TImageType &gt; </div>
 </div><div class="memdoc">
 <p>Set the values of the ExpandFactors vector all to value </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkExpandImageFilter_8h_source.html#l00088">88</a> of file <a class="el" href="sitkExpandImageFilter_8h_source.html">sitkExpandImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkExpandImageFilter_8h_source.html#l00085">85</a> of file <a class="el" href="sitkExpandImageFilter_8h_source.html">sitkExpandImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -751,7 +748,7 @@ template&lt;class TImageType &gt; </div>
 </div><div class="memdoc">
 <p>Get/Set the interpolator function. </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkExpandImageFilter_8h_source.html#l00099">99</a> of file <a class="el" href="sitkExpandImageFilter_8h_source.html">sitkExpandImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkExpandImageFilter_8h_source.html#l00096">96</a> of file <a class="el" href="sitkExpandImageFilter_8h_source.html">sitkExpandImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -804,7 +801,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkExpandImageFilter_8h_source.html#l00129">129</a> of file <a class="el" href="sitkExpandImageFilter_8h_source.html">sitkExpandImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkExpandImageFilter_8h_source.html#l00126">126</a> of file <a class="el" href="sitkExpandImageFilter_8h_source.html">sitkExpandImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -828,7 +825,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkExpandImageFilter_8h_source.html#l00128">128</a> of file <a class="el" href="sitkExpandImageFilter_8h_source.html">sitkExpandImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkExpandImageFilter_8h_source.html#l00125">125</a> of file <a class="el" href="sitkExpandImageFilter_8h_source.html">sitkExpandImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -853,7 +850,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkExpandImageFilter_8h_source.html#l00134">134</a> of file <a class="el" href="sitkExpandImageFilter_8h_source.html">sitkExpandImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkExpandImageFilter_8h_source.html#l00131">131</a> of file <a class="el" href="sitkExpandImageFilter_8h_source.html">sitkExpandImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -877,7 +874,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkExpandImageFilter_8h_source.html#l00136">136</a> of file <a class="el" href="sitkExpandImageFilter_8h_source.html">sitkExpandImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkExpandImageFilter_8h_source.html#l00133">133</a> of file <a class="el" href="sitkExpandImageFilter_8h_source.html">sitkExpandImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -901,7 +898,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkExpandImageFilter_8h_source.html#l00130">130</a> of file <a class="el" href="sitkExpandImageFilter_8h_source.html">sitkExpandImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkExpandImageFilter_8h_source.html#l00127">127</a> of file <a class="el" href="sitkExpandImageFilter_8h_source.html">sitkExpandImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -911,7 +908,7 @@ template&lt;class TImageType &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Mar 7 2020 03:21:28 for SimpleITK by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Mar 10 2020 03:49:19 for SimpleITK by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

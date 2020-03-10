@@ -64,7 +64,7 @@
 <area shape="rect" id="node51" href="$classitk_1_1simple_1_1ScalarConnectedComponentImageFilter.html" title="A connected components filter that labels the objects in an arbitrary image. Two pixels are similar i..." alt="" coords="804,2500,1012,2541"/>
 <area shape="rect" id="node52" href="$classitk_1_1simple_1_1ShanbhagThresholdImageFilter.html" title="Threshold an image using the Shanbhag Threshold." alt="" coords="795,2565,1021,2607"/>
 <area shape="rect" id="node53" href="$classitk_1_1simple_1_1ShapeDetectionLevelSetImageFilter.html" title="Segments structures in images based on a user supplied edge potential map." alt="" coords="807,2631,1009,2672"/>
-<area shape="rect" id="node54" href="$classitk_1_1simple_1_1StatisticsImageFilter.html" title="Compute min. max, variance and mean of an Image ." alt="" coords="808,2696,1008,2737"/>
+<area shape="rect" id="node54" href="$classitk_1_1simple_1_1StatisticsImageFilter.html" title="Compute min, max, variance and mean of an Image ." alt="" coords="808,2696,1008,2737"/>
 <area shape="rect" id="node55" href="$classitk_1_1simple_1_1StochasticFractalDimensionImageFilter.html" title="This filter computes the stochastic fractal dimension of the input image." alt="" coords="803,2761,1013,2803"/>
 <area shape="rect" id="node56" href="$classitk_1_1simple_1_1SymmetricForcesDemonsRegistrationFilter.html" title="Deformably register two images using the demons algorithm." alt="" coords="802,2827,1014,2868"/>
 <area shape="rect" id="node57" href="$classitk_1_1simple_1_1ThresholdSegmentationLevelSetImageFilter.html" title="Segments structures in images based on intensity values." alt="" coords="781,2892,1035,2933"/>
@@ -84,8 +84,8 @@
 <area shape="rect" id="node72" href="$classitk_1_1simple_1_1BilateralImageFilter.html" title="Blurs an image while preserving edges." alt="" coords="811,3737,1005,3779"/>
 <area shape="rect" id="node73" href="$classitk_1_1simple_1_1BinaryClosingByReconstructionImageFilter.html" title="binary closing by reconstruction of an image." alt="" coords="804,3803,1012,3844"/>
 <area shape="rect" id="node74" href="$classitk_1_1simple_1_1BinaryContourImageFilter.html" title="Labels the pixels on the border of the objects in a binary image." alt="" coords="812,3868,1004,3909"/>
-<area shape="rect" id="node75" href="$classitk_1_1simple_1_1BinaryDilateImageFilter.html" title="Fast binary dilation." alt="" coords="818,3933,998,3975"/>
-<area shape="rect" id="node76" href="$classitk_1_1simple_1_1BinaryErodeImageFilter.html" title="Fast binary erosion." alt="" coords="819,3999,997,4040"/>
+<area shape="rect" id="node75" href="$classitk_1_1simple_1_1BinaryDilateImageFilter.html" title="Fast binary dilation of a single intensity value in the image." alt="" coords="818,3933,998,3975"/>
+<area shape="rect" id="node76" href="$classitk_1_1simple_1_1BinaryErodeImageFilter.html" title="Fast binary erosion of a single intensity value in the image." alt="" coords="819,3999,997,4040"/>
 <area shape="rect" id="node77" href="$classitk_1_1simple_1_1BinaryFillholeImageFilter.html" title="Remove holes not connected to the boundary of the image." alt="" coords="815,4064,1001,4105"/>
 <area shape="rect" id="node78" href="$classitk_1_1simple_1_1BinaryGrindPeakImageFilter.html" title="Remove the objects not connected to the boundary of the image." alt="" coords="820,4129,996,4171"/>
 <area shape="rect" id="node79" href="$classitk_1_1simple_1_1BinaryImageToLabelMapFilter.html" title="Label the connected components in a binary image and produce a collection of label objects." alt="" coords="817,4195,999,4236"/>
@@ -197,7 +197,7 @@
 <area shape="rect" id="node185" href="$classitk_1_1simple_1_1MinMaxCurvatureFlowImageFilter.html" title="Denoise an image using min/max curvature flow." alt="" coords="801,10997,1015,11039"/>
 <area shape="rect" id="node186" href="$classitk_1_1simple_1_1MirrorPadImageFilter.html" title="Increase the image size by padding with replicants of the input image value." alt="" coords="807,11063,1009,11104"/>
 <area shape="rect" id="node187" href="$classitk_1_1simple_1_1MorphologicalGradientImageFilter.html" title="gray scale dilation of an image" alt="" coords="813,11128,1003,11169"/>
-<area shape="rect" id="node188" href="$classitk_1_1simple_1_1MorphologicalWatershedImageFilter.html" title="Watershed segmentation implementation with morphogical operators." alt="" coords="813,11193,1003,11235"/>
+<area shape="rect" id="node188" href="$classitk_1_1simple_1_1MorphologicalWatershedImageFilter.html" title="Watershed segmentation implementation with morphological operators." alt="" coords="813,11193,1003,11235"/>
 <area shape="rect" id="node189" href="$classitk_1_1simple_1_1NeighborhoodConnectedImageFilter.html" title="Label pixels that are connected to a seed and lie within a neighborhood." alt="" coords="813,11259,1003,11300"/>
 <area shape="rect" id="node190" href="$classitk_1_1simple_1_1NoiseImageFilter.html" title="Calculate the local noise in an image." alt="" coords="803,11325,1013,11351"/>
 <area shape="rect" id="node191" href="$classitk_1_1simple_1_1NormalizeImageFilter.html" title="Normalize an image by setting its mean to zero and variance to one." alt="" coords="805,11376,1011,11417"/>
@@ -277,7 +277,7 @@
 <area shape="rect" id="node266" href="$classitk_1_1simple_1_1GreaterEqualImageFilter.html" title="Implements pixel&#45;wise generic operation of two images, or of an image and a constant." alt="" coords="816,16045,1000,16087"/>
 <area shape="rect" id="node267" href="$classitk_1_1simple_1_1GreaterImageFilter.html" title="Implements pixel&#45;wise generic operation of two images, or of an image and a constant." alt="" coords="813,16111,1003,16152"/>
 <area shape="rect" id="node268" href="$classitk_1_1simple_1_1HausdorffDistanceImageFilter.html" title="Computes the Hausdorff distance between the set of non&#45;zero pixels of two images." alt="" coords="799,16176,1017,16217"/>
-<area shape="rect" id="node269" href="$classitk_1_1simple_1_1HistogramMatchingImageFilter.html" title="Normalize the grayscale values between two images by histogram matching." alt="" coords="795,16241,1021,16283"/>
+<area shape="rect" id="node269" href="$classitk_1_1simple_1_1HistogramMatchingImageFilter.html" title="Normalize the grayscale values for a source image by matching the shape of the source image histogram..." alt="" coords="795,16241,1021,16283"/>
 <area shape="rect" id="node270" href="$classitk_1_1simple_1_1InverseDeconvolutionImageFilter.html" title="The direct linear inverse deconvolution filter." alt="" coords="787,16307,1029,16348"/>
 <area shape="rect" id="node271" href="$classitk_1_1simple_1_1LabelOverlapMeasuresImageFilter.html" title="Computes overlap measures between the set same set of labels of pixels of two images...." alt="" coords="815,16372,1001,16413"/>
 <area shape="rect" id="node272" href="$classitk_1_1simple_1_1LandweberDeconvolutionImageFilter.html" title="Deconvolve an image using the Landweber deconvolution algorithm." alt="" coords="776,16437,1040,16479"/>

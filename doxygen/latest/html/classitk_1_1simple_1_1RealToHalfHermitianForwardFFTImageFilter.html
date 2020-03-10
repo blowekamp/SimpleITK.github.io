@@ -19,7 +19,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">SimpleITK
-   &#160;<span id="projectnumber">2.0.0.dev127</span>
+   &#160;<span id="projectnumber">2.0.0rc1</span>
    </div>
   </td>
  </tr>
@@ -294,7 +294,7 @@ Additional Inherited Members</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Base class for specialized real-to-complex forward Fast Fourier <a class="el" href="classitk_1_1simple_1_1Transform.html" title="A simplified wrapper around a variety of ITK transforms.">Transform</a> . </p>
 <p>This is a base class for the "forward" or "direct" discrete Fourier <a class="el" href="classitk_1_1simple_1_1Transform.html" title="A simplified wrapper around a variety of ITK transforms.">Transform</a> . This is an abstract base class: the actual implementation is provided by the best child class available on the system when the object is created via the object factory system.</p>
-<p>This class transforms a real input image into its complex Fourier transform. The Fourier transform of a real input image has Hermitian symmetry: <img class="formulaInl" alt="$ f(\mathbf{x}) = f^*(-\mathbf{x}) $" src="form_35.png"/> . That is, when the result of the transform is split in half along the X-dimension, the values in the second half of the transform are the complex conjugates of values in the first half reflected about the center of the image in each dimension. This filter takes advantage of the Hermitian symmetry property and reduces the size of the output in the first dimension to N/2+1, where N is the size of the input image in that dimension and the division by 2 is rounded down.</p>
+<p>This class transforms a real input image into its complex Fourier transform. The Fourier transform of a real input image has Hermitian symmetry: <img class="formulaInl" alt="$ f(\mathbf{x}) = f^*(-\mathbf{x}) $" src="form_34.png"/> . That is, when the result of the transform is split in half along the X-dimension, the values in the second half of the transform are the complex conjugates of values in the first half reflected about the center of the image in each dimension. This filter takes advantage of the Hermitian symmetry property and reduces the size of the output in the first dimension to N/2+1, where N is the size of the input image in that dimension and the division by 2 is rounded down.</p>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="classitk_1_1simple_1_1HalfHermitianToRealInverseFFTImageFilter.html" title="Base class for specialized complex-to-real inverse Fast Fourier Transform .">HalfHermitianToRealInverseFFTImageFilter</a></dd>
 <dd>
 <a class="el" href="classitk_1_1simple_1_1ForwardFFTImageFilter.html" title="Base class for forward Fast Fourier Transform .">ForwardFFTImageFilter</a> </dd>
@@ -303,7 +303,7 @@ Additional Inherited Members</h2></td></tr>
 <dd>
 <a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1RealToHalfHermitianForwardFFTImageFilter.html">itk::RealToHalfHermitianForwardFFTImageFilter</a> for the Doxygen on the original ITK class. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="sitkRealToHalfHermitianForwardFFTImageFilter_8h_source.html#l00048">48</a> of file <a class="el" href="sitkRealToHalfHermitianForwardFFTImageFilter_8h_source.html">sitkRealToHalfHermitianForwardFFTImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkRealToHalfHermitianForwardFFTImageFilter_8h_source.html#l00049">49</a> of file <a class="el" href="sitkRealToHalfHermitianForwardFFTImageFilter_8h_source.html">sitkRealToHalfHermitianForwardFFTImageFilter.h</a>.</p>
 </div><h2 class="groupheader">Member Typedef Documentation</h2>
 <a id="a7a061eb6a9c3303e81206d3da6be6853"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a7a061eb6a9c3303e81206d3da6be6853">&#9670;&nbsp;</a></span>MemberFunctionType</h2>
@@ -326,7 +326,7 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 <p>Setup for member function dispatching </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkRealToHalfHermitianForwardFFTImageFilter_8h_source.html#l00078">78</a> of file <a class="el" href="sitkRealToHalfHermitianForwardFFTImageFilter_8h_source.html">sitkRealToHalfHermitianForwardFFTImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkRealToHalfHermitianForwardFFTImageFilter_8h_source.html#l00079">79</a> of file <a class="el" href="sitkRealToHalfHermitianForwardFFTImageFilter_8h_source.html">sitkRealToHalfHermitianForwardFFTImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -343,7 +343,7 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 <p>Define the pixels types supported by this filter </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkRealToHalfHermitianForwardFFTImageFilter_8h_source.html#l00060">60</a> of file <a class="el" href="sitkRealToHalfHermitianForwardFFTImageFilter_8h_source.html">sitkRealToHalfHermitianForwardFFTImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkRealToHalfHermitianForwardFFTImageFilter_8h_source.html#l00061">61</a> of file <a class="el" href="sitkRealToHalfHermitianForwardFFTImageFilter_8h_source.html">sitkRealToHalfHermitianForwardFFTImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -359,7 +359,7 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkRealToHalfHermitianForwardFFTImageFilter_8h_source.html#l00050">50</a> of file <a class="el" href="sitkRealToHalfHermitianForwardFFTImageFilter_8h_source.html">sitkRealToHalfHermitianForwardFFTImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkRealToHalfHermitianForwardFFTImageFilter_8h_source.html#l00051">51</a> of file <a class="el" href="sitkRealToHalfHermitianForwardFFTImageFilter_8h_source.html">sitkRealToHalfHermitianForwardFFTImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -482,7 +482,7 @@ template&lt;class TImageType &gt; </div>
 
 <p>Implements <a class="el" href="classitk_1_1simple_1_1ProcessObject.html#ac8ab837a83ee6ad83c2e2e71b1e98386">itk::simple::ProcessObject</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="sitkRealToHalfHermitianForwardFFTImageFilter_8h_source.html#l00064">64</a> of file <a class="el" href="sitkRealToHalfHermitianForwardFFTImageFilter_8h_source.html">sitkRealToHalfHermitianForwardFFTImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkRealToHalfHermitianForwardFFTImageFilter_8h_source.html#l00065">65</a> of file <a class="el" href="sitkRealToHalfHermitianForwardFFTImageFilter_8h_source.html">sitkRealToHalfHermitianForwardFFTImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -535,7 +535,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkRealToHalfHermitianForwardFFTImageFilter_8h_source.html#l00082">82</a> of file <a class="el" href="sitkRealToHalfHermitianForwardFFTImageFilter_8h_source.html">sitkRealToHalfHermitianForwardFFTImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkRealToHalfHermitianForwardFFTImageFilter_8h_source.html#l00083">83</a> of file <a class="el" href="sitkRealToHalfHermitianForwardFFTImageFilter_8h_source.html">sitkRealToHalfHermitianForwardFFTImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -560,7 +560,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkRealToHalfHermitianForwardFFTImageFilter_8h_source.html#l00084">84</a> of file <a class="el" href="sitkRealToHalfHermitianForwardFFTImageFilter_8h_source.html">sitkRealToHalfHermitianForwardFFTImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkRealToHalfHermitianForwardFFTImageFilter_8h_source.html#l00085">85</a> of file <a class="el" href="sitkRealToHalfHermitianForwardFFTImageFilter_8h_source.html">sitkRealToHalfHermitianForwardFFTImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -570,7 +570,7 @@ template&lt;class TImageType &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Mar 7 2020 03:21:32 for SimpleITK by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Mar 10 2020 03:49:23 for SimpleITK by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

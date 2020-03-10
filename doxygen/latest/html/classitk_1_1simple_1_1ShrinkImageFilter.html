@@ -19,7 +19,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">SimpleITK
-   &#160;<span id="projectnumber">2.0.0.dev127</span>
+   &#160;<span id="projectnumber">2.0.0rc1</span>
    </div>
   </td>
  </tr>
@@ -307,7 +307,7 @@ Additional Inherited Members</h2></td></tr>
 <p><a class="el" href="classitk_1_1simple_1_1ShrinkImageFilter.html" title="Reduce the size of an image by an integer factor in each dimension.">ShrinkImageFilter</a> reduces the size of an image by an integer factor in each dimension. The algorithm implemented is a simple subsample. The output image size in each dimension is given by:</p>
 <p>outputSize[j] = max( std::floor(inputSize[j]/shrinkFactor[j]), 1 );</p>
 <p>NOTE: The physical centers of the input and output will be the same. Because of this, the Origin of the output may not be the same as the Origin of the input. Since this filter produces an image which is a different resolution, origin and with different pixel spacing than its input image, it needs to override several of the methods defined in <a class="el" href="classitk_1_1simple_1_1ProcessObject.html" title="Base class for SimpleITK classes based on ProcessObject.">ProcessObject</a> in order to properly manage the pipeline execution model. In particular, this filter overrides <a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1ProcessObject.html#ade67a54c973bfaf739184c906da7c77a">ProcessObject::GenerateInputRequestedRegion()</a> and <a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1ProcessObject.html#abe61fb6b7de8c443e7af1561bd722736">ProcessObject::GenerateOutputInformation()</a> .</p>
-<p>This filter is implemented as a multithreaded filter. It provides a ThreadedGenerateData() method for its implementation. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="namespaceitk_1_1simple.html#a29427b8c42fbef013f5e08cb47676d7d" title="Reduce the size of an image by an integer factor in each dimension.">itk::simple::Shrink</a> for the procedural interface </dd>
+<p>This filter is implemented as a multithreaded filter. It provides a DynamicThreadedGenerateData() method for its implementation. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="namespaceitk_1_1simple.html#a29427b8c42fbef013f5e08cb47676d7d" title="Reduce the size of an image by an integer factor in each dimension.">itk::simple::Shrink</a> for the procedural interface </dd>
 <dd>
 <a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1ShrinkImageFilter.html">itk::ShrinkImageFilter</a> for the Doxygen on the original ITK class. </dd></dl>
 
@@ -717,7 +717,7 @@ template&lt;class TImageType &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Mar 7 2020 03:21:33 for SimpleITK by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Mar 10 2020 03:49:24 for SimpleITK by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

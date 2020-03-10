@@ -19,7 +19,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">SimpleITK
-   &#160;<span id="projectnumber">2.0.0.dev127</span>
+   &#160;<span id="projectnumber">2.0.0rc1</span>
    </div>
   </td>
  </tr>
@@ -373,12 +373,12 @@ Additional Inherited Members</h2></td></tr>
 <dl class="section user"><dt>OVERVIEW</dt><dd>This class is a level set method segmentation filter. It constructs a speed function which is designed to lock onto edges as detected by a Canny filter.</dd></dl>
 <dl class="section user"><dt></dt><dd>The <a class="el" href="classitk_1_1simple_1_1CannySegmentationLevelSetImageFilter.html" title="Segments structures in images based on image features derived from pseudo-canny-edges.">CannySegmentationLevelSetImageFilter</a> can be a tool for refining an existing segmentation, or it can be used to try to segment a region by itself. Like all other level-set based segmentation filters (see <a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1SegmentationLevelSetImageFilter.html">SegmentationLevelSetImageFilter</a> ), it works by first constructing a scalar speed term and a vector advection field based on edge features in the image. The level set front is then moved according to these two terms with the addition of a third curvature term to contol the smoothness of the solution.</dd></dl>
 <dl class="section user"><dt></dt><dd>The speed term is constructed as the Danielsson distance transform of the Canny edge image, as calculated by the <a class="el" href="classitk_1_1simple_1_1CannyEdgeDetectionImageFilter.html" title="This filter is an implementation of a Canny edge detector for scalar-valued images.">CannyEdgeDetectionImageFilter</a> . This scalar speed can be tuned in and out of the final evolution equation by setting the PropagationScaling parameter (a value of 0 removes the speed term).</dd></dl>
-<dl class="section user"><dt></dt><dd>The advection field term is constructed by minimizing Danielsson distance squared. i.e. <img class="formulaInl" alt="$ \mbox{min} \int D^2 \Rightarrow D \nabla D $" src="form_30.png"/> . This term moves the level set down the gradient of the distance transform.</dd></dl>
+<dl class="section user"><dt></dt><dd>The advection field term is constructed by minimizing Danielsson distance squared. i.e. <img class="formulaInl" alt="$ \mbox{min} \int D^2 \Rightarrow D \nabla D $" src="form_29.png"/> . This term moves the level set down the gradient of the distance transform.</dd></dl>
 <dl class="section user"><dt></dt><dd>In practice, you may set the speed (propagation) term to zero if your initialization is already close to the edge you are interested in. If you are trying to segment a region by seeding with a small surface (blob, sphere) then you will likely want to add speed (propagation) to the equation so that the levelsets can expand along zero gradients. The relative influence of these two terms are controlled by the SetPropagationScaling and SetAdvectionScaling parameters.</dd></dl>
 <dl class="section user"><dt>INPUTS</dt><dd>This filter requires two inputs. The first input is a seed image. This seed image must contain an isosurface that you want to use as the seed for your segmentation. It can be a binary, graylevel, or floating point image. The only requirement is that it contain a closed isosurface that you will identify as the seed by setting the IsosurfaceValue parameter of the filter. For a binary image you will want to set your isosurface value halfway between your on and off values (i.e. for 0's and 1's, use an isosurface value of 0.5).</dd></dl>
 <dl class="section user"><dt></dt><dd>The second input is the feature image. This is the image from which the speed function will be calculated. For most applications, this is the image that you want to segment. The desired isosurface in your seed image should lie within the region of your feature image that you are trying to segment.</dd></dl>
 <dl class="section user"><dt></dt><dd>See <a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1SegmentationLevelSetImageFilter.html">SegmentationLevelSetImageFilter</a> for more information on Inputs.</dd></dl>
-<dl class="section user"><dt>OUTPUTS</dt><dd>The filter outputs a single, scalar, real-valued image. Positive *values in the output image are inside the segmentated region and negative *values in the image are outside of the inside region. The zero crossings of *the image correspond to the position of the level set front.</dd></dl>
+<dl class="section user"><dt>OUTPUTS</dt><dd>The filter outputs a single, scalar, real-valued image. Positive *values in the output image are inside the segmented region and negative *values in the image are outside of the inside region. The zero crossings of *the image correspond to the position of the level set front.</dd></dl>
 <dl class="section user"><dt></dt><dd>See <a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1SparseFieldLevelSetImageFilter.html">SparseFieldLevelSetImageFilter</a> and <a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1SegmentationLevelSetImageFilter.html">SegmentationLevelSetImageFilter</a> for more information.</dd></dl>
 <dl class="section user"><dt>PARAMETERS</dt><dd>There are five parameters important for controlling the behavior of this filter.</dd></dl>
 <dl class="section user"><dt></dt><dd>(1) Threshold. Sets the thresholding value of the Canny edge detection. See <a class="el" href="classitk_1_1simple_1_1CannyEdgeDetectionImageFilter.html" title="This filter is an implementation of a Canny edge detector for scalar-valued images.">CannyEdgeDetectionImageFilter</a> for more information.</dd></dl>
@@ -396,7 +396,7 @@ Additional Inherited Members</h2></td></tr>
 <dd>
 <a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1CannySegmentationLevelSetImageFilter.html">itk::CannySegmentationLevelSetImageFilter</a> for the Doxygen on the original ITK class. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="sitkCannySegmentationLevelSetImageFilter_8h_source.html#l00097">97</a> of file <a class="el" href="sitkCannySegmentationLevelSetImageFilter_8h_source.html">sitkCannySegmentationLevelSetImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkCannySegmentationLevelSetImageFilter_8h_source.html#l00116">116</a> of file <a class="el" href="sitkCannySegmentationLevelSetImageFilter_8h_source.html">sitkCannySegmentationLevelSetImageFilter.h</a>.</p>
 </div><h2 class="groupheader">Member Typedef Documentation</h2>
 <a id="a6bdd985e3b67a1c7d45fcb9e9802d2f4"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a6bdd985e3b67a1c7d45fcb9e9802d2f4">&#9670;&nbsp;</a></span>MemberFunctionType</h2>
@@ -419,7 +419,7 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 <p>Setup for member function dispatching </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkCannySegmentationLevelSetImageFilter_8h_source.html#l00234">234</a> of file <a class="el" href="sitkCannySegmentationLevelSetImageFilter_8h_source.html">sitkCannySegmentationLevelSetImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkCannySegmentationLevelSetImageFilter_8h_source.html#l00253">253</a> of file <a class="el" href="sitkCannySegmentationLevelSetImageFilter_8h_source.html">sitkCannySegmentationLevelSetImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -436,7 +436,7 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 <p>Define the pixels types supported by this filter </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkCannySegmentationLevelSetImageFilter_8h_source.html#l00109">109</a> of file <a class="el" href="sitkCannySegmentationLevelSetImageFilter_8h_source.html">sitkCannySegmentationLevelSetImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkCannySegmentationLevelSetImageFilter_8h_source.html#l00128">128</a> of file <a class="el" href="sitkCannySegmentationLevelSetImageFilter_8h_source.html">sitkCannySegmentationLevelSetImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -452,7 +452,7 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkCannySegmentationLevelSetImageFilter_8h_source.html#l00099">99</a> of file <a class="el" href="sitkCannySegmentationLevelSetImageFilter_8h_source.html">sitkCannySegmentationLevelSetImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkCannySegmentationLevelSetImageFilter_8h_source.html#l00118">118</a> of file <a class="el" href="sitkCannySegmentationLevelSetImageFilter_8h_source.html">sitkCannySegmentationLevelSetImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -675,7 +675,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkCannySegmentationLevelSetImageFilter_8h_source.html#l00163">163</a> of file <a class="el" href="sitkCannySegmentationLevelSetImageFilter_8h_source.html">sitkCannySegmentationLevelSetImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkCannySegmentationLevelSetImageFilter_8h_source.html#l00182">182</a> of file <a class="el" href="sitkCannySegmentationLevelSetImageFilter_8h_source.html">sitkCannySegmentationLevelSetImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -704,7 +704,7 @@ template&lt;class TImageType &gt; </div>
 <p>Get the Canny image that was used to create the speed and advection images</p>
 <p>This is a measurement. Its value is updated in the Execute methods, so the value will only be valid after an execution. </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkCannySegmentationLevelSetImageFilter_8h_source.html#l00214">214</a> of file <a class="el" href="sitkCannySegmentationLevelSetImageFilter_8h_source.html">sitkCannySegmentationLevelSetImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkCannySegmentationLevelSetImageFilter_8h_source.html#l00233">233</a> of file <a class="el" href="sitkCannySegmentationLevelSetImageFilter_8h_source.html">sitkCannySegmentationLevelSetImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -731,7 +731,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkCannySegmentationLevelSetImageFilter_8h_source.html#l00155">155</a> of file <a class="el" href="sitkCannySegmentationLevelSetImageFilter_8h_source.html">sitkCannySegmentationLevelSetImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkCannySegmentationLevelSetImageFilter_8h_source.html#l00174">174</a> of file <a class="el" href="sitkCannySegmentationLevelSetImageFilter_8h_source.html">sitkCannySegmentationLevelSetImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -761,7 +761,7 @@ template&lt;class TImageType &gt; </div>
 <p>Number of iterations run. </p>
 <p>This is a measurement. Its value is updated in the Execute methods, so the value will only be valid after an execution. </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkCannySegmentationLevelSetImageFilter_8h_source.html#l00198">198</a> of file <a class="el" href="sitkCannySegmentationLevelSetImageFilter_8h_source.html">sitkCannySegmentationLevelSetImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkCannySegmentationLevelSetImageFilter_8h_source.html#l00217">217</a> of file <a class="el" href="sitkCannySegmentationLevelSetImageFilter_8h_source.html">sitkCannySegmentationLevelSetImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -788,7 +788,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkCannySegmentationLevelSetImageFilter_8h_source.html#l00191">191</a> of file <a class="el" href="sitkCannySegmentationLevelSetImageFilter_8h_source.html">sitkCannySegmentationLevelSetImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkCannySegmentationLevelSetImageFilter_8h_source.html#l00210">210</a> of file <a class="el" href="sitkCannySegmentationLevelSetImageFilter_8h_source.html">sitkCannySegmentationLevelSetImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -815,7 +815,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkCannySegmentationLevelSetImageFilter_8h_source.html#l00139">139</a> of file <a class="el" href="sitkCannySegmentationLevelSetImageFilter_8h_source.html">sitkCannySegmentationLevelSetImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkCannySegmentationLevelSetImageFilter_8h_source.html#l00158">158</a> of file <a class="el" href="sitkCannySegmentationLevelSetImageFilter_8h_source.html">sitkCannySegmentationLevelSetImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -845,7 +845,7 @@ template&lt;class TImageType &gt; </div>
 
 <p>Implements <a class="el" href="classitk_1_1simple_1_1ProcessObject.html#ac8ab837a83ee6ad83c2e2e71b1e98386">itk::simple::ProcessObject</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="sitkCannySegmentationLevelSetImageFilter_8h_source.html#l00217">217</a> of file <a class="el" href="sitkCannySegmentationLevelSetImageFilter_8h_source.html">sitkCannySegmentationLevelSetImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkCannySegmentationLevelSetImageFilter_8h_source.html#l00236">236</a> of file <a class="el" href="sitkCannySegmentationLevelSetImageFilter_8h_source.html">sitkCannySegmentationLevelSetImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -872,7 +872,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkCannySegmentationLevelSetImageFilter_8h_source.html#l00171">171</a> of file <a class="el" href="sitkCannySegmentationLevelSetImageFilter_8h_source.html">sitkCannySegmentationLevelSetImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkCannySegmentationLevelSetImageFilter_8h_source.html#l00190">190</a> of file <a class="el" href="sitkCannySegmentationLevelSetImageFilter_8h_source.html">sitkCannySegmentationLevelSetImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -899,7 +899,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkCannySegmentationLevelSetImageFilter_8h_source.html#l00147">147</a> of file <a class="el" href="sitkCannySegmentationLevelSetImageFilter_8h_source.html">sitkCannySegmentationLevelSetImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkCannySegmentationLevelSetImageFilter_8h_source.html#l00166">166</a> of file <a class="el" href="sitkCannySegmentationLevelSetImageFilter_8h_source.html">sitkCannySegmentationLevelSetImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -926,7 +926,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkCannySegmentationLevelSetImageFilter_8h_source.html#l00183">183</a> of file <a class="el" href="sitkCannySegmentationLevelSetImageFilter_8h_source.html">sitkCannySegmentationLevelSetImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkCannySegmentationLevelSetImageFilter_8h_source.html#l00202">202</a> of file <a class="el" href="sitkCannySegmentationLevelSetImageFilter_8h_source.html">sitkCannySegmentationLevelSetImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -956,7 +956,7 @@ template&lt;class TImageType &gt; </div>
 <p>The Root Mean Square of the levelset upon termination. </p>
 <p>This is a measurement. Its value is updated in the Execute methods, so the value will only be valid after an execution. </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkCannySegmentationLevelSetImageFilter_8h_source.html#l00206">206</a> of file <a class="el" href="sitkCannySegmentationLevelSetImageFilter_8h_source.html">sitkCannySegmentationLevelSetImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkCannySegmentationLevelSetImageFilter_8h_source.html#l00225">225</a> of file <a class="el" href="sitkCannySegmentationLevelSetImageFilter_8h_source.html">sitkCannySegmentationLevelSetImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -984,7 +984,7 @@ template&lt;class TImageType &gt; </div>
 </div><div class="memdoc">
 <p>Set the Threshold parameter of the <a class="el" href="classitk_1_1simple_1_1CannyEdgeDetectionImageFilter.html" title="This filter is an implementation of a Canny edge detector for scalar-valued images.">CannyEdgeDetectionImageFilter</a> used by the underlying level set function. </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkCannySegmentationLevelSetImageFilter_8h_source.html#l00121">121</a> of file <a class="el" href="sitkCannySegmentationLevelSetImageFilter_8h_source.html">sitkCannySegmentationLevelSetImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkCannySegmentationLevelSetImageFilter_8h_source.html#l00140">140</a> of file <a class="el" href="sitkCannySegmentationLevelSetImageFilter_8h_source.html">sitkCannySegmentationLevelSetImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -1012,7 +1012,7 @@ template&lt;class TImageType &gt; </div>
 </div><div class="memdoc">
 <p>Set the Variance parameter of the <a class="el" href="classitk_1_1simple_1_1CannyEdgeDetectionImageFilter.html" title="This filter is an implementation of a Canny edge detector for scalar-valued images.">CannyEdgeDetectionImageFilter</a> used by the underlying level set function. </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkCannySegmentationLevelSetImageFilter_8h_source.html#l00131">131</a> of file <a class="el" href="sitkCannySegmentationLevelSetImageFilter_8h_source.html">sitkCannySegmentationLevelSetImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkCannySegmentationLevelSetImageFilter_8h_source.html#l00150">150</a> of file <a class="el" href="sitkCannySegmentationLevelSetImageFilter_8h_source.html">sitkCannySegmentationLevelSetImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -1039,7 +1039,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkCannySegmentationLevelSetImageFilter_8h_source.html#l00179">179</a> of file <a class="el" href="sitkCannySegmentationLevelSetImageFilter_8h_source.html">sitkCannySegmentationLevelSetImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkCannySegmentationLevelSetImageFilter_8h_source.html#l00198">198</a> of file <a class="el" href="sitkCannySegmentationLevelSetImageFilter_8h_source.html">sitkCannySegmentationLevelSetImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -1067,7 +1067,7 @@ template&lt;class TImageType &gt; </div>
 </div><div class="memdoc">
 <p>Set the value of ReverseExpansionDirection to true or false respectfully. </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkCannySegmentationLevelSetImageFilter_8h_source.html#l00178">178</a> of file <a class="el" href="sitkCannySegmentationLevelSetImageFilter_8h_source.html">sitkCannySegmentationLevelSetImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkCannySegmentationLevelSetImageFilter_8h_source.html#l00197">197</a> of file <a class="el" href="sitkCannySegmentationLevelSetImageFilter_8h_source.html">sitkCannySegmentationLevelSetImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -1095,7 +1095,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkCannySegmentationLevelSetImageFilter_8h_source.html#l00159">159</a> of file <a class="el" href="sitkCannySegmentationLevelSetImageFilter_8h_source.html">sitkCannySegmentationLevelSetImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkCannySegmentationLevelSetImageFilter_8h_source.html#l00178">178</a> of file <a class="el" href="sitkCannySegmentationLevelSetImageFilter_8h_source.html">sitkCannySegmentationLevelSetImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -1123,7 +1123,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkCannySegmentationLevelSetImageFilter_8h_source.html#l00151">151</a> of file <a class="el" href="sitkCannySegmentationLevelSetImageFilter_8h_source.html">sitkCannySegmentationLevelSetImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkCannySegmentationLevelSetImageFilter_8h_source.html#l00170">170</a> of file <a class="el" href="sitkCannySegmentationLevelSetImageFilter_8h_source.html">sitkCannySegmentationLevelSetImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -1151,7 +1151,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkCannySegmentationLevelSetImageFilter_8h_source.html#l00187">187</a> of file <a class="el" href="sitkCannySegmentationLevelSetImageFilter_8h_source.html">sitkCannySegmentationLevelSetImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkCannySegmentationLevelSetImageFilter_8h_source.html#l00206">206</a> of file <a class="el" href="sitkCannySegmentationLevelSetImageFilter_8h_source.html">sitkCannySegmentationLevelSetImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -1179,7 +1179,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkCannySegmentationLevelSetImageFilter_8h_source.html#l00135">135</a> of file <a class="el" href="sitkCannySegmentationLevelSetImageFilter_8h_source.html">sitkCannySegmentationLevelSetImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkCannySegmentationLevelSetImageFilter_8h_source.html#l00154">154</a> of file <a class="el" href="sitkCannySegmentationLevelSetImageFilter_8h_source.html">sitkCannySegmentationLevelSetImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -1207,7 +1207,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkCannySegmentationLevelSetImageFilter_8h_source.html#l00167">167</a> of file <a class="el" href="sitkCannySegmentationLevelSetImageFilter_8h_source.html">sitkCannySegmentationLevelSetImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkCannySegmentationLevelSetImageFilter_8h_source.html#l00186">186</a> of file <a class="el" href="sitkCannySegmentationLevelSetImageFilter_8h_source.html">sitkCannySegmentationLevelSetImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -1235,7 +1235,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkCannySegmentationLevelSetImageFilter_8h_source.html#l00143">143</a> of file <a class="el" href="sitkCannySegmentationLevelSetImageFilter_8h_source.html">sitkCannySegmentationLevelSetImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkCannySegmentationLevelSetImageFilter_8h_source.html#l00162">162</a> of file <a class="el" href="sitkCannySegmentationLevelSetImageFilter_8h_source.html">sitkCannySegmentationLevelSetImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -1263,7 +1263,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkCannySegmentationLevelSetImageFilter_8h_source.html#l00175">175</a> of file <a class="el" href="sitkCannySegmentationLevelSetImageFilter_8h_source.html">sitkCannySegmentationLevelSetImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkCannySegmentationLevelSetImageFilter_8h_source.html#l00194">194</a> of file <a class="el" href="sitkCannySegmentationLevelSetImageFilter_8h_source.html">sitkCannySegmentationLevelSetImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -1292,7 +1292,7 @@ template&lt;class TImageType &gt; </div>
 </div><div class="memdoc">
 <p>Set the Threshold parameter of the <a class="el" href="classitk_1_1simple_1_1CannyEdgeDetectionImageFilter.html" title="This filter is an implementation of a Canny edge detector for scalar-valued images.">CannyEdgeDetectionImageFilter</a> used by the underlying level set function. </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkCannySegmentationLevelSetImageFilter_8h_source.html#l00116">116</a> of file <a class="el" href="sitkCannySegmentationLevelSetImageFilter_8h_source.html">sitkCannySegmentationLevelSetImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkCannySegmentationLevelSetImageFilter_8h_source.html#l00135">135</a> of file <a class="el" href="sitkCannySegmentationLevelSetImageFilter_8h_source.html">sitkCannySegmentationLevelSetImageFilter.h</a>.</p>
 
 <p class="reference">References <a class="el" href="namespaceitk_1_1simple.html#aa8480665475f1763a34f69cd76ac699b">itk::simple::Threshold()</a>.</p>
 
@@ -1323,7 +1323,7 @@ template&lt;class TImageType &gt; </div>
 </div><div class="memdoc">
 <p>Set the Variance parameter of the <a class="el" href="classitk_1_1simple_1_1CannyEdgeDetectionImageFilter.html" title="This filter is an implementation of a Canny edge detector for scalar-valued images.">CannyEdgeDetectionImageFilter</a> used by the underlying level set function. </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkCannySegmentationLevelSetImageFilter_8h_source.html#l00126">126</a> of file <a class="el" href="sitkCannySegmentationLevelSetImageFilter_8h_source.html">sitkCannySegmentationLevelSetImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkCannySegmentationLevelSetImageFilter_8h_source.html#l00145">145</a> of file <a class="el" href="sitkCannySegmentationLevelSetImageFilter_8h_source.html">sitkCannySegmentationLevelSetImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -1376,7 +1376,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkCannySegmentationLevelSetImageFilter_8h_source.html#l00238">238</a> of file <a class="el" href="sitkCannySegmentationLevelSetImageFilter_8h_source.html">sitkCannySegmentationLevelSetImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkCannySegmentationLevelSetImageFilter_8h_source.html#l00257">257</a> of file <a class="el" href="sitkCannySegmentationLevelSetImageFilter_8h_source.html">sitkCannySegmentationLevelSetImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -1401,7 +1401,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkCannySegmentationLevelSetImageFilter_8h_source.html#l00252">252</a> of file <a class="el" href="sitkCannySegmentationLevelSetImageFilter_8h_source.html">sitkCannySegmentationLevelSetImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkCannySegmentationLevelSetImageFilter_8h_source.html#l00271">271</a> of file <a class="el" href="sitkCannySegmentationLevelSetImageFilter_8h_source.html">sitkCannySegmentationLevelSetImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -1425,7 +1425,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkCannySegmentationLevelSetImageFilter_8h_source.html#l00264">264</a> of file <a class="el" href="sitkCannySegmentationLevelSetImageFilter_8h_source.html">sitkCannySegmentationLevelSetImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkCannySegmentationLevelSetImageFilter_8h_source.html#l00283">283</a> of file <a class="el" href="sitkCannySegmentationLevelSetImageFilter_8h_source.html">sitkCannySegmentationLevelSetImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -1449,7 +1449,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkCannySegmentationLevelSetImageFilter_8h_source.html#l00250">250</a> of file <a class="el" href="sitkCannySegmentationLevelSetImageFilter_8h_source.html">sitkCannySegmentationLevelSetImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkCannySegmentationLevelSetImageFilter_8h_source.html#l00269">269</a> of file <a class="el" href="sitkCannySegmentationLevelSetImageFilter_8h_source.html">sitkCannySegmentationLevelSetImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -1473,7 +1473,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkCannySegmentationLevelSetImageFilter_8h_source.html#l00260">260</a> of file <a class="el" href="sitkCannySegmentationLevelSetImageFilter_8h_source.html">sitkCannySegmentationLevelSetImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkCannySegmentationLevelSetImageFilter_8h_source.html#l00279">279</a> of file <a class="el" href="sitkCannySegmentationLevelSetImageFilter_8h_source.html">sitkCannySegmentationLevelSetImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -1497,7 +1497,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkCannySegmentationLevelSetImageFilter_8h_source.html#l00258">258</a> of file <a class="el" href="sitkCannySegmentationLevelSetImageFilter_8h_source.html">sitkCannySegmentationLevelSetImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkCannySegmentationLevelSetImageFilter_8h_source.html#l00277">277</a> of file <a class="el" href="sitkCannySegmentationLevelSetImageFilter_8h_source.html">sitkCannySegmentationLevelSetImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -1521,7 +1521,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkCannySegmentationLevelSetImageFilter_8h_source.html#l00246">246</a> of file <a class="el" href="sitkCannySegmentationLevelSetImageFilter_8h_source.html">sitkCannySegmentationLevelSetImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkCannySegmentationLevelSetImageFilter_8h_source.html#l00265">265</a> of file <a class="el" href="sitkCannySegmentationLevelSetImageFilter_8h_source.html">sitkCannySegmentationLevelSetImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -1545,7 +1545,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkCannySegmentationLevelSetImageFilter_8h_source.html#l00240">240</a> of file <a class="el" href="sitkCannySegmentationLevelSetImageFilter_8h_source.html">sitkCannySegmentationLevelSetImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkCannySegmentationLevelSetImageFilter_8h_source.html#l00259">259</a> of file <a class="el" href="sitkCannySegmentationLevelSetImageFilter_8h_source.html">sitkCannySegmentationLevelSetImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -1569,7 +1569,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkCannySegmentationLevelSetImageFilter_8h_source.html#l00254">254</a> of file <a class="el" href="sitkCannySegmentationLevelSetImageFilter_8h_source.html">sitkCannySegmentationLevelSetImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkCannySegmentationLevelSetImageFilter_8h_source.html#l00273">273</a> of file <a class="el" href="sitkCannySegmentationLevelSetImageFilter_8h_source.html">sitkCannySegmentationLevelSetImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -1593,7 +1593,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkCannySegmentationLevelSetImageFilter_8h_source.html#l00248">248</a> of file <a class="el" href="sitkCannySegmentationLevelSetImageFilter_8h_source.html">sitkCannySegmentationLevelSetImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkCannySegmentationLevelSetImageFilter_8h_source.html#l00267">267</a> of file <a class="el" href="sitkCannySegmentationLevelSetImageFilter_8h_source.html">sitkCannySegmentationLevelSetImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -1617,7 +1617,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkCannySegmentationLevelSetImageFilter_8h_source.html#l00256">256</a> of file <a class="el" href="sitkCannySegmentationLevelSetImageFilter_8h_source.html">sitkCannySegmentationLevelSetImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkCannySegmentationLevelSetImageFilter_8h_source.html#l00275">275</a> of file <a class="el" href="sitkCannySegmentationLevelSetImageFilter_8h_source.html">sitkCannySegmentationLevelSetImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -1641,7 +1641,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkCannySegmentationLevelSetImageFilter_8h_source.html#l00262">262</a> of file <a class="el" href="sitkCannySegmentationLevelSetImageFilter_8h_source.html">sitkCannySegmentationLevelSetImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkCannySegmentationLevelSetImageFilter_8h_source.html#l00281">281</a> of file <a class="el" href="sitkCannySegmentationLevelSetImageFilter_8h_source.html">sitkCannySegmentationLevelSetImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -1665,7 +1665,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkCannySegmentationLevelSetImageFilter_8h_source.html#l00243">243</a> of file <a class="el" href="sitkCannySegmentationLevelSetImageFilter_8h_source.html">sitkCannySegmentationLevelSetImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkCannySegmentationLevelSetImageFilter_8h_source.html#l00262">262</a> of file <a class="el" href="sitkCannySegmentationLevelSetImageFilter_8h_source.html">sitkCannySegmentationLevelSetImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -1689,7 +1689,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkCannySegmentationLevelSetImageFilter_8h_source.html#l00244">244</a> of file <a class="el" href="sitkCannySegmentationLevelSetImageFilter_8h_source.html">sitkCannySegmentationLevelSetImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkCannySegmentationLevelSetImageFilter_8h_source.html#l00263">263</a> of file <a class="el" href="sitkCannySegmentationLevelSetImageFilter_8h_source.html">sitkCannySegmentationLevelSetImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -1699,7 +1699,7 @@ template&lt;class TImageType &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Mar 7 2020 03:21:27 for SimpleITK by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Mar 10 2020 03:49:18 for SimpleITK by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

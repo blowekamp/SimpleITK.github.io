@@ -19,7 +19,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">SimpleITK
-   &#160;<span id="projectnumber">2.0.0.dev127</span>
+   &#160;<span id="projectnumber">2.0.0rc1</span>
    </div>
   </td>
  </tr>
@@ -323,13 +323,15 @@ Additional Inherited Members</h2></td></tr>
 <div class="textblock"><p>Implements pixel-wise generic operation of two images, or of an image and a constant. </p>
 <p>This class is parameterized over the types of the two input images and the type of the output image. It is also parameterized by the operation to be applied. A <a class="elRef" href="https://www.itk.org/Doxygen/html/namespaceitk_1_1Functor.html">Functor</a> style is used.</p>
 <p>The constant must be of the same type than the pixel type of the corresponding image. It is wrapped in a <a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1SimpleDataObjectDecorator.html">SimpleDataObjectDecorator</a> so it can be updated through the pipeline. The SetConstant() and GetConstant() methods are provided as shortcuts to set or get the constant value without manipulating the decorator.</p>
-<dl class="section see"><dt>See also</dt><dd><a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1UnaryFunctorImageFilter.html">UnaryFunctorImageFilter</a> <a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1TernaryFunctorImageFilter.html">TernaryFunctorImageFilter</a> </dd>
+<dl class="section see"><dt>See also</dt><dd>BinaryGeneratorImagFilter</dd>
+<dd>
+<a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1UnaryFunctorImageFilter.html">UnaryFunctorImageFilter</a> <a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1TernaryFunctorImageFilter.html">TernaryFunctorImageFilter</a> </dd>
 <dd>
 <a class="el" href="namespaceitk_1_1simple.html#ad5783efaa48cb729f9ad4732435c33b3" title="Implements pixel-wise generic operation of two images, or of an image and a constant.">itk::simple::DivideReal</a> for the procedural interface </dd>
 <dd>
 <a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1BinaryFunctorImageFilter.html">itk::BinaryFunctorImageFilter</a> for the Doxygen on the original ITK class. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="sitkDivideRealImageFilter_8h_source.html#l00046">46</a> of file <a class="el" href="sitkDivideRealImageFilter_8h_source.html">sitkDivideRealImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkDivideRealImageFilter_8h_source.html#l00049">49</a> of file <a class="el" href="sitkDivideRealImageFilter_8h_source.html">sitkDivideRealImageFilter.h</a>.</p>
 </div><h2 class="groupheader">Member Typedef Documentation</h2>
 <a id="a0017d9169db5e7efb58cad3bd58aeb4b"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a0017d9169db5e7efb58cad3bd58aeb4b">&#9670;&nbsp;</a></span>MemberFunction1Type</h2>
@@ -351,7 +353,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkDivideRealImageFilter_8h_source.html#l00088">88</a> of file <a class="el" href="sitkDivideRealImageFilter_8h_source.html">sitkDivideRealImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkDivideRealImageFilter_8h_source.html#l00091">91</a> of file <a class="el" href="sitkDivideRealImageFilter_8h_source.html">sitkDivideRealImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -375,7 +377,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkDivideRealImageFilter_8h_source.html#l00093">93</a> of file <a class="el" href="sitkDivideRealImageFilter_8h_source.html">sitkDivideRealImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkDivideRealImageFilter_8h_source.html#l00096">96</a> of file <a class="el" href="sitkDivideRealImageFilter_8h_source.html">sitkDivideRealImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -400,7 +402,7 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 <p>Setup for member function dispatching </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkDivideRealImageFilter_8h_source.html#l00081">81</a> of file <a class="el" href="sitkDivideRealImageFilter_8h_source.html">sitkDivideRealImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkDivideRealImageFilter_8h_source.html#l00084">84</a> of file <a class="el" href="sitkDivideRealImageFilter_8h_source.html">sitkDivideRealImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -417,7 +419,7 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 <p>Define the pixels types supported by this filter </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkDivideRealImageFilter_8h_source.html#l00058">58</a> of file <a class="el" href="sitkDivideRealImageFilter_8h_source.html">sitkDivideRealImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkDivideRealImageFilter_8h_source.html#l00061">61</a> of file <a class="el" href="sitkDivideRealImageFilter_8h_source.html">sitkDivideRealImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -433,7 +435,7 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkDivideRealImageFilter_8h_source.html#l00048">48</a> of file <a class="el" href="sitkDivideRealImageFilter_8h_source.html">sitkDivideRealImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkDivideRealImageFilter_8h_source.html#l00051">51</a> of file <a class="el" href="sitkDivideRealImageFilter_8h_source.html">sitkDivideRealImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -709,7 +711,7 @@ template&lt;class TImageType &gt; </div>
 
 <p>Implements <a class="el" href="classitk_1_1simple_1_1ProcessObject.html#ac8ab837a83ee6ad83c2e2e71b1e98386">itk::simple::ProcessObject</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="sitkDivideRealImageFilter_8h_source.html#l00062">62</a> of file <a class="el" href="sitkDivideRealImageFilter_8h_source.html">sitkDivideRealImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkDivideRealImageFilter_8h_source.html#l00065">65</a> of file <a class="el" href="sitkDivideRealImageFilter_8h_source.html">sitkDivideRealImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -762,7 +764,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkDivideRealImageFilter_8h_source.html#l00090">90</a> of file <a class="el" href="sitkDivideRealImageFilter_8h_source.html">sitkDivideRealImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkDivideRealImageFilter_8h_source.html#l00093">93</a> of file <a class="el" href="sitkDivideRealImageFilter_8h_source.html">sitkDivideRealImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -786,7 +788,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkDivideRealImageFilter_8h_source.html#l00095">95</a> of file <a class="el" href="sitkDivideRealImageFilter_8h_source.html">sitkDivideRealImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkDivideRealImageFilter_8h_source.html#l00098">98</a> of file <a class="el" href="sitkDivideRealImageFilter_8h_source.html">sitkDivideRealImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -810,7 +812,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkDivideRealImageFilter_8h_source.html#l00085">85</a> of file <a class="el" href="sitkDivideRealImageFilter_8h_source.html">sitkDivideRealImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkDivideRealImageFilter_8h_source.html#l00088">88</a> of file <a class="el" href="sitkDivideRealImageFilter_8h_source.html">sitkDivideRealImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -835,7 +837,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkDivideRealImageFilter_8h_source.html#l00087">87</a> of file <a class="el" href="sitkDivideRealImageFilter_8h_source.html">sitkDivideRealImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkDivideRealImageFilter_8h_source.html#l00090">90</a> of file <a class="el" href="sitkDivideRealImageFilter_8h_source.html">sitkDivideRealImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -859,7 +861,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkDivideRealImageFilter_8h_source.html#l00091">91</a> of file <a class="el" href="sitkDivideRealImageFilter_8h_source.html">sitkDivideRealImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkDivideRealImageFilter_8h_source.html#l00094">94</a> of file <a class="el" href="sitkDivideRealImageFilter_8h_source.html">sitkDivideRealImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -883,7 +885,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkDivideRealImageFilter_8h_source.html#l00096">96</a> of file <a class="el" href="sitkDivideRealImageFilter_8h_source.html">sitkDivideRealImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkDivideRealImageFilter_8h_source.html#l00099">99</a> of file <a class="el" href="sitkDivideRealImageFilter_8h_source.html">sitkDivideRealImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -893,7 +895,7 @@ template&lt;class TImageType &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Mar 7 2020 03:21:28 for SimpleITK by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Mar 10 2020 03:49:19 for SimpleITK by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

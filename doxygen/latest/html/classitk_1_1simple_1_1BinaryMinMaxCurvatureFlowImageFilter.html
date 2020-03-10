@@ -19,7 +19,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">SimpleITK
-   &#160;<span id="projectnumber">2.0.0.dev127</span>
+   &#160;<span id="projectnumber">2.0.0rc1</span>
    </div>
   </td>
  </tr>
@@ -319,13 +319,13 @@ Additional Inherited Members</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Denoise a binary image using min/max curvature flow. </p>
-<p><a class="el" href="classitk_1_1simple_1_1BinaryMinMaxCurvatureFlowImageFilter.html" title="Denoise a binary image using min/max curvature flow.">BinaryMinMaxCurvatureFlowImageFilter</a> implements a curvature driven image denosing algorithm. This filter assumes that the image is essentially binary: consisting of two classes. Iso-brightness contours in the input image are viewed as a level set. The level set is then evolved using a curvature-based speed function:</p>
+<p><a class="el" href="classitk_1_1simple_1_1BinaryMinMaxCurvatureFlowImageFilter.html" title="Denoise a binary image using min/max curvature flow.">BinaryMinMaxCurvatureFlowImageFilter</a> implements a curvature driven image denoising algorithm. This filter assumes that the image is essentially binary: consisting of two classes. Iso-brightness contours in the input image are viewed as a level set. The level set is then evolved using a curvature-based speed function:</p>
 <p class="formulaDsp">
 <img class="formulaDsp" alt="\[ I_t = F_{\mbox{minmax}} |\nabla I| \]" src="form_19.png"/>
 </p>
-<p>where <img class="formulaInl" alt="$ F_{\mbox{minmax}} = \min(\kappa,0) $" src="form_20.png"/> if <img class="formulaInl" alt="$ \mbox{Avg}_{\mbox{stencil}}(x) $" src="form_21.png"/> is less than or equal to <img class="formulaInl" alt="$ T_{thresold} $" src="form_22.png"/> and <img class="formulaInl" alt="$ \max(\kappa,0) $" src="form_23.png"/> , otherwise. <img class="formulaInl" alt="$ \kappa $" src="form_24.png"/> is the mean curvature of the iso-brightness contour at point <img class="formulaInl" alt="$ x $" src="form_25.png"/> .</p>
+<p>where <img class="formulaInl" alt="$ F_{\mbox{minmax}} = \min(\kappa,0) $" src="form_20.png"/> if <img class="formulaInl" alt="$ \mbox{Avg}_{\mbox{stencil}}(x) $" src="form_21.png"/> is less than or equal to <img class="formulaInl" alt="$ T_{threshold} $" src="form_22.png"/> and <img class="formulaInl" alt="$ \max(\kappa,0) $" src="form_23.png"/> , otherwise. <img class="formulaInl" alt="$ \kappa $" src="form_24.png"/> is the mean curvature of the iso-brightness contour at point <img class="formulaInl" alt="$ x $" src="form_25.png"/> .</p>
 <p>In min/max curvature flow, movement is turned on or off depending on the scale of the noise one wants to remove. Switching depends on the average image value of a region of radius <img class="formulaInl" alt="$ R $" src="form_26.png"/> around each point. The choice of <img class="formulaInl" alt="$ R $" src="form_26.png"/> , the stencil radius, governs the scale of the noise to be removed.</p>
-<p>The threshold value <img class="formulaInl" alt="$ T_{threshold} $" src="form_27.png"/> is a user specified value which discriminates between the two pixel classes.</p>
+<p>The threshold value <img class="formulaInl" alt="$ T_{threshold} $" src="form_22.png"/> is a user specified value which discriminates between the two pixel classes.</p>
 <p>This filter make use of the multi-threaded finite difference solver hierarchy. Updates are computed using a <a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1BinaryMinMaxCurvatureFlowFunction.html">BinaryMinMaxCurvatureFlowFunction</a> object. A zero flux Neumann boundary condition is used when computing derivatives near the data boundary.</p>
 <dl class="section warning"><dt>Warning</dt><dd>This filter assumes that the input and output types have the same dimensions. This filter also requires that the output image pixels are of a real type. This filter works for any dimensional images.</dd></dl>
 <p>Reference: "Level Set Methods and Fast Marching Methods", J.A. Sethian, Cambridge Press, Chapter 16, Second edition, 1999.</p>
@@ -339,7 +339,7 @@ Additional Inherited Members</h2></td></tr>
 <dd>
 <a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1BinaryMinMaxCurvatureFlowImageFilter.html">itk::BinaryMinMaxCurvatureFlowImageFilter</a> for the Doxygen on the original ITK class. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="sitkBinaryMinMaxCurvatureFlowImageFilter_8h_source.html#l00062">62</a> of file <a class="el" href="sitkBinaryMinMaxCurvatureFlowImageFilter_8h_source.html">sitkBinaryMinMaxCurvatureFlowImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkBinaryMinMaxCurvatureFlowImageFilter_8h_source.html#l00065">65</a> of file <a class="el" href="sitkBinaryMinMaxCurvatureFlowImageFilter_8h_source.html">sitkBinaryMinMaxCurvatureFlowImageFilter.h</a>.</p>
 </div><h2 class="groupheader">Member Typedef Documentation</h2>
 <a id="a6b5fa40a3472aa235064855d04cd4901"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a6b5fa40a3472aa235064855d04cd4901">&#9670;&nbsp;</a></span>MemberFunctionType</h2>
@@ -362,7 +362,7 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 <p>Setup for member function dispatching </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkBinaryMinMaxCurvatureFlowImageFilter_8h_source.html#l00129">129</a> of file <a class="el" href="sitkBinaryMinMaxCurvatureFlowImageFilter_8h_source.html">sitkBinaryMinMaxCurvatureFlowImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkBinaryMinMaxCurvatureFlowImageFilter_8h_source.html#l00132">132</a> of file <a class="el" href="sitkBinaryMinMaxCurvatureFlowImageFilter_8h_source.html">sitkBinaryMinMaxCurvatureFlowImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -379,7 +379,7 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 <p>Define the pixels types supported by this filter </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkBinaryMinMaxCurvatureFlowImageFilter_8h_source.html#l00074">74</a> of file <a class="el" href="sitkBinaryMinMaxCurvatureFlowImageFilter_8h_source.html">sitkBinaryMinMaxCurvatureFlowImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkBinaryMinMaxCurvatureFlowImageFilter_8h_source.html#l00077">77</a> of file <a class="el" href="sitkBinaryMinMaxCurvatureFlowImageFilter_8h_source.html">sitkBinaryMinMaxCurvatureFlowImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -395,7 +395,7 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkBinaryMinMaxCurvatureFlowImageFilter_8h_source.html#l00064">64</a> of file <a class="el" href="sitkBinaryMinMaxCurvatureFlowImageFilter_8h_source.html">sitkBinaryMinMaxCurvatureFlowImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkBinaryMinMaxCurvatureFlowImageFilter_8h_source.html#l00067">67</a> of file <a class="el" href="sitkBinaryMinMaxCurvatureFlowImageFilter_8h_source.html">sitkBinaryMinMaxCurvatureFlowImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -565,7 +565,7 @@ template&lt;class TImageType &gt; </div>
 
 <p>Implements <a class="el" href="classitk_1_1simple_1_1ProcessObject.html#ac8ab837a83ee6ad83c2e2e71b1e98386">itk::simple::ProcessObject</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="sitkBinaryMinMaxCurvatureFlowImageFilter_8h_source.html#l00112">112</a> of file <a class="el" href="sitkBinaryMinMaxCurvatureFlowImageFilter_8h_source.html">sitkBinaryMinMaxCurvatureFlowImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkBinaryMinMaxCurvatureFlowImageFilter_8h_source.html#l00115">115</a> of file <a class="el" href="sitkBinaryMinMaxCurvatureFlowImageFilter_8h_source.html">sitkBinaryMinMaxCurvatureFlowImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -592,7 +592,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkBinaryMinMaxCurvatureFlowImageFilter_8h_source.html#l00092">92</a> of file <a class="el" href="sitkBinaryMinMaxCurvatureFlowImageFilter_8h_source.html">sitkBinaryMinMaxCurvatureFlowImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkBinaryMinMaxCurvatureFlowImageFilter_8h_source.html#l00095">95</a> of file <a class="el" href="sitkBinaryMinMaxCurvatureFlowImageFilter_8h_source.html">sitkBinaryMinMaxCurvatureFlowImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -619,7 +619,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkBinaryMinMaxCurvatureFlowImageFilter_8h_source.html#l00100">100</a> of file <a class="el" href="sitkBinaryMinMaxCurvatureFlowImageFilter_8h_source.html">sitkBinaryMinMaxCurvatureFlowImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkBinaryMinMaxCurvatureFlowImageFilter_8h_source.html#l00103">103</a> of file <a class="el" href="sitkBinaryMinMaxCurvatureFlowImageFilter_8h_source.html">sitkBinaryMinMaxCurvatureFlowImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -647,7 +647,7 @@ template&lt;class TImageType &gt; </div>
 </div><div class="memdoc">
 <p>Set/Get the threshold value. </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkBinaryMinMaxCurvatureFlowImageFilter_8h_source.html#l00110">110</a> of file <a class="el" href="sitkBinaryMinMaxCurvatureFlowImageFilter_8h_source.html">sitkBinaryMinMaxCurvatureFlowImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkBinaryMinMaxCurvatureFlowImageFilter_8h_source.html#l00113">113</a> of file <a class="el" href="sitkBinaryMinMaxCurvatureFlowImageFilter_8h_source.html">sitkBinaryMinMaxCurvatureFlowImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -674,7 +674,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkBinaryMinMaxCurvatureFlowImageFilter_8h_source.html#l00084">84</a> of file <a class="el" href="sitkBinaryMinMaxCurvatureFlowImageFilter_8h_source.html">sitkBinaryMinMaxCurvatureFlowImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkBinaryMinMaxCurvatureFlowImageFilter_8h_source.html#l00087">87</a> of file <a class="el" href="sitkBinaryMinMaxCurvatureFlowImageFilter_8h_source.html">sitkBinaryMinMaxCurvatureFlowImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -702,7 +702,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkBinaryMinMaxCurvatureFlowImageFilter_8h_source.html#l00088">88</a> of file <a class="el" href="sitkBinaryMinMaxCurvatureFlowImageFilter_8h_source.html">sitkBinaryMinMaxCurvatureFlowImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkBinaryMinMaxCurvatureFlowImageFilter_8h_source.html#l00091">91</a> of file <a class="el" href="sitkBinaryMinMaxCurvatureFlowImageFilter_8h_source.html">sitkBinaryMinMaxCurvatureFlowImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -730,7 +730,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkBinaryMinMaxCurvatureFlowImageFilter_8h_source.html#l00096">96</a> of file <a class="el" href="sitkBinaryMinMaxCurvatureFlowImageFilter_8h_source.html">sitkBinaryMinMaxCurvatureFlowImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkBinaryMinMaxCurvatureFlowImageFilter_8h_source.html#l00099">99</a> of file <a class="el" href="sitkBinaryMinMaxCurvatureFlowImageFilter_8h_source.html">sitkBinaryMinMaxCurvatureFlowImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -759,7 +759,7 @@ template&lt;class TImageType &gt; </div>
 </div><div class="memdoc">
 <p>Set/Get the threshold value. </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkBinaryMinMaxCurvatureFlowImageFilter_8h_source.html#l00105">105</a> of file <a class="el" href="sitkBinaryMinMaxCurvatureFlowImageFilter_8h_source.html">sitkBinaryMinMaxCurvatureFlowImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkBinaryMinMaxCurvatureFlowImageFilter_8h_source.html#l00108">108</a> of file <a class="el" href="sitkBinaryMinMaxCurvatureFlowImageFilter_8h_source.html">sitkBinaryMinMaxCurvatureFlowImageFilter.h</a>.</p>
 
 <p class="reference">References <a class="el" href="namespaceitk_1_1simple.html#aa8480665475f1763a34f69cd76ac699b">itk::simple::Threshold()</a>.</p>
 
@@ -789,7 +789,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkBinaryMinMaxCurvatureFlowImageFilter_8h_source.html#l00080">80</a> of file <a class="el" href="sitkBinaryMinMaxCurvatureFlowImageFilter_8h_source.html">sitkBinaryMinMaxCurvatureFlowImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkBinaryMinMaxCurvatureFlowImageFilter_8h_source.html#l00083">83</a> of file <a class="el" href="sitkBinaryMinMaxCurvatureFlowImageFilter_8h_source.html">sitkBinaryMinMaxCurvatureFlowImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -842,7 +842,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkBinaryMinMaxCurvatureFlowImageFilter_8h_source.html#l00133">133</a> of file <a class="el" href="sitkBinaryMinMaxCurvatureFlowImageFilter_8h_source.html">sitkBinaryMinMaxCurvatureFlowImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkBinaryMinMaxCurvatureFlowImageFilter_8h_source.html#l00136">136</a> of file <a class="el" href="sitkBinaryMinMaxCurvatureFlowImageFilter_8h_source.html">sitkBinaryMinMaxCurvatureFlowImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -867,7 +867,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkBinaryMinMaxCurvatureFlowImageFilter_8h_source.html#l00135">135</a> of file <a class="el" href="sitkBinaryMinMaxCurvatureFlowImageFilter_8h_source.html">sitkBinaryMinMaxCurvatureFlowImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkBinaryMinMaxCurvatureFlowImageFilter_8h_source.html#l00138">138</a> of file <a class="el" href="sitkBinaryMinMaxCurvatureFlowImageFilter_8h_source.html">sitkBinaryMinMaxCurvatureFlowImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -891,7 +891,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkBinaryMinMaxCurvatureFlowImageFilter_8h_source.html#l00141">141</a> of file <a class="el" href="sitkBinaryMinMaxCurvatureFlowImageFilter_8h_source.html">sitkBinaryMinMaxCurvatureFlowImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkBinaryMinMaxCurvatureFlowImageFilter_8h_source.html#l00144">144</a> of file <a class="el" href="sitkBinaryMinMaxCurvatureFlowImageFilter_8h_source.html">sitkBinaryMinMaxCurvatureFlowImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -915,7 +915,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkBinaryMinMaxCurvatureFlowImageFilter_8h_source.html#l00142">142</a> of file <a class="el" href="sitkBinaryMinMaxCurvatureFlowImageFilter_8h_source.html">sitkBinaryMinMaxCurvatureFlowImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkBinaryMinMaxCurvatureFlowImageFilter_8h_source.html#l00145">145</a> of file <a class="el" href="sitkBinaryMinMaxCurvatureFlowImageFilter_8h_source.html">sitkBinaryMinMaxCurvatureFlowImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -939,7 +939,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkBinaryMinMaxCurvatureFlowImageFilter_8h_source.html#l00143">143</a> of file <a class="el" href="sitkBinaryMinMaxCurvatureFlowImageFilter_8h_source.html">sitkBinaryMinMaxCurvatureFlowImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkBinaryMinMaxCurvatureFlowImageFilter_8h_source.html#l00146">146</a> of file <a class="el" href="sitkBinaryMinMaxCurvatureFlowImageFilter_8h_source.html">sitkBinaryMinMaxCurvatureFlowImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -963,7 +963,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkBinaryMinMaxCurvatureFlowImageFilter_8h_source.html#l00139">139</a> of file <a class="el" href="sitkBinaryMinMaxCurvatureFlowImageFilter_8h_source.html">sitkBinaryMinMaxCurvatureFlowImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkBinaryMinMaxCurvatureFlowImageFilter_8h_source.html#l00142">142</a> of file <a class="el" href="sitkBinaryMinMaxCurvatureFlowImageFilter_8h_source.html">sitkBinaryMinMaxCurvatureFlowImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -973,7 +973,7 @@ template&lt;class TImageType &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Mar 7 2020 03:21:27 for SimpleITK by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Mar 10 2020 03:49:17 for SimpleITK by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

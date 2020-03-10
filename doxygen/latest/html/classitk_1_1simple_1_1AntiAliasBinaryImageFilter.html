@@ -19,7 +19,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">SimpleITK
-   &#160;<span id="projectnumber">2.0.0.dev127</span>
+   &#160;<span id="projectnumber">2.0.0rc1</span>
    </div>
   </td>
  </tr>
@@ -332,13 +332,13 @@ Volumes" IEEE Volume Visualization and Graphics Symposium, October 2000, pp.23-3
 <dl class="section user"><dt>INPUT</dt><dd>The input is an N-dimensional image of any type. It is assumed to be a binary image. The filter will use an isosurface value that is halfway between the min and max values in the image. A signed data type is not necessary for the input.</dd></dl>
 <dl class="section user"><dt>OUTPUT</dt><dd>The filter will output a level set image of real, signed values. The zero crossings of this (N-dimensional) image represent the position of the isosurface value of interest. Values outside the zero level set are negative and values inside the zero level set are positive values.</dd></dl>
 <dl class="section user"><dt>IMPORTANT!</dt><dd>The output image type you use to instantiate this filter should be a real valued scalar type. In other words: doubles or floats.</dd></dl>
-<dl class="section user"><dt>USING THIS FILTER</dt><dd>The filter is relatively straightforward to use. Tests and examples exist to illustrate. The important thing is to understand the input and output types so you can properly interperet your results.</dd></dl>
+<dl class="section user"><dt>USING THIS FILTER</dt><dd>The filter is relatively straightforward to use. Tests and examples exist to illustrate. The important thing is to understand the input and output types so you can properly interpret your results.</dd></dl>
 <dl class="section user"><dt></dt><dd>In the common case, the only parameter that will need to be set is the MaximumRMSChange parameter, which determines when the solver halts. </dd></dl>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="namespaceitk_1_1simple.html#ae284c4d282b0d1c37a7c3e35ea42447f" title="A method for estimation of a surface from a binary volume.">itk::simple::AntiAliasBinary</a> for the procedural interface </dd>
 <dd>
 <a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1AntiAliasBinaryImageFilter.html">itk::AntiAliasBinaryImageFilter</a> for the Doxygen on the original ITK class. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="sitkAntiAliasBinaryImageFilter_8h_source.html#l00080">80</a> of file <a class="el" href="sitkAntiAliasBinaryImageFilter_8h_source.html">sitkAntiAliasBinaryImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkAntiAliasBinaryImageFilter_8h_source.html#l00092">92</a> of file <a class="el" href="sitkAntiAliasBinaryImageFilter_8h_source.html">sitkAntiAliasBinaryImageFilter.h</a>.</p>
 </div><h2 class="groupheader">Member Typedef Documentation</h2>
 <a id="a3a0fd375737377ada440bbaba2cf04ae"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a3a0fd375737377ada440bbaba2cf04ae">&#9670;&nbsp;</a></span>MemberFunctionType</h2>
@@ -361,7 +361,7 @@ Volumes" IEEE Volume Visualization and Graphics Symposium, October 2000, pp.23-3
 </div><div class="memdoc">
 <p>Setup for member function dispatching </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkAntiAliasBinaryImageFilter_8h_source.html#l00145">145</a> of file <a class="el" href="sitkAntiAliasBinaryImageFilter_8h_source.html">sitkAntiAliasBinaryImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkAntiAliasBinaryImageFilter_8h_source.html#l00157">157</a> of file <a class="el" href="sitkAntiAliasBinaryImageFilter_8h_source.html">sitkAntiAliasBinaryImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -378,7 +378,7 @@ Volumes" IEEE Volume Visualization and Graphics Symposium, October 2000, pp.23-3
 </div><div class="memdoc">
 <p>Define the pixels types supported by this filter </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkAntiAliasBinaryImageFilter_8h_source.html#l00092">92</a> of file <a class="el" href="sitkAntiAliasBinaryImageFilter_8h_source.html">sitkAntiAliasBinaryImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkAntiAliasBinaryImageFilter_8h_source.html#l00104">104</a> of file <a class="el" href="sitkAntiAliasBinaryImageFilter_8h_source.html">sitkAntiAliasBinaryImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -394,7 +394,7 @@ Volumes" IEEE Volume Visualization and Graphics Symposium, October 2000, pp.23-3
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkAntiAliasBinaryImageFilter_8h_source.html#l00082">82</a> of file <a class="el" href="sitkAntiAliasBinaryImageFilter_8h_source.html">sitkAntiAliasBinaryImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkAntiAliasBinaryImageFilter_8h_source.html#l00094">94</a> of file <a class="el" href="sitkAntiAliasBinaryImageFilter_8h_source.html">sitkAntiAliasBinaryImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -552,7 +552,7 @@ template&lt;class TImageType &gt; </div>
 <p>Number of iterations run. </p>
 <p>This is a measurement. Its value is updated in the Execute methods, so the value will only be valid after an execution. </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkAntiAliasBinaryImageFilter_8h_source.html#l00117">117</a> of file <a class="el" href="sitkAntiAliasBinaryImageFilter_8h_source.html">sitkAntiAliasBinaryImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkAntiAliasBinaryImageFilter_8h_source.html#l00129">129</a> of file <a class="el" href="sitkAntiAliasBinaryImageFilter_8h_source.html">sitkAntiAliasBinaryImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -579,7 +579,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkAntiAliasBinaryImageFilter_8h_source.html#l00102">102</a> of file <a class="el" href="sitkAntiAliasBinaryImageFilter_8h_source.html">sitkAntiAliasBinaryImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkAntiAliasBinaryImageFilter_8h_source.html#l00114">114</a> of file <a class="el" href="sitkAntiAliasBinaryImageFilter_8h_source.html">sitkAntiAliasBinaryImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -609,7 +609,7 @@ template&lt;class TImageType &gt; </div>
 
 <p>Implements <a class="el" href="classitk_1_1simple_1_1ProcessObject.html#ac8ab837a83ee6ad83c2e2e71b1e98386">itk::simple::ProcessObject</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="sitkAntiAliasBinaryImageFilter_8h_source.html#l00128">128</a> of file <a class="el" href="sitkAntiAliasBinaryImageFilter_8h_source.html">sitkAntiAliasBinaryImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkAntiAliasBinaryImageFilter_8h_source.html#l00140">140</a> of file <a class="el" href="sitkAntiAliasBinaryImageFilter_8h_source.html">sitkAntiAliasBinaryImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -636,7 +636,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkAntiAliasBinaryImageFilter_8h_source.html#l00110">110</a> of file <a class="el" href="sitkAntiAliasBinaryImageFilter_8h_source.html">sitkAntiAliasBinaryImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkAntiAliasBinaryImageFilter_8h_source.html#l00122">122</a> of file <a class="el" href="sitkAntiAliasBinaryImageFilter_8h_source.html">sitkAntiAliasBinaryImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -666,7 +666,7 @@ template&lt;class TImageType &gt; </div>
 <p>The Root Mean Square of the levelset upon termination. </p>
 <p>This is a measurement. Its value is updated in the Execute methods, so the value will only be valid after an execution. </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkAntiAliasBinaryImageFilter_8h_source.html#l00125">125</a> of file <a class="el" href="sitkAntiAliasBinaryImageFilter_8h_source.html">sitkAntiAliasBinaryImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkAntiAliasBinaryImageFilter_8h_source.html#l00137">137</a> of file <a class="el" href="sitkAntiAliasBinaryImageFilter_8h_source.html">sitkAntiAliasBinaryImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -694,7 +694,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkAntiAliasBinaryImageFilter_8h_source.html#l00098">98</a> of file <a class="el" href="sitkAntiAliasBinaryImageFilter_8h_source.html">sitkAntiAliasBinaryImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkAntiAliasBinaryImageFilter_8h_source.html#l00110">110</a> of file <a class="el" href="sitkAntiAliasBinaryImageFilter_8h_source.html">sitkAntiAliasBinaryImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -722,7 +722,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkAntiAliasBinaryImageFilter_8h_source.html#l00106">106</a> of file <a class="el" href="sitkAntiAliasBinaryImageFilter_8h_source.html">sitkAntiAliasBinaryImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkAntiAliasBinaryImageFilter_8h_source.html#l00118">118</a> of file <a class="el" href="sitkAntiAliasBinaryImageFilter_8h_source.html">sitkAntiAliasBinaryImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -775,7 +775,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkAntiAliasBinaryImageFilter_8h_source.html#l00149">149</a> of file <a class="el" href="sitkAntiAliasBinaryImageFilter_8h_source.html">sitkAntiAliasBinaryImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkAntiAliasBinaryImageFilter_8h_source.html#l00161">161</a> of file <a class="el" href="sitkAntiAliasBinaryImageFilter_8h_source.html">sitkAntiAliasBinaryImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -800,7 +800,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkAntiAliasBinaryImageFilter_8h_source.html#l00159">159</a> of file <a class="el" href="sitkAntiAliasBinaryImageFilter_8h_source.html">sitkAntiAliasBinaryImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkAntiAliasBinaryImageFilter_8h_source.html#l00171">171</a> of file <a class="el" href="sitkAntiAliasBinaryImageFilter_8h_source.html">sitkAntiAliasBinaryImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -824,7 +824,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkAntiAliasBinaryImageFilter_8h_source.html#l00155">155</a> of file <a class="el" href="sitkAntiAliasBinaryImageFilter_8h_source.html">sitkAntiAliasBinaryImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkAntiAliasBinaryImageFilter_8h_source.html#l00167">167</a> of file <a class="el" href="sitkAntiAliasBinaryImageFilter_8h_source.html">sitkAntiAliasBinaryImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -848,7 +848,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkAntiAliasBinaryImageFilter_8h_source.html#l00151">151</a> of file <a class="el" href="sitkAntiAliasBinaryImageFilter_8h_source.html">sitkAntiAliasBinaryImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkAntiAliasBinaryImageFilter_8h_source.html#l00163">163</a> of file <a class="el" href="sitkAntiAliasBinaryImageFilter_8h_source.html">sitkAntiAliasBinaryImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -872,7 +872,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkAntiAliasBinaryImageFilter_8h_source.html#l00157">157</a> of file <a class="el" href="sitkAntiAliasBinaryImageFilter_8h_source.html">sitkAntiAliasBinaryImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkAntiAliasBinaryImageFilter_8h_source.html#l00169">169</a> of file <a class="el" href="sitkAntiAliasBinaryImageFilter_8h_source.html">sitkAntiAliasBinaryImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -896,7 +896,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkAntiAliasBinaryImageFilter_8h_source.html#l00161">161</a> of file <a class="el" href="sitkAntiAliasBinaryImageFilter_8h_source.html">sitkAntiAliasBinaryImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkAntiAliasBinaryImageFilter_8h_source.html#l00173">173</a> of file <a class="el" href="sitkAntiAliasBinaryImageFilter_8h_source.html">sitkAntiAliasBinaryImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -906,7 +906,7 @@ template&lt;class TImageType &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Mar 7 2020 03:21:26 for SimpleITK by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Mar 10 2020 03:49:16 for SimpleITK by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

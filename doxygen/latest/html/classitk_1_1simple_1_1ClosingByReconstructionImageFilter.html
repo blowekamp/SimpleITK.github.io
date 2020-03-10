@@ -19,7 +19,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">SimpleITK
-   &#160;<span id="projectnumber">2.0.0.dev127</span>
+   &#160;<span id="projectnumber">2.0.0rc1</span>
    </div>
   </td>
  </tr>
@@ -343,7 +343,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Closing by reconstruction of an image. </p>
-<p>This filter is similar to the morphological closing, but contrary to the mophological closing, the closing by reconstruction preserves the shape of the components. The closing by reconstruction of an image "f" is defined as:</p>
+<p>This filter is similar to the morphological closing, but contrary to the morphological closing, the closing by reconstruction preserves the shape of the components. The closing by reconstruction of an image "f" is defined as:</p>
 <p>ClosingByReconstruction(f) = ErosionByReconstruction(f, Dilation(f)).</p>
 <p>Closing by reconstruction not only preserves structures preserved by the dilation, but also levels raises the contrast of the darkest regions. If PreserveIntensities is on, a subsequent reconstruction by dilation using a marker image that is the original image for all unaffected pixels.</p>
 <p>Closing by reconstruction is described in Chapter 6.3.9 of Pierre Soille's book "Morphological Image Analysis: Principles and
@@ -355,7 +355,7 @@ Applications", Second Edition, Springer, 2003.</p>
 <dd>
 <a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1ClosingByReconstructionImageFilter.html">itk::ClosingByReconstructionImageFilter</a> for the Doxygen on the original ITK class. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="sitkClosingByReconstructionImageFilter_8h_source.html#l00054">54</a> of file <a class="el" href="sitkClosingByReconstructionImageFilter_8h_source.html">sitkClosingByReconstructionImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkClosingByReconstructionImageFilter_8h_source.html#l00055">55</a> of file <a class="el" href="sitkClosingByReconstructionImageFilter_8h_source.html">sitkClosingByReconstructionImageFilter.h</a>.</p>
 </div><h2 class="groupheader">Member Typedef Documentation</h2>
 <a id="a69a4ea5feeea78c5d5a33283a98fd62c"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a69a4ea5feeea78c5d5a33283a98fd62c">&#9670;&nbsp;</a></span>MemberFunctionType</h2>
@@ -378,7 +378,7 @@ Applications", Second Edition, Springer, 2003.</p>
 </div><div class="memdoc">
 <p>Setup for member function dispatching </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkClosingByReconstructionImageFilter_8h_source.html#l00140">140</a> of file <a class="el" href="sitkClosingByReconstructionImageFilter_8h_source.html">sitkClosingByReconstructionImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkClosingByReconstructionImageFilter_8h_source.html#l00141">141</a> of file <a class="el" href="sitkClosingByReconstructionImageFilter_8h_source.html">sitkClosingByReconstructionImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -395,7 +395,7 @@ Applications", Second Edition, Springer, 2003.</p>
 </div><div class="memdoc">
 <p>Define the pixels types supported by this filter </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkClosingByReconstructionImageFilter_8h_source.html#l00066">66</a> of file <a class="el" href="sitkClosingByReconstructionImageFilter_8h_source.html">sitkClosingByReconstructionImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkClosingByReconstructionImageFilter_8h_source.html#l00067">67</a> of file <a class="el" href="sitkClosingByReconstructionImageFilter_8h_source.html">sitkClosingByReconstructionImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -411,7 +411,7 @@ Applications", Second Edition, Springer, 2003.</p>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkClosingByReconstructionImageFilter_8h_source.html#l00056">56</a> of file <a class="el" href="sitkClosingByReconstructionImageFilter_8h_source.html">sitkClosingByReconstructionImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkClosingByReconstructionImageFilter_8h_source.html#l00057">57</a> of file <a class="el" href="sitkClosingByReconstructionImageFilter_8h_source.html">sitkClosingByReconstructionImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -435,7 +435,7 @@ Applications", Second Edition, Springer, 2003.</p>
 <tr><td class="fieldname"><a id="a26838a146f6bbeedfe7b945f3ae0377baf3e723432d94a8d559247e885f66d819"></a>Cross&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
-<p class="definition">Definition at line <a class="el" href="sitkClosingByReconstructionImageFilter_8h_source.html#l00069">69</a> of file <a class="el" href="sitkClosingByReconstructionImageFilter_8h_source.html">sitkClosingByReconstructionImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkClosingByReconstructionImageFilter_8h_source.html#l00070">70</a> of file <a class="el" href="sitkClosingByReconstructionImageFilter_8h_source.html">sitkClosingByReconstructionImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -590,7 +590,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkClosingByReconstructionImageFilter_8h_source.html#l00080">80</a> of file <a class="el" href="sitkClosingByReconstructionImageFilter_8h_source.html">sitkClosingByReconstructionImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkClosingByReconstructionImageFilter_8h_source.html#l00081">81</a> of file <a class="el" href="sitkClosingByReconstructionImageFilter_8h_source.html">sitkClosingByReconstructionImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -618,7 +618,7 @@ template&lt;class TImageType &gt; </div>
 </div><div class="memdoc">
 <p>Set the value of FullyConnected to true or false respectfully. </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkClosingByReconstructionImageFilter_8h_source.html#l00079">79</a> of file <a class="el" href="sitkClosingByReconstructionImageFilter_8h_source.html">sitkClosingByReconstructionImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkClosingByReconstructionImageFilter_8h_source.html#l00080">80</a> of file <a class="el" href="sitkClosingByReconstructionImageFilter_8h_source.html">sitkClosingByReconstructionImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -646,7 +646,7 @@ template&lt;class TImageType &gt; </div>
 </div><div class="memdoc">
 <p>Set/Get whether the connected components are defined strictly by face connectivity or by face+edge+vertex connectivity. Default is FullyConnectedOff. For objects that are 1 pixel wide, use FullyConnectedOn. </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkClosingByReconstructionImageFilter_8h_source.html#l00085">85</a> of file <a class="el" href="sitkClosingByReconstructionImageFilter_8h_source.html">sitkClosingByReconstructionImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkClosingByReconstructionImageFilter_8h_source.html#l00086">86</a> of file <a class="el" href="sitkClosingByReconstructionImageFilter_8h_source.html">sitkClosingByReconstructionImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -710,7 +710,7 @@ template&lt;class TImageType &gt; </div>
 
 <p>Implements <a class="el" href="classitk_1_1simple_1_1ProcessObject.html#ac8ab837a83ee6ad83c2e2e71b1e98386">itk::simple::ProcessObject</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="sitkClosingByReconstructionImageFilter_8h_source.html#l00122">122</a> of file <a class="el" href="sitkClosingByReconstructionImageFilter_8h_source.html">sitkClosingByReconstructionImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkClosingByReconstructionImageFilter_8h_source.html#l00123">123</a> of file <a class="el" href="sitkClosingByReconstructionImageFilter_8h_source.html">sitkClosingByReconstructionImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -738,7 +738,7 @@ template&lt;class TImageType &gt; </div>
 </div><div class="memdoc">
 <p>Set/Get whether the original intensities of the image retained for those pixels unaffected by the opening by reconstrcution. If Off, the output pixel contrast will be reduced. </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkClosingByReconstructionImageFilter_8h_source.html#l00099">99</a> of file <a class="el" href="sitkClosingByReconstructionImageFilter_8h_source.html">sitkClosingByReconstructionImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkClosingByReconstructionImageFilter_8h_source.html#l00100">100</a> of file <a class="el" href="sitkClosingByReconstructionImageFilter_8h_source.html">sitkClosingByReconstructionImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -765,7 +765,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkClosingByReconstructionImageFilter_8h_source.html#l00094">94</a> of file <a class="el" href="sitkClosingByReconstructionImageFilter_8h_source.html">sitkClosingByReconstructionImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkClosingByReconstructionImageFilter_8h_source.html#l00095">95</a> of file <a class="el" href="sitkClosingByReconstructionImageFilter_8h_source.html">sitkClosingByReconstructionImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -793,7 +793,7 @@ template&lt;class TImageType &gt; </div>
 </div><div class="memdoc">
 <p>Set the value of PreserveIntensities to true or false respectfully. </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkClosingByReconstructionImageFilter_8h_source.html#l00093">93</a> of file <a class="el" href="sitkClosingByReconstructionImageFilter_8h_source.html">sitkClosingByReconstructionImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkClosingByReconstructionImageFilter_8h_source.html#l00094">94</a> of file <a class="el" href="sitkClosingByReconstructionImageFilter_8h_source.html">sitkClosingByReconstructionImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -822,7 +822,7 @@ template&lt;class TImageType &gt; </div>
 </div><div class="memdoc">
 <p>Set/Get whether the connected components are defined strictly by face connectivity or by face+edge+vertex connectivity. Default is FullyConnectedOff. For objects that are 1 pixel wide, use FullyConnectedOn. </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkClosingByReconstructionImageFilter_8h_source.html#l00076">76</a> of file <a class="el" href="sitkClosingByReconstructionImageFilter_8h_source.html">sitkClosingByReconstructionImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkClosingByReconstructionImageFilter_8h_source.html#l00077">77</a> of file <a class="el" href="sitkClosingByReconstructionImageFilter_8h_source.html">sitkClosingByReconstructionImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -927,7 +927,7 @@ template&lt;class TImageType &gt; </div>
 </div><div class="memdoc">
 <p>Set/Get whether the original intensities of the image retained for those pixels unaffected by the opening by reconstrcution. If Off, the output pixel contrast will be reduced. </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkClosingByReconstructionImageFilter_8h_source.html#l00090">90</a> of file <a class="el" href="sitkClosingByReconstructionImageFilter_8h_source.html">sitkClosingByReconstructionImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkClosingByReconstructionImageFilter_8h_source.html#l00091">91</a> of file <a class="el" href="sitkClosingByReconstructionImageFilter_8h_source.html">sitkClosingByReconstructionImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -980,7 +980,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkClosingByReconstructionImageFilter_8h_source.html#l00144">144</a> of file <a class="el" href="sitkClosingByReconstructionImageFilter_8h_source.html">sitkClosingByReconstructionImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkClosingByReconstructionImageFilter_8h_source.html#l00145">145</a> of file <a class="el" href="sitkClosingByReconstructionImageFilter_8h_source.html">sitkClosingByReconstructionImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -1005,7 +1005,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkClosingByReconstructionImageFilter_8h_source.html#l00150">150</a> of file <a class="el" href="sitkClosingByReconstructionImageFilter_8h_source.html">sitkClosingByReconstructionImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkClosingByReconstructionImageFilter_8h_source.html#l00151">151</a> of file <a class="el" href="sitkClosingByReconstructionImageFilter_8h_source.html">sitkClosingByReconstructionImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -1029,7 +1029,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkClosingByReconstructionImageFilter_8h_source.html#l00155">155</a> of file <a class="el" href="sitkClosingByReconstructionImageFilter_8h_source.html">sitkClosingByReconstructionImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkClosingByReconstructionImageFilter_8h_source.html#l00156">156</a> of file <a class="el" href="sitkClosingByReconstructionImageFilter_8h_source.html">sitkClosingByReconstructionImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -1054,7 +1054,7 @@ template&lt;class TImageType &gt; </div>
 </div><div class="memdoc">
 <p>KernelType </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkClosingByReconstructionImageFilter_8h_source.html#l00158">158</a> of file <a class="el" href="sitkClosingByReconstructionImageFilter_8h_source.html">sitkClosingByReconstructionImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkClosingByReconstructionImageFilter_8h_source.html#l00159">159</a> of file <a class="el" href="sitkClosingByReconstructionImageFilter_8h_source.html">sitkClosingByReconstructionImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -1078,7 +1078,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkClosingByReconstructionImageFilter_8h_source.html#l00146">146</a> of file <a class="el" href="sitkClosingByReconstructionImageFilter_8h_source.html">sitkClosingByReconstructionImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkClosingByReconstructionImageFilter_8h_source.html#l00147">147</a> of file <a class="el" href="sitkClosingByReconstructionImageFilter_8h_source.html">sitkClosingByReconstructionImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -1102,7 +1102,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkClosingByReconstructionImageFilter_8h_source.html#l00152">152</a> of file <a class="el" href="sitkClosingByReconstructionImageFilter_8h_source.html">sitkClosingByReconstructionImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkClosingByReconstructionImageFilter_8h_source.html#l00153">153</a> of file <a class="el" href="sitkClosingByReconstructionImageFilter_8h_source.html">sitkClosingByReconstructionImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -1112,7 +1112,7 @@ template&lt;class TImageType &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Mar 7 2020 03:21:27 for SimpleITK by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Mar 10 2020 03:49:18 for SimpleITK by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

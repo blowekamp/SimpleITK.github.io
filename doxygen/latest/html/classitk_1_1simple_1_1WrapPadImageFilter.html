@@ -19,7 +19,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">SimpleITK
-   &#160;<span id="projectnumber">2.0.0.dev127</span>
+   &#160;<span id="projectnumber">2.0.0rc1</span>
    </div>
   </td>
  </tr>
@@ -309,14 +309,15 @@ Additional Inherited Members</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Increase the image size by padding with replicants of the input image value. </p>
 <p><a class="el" href="classitk_1_1simple_1_1WrapPadImageFilter.html" title="Increase the image size by padding with replicants of the input image value.">WrapPadImageFilter</a> changes the image bounds of an image. Added pixels are filled in with a wrapped replica of the input image. For instance, if the output image needs a pixel that is two pixels to the left of the LargestPossibleRegion of the input image, the value assigned will be from the pixel two pixels inside the right boundary of the LargestPossibleRegion. The image bounds of the output must be specified.</p>
-<p>Visual explanation of padding regions. This filter is implemented as a multithreaded filter. It provides a ThreadedGenerateData() method for its implementation.</p>
+<p>Visual explanation of padding regions.</p>
+<p>This filter is implemented as a multithreaded filter. It provides a ThreadedGenerateData() method for its implementation.</p>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="classitk_1_1simple_1_1MirrorPadImageFilter.html" title="Increase the image size by padding with replicants of the input image value.">MirrorPadImageFilter</a> , <a class="el" href="classitk_1_1simple_1_1ConstantPadImageFilter.html" title="Increase the image size by padding with a constant value.">ConstantPadImageFilter</a> </dd>
 <dd>
 <a class="el" href="namespaceitk_1_1simple.html#a5f90a5bc92d637db247800c68262b4d8" title="Increase the image size by padding with replicants of the input image value.">itk::simple::WrapPad</a> for the procedural interface </dd>
 <dd>
 <a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1WrapPadImageFilter.html">itk::WrapPadImageFilter</a> for the Doxygen on the original ITK class. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="sitkWrapPadImageFilter_8h_source.html#l00047">47</a> of file <a class="el" href="sitkWrapPadImageFilter_8h_source.html">sitkWrapPadImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkWrapPadImageFilter_8h_source.html#l00049">49</a> of file <a class="el" href="sitkWrapPadImageFilter_8h_source.html">sitkWrapPadImageFilter.h</a>.</p>
 </div><h2 class="groupheader">Member Typedef Documentation</h2>
 <a id="a5202c2f68afee3a36a08af68986070d8"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a5202c2f68afee3a36a08af68986070d8">&#9670;&nbsp;</a></span>MemberFunctionType</h2>
@@ -339,7 +340,7 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 <p>Setup for member function dispatching </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkWrapPadImageFilter_8h_source.html#l00096">96</a> of file <a class="el" href="sitkWrapPadImageFilter_8h_source.html">sitkWrapPadImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkWrapPadImageFilter_8h_source.html#l00098">98</a> of file <a class="el" href="sitkWrapPadImageFilter_8h_source.html">sitkWrapPadImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -356,7 +357,7 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 <p>Define the pixels types supported by this filter </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkWrapPadImageFilter_8h_source.html#l00059">59</a> of file <a class="el" href="sitkWrapPadImageFilter_8h_source.html">sitkWrapPadImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkWrapPadImageFilter_8h_source.html#l00061">61</a> of file <a class="el" href="sitkWrapPadImageFilter_8h_source.html">sitkWrapPadImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -372,7 +373,7 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkWrapPadImageFilter_8h_source.html#l00049">49</a> of file <a class="el" href="sitkWrapPadImageFilter_8h_source.html">sitkWrapPadImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkWrapPadImageFilter_8h_source.html#l00051">51</a> of file <a class="el" href="sitkWrapPadImageFilter_8h_source.html">sitkWrapPadImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -530,7 +531,7 @@ template&lt;class TImageType &gt; </div>
 
 <p>Implements <a class="el" href="classitk_1_1simple_1_1ProcessObject.html#ac8ab837a83ee6ad83c2e2e71b1e98386">itk::simple::ProcessObject</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="sitkWrapPadImageFilter_8h_source.html#l00079">79</a> of file <a class="el" href="sitkWrapPadImageFilter_8h_source.html">sitkWrapPadImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkWrapPadImageFilter_8h_source.html#l00081">81</a> of file <a class="el" href="sitkWrapPadImageFilter_8h_source.html">sitkWrapPadImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -557,7 +558,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkWrapPadImageFilter_8h_source.html#l00069">69</a> of file <a class="el" href="sitkWrapPadImageFilter_8h_source.html">sitkWrapPadImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkWrapPadImageFilter_8h_source.html#l00071">71</a> of file <a class="el" href="sitkWrapPadImageFilter_8h_source.html">sitkWrapPadImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -584,7 +585,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkWrapPadImageFilter_8h_source.html#l00077">77</a> of file <a class="el" href="sitkWrapPadImageFilter_8h_source.html">sitkWrapPadImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkWrapPadImageFilter_8h_source.html#l00079">79</a> of file <a class="el" href="sitkWrapPadImageFilter_8h_source.html">sitkWrapPadImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -612,7 +613,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkWrapPadImageFilter_8h_source.html#l00065">65</a> of file <a class="el" href="sitkWrapPadImageFilter_8h_source.html">sitkWrapPadImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkWrapPadImageFilter_8h_source.html#l00067">67</a> of file <a class="el" href="sitkWrapPadImageFilter_8h_source.html">sitkWrapPadImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -640,7 +641,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkWrapPadImageFilter_8h_source.html#l00073">73</a> of file <a class="el" href="sitkWrapPadImageFilter_8h_source.html">sitkWrapPadImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkWrapPadImageFilter_8h_source.html#l00075">75</a> of file <a class="el" href="sitkWrapPadImageFilter_8h_source.html">sitkWrapPadImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -693,7 +694,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkWrapPadImageFilter_8h_source.html#l00100">100</a> of file <a class="el" href="sitkWrapPadImageFilter_8h_source.html">sitkWrapPadImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkWrapPadImageFilter_8h_source.html#l00102">102</a> of file <a class="el" href="sitkWrapPadImageFilter_8h_source.html">sitkWrapPadImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -718,7 +719,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkWrapPadImageFilter_8h_source.html#l00102">102</a> of file <a class="el" href="sitkWrapPadImageFilter_8h_source.html">sitkWrapPadImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkWrapPadImageFilter_8h_source.html#l00104">104</a> of file <a class="el" href="sitkWrapPadImageFilter_8h_source.html">sitkWrapPadImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -742,7 +743,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkWrapPadImageFilter_8h_source.html#l00106">106</a> of file <a class="el" href="sitkWrapPadImageFilter_8h_source.html">sitkWrapPadImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkWrapPadImageFilter_8h_source.html#l00108">108</a> of file <a class="el" href="sitkWrapPadImageFilter_8h_source.html">sitkWrapPadImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -766,7 +767,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkWrapPadImageFilter_8h_source.html#l00108">108</a> of file <a class="el" href="sitkWrapPadImageFilter_8h_source.html">sitkWrapPadImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkWrapPadImageFilter_8h_source.html#l00110">110</a> of file <a class="el" href="sitkWrapPadImageFilter_8h_source.html">sitkWrapPadImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -776,7 +777,7 @@ template&lt;class TImageType &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Mar 7 2020 03:21:35 for SimpleITK by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Mar 10 2020 03:49:26 for SimpleITK by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

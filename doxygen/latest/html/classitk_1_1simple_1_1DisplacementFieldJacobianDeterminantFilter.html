@@ -19,7 +19,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">SimpleITK
-   &#160;<span id="projectnumber">2.0.0.dev127</span>
+   &#160;<span id="projectnumber">2.0.0rc1</span>
    </div>
   </td>
  </tr>
@@ -319,7 +319,7 @@ Additional Inherited Members</h2></td></tr>
 <p>The third template parameter is the output image type. The third parameter will be automatically constructed from the first and second parameters, so it is not necessary (or advisable) to set this parameter explicitly. Given an M-channel input image with dimensionality N, and a numerical type specified as TRealType, the output image will be of type itk::Image&lt;TRealType, N&gt;.</p>
 <dl class="section user"><dt>Filter Parameters</dt><dd>The method SetUseImageSpacingOn will cause derivatives in the image to be scaled (inversely) with the pixel size of the input image, effectively taking derivatives in world coordinates (versus isotropic image space). SetUseImageSpacingOff turns this functionality off. Default is UseImageSpacingOn. The parameter UseImageSpacing can be set directly with the method <a class="el" href="classitk_1_1simple_1_1DisplacementFieldJacobianDeterminantFilter.html#a3229a313e92938d28acd77da0f46c36b">SetUseImageSpacing(bool)</a> .</dd></dl>
 <p>Weights can be applied to the derivatives directly using the SetDerivativeWeights method. Note that if UseImageSpacing is set to TRUE (ON), then these weights will be overridden by weights derived from the image spacing when the filter is updated. The argument to this method is a C array of TRealValue type.</p>
-<dl class="section user"><dt>Constraints</dt><dd>We use vnl_det for determinent computation, which only supports square matrices. So the vector dimension of the input image values must be equal to the image dimensions, which is trivially true for a deformation field that maps an n-dimensional space onto itself.</dd></dl>
+<dl class="section user"><dt>Constraints</dt><dd>We use vnl_det for determinant computation, which only supports square matrices. So the vector dimension of the input image values must be equal to the image dimensions, which is trivially true for a deformation field that maps an n-dimensional space onto itself.</dd></dl>
 <p>Currently, dimensions up to and including 4 are supported. This limitation comes from the presence of vnl_det() functions for matrices of dimension up to 4x4.</p>
 <p>The template parameter TRealType must be floating point (float or double) or a user-defined "real" numerical type with arithmetic operations defined sufficient to compute derivatives.</p>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="classitk_1_1simple_1_1Image.html" title="The Image class for SimpleITK.">Image</a></dd>
@@ -339,7 +339,7 @@ Torsten Rohlfing, Neuroscience Program, SRI International. </dd></dl>
 <dd>
 <a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1DisplacementFieldJacobianDeterminantFilter.html">itk::DisplacementFieldJacobianDeterminantFilter</a> for the Doxygen on the original ITK class. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="sitkDisplacementFieldJacobianDeterminantFilter_8h_source.html#l00080">80</a> of file <a class="el" href="sitkDisplacementFieldJacobianDeterminantFilter_8h_source.html">sitkDisplacementFieldJacobianDeterminantFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkDisplacementFieldJacobianDeterminantFilter_8h_source.html#l00091">91</a> of file <a class="el" href="sitkDisplacementFieldJacobianDeterminantFilter_8h_source.html">sitkDisplacementFieldJacobianDeterminantFilter.h</a>.</p>
 </div><h2 class="groupheader">Member Typedef Documentation</h2>
 <a id="a6888c564f2be8e6a4f2791fcb725d9e5"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a6888c564f2be8e6a4f2791fcb725d9e5">&#9670;&nbsp;</a></span>MemberFunctionType</h2>
@@ -362,7 +362,7 @@ Torsten Rohlfing, Neuroscience Program, SRI International. </dd></dl>
 </div><div class="memdoc">
 <p>Setup for member function dispatching </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkDisplacementFieldJacobianDeterminantFilter_8h_source.html#l00136">136</a> of file <a class="el" href="sitkDisplacementFieldJacobianDeterminantFilter_8h_source.html">sitkDisplacementFieldJacobianDeterminantFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkDisplacementFieldJacobianDeterminantFilter_8h_source.html#l00147">147</a> of file <a class="el" href="sitkDisplacementFieldJacobianDeterminantFilter_8h_source.html">sitkDisplacementFieldJacobianDeterminantFilter.h</a>.</p>
 
 </div>
 </div>
@@ -379,7 +379,7 @@ Torsten Rohlfing, Neuroscience Program, SRI International. </dd></dl>
 </div><div class="memdoc">
 <p>Define the pixels types supported by this filter </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkDisplacementFieldJacobianDeterminantFilter_8h_source.html#l00092">92</a> of file <a class="el" href="sitkDisplacementFieldJacobianDeterminantFilter_8h_source.html">sitkDisplacementFieldJacobianDeterminantFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkDisplacementFieldJacobianDeterminantFilter_8h_source.html#l00103">103</a> of file <a class="el" href="sitkDisplacementFieldJacobianDeterminantFilter_8h_source.html">sitkDisplacementFieldJacobianDeterminantFilter.h</a>.</p>
 
 </div>
 </div>
@@ -395,7 +395,7 @@ Torsten Rohlfing, Neuroscience Program, SRI International. </dd></dl>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkDisplacementFieldJacobianDeterminantFilter_8h_source.html#l00082">82</a> of file <a class="el" href="sitkDisplacementFieldJacobianDeterminantFilter_8h_source.html">sitkDisplacementFieldJacobianDeterminantFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkDisplacementFieldJacobianDeterminantFilter_8h_source.html#l00093">93</a> of file <a class="el" href="sitkDisplacementFieldJacobianDeterminantFilter_8h_source.html">sitkDisplacementFieldJacobianDeterminantFilter.h</a>.</p>
 
 </div>
 </div>
@@ -551,7 +551,7 @@ template&lt;class TImageType &gt; </div>
 </div><div class="memdoc">
 <p>Directly Set/Get the array of weights used in the gradient calculations. Note that calling UseImageSpacingOn will clobber these values. </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkDisplacementFieldJacobianDeterminantFilter_8h_source.html#l00117">117</a> of file <a class="el" href="sitkDisplacementFieldJacobianDeterminantFilter_8h_source.html">sitkDisplacementFieldJacobianDeterminantFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkDisplacementFieldJacobianDeterminantFilter_8h_source.html#l00128">128</a> of file <a class="el" href="sitkDisplacementFieldJacobianDeterminantFilter_8h_source.html">sitkDisplacementFieldJacobianDeterminantFilter.h</a>.</p>
 
 </div>
 </div>
@@ -581,7 +581,7 @@ template&lt;class TImageType &gt; </div>
 
 <p>Implements <a class="el" href="classitk_1_1simple_1_1ProcessObject.html#ac8ab837a83ee6ad83c2e2e71b1e98386">itk::simple::ProcessObject</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="sitkDisplacementFieldJacobianDeterminantFilter_8h_source.html#l00119">119</a> of file <a class="el" href="sitkDisplacementFieldJacobianDeterminantFilter_8h_source.html">sitkDisplacementFieldJacobianDeterminantFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkDisplacementFieldJacobianDeterminantFilter_8h_source.html#l00130">130</a> of file <a class="el" href="sitkDisplacementFieldJacobianDeterminantFilter_8h_source.html">sitkDisplacementFieldJacobianDeterminantFilter.h</a>.</p>
 
 </div>
 </div>
@@ -608,7 +608,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkDisplacementFieldJacobianDeterminantFilter_8h_source.html#l00107">107</a> of file <a class="el" href="sitkDisplacementFieldJacobianDeterminantFilter_8h_source.html">sitkDisplacementFieldJacobianDeterminantFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkDisplacementFieldJacobianDeterminantFilter_8h_source.html#l00118">118</a> of file <a class="el" href="sitkDisplacementFieldJacobianDeterminantFilter_8h_source.html">sitkDisplacementFieldJacobianDeterminantFilter.h</a>.</p>
 
 </div>
 </div>
@@ -637,7 +637,7 @@ template&lt;class TImageType &gt; </div>
 </div><div class="memdoc">
 <p>Directly Set/Get the array of weights used in the gradient calculations. Note that calling UseImageSpacingOn will clobber these values. </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkDisplacementFieldJacobianDeterminantFilter_8h_source.html#l00112">112</a> of file <a class="el" href="sitkDisplacementFieldJacobianDeterminantFilter_8h_source.html">sitkDisplacementFieldJacobianDeterminantFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkDisplacementFieldJacobianDeterminantFilter_8h_source.html#l00123">123</a> of file <a class="el" href="sitkDisplacementFieldJacobianDeterminantFilter_8h_source.html">sitkDisplacementFieldJacobianDeterminantFilter.h</a>.</p>
 
 </div>
 </div>
@@ -666,7 +666,7 @@ template&lt;class TImageType &gt; </div>
 </div><div class="memdoc">
 <p>Set/Get whether or not the filter will use the spacing of the input image in its calculations </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkDisplacementFieldJacobianDeterminantFilter_8h_source.html#l00099">99</a> of file <a class="el" href="sitkDisplacementFieldJacobianDeterminantFilter_8h_source.html">sitkDisplacementFieldJacobianDeterminantFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkDisplacementFieldJacobianDeterminantFilter_8h_source.html#l00110">110</a> of file <a class="el" href="sitkDisplacementFieldJacobianDeterminantFilter_8h_source.html">sitkDisplacementFieldJacobianDeterminantFilter.h</a>.</p>
 
 </div>
 </div>
@@ -721,7 +721,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkDisplacementFieldJacobianDeterminantFilter_8h_source.html#l00103">103</a> of file <a class="el" href="sitkDisplacementFieldJacobianDeterminantFilter_8h_source.html">sitkDisplacementFieldJacobianDeterminantFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkDisplacementFieldJacobianDeterminantFilter_8h_source.html#l00114">114</a> of file <a class="el" href="sitkDisplacementFieldJacobianDeterminantFilter_8h_source.html">sitkDisplacementFieldJacobianDeterminantFilter.h</a>.</p>
 
 </div>
 </div>
@@ -749,7 +749,7 @@ template&lt;class TImageType &gt; </div>
 </div><div class="memdoc">
 <p>Set the value of UseImageSpacing to true or false respectfully. </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkDisplacementFieldJacobianDeterminantFilter_8h_source.html#l00102">102</a> of file <a class="el" href="sitkDisplacementFieldJacobianDeterminantFilter_8h_source.html">sitkDisplacementFieldJacobianDeterminantFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkDisplacementFieldJacobianDeterminantFilter_8h_source.html#l00113">113</a> of file <a class="el" href="sitkDisplacementFieldJacobianDeterminantFilter_8h_source.html">sitkDisplacementFieldJacobianDeterminantFilter.h</a>.</p>
 
 </div>
 </div>
@@ -774,7 +774,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkDisplacementFieldJacobianDeterminantFilter_8h_source.html#l00140">140</a> of file <a class="el" href="sitkDisplacementFieldJacobianDeterminantFilter_8h_source.html">sitkDisplacementFieldJacobianDeterminantFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkDisplacementFieldJacobianDeterminantFilter_8h_source.html#l00151">151</a> of file <a class="el" href="sitkDisplacementFieldJacobianDeterminantFilter_8h_source.html">sitkDisplacementFieldJacobianDeterminantFilter.h</a>.</p>
 
 </div>
 </div>
@@ -799,7 +799,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkDisplacementFieldJacobianDeterminantFilter_8h_source.html#l00146">146</a> of file <a class="el" href="sitkDisplacementFieldJacobianDeterminantFilter_8h_source.html">sitkDisplacementFieldJacobianDeterminantFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkDisplacementFieldJacobianDeterminantFilter_8h_source.html#l00157">157</a> of file <a class="el" href="sitkDisplacementFieldJacobianDeterminantFilter_8h_source.html">sitkDisplacementFieldJacobianDeterminantFilter.h</a>.</p>
 
 </div>
 </div>
@@ -823,7 +823,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkDisplacementFieldJacobianDeterminantFilter_8h_source.html#l00142">142</a> of file <a class="el" href="sitkDisplacementFieldJacobianDeterminantFilter_8h_source.html">sitkDisplacementFieldJacobianDeterminantFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkDisplacementFieldJacobianDeterminantFilter_8h_source.html#l00153">153</a> of file <a class="el" href="sitkDisplacementFieldJacobianDeterminantFilter_8h_source.html">sitkDisplacementFieldJacobianDeterminantFilter.h</a>.</p>
 
 </div>
 </div>
@@ -847,7 +847,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkDisplacementFieldJacobianDeterminantFilter_8h_source.html#l00145">145</a> of file <a class="el" href="sitkDisplacementFieldJacobianDeterminantFilter_8h_source.html">sitkDisplacementFieldJacobianDeterminantFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkDisplacementFieldJacobianDeterminantFilter_8h_source.html#l00156">156</a> of file <a class="el" href="sitkDisplacementFieldJacobianDeterminantFilter_8h_source.html">sitkDisplacementFieldJacobianDeterminantFilter.h</a>.</p>
 
 </div>
 </div>
@@ -857,7 +857,7 @@ template&lt;class TImageType &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Mar 7 2020 03:21:28 for SimpleITK by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Mar 10 2020 03:49:19 for SimpleITK by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

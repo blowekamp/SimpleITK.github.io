@@ -19,7 +19,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">SimpleITK
-   &#160;<span id="projectnumber">2.0.0.dev127</span>
+   &#160;<span id="projectnumber">2.0.0rc1</span>
    </div>
   </td>
  </tr>
@@ -56,7 +56,7 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
-<p>Compute min. max, variance and mean of an <a class="el" href="classitk_1_1simple_1_1Image.html" title="The Image class for SimpleITK.">Image</a> .  
+<p>Compute min, max, variance and mean of an <a class="el" href="classitk_1_1simple_1_1Image.html" title="The Image class for SimpleITK.">Image</a> .  
  <a href="classitk_1_1simple_1_1StatisticsImageFilter.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="sitkStatisticsImageFilter_8h_source.html">sitkStatisticsImageFilter.h</a>&gt;</code></p>
@@ -67,7 +67,7 @@ $(function() {
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="classitk_1_1simple_1_1StatisticsImageFilter__inherit__graph.png" border="0" usemap="#itk_1_1simple_1_1StatisticsImageFilter_inherit__map" alt="Inheritance graph"/></div>
 <map name="itk_1_1simple_1_1StatisticsImageFilter_inherit__map" id="itk_1_1simple_1_1StatisticsImageFilter_inherit__map">
-<area shape="rect" title="Compute min. max, variance and mean of an Image ." alt="" coords="11,323,211,364"/>
+<area shape="rect" title="Compute min, max, variance and mean of an Image ." alt="" coords="11,323,211,364"/>
 <area shape="rect" href="classitk_1_1simple_1_1ImageFilter.html" title=" " alt="" coords="5,247,216,273"/>
 <area shape="rect" href="classitk_1_1simple_1_1ProcessObject.html" title="Base class for SimpleITK classes based on ProcessObject." alt="" coords="10,81,201,108"/>
 <area shape="rect" href="classitk_1_1simple_1_1ImageFilter.html" title="The base interface for SimpleITK filters that take one input image." alt="" coords="126,157,338,184"/>
@@ -81,7 +81,7 @@ $(function() {
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="classitk_1_1simple_1_1StatisticsImageFilter__coll__graph.png" border="0" usemap="#itk_1_1simple_1_1StatisticsImageFilter_coll__map" alt="Collaboration graph"/></div>
 <map name="itk_1_1simple_1_1StatisticsImageFilter_coll__map" id="itk_1_1simple_1_1StatisticsImageFilter_coll__map">
-<area shape="rect" title="Compute min. max, variance and mean of an Image ." alt="" coords="3725,611,3925,653"/>
+<area shape="rect" title="Compute min, max, variance and mean of an Image ." alt="" coords="3725,611,3925,653"/>
 <area shape="rect" href="classitk_1_1simple_1_1ImageFilter.html" title=" " alt="" coords="3321,355,3532,381"/>
 <area shape="rect" href="classitk_1_1simple_1_1ProcessObject.html" title="Base class for SimpleITK classes based on ProcessObject." alt="" coords="2473,273,2663,300"/>
 <area shape="rect" title=" " alt="" coords="2923,130,3078,171"/>
@@ -316,12 +316,13 @@ Additional Inherited Members</h2></td></tr>
 <tr class="separator:a2ecfdd88b16dd793b6f0b804b8e3d2ab inherit pro_static_methods_classitk_1_1simple_1_1ProcessObject"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Compute min. max, variance and mean of an <a class="el" href="classitk_1_1simple_1_1Image.html" title="The Image class for SimpleITK.">Image</a> . </p>
-<p><a class="el" href="classitk_1_1simple_1_1StatisticsImageFilter.html" title="Compute min. max, variance and mean of an Image .">StatisticsImageFilter</a> computes the minimum, maximum, sum, mean, variance sigma of an image. The filter needs all of its input image. It behaves as a filter with an input and output. Thus it can be inserted in a pipline with other filters and the statistics will only be recomputed if a downstream filter changes.</p>
-<p>The filter passes its input through unmodified. The filter is threaded. It computes statistics in each thread then combines them in its AfterThreadedGenerate method.</p>
+<div class="textblock"><p>Compute min, max, variance and mean of an <a class="el" href="classitk_1_1simple_1_1Image.html" title="The Image class for SimpleITK.">Image</a> . </p>
+<p><a class="el" href="classitk_1_1simple_1_1StatisticsImageFilter.html" title="Compute min, max, variance and mean of an Image .">StatisticsImageFilter</a> computes the minimum, maximum, sum, sum of squares, mean, variance sigma of an image. The filter needs all of its input image. It behaves as a filter with an input and output. Thus it can be inserted in a pipline with other filters and the statistics will only be recomputed if a downstream filter changes.</p>
+<p>This filter is automatically multi-threaded and can stream its input when NumberOfStreamDivisions is set to more than one. <a class="elRef" href="https://www.itk.org/Doxygen/html/namespaceitk_1_1Statistics.html">Statistics</a> are independently computed for each streamed and threaded region then merged.</p>
+<p>Internally a compensated summation algorithm is used for the accumulation of intensities to improve accuracy for large images.</p>
 <dl class="section see"><dt>See also</dt><dd><a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1StatisticsImageFilter.html">itk::StatisticsImageFilter</a> for the Doxygen on the original ITK class. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="sitkStatisticsImageFilter_8h_source.html#l00044">44</a> of file <a class="el" href="sitkStatisticsImageFilter_8h_source.html">sitkStatisticsImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkStatisticsImageFilter_8h_source.html#l00046">46</a> of file <a class="el" href="sitkStatisticsImageFilter_8h_source.html">sitkStatisticsImageFilter.h</a>.</p>
 </div><h2 class="groupheader">Member Typedef Documentation</h2>
 <a id="a297a7a557c6ceab47f1cdd86d2ff4093"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a297a7a557c6ceab47f1cdd86d2ff4093">&#9670;&nbsp;</a></span>MemberFunctionType</h2>
@@ -344,7 +345,7 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 <p>Setup for member function dispatching </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkStatisticsImageFilter_8h_source.html#l00122">122</a> of file <a class="el" href="sitkStatisticsImageFilter_8h_source.html">sitkStatisticsImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkStatisticsImageFilter_8h_source.html#l00124">124</a> of file <a class="el" href="sitkStatisticsImageFilter_8h_source.html">sitkStatisticsImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -361,7 +362,7 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 <p>Define the pixels types supported by this filter </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkStatisticsImageFilter_8h_source.html#l00056">56</a> of file <a class="el" href="sitkStatisticsImageFilter_8h_source.html">sitkStatisticsImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkStatisticsImageFilter_8h_source.html#l00058">58</a> of file <a class="el" href="sitkStatisticsImageFilter_8h_source.html">sitkStatisticsImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -377,7 +378,7 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkStatisticsImageFilter_8h_source.html#l00046">46</a> of file <a class="el" href="sitkStatisticsImageFilter_8h_source.html">sitkStatisticsImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkStatisticsImageFilter_8h_source.html#l00048">48</a> of file <a class="el" href="sitkStatisticsImageFilter_8h_source.html">sitkStatisticsImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -499,7 +500,7 @@ template&lt;class TImageType &gt; </div>
 <p>Return the computed Maximum.</p>
 <p>This is a measurement. Its value is updated in the Execute methods, so the value will only be valid after an execution. </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkStatisticsImageFilter_8h_source.html#l00073">73</a> of file <a class="el" href="sitkStatisticsImageFilter_8h_source.html">sitkStatisticsImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkStatisticsImageFilter_8h_source.html#l00075">75</a> of file <a class="el" href="sitkStatisticsImageFilter_8h_source.html">sitkStatisticsImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -528,7 +529,7 @@ template&lt;class TImageType &gt; </div>
 <p>Return the computed Mean.</p>
 <p>This is a measurement. Its value is updated in the Execute methods, so the value will only be valid after an execution. </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkStatisticsImageFilter_8h_source.html#l00081">81</a> of file <a class="el" href="sitkStatisticsImageFilter_8h_source.html">sitkStatisticsImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkStatisticsImageFilter_8h_source.html#l00083">83</a> of file <a class="el" href="sitkStatisticsImageFilter_8h_source.html">sitkStatisticsImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -557,7 +558,7 @@ template&lt;class TImageType &gt; </div>
 <p>Return the computed Minimum.</p>
 <p>This is a measurement. Its value is updated in the Execute methods, so the value will only be valid after an execution. </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkStatisticsImageFilter_8h_source.html#l00065">65</a> of file <a class="el" href="sitkStatisticsImageFilter_8h_source.html">sitkStatisticsImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkStatisticsImageFilter_8h_source.html#l00067">67</a> of file <a class="el" href="sitkStatisticsImageFilter_8h_source.html">sitkStatisticsImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -587,7 +588,7 @@ template&lt;class TImageType &gt; </div>
 
 <p>Implements <a class="el" href="classitk_1_1simple_1_1ProcessObject.html#ac8ab837a83ee6ad83c2e2e71b1e98386">itk::simple::ProcessObject</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="sitkStatisticsImageFilter_8h_source.html#l00108">108</a> of file <a class="el" href="sitkStatisticsImageFilter_8h_source.html">sitkStatisticsImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkStatisticsImageFilter_8h_source.html#l00110">110</a> of file <a class="el" href="sitkStatisticsImageFilter_8h_source.html">sitkStatisticsImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -616,7 +617,7 @@ template&lt;class TImageType &gt; </div>
 <p>Return the computed Standard Deviation.</p>
 <p>This is a measurement. Its value is updated in the Execute methods, so the value will only be valid after an execution. </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkStatisticsImageFilter_8h_source.html#l00089">89</a> of file <a class="el" href="sitkStatisticsImageFilter_8h_source.html">sitkStatisticsImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkStatisticsImageFilter_8h_source.html#l00091">91</a> of file <a class="el" href="sitkStatisticsImageFilter_8h_source.html">sitkStatisticsImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -645,7 +646,7 @@ template&lt;class TImageType &gt; </div>
 <p>Return the compute Sum.</p>
 <p>This is a measurement. Its value is updated in the Execute methods, so the value will only be valid after an execution. </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkStatisticsImageFilter_8h_source.html#l00105">105</a> of file <a class="el" href="sitkStatisticsImageFilter_8h_source.html">sitkStatisticsImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkStatisticsImageFilter_8h_source.html#l00107">107</a> of file <a class="el" href="sitkStatisticsImageFilter_8h_source.html">sitkStatisticsImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -674,7 +675,7 @@ template&lt;class TImageType &gt; </div>
 <p>Return the computed Variance.</p>
 <p>This is a measurement. Its value is updated in the Execute methods, so the value will only be valid after an execution. </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkStatisticsImageFilter_8h_source.html#l00097">97</a> of file <a class="el" href="sitkStatisticsImageFilter_8h_source.html">sitkStatisticsImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkStatisticsImageFilter_8h_source.html#l00099">99</a> of file <a class="el" href="sitkStatisticsImageFilter_8h_source.html">sitkStatisticsImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -727,7 +728,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkStatisticsImageFilter_8h_source.html#l00126">126</a> of file <a class="el" href="sitkStatisticsImageFilter_8h_source.html">sitkStatisticsImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkStatisticsImageFilter_8h_source.html#l00128">128</a> of file <a class="el" href="sitkStatisticsImageFilter_8h_source.html">sitkStatisticsImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -752,7 +753,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkStatisticsImageFilter_8h_source.html#l00134">134</a> of file <a class="el" href="sitkStatisticsImageFilter_8h_source.html">sitkStatisticsImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkStatisticsImageFilter_8h_source.html#l00136">136</a> of file <a class="el" href="sitkStatisticsImageFilter_8h_source.html">sitkStatisticsImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -776,7 +777,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkStatisticsImageFilter_8h_source.html#l00136">136</a> of file <a class="el" href="sitkStatisticsImageFilter_8h_source.html">sitkStatisticsImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkStatisticsImageFilter_8h_source.html#l00138">138</a> of file <a class="el" href="sitkStatisticsImageFilter_8h_source.html">sitkStatisticsImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -800,7 +801,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkStatisticsImageFilter_8h_source.html#l00128">128</a> of file <a class="el" href="sitkStatisticsImageFilter_8h_source.html">sitkStatisticsImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkStatisticsImageFilter_8h_source.html#l00130">130</a> of file <a class="el" href="sitkStatisticsImageFilter_8h_source.html">sitkStatisticsImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -824,7 +825,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkStatisticsImageFilter_8h_source.html#l00132">132</a> of file <a class="el" href="sitkStatisticsImageFilter_8h_source.html">sitkStatisticsImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkStatisticsImageFilter_8h_source.html#l00134">134</a> of file <a class="el" href="sitkStatisticsImageFilter_8h_source.html">sitkStatisticsImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -848,7 +849,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkStatisticsImageFilter_8h_source.html#l00138">138</a> of file <a class="el" href="sitkStatisticsImageFilter_8h_source.html">sitkStatisticsImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkStatisticsImageFilter_8h_source.html#l00140">140</a> of file <a class="el" href="sitkStatisticsImageFilter_8h_source.html">sitkStatisticsImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -872,7 +873,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkStatisticsImageFilter_8h_source.html#l00142">142</a> of file <a class="el" href="sitkStatisticsImageFilter_8h_source.html">sitkStatisticsImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkStatisticsImageFilter_8h_source.html#l00144">144</a> of file <a class="el" href="sitkStatisticsImageFilter_8h_source.html">sitkStatisticsImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -896,7 +897,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkStatisticsImageFilter_8h_source.html#l00140">140</a> of file <a class="el" href="sitkStatisticsImageFilter_8h_source.html">sitkStatisticsImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkStatisticsImageFilter_8h_source.html#l00142">142</a> of file <a class="el" href="sitkStatisticsImageFilter_8h_source.html">sitkStatisticsImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -906,7 +907,7 @@ template&lt;class TImageType &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Mar 7 2020 03:21:34 for SimpleITK by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Mar 10 2020 03:49:25 for SimpleITK by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

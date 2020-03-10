@@ -19,7 +19,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">SimpleITK
-   &#160;<span id="projectnumber">2.0.0.dev127</span>
+   &#160;<span id="projectnumber">2.0.0rc1</span>
    </div>
   </td>
  </tr>
@@ -340,10 +340,10 @@ Additional Inherited Members</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>An inverse deconvolution filter regularized in the Tikhonov sense. </p>
 <p>The Tikhonov deconvolution filter is the inverse deconvolution filter with a regularization term added to the denominator. The filter minimizes the equation </p><p class="formulaDsp">
-<img class="formulaDsp" alt="\[ ||\hat{f} \otimes h - g||_{L_2}^2 + \mu||\hat{f}||^2 \]" src="form_93.png"/>
+<img class="formulaDsp" alt="\[ ||\hat{f} \otimes h - g||_{L_2}^2 + \mu||\hat{f}||^2 \]" src="form_94.png"/>
 </p>
-<p> where <img class="formulaInl" alt="$\hat{f}$" src="form_94.png"/> is the estimate of the unblurred image, <img class="formulaInl" alt="$h$" src="form_52.png"/> is the blurring kernel, <img class="formulaInl" alt="$g$" src="form_53.png"/> is the blurred image, and <img class="formulaInl" alt="$\mu$" src="form_95.png"/> is a non-negative real regularization function.</p>
-<p>The filter applies a kernel described in the Fourier domain as <img class="formulaInl" alt="$H^*(\omega) / (|H(\omega)|^2 + \mu)$" src="form_96.png"/> where <img class="formulaInl" alt="$H(\omega)$" src="form_47.png"/> is the Fourier transform of <img class="formulaInl" alt="$h$" src="form_52.png"/> . The term <img class="formulaInl" alt="$\mu$" src="form_95.png"/> is called RegularizationConstant in this filter. If <img class="formulaInl" alt="$\mu$" src="form_95.png"/> is set to zero, this filter is equivalent to the <a class="el" href="classitk_1_1simple_1_1InverseDeconvolutionImageFilter.html" title="The direct linear inverse deconvolution filter.">InverseDeconvolutionImageFilter</a> .</p>
+<p> where <img class="formulaInl" alt="$\hat{f}$" src="form_95.png"/> is the estimate of the unblurred image, <img class="formulaInl" alt="$h$" src="form_51.png"/> is the blurring kernel, <img class="formulaInl" alt="$g$" src="form_52.png"/> is the blurred image, and <img class="formulaInl" alt="$\mu$" src="form_96.png"/> is a non-negative real regularization function.</p>
+<p>The filter applies a kernel described in the Fourier domain as <img class="formulaInl" alt="$H^*(\omega) / (|H(\omega)|^2 + \mu)$" src="form_97.png"/> where <img class="formulaInl" alt="$H(\omega)$" src="form_46.png"/> is the Fourier transform of <img class="formulaInl" alt="$h$" src="form_51.png"/> . The term <img class="formulaInl" alt="$\mu$" src="form_96.png"/> is called RegularizationConstant in this filter. If <img class="formulaInl" alt="$\mu$" src="form_96.png"/> is set to zero, this filter is equivalent to the <a class="el" href="classitk_1_1simple_1_1InverseDeconvolutionImageFilter.html" title="The direct linear inverse deconvolution filter.">InverseDeconvolutionImageFilter</a> .</p>
 <dl class="section author"><dt>Author</dt><dd>Gaetan Lehmann, Biologie du Developpement et de la Reproduction, INRA de Jouy-en-Josas, France</dd>
 <dd>
 Cory Quammen, The University of North Carolina at Chapel Hill </dd></dl>
@@ -351,7 +351,7 @@ Cory Quammen, The University of North Carolina at Chapel Hill </dd></dl>
 <dd>
 <a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1TikhonovDeconvolutionImageFilter.html">itk::TikhonovDeconvolutionImageFilter</a> for the Doxygen on the original ITK class. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="sitkTikhonovDeconvolutionImageFilter_8h_source.html#l00048">48</a> of file <a class="el" href="sitkTikhonovDeconvolutionImageFilter_8h_source.html">sitkTikhonovDeconvolutionImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkTikhonovDeconvolutionImageFilter_8h_source.html#l00049">49</a> of file <a class="el" href="sitkTikhonovDeconvolutionImageFilter_8h_source.html">sitkTikhonovDeconvolutionImageFilter.h</a>.</p>
 </div><h2 class="groupheader">Member Typedef Documentation</h2>
 <a id="ae822915927b0e8b750cc2df342ab6b6f"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ae822915927b0e8b750cc2df342ab6b6f">&#9670;&nbsp;</a></span>MemberFunctionType</h2>
@@ -374,7 +374,7 @@ Cory Quammen, The University of North Carolina at Chapel Hill </dd></dl>
 </div><div class="memdoc">
 <p>Setup for member function dispatching </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkTikhonovDeconvolutionImageFilter_8h_source.html#l00125">125</a> of file <a class="el" href="sitkTikhonovDeconvolutionImageFilter_8h_source.html">sitkTikhonovDeconvolutionImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkTikhonovDeconvolutionImageFilter_8h_source.html#l00126">126</a> of file <a class="el" href="sitkTikhonovDeconvolutionImageFilter_8h_source.html">sitkTikhonovDeconvolutionImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -391,7 +391,7 @@ Cory Quammen, The University of North Carolina at Chapel Hill </dd></dl>
 </div><div class="memdoc">
 <p>Define the pixels types supported by this filter </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkTikhonovDeconvolutionImageFilter_8h_source.html#l00060">60</a> of file <a class="el" href="sitkTikhonovDeconvolutionImageFilter_8h_source.html">sitkTikhonovDeconvolutionImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkTikhonovDeconvolutionImageFilter_8h_source.html#l00061">61</a> of file <a class="el" href="sitkTikhonovDeconvolutionImageFilter_8h_source.html">sitkTikhonovDeconvolutionImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -407,7 +407,7 @@ Cory Quammen, The University of North Carolina at Chapel Hill </dd></dl>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkTikhonovDeconvolutionImageFilter_8h_source.html#l00050">50</a> of file <a class="el" href="sitkTikhonovDeconvolutionImageFilter_8h_source.html">sitkTikhonovDeconvolutionImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkTikhonovDeconvolutionImageFilter_8h_source.html#l00051">51</a> of file <a class="el" href="sitkTikhonovDeconvolutionImageFilter_8h_source.html">sitkTikhonovDeconvolutionImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -429,7 +429,7 @@ Cory Quammen, The University of North Carolina at Chapel Hill </dd></dl>
 <tr><td class="fieldname"><a id="a0e5646e58b07e6a02458b815122a6e54a327c67f803e5fc098a92d0d2afdacd14"></a>PERIODIC_PAD&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
-<p class="definition">Definition at line <a class="el" href="sitkTikhonovDeconvolutionImageFilter_8h_source.html#l00088">88</a> of file <a class="el" href="sitkTikhonovDeconvolutionImageFilter_8h_source.html">sitkTikhonovDeconvolutionImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkTikhonovDeconvolutionImageFilter_8h_source.html#l00089">89</a> of file <a class="el" href="sitkTikhonovDeconvolutionImageFilter_8h_source.html">sitkTikhonovDeconvolutionImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -449,7 +449,7 @@ Cory Quammen, The University of North Carolina at Chapel Hill </dd></dl>
 <tr><td class="fieldname"><a id="abaeedbc2c457acf0db4cae4a2020a2afa93be8c21d7ca4b3570f0cfe5afa3870f"></a>VALID&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
-<p class="definition">Definition at line <a class="el" href="sitkTikhonovDeconvolutionImageFilter_8h_source.html#l00098">98</a> of file <a class="el" href="sitkTikhonovDeconvolutionImageFilter_8h_source.html">sitkTikhonovDeconvolutionImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkTikhonovDeconvolutionImageFilter_8h_source.html#l00099">99</a> of file <a class="el" href="sitkTikhonovDeconvolutionImageFilter_8h_source.html">sitkTikhonovDeconvolutionImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -642,7 +642,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkTikhonovDeconvolutionImageFilter_8h_source.html#l00096">96</a> of file <a class="el" href="sitkTikhonovDeconvolutionImageFilter_8h_source.html">sitkTikhonovDeconvolutionImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkTikhonovDeconvolutionImageFilter_8h_source.html#l00097">97</a> of file <a class="el" href="sitkTikhonovDeconvolutionImageFilter_8h_source.html">sitkTikhonovDeconvolutionImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -672,7 +672,7 @@ template&lt;class TImageType &gt; </div>
 
 <p>Implements <a class="el" href="classitk_1_1simple_1_1ProcessObject.html#ac8ab837a83ee6ad83c2e2e71b1e98386">itk::simple::ProcessObject</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="sitkTikhonovDeconvolutionImageFilter_8h_source.html#l00108">108</a> of file <a class="el" href="sitkTikhonovDeconvolutionImageFilter_8h_source.html">sitkTikhonovDeconvolutionImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkTikhonovDeconvolutionImageFilter_8h_source.html#l00109">109</a> of file <a class="el" href="sitkTikhonovDeconvolutionImageFilter_8h_source.html">sitkTikhonovDeconvolutionImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -699,7 +699,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkTikhonovDeconvolutionImageFilter_8h_source.html#l00086">86</a> of file <a class="el" href="sitkTikhonovDeconvolutionImageFilter_8h_source.html">sitkTikhonovDeconvolutionImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkTikhonovDeconvolutionImageFilter_8h_source.html#l00087">87</a> of file <a class="el" href="sitkTikhonovDeconvolutionImageFilter_8h_source.html">sitkTikhonovDeconvolutionImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -726,7 +726,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkTikhonovDeconvolutionImageFilter_8h_source.html#l00106">106</a> of file <a class="el" href="sitkTikhonovDeconvolutionImageFilter_8h_source.html">sitkTikhonovDeconvolutionImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkTikhonovDeconvolutionImageFilter_8h_source.html#l00107">107</a> of file <a class="el" href="sitkTikhonovDeconvolutionImageFilter_8h_source.html">sitkTikhonovDeconvolutionImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -754,7 +754,7 @@ template&lt;class TImageType &gt; </div>
 </div><div class="memdoc">
 <p>The regularization factor. Larger values reduce the dominance of noise in the solution, but results in higher approximation error in the deblurred image. Default value is 0.0, yielding the same results as the <a class="el" href="classitk_1_1simple_1_1InverseDeconvolutionImageFilter.html" title="The direct linear inverse deconvolution filter.">InverseDeconvolutionImageFilter</a> . </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkTikhonovDeconvolutionImageFilter_8h_source.html#l00072">72</a> of file <a class="el" href="sitkTikhonovDeconvolutionImageFilter_8h_source.html">sitkTikhonovDeconvolutionImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkTikhonovDeconvolutionImageFilter_8h_source.html#l00073">73</a> of file <a class="el" href="sitkTikhonovDeconvolutionImageFilter_8h_source.html">sitkTikhonovDeconvolutionImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -781,7 +781,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkTikhonovDeconvolutionImageFilter_8h_source.html#l00082">82</a> of file <a class="el" href="sitkTikhonovDeconvolutionImageFilter_8h_source.html">sitkTikhonovDeconvolutionImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkTikhonovDeconvolutionImageFilter_8h_source.html#l00083">83</a> of file <a class="el" href="sitkTikhonovDeconvolutionImageFilter_8h_source.html">sitkTikhonovDeconvolutionImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -809,7 +809,7 @@ template&lt;class TImageType &gt; </div>
 </div><div class="memdoc">
 <p>Set the value of Normalize to true or false respectfully. </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkTikhonovDeconvolutionImageFilter_8h_source.html#l00081">81</a> of file <a class="el" href="sitkTikhonovDeconvolutionImageFilter_8h_source.html">sitkTikhonovDeconvolutionImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkTikhonovDeconvolutionImageFilter_8h_source.html#l00082">82</a> of file <a class="el" href="sitkTikhonovDeconvolutionImageFilter_8h_source.html">sitkTikhonovDeconvolutionImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -837,7 +837,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkTikhonovDeconvolutionImageFilter_8h_source.html#l00092">92</a> of file <a class="el" href="sitkTikhonovDeconvolutionImageFilter_8h_source.html">sitkTikhonovDeconvolutionImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkTikhonovDeconvolutionImageFilter_8h_source.html#l00093">93</a> of file <a class="el" href="sitkTikhonovDeconvolutionImageFilter_8h_source.html">sitkTikhonovDeconvolutionImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -866,7 +866,7 @@ template&lt;class TImageType &gt; </div>
 </div><div class="memdoc">
 <p>Normalize the output image by the sum of the kernel components </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkTikhonovDeconvolutionImageFilter_8h_source.html#l00078">78</a> of file <a class="el" href="sitkTikhonovDeconvolutionImageFilter_8h_source.html">sitkTikhonovDeconvolutionImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkTikhonovDeconvolutionImageFilter_8h_source.html#l00079">79</a> of file <a class="el" href="sitkTikhonovDeconvolutionImageFilter_8h_source.html">sitkTikhonovDeconvolutionImageFilter.h</a>.</p>
 
 <p class="reference">References <a class="el" href="namespaceitk_1_1simple.html#a603f415c1d5f0475aff976d8d784dba7">itk::simple::Normalize()</a>.</p>
 
@@ -896,7 +896,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkTikhonovDeconvolutionImageFilter_8h_source.html#l00102">102</a> of file <a class="el" href="sitkTikhonovDeconvolutionImageFilter_8h_source.html">sitkTikhonovDeconvolutionImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkTikhonovDeconvolutionImageFilter_8h_source.html#l00103">103</a> of file <a class="el" href="sitkTikhonovDeconvolutionImageFilter_8h_source.html">sitkTikhonovDeconvolutionImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -925,7 +925,7 @@ template&lt;class TImageType &gt; </div>
 </div><div class="memdoc">
 <p>The regularization factor. Larger values reduce the dominance of noise in the solution, but results in higher approximation error in the deblurred image. Default value is 0.0, yielding the same results as the <a class="el" href="classitk_1_1simple_1_1InverseDeconvolutionImageFilter.html" title="The direct linear inverse deconvolution filter.">InverseDeconvolutionImageFilter</a> . </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkTikhonovDeconvolutionImageFilter_8h_source.html#l00067">67</a> of file <a class="el" href="sitkTikhonovDeconvolutionImageFilter_8h_source.html">sitkTikhonovDeconvolutionImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkTikhonovDeconvolutionImageFilter_8h_source.html#l00068">68</a> of file <a class="el" href="sitkTikhonovDeconvolutionImageFilter_8h_source.html">sitkTikhonovDeconvolutionImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -978,7 +978,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkTikhonovDeconvolutionImageFilter_8h_source.html#l00129">129</a> of file <a class="el" href="sitkTikhonovDeconvolutionImageFilter_8h_source.html">sitkTikhonovDeconvolutionImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkTikhonovDeconvolutionImageFilter_8h_source.html#l00130">130</a> of file <a class="el" href="sitkTikhonovDeconvolutionImageFilter_8h_source.html">sitkTikhonovDeconvolutionImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -1003,7 +1003,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkTikhonovDeconvolutionImageFilter_8h_source.html#l00137">137</a> of file <a class="el" href="sitkTikhonovDeconvolutionImageFilter_8h_source.html">sitkTikhonovDeconvolutionImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkTikhonovDeconvolutionImageFilter_8h_source.html#l00138">138</a> of file <a class="el" href="sitkTikhonovDeconvolutionImageFilter_8h_source.html">sitkTikhonovDeconvolutionImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -1027,7 +1027,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkTikhonovDeconvolutionImageFilter_8h_source.html#l00131">131</a> of file <a class="el" href="sitkTikhonovDeconvolutionImageFilter_8h_source.html">sitkTikhonovDeconvolutionImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkTikhonovDeconvolutionImageFilter_8h_source.html#l00132">132</a> of file <a class="el" href="sitkTikhonovDeconvolutionImageFilter_8h_source.html">sitkTikhonovDeconvolutionImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -1051,7 +1051,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkTikhonovDeconvolutionImageFilter_8h_source.html#l00136">136</a> of file <a class="el" href="sitkTikhonovDeconvolutionImageFilter_8h_source.html">sitkTikhonovDeconvolutionImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkTikhonovDeconvolutionImageFilter_8h_source.html#l00137">137</a> of file <a class="el" href="sitkTikhonovDeconvolutionImageFilter_8h_source.html">sitkTikhonovDeconvolutionImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -1075,7 +1075,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkTikhonovDeconvolutionImageFilter_8h_source.html#l00138">138</a> of file <a class="el" href="sitkTikhonovDeconvolutionImageFilter_8h_source.html">sitkTikhonovDeconvolutionImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkTikhonovDeconvolutionImageFilter_8h_source.html#l00139">139</a> of file <a class="el" href="sitkTikhonovDeconvolutionImageFilter_8h_source.html">sitkTikhonovDeconvolutionImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -1099,7 +1099,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkTikhonovDeconvolutionImageFilter_8h_source.html#l00134">134</a> of file <a class="el" href="sitkTikhonovDeconvolutionImageFilter_8h_source.html">sitkTikhonovDeconvolutionImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkTikhonovDeconvolutionImageFilter_8h_source.html#l00135">135</a> of file <a class="el" href="sitkTikhonovDeconvolutionImageFilter_8h_source.html">sitkTikhonovDeconvolutionImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -1109,7 +1109,7 @@ template&lt;class TImageType &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Mar 7 2020 03:21:34 for SimpleITK by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Mar 10 2020 03:49:25 for SimpleITK by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

@@ -19,7 +19,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">SimpleITK
-   &#160;<span id="projectnumber">2.0.0.dev127</span>
+   &#160;<span id="projectnumber">2.0.0rc1</span>
    </div>
   </td>
  </tr>
@@ -320,18 +320,18 @@ Additional Inherited Members</h2></td></tr>
 <p>The simplest way of using the watershed is to preprocess the image we want to segment so that the boundaries of our objects are bright (e.g apply an edge detector) and compute the watershed transform of the edge image. Watershed lines will correspond to the boundaries and our problem will be solved. This is rarely useful in practice because there are always more regional minima than there are objects, either due to noise or natural variations in the object surfaces. Therefore, while many watershed lines do lie on significant boundaries, there are many that don't. Various methods can be used to reduce the number of minima in the image, like thresholding the smallest values, filtering the minima and/or smoothing the image.</p>
 <p>This filter use another approach to avoid the problem of over segmentation: it let the user provide a marker image which mark the minima in the input image and give them a label. The minima are imposed in the input image by the markers. The labels of the output image are the label of the marker image.</p>
 <p>The morphological watershed transform algorithm is described in Chapter 9.2 of Pierre Soille's book "Morphological Image Analysis:
-Principles and Applications", Second Edition, Springer, 2003.</p>
+ Principles and Applications", Second Edition, Springer, 2003.</p>
 <p>This code was contributed in the Insight Journal paper: "The watershed transform in ITK - discussion and new developments" by Beare R., Lehmann G. <a href="https://hdl.handle.net/1926/202">https://hdl.handle.net/1926/202</a> <a href="http://www.insight-journal.org/browse/publication/92">http://www.insight-journal.org/browse/publication/92</a></p>
 <dl class="section author"><dt>Author</dt><dd>Gaetan Lehmann. Biologie du Developpement et de la Reproduction, INRA de Jouy-en-Josas, France.</dd>
 <dd>
 Richard Beare. Department of Medicine, Monash University, Melbourne, Australia.</dd></dl>
-<dl class="section see"><dt>See also</dt><dd><a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1WatershedImageFilter.html">WatershedImageFilter</a> , <a class="el" href="classitk_1_1simple_1_1MorphologicalWatershedImageFilter.html" title="Watershed segmentation implementation with morphogical operators.">MorphologicalWatershedImageFilter</a> </dd>
+<dl class="section see"><dt>See also</dt><dd><a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1WatershedImageFilter.html">WatershedImageFilter</a> , <a class="el" href="classitk_1_1simple_1_1MorphologicalWatershedImageFilter.html" title="Watershed segmentation implementation with morphological operators.">MorphologicalWatershedImageFilter</a> </dd>
 <dd>
 <a class="el" href="namespaceitk_1_1simple.html#abb37e5dfdc96762f21b5b375976f42dc" title="Morphological watershed transform from markers.">itk::simple::MorphologicalWatershedFromMarkers</a> for the procedural interface </dd>
 <dd>
 <a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1MorphologicalWatershedFromMarkersImageFilter.html">itk::MorphologicalWatershedFromMarkersImageFilter</a> for the Doxygen on the original ITK class. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="sitkMorphologicalWatershedFromMarkersImageFilter_8h_source.html#l00060">60</a> of file <a class="el" href="sitkMorphologicalWatershedFromMarkersImageFilter_8h_source.html">sitkMorphologicalWatershedFromMarkersImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkMorphologicalWatershedFromMarkersImageFilter_8h_source.html#l00062">62</a> of file <a class="el" href="sitkMorphologicalWatershedFromMarkersImageFilter_8h_source.html">sitkMorphologicalWatershedFromMarkersImageFilter.h</a>.</p>
 </div><h2 class="groupheader">Member Typedef Documentation</h2>
 <a id="a953ba59e29ae154a9e6354c0ee3e58d6"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a953ba59e29ae154a9e6354c0ee3e58d6">&#9670;&nbsp;</a></span>MemberFunctionType</h2>
@@ -354,7 +354,7 @@ Richard Beare. Department of Medicine, Monash University, Melbourne, Australia.<
 </div><div class="memdoc">
 <p>Setup for member function dispatching </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkMorphologicalWatershedFromMarkersImageFilter_8h_source.html#l00120">120</a> of file <a class="el" href="sitkMorphologicalWatershedFromMarkersImageFilter_8h_source.html">sitkMorphologicalWatershedFromMarkersImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkMorphologicalWatershedFromMarkersImageFilter_8h_source.html#l00122">122</a> of file <a class="el" href="sitkMorphologicalWatershedFromMarkersImageFilter_8h_source.html">sitkMorphologicalWatershedFromMarkersImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -371,7 +371,7 @@ Richard Beare. Department of Medicine, Monash University, Melbourne, Australia.<
 </div><div class="memdoc">
 <p>Define the pixels types supported by this filter </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkMorphologicalWatershedFromMarkersImageFilter_8h_source.html#l00072">72</a> of file <a class="el" href="sitkMorphologicalWatershedFromMarkersImageFilter_8h_source.html">sitkMorphologicalWatershedFromMarkersImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkMorphologicalWatershedFromMarkersImageFilter_8h_source.html#l00074">74</a> of file <a class="el" href="sitkMorphologicalWatershedFromMarkersImageFilter_8h_source.html">sitkMorphologicalWatershedFromMarkersImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -387,7 +387,7 @@ Richard Beare. Department of Medicine, Monash University, Melbourne, Australia.<
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkMorphologicalWatershedFromMarkersImageFilter_8h_source.html#l00062">62</a> of file <a class="el" href="sitkMorphologicalWatershedFromMarkersImageFilter_8h_source.html">sitkMorphologicalWatershedFromMarkersImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkMorphologicalWatershedFromMarkersImageFilter_8h_source.html#l00064">64</a> of file <a class="el" href="sitkMorphologicalWatershedFromMarkersImageFilter_8h_source.html">sitkMorphologicalWatershedFromMarkersImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -568,7 +568,7 @@ template&lt;class TImageType1 , class TImageType2 &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkMorphologicalWatershedFromMarkersImageFilter_8h_source.html#l00097">97</a> of file <a class="el" href="sitkMorphologicalWatershedFromMarkersImageFilter_8h_source.html">sitkMorphologicalWatershedFromMarkersImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkMorphologicalWatershedFromMarkersImageFilter_8h_source.html#l00099">99</a> of file <a class="el" href="sitkMorphologicalWatershedFromMarkersImageFilter_8h_source.html">sitkMorphologicalWatershedFromMarkersImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -596,7 +596,7 @@ template&lt;class TImageType1 , class TImageType2 &gt; </div>
 </div><div class="memdoc">
 <p>Set the value of FullyConnected to true or false respectfully. </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkMorphologicalWatershedFromMarkersImageFilter_8h_source.html#l00096">96</a> of file <a class="el" href="sitkMorphologicalWatershedFromMarkersImageFilter_8h_source.html">sitkMorphologicalWatershedFromMarkersImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkMorphologicalWatershedFromMarkersImageFilter_8h_source.html#l00098">98</a> of file <a class="el" href="sitkMorphologicalWatershedFromMarkersImageFilter_8h_source.html">sitkMorphologicalWatershedFromMarkersImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -624,7 +624,7 @@ template&lt;class TImageType1 , class TImageType2 &gt; </div>
 </div><div class="memdoc">
 <p>Set/Get whether the connected components are defined strictly by face connectivity or by face+edge+vertex connectivity. Default is FullyConnectedOff. For objects that are 1 pixel wide, use FullyConnectedOn. </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkMorphologicalWatershedFromMarkersImageFilter_8h_source.html#l00102">102</a> of file <a class="el" href="sitkMorphologicalWatershedFromMarkersImageFilter_8h_source.html">sitkMorphologicalWatershedFromMarkersImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkMorphologicalWatershedFromMarkersImageFilter_8h_source.html#l00104">104</a> of file <a class="el" href="sitkMorphologicalWatershedFromMarkersImageFilter_8h_source.html">sitkMorphologicalWatershedFromMarkersImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -652,7 +652,7 @@ template&lt;class TImageType1 , class TImageType2 &gt; </div>
 </div><div class="memdoc">
 <p>Set/Get whether the watershed pixel must be marked or not. Default is true. Set it to false do not only avoid writing watershed pixels, it also decrease algorithm complexity. </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkMorphologicalWatershedFromMarkersImageFilter_8h_source.html#l00088">88</a> of file <a class="el" href="sitkMorphologicalWatershedFromMarkersImageFilter_8h_source.html">sitkMorphologicalWatershedFromMarkersImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkMorphologicalWatershedFromMarkersImageFilter_8h_source.html#l00090">90</a> of file <a class="el" href="sitkMorphologicalWatershedFromMarkersImageFilter_8h_source.html">sitkMorphologicalWatershedFromMarkersImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -682,7 +682,7 @@ template&lt;class TImageType1 , class TImageType2 &gt; </div>
 
 <p>Implements <a class="el" href="classitk_1_1simple_1_1ProcessObject.html#ac8ab837a83ee6ad83c2e2e71b1e98386">itk::simple::ProcessObject</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="sitkMorphologicalWatershedFromMarkersImageFilter_8h_source.html#l00104">104</a> of file <a class="el" href="sitkMorphologicalWatershedFromMarkersImageFilter_8h_source.html">sitkMorphologicalWatershedFromMarkersImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkMorphologicalWatershedFromMarkersImageFilter_8h_source.html#l00106">106</a> of file <a class="el" href="sitkMorphologicalWatershedFromMarkersImageFilter_8h_source.html">sitkMorphologicalWatershedFromMarkersImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -709,7 +709,7 @@ template&lt;class TImageType1 , class TImageType2 &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkMorphologicalWatershedFromMarkersImageFilter_8h_source.html#l00083">83</a> of file <a class="el" href="sitkMorphologicalWatershedFromMarkersImageFilter_8h_source.html">sitkMorphologicalWatershedFromMarkersImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkMorphologicalWatershedFromMarkersImageFilter_8h_source.html#l00085">85</a> of file <a class="el" href="sitkMorphologicalWatershedFromMarkersImageFilter_8h_source.html">sitkMorphologicalWatershedFromMarkersImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -737,7 +737,7 @@ template&lt;class TImageType1 , class TImageType2 &gt; </div>
 </div><div class="memdoc">
 <p>Set the value of MarkWatershedLine to true or false respectfully. </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkMorphologicalWatershedFromMarkersImageFilter_8h_source.html#l00082">82</a> of file <a class="el" href="sitkMorphologicalWatershedFromMarkersImageFilter_8h_source.html">sitkMorphologicalWatershedFromMarkersImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkMorphologicalWatershedFromMarkersImageFilter_8h_source.html#l00084">84</a> of file <a class="el" href="sitkMorphologicalWatershedFromMarkersImageFilter_8h_source.html">sitkMorphologicalWatershedFromMarkersImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -766,7 +766,7 @@ template&lt;class TImageType1 , class TImageType2 &gt; </div>
 </div><div class="memdoc">
 <p>Set/Get whether the connected components are defined strictly by face connectivity or by face+edge+vertex connectivity. Default is FullyConnectedOff. For objects that are 1 pixel wide, use FullyConnectedOn. </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkMorphologicalWatershedFromMarkersImageFilter_8h_source.html#l00093">93</a> of file <a class="el" href="sitkMorphologicalWatershedFromMarkersImageFilter_8h_source.html">sitkMorphologicalWatershedFromMarkersImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkMorphologicalWatershedFromMarkersImageFilter_8h_source.html#l00095">95</a> of file <a class="el" href="sitkMorphologicalWatershedFromMarkersImageFilter_8h_source.html">sitkMorphologicalWatershedFromMarkersImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -795,7 +795,7 @@ template&lt;class TImageType1 , class TImageType2 &gt; </div>
 </div><div class="memdoc">
 <p>Set/Get whether the watershed pixel must be marked or not. Default is true. Set it to false do not only avoid writing watershed pixels, it also decrease algorithm complexity. </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkMorphologicalWatershedFromMarkersImageFilter_8h_source.html#l00079">79</a> of file <a class="el" href="sitkMorphologicalWatershedFromMarkersImageFilter_8h_source.html">sitkMorphologicalWatershedFromMarkersImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkMorphologicalWatershedFromMarkersImageFilter_8h_source.html#l00081">81</a> of file <a class="el" href="sitkMorphologicalWatershedFromMarkersImageFilter_8h_source.html">sitkMorphologicalWatershedFromMarkersImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -848,7 +848,7 @@ template&lt;class TImageType1 , class TImageType2 &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkMorphologicalWatershedFromMarkersImageFilter_8h_source.html#l00122">122</a> of file <a class="el" href="sitkMorphologicalWatershedFromMarkersImageFilter_8h_source.html">sitkMorphologicalWatershedFromMarkersImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkMorphologicalWatershedFromMarkersImageFilter_8h_source.html#l00124">124</a> of file <a class="el" href="sitkMorphologicalWatershedFromMarkersImageFilter_8h_source.html">sitkMorphologicalWatershedFromMarkersImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -873,7 +873,7 @@ template&lt;class TImageType1 , class TImageType2 &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkMorphologicalWatershedFromMarkersImageFilter_8h_source.html#l00126">126</a> of file <a class="el" href="sitkMorphologicalWatershedFromMarkersImageFilter_8h_source.html">sitkMorphologicalWatershedFromMarkersImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkMorphologicalWatershedFromMarkersImageFilter_8h_source.html#l00128">128</a> of file <a class="el" href="sitkMorphologicalWatershedFromMarkersImageFilter_8h_source.html">sitkMorphologicalWatershedFromMarkersImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -897,7 +897,7 @@ template&lt;class TImageType1 , class TImageType2 &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkMorphologicalWatershedFromMarkersImageFilter_8h_source.html#l00131">131</a> of file <a class="el" href="sitkMorphologicalWatershedFromMarkersImageFilter_8h_source.html">sitkMorphologicalWatershedFromMarkersImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkMorphologicalWatershedFromMarkersImageFilter_8h_source.html#l00133">133</a> of file <a class="el" href="sitkMorphologicalWatershedFromMarkersImageFilter_8h_source.html">sitkMorphologicalWatershedFromMarkersImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -921,7 +921,7 @@ template&lt;class TImageType1 , class TImageType2 &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkMorphologicalWatershedFromMarkersImageFilter_8h_source.html#l00130">130</a> of file <a class="el" href="sitkMorphologicalWatershedFromMarkersImageFilter_8h_source.html">sitkMorphologicalWatershedFromMarkersImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkMorphologicalWatershedFromMarkersImageFilter_8h_source.html#l00132">132</a> of file <a class="el" href="sitkMorphologicalWatershedFromMarkersImageFilter_8h_source.html">sitkMorphologicalWatershedFromMarkersImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -931,7 +931,7 @@ template&lt;class TImageType1 , class TImageType2 &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Mar 7 2020 03:21:32 for SimpleITK by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Mar 10 2020 03:49:23 for SimpleITK by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

@@ -19,7 +19,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">SimpleITK
-   &#160;<span id="projectnumber">2.0.0.dev127</span>
+   &#160;<span id="projectnumber">2.0.0rc1</span>
    </div>
   </td>
  </tr>
@@ -311,11 +311,11 @@ Additional Inherited Members</h2></td></tr>
 <p>The pixel type of the input 2 image must have a valid definition of the operator!=. This condition is required because internally this filter will perform the operation</p>
 <div class="fragment"><div class="line"><span class="keywordflow">if</span> pixel_from_mask_image != mask_value</div>
 <div class="line"> </div>
-<div class="line">pixel_output_image = output_value</div>
+<div class="line"> pixel_output_image = output_value</div>
 <div class="line"> </div>
 <div class="line"><span class="keywordflow">else</span></div>
 <div class="line"> </div>
-<div class="line">pixel_output_image = pixel_input_image</div>
+<div class="line"> pixel_output_image = pixel_input_image</div>
 </div><!-- fragment --><p>The pixel from the input 1 is cast to the pixel type of the output image.</p>
 <p>Note that the input and the mask images must be of the same size.</p>
 <dl class="section warning"><dt>Warning</dt><dd>Only pixel value with mask_value ( defaults to 0 ) will be preserved.</dd></dl>
@@ -814,7 +814,7 @@ template&lt;class TImageType &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Mar 7 2020 03:21:31 for SimpleITK by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Mar 10 2020 03:49:22 for SimpleITK by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

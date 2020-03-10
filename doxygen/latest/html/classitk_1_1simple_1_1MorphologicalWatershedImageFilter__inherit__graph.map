@@ -1,5 +1,5 @@
 <map id="itk::simple::MorphologicalWatershedImageFilter" name="itk::simple::MorphologicalWatershedImageFilter">
-<area shape="rect" id="node1" title="Watershed segmentation implementation with morphogical operators." alt="" coords="15,323,206,364"/>
+<area shape="rect" id="node1" title="Watershed segmentation implementation with morphological operators." alt="" coords="15,323,206,364"/>
 <area shape="rect" id="node2" href="$classitk_1_1simple_1_1ImageFilter.html" title=" " alt="" coords="5,247,216,273"/>
 <area shape="rect" id="node3" href="$classitk_1_1simple_1_1ProcessObject.html" title="Base class for SimpleITK classes based on ProcessObject." alt="" coords="10,81,201,108"/>
 <area shape="rect" id="node5" href="$classitk_1_1simple_1_1ImageFilter.html" title="The base interface for SimpleITK filters that take one input image." alt="" coords="126,157,338,184"/>

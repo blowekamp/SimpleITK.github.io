@@ -19,7 +19,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">SimpleITK
-   &#160;<span id="projectnumber">2.0.0.dev127</span>
+   &#160;<span id="projectnumber">2.0.0rc1</span>
    </div>
   </td>
  </tr>
@@ -350,15 +350,15 @@ Additional Inherited Members</h2></td></tr>
 <dl class="section user"><dt>INPUTS</dt><dd>This filter requires two inputs. The first input is a initial level set. The initial level set is a real image which contains the initial contour/surface as the zero level set. For example, a signed distance function from the initial contour/surface is typically used. Unlike the simpler <a class="el" href="classitk_1_1simple_1_1ShapeDetectionLevelSetImageFilter.html" title="Segments structures in images based on a user supplied edge potential map.">ShapeDetectionLevelSetImageFilter</a> the initial contour does not have to lie wholly within the shape to be segmented. The initial contour is allow to overlap the shape boundary. The extra advection term in the update equation behaves like a doublet and attracts the contour to the boundary. This approach for segmentation follows that of Caselles et al (1997).</dd></dl>
 <dl class="section user"><dt></dt><dd>The second input is the feature image. For this filter, this is the edge potential map. General characteristics of an edge potential map is that it has values close to zero in regions near the edges and values close to one inside the shape itself. Typically, the edge potential map is compute from the image gradient, for example:</dd></dl>
 <p class="formulaDsp">
-<img class="formulaDsp" alt="\[ g(I) = 1 / ( 1 + | (\nabla * G)(I)| ) \]" src="form_36.png"/>
+<img class="formulaDsp" alt="\[ g(I) = 1 / ( 1 + | (\nabla * G)(I)| ) \]" src="form_35.png"/>
 </p>
  <p class="formulaDsp">
-<img class="formulaDsp" alt="\[ g(I) = \exp^{-|(\nabla * G)(I)|} \]" src="form_37.png"/>
+<img class="formulaDsp" alt="\[ g(I) = \exp^{-|(\nabla * G)(I)|} \]" src="form_36.png"/>
 </p>
-<p>where <img class="formulaInl" alt="$ I $" src="form_6.png"/> is image intensity and <img class="formulaInl" alt="$ (\nabla * G) $" src="form_38.png"/> is the derivative of Gaussian operator.</p>
+<p>where <img class="formulaInl" alt="$ I $" src="form_6.png"/> is image intensity and <img class="formulaInl" alt="$ (\nabla * G) $" src="form_37.png"/> is the derivative of Gaussian operator.</p>
 <dl class="section user"><dt></dt><dd>See <a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1SegmentationLevelSetImageFilter.html">SegmentationLevelSetImageFilter</a> and <a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1SparseFieldLevelSetImageFilter.html">SparseFieldLevelSetImageFilter</a> for more information on Inputs.</dd></dl>
 <dl class="section user"><dt>PARAMETERS</dt><dd>The PropagationScaling parameter can be used to switch from propagation outwards (POSITIVE scaling parameter) versus propagating inwards (NEGATIVE scaling parameter).</dd></dl>
-<p>This implementation allows the user to set the weights between the propagation, advection and curvature term using methods <a class="el" href="classitk_1_1simple_1_1GeodesicActiveContourLevelSetImageFilter.html#a18012095af7f3223a9fdd24e66ba0542">SetPropagationScaling()</a> , <a class="el" href="classitk_1_1simple_1_1GeodesicActiveContourLevelSetImageFilter.html#a93ef151fe2356f29c4a16aa42d3dd9c7">SetAdvectionScaling()</a> , <a class="el" href="classitk_1_1simple_1_1GeodesicActiveContourLevelSetImageFilter.html#a138148a30461b264da1f555395f3cc59">SetCurvatureScaling()</a> . In general, the larger the CurvatureScaling, the smoother the resulting contour. To follow the implementation in Caselles et al paper, set the PropagationScaling to <img class="formulaInl" alt="$ c $" src="form_39.png"/> (the inflation or ballon force) and AdvectionScaling and CurvatureScaling both to 1.0.</p>
+<p>This implementation allows the user to set the weights between the propagation, advection and curvature term using methods <a class="el" href="classitk_1_1simple_1_1GeodesicActiveContourLevelSetImageFilter.html#a18012095af7f3223a9fdd24e66ba0542">SetPropagationScaling()</a> , <a class="el" href="classitk_1_1simple_1_1GeodesicActiveContourLevelSetImageFilter.html#a93ef151fe2356f29c4a16aa42d3dd9c7">SetAdvectionScaling()</a> , <a class="el" href="classitk_1_1simple_1_1GeodesicActiveContourLevelSetImageFilter.html#a138148a30461b264da1f555395f3cc59">SetCurvatureScaling()</a> . In general, the larger the CurvatureScaling, the smoother the resulting contour. To follow the implementation in Caselles et al paper, set the PropagationScaling to <img class="formulaInl" alt="$ c $" src="form_38.png"/> (the inflation or ballon force) and AdvectionScaling and CurvatureScaling both to 1.0.</p>
 <dl class="section user"><dt>OUTPUTS</dt><dd>The filter outputs a single, scalar, real-valued image. Negative values in the output image represent the inside of the segmented region and positive values in the image represent the outside of the segmented region. The zero crossings of the image correspond to the position of the propagating front.</dd></dl>
 <dl class="section user"><dt></dt><dd>See <a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1SparseFieldLevelSetImageFilter.html">SparseFieldLevelSetImageFilter</a> and <a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1SegmentationLevelSetImageFilter.html">SegmentationLevelSetImageFilter</a> for more information.</dd></dl>
 <dl class="section user"><dt>REFERENCES</dt><dd></dd></dl>
@@ -373,7 +373,7 @@ Additional Inherited Members</h2></td></tr>
 <dd>
 <a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1GeodesicActiveContourLevelSetImageFilter.html">itk::GeodesicActiveContourLevelSetImageFilter</a> for the Doxygen on the original ITK class. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="sitkGeodesicActiveContourLevelSetImageFilter_8h_source.html#l00082">82</a> of file <a class="el" href="sitkGeodesicActiveContourLevelSetImageFilter_8h_source.html">sitkGeodesicActiveContourLevelSetImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkGeodesicActiveContourLevelSetImageFilter_8h_source.html#l00094">94</a> of file <a class="el" href="sitkGeodesicActiveContourLevelSetImageFilter_8h_source.html">sitkGeodesicActiveContourLevelSetImageFilter.h</a>.</p>
 </div><h2 class="groupheader">Member Typedef Documentation</h2>
 <a id="a5ba3c5c58a6e34fa2d2c7156ea8b0b46"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a5ba3c5c58a6e34fa2d2c7156ea8b0b46">&#9670;&nbsp;</a></span>MemberFunctionType</h2>
@@ -396,7 +396,7 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 <p>Setup for member function dispatching </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkGeodesicActiveContourLevelSetImageFilter_8h_source.html#l00183">183</a> of file <a class="el" href="sitkGeodesicActiveContourLevelSetImageFilter_8h_source.html">sitkGeodesicActiveContourLevelSetImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkGeodesicActiveContourLevelSetImageFilter_8h_source.html#l00195">195</a> of file <a class="el" href="sitkGeodesicActiveContourLevelSetImageFilter_8h_source.html">sitkGeodesicActiveContourLevelSetImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -413,7 +413,7 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 <p>Define the pixels types supported by this filter </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkGeodesicActiveContourLevelSetImageFilter_8h_source.html#l00094">94</a> of file <a class="el" href="sitkGeodesicActiveContourLevelSetImageFilter_8h_source.html">sitkGeodesicActiveContourLevelSetImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkGeodesicActiveContourLevelSetImageFilter_8h_source.html#l00106">106</a> of file <a class="el" href="sitkGeodesicActiveContourLevelSetImageFilter_8h_source.html">sitkGeodesicActiveContourLevelSetImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -429,7 +429,7 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkGeodesicActiveContourLevelSetImageFilter_8h_source.html#l00084">84</a> of file <a class="el" href="sitkGeodesicActiveContourLevelSetImageFilter_8h_source.html">sitkGeodesicActiveContourLevelSetImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkGeodesicActiveContourLevelSetImageFilter_8h_source.html#l00096">96</a> of file <a class="el" href="sitkGeodesicActiveContourLevelSetImageFilter_8h_source.html">sitkGeodesicActiveContourLevelSetImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -634,7 +634,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkGeodesicActiveContourLevelSetImageFilter_8h_source.html#l00128">128</a> of file <a class="el" href="sitkGeodesicActiveContourLevelSetImageFilter_8h_source.html">sitkGeodesicActiveContourLevelSetImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkGeodesicActiveContourLevelSetImageFilter_8h_source.html#l00140">140</a> of file <a class="el" href="sitkGeodesicActiveContourLevelSetImageFilter_8h_source.html">sitkGeodesicActiveContourLevelSetImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -661,7 +661,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkGeodesicActiveContourLevelSetImageFilter_8h_source.html#l00120">120</a> of file <a class="el" href="sitkGeodesicActiveContourLevelSetImageFilter_8h_source.html">sitkGeodesicActiveContourLevelSetImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkGeodesicActiveContourLevelSetImageFilter_8h_source.html#l00132">132</a> of file <a class="el" href="sitkGeodesicActiveContourLevelSetImageFilter_8h_source.html">sitkGeodesicActiveContourLevelSetImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -691,7 +691,7 @@ template&lt;class TImageType &gt; </div>
 <p>Number of iterations run. </p>
 <p>This is a measurement. Its value is updated in the Execute methods, so the value will only be valid after an execution. </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkGeodesicActiveContourLevelSetImageFilter_8h_source.html#l00155">155</a> of file <a class="el" href="sitkGeodesicActiveContourLevelSetImageFilter_8h_source.html">sitkGeodesicActiveContourLevelSetImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkGeodesicActiveContourLevelSetImageFilter_8h_source.html#l00167">167</a> of file <a class="el" href="sitkGeodesicActiveContourLevelSetImageFilter_8h_source.html">sitkGeodesicActiveContourLevelSetImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -718,7 +718,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkGeodesicActiveContourLevelSetImageFilter_8h_source.html#l00104">104</a> of file <a class="el" href="sitkGeodesicActiveContourLevelSetImageFilter_8h_source.html">sitkGeodesicActiveContourLevelSetImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkGeodesicActiveContourLevelSetImageFilter_8h_source.html#l00116">116</a> of file <a class="el" href="sitkGeodesicActiveContourLevelSetImageFilter_8h_source.html">sitkGeodesicActiveContourLevelSetImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -748,7 +748,7 @@ template&lt;class TImageType &gt; </div>
 
 <p>Implements <a class="el" href="classitk_1_1simple_1_1ProcessObject.html#ac8ab837a83ee6ad83c2e2e71b1e98386">itk::simple::ProcessObject</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="sitkGeodesicActiveContourLevelSetImageFilter_8h_source.html#l00166">166</a> of file <a class="el" href="sitkGeodesicActiveContourLevelSetImageFilter_8h_source.html">sitkGeodesicActiveContourLevelSetImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkGeodesicActiveContourLevelSetImageFilter_8h_source.html#l00178">178</a> of file <a class="el" href="sitkGeodesicActiveContourLevelSetImageFilter_8h_source.html">sitkGeodesicActiveContourLevelSetImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -775,7 +775,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkGeodesicActiveContourLevelSetImageFilter_8h_source.html#l00136">136</a> of file <a class="el" href="sitkGeodesicActiveContourLevelSetImageFilter_8h_source.html">sitkGeodesicActiveContourLevelSetImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkGeodesicActiveContourLevelSetImageFilter_8h_source.html#l00148">148</a> of file <a class="el" href="sitkGeodesicActiveContourLevelSetImageFilter_8h_source.html">sitkGeodesicActiveContourLevelSetImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -802,7 +802,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkGeodesicActiveContourLevelSetImageFilter_8h_source.html#l00112">112</a> of file <a class="el" href="sitkGeodesicActiveContourLevelSetImageFilter_8h_source.html">sitkGeodesicActiveContourLevelSetImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkGeodesicActiveContourLevelSetImageFilter_8h_source.html#l00124">124</a> of file <a class="el" href="sitkGeodesicActiveContourLevelSetImageFilter_8h_source.html">sitkGeodesicActiveContourLevelSetImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -829,7 +829,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkGeodesicActiveContourLevelSetImageFilter_8h_source.html#l00148">148</a> of file <a class="el" href="sitkGeodesicActiveContourLevelSetImageFilter_8h_source.html">sitkGeodesicActiveContourLevelSetImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkGeodesicActiveContourLevelSetImageFilter_8h_source.html#l00160">160</a> of file <a class="el" href="sitkGeodesicActiveContourLevelSetImageFilter_8h_source.html">sitkGeodesicActiveContourLevelSetImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -859,7 +859,7 @@ template&lt;class TImageType &gt; </div>
 <p>The Root Mean Square of the levelset upon termination. </p>
 <p>This is a measurement. Its value is updated in the Execute methods, so the value will only be valid after an execution. </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkGeodesicActiveContourLevelSetImageFilter_8h_source.html#l00163">163</a> of file <a class="el" href="sitkGeodesicActiveContourLevelSetImageFilter_8h_source.html">sitkGeodesicActiveContourLevelSetImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkGeodesicActiveContourLevelSetImageFilter_8h_source.html#l00175">175</a> of file <a class="el" href="sitkGeodesicActiveContourLevelSetImageFilter_8h_source.html">sitkGeodesicActiveContourLevelSetImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -886,7 +886,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkGeodesicActiveContourLevelSetImageFilter_8h_source.html#l00144">144</a> of file <a class="el" href="sitkGeodesicActiveContourLevelSetImageFilter_8h_source.html">sitkGeodesicActiveContourLevelSetImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkGeodesicActiveContourLevelSetImageFilter_8h_source.html#l00156">156</a> of file <a class="el" href="sitkGeodesicActiveContourLevelSetImageFilter_8h_source.html">sitkGeodesicActiveContourLevelSetImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -914,7 +914,7 @@ template&lt;class TImageType &gt; </div>
 </div><div class="memdoc">
 <p>Set the value of ReverseExpansionDirection to true or false respectfully. </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkGeodesicActiveContourLevelSetImageFilter_8h_source.html#l00143">143</a> of file <a class="el" href="sitkGeodesicActiveContourLevelSetImageFilter_8h_source.html">sitkGeodesicActiveContourLevelSetImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkGeodesicActiveContourLevelSetImageFilter_8h_source.html#l00155">155</a> of file <a class="el" href="sitkGeodesicActiveContourLevelSetImageFilter_8h_source.html">sitkGeodesicActiveContourLevelSetImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -942,7 +942,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkGeodesicActiveContourLevelSetImageFilter_8h_source.html#l00124">124</a> of file <a class="el" href="sitkGeodesicActiveContourLevelSetImageFilter_8h_source.html">sitkGeodesicActiveContourLevelSetImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkGeodesicActiveContourLevelSetImageFilter_8h_source.html#l00136">136</a> of file <a class="el" href="sitkGeodesicActiveContourLevelSetImageFilter_8h_source.html">sitkGeodesicActiveContourLevelSetImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -970,7 +970,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkGeodesicActiveContourLevelSetImageFilter_8h_source.html#l00116">116</a> of file <a class="el" href="sitkGeodesicActiveContourLevelSetImageFilter_8h_source.html">sitkGeodesicActiveContourLevelSetImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkGeodesicActiveContourLevelSetImageFilter_8h_source.html#l00128">128</a> of file <a class="el" href="sitkGeodesicActiveContourLevelSetImageFilter_8h_source.html">sitkGeodesicActiveContourLevelSetImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -998,7 +998,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkGeodesicActiveContourLevelSetImageFilter_8h_source.html#l00100">100</a> of file <a class="el" href="sitkGeodesicActiveContourLevelSetImageFilter_8h_source.html">sitkGeodesicActiveContourLevelSetImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkGeodesicActiveContourLevelSetImageFilter_8h_source.html#l00112">112</a> of file <a class="el" href="sitkGeodesicActiveContourLevelSetImageFilter_8h_source.html">sitkGeodesicActiveContourLevelSetImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -1026,7 +1026,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkGeodesicActiveContourLevelSetImageFilter_8h_source.html#l00132">132</a> of file <a class="el" href="sitkGeodesicActiveContourLevelSetImageFilter_8h_source.html">sitkGeodesicActiveContourLevelSetImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkGeodesicActiveContourLevelSetImageFilter_8h_source.html#l00144">144</a> of file <a class="el" href="sitkGeodesicActiveContourLevelSetImageFilter_8h_source.html">sitkGeodesicActiveContourLevelSetImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -1054,7 +1054,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkGeodesicActiveContourLevelSetImageFilter_8h_source.html#l00108">108</a> of file <a class="el" href="sitkGeodesicActiveContourLevelSetImageFilter_8h_source.html">sitkGeodesicActiveContourLevelSetImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkGeodesicActiveContourLevelSetImageFilter_8h_source.html#l00120">120</a> of file <a class="el" href="sitkGeodesicActiveContourLevelSetImageFilter_8h_source.html">sitkGeodesicActiveContourLevelSetImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -1082,7 +1082,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkGeodesicActiveContourLevelSetImageFilter_8h_source.html#l00140">140</a> of file <a class="el" href="sitkGeodesicActiveContourLevelSetImageFilter_8h_source.html">sitkGeodesicActiveContourLevelSetImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkGeodesicActiveContourLevelSetImageFilter_8h_source.html#l00152">152</a> of file <a class="el" href="sitkGeodesicActiveContourLevelSetImageFilter_8h_source.html">sitkGeodesicActiveContourLevelSetImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -1135,7 +1135,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkGeodesicActiveContourLevelSetImageFilter_8h_source.html#l00187">187</a> of file <a class="el" href="sitkGeodesicActiveContourLevelSetImageFilter_8h_source.html">sitkGeodesicActiveContourLevelSetImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkGeodesicActiveContourLevelSetImageFilter_8h_source.html#l00199">199</a> of file <a class="el" href="sitkGeodesicActiveContourLevelSetImageFilter_8h_source.html">sitkGeodesicActiveContourLevelSetImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -1160,7 +1160,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkGeodesicActiveContourLevelSetImageFilter_8h_source.html#l00199">199</a> of file <a class="el" href="sitkGeodesicActiveContourLevelSetImageFilter_8h_source.html">sitkGeodesicActiveContourLevelSetImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkGeodesicActiveContourLevelSetImageFilter_8h_source.html#l00211">211</a> of file <a class="el" href="sitkGeodesicActiveContourLevelSetImageFilter_8h_source.html">sitkGeodesicActiveContourLevelSetImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -1184,7 +1184,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkGeodesicActiveContourLevelSetImageFilter_8h_source.html#l00197">197</a> of file <a class="el" href="sitkGeodesicActiveContourLevelSetImageFilter_8h_source.html">sitkGeodesicActiveContourLevelSetImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkGeodesicActiveContourLevelSetImageFilter_8h_source.html#l00209">209</a> of file <a class="el" href="sitkGeodesicActiveContourLevelSetImageFilter_8h_source.html">sitkGeodesicActiveContourLevelSetImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -1208,7 +1208,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkGeodesicActiveContourLevelSetImageFilter_8h_source.html#l00205">205</a> of file <a class="el" href="sitkGeodesicActiveContourLevelSetImageFilter_8h_source.html">sitkGeodesicActiveContourLevelSetImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkGeodesicActiveContourLevelSetImageFilter_8h_source.html#l00217">217</a> of file <a class="el" href="sitkGeodesicActiveContourLevelSetImageFilter_8h_source.html">sitkGeodesicActiveContourLevelSetImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -1232,7 +1232,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkGeodesicActiveContourLevelSetImageFilter_8h_source.html#l00193">193</a> of file <a class="el" href="sitkGeodesicActiveContourLevelSetImageFilter_8h_source.html">sitkGeodesicActiveContourLevelSetImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkGeodesicActiveContourLevelSetImageFilter_8h_source.html#l00205">205</a> of file <a class="el" href="sitkGeodesicActiveContourLevelSetImageFilter_8h_source.html">sitkGeodesicActiveContourLevelSetImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -1256,7 +1256,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkGeodesicActiveContourLevelSetImageFilter_8h_source.html#l00189">189</a> of file <a class="el" href="sitkGeodesicActiveContourLevelSetImageFilter_8h_source.html">sitkGeodesicActiveContourLevelSetImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkGeodesicActiveContourLevelSetImageFilter_8h_source.html#l00201">201</a> of file <a class="el" href="sitkGeodesicActiveContourLevelSetImageFilter_8h_source.html">sitkGeodesicActiveContourLevelSetImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -1280,7 +1280,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkGeodesicActiveContourLevelSetImageFilter_8h_source.html#l00201">201</a> of file <a class="el" href="sitkGeodesicActiveContourLevelSetImageFilter_8h_source.html">sitkGeodesicActiveContourLevelSetImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkGeodesicActiveContourLevelSetImageFilter_8h_source.html#l00213">213</a> of file <a class="el" href="sitkGeodesicActiveContourLevelSetImageFilter_8h_source.html">sitkGeodesicActiveContourLevelSetImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -1304,7 +1304,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkGeodesicActiveContourLevelSetImageFilter_8h_source.html#l00195">195</a> of file <a class="el" href="sitkGeodesicActiveContourLevelSetImageFilter_8h_source.html">sitkGeodesicActiveContourLevelSetImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkGeodesicActiveContourLevelSetImageFilter_8h_source.html#l00207">207</a> of file <a class="el" href="sitkGeodesicActiveContourLevelSetImageFilter_8h_source.html">sitkGeodesicActiveContourLevelSetImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -1328,7 +1328,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkGeodesicActiveContourLevelSetImageFilter_8h_source.html#l00203">203</a> of file <a class="el" href="sitkGeodesicActiveContourLevelSetImageFilter_8h_source.html">sitkGeodesicActiveContourLevelSetImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkGeodesicActiveContourLevelSetImageFilter_8h_source.html#l00215">215</a> of file <a class="el" href="sitkGeodesicActiveContourLevelSetImageFilter_8h_source.html">sitkGeodesicActiveContourLevelSetImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -1352,7 +1352,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkGeodesicActiveContourLevelSetImageFilter_8h_source.html#l00207">207</a> of file <a class="el" href="sitkGeodesicActiveContourLevelSetImageFilter_8h_source.html">sitkGeodesicActiveContourLevelSetImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkGeodesicActiveContourLevelSetImageFilter_8h_source.html#l00219">219</a> of file <a class="el" href="sitkGeodesicActiveContourLevelSetImageFilter_8h_source.html">sitkGeodesicActiveContourLevelSetImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -1362,7 +1362,7 @@ template&lt;class TImageType &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Mar 7 2020 03:21:29 for SimpleITK by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Mar 10 2020 03:49:20 for SimpleITK by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

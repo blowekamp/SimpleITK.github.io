@@ -1,5 +1,5 @@
 <map id="itk::simple::BinaryDilateImageFilter" name="itk::simple::BinaryDilateImageFilter">
-<area shape="rect" id="node1" title="Fast binary dilation." alt="" coords="3683,682,3863,723"/>
+<area shape="rect" id="node1" title="Fast binary dilation of a single intensity value in the image." alt="" coords="3683,682,3863,723"/>
 <area shape="rect" id="node2" href="$classitk_1_1simple_1_1ImageFilter.html" title=" " alt="" coords="3273,505,3484,532"/>
 <area shape="rect" id="node3" href="$classitk_1_1simple_1_1ProcessObject.html" title="Base class for SimpleITK classes based on ProcessObject." alt="" coords="2425,404,2615,431"/>
 <area shape="rect" id="node10" title=" " alt="" coords="2875,338,3030,379"/>

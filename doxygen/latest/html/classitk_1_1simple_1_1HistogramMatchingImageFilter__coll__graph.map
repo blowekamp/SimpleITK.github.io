@@ -1,5 +1,5 @@
 <map id="itk::simple::HistogramMatchingImageFilter" name="itk::simple::HistogramMatchingImageFilter">
-<area shape="rect" id="node1" title="Normalize the grayscale values between two images by histogram matching." alt="" coords="3725,611,3952,653"/>
+<area shape="rect" id="node1" title="Normalize the grayscale values for a source image by matching the shape of the source image histogram..." alt="" coords="3725,611,3952,653"/>
 <area shape="rect" id="node2" href="$classitk_1_1simple_1_1ImageFilter.html" title=" " alt="" coords="3321,355,3532,381"/>
 <area shape="rect" id="node3" href="$classitk_1_1simple_1_1ProcessObject.html" title="Base class for SimpleITK classes based on ProcessObject." alt="" coords="2473,273,2663,300"/>
 <area shape="rect" id="node10" title=" " alt="" coords="2923,130,3078,171"/>

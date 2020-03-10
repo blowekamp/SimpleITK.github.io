@@ -19,7 +19,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">SimpleITK
-   &#160;<span id="projectnumber">2.0.0.dev127</span>
+   &#160;<span id="projectnumber">2.0.0rc1</span>
    </div>
   </td>
  </tr>
@@ -344,17 +344,17 @@ Additional Inherited Members</h2></td></tr>
 <dl class="section user"><dt>INPUTS</dt><dd>This filter requires two inputs. The first input is a initial level set. The initial level set is a real image which contains the initial contour/surface as the zero level set. For example, a signed distance function from the initial contour/surface is typically used. Note that for this algorithm the initial contour has to be wholly within (or wholly outside) the structure to be segmented.</dd></dl>
 <dl class="section user"><dt></dt><dd>The second input is the feature image. For this filter, this is the edge potential map. General characteristics of an edge potential map is that it has values close to zero in regions near the edges and values close to one inside the shape itself. Typically, the edge potential map is compute from the image gradient, for example:</dd></dl>
 <p class="formulaDsp">
-<img class="formulaDsp" alt="\[ g(I) = 1 / ( 1 + | (\nabla * G)(I)| ) \]" src="form_36.png"/>
+<img class="formulaDsp" alt="\[ g(I) = 1 / ( 1 + | (\nabla * G)(I)| ) \]" src="form_35.png"/>
 </p>
  <p class="formulaDsp">
-<img class="formulaDsp" alt="\[ g(I) = \exp^{-|(\nabla * G)(I)|} \]" src="form_37.png"/>
+<img class="formulaDsp" alt="\[ g(I) = \exp^{-|(\nabla * G)(I)|} \]" src="form_36.png"/>
 </p>
-<p>where <img class="formulaInl" alt="$ I $" src="form_6.png"/> is image intensity and <img class="formulaInl" alt="$ (\nabla * G) $" src="form_38.png"/> is the derivative of Gaussian operator.</p>
+<p>where <img class="formulaInl" alt="$ I $" src="form_6.png"/> is image intensity and <img class="formulaInl" alt="$ (\nabla * G) $" src="form_37.png"/> is the derivative of Gaussian operator.</p>
 <dl class="section user"><dt></dt><dd>See <a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1SegmentationLevelSetImageFilter.html">SegmentationLevelSetImageFilter</a> and <a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1SparseFieldLevelSetImageFilter.html">SparseFieldLevelSetImageFilter</a> for more information on Inputs.</dd></dl>
 <dl class="section user"><dt>PARAMETERS</dt><dd>The PropagationScaling parameter can be used to switch from propagation outwards (POSITIVE scaling parameter) versus propagating inwards (NEGATIVE scaling parameter).</dd></dl>
-<p>The smoothness of the resulting contour/surface can be adjusted using a combination of PropagationScaling and CurvatureScaling parameters. The larger the CurvatureScaling parameter, the smoother the resulting contour. The CurvatureScaling parameter should be non-negative for proper operation of this algorithm. To follow the implementation in Malladi et al paper, set the PropagtionScaling to <img class="formulaInl" alt="$\pm 1.0$" src="form_74.png"/> and CurvatureScaling to <img class="formulaInl" alt="$ \epsilon $" src="form_75.png"/> .</p>
+<p>The smoothness of the resulting contour/surface can be adjusted using a combination of PropagationScaling and CurvatureScaling parameters. The larger the CurvatureScaling parameter, the smoother the resulting contour. The CurvatureScaling parameter should be non-negative for proper operation of this algorithm. To follow the implementation in Malladi et al paper, set the PropagtionScaling to <img class="formulaInl" alt="$\pm 1.0$" src="form_75.png"/> and CurvatureScaling to <img class="formulaInl" alt="$ \epsilon $" src="form_76.png"/> .</p>
 <p>Note that there is no advection term for this filter. Setting the advection scaling will have no effect.</p>
-<dl class="section user"><dt>OUTPUTS</dt><dd>The filter outputs a single, scalar, real-valued image. Negative values in the output image represent the inside of the segmentated region and positive values in the image represent the outside of the segmented region. The zero crossings of the image correspond to the position of the propagating front.</dd></dl>
+<dl class="section user"><dt>OUTPUTS</dt><dd>The filter outputs a single, scalar, real-valued image. Negative values in the output image represent the inside of the segmented region and positive values in the image represent the outside of the segmented region. The zero crossings of the image correspond to the position of the propagating front.</dd></dl>
 <dl class="section user"><dt></dt><dd>See <a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1SparseFieldLevelSetImageFilter.html">SparseFieldLevelSetImageFilter</a> and <a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1SegmentationLevelSetImageFilter.html">SegmentationLevelSetImageFilter</a> for more information.</dd></dl>
 <dl class="section user"><dt>REFERENCES</dt><dd></dd></dl>
 <dl class="section user"><dt></dt><dd>"Shape Modeling with Front Propagation: A Level Set Approach", R. Malladi, J. A. Sethian and B. C. Vermuri. IEEE Trans. on Pattern Analysis and Machine Intelligence, Vol 17, No. 2, pp 158-174, February 1995</dd></dl>
@@ -368,7 +368,7 @@ Additional Inherited Members</h2></td></tr>
 <dd>
 <a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1ShapeDetectionLevelSetImageFilter.html">itk::ShapeDetectionLevelSetImageFilter</a> for the Doxygen on the original ITK class. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="sitkShapeDetectionLevelSetImageFilter_8h_source.html#l00084">84</a> of file <a class="el" href="sitkShapeDetectionLevelSetImageFilter_8h_source.html">sitkShapeDetectionLevelSetImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkShapeDetectionLevelSetImageFilter_8h_source.html#l00096">96</a> of file <a class="el" href="sitkShapeDetectionLevelSetImageFilter_8h_source.html">sitkShapeDetectionLevelSetImageFilter.h</a>.</p>
 </div><h2 class="groupheader">Member Typedef Documentation</h2>
 <a id="a73336ca4c54ed0d802cab801f05d9d7d"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a73336ca4c54ed0d802cab801f05d9d7d">&#9670;&nbsp;</a></span>MemberFunctionType</h2>
@@ -391,7 +391,7 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 <p>Setup for member function dispatching </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkShapeDetectionLevelSetImageFilter_8h_source.html#l00177">177</a> of file <a class="el" href="sitkShapeDetectionLevelSetImageFilter_8h_source.html">sitkShapeDetectionLevelSetImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkShapeDetectionLevelSetImageFilter_8h_source.html#l00189">189</a> of file <a class="el" href="sitkShapeDetectionLevelSetImageFilter_8h_source.html">sitkShapeDetectionLevelSetImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -408,7 +408,7 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 <p>Define the pixels types supported by this filter </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkShapeDetectionLevelSetImageFilter_8h_source.html#l00096">96</a> of file <a class="el" href="sitkShapeDetectionLevelSetImageFilter_8h_source.html">sitkShapeDetectionLevelSetImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkShapeDetectionLevelSetImageFilter_8h_source.html#l00108">108</a> of file <a class="el" href="sitkShapeDetectionLevelSetImageFilter_8h_source.html">sitkShapeDetectionLevelSetImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -424,7 +424,7 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkShapeDetectionLevelSetImageFilter_8h_source.html#l00086">86</a> of file <a class="el" href="sitkShapeDetectionLevelSetImageFilter_8h_source.html">sitkShapeDetectionLevelSetImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkShapeDetectionLevelSetImageFilter_8h_source.html#l00098">98</a> of file <a class="el" href="sitkShapeDetectionLevelSetImageFilter_8h_source.html">sitkShapeDetectionLevelSetImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -623,7 +623,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkShapeDetectionLevelSetImageFilter_8h_source.html#l00122">122</a> of file <a class="el" href="sitkShapeDetectionLevelSetImageFilter_8h_source.html">sitkShapeDetectionLevelSetImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkShapeDetectionLevelSetImageFilter_8h_source.html#l00134">134</a> of file <a class="el" href="sitkShapeDetectionLevelSetImageFilter_8h_source.html">sitkShapeDetectionLevelSetImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -653,7 +653,7 @@ template&lt;class TImageType &gt; </div>
 <p>Number of iterations run. </p>
 <p>This is a measurement. Its value is updated in the Execute methods, so the value will only be valid after an execution. </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkShapeDetectionLevelSetImageFilter_8h_source.html#l00149">149</a> of file <a class="el" href="sitkShapeDetectionLevelSetImageFilter_8h_source.html">sitkShapeDetectionLevelSetImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkShapeDetectionLevelSetImageFilter_8h_source.html#l00161">161</a> of file <a class="el" href="sitkShapeDetectionLevelSetImageFilter_8h_source.html">sitkShapeDetectionLevelSetImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -680,7 +680,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkShapeDetectionLevelSetImageFilter_8h_source.html#l00106">106</a> of file <a class="el" href="sitkShapeDetectionLevelSetImageFilter_8h_source.html">sitkShapeDetectionLevelSetImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkShapeDetectionLevelSetImageFilter_8h_source.html#l00118">118</a> of file <a class="el" href="sitkShapeDetectionLevelSetImageFilter_8h_source.html">sitkShapeDetectionLevelSetImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -710,7 +710,7 @@ template&lt;class TImageType &gt; </div>
 
 <p>Implements <a class="el" href="classitk_1_1simple_1_1ProcessObject.html#ac8ab837a83ee6ad83c2e2e71b1e98386">itk::simple::ProcessObject</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="sitkShapeDetectionLevelSetImageFilter_8h_source.html#l00160">160</a> of file <a class="el" href="sitkShapeDetectionLevelSetImageFilter_8h_source.html">sitkShapeDetectionLevelSetImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkShapeDetectionLevelSetImageFilter_8h_source.html#l00172">172</a> of file <a class="el" href="sitkShapeDetectionLevelSetImageFilter_8h_source.html">sitkShapeDetectionLevelSetImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -737,7 +737,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkShapeDetectionLevelSetImageFilter_8h_source.html#l00130">130</a> of file <a class="el" href="sitkShapeDetectionLevelSetImageFilter_8h_source.html">sitkShapeDetectionLevelSetImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkShapeDetectionLevelSetImageFilter_8h_source.html#l00142">142</a> of file <a class="el" href="sitkShapeDetectionLevelSetImageFilter_8h_source.html">sitkShapeDetectionLevelSetImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -764,7 +764,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkShapeDetectionLevelSetImageFilter_8h_source.html#l00114">114</a> of file <a class="el" href="sitkShapeDetectionLevelSetImageFilter_8h_source.html">sitkShapeDetectionLevelSetImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkShapeDetectionLevelSetImageFilter_8h_source.html#l00126">126</a> of file <a class="el" href="sitkShapeDetectionLevelSetImageFilter_8h_source.html">sitkShapeDetectionLevelSetImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -791,7 +791,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkShapeDetectionLevelSetImageFilter_8h_source.html#l00142">142</a> of file <a class="el" href="sitkShapeDetectionLevelSetImageFilter_8h_source.html">sitkShapeDetectionLevelSetImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkShapeDetectionLevelSetImageFilter_8h_source.html#l00154">154</a> of file <a class="el" href="sitkShapeDetectionLevelSetImageFilter_8h_source.html">sitkShapeDetectionLevelSetImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -821,7 +821,7 @@ template&lt;class TImageType &gt; </div>
 <p>The Root Mean Square of the levelset upon termination. </p>
 <p>This is a measurement. Its value is updated in the Execute methods, so the value will only be valid after an execution. </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkShapeDetectionLevelSetImageFilter_8h_source.html#l00157">157</a> of file <a class="el" href="sitkShapeDetectionLevelSetImageFilter_8h_source.html">sitkShapeDetectionLevelSetImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkShapeDetectionLevelSetImageFilter_8h_source.html#l00169">169</a> of file <a class="el" href="sitkShapeDetectionLevelSetImageFilter_8h_source.html">sitkShapeDetectionLevelSetImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -848,7 +848,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkShapeDetectionLevelSetImageFilter_8h_source.html#l00138">138</a> of file <a class="el" href="sitkShapeDetectionLevelSetImageFilter_8h_source.html">sitkShapeDetectionLevelSetImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkShapeDetectionLevelSetImageFilter_8h_source.html#l00150">150</a> of file <a class="el" href="sitkShapeDetectionLevelSetImageFilter_8h_source.html">sitkShapeDetectionLevelSetImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -876,7 +876,7 @@ template&lt;class TImageType &gt; </div>
 </div><div class="memdoc">
 <p>Set the value of ReverseExpansionDirection to true or false respectfully. </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkShapeDetectionLevelSetImageFilter_8h_source.html#l00137">137</a> of file <a class="el" href="sitkShapeDetectionLevelSetImageFilter_8h_source.html">sitkShapeDetectionLevelSetImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkShapeDetectionLevelSetImageFilter_8h_source.html#l00149">149</a> of file <a class="el" href="sitkShapeDetectionLevelSetImageFilter_8h_source.html">sitkShapeDetectionLevelSetImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -904,7 +904,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkShapeDetectionLevelSetImageFilter_8h_source.html#l00118">118</a> of file <a class="el" href="sitkShapeDetectionLevelSetImageFilter_8h_source.html">sitkShapeDetectionLevelSetImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkShapeDetectionLevelSetImageFilter_8h_source.html#l00130">130</a> of file <a class="el" href="sitkShapeDetectionLevelSetImageFilter_8h_source.html">sitkShapeDetectionLevelSetImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -932,7 +932,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkShapeDetectionLevelSetImageFilter_8h_source.html#l00102">102</a> of file <a class="el" href="sitkShapeDetectionLevelSetImageFilter_8h_source.html">sitkShapeDetectionLevelSetImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkShapeDetectionLevelSetImageFilter_8h_source.html#l00114">114</a> of file <a class="el" href="sitkShapeDetectionLevelSetImageFilter_8h_source.html">sitkShapeDetectionLevelSetImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -960,7 +960,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkShapeDetectionLevelSetImageFilter_8h_source.html#l00126">126</a> of file <a class="el" href="sitkShapeDetectionLevelSetImageFilter_8h_source.html">sitkShapeDetectionLevelSetImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkShapeDetectionLevelSetImageFilter_8h_source.html#l00138">138</a> of file <a class="el" href="sitkShapeDetectionLevelSetImageFilter_8h_source.html">sitkShapeDetectionLevelSetImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -988,7 +988,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkShapeDetectionLevelSetImageFilter_8h_source.html#l00110">110</a> of file <a class="el" href="sitkShapeDetectionLevelSetImageFilter_8h_source.html">sitkShapeDetectionLevelSetImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkShapeDetectionLevelSetImageFilter_8h_source.html#l00122">122</a> of file <a class="el" href="sitkShapeDetectionLevelSetImageFilter_8h_source.html">sitkShapeDetectionLevelSetImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -1016,7 +1016,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkShapeDetectionLevelSetImageFilter_8h_source.html#l00134">134</a> of file <a class="el" href="sitkShapeDetectionLevelSetImageFilter_8h_source.html">sitkShapeDetectionLevelSetImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkShapeDetectionLevelSetImageFilter_8h_source.html#l00146">146</a> of file <a class="el" href="sitkShapeDetectionLevelSetImageFilter_8h_source.html">sitkShapeDetectionLevelSetImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -1069,7 +1069,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkShapeDetectionLevelSetImageFilter_8h_source.html#l00181">181</a> of file <a class="el" href="sitkShapeDetectionLevelSetImageFilter_8h_source.html">sitkShapeDetectionLevelSetImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkShapeDetectionLevelSetImageFilter_8h_source.html#l00193">193</a> of file <a class="el" href="sitkShapeDetectionLevelSetImageFilter_8h_source.html">sitkShapeDetectionLevelSetImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -1094,7 +1094,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkShapeDetectionLevelSetImageFilter_8h_source.html#l00191">191</a> of file <a class="el" href="sitkShapeDetectionLevelSetImageFilter_8h_source.html">sitkShapeDetectionLevelSetImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkShapeDetectionLevelSetImageFilter_8h_source.html#l00203">203</a> of file <a class="el" href="sitkShapeDetectionLevelSetImageFilter_8h_source.html">sitkShapeDetectionLevelSetImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -1118,7 +1118,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkShapeDetectionLevelSetImageFilter_8h_source.html#l00197">197</a> of file <a class="el" href="sitkShapeDetectionLevelSetImageFilter_8h_source.html">sitkShapeDetectionLevelSetImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkShapeDetectionLevelSetImageFilter_8h_source.html#l00209">209</a> of file <a class="el" href="sitkShapeDetectionLevelSetImageFilter_8h_source.html">sitkShapeDetectionLevelSetImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -1142,7 +1142,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkShapeDetectionLevelSetImageFilter_8h_source.html#l00187">187</a> of file <a class="el" href="sitkShapeDetectionLevelSetImageFilter_8h_source.html">sitkShapeDetectionLevelSetImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkShapeDetectionLevelSetImageFilter_8h_source.html#l00199">199</a> of file <a class="el" href="sitkShapeDetectionLevelSetImageFilter_8h_source.html">sitkShapeDetectionLevelSetImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -1166,7 +1166,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkShapeDetectionLevelSetImageFilter_8h_source.html#l00183">183</a> of file <a class="el" href="sitkShapeDetectionLevelSetImageFilter_8h_source.html">sitkShapeDetectionLevelSetImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkShapeDetectionLevelSetImageFilter_8h_source.html#l00195">195</a> of file <a class="el" href="sitkShapeDetectionLevelSetImageFilter_8h_source.html">sitkShapeDetectionLevelSetImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -1190,7 +1190,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkShapeDetectionLevelSetImageFilter_8h_source.html#l00193">193</a> of file <a class="el" href="sitkShapeDetectionLevelSetImageFilter_8h_source.html">sitkShapeDetectionLevelSetImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkShapeDetectionLevelSetImageFilter_8h_source.html#l00205">205</a> of file <a class="el" href="sitkShapeDetectionLevelSetImageFilter_8h_source.html">sitkShapeDetectionLevelSetImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -1214,7 +1214,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkShapeDetectionLevelSetImageFilter_8h_source.html#l00189">189</a> of file <a class="el" href="sitkShapeDetectionLevelSetImageFilter_8h_source.html">sitkShapeDetectionLevelSetImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkShapeDetectionLevelSetImageFilter_8h_source.html#l00201">201</a> of file <a class="el" href="sitkShapeDetectionLevelSetImageFilter_8h_source.html">sitkShapeDetectionLevelSetImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -1238,7 +1238,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkShapeDetectionLevelSetImageFilter_8h_source.html#l00195">195</a> of file <a class="el" href="sitkShapeDetectionLevelSetImageFilter_8h_source.html">sitkShapeDetectionLevelSetImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkShapeDetectionLevelSetImageFilter_8h_source.html#l00207">207</a> of file <a class="el" href="sitkShapeDetectionLevelSetImageFilter_8h_source.html">sitkShapeDetectionLevelSetImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -1262,7 +1262,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkShapeDetectionLevelSetImageFilter_8h_source.html#l00199">199</a> of file <a class="el" href="sitkShapeDetectionLevelSetImageFilter_8h_source.html">sitkShapeDetectionLevelSetImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkShapeDetectionLevelSetImageFilter_8h_source.html#l00211">211</a> of file <a class="el" href="sitkShapeDetectionLevelSetImageFilter_8h_source.html">sitkShapeDetectionLevelSetImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -1272,7 +1272,7 @@ template&lt;class TImageType &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Mar 7 2020 03:21:33 for SimpleITK by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Mar 10 2020 03:49:24 for SimpleITK by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

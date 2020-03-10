@@ -19,7 +19,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">SimpleITK
-   &#160;<span id="projectnumber">2.0.0.dev127</span>
+   &#160;<span id="projectnumber">2.0.0rc1</span>
    </div>
   </td>
  </tr>
@@ -341,13 +341,15 @@ Additional Inherited Members</h2></td></tr>
 <div class="textblock"><p>Implements pixel-wise generic operation of two images, or of an image and a constant. </p>
 <p>This class is parameterized over the types of the two input images and the type of the output image. It is also parameterized by the operation to be applied. A <a class="elRef" href="https://www.itk.org/Doxygen/html/namespaceitk_1_1Functor.html">Functor</a> style is used.</p>
 <p>The constant must be of the same type than the pixel type of the corresponding image. It is wrapped in a <a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1SimpleDataObjectDecorator.html">SimpleDataObjectDecorator</a> so it can be updated through the pipeline. The SetConstant() and GetConstant() methods are provided as shortcuts to set or get the constant value without manipulating the decorator.</p>
-<dl class="section see"><dt>See also</dt><dd><a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1UnaryFunctorImageFilter.html">UnaryFunctorImageFilter</a> <a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1TernaryFunctorImageFilter.html">TernaryFunctorImageFilter</a> </dd>
+<dl class="section see"><dt>See also</dt><dd>BinaryGeneratorImagFilter</dd>
+<dd>
+<a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1UnaryFunctorImageFilter.html">UnaryFunctorImageFilter</a> <a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1TernaryFunctorImageFilter.html">TernaryFunctorImageFilter</a> </dd>
 <dd>
 <a class="el" href="namespaceitk_1_1simple.html#ad16158053a9c61f4b8e2f029b4a70bc8" title="Implements pixel-wise generic operation of two images, or of an image and a constant.">itk::simple::GreaterEqual</a> for the procedural interface </dd>
 <dd>
 <a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1BinaryFunctorImageFilter.html">itk::BinaryFunctorImageFilter</a> for the Doxygen on the original ITK class. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="sitkGreaterEqualImageFilter_8h_source.html#l00046">46</a> of file <a class="el" href="sitkGreaterEqualImageFilter_8h_source.html">sitkGreaterEqualImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkGreaterEqualImageFilter_8h_source.html#l00049">49</a> of file <a class="el" href="sitkGreaterEqualImageFilter_8h_source.html">sitkGreaterEqualImageFilter.h</a>.</p>
 </div><h2 class="groupheader">Member Typedef Documentation</h2>
 <a id="a6893f56a716febab3db947e031e53c7c"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a6893f56a716febab3db947e031e53c7c">&#9670;&nbsp;</a></span>MemberFunction1Type</h2>
@@ -369,7 +371,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkGreaterEqualImageFilter_8h_source.html#l00117">117</a> of file <a class="el" href="sitkGreaterEqualImageFilter_8h_source.html">sitkGreaterEqualImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkGreaterEqualImageFilter_8h_source.html#l00120">120</a> of file <a class="el" href="sitkGreaterEqualImageFilter_8h_source.html">sitkGreaterEqualImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -393,7 +395,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkGreaterEqualImageFilter_8h_source.html#l00122">122</a> of file <a class="el" href="sitkGreaterEqualImageFilter_8h_source.html">sitkGreaterEqualImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkGreaterEqualImageFilter_8h_source.html#l00125">125</a> of file <a class="el" href="sitkGreaterEqualImageFilter_8h_source.html">sitkGreaterEqualImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -418,7 +420,7 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 <p>Setup for member function dispatching </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkGreaterEqualImageFilter_8h_source.html#l00110">110</a> of file <a class="el" href="sitkGreaterEqualImageFilter_8h_source.html">sitkGreaterEqualImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkGreaterEqualImageFilter_8h_source.html#l00113">113</a> of file <a class="el" href="sitkGreaterEqualImageFilter_8h_source.html">sitkGreaterEqualImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -435,7 +437,7 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 <p>Define the pixels types supported by this filter </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkGreaterEqualImageFilter_8h_source.html#l00058">58</a> of file <a class="el" href="sitkGreaterEqualImageFilter_8h_source.html">sitkGreaterEqualImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkGreaterEqualImageFilter_8h_source.html#l00061">61</a> of file <a class="el" href="sitkGreaterEqualImageFilter_8h_source.html">sitkGreaterEqualImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -451,7 +453,7 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkGreaterEqualImageFilter_8h_source.html#l00048">48</a> of file <a class="el" href="sitkGreaterEqualImageFilter_8h_source.html">sitkGreaterEqualImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkGreaterEqualImageFilter_8h_source.html#l00051">51</a> of file <a class="el" href="sitkGreaterEqualImageFilter_8h_source.html">sitkGreaterEqualImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -847,7 +849,7 @@ template&lt;class TImageType &gt; </div>
 </div><div class="memdoc">
 <p>Set/Get the value used to mark the false pixels of the operator. </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkGreaterEqualImageFilter_8h_source.html#l00072">72</a> of file <a class="el" href="sitkGreaterEqualImageFilter_8h_source.html">sitkGreaterEqualImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkGreaterEqualImageFilter_8h_source.html#l00075">75</a> of file <a class="el" href="sitkGreaterEqualImageFilter_8h_source.html">sitkGreaterEqualImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -875,7 +877,7 @@ template&lt;class TImageType &gt; </div>
 </div><div class="memdoc">
 <p>Set/Get the value used to mark the true pixels of the operator. </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkGreaterEqualImageFilter_8h_source.html#l00084">84</a> of file <a class="el" href="sitkGreaterEqualImageFilter_8h_source.html">sitkGreaterEqualImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkGreaterEqualImageFilter_8h_source.html#l00087">87</a> of file <a class="el" href="sitkGreaterEqualImageFilter_8h_source.html">sitkGreaterEqualImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -905,7 +907,7 @@ template&lt;class TImageType &gt; </div>
 
 <p>Implements <a class="el" href="classitk_1_1simple_1_1ProcessObject.html#ac8ab837a83ee6ad83c2e2e71b1e98386">itk::simple::ProcessObject</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="sitkGreaterEqualImageFilter_8h_source.html#l00086">86</a> of file <a class="el" href="sitkGreaterEqualImageFilter_8h_source.html">sitkGreaterEqualImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkGreaterEqualImageFilter_8h_source.html#l00089">89</a> of file <a class="el" href="sitkGreaterEqualImageFilter_8h_source.html">sitkGreaterEqualImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -934,7 +936,7 @@ template&lt;class TImageType &gt; </div>
 </div><div class="memdoc">
 <p>Set/Get the value used to mark the false pixels of the operator. </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkGreaterEqualImageFilter_8h_source.html#l00066">66</a> of file <a class="el" href="sitkGreaterEqualImageFilter_8h_source.html">sitkGreaterEqualImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkGreaterEqualImageFilter_8h_source.html#l00069">69</a> of file <a class="el" href="sitkGreaterEqualImageFilter_8h_source.html">sitkGreaterEqualImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -963,7 +965,7 @@ template&lt;class TImageType &gt; </div>
 </div><div class="memdoc">
 <p>Set/Get the value used to mark the true pixels of the operator. </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkGreaterEqualImageFilter_8h_source.html#l00078">78</a> of file <a class="el" href="sitkGreaterEqualImageFilter_8h_source.html">sitkGreaterEqualImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkGreaterEqualImageFilter_8h_source.html#l00081">81</a> of file <a class="el" href="sitkGreaterEqualImageFilter_8h_source.html">sitkGreaterEqualImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -1016,7 +1018,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkGreaterEqualImageFilter_8h_source.html#l00119">119</a> of file <a class="el" href="sitkGreaterEqualImageFilter_8h_source.html">sitkGreaterEqualImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkGreaterEqualImageFilter_8h_source.html#l00122">122</a> of file <a class="el" href="sitkGreaterEqualImageFilter_8h_source.html">sitkGreaterEqualImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -1040,7 +1042,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkGreaterEqualImageFilter_8h_source.html#l00124">124</a> of file <a class="el" href="sitkGreaterEqualImageFilter_8h_source.html">sitkGreaterEqualImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkGreaterEqualImageFilter_8h_source.html#l00127">127</a> of file <a class="el" href="sitkGreaterEqualImageFilter_8h_source.html">sitkGreaterEqualImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -1064,7 +1066,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkGreaterEqualImageFilter_8h_source.html#l00114">114</a> of file <a class="el" href="sitkGreaterEqualImageFilter_8h_source.html">sitkGreaterEqualImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkGreaterEqualImageFilter_8h_source.html#l00117">117</a> of file <a class="el" href="sitkGreaterEqualImageFilter_8h_source.html">sitkGreaterEqualImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -1089,7 +1091,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkGreaterEqualImageFilter_8h_source.html#l00128">128</a> of file <a class="el" href="sitkGreaterEqualImageFilter_8h_source.html">sitkGreaterEqualImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkGreaterEqualImageFilter_8h_source.html#l00131">131</a> of file <a class="el" href="sitkGreaterEqualImageFilter_8h_source.html">sitkGreaterEqualImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -1113,7 +1115,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkGreaterEqualImageFilter_8h_source.html#l00129">129</a> of file <a class="el" href="sitkGreaterEqualImageFilter_8h_source.html">sitkGreaterEqualImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkGreaterEqualImageFilter_8h_source.html#l00132">132</a> of file <a class="el" href="sitkGreaterEqualImageFilter_8h_source.html">sitkGreaterEqualImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -1137,7 +1139,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkGreaterEqualImageFilter_8h_source.html#l00116">116</a> of file <a class="el" href="sitkGreaterEqualImageFilter_8h_source.html">sitkGreaterEqualImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkGreaterEqualImageFilter_8h_source.html#l00119">119</a> of file <a class="el" href="sitkGreaterEqualImageFilter_8h_source.html">sitkGreaterEqualImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -1161,7 +1163,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkGreaterEqualImageFilter_8h_source.html#l00120">120</a> of file <a class="el" href="sitkGreaterEqualImageFilter_8h_source.html">sitkGreaterEqualImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkGreaterEqualImageFilter_8h_source.html#l00123">123</a> of file <a class="el" href="sitkGreaterEqualImageFilter_8h_source.html">sitkGreaterEqualImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -1185,7 +1187,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkGreaterEqualImageFilter_8h_source.html#l00125">125</a> of file <a class="el" href="sitkGreaterEqualImageFilter_8h_source.html">sitkGreaterEqualImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkGreaterEqualImageFilter_8h_source.html#l00128">128</a> of file <a class="el" href="sitkGreaterEqualImageFilter_8h_source.html">sitkGreaterEqualImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -1195,7 +1197,7 @@ template&lt;class TImageType &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Mar 7 2020 03:21:29 for SimpleITK by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Mar 10 2020 03:49:20 for SimpleITK by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

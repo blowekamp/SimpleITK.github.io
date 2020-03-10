@@ -19,7 +19,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">SimpleITK
-   &#160;<span id="projectnumber">2.0.0.dev127</span>
+   &#160;<span id="projectnumber">2.0.0rc1</span>
    </div>
   </td>
  </tr>
@@ -313,24 +313,24 @@ Additional Inherited Members</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Alter an image with shot noise. </p>
 <p>The shot noise follows a Poisson distribution:</p>
-<dl class="section user"><dt></dt><dd><img class="formulaInl" alt="$ I = N(I_0) $" src="form_76.png"/></dd></dl>
-<dl class="section user"><dt></dt><dd>where <img class="formulaInl" alt="$ N(I_0) $" src="form_77.png"/> is a Poisson-distributed random variable of mean <img class="formulaInl" alt="$ I_0 $" src="form_7.png"/> . The noise is thus dependent on the pixel intensities in the image.</dd></dl>
+<dl class="section user"><dt></dt><dd><img class="formulaInl" alt="$ I = N(I_0) $" src="form_77.png"/></dd></dl>
+<dl class="section user"><dt></dt><dd>where <img class="formulaInl" alt="$ N(I_0) $" src="form_78.png"/> is a Poisson-distributed random variable of mean <img class="formulaInl" alt="$ I_0 $" src="form_7.png"/> . The noise is thus dependent on the pixel intensities in the image.</dd></dl>
 <p>The intensities in the image can be scaled by a user provided value to map pixel values to the actual number of particles. The scaling can be seen as the inverse of the gain used during the acquisition. The noisy signal is then scaled back to its input intensity range:</p>
-<dl class="section user"><dt></dt><dd><img class="formulaInl" alt="$ I = \frac{N(I_0 \times s)}{s} $" src="form_78.png"/></dd></dl>
-<dl class="section user"><dt></dt><dd>where <img class="formulaInl" alt="$ s $" src="form_79.png"/> is the scale factor.</dd></dl>
-<p>The Poisson-distributed variable <img class="formulaInl" alt="$ \lambda $" src="form_80.png"/> is computed by using the algorithm:</p>
-<dl class="section user"><dt></dt><dd><img class="formulaInl" alt="$ \begin{array}{l} k \leftarrow 0 \\ p \leftarrow 1 \\ \textbf{repeat} \\ \left\{ \begin{array}{l} k \leftarrow k+1 \\ p \leftarrow p \ast U() \end{array} \right. \\ \textbf{until } p &gt; e^{\lambda} \\ \textbf{return} (k) \end{array} $" src="form_81.png"/></dd></dl>
-<dl class="section user"><dt></dt><dd>where <img class="formulaInl" alt="$ U() $" src="form_82.png"/> provides a uniformly distributed random variable in the interval <img class="formulaInl" alt="$ [0,1] $" src="form_71.png"/> .</dd></dl>
-<p>This algorithm is very inefficient for large values of <img class="formulaInl" alt="$ \lambda $" src="form_80.png"/> , though. Fortunately, the Poisson distribution can be accurately approximated by a Gaussian distribution of mean and variance <img class="formulaInl" alt="$ \lambda $" src="form_80.png"/> when <img class="formulaInl" alt="$ \lambda $" src="form_80.png"/> is large enough. In this implementation, this value is considered to be 50. This leads to the faster algorithm:</p>
-<dl class="section user"><dt></dt><dd><img class="formulaInl" alt="$ \lambda + \sqrt{\lambda} \times N()$" src="form_83.png"/></dd></dl>
-<dl class="section user"><dt></dt><dd>where <img class="formulaInl" alt="$ N() $" src="form_84.png"/> is a normally distributed random variable of mean 0 and variance 1.</dd></dl>
+<dl class="section user"><dt></dt><dd><img class="formulaInl" alt="$ I = \frac{N(I_0 \times s)}{s} $" src="form_79.png"/></dd></dl>
+<dl class="section user"><dt></dt><dd>where <img class="formulaInl" alt="$ s $" src="form_80.png"/> is the scale factor.</dd></dl>
+<p>The Poisson-distributed variable <img class="formulaInl" alt="$ \lambda $" src="form_81.png"/> is computed by using the algorithm:</p>
+<dl class="section user"><dt></dt><dd><img class="formulaInl" alt="$ \begin{array}{l} k \leftarrow 0 \\ p \leftarrow 1 \\ \textbf{repeat} \\ \left\{ \begin{array}{l} k \leftarrow k+1 \\ p \leftarrow p \ast U() \end{array} \right. \\ \textbf{until } p &gt; e^{\lambda} \\ \textbf{return} (k) \end{array} $" src="form_82.png"/></dd></dl>
+<dl class="section user"><dt></dt><dd>where <img class="formulaInl" alt="$ U() $" src="form_83.png"/> provides a uniformly distributed random variable in the interval <img class="formulaInl" alt="$ [0,1] $" src="form_72.png"/> .</dd></dl>
+<p>This algorithm is very inefficient for large values of <img class="formulaInl" alt="$ \lambda $" src="form_81.png"/> , though. Fortunately, the Poisson distribution can be accurately approximated by a Gaussian distribution of mean and variance <img class="formulaInl" alt="$ \lambda $" src="form_81.png"/> when <img class="formulaInl" alt="$ \lambda $" src="form_81.png"/> is large enough. In this implementation, this value is considered to be 50. This leads to the faster algorithm:</p>
+<dl class="section user"><dt></dt><dd><img class="formulaInl" alt="$ \lambda + \sqrt{\lambda} \times N()$" src="form_84.png"/></dd></dl>
+<dl class="section user"><dt></dt><dd>where <img class="formulaInl" alt="$ N() $" src="form_85.png"/> is a normally distributed random variable of mean 0 and variance 1.</dd></dl>
 <dl class="section author"><dt>Author</dt><dd>Gaetan Lehmann</dd></dl>
 <p>This code was contributed in the Insight Journal paper "Noise
-Simulation". <a href="https://hdl.handle.net/10380/3158">https://hdl.handle.net/10380/3158</a> </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="namespaceitk_1_1simple.html#ab29086f6b469569de9bd05d4636f1550" title="Alter an image with shot noise.">itk::simple::ShotNoise</a> for the procedural interface </dd>
+ Simulation". <a href="https://hdl.handle.net/10380/3158">https://hdl.handle.net/10380/3158</a> </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="namespaceitk_1_1simple.html#ab29086f6b469569de9bd05d4636f1550" title="Alter an image with shot noise.">itk::simple::ShotNoise</a> for the procedural interface </dd>
 <dd>
 <a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1ShotNoiseImageFilter.html">itk::ShotNoiseImageFilter</a> for the Doxygen on the original ITK class. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="sitkShotNoiseImageFilter_8h_source.html#l00077">77</a> of file <a class="el" href="sitkShotNoiseImageFilter_8h_source.html">sitkShotNoiseImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkShotNoiseImageFilter_8h_source.html#l00086">86</a> of file <a class="el" href="sitkShotNoiseImageFilter_8h_source.html">sitkShotNoiseImageFilter.h</a>.</p>
 </div><h2 class="groupheader">Member Typedef Documentation</h2>
 <a id="a1174d7505b3b26fe2da4a9f89cec7714"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a1174d7505b3b26fe2da4a9f89cec7714">&#9670;&nbsp;</a></span>MemberFunctionType</h2>
@@ -353,7 +353,7 @@ Simulation". <a href="https://hdl.handle.net/10380/3158">https://hdl.handle.net/
 </div><div class="memdoc">
 <p>Setup for member function dispatching </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkShotNoiseImageFilter_8h_source.html#l00128">128</a> of file <a class="el" href="sitkShotNoiseImageFilter_8h_source.html">sitkShotNoiseImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkShotNoiseImageFilter_8h_source.html#l00137">137</a> of file <a class="el" href="sitkShotNoiseImageFilter_8h_source.html">sitkShotNoiseImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -370,7 +370,7 @@ Simulation". <a href="https://hdl.handle.net/10380/3158">https://hdl.handle.net/
 </div><div class="memdoc">
 <p>Define the pixels types supported by this filter </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkShotNoiseImageFilter_8h_source.html#l00089">89</a> of file <a class="el" href="sitkShotNoiseImageFilter_8h_source.html">sitkShotNoiseImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkShotNoiseImageFilter_8h_source.html#l00098">98</a> of file <a class="el" href="sitkShotNoiseImageFilter_8h_source.html">sitkShotNoiseImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -386,7 +386,7 @@ Simulation". <a href="https://hdl.handle.net/10380/3158">https://hdl.handle.net/
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkShotNoiseImageFilter_8h_source.html#l00079">79</a> of file <a class="el" href="sitkShotNoiseImageFilter_8h_source.html">sitkShotNoiseImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkShotNoiseImageFilter_8h_source.html#l00088">88</a> of file <a class="el" href="sitkShotNoiseImageFilter_8h_source.html">sitkShotNoiseImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -573,7 +573,7 @@ template&lt;class TImageType &gt; </div>
 
 <p>Implements <a class="el" href="classitk_1_1simple_1_1ProcessObject.html#ac8ab837a83ee6ad83c2e2e71b1e98386">itk::simple::ProcessObject</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="sitkShotNoiseImageFilter_8h_source.html#l00111">111</a> of file <a class="el" href="sitkShotNoiseImageFilter_8h_source.html">sitkShotNoiseImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkShotNoiseImageFilter_8h_source.html#l00120">120</a> of file <a class="el" href="sitkShotNoiseImageFilter_8h_source.html">sitkShotNoiseImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -601,7 +601,7 @@ template&lt;class TImageType &gt; </div>
 </div><div class="memdoc">
 <p>Set/Get the value to map the pixel value to the actual particle counting. The scaling can be seen as the inverse of the gain used during the acquisition. The noisy signal is then scaled back to its input intensity range. Defaults to 1.0. </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkShotNoiseImageFilter_8h_source.html#l00101">101</a> of file <a class="el" href="sitkShotNoiseImageFilter_8h_source.html">sitkShotNoiseImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkShotNoiseImageFilter_8h_source.html#l00110">110</a> of file <a class="el" href="sitkShotNoiseImageFilter_8h_source.html">sitkShotNoiseImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -628,7 +628,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkShotNoiseImageFilter_8h_source.html#l00109">109</a> of file <a class="el" href="sitkShotNoiseImageFilter_8h_source.html">sitkShotNoiseImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkShotNoiseImageFilter_8h_source.html#l00118">118</a> of file <a class="el" href="sitkShotNoiseImageFilter_8h_source.html">sitkShotNoiseImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -657,7 +657,7 @@ template&lt;class TImageType &gt; </div>
 </div><div class="memdoc">
 <p>Set/Get the value to map the pixel value to the actual particle counting. The scaling can be seen as the inverse of the gain used during the acquisition. The noisy signal is then scaled back to its input intensity range. Defaults to 1.0. </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkShotNoiseImageFilter_8h_source.html#l00096">96</a> of file <a class="el" href="sitkShotNoiseImageFilter_8h_source.html">sitkShotNoiseImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkShotNoiseImageFilter_8h_source.html#l00105">105</a> of file <a class="el" href="sitkShotNoiseImageFilter_8h_source.html">sitkShotNoiseImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -685,7 +685,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkShotNoiseImageFilter_8h_source.html#l00105">105</a> of file <a class="el" href="sitkShotNoiseImageFilter_8h_source.html">sitkShotNoiseImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkShotNoiseImageFilter_8h_source.html#l00114">114</a> of file <a class="el" href="sitkShotNoiseImageFilter_8h_source.html">sitkShotNoiseImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -738,7 +738,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkShotNoiseImageFilter_8h_source.html#l00134">134</a> of file <a class="el" href="sitkShotNoiseImageFilter_8h_source.html">sitkShotNoiseImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkShotNoiseImageFilter_8h_source.html#l00143">143</a> of file <a class="el" href="sitkShotNoiseImageFilter_8h_source.html">sitkShotNoiseImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -762,7 +762,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkShotNoiseImageFilter_8h_source.html#l00133">133</a> of file <a class="el" href="sitkShotNoiseImageFilter_8h_source.html">sitkShotNoiseImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkShotNoiseImageFilter_8h_source.html#l00142">142</a> of file <a class="el" href="sitkShotNoiseImageFilter_8h_source.html">sitkShotNoiseImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -787,7 +787,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkShotNoiseImageFilter_8h_source.html#l00135">135</a> of file <a class="el" href="sitkShotNoiseImageFilter_8h_source.html">sitkShotNoiseImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkShotNoiseImageFilter_8h_source.html#l00144">144</a> of file <a class="el" href="sitkShotNoiseImageFilter_8h_source.html">sitkShotNoiseImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -811,7 +811,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkShotNoiseImageFilter_8h_source.html#l00138">138</a> of file <a class="el" href="sitkShotNoiseImageFilter_8h_source.html">sitkShotNoiseImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkShotNoiseImageFilter_8h_source.html#l00147">147</a> of file <a class="el" href="sitkShotNoiseImageFilter_8h_source.html">sitkShotNoiseImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -835,7 +835,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkShotNoiseImageFilter_8h_source.html#l00139">139</a> of file <a class="el" href="sitkShotNoiseImageFilter_8h_source.html">sitkShotNoiseImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkShotNoiseImageFilter_8h_source.html#l00148">148</a> of file <a class="el" href="sitkShotNoiseImageFilter_8h_source.html">sitkShotNoiseImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -845,7 +845,7 @@ template&lt;class TImageType &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Mar 7 2020 03:21:33 for SimpleITK by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Mar 10 2020 03:49:24 for SimpleITK by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

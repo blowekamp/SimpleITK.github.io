@@ -19,7 +19,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">SimpleITK
-   &#160;<span id="projectnumber">2.0.0.dev127</span>
+   &#160;<span id="projectnumber">2.0.0rc1</span>
    </div>
   </td>
  </tr>
@@ -302,20 +302,20 @@ Additional Inherited Members</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Suppress local maxima whose height above the baseline is less than h. </p>
 <p><a class="el" href="classitk_1_1simple_1_1HMaximaImageFilter.html" title="Suppress local maxima whose height above the baseline is less than h.">HMaximaImageFilter</a> suppresses local maxima that are less than h intensity units above the (local) background. This has the effect of smoothing over the "high" parts of the noise in the image without smoothing over large changes in intensity (region boundaries). See the <a class="el" href="classitk_1_1simple_1_1HMinimaImageFilter.html" title="Suppress local minima whose depth below the baseline is less than h.">HMinimaImageFilter</a> to suppress the local minima whose depth is less than h intensity units below the (local) background.</p>
-<p>If the output of <a class="el" href="classitk_1_1simple_1_1HMaximaImageFilter.html" title="Suppress local maxima whose height above the baseline is less than h.">HMaximaImageFilter</a> is subtracted from the original image, the signicant "peaks" in the image can be identified. This is what the <a class="el" href="classitk_1_1simple_1_1HConvexImageFilter.html" title="Identify local maxima whose height above the baseline is greater than h.">HConvexImageFilter</a> provides.</p>
+<p>If the output of <a class="el" href="classitk_1_1simple_1_1HMaximaImageFilter.html" title="Suppress local maxima whose height above the baseline is less than h.">HMaximaImageFilter</a> is subtracted from the original image, the significant "peaks" in the image can be identified. This is what the <a class="el" href="classitk_1_1simple_1_1HConvexImageFilter.html" title="Identify local maxima whose height above the baseline is greater than h.">HConvexImageFilter</a> provides.</p>
 <p>This filter uses the <a class="el" href="classitk_1_1simple_1_1ReconstructionByDilationImageFilter.html" title="grayscale reconstruction by dilation of an image">ReconstructionByDilationImageFilter</a> . It provides its own input as the "mask" input to the geodesic dilation. The "marker" image for the geodesic dilation is the input image minus the height parameter h.</p>
 <p>Geodesic morphology and the H-Maxima algorithm is described in Chapter 6 of Pierre Soille's book "Morphological Image Analysis:
 Principles and Applications", Second Edition, Springer, 2003.</p>
 <p>The height parameter is set using SetHeight.</p>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="classitk_1_1simple_1_1ReconstructionByDilationImageFilter.html" title="grayscale reconstruction by dilation of an image">ReconstructionByDilationImageFilter</a> , <a class="el" href="classitk_1_1simple_1_1HMinimaImageFilter.html" title="Suppress local minima whose depth below the baseline is less than h.">HMinimaImageFilter</a> , <a class="el" href="classitk_1_1simple_1_1HConvexImageFilter.html" title="Identify local maxima whose height above the baseline is greater than h.">HConvexImageFilter</a></dd>
 <dd>
-<a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1MorphologyImageFilter.html">MorphologyImageFilter</a> , <a class="el" href="classitk_1_1simple_1_1GrayscaleDilateImageFilter.html" title="Grayscale dilation of an image.">GrayscaleDilateImageFilter</a> , <a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1GrayscaleFunctionDilateImageFilter.html">GrayscaleFunctionDilateImageFilter</a> , <a class="el" href="classitk_1_1simple_1_1BinaryDilateImageFilter.html" title="Fast binary dilation.">BinaryDilateImageFilter</a> </dd>
+<a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1MorphologyImageFilter.html">MorphologyImageFilter</a> , <a class="el" href="classitk_1_1simple_1_1GrayscaleDilateImageFilter.html" title="Grayscale dilation of an image.">GrayscaleDilateImageFilter</a> , <a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1GrayscaleFunctionDilateImageFilter.html">GrayscaleFunctionDilateImageFilter</a> , <a class="el" href="classitk_1_1simple_1_1BinaryDilateImageFilter.html" title="Fast binary dilation of a single intensity value in the image.">BinaryDilateImageFilter</a> </dd>
 <dd>
 <a class="el" href="namespaceitk_1_1simple.html#a965e02dd9ef1bfba283cb70eae34067f" title="Suppress local maxima whose height above the baseline is less than h.">itk::simple::HMaxima</a> for the procedural interface </dd>
 <dd>
 <a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1HMaximaImageFilter.html">itk::HMaximaImageFilter</a> for the Doxygen on the original ITK class. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="sitkHMaximaImageFilter_8h_source.html#l00055">55</a> of file <a class="el" href="sitkHMaximaImageFilter_8h_source.html">sitkHMaximaImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkHMaximaImageFilter_8h_source.html#l00056">56</a> of file <a class="el" href="sitkHMaximaImageFilter_8h_source.html">sitkHMaximaImageFilter.h</a>.</p>
 </div><h2 class="groupheader">Member Typedef Documentation</h2>
 <a id="a397dce4a874e15689dee0458ca66131c"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a397dce4a874e15689dee0458ca66131c">&#9670;&nbsp;</a></span>MemberFunctionType</h2>
@@ -338,7 +338,7 @@ Principles and Applications", Second Edition, Springer, 2003.</p>
 </div><div class="memdoc">
 <p>Setup for member function dispatching </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkHMaximaImageFilter_8h_source.html#l00098">98</a> of file <a class="el" href="sitkHMaximaImageFilter_8h_source.html">sitkHMaximaImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkHMaximaImageFilter_8h_source.html#l00099">99</a> of file <a class="el" href="sitkHMaximaImageFilter_8h_source.html">sitkHMaximaImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -355,7 +355,7 @@ Principles and Applications", Second Edition, Springer, 2003.</p>
 </div><div class="memdoc">
 <p>Define the pixels types supported by this filter </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkHMaximaImageFilter_8h_source.html#l00067">67</a> of file <a class="el" href="sitkHMaximaImageFilter_8h_source.html">sitkHMaximaImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkHMaximaImageFilter_8h_source.html#l00068">68</a> of file <a class="el" href="sitkHMaximaImageFilter_8h_source.html">sitkHMaximaImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -371,7 +371,7 @@ Principles and Applications", Second Edition, Springer, 2003.</p>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkHMaximaImageFilter_8h_source.html#l00057">57</a> of file <a class="el" href="sitkHMaximaImageFilter_8h_source.html">sitkHMaximaImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkHMaximaImageFilter_8h_source.html#l00058">58</a> of file <a class="el" href="sitkHMaximaImageFilter_8h_source.html">sitkHMaximaImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -521,7 +521,7 @@ template&lt;class TImageType &gt; </div>
 </div><div class="memdoc">
 <p>Set/Get the height that a local maximum must be above the local background (local contrast) in order to survive the processing. Local maxima below this value are replaced with an estimate of the local background. </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkHMaximaImageFilter_8h_source.html#l00079">79</a> of file <a class="el" href="sitkHMaximaImageFilter_8h_source.html">sitkHMaximaImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkHMaximaImageFilter_8h_source.html#l00080">80</a> of file <a class="el" href="sitkHMaximaImageFilter_8h_source.html">sitkHMaximaImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -551,7 +551,7 @@ template&lt;class TImageType &gt; </div>
 
 <p>Implements <a class="el" href="classitk_1_1simple_1_1ProcessObject.html#ac8ab837a83ee6ad83c2e2e71b1e98386">itk::simple::ProcessObject</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="sitkHMaximaImageFilter_8h_source.html#l00081">81</a> of file <a class="el" href="sitkHMaximaImageFilter_8h_source.html">sitkHMaximaImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkHMaximaImageFilter_8h_source.html#l00082">82</a> of file <a class="el" href="sitkHMaximaImageFilter_8h_source.html">sitkHMaximaImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -580,7 +580,7 @@ template&lt;class TImageType &gt; </div>
 </div><div class="memdoc">
 <p>Set/Get the height that a local maximum must be above the local background (local contrast) in order to survive the processing. Local maxima below this value are replaced with an estimate of the local background. </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkHMaximaImageFilter_8h_source.html#l00074">74</a> of file <a class="el" href="sitkHMaximaImageFilter_8h_source.html">sitkHMaximaImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkHMaximaImageFilter_8h_source.html#l00075">75</a> of file <a class="el" href="sitkHMaximaImageFilter_8h_source.html">sitkHMaximaImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -633,7 +633,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkHMaximaImageFilter_8h_source.html#l00102">102</a> of file <a class="el" href="sitkHMaximaImageFilter_8h_source.html">sitkHMaximaImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkHMaximaImageFilter_8h_source.html#l00103">103</a> of file <a class="el" href="sitkHMaximaImageFilter_8h_source.html">sitkHMaximaImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -658,7 +658,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkHMaximaImageFilter_8h_source.html#l00107">107</a> of file <a class="el" href="sitkHMaximaImageFilter_8h_source.html">sitkHMaximaImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkHMaximaImageFilter_8h_source.html#l00108">108</a> of file <a class="el" href="sitkHMaximaImageFilter_8h_source.html">sitkHMaximaImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -682,7 +682,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkHMaximaImageFilter_8h_source.html#l00104">104</a> of file <a class="el" href="sitkHMaximaImageFilter_8h_source.html">sitkHMaximaImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkHMaximaImageFilter_8h_source.html#l00105">105</a> of file <a class="el" href="sitkHMaximaImageFilter_8h_source.html">sitkHMaximaImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -692,7 +692,7 @@ template&lt;class TImageType &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Mar 7 2020 03:21:30 for SimpleITK by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Mar 10 2020 03:49:20 for SimpleITK by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

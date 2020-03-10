@@ -19,7 +19,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">SimpleITK
-   &#160;<span id="projectnumber">2.0.0.dev127</span>
+   &#160;<span id="projectnumber">2.0.0rc1</span>
    </div>
   </td>
  </tr>
@@ -309,7 +309,7 @@ Additional Inherited Members</h2></td></tr>
 <div class="textblock"><p>Denoise an image using curvature driven flow. </p>
 <p><a class="el" href="classitk_1_1simple_1_1CurvatureFlowImageFilter.html" title="Denoise an image using curvature driven flow.">CurvatureFlowImageFilter</a> implements a curvature driven image denoising algorithm. Iso-brightness contours in the grayscale input image are viewed as a level set. The level set is then evolved using a curvature-based speed function:</p>
 <p class="formulaDsp">
-<img class="formulaDsp" alt="\[ I_t = \kappa |\nabla I| \]" src="form_34.png"/>
+<img class="formulaDsp" alt="\[ I_t = \kappa |\nabla I| \]" src="form_33.png"/>
 </p>
 <p> where <img class="formulaInl" alt="$ \kappa $" src="form_24.png"/> is the curvature.</p>
 <p>The advantage of this approach is that sharp boundaries are preserved with smoothing occurring only within a region. However, it should be noted that continuous application of this scheme will result in the eventual removal of all information as each contour shrinks to zero and disappear.</p>
@@ -334,7 +334,7 @@ Additional Inherited Members</h2></td></tr>
 <dl class="section examples"><dt>Examples</dt><dd><a class="el" href="Segmentation_2ConnectedThresholdImageFilter_8cxx-example.html#_a4">Segmentation/ConnectedThresholdImageFilter.cxx</a>, and <a class="el" href="Segmentation_2NeighborhoodConnectedImageFilter_8cxx-example.html#_a6">Segmentation/NeighborhoodConnectedImageFilter.cxx</a>.</dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="sitkCurvatureFlowImageFilter_8h_source.html#l00068">68</a> of file <a class="el" href="sitkCurvatureFlowImageFilter_8h_source.html">sitkCurvatureFlowImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkCurvatureFlowImageFilter_8h_source.html#l00072">72</a> of file <a class="el" href="sitkCurvatureFlowImageFilter_8h_source.html">sitkCurvatureFlowImageFilter.h</a>.</p>
 </div><h2 class="groupheader">Member Typedef Documentation</h2>
 <a id="acd73ea29fdc77a4f8977c489619c5fa9"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#acd73ea29fdc77a4f8977c489619c5fa9">&#9670;&nbsp;</a></span>MemberFunctionType</h2>
@@ -357,7 +357,7 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 <p>Setup for member function dispatching </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkCurvatureFlowImageFilter_8h_source.html#l00119">119</a> of file <a class="el" href="sitkCurvatureFlowImageFilter_8h_source.html">sitkCurvatureFlowImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkCurvatureFlowImageFilter_8h_source.html#l00123">123</a> of file <a class="el" href="sitkCurvatureFlowImageFilter_8h_source.html">sitkCurvatureFlowImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -374,7 +374,7 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 <p>Define the pixels types supported by this filter </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkCurvatureFlowImageFilter_8h_source.html#l00080">80</a> of file <a class="el" href="sitkCurvatureFlowImageFilter_8h_source.html">sitkCurvatureFlowImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkCurvatureFlowImageFilter_8h_source.html#l00084">84</a> of file <a class="el" href="sitkCurvatureFlowImageFilter_8h_source.html">sitkCurvatureFlowImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -390,7 +390,7 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkCurvatureFlowImageFilter_8h_source.html#l00070">70</a> of file <a class="el" href="sitkCurvatureFlowImageFilter_8h_source.html">sitkCurvatureFlowImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkCurvatureFlowImageFilter_8h_source.html#l00074">74</a> of file <a class="el" href="sitkCurvatureFlowImageFilter_8h_source.html">sitkCurvatureFlowImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -550,7 +550,7 @@ template&lt;class TImageType &gt; </div>
 
 <p>Implements <a class="el" href="classitk_1_1simple_1_1ProcessObject.html#ac8ab837a83ee6ad83c2e2e71b1e98386">itk::simple::ProcessObject</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="sitkCurvatureFlowImageFilter_8h_source.html#l00102">102</a> of file <a class="el" href="sitkCurvatureFlowImageFilter_8h_source.html">sitkCurvatureFlowImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkCurvatureFlowImageFilter_8h_source.html#l00106">106</a> of file <a class="el" href="sitkCurvatureFlowImageFilter_8h_source.html">sitkCurvatureFlowImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -577,7 +577,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkCurvatureFlowImageFilter_8h_source.html#l00100">100</a> of file <a class="el" href="sitkCurvatureFlowImageFilter_8h_source.html">sitkCurvatureFlowImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkCurvatureFlowImageFilter_8h_source.html#l00104">104</a> of file <a class="el" href="sitkCurvatureFlowImageFilter_8h_source.html">sitkCurvatureFlowImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -605,7 +605,7 @@ template&lt;class TImageType &gt; </div>
 </div><div class="memdoc">
 <p>Get the timestep parameter. </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkCurvatureFlowImageFilter_8h_source.html#l00092">92</a> of file <a class="el" href="sitkCurvatureFlowImageFilter_8h_source.html">sitkCurvatureFlowImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkCurvatureFlowImageFilter_8h_source.html#l00096">96</a> of file <a class="el" href="sitkCurvatureFlowImageFilter_8h_source.html">sitkCurvatureFlowImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -635,7 +635,7 @@ template&lt;class TImageType &gt; </div>
 <dl class="section examples"><dt>Examples</dt><dd><a class="el" href="CSharp_2ConnectedThresholdSegmentation_8cs-example.html#a1">CSharp/ConnectedThresholdSegmentation.cs</a>, <a class="el" href="Segmentation_2ConnectedThresholdImageFilter_8cxx-example.html#a5">Segmentation/ConnectedThresholdImageFilter.cxx</a>, and <a class="el" href="Segmentation_2NeighborhoodConnectedImageFilter_8cxx-example.html#a7">Segmentation/NeighborhoodConnectedImageFilter.cxx</a>.</dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="sitkCurvatureFlowImageFilter_8h_source.html#l00096">96</a> of file <a class="el" href="sitkCurvatureFlowImageFilter_8h_source.html">sitkCurvatureFlowImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkCurvatureFlowImageFilter_8h_source.html#l00100">100</a> of file <a class="el" href="sitkCurvatureFlowImageFilter_8h_source.html">sitkCurvatureFlowImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -666,7 +666,7 @@ template&lt;class TImageType &gt; </div>
 <dl class="section examples"><dt>Examples</dt><dd><a class="el" href="Segmentation_2ConnectedThresholdImageFilter_8cxx-example.html#a6">Segmentation/ConnectedThresholdImageFilter.cxx</a>, and <a class="el" href="Segmentation_2NeighborhoodConnectedImageFilter_8cxx-example.html#a8">Segmentation/NeighborhoodConnectedImageFilter.cxx</a>.</dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="sitkCurvatureFlowImageFilter_8h_source.html#l00087">87</a> of file <a class="el" href="sitkCurvatureFlowImageFilter_8h_source.html">sitkCurvatureFlowImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkCurvatureFlowImageFilter_8h_source.html#l00091">91</a> of file <a class="el" href="sitkCurvatureFlowImageFilter_8h_source.html">sitkCurvatureFlowImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -719,7 +719,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkCurvatureFlowImageFilter_8h_source.html#l00123">123</a> of file <a class="el" href="sitkCurvatureFlowImageFilter_8h_source.html">sitkCurvatureFlowImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkCurvatureFlowImageFilter_8h_source.html#l00127">127</a> of file <a class="el" href="sitkCurvatureFlowImageFilter_8h_source.html">sitkCurvatureFlowImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -744,7 +744,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkCurvatureFlowImageFilter_8h_source.html#l00125">125</a> of file <a class="el" href="sitkCurvatureFlowImageFilter_8h_source.html">sitkCurvatureFlowImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkCurvatureFlowImageFilter_8h_source.html#l00129">129</a> of file <a class="el" href="sitkCurvatureFlowImageFilter_8h_source.html">sitkCurvatureFlowImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -768,7 +768,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkCurvatureFlowImageFilter_8h_source.html#l00131">131</a> of file <a class="el" href="sitkCurvatureFlowImageFilter_8h_source.html">sitkCurvatureFlowImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkCurvatureFlowImageFilter_8h_source.html#l00135">135</a> of file <a class="el" href="sitkCurvatureFlowImageFilter_8h_source.html">sitkCurvatureFlowImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -792,7 +792,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkCurvatureFlowImageFilter_8h_source.html#l00129">129</a> of file <a class="el" href="sitkCurvatureFlowImageFilter_8h_source.html">sitkCurvatureFlowImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkCurvatureFlowImageFilter_8h_source.html#l00133">133</a> of file <a class="el" href="sitkCurvatureFlowImageFilter_8h_source.html">sitkCurvatureFlowImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -802,7 +802,7 @@ template&lt;class TImageType &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Mar 7 2020 03:21:28 for SimpleITK by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Mar 10 2020 03:49:18 for SimpleITK by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

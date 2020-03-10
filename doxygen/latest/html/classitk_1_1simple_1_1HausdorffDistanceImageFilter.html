@@ -19,7 +19,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">SimpleITK
-   &#160;<span id="projectnumber">2.0.0.dev127</span>
+   &#160;<span id="projectnumber">2.0.0rc1</span>
    </div>
   </td>
  </tr>
@@ -302,12 +302,12 @@ Additional Inherited Members</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Computes the Hausdorff distance between the set of non-zero pixels of two images. </p>
 <p><a class="el" href="classitk_1_1simple_1_1HausdorffDistanceImageFilter.html" title="Computes the Hausdorff distance between the set of non-zero pixels of two images.">HausdorffDistanceImageFilter</a> computes the distance between the set non-zero pixels of two images using the following formula: </p><p class="formulaDsp">
-<img class="formulaDsp" alt="\[ H(A,B) = \max(h(A,B),h(B,A)) \]" src="form_40.png"/>
+<img class="formulaDsp" alt="\[ H(A,B) = \max(h(A,B),h(B,A)) \]" src="form_39.png"/>
 </p>
 <p> where </p><p class="formulaDsp">
-<img class="formulaDsp" alt="\[ h(A,B) = \max_{a \in A} \min_{b \in B} \| a - b\| \]" src="form_41.png"/>
+<img class="formulaDsp" alt="\[ h(A,B) = \max_{a \in A} \min_{b \in B} \| a - b\| \]" src="form_40.png"/>
 </p>
-<p> is the directed Hausdorff distance and <img class="formulaInl" alt="$A$" src="form_42.png"/> and <img class="formulaInl" alt="$B$" src="form_43.png"/> are respectively the set of non-zero pixels in the first and second input images.</p>
+<p> is the directed Hausdorff distance and <img class="formulaInl" alt="$A$" src="form_41.png"/> and <img class="formulaInl" alt="$B$" src="form_42.png"/> are respectively the set of non-zero pixels in the first and second input images.</p>
 <p>In particular, this filter uses the DirectedHausdorffImageFilter inside to compute the two directed distances and then select the largest of the two.</p>
 <p>The Hausdorff distance measures the degree of mismatch between two sets and behaves like a metric over the set of all closed bounded sets - with properties of identity, symmetry and triangle inequality.</p>
 <p>This filter requires the largest possible region of the first image and the same corresponding region in the second image. It behaves as filter with two inputs and one output. Thus it can be inserted in a pipeline with other filters. The filter passes the first input through unmodified.</p>
@@ -709,7 +709,7 @@ template&lt;class TImageType &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Mar 7 2020 03:21:30 for SimpleITK by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Mar 10 2020 03:49:20 for SimpleITK by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

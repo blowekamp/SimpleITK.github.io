@@ -19,7 +19,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">SimpleITK
-   &#160;<span id="projectnumber">2.0.0.dev127</span>
+   &#160;<span id="projectnumber">2.0.0rc1</span>
    </div>
   </td>
  </tr>
@@ -298,11 +298,11 @@ Additional Inherited Members</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Measures the similarity between the set of non-zero pixels of two images. </p>
 <p><a class="el" href="classitk_1_1simple_1_1SimilarityIndexImageFilter.html" title="Measures the similarity between the set of non-zero pixels of two images.">SimilarityIndexImageFilter</a> measures the similarity between the set non-zero pixels of two images using the following formula: </p><p class="formulaDsp">
-<img class="formulaDsp" alt="\[ S = \frac{2 | A \cap B |}{|A| + |B|} \]" src="form_86.png"/>
+<img class="formulaDsp" alt="\[ S = \frac{2 | A \cap B |}{|A| + |B|} \]" src="form_87.png"/>
 </p>
-<p> where <img class="formulaInl" alt="$A$" src="form_42.png"/> and <img class="formulaInl" alt="$B$" src="form_43.png"/> are respectively the set of non-zero pixels in the first and second input images. Operator <img class="formulaInl" alt="$|\cdot|$" src="form_87.png"/> represents the size of a set and <img class="formulaInl" alt="$\cap$" src="form_88.png"/> represents the intersection of two sets.</p>
-<p>The measure is derived from a reliability measure known as the kappa statistic. <img class="formulaInl" alt="$S$" src="form_89.png"/> is sensitive to both differences in size and in location and have been in the literature for comparing two segmentation masks. For more information see: "Morphometric Analysis of White Matter Lesions in MR Images: Method and
-Validation", A. P. Zijdenbos, B. M. Dawant, R. A. Margolin and A. C. Palmer, IEEE Trans. on Medical Imaging, 13(4) pp 716-724,1994</p>
+<p> where <img class="formulaInl" alt="$A$" src="form_41.png"/> and <img class="formulaInl" alt="$B$" src="form_42.png"/> are respectively the set of non-zero pixels in the first and second input images. Operator <img class="formulaInl" alt="$|\cdot|$" src="form_88.png"/> represents the size of a set and <img class="formulaInl" alt="$\cap$" src="form_89.png"/> represents the intersection of two sets.</p>
+<p>The measure is derived from a reliability measure known as the kappa statistic. <img class="formulaInl" alt="$S$" src="form_90.png"/> is sensitive to both differences in size and in location and have been in the literature for comparing two segmentation masks. For more information see: "Morphometric Analysis of White Matter Lesions in MR Images: Method and
+ Validation", A. P. Zijdenbos, B. M. Dawant, R. A. Margolin and A. C. Palmer, IEEE Trans. on Medical Imaging, 13(4) pp 716-724,1994</p>
 <p>This filter requires the largest possible region of the first image and the same corresponding region in the second image. It behaves as filter with two input and one output. Thus it can be inserted in a pipeline with other filters. The filter passes the first input through unmodified.</p>
 <p>This filter is templated over the two input image type. It assume both image have the same number of dimensions.</p>
 <dl class="section see"><dt>See also</dt><dd><a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1SimilarityIndexImageFilter.html">itk::SimilarityIndexImageFilter</a> for the Doxygen on the original ITK class. </dd></dl>
@@ -647,7 +647,7 @@ template&lt;class TImageType &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Mar 7 2020 03:21:33 for SimpleITK by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Mar 10 2020 03:49:24 for SimpleITK by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

@@ -19,7 +19,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">SimpleITK
-   &#160;<span id="projectnumber">2.0.0.dev127</span>
+   &#160;<span id="projectnumber">2.0.0rc1</span>
    </div>
   </td>
  </tr>
@@ -321,7 +321,7 @@ Additional Inherited Members</h2></td></tr>
 <div class="textblock"><p>Binarize an input image by thresholding. </p>
 <p>This filter produces an output image whose pixels are either one of two values ( OutsideValue or InsideValue ), depending on whether the corresponding input image pixels lie between the two thresholds ( LowerThreshold and UpperThreshold ). Values equal to either threshold is considered to be between the thresholds.</p>
 <p>More precisely </p><p class="formulaDsp">
-<img class="formulaDsp" alt="\[ Output(x_i) = \begin{cases} InsideValue &amp; \text{if \f$LowerThreshold \leq x_i \leq UpperThreshold\f$} \\ OutsideValue &amp; \text{otherwise} \end{cases} \]" src="form_28.png"/>
+<img class="formulaDsp" alt="\[ Output(x_i) = \begin{cases} InsideValue &amp; \text{if \f$LowerThreshold \leq x_i \leq UpperThreshold\f$} \\ OutsideValue &amp; \text{otherwise} \end{cases} \]" src="form_27.png"/>
 </p>
 <p>This filter is templated over the input image type and the output image type.</p>
 <p>The filter expect both images to have the same number of dimensions.</p>
@@ -789,7 +789,7 @@ template&lt;class TImageType &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Set the thresholds. The default lower threshold is <a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1NumericTraits.html#a130b93e7399bc5e5d81614cdaf46e4f1">NumericTraits&lt;InputPixelType&gt;::NonpositiveMin()</a> . The default upper threshold is <a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1NumericTraits.html#a1341dd4e5b9b45217923f82b9175fb2d">NumericTraits&lt;InputPixelType&gt;::max</a> . An execption is thrown if the lower threshold is greater than the upper threshold. </p>
+<p>Set the thresholds. The default lower threshold is <a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1NumericTraits.html#a130b93e7399bc5e5d81614cdaf46e4f1">NumericTraits&lt;InputPixelType&gt;::NonpositiveMin()</a> . The default upper threshold is <a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1NumericTraits.html#a1341dd4e5b9b45217923f82b9175fb2d">NumericTraits&lt;InputPixelType&gt;::max</a> . An exception is thrown if the lower threshold is greater than the upper threshold. </p>
 <dl class="section examples"><dt>Examples</dt><dd><a class="el" href="FastMarchingSegmentation_2FastMarchingSegmentation_8cxx-example.html#a23">FastMarchingSegmentation/FastMarchingSegmentation.cxx</a>.</dd>
 </dl>
 
@@ -977,7 +977,7 @@ template&lt;class TImageType &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Mar 7 2020 03:21:27 for SimpleITK by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Mar 10 2020 03:49:17 for SimpleITK by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>
