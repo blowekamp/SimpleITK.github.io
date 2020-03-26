@@ -19,7 +19,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">SimpleITK
-   &#160;<span id="projectnumber">2.0.0rc1.post7</span>
+   &#160;<span id="projectnumber">2.0.0rc1.post21</span>
    </div>
   </td>
  </tr>
@@ -129,9 +129,12 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a623abccb7d69a02fa45f9493cd4c3e5c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1Image.html#a623abccb7d69a02fa45f9493cd4c3e5c">Image</a> (void)</td></tr>
 <tr class="memdesc:a623abccb7d69a02fa45f9493cd4c3e5c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default constructor, creates an image of size 0.  <a href="classitk_1_1simple_1_1Image.html#a623abccb7d69a02fa45f9493cd4c3e5c">More...</a><br /></td></tr>
 <tr class="separator:a623abccb7d69a02fa45f9493cd4c3e5c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a28e36d19b0b28e83c4e0a9556cad233e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1Image.html#a28e36d19b0b28e83c4e0a9556cad233e">MakeUnique</a> (void)</td></tr>
-<tr class="memdesc:a28e36d19b0b28e83c4e0a9556cad233e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Performs actually coping if needed to make object unique.  <a href="classitk_1_1simple_1_1Image.html#a28e36d19b0b28e83c4e0a9556cad233e">More...</a><br /></td></tr>
-<tr class="separator:a28e36d19b0b28e83c4e0a9556cad233e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aec5b1f66e3812a286b3e9f4ac8ed976f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1Image.html#aec5b1f66e3812a286b3e9f4ac8ed976f">IsUnique</a> () const</td></tr>
+<tr class="memdesc:aec5b1f66e3812a286b3e9f4ac8ed976f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if no other SimpleITK <a class="el" href="classitk_1_1simple_1_1Image.html" title="The Image class for SimpleITK.">Image</a> object refers to the same internal data structure.  <a href="classitk_1_1simple_1_1Image.html#aec5b1f66e3812a286b3e9f4ac8ed976f">More...</a><br /></td></tr>
+<tr class="separator:aec5b1f66e3812a286b3e9f4ac8ed976f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab5066b75d324db414df1a34c4065d1c9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1Image.html#ab5066b75d324db414df1a34c4065d1c9">MakeUnique</a> ()</td></tr>
+<tr class="memdesc:ab5066b75d324db414df1a34c4065d1c9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Performs actually coping if needed to make object unique.  <a href="classitk_1_1simple_1_1Image.html#ab5066b75d324db414df1a34c4065d1c9">More...</a><br /></td></tr>
+<tr class="separator:ab5066b75d324db414df1a34c4065d1c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0e9fc07fb70d1166ca7d5c3301f5a8ab"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1Image.html#a0e9fc07fb70d1166ca7d5c3301f5a8ab">operator=</a> (const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> &amp;img)</td></tr>
 <tr class="separator:a0e9fc07fb70d1166ca7d5c3301f5a8ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4f82d3db310bfc5674f4e81b2722b549"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1Image.html#a4f82d3db310bfc5674f4e81b2722b549">operator=</a> (<a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> &amp;&amp;img)</td></tr>
@@ -1013,7 +1016,7 @@ template&lt;int VPixelIDValue, typename TImageType &gt; </div>
 </div><div class="memdoc">
 <p>Dispatched from the InternalInitialization method. The "enable-if" idiom is used here for method overloading. The second method is for non-instantiated image, which turn into a void pointer for the parameter. However, this second method should never be executed. </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkImage_8h_source.html#l00521">521</a> of file <a class="el" href="sitkImage_8h_source.html">sitkImage.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkImage_8h_source.html#l00525">525</a> of file <a class="el" href="sitkImage_8h_source.html">sitkImage.h</a>.</p>
 
 </div>
 </div>
@@ -2686,8 +2689,27 @@ template&lt;int VPixelIDValue, unsigned int VImageDimension&gt; </div>
 
 </div>
 </div>
-<a id="a28e36d19b0b28e83c4e0a9556cad233e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a28e36d19b0b28e83c4e0a9556cad233e">&#9670;&nbsp;</a></span>MakeUnique()</h2>
+<a id="aec5b1f66e3812a286b3e9f4ac8ed976f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aec5b1f66e3812a286b3e9f4ac8ed976f">&#9670;&nbsp;</a></span>IsUnique()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool itk::simple::Image::IsUnique </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns true if no other SimpleITK <a class="el" href="classitk_1_1simple_1_1Image.html" title="The Image class for SimpleITK.">Image</a> object refers to the same internal data structure. </p>
+
+</div>
+</div>
+<a id="ab5066b75d324db414df1a34c4065d1c9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab5066b75d324db414df1a34c4065d1c9">&#9670;&nbsp;</a></span>MakeUnique()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2695,7 +2717,6 @@ template&lt;int VPixelIDValue, unsigned int VImageDimension&gt; </div>
         <tr>
           <td class="memname">void itk::simple::Image::MakeUnique </td>
           <td>(</td>
-          <td class="paramtype">void&#160;</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
@@ -3807,7 +3828,7 @@ template&lt;int VPixelIDValue, unsigned int VImageDimension&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkImage_8h_source.html#l00539">539</a> of file <a class="el" href="sitkImage_8h_source.html">sitkImage.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkImage_8h_source.html#l00543">543</a> of file <a class="el" href="sitkImage_8h_source.html">sitkImage.h</a>.</p>
 
 </div>
 </div>
@@ -3818,7 +3839,7 @@ template&lt;int VPixelIDValue, unsigned int VImageDimension&gt; </div>
 <div class="ttc" id="anamespaceitk_html_a5037a19c1b11bcb33173a2a3e3d8b8a0"><div class="ttname"><a href="https://www.itk.org/Doxygen/html/namespaceitk.html#a5037a19c1b11bcb33173a2a3e3d8b8a0">uint8_t</a></div><div class="ttdeci">::uint8_t uint8_t</div></div>
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Mar 20 2020 03:18:11 for SimpleITK by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Mar 26 2020 03:19:57 for SimpleITK by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

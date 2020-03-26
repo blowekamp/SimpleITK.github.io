@@ -19,7 +19,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">SimpleITK
-   &#160;<span id="projectnumber">2.0.0rc1.post7</span>
+   &#160;<span id="projectnumber">2.0.0rc1.post21</span>
    </div>
   </td>
  </tr>
@@ -147,8 +147,6 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a6409f762abef31e09f19dbf02e06dac3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a21f546b1c94e1e0b97f80a26c2869158"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classitk_1_1simple_1_1Image.html">Image</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1SLICImageFilter.html#a21f546b1c94e1e0b97f80a26c2869158">Execute</a> (const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> &amp;image1)</td></tr>
 <tr class="separator:a21f546b1c94e1e0b97f80a26c2869158"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab893b4a461c2c09b85691e0e92bfd34d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classitk_1_1simple_1_1Image.html">Image</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1SLICImageFilter.html#ab893b4a461c2c09b85691e0e92bfd34d">Execute</a> (const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> &amp;image1, const std::vector&lt; unsigned int &gt; &amp;superGridSize, double spatialProximityWeight, <a class="elRef" href="https://www.itk.org/Doxygen/html/namespaceitk.html#a575b8e3e1ee797dd1bbaf9724ed68f92">uint32_t</a> maximumNumberOfIterations, bool enforceConnectivity, bool initializationPerturbation)</td></tr>
-<tr class="separator:ab893b4a461c2c09b85691e0e92bfd34d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad2be76b713342a7c8b6af6611eb8289f"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1SLICImageFilter.html#ad2be76b713342a7c8b6af6611eb8289f">GetAverageResidual</a> () const</td></tr>
 <tr class="memdesc:ad2be76b713342a7c8b6af6611eb8289f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the current average cluster residual. After each iteration the residual is computed as the distance between the current clusters and the previous. This is averaged so that the value is independent of the number of clusters.  <a href="classitk_1_1simple_1_1SLICImageFilter.html#ad2be76b713342a7c8b6af6611eb8289f">More...</a><br /></td></tr>
 <tr class="separator:ad2be76b713342a7c8b6af6611eb8289f"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -377,7 +375,7 @@ Generic and Parallel Approach" by Lowekamp B. C., Chen D. T., Yaniv Z., Yoo T. S
 </div><div class="memdoc">
 <p>Setup for member function dispatching </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkSLICImageFilter_8h_source.html#l00149">149</a> of file <a class="el" href="sitkSLICImageFilter_8h_source.html">sitkSLICImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkSLICImageFilter_8h_source.html#l00145">145</a> of file <a class="el" href="sitkSLICImageFilter_8h_source.html">sitkSLICImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -516,7 +514,7 @@ Generic and Parallel Approach" by Lowekamp B. C., Chen D. T., Yaniv Z., Yoo T. S
 </div>
 </div>
 <a id="a21f546b1c94e1e0b97f80a26c2869158"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a21f546b1c94e1e0b97f80a26c2869158">&#9670;&nbsp;</a></span>Execute() <span class="overload">[1/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a21f546b1c94e1e0b97f80a26c2869158">&#9670;&nbsp;</a></span>Execute()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -531,59 +529,6 @@ Generic and Parallel Approach" by Lowekamp B. C., Chen D. T., Yaniv Z., Yoo T. S
       </table>
 </div><div class="memdoc">
 <p>Execute the filter on the input image </p>
-
-</div>
-</div>
-<a id="ab893b4a461c2c09b85691e0e92bfd34d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab893b4a461c2c09b85691e0e92bfd34d">&#9670;&nbsp;</a></span>Execute() <span class="overload">[2/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> itk::simple::SLICImageFilter::Execute </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> &amp;&#160;</td>
-          <td class="paramname"><em>image1</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const std::vector&lt; unsigned int &gt; &amp;&#160;</td>
-          <td class="paramname"><em>superGridSize</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>spatialProximityWeight</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="elRef" href="https://www.itk.org/Doxygen/html/namespaceitk.html#a575b8e3e1ee797dd1bbaf9724ed68f92">uint32_t</a>&#160;</td>
-          <td class="paramname"><em>maximumNumberOfIterations</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>enforceConnectivity</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>initializationPerturbation</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Execute the filter on the input image with the given parameters </p>
 
 </div>
 </div>
@@ -1062,7 +1007,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkSLICImageFilter_8h_source.html#l00153">153</a> of file <a class="el" href="sitkSLICImageFilter_8h_source.html">sitkSLICImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkSLICImageFilter_8h_source.html#l00149">149</a> of file <a class="el" href="sitkSLICImageFilter_8h_source.html">sitkSLICImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -1087,7 +1032,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkSLICImageFilter_8h_source.html#l00163">163</a> of file <a class="el" href="sitkSLICImageFilter_8h_source.html">sitkSLICImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkSLICImageFilter_8h_source.html#l00159">159</a> of file <a class="el" href="sitkSLICImageFilter_8h_source.html">sitkSLICImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -1111,7 +1056,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkSLICImageFilter_8h_source.html#l00169">169</a> of file <a class="el" href="sitkSLICImageFilter_8h_source.html">sitkSLICImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkSLICImageFilter_8h_source.html#l00165">165</a> of file <a class="el" href="sitkSLICImageFilter_8h_source.html">sitkSLICImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -1135,7 +1080,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkSLICImageFilter_8h_source.html#l00164">164</a> of file <a class="el" href="sitkSLICImageFilter_8h_source.html">sitkSLICImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkSLICImageFilter_8h_source.html#l00160">160</a> of file <a class="el" href="sitkSLICImageFilter_8h_source.html">sitkSLICImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -1159,7 +1104,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkSLICImageFilter_8h_source.html#l00162">162</a> of file <a class="el" href="sitkSLICImageFilter_8h_source.html">sitkSLICImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkSLICImageFilter_8h_source.html#l00158">158</a> of file <a class="el" href="sitkSLICImageFilter_8h_source.html">sitkSLICImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -1183,7 +1128,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkSLICImageFilter_8h_source.html#l00155">155</a> of file <a class="el" href="sitkSLICImageFilter_8h_source.html">sitkSLICImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkSLICImageFilter_8h_source.html#l00151">151</a> of file <a class="el" href="sitkSLICImageFilter_8h_source.html">sitkSLICImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -1207,7 +1152,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkSLICImageFilter_8h_source.html#l00166">166</a> of file <a class="el" href="sitkSLICImageFilter_8h_source.html">sitkSLICImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkSLICImageFilter_8h_source.html#l00162">162</a> of file <a class="el" href="sitkSLICImageFilter_8h_source.html">sitkSLICImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -1231,7 +1176,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkSLICImageFilter_8h_source.html#l00160">160</a> of file <a class="el" href="sitkSLICImageFilter_8h_source.html">sitkSLICImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkSLICImageFilter_8h_source.html#l00156">156</a> of file <a class="el" href="sitkSLICImageFilter_8h_source.html">sitkSLICImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -1255,7 +1200,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkSLICImageFilter_8h_source.html#l00159">159</a> of file <a class="el" href="sitkSLICImageFilter_8h_source.html">sitkSLICImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkSLICImageFilter_8h_source.html#l00155">155</a> of file <a class="el" href="sitkSLICImageFilter_8h_source.html">sitkSLICImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -1265,7 +1210,7 @@ template&lt;class TImageType &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Mar 20 2020 03:18:15 for SimpleITK by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Mar 26 2020 03:20:00 for SimpleITK by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

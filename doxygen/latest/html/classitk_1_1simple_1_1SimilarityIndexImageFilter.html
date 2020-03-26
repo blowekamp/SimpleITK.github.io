@@ -19,7 +19,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">SimpleITK
-   &#160;<span id="projectnumber">2.0.0rc1.post7</span>
+   &#160;<span id="projectnumber">2.0.0rc1.post21</span>
    </div>
   </td>
  </tr>
@@ -298,10 +298,10 @@ Additional Inherited Members</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Measures the similarity between the set of non-zero pixels of two images. </p>
 <p><a class="el" href="classitk_1_1simple_1_1SimilarityIndexImageFilter.html" title="Measures the similarity between the set of non-zero pixels of two images.">SimilarityIndexImageFilter</a> measures the similarity between the set non-zero pixels of two images using the following formula: </p><p class="formulaDsp">
-<img class="formulaDsp" alt="\[ S = \frac{2 | A \cap B |}{|A| + |B|} \]" src="form_87.png"/>
+<img class="formulaDsp" alt="\[ S = \frac{2 | A \cap B |}{|A| + |B|} \]" src="form_88.png"/>
 </p>
-<p> where <img class="formulaInl" alt="$A$" src="form_41.png"/> and <img class="formulaInl" alt="$B$" src="form_42.png"/> are respectively the set of non-zero pixels in the first and second input images. Operator <img class="formulaInl" alt="$|\cdot|$" src="form_88.png"/> represents the size of a set and <img class="formulaInl" alt="$\cap$" src="form_89.png"/> represents the intersection of two sets.</p>
-<p>The measure is derived from a reliability measure known as the kappa statistic. <img class="formulaInl" alt="$S$" src="form_90.png"/> is sensitive to both differences in size and in location and have been in the literature for comparing two segmentation masks. For more information see: "Morphometric Analysis of White Matter Lesions in MR Images: Method and
+<p> where <img class="formulaInl" alt="$A$" src="form_42.png"/> and <img class="formulaInl" alt="$B$" src="form_43.png"/> are respectively the set of non-zero pixels in the first and second input images. Operator <img class="formulaInl" alt="$|\cdot|$" src="form_89.png"/> represents the size of a set and <img class="formulaInl" alt="$\cap$" src="form_90.png"/> represents the intersection of two sets.</p>
+<p>The measure is derived from a reliability measure known as the kappa statistic. <img class="formulaInl" alt="$S$" src="form_91.png"/> is sensitive to both differences in size and in location and have been in the literature for comparing two segmentation masks. For more information see: "Morphometric Analysis of White Matter Lesions in MR Images: Method and
  Validation", A. P. Zijdenbos, B. M. Dawant, R. A. Margolin and A. C. Palmer, IEEE Trans. on Medical Imaging, 13(4) pp 716-724,1994</p>
 <p>This filter requires the largest possible region of the first image and the same corresponding region in the second image. It behaves as filter with two input and one output. Thus it can be inserted in a pipeline with other filters. The filter passes the first input through unmodified.</p>
 <p>This filter is templated over the two input image type. It assume both image have the same number of dimensions.</p>
@@ -330,7 +330,7 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 <p>Setup for member function dispatching </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkSimilarityIndexImageFilter_8h_source.html#l00087">87</a> of file <a class="el" href="sitkSimilarityIndexImageFilter_8h_source.html">sitkSimilarityIndexImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkSimilarityIndexImageFilter_8h_source.html#l00086">86</a> of file <a class="el" href="sitkSimilarityIndexImageFilter_8h_source.html">sitkSimilarityIndexImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -588,7 +588,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkSimilarityIndexImageFilter_8h_source.html#l00091">91</a> of file <a class="el" href="sitkSimilarityIndexImageFilter_8h_source.html">sitkSimilarityIndexImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkSimilarityIndexImageFilter_8h_source.html#l00090">90</a> of file <a class="el" href="sitkSimilarityIndexImageFilter_8h_source.html">sitkSimilarityIndexImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -613,7 +613,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkSimilarityIndexImageFilter_8h_source.html#l00093">93</a> of file <a class="el" href="sitkSimilarityIndexImageFilter_8h_source.html">sitkSimilarityIndexImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkSimilarityIndexImageFilter_8h_source.html#l00092">92</a> of file <a class="el" href="sitkSimilarityIndexImageFilter_8h_source.html">sitkSimilarityIndexImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -637,7 +637,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkSimilarityIndexImageFilter_8h_source.html#l00097">97</a> of file <a class="el" href="sitkSimilarityIndexImageFilter_8h_source.html">sitkSimilarityIndexImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkSimilarityIndexImageFilter_8h_source.html#l00096">96</a> of file <a class="el" href="sitkSimilarityIndexImageFilter_8h_source.html">sitkSimilarityIndexImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -647,7 +647,7 @@ template&lt;class TImageType &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Mar 20 2020 03:18:15 for SimpleITK by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Mar 26 2020 03:20:00 for SimpleITK by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

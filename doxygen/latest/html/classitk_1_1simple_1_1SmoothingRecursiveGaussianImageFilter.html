@@ -19,7 +19,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">SimpleITK
-   &#160;<span id="projectnumber">2.0.0rc1.post7</span>
+   &#160;<span id="projectnumber">2.0.0rc1.post21</span>
    </div>
   </td>
  </tr>
@@ -143,8 +143,6 @@ Public Types</h2></td></tr>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a5451fd72867232413c1e534898313f12"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classitk_1_1simple_1_1Image.html">Image</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1SmoothingRecursiveGaussianImageFilter.html#a5451fd72867232413c1e534898313f12">Execute</a> (const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> &amp;image1)</td></tr>
 <tr class="separator:a5451fd72867232413c1e534898313f12"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9539ced0296050cd40fb9d4be1d61365"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classitk_1_1simple_1_1Image.html">Image</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1SmoothingRecursiveGaussianImageFilter.html#a9539ced0296050cd40fb9d4be1d61365">Execute</a> (const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> &amp;image1, const std::vector&lt; double &gt; &amp;sigma, bool normalizeAcrossScale)</td></tr>
-<tr class="separator:a9539ced0296050cd40fb9d4be1d61365"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5afa9502dab427d1ae4249f3dbda29e9"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1SmoothingRecursiveGaussianImageFilter.html#a5afa9502dab427d1ae4249f3dbda29e9">GetName</a> () const</td></tr>
 <tr class="separator:a5afa9502dab427d1ae4249f3dbda29e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3fa42f67aee31260e3644221ec5b742c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1SmoothingRecursiveGaussianImageFilter.html#a3fa42f67aee31260e3644221ec5b742c">GetNormalizeAcrossScale</a> () const</td></tr>
@@ -344,7 +342,7 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 <p>Setup for member function dispatching </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkSmoothingRecursiveGaussianImageFilter_8h_source.html#l00109">109</a> of file <a class="el" href="sitkSmoothingRecursiveGaussianImageFilter_8h_source.html">sitkSmoothingRecursiveGaussianImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkSmoothingRecursiveGaussianImageFilter_8h_source.html#l00105">105</a> of file <a class="el" href="sitkSmoothingRecursiveGaussianImageFilter_8h_source.html">sitkSmoothingRecursiveGaussianImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -428,7 +426,7 @@ Additional Inherited Members</h2></td></tr>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
 <a id="a5451fd72867232413c1e534898313f12"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5451fd72867232413c1e534898313f12">&#9670;&nbsp;</a></span>Execute() <span class="overload">[1/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a5451fd72867232413c1e534898313f12">&#9670;&nbsp;</a></span>Execute()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -445,41 +443,6 @@ Additional Inherited Members</h2></td></tr>
 <p>Execute the filter on the input image </p>
 <dl class="section examples"><dt>Examples</dt><dd><a class="el" href="SimpleGaussian_2SimpleGaussian_8cxx-example.html#a6">SimpleGaussian/SimpleGaussian.cxx</a>.</dd>
 </dl>
-
-</div>
-</div>
-<a id="a9539ced0296050cd40fb9d4be1d61365"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9539ced0296050cd40fb9d4be1d61365">&#9670;&nbsp;</a></span>Execute() <span class="overload">[2/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> itk::simple::SmoothingRecursiveGaussianImageFilter::Execute </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> &amp;&#160;</td>
-          <td class="paramname"><em>image1</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const std::vector&lt; double &gt; &amp;&#160;</td>
-          <td class="paramname"><em>sigma</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>normalizeAcrossScale</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Execute the filter on the input image with the given parameters </p>
 
 </div>
 </div>
@@ -792,7 +755,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkSmoothingRecursiveGaussianImageFilter_8h_source.html#l00113">113</a> of file <a class="el" href="sitkSmoothingRecursiveGaussianImageFilter_8h_source.html">sitkSmoothingRecursiveGaussianImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkSmoothingRecursiveGaussianImageFilter_8h_source.html#l00109">109</a> of file <a class="el" href="sitkSmoothingRecursiveGaussianImageFilter_8h_source.html">sitkSmoothingRecursiveGaussianImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -817,7 +780,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkSmoothingRecursiveGaussianImageFilter_8h_source.html#l00115">115</a> of file <a class="el" href="sitkSmoothingRecursiveGaussianImageFilter_8h_source.html">sitkSmoothingRecursiveGaussianImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkSmoothingRecursiveGaussianImageFilter_8h_source.html#l00111">111</a> of file <a class="el" href="sitkSmoothingRecursiveGaussianImageFilter_8h_source.html">sitkSmoothingRecursiveGaussianImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -841,7 +804,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkSmoothingRecursiveGaussianImageFilter_8h_source.html#l00121">121</a> of file <a class="el" href="sitkSmoothingRecursiveGaussianImageFilter_8h_source.html">sitkSmoothingRecursiveGaussianImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkSmoothingRecursiveGaussianImageFilter_8h_source.html#l00117">117</a> of file <a class="el" href="sitkSmoothingRecursiveGaussianImageFilter_8h_source.html">sitkSmoothingRecursiveGaussianImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -865,7 +828,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkSmoothingRecursiveGaussianImageFilter_8h_source.html#l00119">119</a> of file <a class="el" href="sitkSmoothingRecursiveGaussianImageFilter_8h_source.html">sitkSmoothingRecursiveGaussianImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkSmoothingRecursiveGaussianImageFilter_8h_source.html#l00115">115</a> of file <a class="el" href="sitkSmoothingRecursiveGaussianImageFilter_8h_source.html">sitkSmoothingRecursiveGaussianImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -875,7 +838,7 @@ template&lt;class TImageType &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Mar 20 2020 03:18:15 for SimpleITK by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Mar 26 2020 03:20:00 for SimpleITK by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

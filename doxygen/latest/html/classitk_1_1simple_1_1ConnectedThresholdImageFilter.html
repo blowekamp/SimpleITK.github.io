@@ -19,7 +19,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">SimpleITK
-   &#160;<span id="projectnumber">2.0.0rc1.post7</span>
+   &#160;<span id="projectnumber">2.0.0rc1.post21</span>
    </div>
   </td>
  </tr>
@@ -157,8 +157,6 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:aebc8dcd82b92bc0ea16f660252863bf9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae0178b61cf3ced1f00f362ef858ee297"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classitk_1_1simple_1_1Image.html">Image</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1ConnectedThresholdImageFilter.html#ae0178b61cf3ced1f00f362ef858ee297">Execute</a> (const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> &amp;image1)</td></tr>
 <tr class="separator:ae0178b61cf3ced1f00f362ef858ee297"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1035ddbd17614636af6bdc177334ba6e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classitk_1_1simple_1_1Image.html">Image</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1ConnectedThresholdImageFilter.html#a1035ddbd17614636af6bdc177334ba6e">Execute</a> (const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> &amp;image1, const std::vector&lt; std::vector&lt; unsigned int &gt; &gt; &amp;seedList, double lower, double upper, <a class="elRef" href="https://www.itk.org/Doxygen/html/namespaceitk.html#a5037a19c1b11bcb33173a2a3e3d8b8a0">uint8_t</a> replaceValue, <a class="el" href="classitk_1_1simple_1_1ConnectedThresholdImageFilter.html#a3bded4cacab6b511a914b5b0598027ec">ConnectedThresholdImageFilter::ConnectivityType</a> connectivity)</td></tr>
-<tr class="separator:a1035ddbd17614636af6bdc177334ba6e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9dad1b51ac2b6797d5dd42dbc916d7d0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classitk_1_1simple_1_1ConnectedThresholdImageFilter.html#a3bded4cacab6b511a914b5b0598027ec">ConnectivityType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1ConnectedThresholdImageFilter.html#a9dad1b51ac2b6797d5dd42dbc916d7d0">GetConnectivity</a> () const</td></tr>
 <tr class="separator:a9dad1b51ac2b6797d5dd42dbc916d7d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad3b2d7d25b63787b04af7dc04bbff49c"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1ConnectedThresholdImageFilter.html#ad3b2d7d25b63787b04af7dc04bbff49c">GetLower</a> () const</td></tr>
@@ -369,7 +367,7 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 <p>Setup for member function dispatching </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkConnectedThresholdImageFilter_8h_source.html#l00151">151</a> of file <a class="el" href="sitkConnectedThresholdImageFilter_8h_source.html">sitkConnectedThresholdImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkConnectedThresholdImageFilter_8h_source.html#l00148">148</a> of file <a class="el" href="sitkConnectedThresholdImageFilter_8h_source.html">sitkConnectedThresholdImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -533,7 +531,7 @@ Additional Inherited Members</h2></td></tr>
 </div>
 </div>
 <a id="ae0178b61cf3ced1f00f362ef858ee297"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae0178b61cf3ced1f00f362ef858ee297">&#9670;&nbsp;</a></span>Execute() <span class="overload">[1/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ae0178b61cf3ced1f00f362ef858ee297">&#9670;&nbsp;</a></span>Execute()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -550,59 +548,6 @@ Additional Inherited Members</h2></td></tr>
 <p>Execute the filter on the input image </p>
 <dl class="section examples"><dt>Examples</dt><dd><a class="el" href="ITKIntegration_2ITKIntegration_8cxx-example.html#a20">ITKIntegration/ITKIntegration.cxx</a>, and <a class="el" href="Segmentation_2ConnectedThresholdImageFilter_8cxx-example.html#a13">Segmentation/ConnectedThresholdImageFilter.cxx</a>.</dd>
 </dl>
-
-</div>
-</div>
-<a id="a1035ddbd17614636af6bdc177334ba6e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1035ddbd17614636af6bdc177334ba6e">&#9670;&nbsp;</a></span>Execute() <span class="overload">[2/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> itk::simple::ConnectedThresholdImageFilter::Execute </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> &amp;&#160;</td>
-          <td class="paramname"><em>image1</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const std::vector&lt; std::vector&lt; unsigned int &gt; &gt; &amp;&#160;</td>
-          <td class="paramname"><em>seedList</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>lower</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>upper</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="elRef" href="https://www.itk.org/Doxygen/html/namespaceitk.html#a5037a19c1b11bcb33173a2a3e3d8b8a0">uint8_t</a>&#160;</td>
-          <td class="paramname"><em>replaceValue</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="classitk_1_1simple_1_1ConnectedThresholdImageFilter.html#a3bded4cacab6b511a914b5b0598027ec">ConnectedThresholdImageFilter::ConnectivityType</a>&#160;</td>
-          <td class="paramname"><em>connectivity</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Execute the filter on the input image with the given parameters </p>
 
 </div>
 </div>
@@ -1033,7 +978,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkConnectedThresholdImageFilter_8h_source.html#l00155">155</a> of file <a class="el" href="sitkConnectedThresholdImageFilter_8h_source.html">sitkConnectedThresholdImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkConnectedThresholdImageFilter_8h_source.html#l00152">152</a> of file <a class="el" href="sitkConnectedThresholdImageFilter_8h_source.html">sitkConnectedThresholdImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -1058,7 +1003,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkConnectedThresholdImageFilter_8h_source.html#l00165">165</a> of file <a class="el" href="sitkConnectedThresholdImageFilter_8h_source.html">sitkConnectedThresholdImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkConnectedThresholdImageFilter_8h_source.html#l00162">162</a> of file <a class="el" href="sitkConnectedThresholdImageFilter_8h_source.html">sitkConnectedThresholdImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -1082,7 +1027,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkConnectedThresholdImageFilter_8h_source.html#l00160">160</a> of file <a class="el" href="sitkConnectedThresholdImageFilter_8h_source.html">sitkConnectedThresholdImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkConnectedThresholdImageFilter_8h_source.html#l00157">157</a> of file <a class="el" href="sitkConnectedThresholdImageFilter_8h_source.html">sitkConnectedThresholdImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -1106,7 +1051,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkConnectedThresholdImageFilter_8h_source.html#l00157">157</a> of file <a class="el" href="sitkConnectedThresholdImageFilter_8h_source.html">sitkConnectedThresholdImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkConnectedThresholdImageFilter_8h_source.html#l00154">154</a> of file <a class="el" href="sitkConnectedThresholdImageFilter_8h_source.html">sitkConnectedThresholdImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -1130,7 +1075,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkConnectedThresholdImageFilter_8h_source.html#l00164">164</a> of file <a class="el" href="sitkConnectedThresholdImageFilter_8h_source.html">sitkConnectedThresholdImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkConnectedThresholdImageFilter_8h_source.html#l00161">161</a> of file <a class="el" href="sitkConnectedThresholdImageFilter_8h_source.html">sitkConnectedThresholdImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -1155,7 +1100,7 @@ template&lt;class TImageType &gt; </div>
 </div><div class="memdoc">
 <p>List of interor seed points used to initialize the region growing segmentation </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkConnectedThresholdImageFilter_8h_source.html#l00168">168</a> of file <a class="el" href="sitkConnectedThresholdImageFilter_8h_source.html">sitkConnectedThresholdImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkConnectedThresholdImageFilter_8h_source.html#l00165">165</a> of file <a class="el" href="sitkConnectedThresholdImageFilter_8h_source.html">sitkConnectedThresholdImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -1179,7 +1124,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkConnectedThresholdImageFilter_8h_source.html#l00161">161</a> of file <a class="el" href="sitkConnectedThresholdImageFilter_8h_source.html">sitkConnectedThresholdImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkConnectedThresholdImageFilter_8h_source.html#l00158">158</a> of file <a class="el" href="sitkConnectedThresholdImageFilter_8h_source.html">sitkConnectedThresholdImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -1189,7 +1134,7 @@ template&lt;class TImageType &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Mar 20 2020 03:18:09 for SimpleITK by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Mar 26 2020 03:19:55 for SimpleITK by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

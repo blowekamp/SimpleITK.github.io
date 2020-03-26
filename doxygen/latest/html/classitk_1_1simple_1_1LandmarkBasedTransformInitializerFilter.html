@@ -19,7 +19,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">SimpleITK
-   &#160;<span id="projectnumber">2.0.0rc1.post7</span>
+   &#160;<span id="projectnumber">2.0.0rc1.post21</span>
    </div>
   </td>
  </tr>
@@ -142,8 +142,6 @@ Public Types</h2></td></tr>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:aaa5aff49d3039bdc93846072f861a428"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classitk_1_1simple_1_1Transform.html">Transform</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1LandmarkBasedTransformInitializerFilter.html#aaa5aff49d3039bdc93846072f861a428">Execute</a> (const <a class="el" href="classitk_1_1simple_1_1Transform.html">Transform</a> &amp;transform)</td></tr>
 <tr class="separator:aaa5aff49d3039bdc93846072f861a428"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad16e79f1fd3a417afd9f604d61d238a4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classitk_1_1simple_1_1Transform.html">Transform</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1LandmarkBasedTransformInitializerFilter.html#ad16e79f1fd3a417afd9f604d61d238a4">Execute</a> (const <a class="el" href="classitk_1_1simple_1_1Transform.html">Transform</a> &amp;transform, const std::vector&lt; double &gt; &amp;fixedLandmarks, const std::vector&lt; double &gt; &amp;movingLandmarks, const std::vector&lt; double &gt; &amp;landmarkWeight, const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> &amp;referenceImage, unsigned int numberOfControlPoints)</td></tr>
-<tr class="separator:ad16e79f1fd3a417afd9f604d61d238a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8245ce891b4435349c0f1ddc9a610338"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1LandmarkBasedTransformInitializerFilter.html#a8245ce891b4435349c0f1ddc9a610338">GetBSplineNumberOfControlPoints</a> () const</td></tr>
 <tr class="separator:a8245ce891b4435349c0f1ddc9a610338"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a09d4b7e4f59dcec6c90d5a7f2baafc91"><td class="memItemLeft" align="right" valign="top">std::vector&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1LandmarkBasedTransformInitializerFilter.html#a09d4b7e4f59dcec6c90d5a7f2baafc91">GetFixedLandmarks</a> () const</td></tr>
@@ -366,7 +364,7 @@ in ITK" by Kim E.Y., Johnson H., Williams N. available at <a href="http://midasj
 </div><div class="memdoc">
 <p>Setup for member function dispatching </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkLandmarkBasedTransformInitializerFilter_8h_source.html#l00163">163</a> of file <a class="el" href="sitkLandmarkBasedTransformInitializerFilter_8h_source.html">sitkLandmarkBasedTransformInitializerFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkLandmarkBasedTransformInitializerFilter_8h_source.html#l00154">154</a> of file <a class="el" href="sitkLandmarkBasedTransformInitializerFilter_8h_source.html">sitkLandmarkBasedTransformInitializerFilter.h</a>.</p>
 
 </div>
 </div>
@@ -450,7 +448,7 @@ in ITK" by Kim E.Y., Johnson H., Williams N. available at <a href="http://midasj
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
 <a id="aaa5aff49d3039bdc93846072f861a428"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aaa5aff49d3039bdc93846072f861a428">&#9670;&nbsp;</a></span>Execute() <span class="overload">[1/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#aaa5aff49d3039bdc93846072f861a428">&#9670;&nbsp;</a></span>Execute()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -465,59 +463,6 @@ in ITK" by Kim E.Y., Johnson H., Williams N. available at <a href="http://midasj
       </table>
 </div><div class="memdoc">
 <p>Execute the filter on the input image </p>
-
-</div>
-</div>
-<a id="ad16e79f1fd3a417afd9f604d61d238a4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad16e79f1fd3a417afd9f604d61d238a4">&#9670;&nbsp;</a></span>Execute() <span class="overload">[2/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="classitk_1_1simple_1_1Transform.html">Transform</a> itk::simple::LandmarkBasedTransformInitializerFilter::Execute </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="classitk_1_1simple_1_1Transform.html">Transform</a> &amp;&#160;</td>
-          <td class="paramname"><em>transform</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const std::vector&lt; double &gt; &amp;&#160;</td>
-          <td class="paramname"><em>fixedLandmarks</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const std::vector&lt; double &gt; &amp;&#160;</td>
-          <td class="paramname"><em>movingLandmarks</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const std::vector&lt; double &gt; &amp;&#160;</td>
-          <td class="paramname"><em>landmarkWeight</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> &amp;&#160;</td>
-          <td class="paramname"><em>referenceImage</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">unsigned int&#160;</td>
-          <td class="paramname"><em>numberOfControlPoints</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Execute the filter on the input image with the given parameters </p>
 
 </div>
 </div>
@@ -910,7 +855,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkLandmarkBasedTransformInitializerFilter_8h_source.html#l00167">167</a> of file <a class="el" href="sitkLandmarkBasedTransformInitializerFilter_8h_source.html">sitkLandmarkBasedTransformInitializerFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkLandmarkBasedTransformInitializerFilter_8h_source.html#l00158">158</a> of file <a class="el" href="sitkLandmarkBasedTransformInitializerFilter_8h_source.html">sitkLandmarkBasedTransformInitializerFilter.h</a>.</p>
 
 </div>
 </div>
@@ -935,7 +880,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkLandmarkBasedTransformInitializerFilter_8h_source.html#l00180">180</a> of file <a class="el" href="sitkLandmarkBasedTransformInitializerFilter_8h_source.html">sitkLandmarkBasedTransformInitializerFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkLandmarkBasedTransformInitializerFilter_8h_source.html#l00171">171</a> of file <a class="el" href="sitkLandmarkBasedTransformInitializerFilter_8h_source.html">sitkLandmarkBasedTransformInitializerFilter.h</a>.</p>
 
 </div>
 </div>
@@ -959,7 +904,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkLandmarkBasedTransformInitializerFilter_8h_source.html#l00173">173</a> of file <a class="el" href="sitkLandmarkBasedTransformInitializerFilter_8h_source.html">sitkLandmarkBasedTransformInitializerFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkLandmarkBasedTransformInitializerFilter_8h_source.html#l00164">164</a> of file <a class="el" href="sitkLandmarkBasedTransformInitializerFilter_8h_source.html">sitkLandmarkBasedTransformInitializerFilter.h</a>.</p>
 
 </div>
 </div>
@@ -983,7 +928,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkLandmarkBasedTransformInitializerFilter_8h_source.html#l00177">177</a> of file <a class="el" href="sitkLandmarkBasedTransformInitializerFilter_8h_source.html">sitkLandmarkBasedTransformInitializerFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkLandmarkBasedTransformInitializerFilter_8h_source.html#l00168">168</a> of file <a class="el" href="sitkLandmarkBasedTransformInitializerFilter_8h_source.html">sitkLandmarkBasedTransformInitializerFilter.h</a>.</p>
 
 </div>
 </div>
@@ -1007,7 +952,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkLandmarkBasedTransformInitializerFilter_8h_source.html#l00169">169</a> of file <a class="el" href="sitkLandmarkBasedTransformInitializerFilter_8h_source.html">sitkLandmarkBasedTransformInitializerFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkLandmarkBasedTransformInitializerFilter_8h_source.html#l00160">160</a> of file <a class="el" href="sitkLandmarkBasedTransformInitializerFilter_8h_source.html">sitkLandmarkBasedTransformInitializerFilter.h</a>.</p>
 
 </div>
 </div>
@@ -1031,7 +976,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkLandmarkBasedTransformInitializerFilter_8h_source.html#l00175">175</a> of file <a class="el" href="sitkLandmarkBasedTransformInitializerFilter_8h_source.html">sitkLandmarkBasedTransformInitializerFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkLandmarkBasedTransformInitializerFilter_8h_source.html#l00166">166</a> of file <a class="el" href="sitkLandmarkBasedTransformInitializerFilter_8h_source.html">sitkLandmarkBasedTransformInitializerFilter.h</a>.</p>
 
 </div>
 </div>
@@ -1055,7 +1000,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkLandmarkBasedTransformInitializerFilter_8h_source.html#l00179">179</a> of file <a class="el" href="sitkLandmarkBasedTransformInitializerFilter_8h_source.html">sitkLandmarkBasedTransformInitializerFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkLandmarkBasedTransformInitializerFilter_8h_source.html#l00170">170</a> of file <a class="el" href="sitkLandmarkBasedTransformInitializerFilter_8h_source.html">sitkLandmarkBasedTransformInitializerFilter.h</a>.</p>
 
 </div>
 </div>
@@ -1065,7 +1010,7 @@ template&lt;class TImageType &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Mar 20 2020 03:18:12 for SimpleITK by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Mar 26 2020 03:19:58 for SimpleITK by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

@@ -19,7 +19,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">SimpleITK
-   &#160;<span id="projectnumber">2.0.0rc1.post7</span>
+   &#160;<span id="projectnumber">2.0.0rc1.post21</span>
    </div>
   </td>
  </tr>
@@ -147,8 +147,6 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a5f36e1d985f6527095a15f49ea120815"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5371654ed9d2a5a3dd35d9599aa6e474"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classitk_1_1simple_1_1Image.html">Image</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1LabelMapMaskImageFilter.html#a5371654ed9d2a5a3dd35d9599aa6e474">Execute</a> (const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> &amp;labelMapImage, const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> &amp;featureImage)</td></tr>
 <tr class="separator:a5371654ed9d2a5a3dd35d9599aa6e474"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad59d2cb8482bdd8abd5550505938427c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classitk_1_1simple_1_1Image.html">Image</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1LabelMapMaskImageFilter.html#ad59d2cb8482bdd8abd5550505938427c">Execute</a> (const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> &amp;labelMapImage, const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> &amp;featureImage, <a class="elRef" href="https://www.itk.org/Doxygen/html/namespaceitk.html#a6678d19d4b40c05a613784037bc2bd00">uint64_t</a> label, double backgroundValue, bool negated, bool crop, const std::vector&lt; unsigned int &gt; &amp;cropBorder)</td></tr>
-<tr class="separator:ad59d2cb8482bdd8abd5550505938427c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae759c7b5f2b70728c7e04a34ac808b7a"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1LabelMapMaskImageFilter.html#ae759c7b5f2b70728c7e04a34ac808b7a">GetBackgroundValue</a> () const</td></tr>
 <tr class="separator:ae759c7b5f2b70728c7e04a34ac808b7a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a26d079042701781c0c1582a2d184e02e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1LabelMapMaskImageFilter.html#a26d079042701781c0c1582a2d184e02e">GetCrop</a> () const</td></tr>
@@ -368,7 +366,7 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 <p>Setup for member function dispatching </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkLabelMapMaskImageFilter_8h_source.html#l00144">144</a> of file <a class="el" href="sitkLabelMapMaskImageFilter_8h_source.html">sitkLabelMapMaskImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkLabelMapMaskImageFilter_8h_source.html#l00140">140</a> of file <a class="el" href="sitkLabelMapMaskImageFilter_8h_source.html">sitkLabelMapMaskImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -545,7 +543,7 @@ template&lt;class TImageType1 , class TImageType2 &gt; </div>
 </div>
 </div>
 <a id="a5371654ed9d2a5a3dd35d9599aa6e474"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5371654ed9d2a5a3dd35d9599aa6e474">&#9670;&nbsp;</a></span>Execute() <span class="overload">[1/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a5371654ed9d2a5a3dd35d9599aa6e474">&#9670;&nbsp;</a></span>Execute()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -570,65 +568,6 @@ template&lt;class TImageType1 , class TImageType2 &gt; </div>
       </table>
 </div><div class="memdoc">
 <p>Execute the filter on the input image </p>
-
-</div>
-</div>
-<a id="ad59d2cb8482bdd8abd5550505938427c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad59d2cb8482bdd8abd5550505938427c">&#9670;&nbsp;</a></span>Execute() <span class="overload">[2/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> itk::simple::LabelMapMaskImageFilter::Execute </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> &amp;&#160;</td>
-          <td class="paramname"><em>labelMapImage</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> &amp;&#160;</td>
-          <td class="paramname"><em>featureImage</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="elRef" href="https://www.itk.org/Doxygen/html/namespaceitk.html#a6678d19d4b40c05a613784037bc2bd00">uint64_t</a>&#160;</td>
-          <td class="paramname"><em>label</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>backgroundValue</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>negated</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>crop</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const std::vector&lt; unsigned int &gt; &amp;&#160;</td>
-          <td class="paramname"><em>cropBorder</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Execute the filter on the input image with the given parameters </p>
 
 </div>
 </div>
@@ -1082,7 +1021,7 @@ template&lt;class TImageType1 , class TImageType2 &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkLabelMapMaskImageFilter_8h_source.html#l00146">146</a> of file <a class="el" href="sitkLabelMapMaskImageFilter_8h_source.html">sitkLabelMapMaskImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkLabelMapMaskImageFilter_8h_source.html#l00142">142</a> of file <a class="el" href="sitkLabelMapMaskImageFilter_8h_source.html">sitkLabelMapMaskImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -1107,7 +1046,7 @@ template&lt;class TImageType1 , class TImageType2 &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkLabelMapMaskImageFilter_8h_source.html#l00157">157</a> of file <a class="el" href="sitkLabelMapMaskImageFilter_8h_source.html">sitkLabelMapMaskImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkLabelMapMaskImageFilter_8h_source.html#l00153">153</a> of file <a class="el" href="sitkLabelMapMaskImageFilter_8h_source.html">sitkLabelMapMaskImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -1131,7 +1070,7 @@ template&lt;class TImageType1 , class TImageType2 &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkLabelMapMaskImageFilter_8h_source.html#l00161">161</a> of file <a class="el" href="sitkLabelMapMaskImageFilter_8h_source.html">sitkLabelMapMaskImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkLabelMapMaskImageFilter_8h_source.html#l00157">157</a> of file <a class="el" href="sitkLabelMapMaskImageFilter_8h_source.html">sitkLabelMapMaskImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -1155,7 +1094,7 @@ template&lt;class TImageType1 , class TImageType2 &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkLabelMapMaskImageFilter_8h_source.html#l00162">162</a> of file <a class="el" href="sitkLabelMapMaskImageFilter_8h_source.html">sitkLabelMapMaskImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkLabelMapMaskImageFilter_8h_source.html#l00158">158</a> of file <a class="el" href="sitkLabelMapMaskImageFilter_8h_source.html">sitkLabelMapMaskImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -1179,7 +1118,7 @@ template&lt;class TImageType1 , class TImageType2 &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkLabelMapMaskImageFilter_8h_source.html#l00150">150</a> of file <a class="el" href="sitkLabelMapMaskImageFilter_8h_source.html">sitkLabelMapMaskImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkLabelMapMaskImageFilter_8h_source.html#l00146">146</a> of file <a class="el" href="sitkLabelMapMaskImageFilter_8h_source.html">sitkLabelMapMaskImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -1203,7 +1142,7 @@ template&lt;class TImageType1 , class TImageType2 &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkLabelMapMaskImageFilter_8h_source.html#l00155">155</a> of file <a class="el" href="sitkLabelMapMaskImageFilter_8h_source.html">sitkLabelMapMaskImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkLabelMapMaskImageFilter_8h_source.html#l00151">151</a> of file <a class="el" href="sitkLabelMapMaskImageFilter_8h_source.html">sitkLabelMapMaskImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -1227,7 +1166,7 @@ template&lt;class TImageType1 , class TImageType2 &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkLabelMapMaskImageFilter_8h_source.html#l00159">159</a> of file <a class="el" href="sitkLabelMapMaskImageFilter_8h_source.html">sitkLabelMapMaskImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkLabelMapMaskImageFilter_8h_source.html#l00155">155</a> of file <a class="el" href="sitkLabelMapMaskImageFilter_8h_source.html">sitkLabelMapMaskImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -1237,7 +1176,7 @@ template&lt;class TImageType1 , class TImageType2 &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Mar 20 2020 03:18:12 for SimpleITK by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Mar 26 2020 03:19:58 for SimpleITK by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

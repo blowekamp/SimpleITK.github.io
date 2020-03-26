@@ -19,7 +19,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">SimpleITK
-   &#160;<span id="projectnumber">2.0.0rc1.post7</span>
+   &#160;<span id="projectnumber">2.0.0rc1.post21</span>
    </div>
   </td>
  </tr>
@@ -99,33 +99,31 @@ $(function() {
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160; </div>
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;      <a class="code" href="classitk_1_1simple_1_1Image.html">Image</a> Execute ( <span class="keyword">const</span> <a class="code" href="classitk_1_1simple_1_1Image.html">Image</a>&amp; image1 );</div>
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160; </div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160; </div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    <span class="keyword">private</span>:</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160; </div>
-<div class="line"><a name="l00072"></a><span class="lineno"><a class="line" href="classitk_1_1simple_1_1AbsImageFilter.html#a2049f90db4205c278df218286c191c05">   72</a></span>&#160;      <span class="keyword">typedef</span> <a class="code" href="classitk_1_1simple_1_1Image.html">Image</a> (<a class="code" href="classitk_1_1simple_1_1ProcessObject.html">Self</a>::*MemberFunctionType)( <span class="keyword">const</span> <a class="code" href="classitk_1_1simple_1_1Image.html">Image</a>&amp; image1 );</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;      <span class="keyword">template</span> &lt;<span class="keyword">class</span> TImageType&gt; <a class="code" href="classitk_1_1simple_1_1Image.html">Image</a> ExecuteInternal ( <span class="keyword">const</span> <a class="code" href="classitk_1_1simple_1_1Image.html">Image</a>&amp; image1 );</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;      <span class="keyword">template</span> &lt;<span class="keyword">class</span> TImageType&gt; <a class="code" href="classitk_1_1simple_1_1Image.html">Image</a> ExecuteInternalVectorImage ( <span class="keyword">const</span> <a class="code" href="classitk_1_1simple_1_1Image.html">Image</a>&amp; image );</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160; </div>
-<div class="line"><a name="l00077"></a><span class="lineno"><a class="line" href="classitk_1_1simple_1_1AbsImageFilter.html#af82f64823e6df0f5b2063b8fc7dd0c26">   77</a></span>&#160;      <span class="keyword">friend</span> <span class="keyword">struct </span><a class="code" href="structitk_1_1simple_1_1detail_1_1MemberFunctionAddressor.html">detail::MemberFunctionAddressor</a>&lt;MemberFunctionType&gt;;</div>
-<div class="line"><a name="l00078"></a><span class="lineno"><a class="line" href="classitk_1_1simple_1_1AbsImageFilter.html#ac88de73417149bc6fcd4eaff2635786d">   78</a></span>&#160;      <span class="keyword">friend</span> <span class="keyword">struct </span><a class="code" href="structitk_1_1simple_1_1detail_1_1ExecuteInternalVectorImageAddressor.html">detail::ExecuteInternalVectorImageAddressor</a>&lt;MemberFunctionType&gt;;</div>
-<div class="line"><a name="l00079"></a><span class="lineno"><a class="line" href="classitk_1_1simple_1_1AbsImageFilter.html#a2f189acf2c9eb9f4893c44c07e4c982d">   79</a></span>&#160;      std::unique_ptr&lt;detail::MemberFunctionFactory&lt;MemberFunctionType&gt; &gt; <a class="code" href="classitk_1_1simple_1_1AbsImageFilter.html#a2f189acf2c9eb9f4893c44c07e4c982d">m_MemberFactory</a>;</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160; </div>
+<div class="line"><a name="l00071"></a><span class="lineno"><a class="line" href="classitk_1_1simple_1_1AbsImageFilter.html#a2049f90db4205c278df218286c191c05">   71</a></span>&#160;      <span class="keyword">typedef</span> <a class="code" href="classitk_1_1simple_1_1Image.html">Image</a> (<a class="code" href="classitk_1_1simple_1_1ProcessObject.html">Self</a>::*MemberFunctionType)( <span class="keyword">const</span> <a class="code" href="classitk_1_1simple_1_1Image.html">Image</a>&amp; image1 );</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;      <span class="keyword">template</span> &lt;<span class="keyword">class</span> TImageType&gt; <a class="code" href="classitk_1_1simple_1_1Image.html">Image</a> ExecuteInternal ( <span class="keyword">const</span> <a class="code" href="classitk_1_1simple_1_1Image.html">Image</a>&amp; image1 );</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;      <span class="keyword">template</span> &lt;<span class="keyword">class</span> TImageType&gt; <a class="code" href="classitk_1_1simple_1_1Image.html">Image</a> ExecuteInternalVectorImage ( <span class="keyword">const</span> <a class="code" href="classitk_1_1simple_1_1Image.html">Image</a>&amp; image );</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160; </div>
+<div class="line"><a name="l00076"></a><span class="lineno"><a class="line" href="classitk_1_1simple_1_1AbsImageFilter.html#af82f64823e6df0f5b2063b8fc7dd0c26">   76</a></span>&#160;      <span class="keyword">friend</span> <span class="keyword">struct </span><a class="code" href="structitk_1_1simple_1_1detail_1_1MemberFunctionAddressor.html">detail::MemberFunctionAddressor</a>&lt;MemberFunctionType&gt;;</div>
+<div class="line"><a name="l00077"></a><span class="lineno"><a class="line" href="classitk_1_1simple_1_1AbsImageFilter.html#ac88de73417149bc6fcd4eaff2635786d">   77</a></span>&#160;      <span class="keyword">friend</span> <span class="keyword">struct </span><a class="code" href="structitk_1_1simple_1_1detail_1_1ExecuteInternalVectorImageAddressor.html">detail::ExecuteInternalVectorImageAddressor</a>&lt;MemberFunctionType&gt;;</div>
+<div class="line"><a name="l00078"></a><span class="lineno"><a class="line" href="classitk_1_1simple_1_1AbsImageFilter.html#a2f189acf2c9eb9f4893c44c07e4c982d">   78</a></span>&#160;      std::unique_ptr&lt;detail::MemberFunctionFactory&lt;MemberFunctionType&gt; &gt; <a class="code" href="classitk_1_1simple_1_1AbsImageFilter.html#a2f189acf2c9eb9f4893c44c07e4c982d">m_MemberFactory</a>;</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160; </div>
 <div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160; </div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160; </div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    };</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160; </div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160; </div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;     <a class="code" href="sitkBasicFilters_8h.html#a8c00663d3a7bae36066e320f83381283">SITKBasicFilters_EXPORT</a> <a class="code" href="classitk_1_1simple_1_1Image.html">Image</a> <a class="code" href="namespaceitk_1_1simple.html#a54161a47394e60c5758193cd0ab6930e">Abs</a> ( <span class="keyword">const</span> <a class="code" href="classitk_1_1simple_1_1Image.html">Image</a>&amp; image1 );</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160; </div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;  }</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;}</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    };</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160; </div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;     <a class="code" href="sitkBasicFilters_8h.html#a8c00663d3a7bae36066e320f83381283">SITKBasicFilters_EXPORT</a> <a class="code" href="classitk_1_1simple_1_1Image.html">Image</a> <a class="code" href="namespaceitk_1_1simple.html#a54161a47394e60c5758193cd0ab6930e">Abs</a> ( <span class="keyword">const</span> <a class="code" href="classitk_1_1simple_1_1Image.html">Image</a>&amp; image1 );</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160; </div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;  }</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;}</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;<span class="preprocessor">#endif</span></div>
 </div><!-- fragment --></div><!-- contents -->
 <div class="ttc" id="aclassitk_1_1simple_1_1Image_html"><div class="ttname"><a href="classitk_1_1simple_1_1Image.html">itk::simple::Image</a></div><div class="ttdoc">The Image class for SimpleITK.</div><div class="ttdef"><b>Definition:</b> <a href="sitkImage_8h_source.html#l00075">sitkImage.h:75</a></div></div>
 <div class="ttc" id="asitkBasicFilters_8h_html"><div class="ttname"><a href="sitkBasicFilters_8h.html">sitkBasicFilters.h</a></div></div>
 <div class="ttc" id="astructitk_1_1simple_1_1detail_1_1ExecuteInternalVectorImageAddressor_html"><div class="ttname"><a href="structitk_1_1simple_1_1detail_1_1ExecuteInternalVectorImageAddressor.html">itk::simple::detail::ExecuteInternalVectorImageAddressor</a></div><div class="ttdef"><b>Definition:</b> <a href="sitkDetail_8h_source.html#l00059">sitkDetail.h:59</a></div></div>
 <div class="ttc" id="anamespaceitk_1_1simple_html_a54161a47394e60c5758193cd0ab6930e"><div class="ttname"><a href="namespaceitk_1_1simple.html#a54161a47394e60c5758193cd0ab6930e">itk::simple::Abs</a></div><div class="ttdeci">Image Abs(const Image &amp;image1)</div><div class="ttdoc">Computes the absolute value of each pixel.</div></div>
 <div class="ttc" id="astructitk_1_1simple_1_1detail_1_1MemberFunctionAddressor_html"><div class="ttname"><a href="structitk_1_1simple_1_1detail_1_1MemberFunctionAddressor.html">itk::simple::detail::MemberFunctionAddressor</a></div><div class="ttdef"><b>Definition:</b> <a href="sitkDetail_8h_source.html#l00032">sitkDetail.h:32</a></div></div>
-<div class="ttc" id="aclassitk_1_1simple_1_1AbsImageFilter_html_a2f189acf2c9eb9f4893c44c07e4c982d"><div class="ttname"><a href="classitk_1_1simple_1_1AbsImageFilter.html#a2f189acf2c9eb9f4893c44c07e4c982d">itk::simple::AbsImageFilter::m_MemberFactory</a></div><div class="ttdeci">std::unique_ptr&lt; detail::MemberFunctionFactory&lt; MemberFunctionType &gt; &gt; m_MemberFactory</div><div class="ttdef"><b>Definition:</b> <a href="sitkAbsImageFilter_8h_source.html#l00079">sitkAbsImageFilter.h:79</a></div></div>
+<div class="ttc" id="aclassitk_1_1simple_1_1AbsImageFilter_html_a2f189acf2c9eb9f4893c44c07e4c982d"><div class="ttname"><a href="classitk_1_1simple_1_1AbsImageFilter.html#a2f189acf2c9eb9f4893c44c07e4c982d">itk::simple::AbsImageFilter::m_MemberFactory</a></div><div class="ttdeci">std::unique_ptr&lt; detail::MemberFunctionFactory&lt; MemberFunctionType &gt; &gt; m_MemberFactory</div><div class="ttdef"><b>Definition:</b> <a href="sitkAbsImageFilter_8h_source.html#l00078">sitkAbsImageFilter.h:78</a></div></div>
 <div class="ttc" id="anamespaceitk_1_1simple_html_a53bfeb202d5f9e68918553d264b17a91"><div class="ttname"><a href="namespaceitk_1_1simple.html#a53bfeb202d5f9e68918553d264b17a91">itk::simple::BasicPixelIDTypeList</a></div><div class="ttdeci">typelist::MakeTypeList&lt; BasicPixelID&lt; int8_t &gt;, BasicPixelID&lt; uint8_t &gt;, BasicPixelID&lt; int16_t &gt;, BasicPixelID&lt; uint16_t &gt;, BasicPixelID&lt; int32_t &gt;, BasicPixelID&lt; uint32_t &gt;, BasicPixelID&lt; float &gt;, BasicPixelID&lt; double &gt; &gt;::Type BasicPixelIDTypeList</div><div class="ttdef"><b>Definition:</b> <a href="sitkPixelIDTypeLists_8h_source.html#l00053">sitkPixelIDTypeLists.h:53</a></div></div>
 <div class="ttc" id="asitkImageFilter_8h_html"><div class="ttname"><a href="sitkImageFilter_8h.html">sitkImageFilter.h</a></div></div>
 <div class="ttc" id="aclassitk_1_1simple_1_1AbsImageFilter_html"><div class="ttname"><a href="classitk_1_1simple_1_1AbsImageFilter.html">itk::simple::AbsImageFilter</a></div><div class="ttdoc">Computes the absolute value of each pixel.</div><div class="ttdef"><b>Definition:</b> <a href="sitkAbsImageFilter_8h_source.html#l00042">sitkAbsImageFilter.h:42</a></div></div>
@@ -138,7 +136,7 @@ $(function() {
 <div class="ttc" id="aclassitk_1_1simple_1_1AbsImageFilter_html_a3128cfb12516a91a0389eb6eda4e3b2e"><div class="ttname"><a href="classitk_1_1simple_1_1AbsImageFilter.html#a3128cfb12516a91a0389eb6eda4e3b2e">itk::simple::AbsImageFilter::PixelIDTypeList</a></div><div class="ttdeci">BasicPixelIDTypeList PixelIDTypeList</div><div class="ttdef"><b>Definition:</b> <a href="sitkAbsImageFilter_8h_source.html#l00054">sitkAbsImageFilter.h:54</a></div></div>
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Mar 20 2020 03:17:51 for SimpleITK by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Mar 26 2020 03:19:34 for SimpleITK by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

@@ -19,7 +19,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">SimpleITK
-   &#160;<span id="projectnumber">2.0.0rc1.post7</span>
+   &#160;<span id="projectnumber">2.0.0rc1.post21</span>
    </div>
   </td>
  </tr>
@@ -99,31 +99,29 @@ $(function() {
 <div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160; </div>
 <div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;      <a class="code" href="classitk_1_1simple_1_1Image.html">Image</a> Execute ( <span class="keyword">const</span> <a class="code" href="classitk_1_1simple_1_1Image.html">Image</a>&amp; image1 );</div>
 <div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160; </div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160; </div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    <span class="keyword">private</span>:</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160; </div>
-<div class="line"><a name="l00091"></a><span class="lineno"><a class="line" href="classitk_1_1simple_1_1CosImageFilter.html#a210796ad1d51b72174009c496b2dcc1e">   91</a></span>&#160;      <span class="keyword">typedef</span> <a class="code" href="classitk_1_1simple_1_1Image.html">Image</a> (<a class="code" href="classitk_1_1simple_1_1ProcessObject.html">Self</a>::*MemberFunctionType)( <span class="keyword">const</span> <a class="code" href="classitk_1_1simple_1_1Image.html">Image</a>&amp; image1 );</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;      <span class="keyword">template</span> &lt;<span class="keyword">class</span> TImageType&gt; <a class="code" href="classitk_1_1simple_1_1Image.html">Image</a> ExecuteInternal ( <span class="keyword">const</span> <a class="code" href="classitk_1_1simple_1_1Image.html">Image</a>&amp; image1 );</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;      <span class="keyword">template</span> &lt;<span class="keyword">class</span> TImageType&gt; <a class="code" href="classitk_1_1simple_1_1Image.html">Image</a> ExecuteInternalVectorImage ( <span class="keyword">const</span> <a class="code" href="classitk_1_1simple_1_1Image.html">Image</a>&amp; image );</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160; </div>
-<div class="line"><a name="l00096"></a><span class="lineno"><a class="line" href="classitk_1_1simple_1_1CosImageFilter.html#af82f64823e6df0f5b2063b8fc7dd0c26">   96</a></span>&#160;      <span class="keyword">friend</span> <span class="keyword">struct </span><a class="code" href="structitk_1_1simple_1_1detail_1_1MemberFunctionAddressor.html">detail::MemberFunctionAddressor</a>&lt;MemberFunctionType&gt;;</div>
-<div class="line"><a name="l00097"></a><span class="lineno"><a class="line" href="classitk_1_1simple_1_1CosImageFilter.html#ac88de73417149bc6fcd4eaff2635786d">   97</a></span>&#160;      <span class="keyword">friend</span> <span class="keyword">struct </span><a class="code" href="structitk_1_1simple_1_1detail_1_1ExecuteInternalVectorImageAddressor.html">detail::ExecuteInternalVectorImageAddressor</a>&lt;MemberFunctionType&gt;;</div>
-<div class="line"><a name="l00098"></a><span class="lineno"><a class="line" href="classitk_1_1simple_1_1CosImageFilter.html#ae417a903e3253a6ba8a6e0c39ed7bf62">   98</a></span>&#160;      std::unique_ptr&lt;detail::MemberFunctionFactory&lt;MemberFunctionType&gt; &gt; <a class="code" href="classitk_1_1simple_1_1CosImageFilter.html#ae417a903e3253a6ba8a6e0c39ed7bf62">m_MemberFactory</a>;</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160; </div>
+<div class="line"><a name="l00090"></a><span class="lineno"><a class="line" href="classitk_1_1simple_1_1CosImageFilter.html#a210796ad1d51b72174009c496b2dcc1e">   90</a></span>&#160;      <span class="keyword">typedef</span> <a class="code" href="classitk_1_1simple_1_1Image.html">Image</a> (<a class="code" href="classitk_1_1simple_1_1ProcessObject.html">Self</a>::*MemberFunctionType)( <span class="keyword">const</span> <a class="code" href="classitk_1_1simple_1_1Image.html">Image</a>&amp; image1 );</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;      <span class="keyword">template</span> &lt;<span class="keyword">class</span> TImageType&gt; <a class="code" href="classitk_1_1simple_1_1Image.html">Image</a> ExecuteInternal ( <span class="keyword">const</span> <a class="code" href="classitk_1_1simple_1_1Image.html">Image</a>&amp; image1 );</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;      <span class="keyword">template</span> &lt;<span class="keyword">class</span> TImageType&gt; <a class="code" href="classitk_1_1simple_1_1Image.html">Image</a> ExecuteInternalVectorImage ( <span class="keyword">const</span> <a class="code" href="classitk_1_1simple_1_1Image.html">Image</a>&amp; image );</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160; </div>
+<div class="line"><a name="l00095"></a><span class="lineno"><a class="line" href="classitk_1_1simple_1_1CosImageFilter.html#af82f64823e6df0f5b2063b8fc7dd0c26">   95</a></span>&#160;      <span class="keyword">friend</span> <span class="keyword">struct </span><a class="code" href="structitk_1_1simple_1_1detail_1_1MemberFunctionAddressor.html">detail::MemberFunctionAddressor</a>&lt;MemberFunctionType&gt;;</div>
+<div class="line"><a name="l00096"></a><span class="lineno"><a class="line" href="classitk_1_1simple_1_1CosImageFilter.html#ac88de73417149bc6fcd4eaff2635786d">   96</a></span>&#160;      <span class="keyword">friend</span> <span class="keyword">struct </span><a class="code" href="structitk_1_1simple_1_1detail_1_1ExecuteInternalVectorImageAddressor.html">detail::ExecuteInternalVectorImageAddressor</a>&lt;MemberFunctionType&gt;;</div>
+<div class="line"><a name="l00097"></a><span class="lineno"><a class="line" href="classitk_1_1simple_1_1CosImageFilter.html#ae417a903e3253a6ba8a6e0c39ed7bf62">   97</a></span>&#160;      std::unique_ptr&lt;detail::MemberFunctionFactory&lt;MemberFunctionType&gt; &gt; <a class="code" href="classitk_1_1simple_1_1CosImageFilter.html#ae417a903e3253a6ba8a6e0c39ed7bf62">m_MemberFactory</a>;</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160; </div>
 <div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160; </div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160; </div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;    };</div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160; </div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160; </div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;     <a class="code" href="sitkBasicFilters_8h.html#a8c00663d3a7bae36066e320f83381283">SITKBasicFilters_EXPORT</a> <a class="code" href="classitk_1_1simple_1_1Image.html">Image</a> <a class="code" href="namespaceitk_1_1simple.html#a2bfe2912b92bd052c388cf5ce69461df">Cos</a> ( <span class="keyword">const</span> <a class="code" href="classitk_1_1simple_1_1Image.html">Image</a>&amp; image1 );</div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160; </div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;  }</div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;}</div>
-<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    };</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160; </div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;     <a class="code" href="sitkBasicFilters_8h.html#a8c00663d3a7bae36066e320f83381283">SITKBasicFilters_EXPORT</a> <a class="code" href="classitk_1_1simple_1_1Image.html">Image</a> <a class="code" href="namespaceitk_1_1simple.html#a2bfe2912b92bd052c388cf5ce69461df">Cos</a> ( <span class="keyword">const</span> <a class="code" href="classitk_1_1simple_1_1Image.html">Image</a>&amp; image1 );</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160; </div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;  }</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;}</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;<span class="preprocessor">#endif</span></div>
 </div><!-- fragment --></div><!-- contents -->
 <div class="ttc" id="aclassitk_1_1simple_1_1Image_html"><div class="ttname"><a href="classitk_1_1simple_1_1Image.html">itk::simple::Image</a></div><div class="ttdoc">The Image class for SimpleITK.</div><div class="ttdef"><b>Definition:</b> <a href="sitkImage_8h_source.html#l00075">sitkImage.h:75</a></div></div>
 <div class="ttc" id="asitkBasicFilters_8h_html"><div class="ttname"><a href="sitkBasicFilters_8h.html">sitkBasicFilters.h</a></div></div>
 <div class="ttc" id="astructitk_1_1simple_1_1detail_1_1ExecuteInternalVectorImageAddressor_html"><div class="ttname"><a href="structitk_1_1simple_1_1detail_1_1ExecuteInternalVectorImageAddressor.html">itk::simple::detail::ExecuteInternalVectorImageAddressor</a></div><div class="ttdef"><b>Definition:</b> <a href="sitkDetail_8h_source.html#l00059">sitkDetail.h:59</a></div></div>
-<div class="ttc" id="aclassitk_1_1simple_1_1CosImageFilter_html_ae417a903e3253a6ba8a6e0c39ed7bf62"><div class="ttname"><a href="classitk_1_1simple_1_1CosImageFilter.html#ae417a903e3253a6ba8a6e0c39ed7bf62">itk::simple::CosImageFilter::m_MemberFactory</a></div><div class="ttdeci">std::unique_ptr&lt; detail::MemberFunctionFactory&lt; MemberFunctionType &gt; &gt; m_MemberFactory</div><div class="ttdef"><b>Definition:</b> <a href="sitkCosImageFilter_8h_source.html#l00098">sitkCosImageFilter.h:98</a></div></div>
+<div class="ttc" id="aclassitk_1_1simple_1_1CosImageFilter_html_ae417a903e3253a6ba8a6e0c39ed7bf62"><div class="ttname"><a href="classitk_1_1simple_1_1CosImageFilter.html#ae417a903e3253a6ba8a6e0c39ed7bf62">itk::simple::CosImageFilter::m_MemberFactory</a></div><div class="ttdeci">std::unique_ptr&lt; detail::MemberFunctionFactory&lt; MemberFunctionType &gt; &gt; m_MemberFactory</div><div class="ttdef"><b>Definition:</b> <a href="sitkCosImageFilter_8h_source.html#l00097">sitkCosImageFilter.h:97</a></div></div>
 <div class="ttc" id="astructitk_1_1simple_1_1detail_1_1MemberFunctionAddressor_html"><div class="ttname"><a href="structitk_1_1simple_1_1detail_1_1MemberFunctionAddressor.html">itk::simple::detail::MemberFunctionAddressor</a></div><div class="ttdef"><b>Definition:</b> <a href="sitkDetail_8h_source.html#l00032">sitkDetail.h:32</a></div></div>
 <div class="ttc" id="anamespaceitk_1_1simple_html_a53bfeb202d5f9e68918553d264b17a91"><div class="ttname"><a href="namespaceitk_1_1simple.html#a53bfeb202d5f9e68918553d264b17a91">itk::simple::BasicPixelIDTypeList</a></div><div class="ttdeci">typelist::MakeTypeList&lt; BasicPixelID&lt; int8_t &gt;, BasicPixelID&lt; uint8_t &gt;, BasicPixelID&lt; int16_t &gt;, BasicPixelID&lt; uint16_t &gt;, BasicPixelID&lt; int32_t &gt;, BasicPixelID&lt; uint32_t &gt;, BasicPixelID&lt; float &gt;, BasicPixelID&lt; double &gt; &gt;::Type BasicPixelIDTypeList</div><div class="ttdef"><b>Definition:</b> <a href="sitkPixelIDTypeLists_8h_source.html#l00053">sitkPixelIDTypeLists.h:53</a></div></div>
 <div class="ttc" id="asitkImageFilter_8h_html"><div class="ttname"><a href="sitkImageFilter_8h.html">sitkImageFilter.h</a></div></div>
@@ -138,7 +136,7 @@ $(function() {
 <div class="ttc" id="aclassitk_1_1simple_1_1CosImageFilter_html_a3baf74f33ec7417c88ca35ebfd3f4f93"><div class="ttname"><a href="classitk_1_1simple_1_1CosImageFilter.html#a3baf74f33ec7417c88ca35ebfd3f4f93">itk::simple::CosImageFilter::GetName</a></div><div class="ttdeci">std::string GetName() const</div><div class="ttdef"><b>Definition:</b> <a href="sitkCosImageFilter_8h_source.html#l00077">sitkCosImageFilter.h:77</a></div></div>
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Mar 20 2020 03:17:52 for SimpleITK by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Mar 26 2020 03:19:35 for SimpleITK by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

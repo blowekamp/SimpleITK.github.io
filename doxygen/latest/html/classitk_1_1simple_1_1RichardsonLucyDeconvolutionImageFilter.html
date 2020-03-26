@@ -19,7 +19,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">SimpleITK
-   &#160;<span id="projectnumber">2.0.0rc1.post7</span>
+   &#160;<span id="projectnumber">2.0.0rc1.post21</span>
    </div>
   </td>
  </tr>
@@ -158,8 +158,6 @@ Public Types</h2></td></tr>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a46ea486525904f885e3394490eb1614e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classitk_1_1simple_1_1Image.html">Image</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1RichardsonLucyDeconvolutionImageFilter.html#a46ea486525904f885e3394490eb1614e">Execute</a> (const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> &amp;image1, const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> &amp;image2)</td></tr>
 <tr class="separator:a46ea486525904f885e3394490eb1614e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a03d51af077df587b12e0f3ac20163f3a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classitk_1_1simple_1_1Image.html">Image</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1RichardsonLucyDeconvolutionImageFilter.html#a03d51af077df587b12e0f3ac20163f3a">Execute</a> (const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> &amp;image1, const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> &amp;image2, int numberOfIterations, bool normalize, <a class="el" href="classitk_1_1simple_1_1RichardsonLucyDeconvolutionImageFilter.html#a632ea8a6c98bc6445ae203632c6fd4d7">RichardsonLucyDeconvolutionImageFilter::BoundaryConditionType</a> boundaryCondition, <a class="el" href="classitk_1_1simple_1_1RichardsonLucyDeconvolutionImageFilter.html#a8caaf1b9d56bf8cb502d3a227f85bcd9">RichardsonLucyDeconvolutionImageFilter::OutputRegionModeType</a> outputRegionMode)</td></tr>
-<tr class="separator:a03d51af077df587b12e0f3ac20163f3a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aca12e07c68ae128663e7c6579a41f058"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classitk_1_1simple_1_1RichardsonLucyDeconvolutionImageFilter.html#a632ea8a6c98bc6445ae203632c6fd4d7">BoundaryConditionType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1RichardsonLucyDeconvolutionImageFilter.html#aca12e07c68ae128663e7c6579a41f058">GetBoundaryCondition</a> () const</td></tr>
 <tr class="separator:aca12e07c68ae128663e7c6579a41f058"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa581275f966b9ae64a5321466a9c3b02"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1RichardsonLucyDeconvolutionImageFilter.html#aa581275f966b9ae64a5321466a9c3b02">GetName</a> () const</td></tr>
@@ -380,7 +378,7 @@ Cory Quammen, The University of North Carolina at Chapel Hill</dd></dl>
 </div><div class="memdoc">
 <p>Setup for member function dispatching </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkRichardsonLucyDeconvolutionImageFilter_8h_source.html#l00140">140</a> of file <a class="el" href="sitkRichardsonLucyDeconvolutionImageFilter_8h_source.html">sitkRichardsonLucyDeconvolutionImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkRichardsonLucyDeconvolutionImageFilter_8h_source.html#l00136">136</a> of file <a class="el" href="sitkRichardsonLucyDeconvolutionImageFilter_8h_source.html">sitkRichardsonLucyDeconvolutionImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -506,7 +504,7 @@ Cory Quammen, The University of North Carolina at Chapel Hill</dd></dl>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
 <a id="a46ea486525904f885e3394490eb1614e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a46ea486525904f885e3394490eb1614e">&#9670;&nbsp;</a></span>Execute() <span class="overload">[1/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a46ea486525904f885e3394490eb1614e">&#9670;&nbsp;</a></span>Execute()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -531,59 +529,6 @@ Cory Quammen, The University of North Carolina at Chapel Hill</dd></dl>
       </table>
 </div><div class="memdoc">
 <p>Execute the filter on the input images </p>
-
-</div>
-</div>
-<a id="a03d51af077df587b12e0f3ac20163f3a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a03d51af077df587b12e0f3ac20163f3a">&#9670;&nbsp;</a></span>Execute() <span class="overload">[2/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> itk::simple::RichardsonLucyDeconvolutionImageFilter::Execute </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> &amp;&#160;</td>
-          <td class="paramname"><em>image1</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> &amp;&#160;</td>
-          <td class="paramname"><em>image2</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>numberOfIterations</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>normalize</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="classitk_1_1simple_1_1RichardsonLucyDeconvolutionImageFilter.html#a632ea8a6c98bc6445ae203632c6fd4d7">RichardsonLucyDeconvolutionImageFilter::BoundaryConditionType</a>&#160;</td>
-          <td class="paramname"><em>boundaryCondition</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="classitk_1_1simple_1_1RichardsonLucyDeconvolutionImageFilter.html#a8caaf1b9d56bf8cb502d3a227f85bcd9">RichardsonLucyDeconvolutionImageFilter::OutputRegionModeType</a>&#160;</td>
-          <td class="paramname"><em>outputRegionMode</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Execute the filter on the input images with the given parameters </p>
 
 </div>
 </div>
@@ -984,7 +929,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkRichardsonLucyDeconvolutionImageFilter_8h_source.html#l00144">144</a> of file <a class="el" href="sitkRichardsonLucyDeconvolutionImageFilter_8h_source.html">sitkRichardsonLucyDeconvolutionImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkRichardsonLucyDeconvolutionImageFilter_8h_source.html#l00140">140</a> of file <a class="el" href="sitkRichardsonLucyDeconvolutionImageFilter_8h_source.html">sitkRichardsonLucyDeconvolutionImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -1009,7 +954,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkRichardsonLucyDeconvolutionImageFilter_8h_source.html#l00152">152</a> of file <a class="el" href="sitkRichardsonLucyDeconvolutionImageFilter_8h_source.html">sitkRichardsonLucyDeconvolutionImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkRichardsonLucyDeconvolutionImageFilter_8h_source.html#l00148">148</a> of file <a class="el" href="sitkRichardsonLucyDeconvolutionImageFilter_8h_source.html">sitkRichardsonLucyDeconvolutionImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -1033,7 +978,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkRichardsonLucyDeconvolutionImageFilter_8h_source.html#l00146">146</a> of file <a class="el" href="sitkRichardsonLucyDeconvolutionImageFilter_8h_source.html">sitkRichardsonLucyDeconvolutionImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkRichardsonLucyDeconvolutionImageFilter_8h_source.html#l00142">142</a> of file <a class="el" href="sitkRichardsonLucyDeconvolutionImageFilter_8h_source.html">sitkRichardsonLucyDeconvolutionImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -1057,7 +1002,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkRichardsonLucyDeconvolutionImageFilter_8h_source.html#l00151">151</a> of file <a class="el" href="sitkRichardsonLucyDeconvolutionImageFilter_8h_source.html">sitkRichardsonLucyDeconvolutionImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkRichardsonLucyDeconvolutionImageFilter_8h_source.html#l00147">147</a> of file <a class="el" href="sitkRichardsonLucyDeconvolutionImageFilter_8h_source.html">sitkRichardsonLucyDeconvolutionImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -1081,7 +1026,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkRichardsonLucyDeconvolutionImageFilter_8h_source.html#l00149">149</a> of file <a class="el" href="sitkRichardsonLucyDeconvolutionImageFilter_8h_source.html">sitkRichardsonLucyDeconvolutionImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkRichardsonLucyDeconvolutionImageFilter_8h_source.html#l00145">145</a> of file <a class="el" href="sitkRichardsonLucyDeconvolutionImageFilter_8h_source.html">sitkRichardsonLucyDeconvolutionImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -1105,7 +1050,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkRichardsonLucyDeconvolutionImageFilter_8h_source.html#l00153">153</a> of file <a class="el" href="sitkRichardsonLucyDeconvolutionImageFilter_8h_source.html">sitkRichardsonLucyDeconvolutionImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkRichardsonLucyDeconvolutionImageFilter_8h_source.html#l00149">149</a> of file <a class="el" href="sitkRichardsonLucyDeconvolutionImageFilter_8h_source.html">sitkRichardsonLucyDeconvolutionImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -1115,7 +1060,7 @@ template&lt;class TImageType &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Mar 20 2020 03:18:14 for SimpleITK by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Mar 26 2020 03:20:00 for SimpleITK by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

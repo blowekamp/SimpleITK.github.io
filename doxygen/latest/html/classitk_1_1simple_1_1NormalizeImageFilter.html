@@ -19,7 +19,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">SimpleITK
-   &#160;<span id="projectnumber">2.0.0rc1.post7</span>
+   &#160;<span id="projectnumber">2.0.0rc1.post21</span>
    </div>
   </td>
  </tr>
@@ -299,7 +299,7 @@ Additional Inherited Members</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Normalize an image by setting its mean to zero and variance to one. </p>
 <p><a class="el" href="classitk_1_1simple_1_1NormalizeImageFilter.html" title="Normalize an image by setting its mean to zero and variance to one.">NormalizeImageFilter</a> shifts and scales an image so that the pixels in the image have a zero mean and unit variance. This filter uses <a class="el" href="classitk_1_1simple_1_1StatisticsImageFilter.html" title="Compute min, max, variance and mean of an Image .">StatisticsImageFilter</a> to compute the mean and variance of the input and then applies <a class="el" href="classitk_1_1simple_1_1ShiftScaleImageFilter.html" title="Shift and scale the pixels in an image.">ShiftScaleImageFilter</a> to shift and scale the pixels.</p>
-<p>NB: since this filter normalizes the data such that the mean is at 0, and <img class="formulaInl" alt="$-\sigma$" src="form_55.png"/> to <img class="formulaInl" alt="$+\sigma$" src="form_56.png"/> is mapped to -1.0 to 1.0, output image integral types will produce an image that DOES NOT HAVE a unit variance due to 68% of the intensity values being mapped to the real number range of -1.0 to 1.0 and then cast to the output integral value.</p>
+<p>NB: since this filter normalizes the data such that the mean is at 0, and <img class="formulaInl" alt="$-\sigma$" src="form_56.png"/> to <img class="formulaInl" alt="$+\sigma$" src="form_57.png"/> is mapped to -1.0 to 1.0, output image integral types will produce an image that DOES NOT HAVE a unit variance due to 68% of the intensity values being mapped to the real number range of -1.0 to 1.0 and then cast to the output integral value.</p>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="classitk_1_1simple_1_1NormalizeToConstantImageFilter.html" title="Scales image pixel intensities to make the sum of all pixels equal a user-defined constant.">NormalizeToConstantImageFilter</a> </dd>
 <dd>
 <a class="el" href="namespaceitk_1_1simple.html#a603f415c1d5f0475aff976d8d784dba7" title="Normalize an image by setting its mean to zero and variance to one.">itk::simple::Normalize</a> for the procedural interface </dd>
@@ -329,7 +329,7 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 <p>Setup for member function dispatching </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkNormalizeImageFilter_8h_source.html#l00076">76</a> of file <a class="el" href="sitkNormalizeImageFilter_8h_source.html">sitkNormalizeImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkNormalizeImageFilter_8h_source.html#l00075">75</a> of file <a class="el" href="sitkNormalizeImageFilter_8h_source.html">sitkNormalizeImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -567,7 +567,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkNormalizeImageFilter_8h_source.html#l00082">82</a> of file <a class="el" href="sitkNormalizeImageFilter_8h_source.html">sitkNormalizeImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkNormalizeImageFilter_8h_source.html#l00081">81</a> of file <a class="el" href="sitkNormalizeImageFilter_8h_source.html">sitkNormalizeImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -591,7 +591,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkNormalizeImageFilter_8h_source.html#l00081">81</a> of file <a class="el" href="sitkNormalizeImageFilter_8h_source.html">sitkNormalizeImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkNormalizeImageFilter_8h_source.html#l00080">80</a> of file <a class="el" href="sitkNormalizeImageFilter_8h_source.html">sitkNormalizeImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -616,7 +616,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkNormalizeImageFilter_8h_source.html#l00083">83</a> of file <a class="el" href="sitkNormalizeImageFilter_8h_source.html">sitkNormalizeImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkNormalizeImageFilter_8h_source.html#l00082">82</a> of file <a class="el" href="sitkNormalizeImageFilter_8h_source.html">sitkNormalizeImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -626,7 +626,7 @@ template&lt;class TImageType &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Mar 20 2020 03:18:13 for SimpleITK by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Mar 26 2020 03:19:59 for SimpleITK by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

@@ -19,7 +19,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">SimpleITK
-   &#160;<span id="projectnumber">2.0.0rc1.post7</span>
+   &#160;<span id="projectnumber">2.0.0rc1.post21</span>
    </div>
   </td>
  </tr>
@@ -157,8 +157,6 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a13ee91d931e1341bd89e13871f205aea"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a07b91d635475b37fcdb2838fa2d46b8e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classitk_1_1simple_1_1Image.html">Image</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1PatchBasedDenoisingImageFilter.html#a07b91d635475b37fcdb2838fa2d46b8e">Execute</a> (const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> &amp;image1)</td></tr>
 <tr class="separator:a07b91d635475b37fcdb2838fa2d46b8e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abbd6af54bc73ffb28f354ce26007cb65"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classitk_1_1simple_1_1Image.html">Image</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1PatchBasedDenoisingImageFilter.html#abbd6af54bc73ffb28f354ce26007cb65">Execute</a> (const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> &amp;image1, double kernelBandwidthSigma, <a class="elRef" href="https://www.itk.org/Doxygen/html/namespaceitk.html#a575b8e3e1ee797dd1bbaf9724ed68f92">uint32_t</a> patchRadius, <a class="elRef" href="https://www.itk.org/Doxygen/html/namespaceitk.html#a575b8e3e1ee797dd1bbaf9724ed68f92">uint32_t</a> numberOfIterations, <a class="elRef" href="https://www.itk.org/Doxygen/html/namespaceitk.html#a575b8e3e1ee797dd1bbaf9724ed68f92">uint32_t</a> numberOfSamplePatches, double sampleVariance, <a class="el" href="classitk_1_1simple_1_1PatchBasedDenoisingImageFilter.html#a557b8bea001e946b87c7a3ef86a01018">PatchBasedDenoisingImageFilter::NoiseModelType</a> noiseModel, double noiseSigma, double noiseModelFidelityWeight, bool alwaysTreatComponentsAsEuclidean, bool kernelBandwidthEstimation, double kernelBandwidthMultiplicationFactor, <a class="elRef" href="https://www.itk.org/Doxygen/html/namespaceitk.html#a575b8e3e1ee797dd1bbaf9724ed68f92">uint32_t</a> kernelBandwidthUpdateFrequency, double kernelBandwidthFractionPixelsForEstimation)</td></tr>
-<tr class="separator:abbd6af54bc73ffb28f354ce26007cb65"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a352865c84ba82452ebb118929034046d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1PatchBasedDenoisingImageFilter.html#a352865c84ba82452ebb118929034046d">GetAlwaysTreatComponentsAsEuclidean</a> () const</td></tr>
 <tr class="separator:a352865c84ba82452ebb118929034046d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3c426fb1ff888d468816d067449c095b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1PatchBasedDenoisingImageFilter.html#a3c426fb1ff888d468816d067449c095b">GetKernelBandwidthEstimation</a> () const</td></tr>
@@ -421,7 +419,7 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 <p>Setup for member function dispatching </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkPatchBasedDenoisingImageFilter_8h_source.html#l00234">234</a> of file <a class="el" href="sitkPatchBasedDenoisingImageFilter_8h_source.html">sitkPatchBasedDenoisingImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkPatchBasedDenoisingImageFilter_8h_source.html#l00230">230</a> of file <a class="el" href="sitkPatchBasedDenoisingImageFilter_8h_source.html">sitkPatchBasedDenoisingImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -583,7 +581,7 @@ Additional Inherited Members</h2></td></tr>
 </div>
 </div>
 <a id="a07b91d635475b37fcdb2838fa2d46b8e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a07b91d635475b37fcdb2838fa2d46b8e">&#9670;&nbsp;</a></span>Execute() <span class="overload">[1/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a07b91d635475b37fcdb2838fa2d46b8e">&#9670;&nbsp;</a></span>Execute()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -598,107 +596,6 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Execute the filter on the input image </p>
-
-</div>
-</div>
-<a id="abbd6af54bc73ffb28f354ce26007cb65"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abbd6af54bc73ffb28f354ce26007cb65">&#9670;&nbsp;</a></span>Execute() <span class="overload">[2/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> itk::simple::PatchBasedDenoisingImageFilter::Execute </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> &amp;&#160;</td>
-          <td class="paramname"><em>image1</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>kernelBandwidthSigma</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="elRef" href="https://www.itk.org/Doxygen/html/namespaceitk.html#a575b8e3e1ee797dd1bbaf9724ed68f92">uint32_t</a>&#160;</td>
-          <td class="paramname"><em>patchRadius</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="elRef" href="https://www.itk.org/Doxygen/html/namespaceitk.html#a575b8e3e1ee797dd1bbaf9724ed68f92">uint32_t</a>&#160;</td>
-          <td class="paramname"><em>numberOfIterations</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="elRef" href="https://www.itk.org/Doxygen/html/namespaceitk.html#a575b8e3e1ee797dd1bbaf9724ed68f92">uint32_t</a>&#160;</td>
-          <td class="paramname"><em>numberOfSamplePatches</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>sampleVariance</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="classitk_1_1simple_1_1PatchBasedDenoisingImageFilter.html#a557b8bea001e946b87c7a3ef86a01018">PatchBasedDenoisingImageFilter::NoiseModelType</a>&#160;</td>
-          <td class="paramname"><em>noiseModel</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>noiseSigma</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>noiseModelFidelityWeight</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>alwaysTreatComponentsAsEuclidean</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>kernelBandwidthEstimation</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>kernelBandwidthMultiplicationFactor</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="elRef" href="https://www.itk.org/Doxygen/html/namespaceitk.html#a575b8e3e1ee797dd1bbaf9724ed68f92">uint32_t</a>&#160;</td>
-          <td class="paramname"><em>kernelBandwidthUpdateFrequency</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>kernelBandwidthFractionPixelsForEstimation</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Execute the filter on the input image with the given parameters </p>
 
 </div>
 </div>
@@ -1603,7 +1500,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkPatchBasedDenoisingImageFilter_8h_source.html#l00238">238</a> of file <a class="el" href="sitkPatchBasedDenoisingImageFilter_8h_source.html">sitkPatchBasedDenoisingImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkPatchBasedDenoisingImageFilter_8h_source.html#l00234">234</a> of file <a class="el" href="sitkPatchBasedDenoisingImageFilter_8h_source.html">sitkPatchBasedDenoisingImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -1628,7 +1525,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkPatchBasedDenoisingImageFilter_8h_source.html#l00253">253</a> of file <a class="el" href="sitkPatchBasedDenoisingImageFilter_8h_source.html">sitkPatchBasedDenoisingImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkPatchBasedDenoisingImageFilter_8h_source.html#l00249">249</a> of file <a class="el" href="sitkPatchBasedDenoisingImageFilter_8h_source.html">sitkPatchBasedDenoisingImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -1652,7 +1549,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkPatchBasedDenoisingImageFilter_8h_source.html#l00254">254</a> of file <a class="el" href="sitkPatchBasedDenoisingImageFilter_8h_source.html">sitkPatchBasedDenoisingImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkPatchBasedDenoisingImageFilter_8h_source.html#l00250">250</a> of file <a class="el" href="sitkPatchBasedDenoisingImageFilter_8h_source.html">sitkPatchBasedDenoisingImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -1676,7 +1573,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkPatchBasedDenoisingImageFilter_8h_source.html#l00257">257</a> of file <a class="el" href="sitkPatchBasedDenoisingImageFilter_8h_source.html">sitkPatchBasedDenoisingImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkPatchBasedDenoisingImageFilter_8h_source.html#l00253">253</a> of file <a class="el" href="sitkPatchBasedDenoisingImageFilter_8h_source.html">sitkPatchBasedDenoisingImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -1700,7 +1597,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkPatchBasedDenoisingImageFilter_8h_source.html#l00255">255</a> of file <a class="el" href="sitkPatchBasedDenoisingImageFilter_8h_source.html">sitkPatchBasedDenoisingImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkPatchBasedDenoisingImageFilter_8h_source.html#l00251">251</a> of file <a class="el" href="sitkPatchBasedDenoisingImageFilter_8h_source.html">sitkPatchBasedDenoisingImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -1724,7 +1621,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkPatchBasedDenoisingImageFilter_8h_source.html#l00244">244</a> of file <a class="el" href="sitkPatchBasedDenoisingImageFilter_8h_source.html">sitkPatchBasedDenoisingImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkPatchBasedDenoisingImageFilter_8h_source.html#l00240">240</a> of file <a class="el" href="sitkPatchBasedDenoisingImageFilter_8h_source.html">sitkPatchBasedDenoisingImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -1748,7 +1645,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkPatchBasedDenoisingImageFilter_8h_source.html#l00256">256</a> of file <a class="el" href="sitkPatchBasedDenoisingImageFilter_8h_source.html">sitkPatchBasedDenoisingImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkPatchBasedDenoisingImageFilter_8h_source.html#l00252">252</a> of file <a class="el" href="sitkPatchBasedDenoisingImageFilter_8h_source.html">sitkPatchBasedDenoisingImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -1772,7 +1669,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkPatchBasedDenoisingImageFilter_8h_source.html#l00240">240</a> of file <a class="el" href="sitkPatchBasedDenoisingImageFilter_8h_source.html">sitkPatchBasedDenoisingImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkPatchBasedDenoisingImageFilter_8h_source.html#l00236">236</a> of file <a class="el" href="sitkPatchBasedDenoisingImageFilter_8h_source.html">sitkPatchBasedDenoisingImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -1796,7 +1693,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkPatchBasedDenoisingImageFilter_8h_source.html#l00250">250</a> of file <a class="el" href="sitkPatchBasedDenoisingImageFilter_8h_source.html">sitkPatchBasedDenoisingImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkPatchBasedDenoisingImageFilter_8h_source.html#l00246">246</a> of file <a class="el" href="sitkPatchBasedDenoisingImageFilter_8h_source.html">sitkPatchBasedDenoisingImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -1820,7 +1717,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkPatchBasedDenoisingImageFilter_8h_source.html#l00252">252</a> of file <a class="el" href="sitkPatchBasedDenoisingImageFilter_8h_source.html">sitkPatchBasedDenoisingImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkPatchBasedDenoisingImageFilter_8h_source.html#l00248">248</a> of file <a class="el" href="sitkPatchBasedDenoisingImageFilter_8h_source.html">sitkPatchBasedDenoisingImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -1844,7 +1741,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkPatchBasedDenoisingImageFilter_8h_source.html#l00251">251</a> of file <a class="el" href="sitkPatchBasedDenoisingImageFilter_8h_source.html">sitkPatchBasedDenoisingImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkPatchBasedDenoisingImageFilter_8h_source.html#l00247">247</a> of file <a class="el" href="sitkPatchBasedDenoisingImageFilter_8h_source.html">sitkPatchBasedDenoisingImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -1868,7 +1765,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkPatchBasedDenoisingImageFilter_8h_source.html#l00247">247</a> of file <a class="el" href="sitkPatchBasedDenoisingImageFilter_8h_source.html">sitkPatchBasedDenoisingImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkPatchBasedDenoisingImageFilter_8h_source.html#l00243">243</a> of file <a class="el" href="sitkPatchBasedDenoisingImageFilter_8h_source.html">sitkPatchBasedDenoisingImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -1892,7 +1789,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkPatchBasedDenoisingImageFilter_8h_source.html#l00248">248</a> of file <a class="el" href="sitkPatchBasedDenoisingImageFilter_8h_source.html">sitkPatchBasedDenoisingImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkPatchBasedDenoisingImageFilter_8h_source.html#l00244">244</a> of file <a class="el" href="sitkPatchBasedDenoisingImageFilter_8h_source.html">sitkPatchBasedDenoisingImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -1916,7 +1813,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkPatchBasedDenoisingImageFilter_8h_source.html#l00245">245</a> of file <a class="el" href="sitkPatchBasedDenoisingImageFilter_8h_source.html">sitkPatchBasedDenoisingImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkPatchBasedDenoisingImageFilter_8h_source.html#l00241">241</a> of file <a class="el" href="sitkPatchBasedDenoisingImageFilter_8h_source.html">sitkPatchBasedDenoisingImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -1940,7 +1837,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkPatchBasedDenoisingImageFilter_8h_source.html#l00249">249</a> of file <a class="el" href="sitkPatchBasedDenoisingImageFilter_8h_source.html">sitkPatchBasedDenoisingImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkPatchBasedDenoisingImageFilter_8h_source.html#l00245">245</a> of file <a class="el" href="sitkPatchBasedDenoisingImageFilter_8h_source.html">sitkPatchBasedDenoisingImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -1950,7 +1847,7 @@ template&lt;class TImageType &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Mar 20 2020 03:18:14 for SimpleITK by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Mar 26 2020 03:19:59 for SimpleITK by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

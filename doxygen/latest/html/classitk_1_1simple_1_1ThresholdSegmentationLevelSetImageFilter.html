@@ -19,7 +19,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">SimpleITK
-   &#160;<span id="projectnumber">2.0.0rc1.post7</span>
+   &#160;<span id="projectnumber">2.0.0rc1.post21</span>
    </div>
   </td>
  </tr>
@@ -142,8 +142,6 @@ Public Types</h2></td></tr>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:ae2d62d9e75175275c65040ad73f85a32"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classitk_1_1simple_1_1Image.html">Image</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1ThresholdSegmentationLevelSetImageFilter.html#ae2d62d9e75175275c65040ad73f85a32">Execute</a> (const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> &amp;initialImage, const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> &amp;featureImage)</td></tr>
 <tr class="separator:ae2d62d9e75175275c65040ad73f85a32"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9f213f6dcf3377bb661187cff65f74ac"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classitk_1_1simple_1_1Image.html">Image</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1ThresholdSegmentationLevelSetImageFilter.html#a9f213f6dcf3377bb661187cff65f74ac">Execute</a> (const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> &amp;initialImage, const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> &amp;featureImage, double lowerThreshold, double upperThreshold, double maximumRMSError, double propagationScaling, double curvatureScaling, <a class="elRef" href="https://www.itk.org/Doxygen/html/namespaceitk.html#a575b8e3e1ee797dd1bbaf9724ed68f92">uint32_t</a> numberOfIterations, bool reverseExpansionDirection)</td></tr>
-<tr class="separator:a9f213f6dcf3377bb661187cff65f74ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afb97f2fabff1ca0398b0b67c77c8e2b9"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1ThresholdSegmentationLevelSetImageFilter.html#afb97f2fabff1ca0398b0b67c77c8e2b9">GetCurvatureScaling</a> () const</td></tr>
 <tr class="separator:afb97f2fabff1ca0398b0b67c77c8e2b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a768a665be57aec3a149d7f269ec395a2"><td class="memItemLeft" align="right" valign="top"><a class="elRef" href="https://www.itk.org/Doxygen/html/namespaceitk.html#a575b8e3e1ee797dd1bbaf9724ed68f92">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1ThresholdSegmentationLevelSetImageFilter.html#a768a665be57aec3a149d7f269ec395a2">GetElapsedIterations</a> () const</td></tr>
@@ -392,7 +390,7 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 <p>Setup for member function dispatching </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkThresholdSegmentationLevelSetImageFilter_8h_source.html#l00190">190</a> of file <a class="el" href="sitkThresholdSegmentationLevelSetImageFilter_8h_source.html">sitkThresholdSegmentationLevelSetImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkThresholdSegmentationLevelSetImageFilter_8h_source.html#l00186">186</a> of file <a class="el" href="sitkThresholdSegmentationLevelSetImageFilter_8h_source.html">sitkThresholdSegmentationLevelSetImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -476,7 +474,7 @@ Additional Inherited Members</h2></td></tr>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
 <a id="ae2d62d9e75175275c65040ad73f85a32"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae2d62d9e75175275c65040ad73f85a32">&#9670;&nbsp;</a></span>Execute() <span class="overload">[1/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ae2d62d9e75175275c65040ad73f85a32">&#9670;&nbsp;</a></span>Execute()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -501,77 +499,6 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Execute the filter on the input image </p>
-
-</div>
-</div>
-<a id="a9f213f6dcf3377bb661187cff65f74ac"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9f213f6dcf3377bb661187cff65f74ac">&#9670;&nbsp;</a></span>Execute() <span class="overload">[2/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> itk::simple::ThresholdSegmentationLevelSetImageFilter::Execute </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> &amp;&#160;</td>
-          <td class="paramname"><em>initialImage</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> &amp;&#160;</td>
-          <td class="paramname"><em>featureImage</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>lowerThreshold</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>upperThreshold</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>maximumRMSError</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>propagationScaling</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>curvatureScaling</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="elRef" href="https://www.itk.org/Doxygen/html/namespaceitk.html#a575b8e3e1ee797dd1bbaf9724ed68f92">uint32_t</a>&#160;</td>
-          <td class="paramname"><em>numberOfIterations</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>reverseExpansionDirection</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Execute the filter on the input image with the given parameters </p>
 
 </div>
 </div>
@@ -1193,7 +1120,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkThresholdSegmentationLevelSetImageFilter_8h_source.html#l00194">194</a> of file <a class="el" href="sitkThresholdSegmentationLevelSetImageFilter_8h_source.html">sitkThresholdSegmentationLevelSetImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkThresholdSegmentationLevelSetImageFilter_8h_source.html#l00190">190</a> of file <a class="el" href="sitkThresholdSegmentationLevelSetImageFilter_8h_source.html">sitkThresholdSegmentationLevelSetImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -1218,7 +1145,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkThresholdSegmentationLevelSetImageFilter_8h_source.html#l00206">206</a> of file <a class="el" href="sitkThresholdSegmentationLevelSetImageFilter_8h_source.html">sitkThresholdSegmentationLevelSetImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkThresholdSegmentationLevelSetImageFilter_8h_source.html#l00202">202</a> of file <a class="el" href="sitkThresholdSegmentationLevelSetImageFilter_8h_source.html">sitkThresholdSegmentationLevelSetImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -1242,7 +1169,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkThresholdSegmentationLevelSetImageFilter_8h_source.html#l00212">212</a> of file <a class="el" href="sitkThresholdSegmentationLevelSetImageFilter_8h_source.html">sitkThresholdSegmentationLevelSetImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkThresholdSegmentationLevelSetImageFilter_8h_source.html#l00208">208</a> of file <a class="el" href="sitkThresholdSegmentationLevelSetImageFilter_8h_source.html">sitkThresholdSegmentationLevelSetImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -1266,7 +1193,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkThresholdSegmentationLevelSetImageFilter_8h_source.html#l00199">199</a> of file <a class="el" href="sitkThresholdSegmentationLevelSetImageFilter_8h_source.html">sitkThresholdSegmentationLevelSetImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkThresholdSegmentationLevelSetImageFilter_8h_source.html#l00195">195</a> of file <a class="el" href="sitkThresholdSegmentationLevelSetImageFilter_8h_source.html">sitkThresholdSegmentationLevelSetImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -1290,7 +1217,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkThresholdSegmentationLevelSetImageFilter_8h_source.html#l00202">202</a> of file <a class="el" href="sitkThresholdSegmentationLevelSetImageFilter_8h_source.html">sitkThresholdSegmentationLevelSetImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkThresholdSegmentationLevelSetImageFilter_8h_source.html#l00198">198</a> of file <a class="el" href="sitkThresholdSegmentationLevelSetImageFilter_8h_source.html">sitkThresholdSegmentationLevelSetImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -1314,7 +1241,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkThresholdSegmentationLevelSetImageFilter_8h_source.html#l00196">196</a> of file <a class="el" href="sitkThresholdSegmentationLevelSetImageFilter_8h_source.html">sitkThresholdSegmentationLevelSetImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkThresholdSegmentationLevelSetImageFilter_8h_source.html#l00192">192</a> of file <a class="el" href="sitkThresholdSegmentationLevelSetImageFilter_8h_source.html">sitkThresholdSegmentationLevelSetImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -1338,7 +1265,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkThresholdSegmentationLevelSetImageFilter_8h_source.html#l00208">208</a> of file <a class="el" href="sitkThresholdSegmentationLevelSetImageFilter_8h_source.html">sitkThresholdSegmentationLevelSetImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkThresholdSegmentationLevelSetImageFilter_8h_source.html#l00204">204</a> of file <a class="el" href="sitkThresholdSegmentationLevelSetImageFilter_8h_source.html">sitkThresholdSegmentationLevelSetImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -1362,7 +1289,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkThresholdSegmentationLevelSetImageFilter_8h_source.html#l00204">204</a> of file <a class="el" href="sitkThresholdSegmentationLevelSetImageFilter_8h_source.html">sitkThresholdSegmentationLevelSetImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkThresholdSegmentationLevelSetImageFilter_8h_source.html#l00200">200</a> of file <a class="el" href="sitkThresholdSegmentationLevelSetImageFilter_8h_source.html">sitkThresholdSegmentationLevelSetImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -1386,7 +1313,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkThresholdSegmentationLevelSetImageFilter_8h_source.html#l00210">210</a> of file <a class="el" href="sitkThresholdSegmentationLevelSetImageFilter_8h_source.html">sitkThresholdSegmentationLevelSetImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkThresholdSegmentationLevelSetImageFilter_8h_source.html#l00206">206</a> of file <a class="el" href="sitkThresholdSegmentationLevelSetImageFilter_8h_source.html">sitkThresholdSegmentationLevelSetImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -1410,7 +1337,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkThresholdSegmentationLevelSetImageFilter_8h_source.html#l00214">214</a> of file <a class="el" href="sitkThresholdSegmentationLevelSetImageFilter_8h_source.html">sitkThresholdSegmentationLevelSetImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkThresholdSegmentationLevelSetImageFilter_8h_source.html#l00210">210</a> of file <a class="el" href="sitkThresholdSegmentationLevelSetImageFilter_8h_source.html">sitkThresholdSegmentationLevelSetImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -1434,7 +1361,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkThresholdSegmentationLevelSetImageFilter_8h_source.html#l00200">200</a> of file <a class="el" href="sitkThresholdSegmentationLevelSetImageFilter_8h_source.html">sitkThresholdSegmentationLevelSetImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkThresholdSegmentationLevelSetImageFilter_8h_source.html#l00196">196</a> of file <a class="el" href="sitkThresholdSegmentationLevelSetImageFilter_8h_source.html">sitkThresholdSegmentationLevelSetImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -1444,7 +1371,7 @@ template&lt;class TImageType &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Mar 20 2020 03:18:15 for SimpleITK by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Mar 26 2020 03:20:01 for SimpleITK by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

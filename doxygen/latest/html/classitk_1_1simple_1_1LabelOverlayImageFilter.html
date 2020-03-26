@@ -19,7 +19,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">SimpleITK
-   &#160;<span id="projectnumber">2.0.0rc1.post7</span>
+   &#160;<span id="projectnumber">2.0.0rc1.post21</span>
    </div>
   </td>
  </tr>
@@ -143,8 +143,6 @@ Public Types</h2></td></tr>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a9618f87eda28fe445dbc34e73968e92c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classitk_1_1simple_1_1Image.html">Image</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1LabelOverlayImageFilter.html#a9618f87eda28fe445dbc34e73968e92c">Execute</a> (const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> &amp;image, const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> &amp;labelImage)</td></tr>
 <tr class="separator:a9618f87eda28fe445dbc34e73968e92c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9b55d2084e10c83d4cc638cd18936683"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classitk_1_1simple_1_1Image.html">Image</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1LabelOverlayImageFilter.html#a9b55d2084e10c83d4cc638cd18936683">Execute</a> (const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> &amp;image, const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> &amp;labelImage, double opacity, double backgroundValue, std::vector&lt; <a class="elRef" href="https://www.itk.org/Doxygen/html/namespaceitk.html#a5037a19c1b11bcb33173a2a3e3d8b8a0">uint8_t</a> &gt; colormap)</td></tr>
-<tr class="separator:a9b55d2084e10c83d4cc638cd18936683"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad086b5f2f3d38de5386587f541f621e7"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1LabelOverlayImageFilter.html#ad086b5f2f3d38de5386587f541f621e7">GetBackgroundValue</a> () const</td></tr>
 <tr class="separator:ad086b5f2f3d38de5386587f541f621e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6ad990b77195fc5698937d429af96db1"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="elRef" href="https://www.itk.org/Doxygen/html/namespaceitk.html#a5037a19c1b11bcb33173a2a3e3d8b8a0">uint8_t</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1LabelOverlayImageFilter.html#a6ad990b77195fc5698937d429af96db1">GetColormap</a> () const</td></tr>
@@ -348,7 +346,7 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 <p>Setup for member function dispatching </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkLabelOverlayImageFilter_8h_source.html#l00113">113</a> of file <a class="el" href="sitkLabelOverlayImageFilter_8h_source.html">sitkLabelOverlayImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkLabelOverlayImageFilter_8h_source.html#l00109">109</a> of file <a class="el" href="sitkLabelOverlayImageFilter_8h_source.html">sitkLabelOverlayImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -470,7 +468,7 @@ template&lt;class TImageType1 , class TImageType2 &gt; </div>
 </div>
 </div>
 <a id="a9618f87eda28fe445dbc34e73968e92c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9618f87eda28fe445dbc34e73968e92c">&#9670;&nbsp;</a></span>Execute() <span class="overload">[1/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a9618f87eda28fe445dbc34e73968e92c">&#9670;&nbsp;</a></span>Execute()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -495,53 +493,6 @@ template&lt;class TImageType1 , class TImageType2 &gt; </div>
       </table>
 </div><div class="memdoc">
 <p>Execute the filter on the input image </p>
-
-</div>
-</div>
-<a id="a9b55d2084e10c83d4cc638cd18936683"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9b55d2084e10c83d4cc638cd18936683">&#9670;&nbsp;</a></span>Execute() <span class="overload">[2/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> itk::simple::LabelOverlayImageFilter::Execute </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> &amp;&#160;</td>
-          <td class="paramname"><em>image</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> &amp;&#160;</td>
-          <td class="paramname"><em>labelImage</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>opacity</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>backgroundValue</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">std::vector&lt; <a class="elRef" href="https://www.itk.org/Doxygen/html/namespaceitk.html#a5037a19c1b11bcb33173a2a3e3d8b8a0">uint8_t</a> &gt;&#160;</td>
-          <td class="paramname"><em>colormap</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Execute the filter on the input image with the given parameters </p>
 
 </div>
 </div>
@@ -793,7 +744,7 @@ template&lt;class TImageType1 , class TImageType2 &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkLabelOverlayImageFilter_8h_source.html#l00115">115</a> of file <a class="el" href="sitkLabelOverlayImageFilter_8h_source.html">sitkLabelOverlayImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkLabelOverlayImageFilter_8h_source.html#l00111">111</a> of file <a class="el" href="sitkLabelOverlayImageFilter_8h_source.html">sitkLabelOverlayImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -818,7 +769,7 @@ template&lt;class TImageType1 , class TImageType2 &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkLabelOverlayImageFilter_8h_source.html#l00125">125</a> of file <a class="el" href="sitkLabelOverlayImageFilter_8h_source.html">sitkLabelOverlayImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkLabelOverlayImageFilter_8h_source.html#l00121">121</a> of file <a class="el" href="sitkLabelOverlayImageFilter_8h_source.html">sitkLabelOverlayImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -842,7 +793,7 @@ template&lt;class TImageType1 , class TImageType2 &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkLabelOverlayImageFilter_8h_source.html#l00126">126</a> of file <a class="el" href="sitkLabelOverlayImageFilter_8h_source.html">sitkLabelOverlayImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkLabelOverlayImageFilter_8h_source.html#l00122">122</a> of file <a class="el" href="sitkLabelOverlayImageFilter_8h_source.html">sitkLabelOverlayImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -866,7 +817,7 @@ template&lt;class TImageType1 , class TImageType2 &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkLabelOverlayImageFilter_8h_source.html#l00119">119</a> of file <a class="el" href="sitkLabelOverlayImageFilter_8h_source.html">sitkLabelOverlayImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkLabelOverlayImageFilter_8h_source.html#l00115">115</a> of file <a class="el" href="sitkLabelOverlayImageFilter_8h_source.html">sitkLabelOverlayImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -890,7 +841,7 @@ template&lt;class TImageType1 , class TImageType2 &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkLabelOverlayImageFilter_8h_source.html#l00124">124</a> of file <a class="el" href="sitkLabelOverlayImageFilter_8h_source.html">sitkLabelOverlayImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkLabelOverlayImageFilter_8h_source.html#l00120">120</a> of file <a class="el" href="sitkLabelOverlayImageFilter_8h_source.html">sitkLabelOverlayImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -900,7 +851,7 @@ template&lt;class TImageType1 , class TImageType2 &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Mar 20 2020 03:18:12 for SimpleITK by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Mar 26 2020 03:19:58 for SimpleITK by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

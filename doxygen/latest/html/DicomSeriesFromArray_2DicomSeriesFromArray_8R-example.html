@@ -19,7 +19,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">SimpleITK
-   &#160;<span id="projectnumber">2.0.0rc1.post7</span>
+   &#160;<span id="projectnumber">2.0.0rc1.post21</span>
    </div>
   </td>
  </tr>
@@ -62,18 +62,12 @@ $(function() {
 <div class="line">#=========================================================================</div>
 <div class="line"># Run with:</div>
 <div class="line">#</div>
-<div class="line"># Rscript --vanilla DicomSeriesFromArray.R output_directory</div>
+<div class="line"># Rscript --vanilla DicomSeriesFromArray.R output_directory int</div>
 <div class="line">#</div>
 <div class="line"> </div>
 <div class="line">library(SimpleITK)</div>
 <div class="line"> </div>
-<div class="line">args &lt;- commandArgs( TRUE )</div>
-<div class="line"> </div>
-<div class="line">if (length(args) &lt; 1) {</div>
-<div class="line">   stop(&quot;1 argument expected - output_directory&quot;)</div>
-<div class="line">}</div>
-<div class="line"> </div>
-<div class="line">writeSlices &lt;- function(series_tag_values, new_img, i) {</div>
+<div class="line">writeSlices &lt;- function(series_tag_values, new_img, out_dir, i) {</div>
 <div class="line">    image_slice &lt;- new_img[1:new_img$GetWidth(), 1:new_img$GetHeight(), i]</div>
 <div class="line"> </div>
 <div class="line">    # Tags shared by the series.</div>
@@ -92,12 +86,27 @@ $(function() {
 <div class="line">    image_slice$SetMetaData(&quot;0020,0013&quot;, i-1) # Instance Number</div>
 <div class="line"> </div>
 <div class="line">    # Write to the output directory and add the extension dcm, to force writing in DICOM format.</div>
-<div class="line">    writer$SetFileName(file.path(args[[1]], paste(i-1, &#39;.dcm&#39;, sep=&quot;&quot;)))</div>
+<div class="line">    writer$SetFileName(file.path(out_dir, paste(i-1, &#39;.dcm&#39;, sep=&quot;&quot;)))</div>
 <div class="line">    writer$Execute(image_slice)</div>
 <div class="line">}</div>
 <div class="line"> </div>
+<div class="line"> </div>
+<div class="line">args &lt;- commandArgs( TRUE )</div>
+<div class="line">if (length(args) &lt; 2) {</div>
+<div class="line">   stop(&quot;Two arguments expected - output_directory pixel_type [int, float]&quot;)</div>
+<div class="line">}</div>
+<div class="line"> </div>
 <div class="line"># Create a new series from an array</div>
-<div class="line">new_arr &lt;- array(sample(-10:10, 60, replace=T), dim=c(5, 4, 3))</div>
+<div class="line">image_dim = c(5,4,3)</div>
+<div class="line"> </div>
+<div class="line">if( args[[2]] == &quot;int&quot; ) {</div>
+<div class="line">  new_arr = array(as.integer(runif(60, min=-10, max=10)), dim=image_dim)</div>
+<div class="line">} else if( args[[2]] == &quot;float&quot; ) {</div>
+<div class="line">    new_arr = array(runif(60, min=-10, max=10), dim=image_dim)</div>
+<div class="line">} else {</div>
+<div class="line">  stop(&quot;Unexpected pixel type, valid values are [int, float].&quot;)</div>
+<div class="line">}</div>
+<div class="line"> </div>
 <div class="line">new_img &lt;- as.image(new_arr)</div>
 <div class="line">new_img$SetSpacing(c(2.5,3.5,4.5))</div>
 <div class="line"> </div>
@@ -124,16 +133,33 @@ $(function() {
 <div class="line"># with zero, and separated by a &#39;.&#39; We create a unique series ID using the date and time.</div>
 <div class="line"># tags of interest:</div>
 <div class="line">direction &lt;- new_img$GetDirection()</div>
-<div class="line">series_tag_values = matrix(c(&quot;0008|0031&quot;,modification_time, # Series Time</div>
-<div class="line">                  &quot;0008|0021&quot;,modification_date, # Series Date</div>
-<div class="line">                  &quot;0008|0008&quot;,&quot;DERIVED\\SECONDARY&quot;, # Image Type</div>
-<div class="line">                  &quot;0020|000e&quot;, paste(&quot;1.2.826.0.1.3680043.2.1125.&quot;,modification_date,&quot;.1&quot;,modification_time, sep=&#39;&#39;), # Series Instance UID</div>
-<div class="line">                  &quot;0020|0037&quot;, paste(direction[[1]], direction[[4]], direction[[7]],# Image Orientation (Patient)</div>
-<div class="line">                                      direction[[2]],direction[[5]],direction[[8]], sep=&#39;\\&#39;),</div>
-<div class="line">                  &quot;0008|103e&quot;, &quot;Created-SimpleITK&quot;), nrow=6, ncol=2, byrow=TRUE) # Series Description</div>
+<div class="line"> </div>
+<div class="line">series_tag_values &lt;- c(&quot;0008|0031&quot;,modification_time, # Series Time</div>
+<div class="line">                       &quot;0008|0021&quot;,modification_date, # Series Date</div>
+<div class="line">                       &quot;0008|0008&quot;,&quot;DERIVED\\SECONDARY&quot;, # Image Type</div>
+<div class="line">                       &quot;0020|000e&quot;, paste(&quot;1.2.826.0.1.3680043.2.1125.&quot;,modification_date,&quot;.1&quot;,modification_time, sep=&#39;&#39;), # Series Instance UID</div>
+<div class="line">                       &quot;0020|0037&quot;, paste(direction[[1]], direction[[4]], direction[[7]],# Image Orientation (Patient)</div>
+<div class="line">                                          direction[[2]],direction[[5]],direction[[8]], sep=&#39;\\&#39;),</div>
+<div class="line">                       &quot;0008|103e&quot;, &quot;Created-SimpleITK&quot;)</div>
+<div class="line"> </div>
+<div class="line">if(args[[2]] == &quot;float&quot;) {</div>
+<div class="line">    # If we want to write floating point values, we need to use the rescale slope, &quot;0028|1053&quot;, to select the</div>
+<div class="line">    # number of digits we want to keep. We also need to specify additional pixel storage and representation</div>
+<div class="line">    # information.</div>
+<div class="line">    rescale_slope &lt;- 0.001 #keep three digits after the decimal point</div>
+<div class="line">    series_tag_values &lt;- c(series_tag_values,</div>
+<div class="line">                           c(&quot;0028|1053&quot;, paste(rescale_slope), #rescale slope</div>
+<div class="line">                             &quot;0028|1052&quot;,&quot;0&quot;,   #rescale intercept</div>
+<div class="line">                             &quot;0028|0100&quot;, &quot;16&quot;, #bits allocated</div>
+<div class="line">                             &quot;0028|0101&quot;, &quot;16&quot;, #bits stored</div>
+<div class="line">                             &quot;0028|0102&quot;, &quot;15&quot;, #high bit</div>
+<div class="line">                             &quot;0028|0103&quot;, &quot;1&quot;)) #pixel representation</div>
+<div class="line">}</div>
+<div class="line"> </div>
+<div class="line">series_tag_values &lt;- matrix(series_tag_values, nrow=length(series_tag_values)/2, ncol=2, byrow=TRUE) # Series Description</div>
 <div class="line"> </div>
 <div class="line"># Write slices to output directory</div>
-<div class="line">invisible(lapply(1:(new_img$GetDepth()), function(i){writeSlices(series_tag_values, new_img, i)}))</div>
+<div class="line">invisible(lapply(1:(new_img$GetDepth()), function(i){writeSlices(series_tag_values, new_img, args[[1]], i)}))</div>
 <div class="line"> </div>
 <div class="line"># Re-read the series</div>
 <div class="line"># Read the original series. First obtain the series file names using the</div>
@@ -159,7 +185,7 @@ $(function() {
 </div><!-- fragment --> </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Mar 20 2020 03:17:51 for SimpleITK by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Mar 26 2020 03:19:34 for SimpleITK by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

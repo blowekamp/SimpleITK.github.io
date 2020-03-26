@@ -19,7 +19,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">SimpleITK
-   &#160;<span id="projectnumber">2.0.0rc1.post7</span>
+   &#160;<span id="projectnumber">2.0.0rc1.post21</span>
    </div>
   </td>
  </tr>
@@ -142,8 +142,6 @@ Public Types</h2></td></tr>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:ab014254c3050389dad731dedbbbbc6bf"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classitk_1_1simple_1_1Image.html">Image</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1SaltAndPepperNoiseImageFilter.html#ab014254c3050389dad731dedbbbbc6bf">Execute</a> (const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> &amp;image1)</td></tr>
 <tr class="separator:ab014254c3050389dad731dedbbbbc6bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4676fc976d49a8d5b58415abab8d7da2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classitk_1_1simple_1_1Image.html">Image</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1SaltAndPepperNoiseImageFilter.html#a4676fc976d49a8d5b58415abab8d7da2">Execute</a> (const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> &amp;image1, double probability, <a class="elRef" href="https://www.itk.org/Doxygen/html/namespaceitk.html#a575b8e3e1ee797dd1bbaf9724ed68f92">uint32_t</a> seed)</td></tr>
-<tr class="separator:a4676fc976d49a8d5b58415abab8d7da2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a771a4fbabefaf87ee8a2ca8cd3233180"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1SaltAndPepperNoiseImageFilter.html#a771a4fbabefaf87ee8a2ca8cd3233180">GetName</a> () const</td></tr>
 <tr class="separator:a771a4fbabefaf87ee8a2ca8cd3233180"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a639d5f1b8f662fe9bf98eb20add436af"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1SaltAndPepperNoiseImageFilter.html#a639d5f1b8f662fe9bf98eb20add436af">GetProbability</a> () const</td></tr>
@@ -313,8 +311,8 @@ Additional Inherited Members</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Alter an image with fixed value impulse noise, often called salt and pepper noise. </p>
 <p>Salt (sensor saturation) and pepper (dead pixels) noise is a special kind of impulse noise where the value of the noise is either the maximum possible value in the image or its minimum. This is not necessarily the maximal/minimal possible intensity value based on the pixel type. For example, the native pixel type for CT is a signed 16 bit integer, but only 12 bits used, so we would like to set the salt and pepper values to match this smaller intensity range and not the range the pixel type represents. It can be modeled as:</p>
-<dl class="section user"><dt></dt><dd><img class="formulaInl" alt="$ I = \begin{cases} M, &amp; \quad \text{if } U &lt; p/2 \\ m, &amp; \quad \text{if } U &gt; 1 - p/2 \\ I_0, &amp; \quad \text{if } p/2 \geq U \leq 1 - p/2 \end{cases} $" src="form_69.png"/></dd></dl>
-<dl class="section user"><dt></dt><dd>where <img class="formulaInl" alt="$ p $" src="form_70.png"/> is the probability of the noise event, <img class="formulaInl" alt="$ U $" src="form_71.png"/> is a uniformly distributed random variable in the <img class="formulaInl" alt="$ [0,1] $" src="form_72.png"/> range, <img class="formulaInl" alt="$ M $" src="form_73.png"/> is the greatest possible pixel value, and <img class="formulaInl" alt="$ m $" src="form_74.png"/> the smallest possible pixel value.</dd></dl>
+<dl class="section user"><dt></dt><dd><img class="formulaInl" alt="$ I = \begin{cases} M, &amp; \quad \text{if } U &lt; p/2 \\ m, &amp; \quad \text{if } U &gt; 1 - p/2 \\ I_0, &amp; \quad \text{if } p/2 \geq U \leq 1 - p/2 \end{cases} $" src="form_70.png"/></dd></dl>
+<dl class="section user"><dt></dt><dd>where <img class="formulaInl" alt="$ p $" src="form_71.png"/> is the probability of the noise event, <img class="formulaInl" alt="$ U $" src="form_72.png"/> is a uniformly distributed random variable in the <img class="formulaInl" alt="$ [0,1] $" src="form_73.png"/> range, <img class="formulaInl" alt="$ M $" src="form_74.png"/> is the greatest possible pixel value, and <img class="formulaInl" alt="$ m $" src="form_75.png"/> the smallest possible pixel value.</dd></dl>
 <p>Pixel alteration occurs at a user defined probability. Salt and pepper pixels are equally distributed.</p>
 <dl class="section author"><dt>Author</dt><dd>Gaetan Lehmann</dd></dl>
 <p>This code was contributed in the Insight Journal paper "Noise
@@ -345,7 +343,7 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 <p>Setup for member function dispatching </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkSaltAndPepperNoiseImageFilter_8h_source.html#l00109">109</a> of file <a class="el" href="sitkSaltAndPepperNoiseImageFilter_8h_source.html">sitkSaltAndPepperNoiseImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkSaltAndPepperNoiseImageFilter_8h_source.html#l00105">105</a> of file <a class="el" href="sitkSaltAndPepperNoiseImageFilter_8h_source.html">sitkSaltAndPepperNoiseImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -429,7 +427,7 @@ Additional Inherited Members</h2></td></tr>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
 <a id="ab014254c3050389dad731dedbbbbc6bf"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab014254c3050389dad731dedbbbbc6bf">&#9670;&nbsp;</a></span>Execute() <span class="overload">[1/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ab014254c3050389dad731dedbbbbc6bf">&#9670;&nbsp;</a></span>Execute()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -444,41 +442,6 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Execute the filter on the input image </p>
-
-</div>
-</div>
-<a id="a4676fc976d49a8d5b58415abab8d7da2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4676fc976d49a8d5b58415abab8d7da2">&#9670;&nbsp;</a></span>Execute() <span class="overload">[2/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> itk::simple::SaltAndPepperNoiseImageFilter::Execute </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> &amp;&#160;</td>
-          <td class="paramname"><em>image1</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>probability</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="elRef" href="https://www.itk.org/Doxygen/html/namespaceitk.html#a575b8e3e1ee797dd1bbaf9724ed68f92">uint32_t</a>&#160;</td>
-          <td class="paramname"><em>seed</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Execute the filter on the input image with the given parameters </p>
 
 </div>
 </div>
@@ -730,7 +693,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkSaltAndPepperNoiseImageFilter_8h_source.html#l00115">115</a> of file <a class="el" href="sitkSaltAndPepperNoiseImageFilter_8h_source.html">sitkSaltAndPepperNoiseImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkSaltAndPepperNoiseImageFilter_8h_source.html#l00111">111</a> of file <a class="el" href="sitkSaltAndPepperNoiseImageFilter_8h_source.html">sitkSaltAndPepperNoiseImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -754,7 +717,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkSaltAndPepperNoiseImageFilter_8h_source.html#l00114">114</a> of file <a class="el" href="sitkSaltAndPepperNoiseImageFilter_8h_source.html">sitkSaltAndPepperNoiseImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkSaltAndPepperNoiseImageFilter_8h_source.html#l00110">110</a> of file <a class="el" href="sitkSaltAndPepperNoiseImageFilter_8h_source.html">sitkSaltAndPepperNoiseImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -779,7 +742,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkSaltAndPepperNoiseImageFilter_8h_source.html#l00116">116</a> of file <a class="el" href="sitkSaltAndPepperNoiseImageFilter_8h_source.html">sitkSaltAndPepperNoiseImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkSaltAndPepperNoiseImageFilter_8h_source.html#l00112">112</a> of file <a class="el" href="sitkSaltAndPepperNoiseImageFilter_8h_source.html">sitkSaltAndPepperNoiseImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -803,7 +766,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkSaltAndPepperNoiseImageFilter_8h_source.html#l00119">119</a> of file <a class="el" href="sitkSaltAndPepperNoiseImageFilter_8h_source.html">sitkSaltAndPepperNoiseImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkSaltAndPepperNoiseImageFilter_8h_source.html#l00115">115</a> of file <a class="el" href="sitkSaltAndPepperNoiseImageFilter_8h_source.html">sitkSaltAndPepperNoiseImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -827,7 +790,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkSaltAndPepperNoiseImageFilter_8h_source.html#l00120">120</a> of file <a class="el" href="sitkSaltAndPepperNoiseImageFilter_8h_source.html">sitkSaltAndPepperNoiseImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkSaltAndPepperNoiseImageFilter_8h_source.html#l00116">116</a> of file <a class="el" href="sitkSaltAndPepperNoiseImageFilter_8h_source.html">sitkSaltAndPepperNoiseImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -837,7 +800,7 @@ template&lt;class TImageType &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Mar 20 2020 03:18:14 for SimpleITK by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Mar 26 2020 03:20:00 for SimpleITK by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

@@ -19,7 +19,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">SimpleITK
-   &#160;<span id="projectnumber">2.0.0rc1.post7</span>
+   &#160;<span id="projectnumber">2.0.0rc1.post21</span>
    </div>
   </td>
  </tr>
@@ -142,8 +142,6 @@ Public Types</h2></td></tr>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a3040beaa632ddb80a549bdbaee1bc942"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classitk_1_1simple_1_1Image.html">Image</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1SpeckleNoiseImageFilter.html#a3040beaa632ddb80a549bdbaee1bc942">Execute</a> (const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> &amp;image1)</td></tr>
 <tr class="separator:a3040beaa632ddb80a549bdbaee1bc942"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac6a2b73fc8ffa26f60a46993dfa726dc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classitk_1_1simple_1_1Image.html">Image</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1SpeckleNoiseImageFilter.html#ac6a2b73fc8ffa26f60a46993dfa726dc">Execute</a> (const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> &amp;image1, double standardDeviation, <a class="elRef" href="https://www.itk.org/Doxygen/html/namespaceitk.html#a575b8e3e1ee797dd1bbaf9724ed68f92">uint32_t</a> seed)</td></tr>
-<tr class="separator:ac6a2b73fc8ffa26f60a46993dfa726dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab62246731d4155edd78e26a0be8d1c5e"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1SpeckleNoiseImageFilter.html#ab62246731d4155edd78e26a0be8d1c5e">GetName</a> () const</td></tr>
 <tr class="separator:ab62246731d4155edd78e26a0be8d1c5e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a55534b4610df09bfd1b54bd521eb0b9c"><td class="memItemLeft" align="right" valign="top"><a class="elRef" href="https://www.itk.org/Doxygen/html/namespaceitk.html#a575b8e3e1ee797dd1bbaf9724ed68f92">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1SpeckleNoiseImageFilter.html#a55534b4610df09bfd1b54bd521eb0b9c">GetSeed</a> () const</td></tr>
@@ -314,9 +312,9 @@ Additional Inherited Members</h2></td></tr>
 <div class="textblock"><p>Alter an image with speckle (multiplicative) noise. </p>
 <p>The speckle noise follows a gamma distribution of mean 1 and standard deviation provided by the user. The noise is proportional to the pixel intensity.</p>
 <p>It can be modeled as:</p>
-<dl class="section user"><dt></dt><dd><img class="formulaInl" alt="$ I = I_0 \ast G $" src="form_91.png"/></dd></dl>
-<dl class="section user"><dt></dt><dd>where <img class="formulaInl" alt="$ G $" src="form_92.png"/> is a is a gamma distributed random variable of mean 1 and variance proportional to the noise level:</dd></dl>
-<dl class="section user"><dt></dt><dd><img class="formulaInl" alt="$ G \sim \Gamma(\frac{1}{\sigma^2}, \sigma^2) $" src="form_93.png"/></dd></dl>
+<dl class="section user"><dt></dt><dd><img class="formulaInl" alt="$ I = I_0 \ast G $" src="form_92.png"/></dd></dl>
+<dl class="section user"><dt></dt><dd>where <img class="formulaInl" alt="$ G $" src="form_93.png"/> is a is a gamma distributed random variable of mean 1 and variance proportional to the noise level:</dd></dl>
+<dl class="section user"><dt></dt><dd><img class="formulaInl" alt="$ G \sim \Gamma(\frac{1}{\sigma^2}, \sigma^2) $" src="form_94.png"/></dd></dl>
 <dl class="section author"><dt>Author</dt><dd>Gaetan Lehmann</dd></dl>
 <p>This code was contributed in the Insight Journal paper "Noise
  Simulation". <a href="https://hdl.handle.net/10380/3158">https://hdl.handle.net/10380/3158</a> </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="namespaceitk_1_1simple.html#a7b398164e6358385443905add101ac00" title="Alter an image with speckle (multiplicative) noise.">itk::simple::SpeckleNoise</a> for the procedural interface </dd>
@@ -346,7 +344,7 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 <p>Setup for member function dispatching </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkSpeckleNoiseImageFilter_8h_source.html#l00113">113</a> of file <a class="el" href="sitkSpeckleNoiseImageFilter_8h_source.html">sitkSpeckleNoiseImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkSpeckleNoiseImageFilter_8h_source.html#l00109">109</a> of file <a class="el" href="sitkSpeckleNoiseImageFilter_8h_source.html">sitkSpeckleNoiseImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -430,7 +428,7 @@ Additional Inherited Members</h2></td></tr>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
 <a id="a3040beaa632ddb80a549bdbaee1bc942"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3040beaa632ddb80a549bdbaee1bc942">&#9670;&nbsp;</a></span>Execute() <span class="overload">[1/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a3040beaa632ddb80a549bdbaee1bc942">&#9670;&nbsp;</a></span>Execute()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -445,41 +443,6 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Execute the filter on the input image </p>
-
-</div>
-</div>
-<a id="ac6a2b73fc8ffa26f60a46993dfa726dc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac6a2b73fc8ffa26f60a46993dfa726dc">&#9670;&nbsp;</a></span>Execute() <span class="overload">[2/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> itk::simple::SpeckleNoiseImageFilter::Execute </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> &amp;&#160;</td>
-          <td class="paramname"><em>image1</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>standardDeviation</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="elRef" href="https://www.itk.org/Doxygen/html/namespaceitk.html#a575b8e3e1ee797dd1bbaf9724ed68f92">uint32_t</a>&#160;</td>
-          <td class="paramname"><em>seed</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Execute the filter on the input image with the given parameters </p>
 
 </div>
 </div>
@@ -731,7 +694,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkSpeckleNoiseImageFilter_8h_source.html#l00119">119</a> of file <a class="el" href="sitkSpeckleNoiseImageFilter_8h_source.html">sitkSpeckleNoiseImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkSpeckleNoiseImageFilter_8h_source.html#l00115">115</a> of file <a class="el" href="sitkSpeckleNoiseImageFilter_8h_source.html">sitkSpeckleNoiseImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -755,7 +718,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkSpeckleNoiseImageFilter_8h_source.html#l00118">118</a> of file <a class="el" href="sitkSpeckleNoiseImageFilter_8h_source.html">sitkSpeckleNoiseImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkSpeckleNoiseImageFilter_8h_source.html#l00114">114</a> of file <a class="el" href="sitkSpeckleNoiseImageFilter_8h_source.html">sitkSpeckleNoiseImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -780,7 +743,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkSpeckleNoiseImageFilter_8h_source.html#l00120">120</a> of file <a class="el" href="sitkSpeckleNoiseImageFilter_8h_source.html">sitkSpeckleNoiseImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkSpeckleNoiseImageFilter_8h_source.html#l00116">116</a> of file <a class="el" href="sitkSpeckleNoiseImageFilter_8h_source.html">sitkSpeckleNoiseImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -804,7 +767,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkSpeckleNoiseImageFilter_8h_source.html#l00124">124</a> of file <a class="el" href="sitkSpeckleNoiseImageFilter_8h_source.html">sitkSpeckleNoiseImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkSpeckleNoiseImageFilter_8h_source.html#l00120">120</a> of file <a class="el" href="sitkSpeckleNoiseImageFilter_8h_source.html">sitkSpeckleNoiseImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -828,7 +791,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkSpeckleNoiseImageFilter_8h_source.html#l00123">123</a> of file <a class="el" href="sitkSpeckleNoiseImageFilter_8h_source.html">sitkSpeckleNoiseImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkSpeckleNoiseImageFilter_8h_source.html#l00119">119</a> of file <a class="el" href="sitkSpeckleNoiseImageFilter_8h_source.html">sitkSpeckleNoiseImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -838,7 +801,7 @@ template&lt;class TImageType &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Mar 20 2020 03:18:15 for SimpleITK by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Mar 26 2020 03:20:00 for SimpleITK by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

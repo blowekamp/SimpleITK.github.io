@@ -19,7 +19,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">SimpleITK
-   &#160;<span id="projectnumber">2.0.0rc1.post7</span>
+   &#160;<span id="projectnumber">2.0.0rc1.post21</span>
    </div>
   </td>
  </tr>
@@ -144,8 +144,6 @@ Public Types</h2></td></tr>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:aeccc133f5ae1841f5d74abfaff7292e4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classitk_1_1simple_1_1Image.html">Image</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1WarpImageFilter.html#aeccc133f5ae1841f5d74abfaff7292e4">Execute</a> (const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> &amp;image, const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> &amp;displacementField)</td></tr>
 <tr class="separator:aeccc133f5ae1841f5d74abfaff7292e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1d986e9ff6ad493b48176da22bb77e61"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classitk_1_1simple_1_1Image.html">Image</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1WarpImageFilter.html#a1d986e9ff6ad493b48176da22bb77e61">Execute</a> (const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> &amp;image, const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> &amp;displacementField, <a class="el" href="namespaceitk_1_1simple.html#a7cb1ef8bd02c669c02ea2f9f5aa374e5">InterpolatorEnum</a> interpolator, const std::vector&lt; <a class="elRef" href="https://www.itk.org/Doxygen/html/namespaceitk.html#a575b8e3e1ee797dd1bbaf9724ed68f92">uint32_t</a> &gt; &amp;outputSize, const std::vector&lt; double &gt; &amp;outputOrigin, const std::vector&lt; double &gt; &amp;outputSpacing, std::vector&lt; double &gt; outputDirection, double edgePaddingValue)</td></tr>
-<tr class="separator:a1d986e9ff6ad493b48176da22bb77e61"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a74a5585736643e3a6058c2507d0731ef"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1WarpImageFilter.html#a74a5585736643e3a6058c2507d0731ef">GetEdgePaddingValue</a> () const</td></tr>
 <tr class="separator:a74a5585736643e3a6058c2507d0731ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2fa83acbd2c085d84239216ed312540f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceitk_1_1simple.html#a7cb1ef8bd02c669c02ea2f9f5aa374e5">InterpolatorEnum</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1WarpImageFilter.html#a2fa83acbd2c085d84239216ed312540f">GetInterpolator</a> () const</td></tr>
@@ -345,7 +343,7 @@ Additional Inherited Members</h2></td></tr>
 <p>The output image is produced by inverse mapping: the output pixels are mapped back onto the input image. This scheme avoids the creation of any holes and overlaps in the output image.</p>
 <p>Each vector in the displacement field represent the distance between a geometric point in the input space and a point in the output space such that:</p>
 <p class="formulaDsp">
-<img class="formulaDsp" alt="\[ p_{in} = p_{out} + d \]" src="form_98.png"/>
+<img class="formulaDsp" alt="\[ p_{in} = p_{out} + d \]" src="form_99.png"/>
 </p>
 <p>Typically the mapped position does not correspond to an integer pixel position in the input image. Interpolation via an image function is used to compute values at non-integer positions. The default interpolation typed used is the <a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1LinearInterpolateImageFunction.html">LinearInterpolateImageFunction</a> . The user can specify a particular interpolation function via <a class="el" href="classitk_1_1simple_1_1WarpImageFilter.html#a05ee625d25e7368f7bf7c25ed9b187e7">SetInterpolator()</a> . Note that the input interpolator must derive from base class <a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1InterpolateImageFunction.html">InterpolateImageFunction</a> .</p>
 <p>Position mapped to outside of the input image buffer are assigned a edge padding value.</p>
@@ -381,7 +379,7 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 <p>Setup for member function dispatching </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkWarpImageFilter_8h_source.html#l00161">161</a> of file <a class="el" href="sitkWarpImageFilter_8h_source.html">sitkWarpImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkWarpImageFilter_8h_source.html#l00157">157</a> of file <a class="el" href="sitkWarpImageFilter_8h_source.html">sitkWarpImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -541,7 +539,7 @@ template&lt;class TImageType1 , class TImageType2 &gt; </div>
 </div>
 </div>
 <a id="aeccc133f5ae1841f5d74abfaff7292e4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aeccc133f5ae1841f5d74abfaff7292e4">&#9670;&nbsp;</a></span>Execute() <span class="overload">[1/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#aeccc133f5ae1841f5d74abfaff7292e4">&#9670;&nbsp;</a></span>Execute()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -566,71 +564,6 @@ template&lt;class TImageType1 , class TImageType2 &gt; </div>
       </table>
 </div><div class="memdoc">
 <p>Execute the filter on the input image </p>
-
-</div>
-</div>
-<a id="a1d986e9ff6ad493b48176da22bb77e61"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1d986e9ff6ad493b48176da22bb77e61">&#9670;&nbsp;</a></span>Execute() <span class="overload">[2/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> itk::simple::WarpImageFilter::Execute </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> &amp;&#160;</td>
-          <td class="paramname"><em>image</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> &amp;&#160;</td>
-          <td class="paramname"><em>displacementField</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="namespaceitk_1_1simple.html#a7cb1ef8bd02c669c02ea2f9f5aa374e5">InterpolatorEnum</a>&#160;</td>
-          <td class="paramname"><em>interpolator</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const std::vector&lt; <a class="elRef" href="https://www.itk.org/Doxygen/html/namespaceitk.html#a575b8e3e1ee797dd1bbaf9724ed68f92">uint32_t</a> &gt; &amp;&#160;</td>
-          <td class="paramname"><em>outputSize</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const std::vector&lt; double &gt; &amp;&#160;</td>
-          <td class="paramname"><em>outputOrigin</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const std::vector&lt; double &gt; &amp;&#160;</td>
-          <td class="paramname"><em>outputSpacing</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">std::vector&lt; double &gt;&#160;</td>
-          <td class="paramname"><em>outputDirection</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>edgePaddingValue</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Execute the filter on the input image with the given parameters </p>
 
 </div>
 </div>
@@ -1074,7 +1007,7 @@ template&lt;class TImageType1 , class TImageType2 &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkWarpImageFilter_8h_source.html#l00163">163</a> of file <a class="el" href="sitkWarpImageFilter_8h_source.html">sitkWarpImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkWarpImageFilter_8h_source.html#l00159">159</a> of file <a class="el" href="sitkWarpImageFilter_8h_source.html">sitkWarpImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -1098,7 +1031,7 @@ template&lt;class TImageType1 , class TImageType2 &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkWarpImageFilter_8h_source.html#l00165">165</a> of file <a class="el" href="sitkWarpImageFilter_8h_source.html">sitkWarpImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkWarpImageFilter_8h_source.html#l00161">161</a> of file <a class="el" href="sitkWarpImageFilter_8h_source.html">sitkWarpImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -1123,7 +1056,7 @@ template&lt;class TImageType1 , class TImageType2 &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkWarpImageFilter_8h_source.html#l00168">168</a> of file <a class="el" href="sitkWarpImageFilter_8h_source.html">sitkWarpImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkWarpImageFilter_8h_source.html#l00164">164</a> of file <a class="el" href="sitkWarpImageFilter_8h_source.html">sitkWarpImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -1147,7 +1080,7 @@ template&lt;class TImageType1 , class TImageType2 &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkWarpImageFilter_8h_source.html#l00182">182</a> of file <a class="el" href="sitkWarpImageFilter_8h_source.html">sitkWarpImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkWarpImageFilter_8h_source.html#l00178">178</a> of file <a class="el" href="sitkWarpImageFilter_8h_source.html">sitkWarpImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -1171,7 +1104,7 @@ template&lt;class TImageType1 , class TImageType2 &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkWarpImageFilter_8h_source.html#l00173">173</a> of file <a class="el" href="sitkWarpImageFilter_8h_source.html">sitkWarpImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkWarpImageFilter_8h_source.html#l00169">169</a> of file <a class="el" href="sitkWarpImageFilter_8h_source.html">sitkWarpImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -1195,7 +1128,7 @@ template&lt;class TImageType1 , class TImageType2 &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkWarpImageFilter_8h_source.html#l00181">181</a> of file <a class="el" href="sitkWarpImageFilter_8h_source.html">sitkWarpImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkWarpImageFilter_8h_source.html#l00177">177</a> of file <a class="el" href="sitkWarpImageFilter_8h_source.html">sitkWarpImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -1219,7 +1152,7 @@ template&lt;class TImageType1 , class TImageType2 &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkWarpImageFilter_8h_source.html#l00177">177</a> of file <a class="el" href="sitkWarpImageFilter_8h_source.html">sitkWarpImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkWarpImageFilter_8h_source.html#l00173">173</a> of file <a class="el" href="sitkWarpImageFilter_8h_source.html">sitkWarpImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -1243,7 +1176,7 @@ template&lt;class TImageType1 , class TImageType2 &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkWarpImageFilter_8h_source.html#l00175">175</a> of file <a class="el" href="sitkWarpImageFilter_8h_source.html">sitkWarpImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkWarpImageFilter_8h_source.html#l00171">171</a> of file <a class="el" href="sitkWarpImageFilter_8h_source.html">sitkWarpImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -1267,7 +1200,7 @@ template&lt;class TImageType1 , class TImageType2 &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkWarpImageFilter_8h_source.html#l00179">179</a> of file <a class="el" href="sitkWarpImageFilter_8h_source.html">sitkWarpImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkWarpImageFilter_8h_source.html#l00175">175</a> of file <a class="el" href="sitkWarpImageFilter_8h_source.html">sitkWarpImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -1277,7 +1210,7 @@ template&lt;class TImageType1 , class TImageType2 &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Mar 20 2020 03:18:16 for SimpleITK by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Mar 26 2020 03:20:01 for SimpleITK by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

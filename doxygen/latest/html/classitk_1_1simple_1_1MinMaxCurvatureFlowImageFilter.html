@@ -19,7 +19,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">SimpleITK
-   &#160;<span id="projectnumber">2.0.0rc1.post7</span>
+   &#160;<span id="projectnumber">2.0.0rc1.post21</span>
    </div>
   </td>
  </tr>
@@ -142,8 +142,6 @@ Public Types</h2></td></tr>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:afd4730b8cf90a4175da834418edd5d85"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classitk_1_1simple_1_1Image.html">Image</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1MinMaxCurvatureFlowImageFilter.html#afd4730b8cf90a4175da834418edd5d85">Execute</a> (const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> &amp;image1)</td></tr>
 <tr class="separator:afd4730b8cf90a4175da834418edd5d85"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4efee8aeaa1acb1e7ece2da19502e2f0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classitk_1_1simple_1_1Image.html">Image</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1MinMaxCurvatureFlowImageFilter.html#a4efee8aeaa1acb1e7ece2da19502e2f0">Execute</a> (const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> &amp;image1, double timeStep, <a class="elRef" href="https://www.itk.org/Doxygen/html/namespaceitk.html#a575b8e3e1ee797dd1bbaf9724ed68f92">uint32_t</a> numberOfIterations, int stencilRadius)</td></tr>
-<tr class="separator:a4efee8aeaa1acb1e7ece2da19502e2f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae2977a97d6cc8ea155840ee1ebadddf0"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1MinMaxCurvatureFlowImageFilter.html#ae2977a97d6cc8ea155840ee1ebadddf0">GetName</a> () const</td></tr>
 <tr class="separator:ae2977a97d6cc8ea155840ee1ebadddf0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abb13df62bdeded85d9b435e45909fe3d"><td class="memItemLeft" align="right" valign="top"><a class="elRef" href="https://www.itk.org/Doxygen/html/namespaceitk.html#a575b8e3e1ee797dd1bbaf9724ed68f92">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1MinMaxCurvatureFlowImageFilter.html#abb13df62bdeded85d9b435e45909fe3d">GetNumberOfIterations</a> () const</td></tr>
@@ -317,7 +315,7 @@ Additional Inherited Members</h2></td></tr>
 <p class="formulaDsp">
 <img class="formulaDsp" alt="\[ I_t = F_{\mbox{minmax}} |\nabla I| \]" src="form_19.png"/>
 </p>
-<p>where <img class="formulaInl" alt="$ F_{\mbox{minmax}} = \max(\kappa,0) $" src="form_53.png"/> if <img class="formulaInl" alt="$ \mbox{Avg}_{\mbox{stencil}}(x) $" src="form_21.png"/> is less than or equal to <img class="formulaInl" alt="$ T_{threshold} $" src="form_22.png"/> and <img class="formulaInl" alt="$ \min(\kappa,0) $" src="form_54.png"/> , otherwise. <img class="formulaInl" alt="$ \kappa $" src="form_24.png"/> is the mean curvature of the iso-brightness contour at point <img class="formulaInl" alt="$ x $" src="form_25.png"/> .</p>
+<p>where <img class="formulaInl" alt="$ F_{\mbox{minmax}} = \max(\kappa,0) $" src="form_54.png"/> if <img class="formulaInl" alt="$ \mbox{Avg}_{\mbox{stencil}}(x) $" src="form_21.png"/> is less than or equal to <img class="formulaInl" alt="$ T_{threshold} $" src="form_22.png"/> and <img class="formulaInl" alt="$ \min(\kappa,0) $" src="form_55.png"/> , otherwise. <img class="formulaInl" alt="$ \kappa $" src="form_24.png"/> is the mean curvature of the iso-brightness contour at point <img class="formulaInl" alt="$ x $" src="form_25.png"/> .</p>
 <p>In min/max curvature flow, movement is turned on or off depending on the scale of the noise one wants to remove. Switching depends on the average image value of a region of radius <img class="formulaInl" alt="$ R $" src="form_26.png"/> around each point. The choice of <img class="formulaInl" alt="$ R $" src="form_26.png"/> , the stencil radius, governs the scale of the noise to be removed.</p>
 <p>The threshold value <img class="formulaInl" alt="$ T_{threshold} $" src="form_22.png"/> is the average intensity obtained in the direction perpendicular to the gradient at point <img class="formulaInl" alt="$ x $" src="form_25.png"/> at the extrema of the local neighborhood.</p>
 <p>This filter make use of the multi-threaded finite difference solver hierarchy. Updates are computed using a <a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1MinMaxCurvatureFlowFunction.html">MinMaxCurvatureFlowFunction</a> object. A zero flux Neumann boundary condition is used when computing derivatives near the data boundary.</p>
@@ -356,7 +354,7 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 <p>Setup for member function dispatching </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkMinMaxCurvatureFlowImageFilter_8h_source.html#l00124">124</a> of file <a class="el" href="sitkMinMaxCurvatureFlowImageFilter_8h_source.html">sitkMinMaxCurvatureFlowImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkMinMaxCurvatureFlowImageFilter_8h_source.html#l00120">120</a> of file <a class="el" href="sitkMinMaxCurvatureFlowImageFilter_8h_source.html">sitkMinMaxCurvatureFlowImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -440,7 +438,7 @@ Additional Inherited Members</h2></td></tr>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
 <a id="afd4730b8cf90a4175da834418edd5d85"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afd4730b8cf90a4175da834418edd5d85">&#9670;&nbsp;</a></span>Execute() <span class="overload">[1/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#afd4730b8cf90a4175da834418edd5d85">&#9670;&nbsp;</a></span>Execute()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -455,47 +453,6 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Execute the filter on the input image </p>
-
-</div>
-</div>
-<a id="a4efee8aeaa1acb1e7ece2da19502e2f0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4efee8aeaa1acb1e7ece2da19502e2f0">&#9670;&nbsp;</a></span>Execute() <span class="overload">[2/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> itk::simple::MinMaxCurvatureFlowImageFilter::Execute </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> &amp;&#160;</td>
-          <td class="paramname"><em>image1</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>timeStep</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="elRef" href="https://www.itk.org/Doxygen/html/namespaceitk.html#a575b8e3e1ee797dd1bbaf9724ed68f92">uint32_t</a>&#160;</td>
-          <td class="paramname"><em>numberOfIterations</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>stencilRadius</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Execute the filter on the input image with the given parameters </p>
 
 </div>
 </div>
@@ -773,7 +730,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkMinMaxCurvatureFlowImageFilter_8h_source.html#l00128">128</a> of file <a class="el" href="sitkMinMaxCurvatureFlowImageFilter_8h_source.html">sitkMinMaxCurvatureFlowImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkMinMaxCurvatureFlowImageFilter_8h_source.html#l00124">124</a> of file <a class="el" href="sitkMinMaxCurvatureFlowImageFilter_8h_source.html">sitkMinMaxCurvatureFlowImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -798,7 +755,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkMinMaxCurvatureFlowImageFilter_8h_source.html#l00130">130</a> of file <a class="el" href="sitkMinMaxCurvatureFlowImageFilter_8h_source.html">sitkMinMaxCurvatureFlowImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkMinMaxCurvatureFlowImageFilter_8h_source.html#l00126">126</a> of file <a class="el" href="sitkMinMaxCurvatureFlowImageFilter_8h_source.html">sitkMinMaxCurvatureFlowImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -822,7 +779,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkMinMaxCurvatureFlowImageFilter_8h_source.html#l00136">136</a> of file <a class="el" href="sitkMinMaxCurvatureFlowImageFilter_8h_source.html">sitkMinMaxCurvatureFlowImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkMinMaxCurvatureFlowImageFilter_8h_source.html#l00132">132</a> of file <a class="el" href="sitkMinMaxCurvatureFlowImageFilter_8h_source.html">sitkMinMaxCurvatureFlowImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -846,7 +803,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkMinMaxCurvatureFlowImageFilter_8h_source.html#l00137">137</a> of file <a class="el" href="sitkMinMaxCurvatureFlowImageFilter_8h_source.html">sitkMinMaxCurvatureFlowImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkMinMaxCurvatureFlowImageFilter_8h_source.html#l00133">133</a> of file <a class="el" href="sitkMinMaxCurvatureFlowImageFilter_8h_source.html">sitkMinMaxCurvatureFlowImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -870,7 +827,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkMinMaxCurvatureFlowImageFilter_8h_source.html#l00134">134</a> of file <a class="el" href="sitkMinMaxCurvatureFlowImageFilter_8h_source.html">sitkMinMaxCurvatureFlowImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkMinMaxCurvatureFlowImageFilter_8h_source.html#l00130">130</a> of file <a class="el" href="sitkMinMaxCurvatureFlowImageFilter_8h_source.html">sitkMinMaxCurvatureFlowImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -880,7 +837,7 @@ template&lt;class TImageType &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Mar 20 2020 03:18:13 for SimpleITK by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Mar 26 2020 03:19:59 for SimpleITK by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

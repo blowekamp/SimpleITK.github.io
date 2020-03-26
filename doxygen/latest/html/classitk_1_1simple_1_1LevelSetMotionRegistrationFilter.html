@@ -19,7 +19,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">SimpleITK
-   &#160;<span id="projectnumber">2.0.0rc1.post7</span>
+   &#160;<span id="projectnumber">2.0.0rc1.post21</span>
    </div>
   </td>
  </tr>
@@ -143,8 +143,6 @@ Public Types</h2></td></tr>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a5778c4736db336fd84372347f9bdd628"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classitk_1_1simple_1_1Image.html">Image</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1LevelSetMotionRegistrationFilter.html#a5778c4736db336fd84372347f9bdd628">Execute</a> (const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> &amp;fixedImage, const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> &amp;movingImage)</td></tr>
 <tr class="separator:a5778c4736db336fd84372347f9bdd628"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae8953237617c1510add5dae46873cb3b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classitk_1_1simple_1_1Image.html">Image</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1LevelSetMotionRegistrationFilter.html#ae8953237617c1510add5dae46873cb3b">Execute</a> (const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> &amp;fixedImage, const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> &amp;movingImage, double gradientSmoothingStandardDeviations, <a class="elRef" href="https://www.itk.org/Doxygen/html/namespaceitk.html#a575b8e3e1ee797dd1bbaf9724ed68f92">uint32_t</a> numberOfIterations, double maximumRMSError, const std::vector&lt; double &gt; &amp;standardDeviations, bool smoothDisplacementField, const std::vector&lt; double &gt; &amp;updateFieldStandardDeviations, bool smoothUpdateField, unsigned int maximumKernelWidth, double maximumError, double alpha, double intensityDifferenceThreshold, double gradientMagnitudeThreshold, bool useImageSpacing)</td></tr>
-<tr class="separator:ae8953237617c1510add5dae46873cb3b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5dd57e8e5e8f4a18d3195360725546eb"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1LevelSetMotionRegistrationFilter.html#a5dd57e8e5e8f4a18d3195360725546eb">GetAlpha</a> () const</td></tr>
 <tr class="separator:a5dd57e8e5e8f4a18d3195360725546eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5847c765b3ef3c54d7b435045bf3f826"><td class="memItemLeft" align="right" valign="top"><a class="elRef" href="https://www.itk.org/Doxygen/html/namespaceitk.html#a575b8e3e1ee797dd1bbaf9724ed68f92">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1LevelSetMotionRegistrationFilter.html#a5847c765b3ef3c54d7b435045bf3f826">GetElapsedIterations</a> () const</td></tr>
@@ -442,7 +440,7 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 <p>Setup for member function dispatching </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkLevelSetMotionRegistrationFilter_8h_source.html#l00261">261</a> of file <a class="el" href="sitkLevelSetMotionRegistrationFilter_8h_source.html">sitkLevelSetMotionRegistrationFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkLevelSetMotionRegistrationFilter_8h_source.html#l00257">257</a> of file <a class="el" href="sitkLevelSetMotionRegistrationFilter_8h_source.html">sitkLevelSetMotionRegistrationFilter.h</a>.</p>
 
 </div>
 </div>
@@ -526,7 +524,7 @@ Additional Inherited Members</h2></td></tr>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
 <a id="a5778c4736db336fd84372347f9bdd628"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5778c4736db336fd84372347f9bdd628">&#9670;&nbsp;</a></span>Execute() <span class="overload">[1/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a5778c4736db336fd84372347f9bdd628">&#9670;&nbsp;</a></span>Execute()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -551,113 +549,6 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Execute the filter on the input image </p>
-
-</div>
-</div>
-<a id="ae8953237617c1510add5dae46873cb3b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae8953237617c1510add5dae46873cb3b">&#9670;&nbsp;</a></span>Execute() <span class="overload">[2/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> itk::simple::LevelSetMotionRegistrationFilter::Execute </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> &amp;&#160;</td>
-          <td class="paramname"><em>fixedImage</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> &amp;&#160;</td>
-          <td class="paramname"><em>movingImage</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>gradientSmoothingStandardDeviations</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="elRef" href="https://www.itk.org/Doxygen/html/namespaceitk.html#a575b8e3e1ee797dd1bbaf9724ed68f92">uint32_t</a>&#160;</td>
-          <td class="paramname"><em>numberOfIterations</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>maximumRMSError</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const std::vector&lt; double &gt; &amp;&#160;</td>
-          <td class="paramname"><em>standardDeviations</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>smoothDisplacementField</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const std::vector&lt; double &gt; &amp;&#160;</td>
-          <td class="paramname"><em>updateFieldStandardDeviations</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>smoothUpdateField</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">unsigned int&#160;</td>
-          <td class="paramname"><em>maximumKernelWidth</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>maximumError</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>alpha</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>intensityDifferenceThreshold</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>gradientMagnitudeThreshold</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>useImageSpacing</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Execute the filter on the input image with the given parameters </p>
 
 </div>
 </div>
@@ -1821,7 +1712,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkLevelSetMotionRegistrationFilter_8h_source.html#l00265">265</a> of file <a class="el" href="sitkLevelSetMotionRegistrationFilter_8h_source.html">sitkLevelSetMotionRegistrationFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkLevelSetMotionRegistrationFilter_8h_source.html#l00261">261</a> of file <a class="el" href="sitkLevelSetMotionRegistrationFilter_8h_source.html">sitkLevelSetMotionRegistrationFilter.h</a>.</p>
 
 </div>
 </div>
@@ -1846,7 +1737,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkLevelSetMotionRegistrationFilter_8h_source.html#l00281">281</a> of file <a class="el" href="sitkLevelSetMotionRegistrationFilter_8h_source.html">sitkLevelSetMotionRegistrationFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkLevelSetMotionRegistrationFilter_8h_source.html#l00277">277</a> of file <a class="el" href="sitkLevelSetMotionRegistrationFilter_8h_source.html">sitkLevelSetMotionRegistrationFilter.h</a>.</p>
 
 </div>
 </div>
@@ -1870,7 +1761,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkLevelSetMotionRegistrationFilter_8h_source.html#l00286">286</a> of file <a class="el" href="sitkLevelSetMotionRegistrationFilter_8h_source.html">sitkLevelSetMotionRegistrationFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkLevelSetMotionRegistrationFilter_8h_source.html#l00282">282</a> of file <a class="el" href="sitkLevelSetMotionRegistrationFilter_8h_source.html">sitkLevelSetMotionRegistrationFilter.h</a>.</p>
 
 </div>
 </div>
@@ -1894,7 +1785,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkLevelSetMotionRegistrationFilter_8h_source.html#l00283">283</a> of file <a class="el" href="sitkLevelSetMotionRegistrationFilter_8h_source.html">sitkLevelSetMotionRegistrationFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkLevelSetMotionRegistrationFilter_8h_source.html#l00279">279</a> of file <a class="el" href="sitkLevelSetMotionRegistrationFilter_8h_source.html">sitkLevelSetMotionRegistrationFilter.h</a>.</p>
 
 </div>
 </div>
@@ -1918,7 +1809,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkLevelSetMotionRegistrationFilter_8h_source.html#l00270">270</a> of file <a class="el" href="sitkLevelSetMotionRegistrationFilter_8h_source.html">sitkLevelSetMotionRegistrationFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkLevelSetMotionRegistrationFilter_8h_source.html#l00266">266</a> of file <a class="el" href="sitkLevelSetMotionRegistrationFilter_8h_source.html">sitkLevelSetMotionRegistrationFilter.h</a>.</p>
 
 </div>
 </div>
@@ -1942,7 +1833,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkLevelSetMotionRegistrationFilter_8h_source.html#l00282">282</a> of file <a class="el" href="sitkLevelSetMotionRegistrationFilter_8h_source.html">sitkLevelSetMotionRegistrationFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkLevelSetMotionRegistrationFilter_8h_source.html#l00278">278</a> of file <a class="el" href="sitkLevelSetMotionRegistrationFilter_8h_source.html">sitkLevelSetMotionRegistrationFilter.h</a>.</p>
 
 </div>
 </div>
@@ -1966,7 +1857,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkLevelSetMotionRegistrationFilter_8h_source.html#l00280">280</a> of file <a class="el" href="sitkLevelSetMotionRegistrationFilter_8h_source.html">sitkLevelSetMotionRegistrationFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkLevelSetMotionRegistrationFilter_8h_source.html#l00276">276</a> of file <a class="el" href="sitkLevelSetMotionRegistrationFilter_8h_source.html">sitkLevelSetMotionRegistrationFilter.h</a>.</p>
 
 </div>
 </div>
@@ -1990,7 +1881,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkLevelSetMotionRegistrationFilter_8h_source.html#l00279">279</a> of file <a class="el" href="sitkLevelSetMotionRegistrationFilter_8h_source.html">sitkLevelSetMotionRegistrationFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkLevelSetMotionRegistrationFilter_8h_source.html#l00275">275</a> of file <a class="el" href="sitkLevelSetMotionRegistrationFilter_8h_source.html">sitkLevelSetMotionRegistrationFilter.h</a>.</p>
 
 </div>
 </div>
@@ -2014,7 +1905,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkLevelSetMotionRegistrationFilter_8h_source.html#l00274">274</a> of file <a class="el" href="sitkLevelSetMotionRegistrationFilter_8h_source.html">sitkLevelSetMotionRegistrationFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkLevelSetMotionRegistrationFilter_8h_source.html#l00270">270</a> of file <a class="el" href="sitkLevelSetMotionRegistrationFilter_8h_source.html">sitkLevelSetMotionRegistrationFilter.h</a>.</p>
 
 </div>
 </div>
@@ -2038,7 +1929,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkLevelSetMotionRegistrationFilter_8h_source.html#l00267">267</a> of file <a class="el" href="sitkLevelSetMotionRegistrationFilter_8h_source.html">sitkLevelSetMotionRegistrationFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkLevelSetMotionRegistrationFilter_8h_source.html#l00263">263</a> of file <a class="el" href="sitkLevelSetMotionRegistrationFilter_8h_source.html">sitkLevelSetMotionRegistrationFilter.h</a>.</p>
 
 </div>
 </div>
@@ -2062,7 +1953,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkLevelSetMotionRegistrationFilter_8h_source.html#l00290">290</a> of file <a class="el" href="sitkLevelSetMotionRegistrationFilter_8h_source.html">sitkLevelSetMotionRegistrationFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkLevelSetMotionRegistrationFilter_8h_source.html#l00286">286</a> of file <a class="el" href="sitkLevelSetMotionRegistrationFilter_8h_source.html">sitkLevelSetMotionRegistrationFilter.h</a>.</p>
 
 </div>
 </div>
@@ -2086,7 +1977,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkLevelSetMotionRegistrationFilter_8h_source.html#l00272">272</a> of file <a class="el" href="sitkLevelSetMotionRegistrationFilter_8h_source.html">sitkLevelSetMotionRegistrationFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkLevelSetMotionRegistrationFilter_8h_source.html#l00268">268</a> of file <a class="el" href="sitkLevelSetMotionRegistrationFilter_8h_source.html">sitkLevelSetMotionRegistrationFilter.h</a>.</p>
 
 </div>
 </div>
@@ -2110,7 +2001,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkLevelSetMotionRegistrationFilter_8h_source.html#l00288">288</a> of file <a class="el" href="sitkLevelSetMotionRegistrationFilter_8h_source.html">sitkLevelSetMotionRegistrationFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkLevelSetMotionRegistrationFilter_8h_source.html#l00284">284</a> of file <a class="el" href="sitkLevelSetMotionRegistrationFilter_8h_source.html">sitkLevelSetMotionRegistrationFilter.h</a>.</p>
 
 </div>
 </div>
@@ -2134,7 +2025,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkLevelSetMotionRegistrationFilter_8h_source.html#l00276">276</a> of file <a class="el" href="sitkLevelSetMotionRegistrationFilter_8h_source.html">sitkLevelSetMotionRegistrationFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkLevelSetMotionRegistrationFilter_8h_source.html#l00272">272</a> of file <a class="el" href="sitkLevelSetMotionRegistrationFilter_8h_source.html">sitkLevelSetMotionRegistrationFilter.h</a>.</p>
 
 </div>
 </div>
@@ -2158,7 +2049,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkLevelSetMotionRegistrationFilter_8h_source.html#l00278">278</a> of file <a class="el" href="sitkLevelSetMotionRegistrationFilter_8h_source.html">sitkLevelSetMotionRegistrationFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkLevelSetMotionRegistrationFilter_8h_source.html#l00274">274</a> of file <a class="el" href="sitkLevelSetMotionRegistrationFilter_8h_source.html">sitkLevelSetMotionRegistrationFilter.h</a>.</p>
 
 </div>
 </div>
@@ -2182,7 +2073,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkLevelSetMotionRegistrationFilter_8h_source.html#l00275">275</a> of file <a class="el" href="sitkLevelSetMotionRegistrationFilter_8h_source.html">sitkLevelSetMotionRegistrationFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkLevelSetMotionRegistrationFilter_8h_source.html#l00271">271</a> of file <a class="el" href="sitkLevelSetMotionRegistrationFilter_8h_source.html">sitkLevelSetMotionRegistrationFilter.h</a>.</p>
 
 </div>
 </div>
@@ -2206,7 +2097,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkLevelSetMotionRegistrationFilter_8h_source.html#l00277">277</a> of file <a class="el" href="sitkLevelSetMotionRegistrationFilter_8h_source.html">sitkLevelSetMotionRegistrationFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkLevelSetMotionRegistrationFilter_8h_source.html#l00273">273</a> of file <a class="el" href="sitkLevelSetMotionRegistrationFilter_8h_source.html">sitkLevelSetMotionRegistrationFilter.h</a>.</p>
 
 </div>
 </div>
@@ -2230,7 +2121,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkLevelSetMotionRegistrationFilter_8h_source.html#l00284">284</a> of file <a class="el" href="sitkLevelSetMotionRegistrationFilter_8h_source.html">sitkLevelSetMotionRegistrationFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkLevelSetMotionRegistrationFilter_8h_source.html#l00280">280</a> of file <a class="el" href="sitkLevelSetMotionRegistrationFilter_8h_source.html">sitkLevelSetMotionRegistrationFilter.h</a>.</p>
 
 </div>
 </div>
@@ -2240,7 +2131,7 @@ template&lt;class TImageType &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Mar 20 2020 03:18:13 for SimpleITK by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Mar 26 2020 03:19:58 for SimpleITK by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

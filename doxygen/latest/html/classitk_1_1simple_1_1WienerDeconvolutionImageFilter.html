@@ -19,7 +19,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">SimpleITK
-   &#160;<span id="projectnumber">2.0.0rc1.post7</span>
+   &#160;<span id="projectnumber">2.0.0rc1.post21</span>
    </div>
   </td>
  </tr>
@@ -158,8 +158,6 @@ Public Types</h2></td></tr>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:aa24bebc4df8525f99f27cfb8022b4346"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classitk_1_1simple_1_1Image.html">Image</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1WienerDeconvolutionImageFilter.html#aa24bebc4df8525f99f27cfb8022b4346">Execute</a> (const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> &amp;image1, const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> &amp;image2)</td></tr>
 <tr class="separator:aa24bebc4df8525f99f27cfb8022b4346"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afdcd69abc4cc4e64c5140d0d9be12bed"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classitk_1_1simple_1_1Image.html">Image</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1WienerDeconvolutionImageFilter.html#afdcd69abc4cc4e64c5140d0d9be12bed">Execute</a> (const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> &amp;image1, const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> &amp;image2, double noiseVariance, bool normalize, <a class="el" href="classitk_1_1simple_1_1WienerDeconvolutionImageFilter.html#a289cbe50a52d991978643b2869ab6932">WienerDeconvolutionImageFilter::BoundaryConditionType</a> boundaryCondition, <a class="el" href="classitk_1_1simple_1_1WienerDeconvolutionImageFilter.html#aad30332dc6b4e7ef55e9efeacdb93fce">WienerDeconvolutionImageFilter::OutputRegionModeType</a> outputRegionMode)</td></tr>
-<tr class="separator:afdcd69abc4cc4e64c5140d0d9be12bed"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abac81d3e9267b74bd2ed2965b0c4d927"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classitk_1_1simple_1_1WienerDeconvolutionImageFilter.html#a289cbe50a52d991978643b2869ab6932">BoundaryConditionType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1WienerDeconvolutionImageFilter.html#abac81d3e9267b74bd2ed2965b0c4d927">GetBoundaryCondition</a> () const</td></tr>
 <tr class="separator:abac81d3e9267b74bd2ed2965b0c4d927"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a972c89b05b4f3892be2b5e9f93367836"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1WienerDeconvolutionImageFilter.html#a972c89b05b4f3892be2b5e9f93367836">GetName</a> () const</td></tr>
@@ -339,9 +337,9 @@ Additional Inherited Members</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>The Wiener deconvolution image filter is designed to restore an image convolved with a blurring kernel while keeping noise enhancement to a minimum. </p>
-<p>The Wiener filter aims to minimize noise enhancement induced by frequencies with low signal-to-noise ratio. The Wiener filter kernel is defined in the frequency domain as <img class="formulaInl" alt="$W(\omega) = H^*(\omega) / (|H(\omega)|^2 + (1 / SNR(\omega)))$" src="form_99.png"/> where <img class="formulaInl" alt="$H(\omega)$" src="form_46.png"/> is the Fourier transform of the blurring kernel with which the original image was convolved and the signal-to-noise ratio <img class="formulaInl" alt="$SNR(\omega)$" src="form_100.png"/> . <img class="formulaInl" alt="$SNR(\omega)$" src="form_100.png"/> is defined by <img class="formulaInl" alt="$P_f(\omega) / P_n(\omega)$" src="form_101.png"/> where <img class="formulaInl" alt="$P_f(\omega)$" src="form_102.png"/> is the power spectral density of the uncorrupted signal and <img class="formulaInl" alt="$P_n(\omega)$" src="form_103.png"/> is the power spectral density of the noise. When applied to the input blurred image, this filter produces an estimate <img class="formulaInl" alt="$\hat{f}(x)$" src="form_104.png"/> of the true underlying signal <img class="formulaInl" alt="$f(x)$" src="form_105.png"/> that minimizes the expected error between <img class="formulaInl" alt="$\hat{f}(x)$" src="form_104.png"/> and <img class="formulaInl" alt="$f(x)$" src="form_105.png"/> .</p>
+<p>The Wiener filter aims to minimize noise enhancement induced by frequencies with low signal-to-noise ratio. The Wiener filter kernel is defined in the frequency domain as <img class="formulaInl" alt="$W(\omega) = H^*(\omega) / (|H(\omega)|^2 + (1 / SNR(\omega)))$" src="form_100.png"/> where <img class="formulaInl" alt="$H(\omega)$" src="form_47.png"/> is the Fourier transform of the blurring kernel with which the original image was convolved and the signal-to-noise ratio <img class="formulaInl" alt="$SNR(\omega)$" src="form_101.png"/> . <img class="formulaInl" alt="$SNR(\omega)$" src="form_101.png"/> is defined by <img class="formulaInl" alt="$P_f(\omega) / P_n(\omega)$" src="form_102.png"/> where <img class="formulaInl" alt="$P_f(\omega)$" src="form_103.png"/> is the power spectral density of the uncorrupted signal and <img class="formulaInl" alt="$P_n(\omega)$" src="form_104.png"/> is the power spectral density of the noise. When applied to the input blurred image, this filter produces an estimate <img class="formulaInl" alt="$\hat{f}(x)$" src="form_105.png"/> of the true underlying signal <img class="formulaInl" alt="$f(x)$" src="form_106.png"/> that minimizes the expected error between <img class="formulaInl" alt="$\hat{f}(x)$" src="form_105.png"/> and <img class="formulaInl" alt="$f(x)$" src="form_106.png"/> .</p>
 <p>This filter requires two inputs, the image to be deconvolved and the blurring kernel. These two inputs can be set using the methods SetInput() and SetKernelImage() , respectively.</p>
-<p>The power spectral densities of the signal and noise are typically unavailable for a given problem. In particular, <img class="formulaInl" alt="$P_f(\omega)$" src="form_102.png"/> cannot be computed from <img class="formulaInl" alt="$f(x)$" src="form_105.png"/> because this unknown signal is precisely the signal that this filter aims to recover. Nevertheless, it is common for the noise to have a power spectral density that is flat or decreasing significantly more slowly than the power spectral density of a typical image as the frequency <img class="formulaInl" alt="$\omega$" src="form_106.png"/> increases. Hence, <img class="formulaInl" alt="$P_n(\omega)$" src="form_103.png"/> can typically be approximated with a constant, and this filter makes this assumption (see the NoiseVariance member variable). <img class="formulaInl" alt="$P_f(\omega)$" src="form_102.png"/> , on the other hand, will vary with input. This filter computes the power spectral density of the input blurred image, subtracts the power spectral density of the noise, and uses the result as the estimate of <img class="formulaInl" alt="$P_f(\omega)$" src="form_102.png"/> .</p>
+<p>The power spectral densities of the signal and noise are typically unavailable for a given problem. In particular, <img class="formulaInl" alt="$P_f(\omega)$" src="form_103.png"/> cannot be computed from <img class="formulaInl" alt="$f(x)$" src="form_106.png"/> because this unknown signal is precisely the signal that this filter aims to recover. Nevertheless, it is common for the noise to have a power spectral density that is flat or decreasing significantly more slowly than the power spectral density of a typical image as the frequency <img class="formulaInl" alt="$\omega$" src="form_107.png"/> increases. Hence, <img class="formulaInl" alt="$P_n(\omega)$" src="form_104.png"/> can typically be approximated with a constant, and this filter makes this assumption (see the NoiseVariance member variable). <img class="formulaInl" alt="$P_f(\omega)$" src="form_103.png"/> , on the other hand, will vary with input. This filter computes the power spectral density of the input blurred image, subtracts the power spectral density of the noise, and uses the result as the estimate of <img class="formulaInl" alt="$P_f(\omega)$" src="form_103.png"/> .</p>
 <p>For further information on the Wiener deconvolution filter, please see "Digital Signal Processing" by Kenneth R. Castleman, Prentice Hall, 1995</p>
 <dl class="section author"><dt>Author</dt><dd>Gaetan Lehmann, Biologie du Developpement et de la Reproduction, INRA de Jouy-en-Josas, France</dd>
 <dd>
@@ -375,7 +373,7 @@ Cory Quammen, The University of North Carolina at Chapel Hill </dd></dl>
 </div><div class="memdoc">
 <p>Setup for member function dispatching </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkWienerDeconvolutionImageFilter_8h_source.html#l00133">133</a> of file <a class="el" href="sitkWienerDeconvolutionImageFilter_8h_source.html">sitkWienerDeconvolutionImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkWienerDeconvolutionImageFilter_8h_source.html#l00129">129</a> of file <a class="el" href="sitkWienerDeconvolutionImageFilter_8h_source.html">sitkWienerDeconvolutionImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -501,7 +499,7 @@ Cory Quammen, The University of North Carolina at Chapel Hill </dd></dl>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
 <a id="aa24bebc4df8525f99f27cfb8022b4346"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa24bebc4df8525f99f27cfb8022b4346">&#9670;&nbsp;</a></span>Execute() <span class="overload">[1/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#aa24bebc4df8525f99f27cfb8022b4346">&#9670;&nbsp;</a></span>Execute()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -526,59 +524,6 @@ Cory Quammen, The University of North Carolina at Chapel Hill </dd></dl>
       </table>
 </div><div class="memdoc">
 <p>Execute the filter on the input images </p>
-
-</div>
-</div>
-<a id="afdcd69abc4cc4e64c5140d0d9be12bed"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afdcd69abc4cc4e64c5140d0d9be12bed">&#9670;&nbsp;</a></span>Execute() <span class="overload">[2/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> itk::simple::WienerDeconvolutionImageFilter::Execute </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> &amp;&#160;</td>
-          <td class="paramname"><em>image1</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> &amp;&#160;</td>
-          <td class="paramname"><em>image2</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>noiseVariance</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>normalize</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="classitk_1_1simple_1_1WienerDeconvolutionImageFilter.html#a289cbe50a52d991978643b2869ab6932">WienerDeconvolutionImageFilter::BoundaryConditionType</a>&#160;</td>
-          <td class="paramname"><em>boundaryCondition</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="classitk_1_1simple_1_1WienerDeconvolutionImageFilter.html#aad30332dc6b4e7ef55e9efeacdb93fce">WienerDeconvolutionImageFilter::OutputRegionModeType</a>&#160;</td>
-          <td class="paramname"><em>outputRegionMode</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Execute the filter on the input images with the given parameters </p>
 
 </div>
 </div>
@@ -979,7 +924,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkWienerDeconvolutionImageFilter_8h_source.html#l00137">137</a> of file <a class="el" href="sitkWienerDeconvolutionImageFilter_8h_source.html">sitkWienerDeconvolutionImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkWienerDeconvolutionImageFilter_8h_source.html#l00133">133</a> of file <a class="el" href="sitkWienerDeconvolutionImageFilter_8h_source.html">sitkWienerDeconvolutionImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -1004,7 +949,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkWienerDeconvolutionImageFilter_8h_source.html#l00145">145</a> of file <a class="el" href="sitkWienerDeconvolutionImageFilter_8h_source.html">sitkWienerDeconvolutionImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkWienerDeconvolutionImageFilter_8h_source.html#l00141">141</a> of file <a class="el" href="sitkWienerDeconvolutionImageFilter_8h_source.html">sitkWienerDeconvolutionImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -1028,7 +973,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkWienerDeconvolutionImageFilter_8h_source.html#l00139">139</a> of file <a class="el" href="sitkWienerDeconvolutionImageFilter_8h_source.html">sitkWienerDeconvolutionImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkWienerDeconvolutionImageFilter_8h_source.html#l00135">135</a> of file <a class="el" href="sitkWienerDeconvolutionImageFilter_8h_source.html">sitkWienerDeconvolutionImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -1052,7 +997,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkWienerDeconvolutionImageFilter_8h_source.html#l00142">142</a> of file <a class="el" href="sitkWienerDeconvolutionImageFilter_8h_source.html">sitkWienerDeconvolutionImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkWienerDeconvolutionImageFilter_8h_source.html#l00138">138</a> of file <a class="el" href="sitkWienerDeconvolutionImageFilter_8h_source.html">sitkWienerDeconvolutionImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -1076,7 +1021,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkWienerDeconvolutionImageFilter_8h_source.html#l00144">144</a> of file <a class="el" href="sitkWienerDeconvolutionImageFilter_8h_source.html">sitkWienerDeconvolutionImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkWienerDeconvolutionImageFilter_8h_source.html#l00140">140</a> of file <a class="el" href="sitkWienerDeconvolutionImageFilter_8h_source.html">sitkWienerDeconvolutionImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -1100,7 +1045,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkWienerDeconvolutionImageFilter_8h_source.html#l00146">146</a> of file <a class="el" href="sitkWienerDeconvolutionImageFilter_8h_source.html">sitkWienerDeconvolutionImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkWienerDeconvolutionImageFilter_8h_source.html#l00142">142</a> of file <a class="el" href="sitkWienerDeconvolutionImageFilter_8h_source.html">sitkWienerDeconvolutionImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -1110,7 +1055,7 @@ template&lt;class TImageType &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Mar 20 2020 03:18:16 for SimpleITK by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Mar 26 2020 03:20:01 for SimpleITK by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

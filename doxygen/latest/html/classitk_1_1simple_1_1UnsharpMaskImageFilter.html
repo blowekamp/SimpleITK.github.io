@@ -19,7 +19,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">SimpleITK
-   &#160;<span id="projectnumber">2.0.0rc1.post7</span>
+   &#160;<span id="projectnumber">2.0.0rc1.post21</span>
    </div>
   </td>
  </tr>
@@ -143,8 +143,6 @@ Public Types</h2></td></tr>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a06b0efd646020fdca8889c368949990f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classitk_1_1simple_1_1Image.html">Image</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1UnsharpMaskImageFilter.html#a06b0efd646020fdca8889c368949990f">Execute</a> (const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> &amp;image1)</td></tr>
 <tr class="separator:a06b0efd646020fdca8889c368949990f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9ce473572a6dc7e43d98337c0b22fe4d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classitk_1_1simple_1_1Image.html">Image</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1UnsharpMaskImageFilter.html#a9ce473572a6dc7e43d98337c0b22fe4d">Execute</a> (const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> &amp;image1, const std::vector&lt; double &gt; &amp;sigmas, double amount, double threshold)</td></tr>
-<tr class="separator:a9ce473572a6dc7e43d98337c0b22fe4d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4a9da899cbe434cdaacbcf706ae7d735"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1UnsharpMaskImageFilter.html#a4a9da899cbe434cdaacbcf706ae7d735">GetAmount</a> () const</td></tr>
 <tr class="separator:a4a9da899cbe434cdaacbcf706ae7d735"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a76947d65bc0f28afc6912987f6277446"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1UnsharpMaskImageFilter.html#a76947d65bc0f28afc6912987f6277446">GetName</a> () const</td></tr>
@@ -353,7 +351,7 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 <p>Setup for member function dispatching </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkUnsharpMaskImageFilter_8h_source.html#l00121">121</a> of file <a class="el" href="sitkUnsharpMaskImageFilter_8h_source.html">sitkUnsharpMaskImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkUnsharpMaskImageFilter_8h_source.html#l00117">117</a> of file <a class="el" href="sitkUnsharpMaskImageFilter_8h_source.html">sitkUnsharpMaskImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -437,7 +435,7 @@ Additional Inherited Members</h2></td></tr>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
 <a id="a06b0efd646020fdca8889c368949990f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a06b0efd646020fdca8889c368949990f">&#9670;&nbsp;</a></span>Execute() <span class="overload">[1/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a06b0efd646020fdca8889c368949990f">&#9670;&nbsp;</a></span>Execute()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -452,47 +450,6 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Execute the filter on the input image </p>
-
-</div>
-</div>
-<a id="a9ce473572a6dc7e43d98337c0b22fe4d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9ce473572a6dc7e43d98337c0b22fe4d">&#9670;&nbsp;</a></span>Execute() <span class="overload">[2/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> itk::simple::UnsharpMaskImageFilter::Execute </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> &amp;&#160;</td>
-          <td class="paramname"><em>image1</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const std::vector&lt; double &gt; &amp;&#160;</td>
-          <td class="paramname"><em>sigmas</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>amount</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>threshold</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Execute the filter on the input image with the given parameters </p>
 
 </div>
 </div>
@@ -805,7 +762,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkUnsharpMaskImageFilter_8h_source.html#l00125">125</a> of file <a class="el" href="sitkUnsharpMaskImageFilter_8h_source.html">sitkUnsharpMaskImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkUnsharpMaskImageFilter_8h_source.html#l00121">121</a> of file <a class="el" href="sitkUnsharpMaskImageFilter_8h_source.html">sitkUnsharpMaskImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -830,7 +787,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkUnsharpMaskImageFilter_8h_source.html#l00131">131</a> of file <a class="el" href="sitkUnsharpMaskImageFilter_8h_source.html">sitkUnsharpMaskImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkUnsharpMaskImageFilter_8h_source.html#l00127">127</a> of file <a class="el" href="sitkUnsharpMaskImageFilter_8h_source.html">sitkUnsharpMaskImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -854,7 +811,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkUnsharpMaskImageFilter_8h_source.html#l00127">127</a> of file <a class="el" href="sitkUnsharpMaskImageFilter_8h_source.html">sitkUnsharpMaskImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkUnsharpMaskImageFilter_8h_source.html#l00123">123</a> of file <a class="el" href="sitkUnsharpMaskImageFilter_8h_source.html">sitkUnsharpMaskImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -878,7 +835,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkUnsharpMaskImageFilter_8h_source.html#l00130">130</a> of file <a class="el" href="sitkUnsharpMaskImageFilter_8h_source.html">sitkUnsharpMaskImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkUnsharpMaskImageFilter_8h_source.html#l00126">126</a> of file <a class="el" href="sitkUnsharpMaskImageFilter_8h_source.html">sitkUnsharpMaskImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -902,7 +859,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkUnsharpMaskImageFilter_8h_source.html#l00132">132</a> of file <a class="el" href="sitkUnsharpMaskImageFilter_8h_source.html">sitkUnsharpMaskImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkUnsharpMaskImageFilter_8h_source.html#l00128">128</a> of file <a class="el" href="sitkUnsharpMaskImageFilter_8h_source.html">sitkUnsharpMaskImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -912,7 +869,7 @@ template&lt;class TImageType &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Mar 20 2020 03:18:15 for SimpleITK by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Mar 26 2020 03:20:01 for SimpleITK by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

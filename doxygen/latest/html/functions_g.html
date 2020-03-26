@@ -19,7 +19,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">SimpleITK
-   &#160;<span id="projectnumber">2.0.0rc1.post7</span>
+   &#160;<span id="projectnumber">2.0.0rc1.post21</span>
    </div>
   </td>
  </tr>
@@ -382,6 +382,9 @@ $(function() {
 <li>GetDescription()
 : <a class="el" href="classitk_1_1simple_1_1GenericException.html#a9eddf1d0a2ae647e290518c2fca9f951">itk::simple::GenericException</a>
 </li>
+<li>GetDesiredCoordinateOrientation()
+: <a class="el" href="classitk_1_1simple_1_1DICOMOrientImageFilter.html#a272625d003b8965ab90e0eb47b579161">itk::simple::DICOMOrientImageFilter</a>
+</li>
 <li>GetDestinationIndex()
 : <a class="el" href="classitk_1_1simple_1_1PasteImageFilter.html#afb67632d586836d35a3469881c64e765">itk::simple::PasteImageFilter</a>
 </li>
@@ -414,6 +417,9 @@ $(function() {
 </li>
 <li>GetDirectionCollapseToStrategy()
 : <a class="el" href="classitk_1_1simple_1_1ExtractImageFilter.html#a24a7520c552573411d54b76469ebeb80">itk::simple::ExtractImageFilter</a>
+</li>
+<li>GetDirectionCosinesFromOrientation()
+: <a class="el" href="classitk_1_1simple_1_1DICOMOrientImageFilter.html#a997e86e6728dd78dcf0a165b6689340a">itk::simple::DICOMOrientImageFilter</a>
 </li>
 <li>GetDisplacementField()
 : <a class="el" href="classitk_1_1simple_1_1DisplacementFieldTransform.html#a9e942dd186ed2c4c3e1951caea8cfe29">itk::simple::DisplacementFieldTransform</a>
@@ -537,7 +543,8 @@ $(function() {
 : <a class="el" href="classitk_1_1simple_1_1FlipImageFilter.html#aa606f404af493e4739242a10d246b12a">itk::simple::FlipImageFilter</a>
 </li>
 <li>GetFlipAxes()
-: <a class="el" href="classitk_1_1simple_1_1FlipImageFilter.html#a06efc3ab72a12d9ec43d9355a90ab75e">itk::simple::FlipImageFilter</a>
+: <a class="el" href="classitk_1_1simple_1_1DICOMOrientImageFilter.html#a63fce9e1be065597e3473684549ddb80">itk::simple::DICOMOrientImageFilter</a>
+, <a class="el" href="classitk_1_1simple_1_1FlipImageFilter.html#a06efc3ab72a12d9ec43d9355a90ab75e">itk::simple::FlipImageFilter</a>
 </li>
 <li>GetForegroundValue()
 : <a class="el" href="classitk_1_1simple_1_1BinaryClosingByReconstructionImageFilter.html#a90a2175f5b17e8b0158a66847a286875">itk::simple::BinaryClosingByReconstructionImageFilter</a>
@@ -1190,6 +1197,7 @@ $(function() {
 , <a class="el" href="classitk_1_1simple_1_1DanielssonDistanceMapImageFilter.html#a757dac8bc328c3dc0c470fe814535e12">itk::simple::DanielssonDistanceMapImageFilter</a>
 , <a class="el" href="classitk_1_1simple_1_1DemonsRegistrationFilter.html#abeb473c28b58682da97cb8a72a49ccea">itk::simple::DemonsRegistrationFilter</a>
 , <a class="el" href="classitk_1_1simple_1_1DerivativeImageFilter.html#a8d5879f52b39a102b7be4a65c68ec383">itk::simple::DerivativeImageFilter</a>
+, <a class="el" href="classitk_1_1simple_1_1DICOMOrientImageFilter.html#af7616b6deebcb7e4f56693833431ea50">itk::simple::DICOMOrientImageFilter</a>
 , <a class="el" href="classitk_1_1simple_1_1DiffeomorphicDemonsRegistrationFilter.html#a41e641aec4316a8826c0fd660dc669d3">itk::simple::DiffeomorphicDemonsRegistrationFilter</a>
 , <a class="el" href="classitk_1_1simple_1_1DilateObjectMorphologyImageFilter.html#a5790a06a1de23db120e33cdc7dea3678">itk::simple::DilateObjectMorphologyImageFilter</a>
 , <a class="el" href="classitk_1_1simple_1_1DiscreteGaussianDerivativeImageFilter.html#a4f8f2faaa104dfed71903fed377b4109">itk::simple::DiscreteGaussianDerivativeImageFilter</a>
@@ -1632,6 +1640,9 @@ $(function() {
 , <a class="el" href="classitk_1_1simple_1_1PermuteAxesImageFilter.html#a1d3c8bfca85d04e7e851e920530caea1">itk::simple::PermuteAxesImageFilter</a>
 , <a class="el" href="classitk_1_1simple_1_1RecursiveGaussianImageFilter.html#a84cff021d0d47c7a7fb438d98dcddcec">itk::simple::RecursiveGaussianImageFilter</a>
 </li>
+<li>GetOrientationFromDirectionCosines()
+: <a class="el" href="classitk_1_1simple_1_1DICOMOrientImageFilter.html#acaf19fac35023e3da9ba3eb56190ada0">itk::simple::DICOMOrientImageFilter</a>
+</li>
 <li>GetOrientedBoundingBoxDirection()
 : <a class="el" href="classitk_1_1simple_1_1LabelShapeStatisticsImageFilter.html#ae3be2793e044af2056892275624c4957">itk::simple::LabelShapeStatisticsImageFilter</a>
 </li>
@@ -1773,6 +1784,9 @@ $(function() {
 <li>GetPerimeterOnBorderRatio()
 : <a class="el" href="classitk_1_1simple_1_1LabelIntensityStatisticsImageFilter.html#a1e9877a3b135061e78a24dec437a2ac3">itk::simple::LabelIntensityStatisticsImageFilter</a>
 , <a class="el" href="classitk_1_1simple_1_1LabelShapeStatisticsImageFilter.html#a8d74d9f78e2053e0b7aaf8ff4c6e9363">itk::simple::LabelShapeStatisticsImageFilter</a>
+</li>
+<li>GetPermuteOrder()
+: <a class="el" href="classitk_1_1simple_1_1DICOMOrientImageFilter.html#a48cd0924c2447f01e4c8ced9011a31c0">itk::simple::DICOMOrientImageFilter</a>
 </li>
 <li>GetPhysicalSize()
 : <a class="el" href="classitk_1_1simple_1_1LabelIntensityStatisticsImageFilter.html#a5caa8fec8630302f148ff24693083d5d">itk::simple::LabelIntensityStatisticsImageFilter</a>
@@ -2124,7 +2138,7 @@ $(function() {
 , <a class="el" href="classitk_1_1simple_1_1ImportImageFilter.html#af31ca68250ddb53448221c9cb08acc30">itk::simple::ImportImageFilter</a>
 , <a class="el" href="classitk_1_1simple_1_1InverseDisplacementFieldImageFilter.html#a01f5c36a592734000409201954f46655">itk::simple::InverseDisplacementFieldImageFilter</a>
 , <a class="el" href="classitk_1_1simple_1_1PhysicalPointImageSource.html#ae7cefc513e87e49149ff023e62c6fb16">itk::simple::PhysicalPointImageSource</a>
-, <a class="el" href="classitk_1_1simple_1_1PimpleImageBase.html#ab5176ebdce39cd1861d56606a8cfed3b">itk::simple::PimpleImageBase</a>
+, <a class="el" href="classitk_1_1simple_1_1PimpleImageBase.html#ad3ef85f4d5d5f151588bdacce0ab52ee">itk::simple::PimpleImageBase</a>
 , <a class="el" href="classitk_1_1simple_1_1RegionOfInterestImageFilter.html#a3414a4114feffb15dce21d84240b127e">itk::simple::RegionOfInterestImageFilter</a>
 , <a class="el" href="classitk_1_1simple_1_1ResampleImageFilter.html#aa1c6bf3e7326519fba59bf4f66cb7fb4">itk::simple::ResampleImageFilter</a>
 , <a class="el" href="classitk_1_1simple_1_1TransformToDisplacementFieldFilter.html#a580bb854407d0b5e9c4d2d41bcbdda55">itk::simple::TransformToDisplacementFieldFilter</a>
@@ -2350,7 +2364,7 @@ $(function() {
 : <a class="el" href="classitk_1_1simple_1_1ShiftScaleImageFilter.html#a8c1a2d6aa55a7c2e165fe7ead7fee4ea">itk::simple::ShiftScaleImageFilter</a>
 </li>
 <li>GetUnionOverlap()
-: <a class="el" href="classitk_1_1simple_1_1LabelOverlapMeasuresImageFilter.html#a9a6cfba3f0ff2fbb4cfa03927a4ddcc2">itk::simple::LabelOverlapMeasuresImageFilter</a>
+: <a class="el" href="classitk_1_1simple_1_1LabelOverlapMeasuresImageFilter.html#ab148b445e11cb58bf33d3c69324fd300">itk::simple::LabelOverlapMeasuresImageFilter</a>
 </li>
 <li>GetUpdateFieldStandardDeviations()
 : <a class="el" href="classitk_1_1simple_1_1DemonsRegistrationFilter.html#a1641a6ee22730d20529d0b8421ab3252">itk::simple::DemonsRegistrationFilter</a>
@@ -2466,7 +2480,7 @@ $(function() {
 : <a class="el" href="classitk_1_1simple_1_1ScalarChanAndVeseDenseLevelSetImageFilter.html#a7af8e04f07d99cca1ea37c2bd6ab9686">itk::simple::ScalarChanAndVeseDenseLevelSetImageFilter</a>
 </li>
 <li>GetVolumeSimilarity()
-: <a class="el" href="classitk_1_1simple_1_1LabelOverlapMeasuresImageFilter.html#a77a377fdd90c6fea77b19eb860c8153b">itk::simple::LabelOverlapMeasuresImageFilter</a>
+: <a class="el" href="classitk_1_1simple_1_1LabelOverlapMeasuresImageFilter.html#a46c4dd4f5543e449416641fb2b5f4f4e">itk::simple::LabelOverlapMeasuresImageFilter</a>
 </li>
 <li>GetVoronoiMap()
 : <a class="el" href="classitk_1_1simple_1_1SignedDanielssonDistanceMapImageFilter.html#a0d88023415346d3193cf6f5602e895c2">itk::simple::SignedDanielssonDistanceMapImageFilter</a>
@@ -2578,7 +2592,7 @@ $(function() {
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Mar 20 2020 03:18:17 for SimpleITK by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Mar 26 2020 03:20:02 for SimpleITK by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

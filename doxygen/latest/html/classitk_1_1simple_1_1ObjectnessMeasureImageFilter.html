@@ -19,7 +19,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">SimpleITK
-   &#160;<span id="projectnumber">2.0.0rc1.post7</span>
+   &#160;<span id="projectnumber">2.0.0rc1.post21</span>
    </div>
   </td>
  </tr>
@@ -146,8 +146,6 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a245e5d18e6d3e0dd8d114b73b677e026"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a925f9df3bbae0da1fc37c8252fe92fa2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classitk_1_1simple_1_1Image.html">Image</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1ObjectnessMeasureImageFilter.html#a925f9df3bbae0da1fc37c8252fe92fa2">Execute</a> (const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> &amp;image1)</td></tr>
 <tr class="separator:a925f9df3bbae0da1fc37c8252fe92fa2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aae857092c1fc15ead01f30eb93fa5c19"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classitk_1_1simple_1_1Image.html">Image</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1ObjectnessMeasureImageFilter.html#aae857092c1fc15ead01f30eb93fa5c19">Execute</a> (const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> &amp;image1, double alpha, double beta, double gamma, bool scaleObjectnessMeasure, unsigned int objectDimension, bool brightObject)</td></tr>
-<tr class="separator:aae857092c1fc15ead01f30eb93fa5c19"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a24ef843a28344ae64e6234b90e7b6179"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1ObjectnessMeasureImageFilter.html#a24ef843a28344ae64e6234b90e7b6179">GetAlpha</a> () const</td></tr>
 <tr class="separator:a24ef843a28344ae64e6234b90e7b6179"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9d7100d518c81f803c06ab09e45ae728"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1ObjectnessMeasureImageFilter.html#a9d7100d518c81f803c06ab09e45ae728">GetBeta</a> () const</td></tr>
@@ -341,12 +339,12 @@ Additional Inherited Members</h2></td></tr>
 <div class="textblock"><p>Enhance M-dimensional objects in N-dimensional images. </p>
 <p>This filter is a generalization of Frangi's vesselness measurement for detecting M-dimensional object in N-dimensional space. For example a vessel is a 1-D object in 3-D space. The filter can enhance blob-like structures (M=0), vessel-like structures (M=1), 2D plate-like structures (M=2), hyper-plate-like structures (M=3) in N-dimensional images, with M&lt;N.</p>
 <p>This filter takes a scalar image as input and produces a real valued image as output which contains the objectness measure at each pixel. Internally, it computes a Hessian via discrete central differences. Before applying this filter it is expected that a Gaussian smoothing filter at an appropriate scale (sigma) was applied to the input image.</p>
-<p>The enhancement is based on the eigenvalues of the Hessian matrix. For the Frangi's vesselness case were M=1 and N=3 we have the 3 eigenvalues such that <img class="formulaInl" alt="$ | \lambda_1 | &lt; | \lambda_2 | &lt; |\lambda_3 | $" src="form_57.png"/> . The formula follows:</p>
+<p>The enhancement is based on the eigenvalues of the Hessian matrix. For the Frangi's vesselness case were M=1 and N=3 we have the 3 eigenvalues such that <img class="formulaInl" alt="$ | \lambda_1 | &lt; | \lambda_2 | &lt; |\lambda_3 | $" src="form_58.png"/> . The formula follows:</p>
 <p class="formulaDsp">
-<img class="formulaDsp" alt="\[ R_A = \frac{|\lambda_2|}{|\lambda_3|}, \; R_B = \frac{|\lambda_2|}{|\lambda_2\lambda_3|}, \; S = \sqrt{\lambda_1^2+\lambda_2^2+\lambda_3^2} \]" src="form_58.png"/>
+<img class="formulaDsp" alt="\[ R_A = \frac{|\lambda_2|}{|\lambda_3|}, \; R_B = \frac{|\lambda_2|}{|\lambda_2\lambda_3|}, \; S = \sqrt{\lambda_1^2+\lambda_2^2+\lambda_3^2} \]" src="form_59.png"/>
 </p>
  <p class="formulaDsp">
-<img class="formulaDsp" alt="\[ V_{\sigma}= \begin{cases} (1-e^{-\frac{R_A^2}{2\alpha^2}}) \cdot e^{\frac{R_B^2}{2\beta^2}} \cdot (1-e^{-\frac{S^2}{2\gamma^2}}) &amp; \text{if } \lambda_2&lt;0 \text{ and } \lambda_3&lt;0 \text{,}\\ 0 &amp; \text{otherwise} \end{cases} \]" src="form_59.png"/>
+<img class="formulaDsp" alt="\[ V_{\sigma}= \begin{cases} (1-e^{-\frac{R_A^2}{2\alpha^2}}) \cdot e^{\frac{R_B^2}{2\beta^2}} \cdot (1-e^{-\frac{S^2}{2\gamma^2}}) &amp; \text{if } \lambda_2&lt;0 \text{ and } \lambda_3&lt;0 \text{,}\\ 0 &amp; \text{otherwise} \end{cases} \]" src="form_60.png"/>
 </p>
 <dl class="section user"><dt>References</dt><dd>Antiga, L. Generalizing vesselness with respect to dimensionality and shape. <a href="https://hdl.handle.net/1926/576">https://hdl.handle.net/1926/576</a></dd></dl>
 <dl class="section user"><dt></dt><dd>Frangi, AF, Niessen, WJ, Vincken, KL, &amp; Viergever, MA (1998). Multiscale Vessel Enhancement Filtering. In Wells, WM, Colchester, A, &amp; Delp, S, Editors, MICCAI '98 Medical <a class="el" href="classitk_1_1simple_1_1Image.html" title="The Image class for SimpleITK.">Image</a> Computing and Computer-Assisted Intervention, Lecture Notes in Computer Science, pages 130-137, Springer Verlag, 1998.</dd></dl>
@@ -379,7 +377,7 @@ itk::ObjectnessMeasureImageFilter for the Doxygen on the original ITK class. </d
 </div><div class="memdoc">
 <p>Setup for member function dispatching </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkObjectnessMeasureImageFilter_8h_source.html#l00157">157</a> of file <a class="el" href="sitkObjectnessMeasureImageFilter_8h_source.html">sitkObjectnessMeasureImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkObjectnessMeasureImageFilter_8h_source.html#l00153">153</a> of file <a class="el" href="sitkObjectnessMeasureImageFilter_8h_source.html">sitkObjectnessMeasureImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -518,7 +516,7 @@ itk::ObjectnessMeasureImageFilter for the Doxygen on the original ITK class. </d
 </div>
 </div>
 <a id="a925f9df3bbae0da1fc37c8252fe92fa2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a925f9df3bbae0da1fc37c8252fe92fa2">&#9670;&nbsp;</a></span>Execute() <span class="overload">[1/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a925f9df3bbae0da1fc37c8252fe92fa2">&#9670;&nbsp;</a></span>Execute()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -533,65 +531,6 @@ itk::ObjectnessMeasureImageFilter for the Doxygen on the original ITK class. </d
       </table>
 </div><div class="memdoc">
 <p>Execute the filter on the input image </p>
-
-</div>
-</div>
-<a id="aae857092c1fc15ead01f30eb93fa5c19"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aae857092c1fc15ead01f30eb93fa5c19">&#9670;&nbsp;</a></span>Execute() <span class="overload">[2/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> itk::simple::ObjectnessMeasureImageFilter::Execute </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> &amp;&#160;</td>
-          <td class="paramname"><em>image1</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>alpha</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>beta</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>gamma</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>scaleObjectnessMeasure</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">unsigned int&#160;</td>
-          <td class="paramname"><em>objectDimension</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>brightObject</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Execute the filter on the input image with the given parameters </p>
 
 </div>
 </div>
@@ -1099,7 +1038,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkObjectnessMeasureImageFilter_8h_source.html#l00161">161</a> of file <a class="el" href="sitkObjectnessMeasureImageFilter_8h_source.html">sitkObjectnessMeasureImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkObjectnessMeasureImageFilter_8h_source.html#l00157">157</a> of file <a class="el" href="sitkObjectnessMeasureImageFilter_8h_source.html">sitkObjectnessMeasureImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -1124,7 +1063,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkObjectnessMeasureImageFilter_8h_source.html#l00166">166</a> of file <a class="el" href="sitkObjectnessMeasureImageFilter_8h_source.html">sitkObjectnessMeasureImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkObjectnessMeasureImageFilter_8h_source.html#l00162">162</a> of file <a class="el" href="sitkObjectnessMeasureImageFilter_8h_source.html">sitkObjectnessMeasureImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -1148,7 +1087,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkObjectnessMeasureImageFilter_8h_source.html#l00168">168</a> of file <a class="el" href="sitkObjectnessMeasureImageFilter_8h_source.html">sitkObjectnessMeasureImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkObjectnessMeasureImageFilter_8h_source.html#l00164">164</a> of file <a class="el" href="sitkObjectnessMeasureImageFilter_8h_source.html">sitkObjectnessMeasureImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -1172,7 +1111,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkObjectnessMeasureImageFilter_8h_source.html#l00172">172</a> of file <a class="el" href="sitkObjectnessMeasureImageFilter_8h_source.html">sitkObjectnessMeasureImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkObjectnessMeasureImageFilter_8h_source.html#l00168">168</a> of file <a class="el" href="sitkObjectnessMeasureImageFilter_8h_source.html">sitkObjectnessMeasureImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -1196,7 +1135,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkObjectnessMeasureImageFilter_8h_source.html#l00169">169</a> of file <a class="el" href="sitkObjectnessMeasureImageFilter_8h_source.html">sitkObjectnessMeasureImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkObjectnessMeasureImageFilter_8h_source.html#l00165">165</a> of file <a class="el" href="sitkObjectnessMeasureImageFilter_8h_source.html">sitkObjectnessMeasureImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -1220,7 +1159,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkObjectnessMeasureImageFilter_8h_source.html#l00163">163</a> of file <a class="el" href="sitkObjectnessMeasureImageFilter_8h_source.html">sitkObjectnessMeasureImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkObjectnessMeasureImageFilter_8h_source.html#l00159">159</a> of file <a class="el" href="sitkObjectnessMeasureImageFilter_8h_source.html">sitkObjectnessMeasureImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -1244,7 +1183,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkObjectnessMeasureImageFilter_8h_source.html#l00171">171</a> of file <a class="el" href="sitkObjectnessMeasureImageFilter_8h_source.html">sitkObjectnessMeasureImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkObjectnessMeasureImageFilter_8h_source.html#l00167">167</a> of file <a class="el" href="sitkObjectnessMeasureImageFilter_8h_source.html">sitkObjectnessMeasureImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -1268,7 +1207,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkObjectnessMeasureImageFilter_8h_source.html#l00170">170</a> of file <a class="el" href="sitkObjectnessMeasureImageFilter_8h_source.html">sitkObjectnessMeasureImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkObjectnessMeasureImageFilter_8h_source.html#l00166">166</a> of file <a class="el" href="sitkObjectnessMeasureImageFilter_8h_source.html">sitkObjectnessMeasureImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -1278,7 +1217,7 @@ template&lt;class TImageType &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Mar 20 2020 03:18:13 for SimpleITK by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Mar 26 2020 03:19:59 for SimpleITK by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>
