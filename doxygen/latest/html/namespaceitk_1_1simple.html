@@ -19,7 +19,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">SimpleITK
-   &#160;<span id="projectnumber">2.0.0rc1.post27</span>
+   &#160;<span id="projectnumber">2.0.0rc1.post39</span>
    </div>
   </td>
  </tr>
@@ -1674,9 +1674,9 @@ Functions</h2></td></tr>
 <tr class="memitem:a9563a5295db29654ca009531d75b5e3f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceitk_1_1simple.html#a5f7941a19eca02cbc08e86ea0d024f72">PixelIDValueType</a> <a class="el" href="sitkCommon_8h.html#ab09867679406ccae193848f08fdc3444">SITKCommon_EXPORT</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceitk_1_1simple.html#a9563a5295db29654ca009531d75b5e3f">GetPixelIDValueFromString</a> (const std::string &amp;enumString)</td></tr>
 <tr class="memdesc:a9563a5295db29654ca009531d75b5e3f"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="elRef" href="https://www.itk.org/Doxygen/html/namespaceitk_1_1Function.html">Function</a> mapping enumeration names in std::string to values.  <a href="namespaceitk_1_1simple.html#a9563a5295db29654ca009531d75b5e3f">More...</a><br /></td></tr>
 <tr class="separator:a9563a5295db29654ca009531d75b5e3f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7dbb7d532084a87c997588c3054524b1"><td class="memTemplParams" colspan="2">template&lt;class TPixelType , unsigned int NImageDimension&gt; </td></tr>
-<tr class="memitem:a7dbb7d532084a87c997588c3054524b1"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="sitkCommon_8h.html#a7306f868468a6850e24ebf74ecf832ab">SITKCommon_HIDDEN</a> <a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1VectorImage.html">itk::VectorImage</a>&lt; TPixelType, NImageDimension &gt;::Pointer&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceitk_1_1simple.html#a7dbb7d532084a87c997588c3054524b1">GetVectorImageFromImage</a> (<a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1Image.html">itk::Image</a>&lt; <a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1Vector.html">itk::Vector</a>&lt; TPixelType, NImageDimension &gt;, NImageDimension &gt; *img, bool transferOwnership=false)</td></tr>
-<tr class="separator:a7dbb7d532084a87c997588c3054524b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7f4bad0cd1102850677cf85f08caa8e2"><td class="memTemplParams" colspan="2">template&lt;class TPixelType , unsigned int NImageDimension, unsigned int NLength&gt; </td></tr>
+<tr class="memitem:a7f4bad0cd1102850677cf85f08caa8e2"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="sitkCommon_8h.html#a7306f868468a6850e24ebf74ecf832ab">SITKCommon_HIDDEN</a> <a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1VectorImage.html">itk::VectorImage</a>&lt; TPixelType, NImageDimension &gt;::Pointer&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceitk_1_1simple.html#a7f4bad0cd1102850677cf85f08caa8e2">GetVectorImageFromImage</a> (<a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1Image.html">itk::Image</a>&lt; <a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1CovariantVector.html">itk::CovariantVector</a>&lt; TPixelType, NLength &gt;, NImageDimension &gt; *img, bool transferOwnership=false)</td></tr>
+<tr class="separator:a7f4bad0cd1102850677cf85f08caa8e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a447983820b6cc20cb1fb53fd1d5b0940"><td class="memTemplParams" colspan="2">template&lt;class TPixelType , unsigned int NImageDimension, unsigned int NLength&gt; </td></tr>
 <tr class="memitem:a447983820b6cc20cb1fb53fd1d5b0940"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="sitkCommon_8h.html#a7306f868468a6850e24ebf74ecf832ab">SITKCommon_HIDDEN</a> <a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1VectorImage.html">itk::VectorImage</a>&lt; TPixelType, NImageDimension &gt;::Pointer&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceitk_1_1simple.html#a447983820b6cc20cb1fb53fd1d5b0940">GetVectorImageFromImage</a> (<a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1Image.html">itk::Image</a>&lt; <a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1Vector.html">itk::Vector</a>&lt; TPixelType, NLength &gt;, NImageDimension &gt; *img, bool transferOwnership=false)</td></tr>
 <tr class="separator:a447983820b6cc20cb1fb53fd1d5b0940"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -8365,10 +8365,6 @@ template&lt;typename TPixelType , unsigned int ImageDimension&gt; </div>
 
 <p>A utility method to help convert between itk image types efficiently. </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkImageConvert_8h_source.html#l00037">37</a> of file <a class="el" href="sitkImageConvert_8h_source.html">sitkImageConvert.h</a>.</p>
-
-<p class="reference">References <a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1ImageBase.html#a75cbf95bec56d352ac90ada09c1ed024">itk::ImageBase&lt; VImageDimension &gt;::GetBufferedRegion()</a>, <a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1VectorImage.html#a8ec45712c15ff17432805a87f01a51bd">itk::VectorImage&lt; TPixel, VImageDimension &gt;::GetNumberOfComponentsPerPixel()</a>, <a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1VectorImage.html#a4aa0475e916a3b1fbaee5edc089f8c08">itk::VectorImage&lt; TPixel, VImageDimension &gt;::GetPixelContainer()</a>, and <a class="el" href="sitkMacro_8h_source.html#l00071">sitkExceptionMacro</a>.</p>
-
 </div>
 </div>
 <a id="aad15e130d6c38305e228951130a5d5d7"></a>
@@ -8405,7 +8401,7 @@ template&lt;typename TPixelType , unsigned int ImageDimension&gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="sitkProcessObject_8h_source.html#l00279">itk::simple::ProcessObject::CastImageToITK()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="sitkProcessObject_8h_source.html#l00280">itk::simple::ProcessObject::CastImageToITK()</a>.</p>
 
 </div>
 </div>
@@ -8432,18 +8428,18 @@ template&lt;typename TPixelType , unsigned int ImageDimension&gt; </div>
 
 </div>
 </div>
-<a id="a7dbb7d532084a87c997588c3054524b1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7dbb7d532084a87c997588c3054524b1">&#9670;&nbsp;</a></span>GetVectorImageFromImage() <span class="overload">[1/2]</span></h2>
+<a id="a7f4bad0cd1102850677cf85f08caa8e2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7f4bad0cd1102850677cf85f08caa8e2">&#9670;&nbsp;</a></span>GetVectorImageFromImage() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class TPixelType , unsigned int NImageDimension&gt; </div>
+template&lt;class TPixelType , unsigned int NImageDimension, unsigned int NLength&gt; </div>
       <table class="memname">
         <tr>
           <td class="memname"><a class="el" href="sitkCommon_8h.html#a7306f868468a6850e24ebf74ecf832ab">SITKCommon_HIDDEN</a> <a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1VectorImage.html">itk::VectorImage</a>&lt; TPixelType, NImageDimension &gt;::Pointer itk::simple::GetVectorImageFromImage </td>
           <td>(</td>
-          <td class="paramtype"><a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1Image.html">itk::Image</a>&lt; <a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1Vector.html">itk::Vector</a>&lt; TPixelType, NImageDimension &gt;, NImageDimension &gt; *&#160;</td>
+          <td class="paramtype"><a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1Image.html">itk::Image</a>&lt; <a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1CovariantVector.html">itk::CovariantVector</a>&lt; TPixelType, NLength &gt;, NImageDimension &gt; *&#160;</td>
           <td class="paramname"><em>img</em>, </td>
         </tr>
         <tr>
@@ -8459,8 +8455,6 @@ template&lt;class TPixelType , unsigned int NImageDimension&gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="sitkImageConvert_8h_source.html#l00118">118</a> of file <a class="el" href="sitkImageConvert_8h_source.html">sitkImageConvert.h</a>.</p>
 
 </div>
 </div>
@@ -8492,9 +8486,7 @@ template&lt;class TPixelType , unsigned int NImageDimension, unsigned int NLengt
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkImageConvert_8h_source.html#l00079">79</a> of file <a class="el" href="sitkImageConvert_8h_source.html">sitkImageConvert.h</a>.</p>
-
-<p class="reference">References <a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1ImageBase.html#a75cbf95bec56d352ac90ada09c1ed024">itk::ImageBase&lt; VImageDimension &gt;::GetBufferedRegion()</a>, and <a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1ImageRegion.html#a3869e176baeb0833cc46def514f0a46f">itk::ImageRegion&lt; VImageDimension &gt;::GetNumberOfPixels()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="sitkProcessObject_8h_source.html#l00306">itk::simple::ProcessObject::CastITKToImage()</a>.</p>
 
 </div>
 </div>
@@ -23518,7 +23510,7 @@ template&lt;typename T &gt; </div>
 <div class="ttc" id="anamespaceitk_1_1simple_html_ae40bd64640f4014fba1a8a872ab4df98a25f496c19c2388217b9fede6686144ac"><div class="ttname"><a href="namespaceitk_1_1simple.html#ae40bd64640f4014fba1a8a872ab4df98a25f496c19c2388217b9fede6686144ac">itk::simple::sitkUnknown</a></div><div class="ttdeci">@ sitkUnknown</div><div class="ttdef"><b>Definition:</b> <a href="sitkPixelIDValues_8h_source.html#l00091">sitkPixelIDValues.h:91</a></div></div>
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Mar 29 2020 03:20:49 for SimpleITK by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Apr 1 2020 03:21:17 for SimpleITK by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>
