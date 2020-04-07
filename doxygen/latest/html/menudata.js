@@ -168,7 +168,6 @@ var menudata={children:[
 {text:"d",url:"functions_enum.html#index_d"},
 {text:"e",url:"functions_enum.html#index_e"},
 {text:"h",url:"functions_enum.html#index_h"},
-{text:"k",url:"functions_enum.html#index_k"},
 {text:"m",url:"functions_enum.html#index_m"},
 {text:"n",url:"functions_enum.html#index_n"},
 {text:"o",url:"functions_enum.html#index_o"},
