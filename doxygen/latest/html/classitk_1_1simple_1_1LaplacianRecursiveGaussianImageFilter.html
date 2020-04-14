@@ -19,7 +19,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">SimpleITK
-   &#160;<span id="projectnumber">2.0.0rc1.post73</span>
+   &#160;<span id="projectnumber">2.0.0rc1.post121</span>
    </div>
   </td>
  </tr>
@@ -217,9 +217,9 @@ Private Member Functions</h2></td></tr>
 Private Attributes</h2></td></tr>
 <tr class="memitem:a472d3c47b8f55e99e43ad546af72e7b6"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="classitk_1_1simple_1_1detail_1_1MemberFunctionFactory.html">detail::MemberFunctionFactory</a>&lt; <a class="el" href="classitk_1_1simple_1_1LaplacianRecursiveGaussianImageFilter.html#a2de87ae39f40709b7b07b52139bbf47b">MemberFunctionType</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1LaplacianRecursiveGaussianImageFilter.html#a472d3c47b8f55e99e43ad546af72e7b6">m_MemberFactory</a></td></tr>
 <tr class="separator:a472d3c47b8f55e99e43ad546af72e7b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac96b4ab2f9eda838ce6c04533a7878a8"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1LaplacianRecursiveGaussianImageFilter.html#ac96b4ab2f9eda838ce6c04533a7878a8">m_NormalizeAcrossScale</a></td></tr>
+<tr class="memitem:ac96b4ab2f9eda838ce6c04533a7878a8"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1LaplacianRecursiveGaussianImageFilter.html#ac96b4ab2f9eda838ce6c04533a7878a8">m_NormalizeAcrossScale</a> {false}</td></tr>
 <tr class="separator:ac96b4ab2f9eda838ce6c04533a7878a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2a9887f2eb53094ac979dec9c9752ad4"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1LaplacianRecursiveGaussianImageFilter.html#a2a9887f2eb53094ac979dec9c9752ad4">m_Sigma</a></td></tr>
+<tr class="memitem:a2a9887f2eb53094ac979dec9c9752ad4"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1LaplacianRecursiveGaussianImageFilter.html#a2a9887f2eb53094ac979dec9c9752ad4">m_Sigma</a> {1.0}</td></tr>
 <tr class="separator:a2a9887f2eb53094ac979dec9c9752ad4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
@@ -343,7 +343,7 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 <p>Setup for member function dispatching </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkLaplacianRecursiveGaussianImageFilter_8h_source.html#l00095">95</a> of file <a class="el" href="sitkLaplacianRecursiveGaussianImageFilter_8h_source.html">sitkLaplacianRecursiveGaussianImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkLaplacianRecursiveGaussianImageFilter_8h_source.html#l00096">96</a> of file <a class="el" href="sitkLaplacianRecursiveGaussianImageFilter_8h_source.html">sitkLaplacianRecursiveGaussianImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -721,7 +721,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkLaplacianRecursiveGaussianImageFilter_8h_source.html#l00099">99</a> of file <a class="el" href="sitkLaplacianRecursiveGaussianImageFilter_8h_source.html">sitkLaplacianRecursiveGaussianImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkLaplacianRecursiveGaussianImageFilter_8h_source.html#l00100">100</a> of file <a class="el" href="sitkLaplacianRecursiveGaussianImageFilter_8h_source.html">sitkLaplacianRecursiveGaussianImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -746,7 +746,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkLaplacianRecursiveGaussianImageFilter_8h_source.html#l00101">101</a> of file <a class="el" href="sitkLaplacianRecursiveGaussianImageFilter_8h_source.html">sitkLaplacianRecursiveGaussianImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkLaplacianRecursiveGaussianImageFilter_8h_source.html#l00102">102</a> of file <a class="el" href="sitkLaplacianRecursiveGaussianImageFilter_8h_source.html">sitkLaplacianRecursiveGaussianImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -760,7 +760,7 @@ template&lt;class TImageType &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">bool itk::simple::LaplacianRecursiveGaussianImageFilter::m_NormalizeAcrossScale</td>
+          <td class="memname">bool itk::simple::LaplacianRecursiveGaussianImageFilter::m_NormalizeAcrossScale {false}</td>
         </tr>
       </table>
   </td>
@@ -770,7 +770,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkLaplacianRecursiveGaussianImageFilter_8h_source.html#l00107">107</a> of file <a class="el" href="sitkLaplacianRecursiveGaussianImageFilter_8h_source.html">sitkLaplacianRecursiveGaussianImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkLaplacianRecursiveGaussianImageFilter_8h_source.html#l00109">109</a> of file <a class="el" href="sitkLaplacianRecursiveGaussianImageFilter_8h_source.html">sitkLaplacianRecursiveGaussianImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -784,7 +784,7 @@ template&lt;class TImageType &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">double itk::simple::LaplacianRecursiveGaussianImageFilter::m_Sigma</td>
+          <td class="memname">double itk::simple::LaplacianRecursiveGaussianImageFilter::m_Sigma {1.0}</td>
         </tr>
       </table>
   </td>
@@ -794,7 +794,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkLaplacianRecursiveGaussianImageFilter_8h_source.html#l00105">105</a> of file <a class="el" href="sitkLaplacianRecursiveGaussianImageFilter_8h_source.html">sitkLaplacianRecursiveGaussianImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkLaplacianRecursiveGaussianImageFilter_8h_source.html#l00106">106</a> of file <a class="el" href="sitkLaplacianRecursiveGaussianImageFilter_8h_source.html">sitkLaplacianRecursiveGaussianImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -804,7 +804,7 @@ template&lt;class TImageType &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Apr 7 2020 03:21:37 for SimpleITK by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Apr 14 2020 02:53:30 for SimpleITK by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

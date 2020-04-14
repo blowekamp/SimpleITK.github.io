@@ -19,7 +19,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">SimpleITK
-   &#160;<span id="projectnumber">2.0.0rc1.post73</span>
+   &#160;<span id="projectnumber">2.0.0rc1.post121</span>
    </div>
   </td>
  </tr>
@@ -142,6 +142,8 @@ Public Types</h2></td></tr>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a590fd108591a33cb02181e657aaece3c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classitk_1_1simple_1_1Image.html">Image</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1IntensityWindowingImageFilter.html#a590fd108591a33cb02181e657aaece3c">Execute</a> (const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> &amp;image1)</td></tr>
 <tr class="separator:a590fd108591a33cb02181e657aaece3c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2b5a9fe68831c17de89e9bc59869079e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classitk_1_1simple_1_1Image.html">Image</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1IntensityWindowingImageFilter.html#a2b5a9fe68831c17de89e9bc59869079e">Execute</a> (<a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> &amp;&amp;image1)</td></tr>
+<tr class="separator:a2b5a9fe68831c17de89e9bc59869079e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3a03aad525e6e77eb4eaa108477121c8"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1IntensityWindowingImageFilter.html#a3a03aad525e6e77eb4eaa108477121c8">GetName</a> () const</td></tr>
 <tr class="separator:a3a03aad525e6e77eb4eaa108477121c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2d8614c2a0e5d78e143669bfa3029a53"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1IntensityWindowingImageFilter.html#a2d8614c2a0e5d78e143669bfa3029a53">GetOutputMaximum</a> () const</td></tr>
@@ -219,15 +221,17 @@ Private Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
+<tr class="memitem:aced0bc2be5494a74de324d6e2495e821"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1IntensityWindowingImageFilter.html#aced0bc2be5494a74de324d6e2495e821">m_InPlace</a> {false}</td></tr>
+<tr class="separator:aced0bc2be5494a74de324d6e2495e821"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a79d1818edfe077e48e9ab0437b81c4ae"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="classitk_1_1simple_1_1detail_1_1MemberFunctionFactory.html">detail::MemberFunctionFactory</a>&lt; <a class="el" href="classitk_1_1simple_1_1IntensityWindowingImageFilter.html#ac40da8f7041a8c7c7899aecccdcef10f">MemberFunctionType</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1IntensityWindowingImageFilter.html#a79d1818edfe077e48e9ab0437b81c4ae">m_MemberFactory</a></td></tr>
 <tr class="separator:a79d1818edfe077e48e9ab0437b81c4ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a37aeb025a5d81da7665b0b6fe44e7852"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1IntensityWindowingImageFilter.html#a37aeb025a5d81da7665b0b6fe44e7852">m_OutputMaximum</a></td></tr>
+<tr class="memitem:a37aeb025a5d81da7665b0b6fe44e7852"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1IntensityWindowingImageFilter.html#a37aeb025a5d81da7665b0b6fe44e7852">m_OutputMaximum</a> {255.0}</td></tr>
 <tr class="separator:a37aeb025a5d81da7665b0b6fe44e7852"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa85199b0bcabeccf0a185b62ea178289"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1IntensityWindowingImageFilter.html#aa85199b0bcabeccf0a185b62ea178289">m_OutputMinimum</a></td></tr>
+<tr class="memitem:aa85199b0bcabeccf0a185b62ea178289"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1IntensityWindowingImageFilter.html#aa85199b0bcabeccf0a185b62ea178289">m_OutputMinimum</a> {0.0}</td></tr>
 <tr class="separator:aa85199b0bcabeccf0a185b62ea178289"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa89862596ef15a218dd2be9bbb24c157"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1IntensityWindowingImageFilter.html#aa89862596ef15a218dd2be9bbb24c157">m_WindowMaximum</a></td></tr>
+<tr class="memitem:aa89862596ef15a218dd2be9bbb24c157"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1IntensityWindowingImageFilter.html#aa89862596ef15a218dd2be9bbb24c157">m_WindowMaximum</a> {255.0}</td></tr>
 <tr class="separator:aa89862596ef15a218dd2be9bbb24c157"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a35ce2bafeeecafd72f833749f9a846da"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1IntensityWindowingImageFilter.html#a35ce2bafeeecafd72f833749f9a846da">m_WindowMinimum</a></td></tr>
+<tr class="memitem:a35ce2bafeeecafd72f833749f9a846da"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1IntensityWindowingImageFilter.html#a35ce2bafeeecafd72f833749f9a846da">m_WindowMinimum</a> {0.0}</td></tr>
 <tr class="separator:a35ce2bafeeecafd72f833749f9a846da"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
@@ -328,7 +332,7 @@ Additional Inherited Members</h2></td></tr>
 <p>All computations are performed in the precision of the input pixel's RealType. Before assigning the computed value to the output pixel.</p>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="classitk_1_1simple_1_1RescaleIntensityImageFilter.html" title="Applies a linear transformation to the intensity levels of the input Image .">RescaleIntensityImageFilter</a> </dd>
 <dd>
-<a class="el" href="namespaceitk_1_1simple.html#a8631dc96e7dc84090a0e61fc75d22a68" title="Applies a linear transformation to the intensity levels of the input Image that are inside a user-def...">itk::simple::IntensityWindowing</a> for the procedural interface </dd>
+<a class="el" href="namespaceitk_1_1simple.html#aad35a52f231fec00aca268a7ad5bca6c" title="Applies a linear transformation to the intensity levels of the input Image that are inside a user-def...">itk::simple::IntensityWindowing</a> for the procedural interface </dd>
 <dd>
 <a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1IntensityWindowingImageFilter.html">itk::IntensityWindowingImageFilter</a> for the Doxygen on the original ITK class. </dd></dl>
 
@@ -355,7 +359,7 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 <p>Setup for member function dispatching </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkIntensityWindowingImageFilter_8h_source.html#l00115">115</a> of file <a class="el" href="sitkIntensityWindowingImageFilter_8h_source.html">sitkIntensityWindowingImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkIntensityWindowingImageFilter_8h_source.html#l00118">118</a> of file <a class="el" href="sitkIntensityWindowingImageFilter_8h_source.html">sitkIntensityWindowingImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -439,7 +443,7 @@ Additional Inherited Members</h2></td></tr>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
 <a id="a590fd108591a33cb02181e657aaece3c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a590fd108591a33cb02181e657aaece3c">&#9670;&nbsp;</a></span>Execute()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a590fd108591a33cb02181e657aaece3c">&#9670;&nbsp;</a></span>Execute() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -448,6 +452,24 @@ Additional Inherited Members</h2></td></tr>
           <td class="memname"><a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> itk::simple::IntensityWindowingImageFilter::Execute </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> &amp;&#160;</td>
+          <td class="paramname"><em>image1</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a2b5a9fe68831c17de89e9bc59869079e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2b5a9fe68831c17de89e9bc59869079e">&#9670;&nbsp;</a></span>Execute() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> itk::simple::IntensityWindowingImageFilter::Execute </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> &amp;&amp;&#160;</td>
           <td class="paramname"><em>image1</em></td><td>)</td>
           <td></td>
         </tr>
@@ -792,11 +814,35 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkIntensityWindowingImageFilter_8h_source.html#l00119">119</a> of file <a class="el" href="sitkIntensityWindowingImageFilter_8h_source.html">sitkIntensityWindowingImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkIntensityWindowingImageFilter_8h_source.html#l00122">122</a> of file <a class="el" href="sitkIntensityWindowingImageFilter_8h_source.html">sitkIntensityWindowingImageFilter.h</a>.</p>
 
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
+<a id="aced0bc2be5494a74de324d6e2495e821"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aced0bc2be5494a74de324d6e2495e821">&#9670;&nbsp;</a></span>m_InPlace</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool itk::simple::IntensityWindowingImageFilter::m_InPlace {false}</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="sitkIntensityWindowingImageFilter_8h_source.html#l00136">136</a> of file <a class="el" href="sitkIntensityWindowingImageFilter_8h_source.html">sitkIntensityWindowingImageFilter.h</a>.</p>
+
+</div>
+</div>
 <a id="a79d1818edfe077e48e9ab0437b81c4ae"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a79d1818edfe077e48e9ab0437b81c4ae">&#9670;&nbsp;</a></span>m_MemberFactory</h2>
 
@@ -817,7 +863,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkIntensityWindowingImageFilter_8h_source.html#l00121">121</a> of file <a class="el" href="sitkIntensityWindowingImageFilter_8h_source.html">sitkIntensityWindowingImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkIntensityWindowingImageFilter_8h_source.html#l00124">124</a> of file <a class="el" href="sitkIntensityWindowingImageFilter_8h_source.html">sitkIntensityWindowingImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -831,7 +877,7 @@ template&lt;class TImageType &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">double itk::simple::IntensityWindowingImageFilter::m_OutputMaximum</td>
+          <td class="memname">double itk::simple::IntensityWindowingImageFilter::m_OutputMaximum {255.0}</td>
         </tr>
       </table>
   </td>
@@ -841,7 +887,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkIntensityWindowingImageFilter_8h_source.html#l00127">127</a> of file <a class="el" href="sitkIntensityWindowingImageFilter_8h_source.html">sitkIntensityWindowingImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkIntensityWindowingImageFilter_8h_source.html#l00133">133</a> of file <a class="el" href="sitkIntensityWindowingImageFilter_8h_source.html">sitkIntensityWindowingImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -855,7 +901,7 @@ template&lt;class TImageType &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">double itk::simple::IntensityWindowingImageFilter::m_OutputMinimum</td>
+          <td class="memname">double itk::simple::IntensityWindowingImageFilter::m_OutputMinimum {0.0}</td>
         </tr>
       </table>
   </td>
@@ -865,7 +911,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkIntensityWindowingImageFilter_8h_source.html#l00126">126</a> of file <a class="el" href="sitkIntensityWindowingImageFilter_8h_source.html">sitkIntensityWindowingImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkIntensityWindowingImageFilter_8h_source.html#l00131">131</a> of file <a class="el" href="sitkIntensityWindowingImageFilter_8h_source.html">sitkIntensityWindowingImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -879,7 +925,7 @@ template&lt;class TImageType &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">double itk::simple::IntensityWindowingImageFilter::m_WindowMaximum</td>
+          <td class="memname">double itk::simple::IntensityWindowingImageFilter::m_WindowMaximum {255.0}</td>
         </tr>
       </table>
   </td>
@@ -889,7 +935,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkIntensityWindowingImageFilter_8h_source.html#l00125">125</a> of file <a class="el" href="sitkIntensityWindowingImageFilter_8h_source.html">sitkIntensityWindowingImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkIntensityWindowingImageFilter_8h_source.html#l00129">129</a> of file <a class="el" href="sitkIntensityWindowingImageFilter_8h_source.html">sitkIntensityWindowingImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -903,7 +949,7 @@ template&lt;class TImageType &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">double itk::simple::IntensityWindowingImageFilter::m_WindowMinimum</td>
+          <td class="memname">double itk::simple::IntensityWindowingImageFilter::m_WindowMinimum {0.0}</td>
         </tr>
       </table>
   </td>
@@ -913,7 +959,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkIntensityWindowingImageFilter_8h_source.html#l00124">124</a> of file <a class="el" href="sitkIntensityWindowingImageFilter_8h_source.html">sitkIntensityWindowingImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkIntensityWindowingImageFilter_8h_source.html#l00127">127</a> of file <a class="el" href="sitkIntensityWindowingImageFilter_8h_source.html">sitkIntensityWindowingImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -923,7 +969,7 @@ template&lt;class TImageType &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Apr 7 2020 03:21:36 for SimpleITK by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Apr 14 2020 02:53:29 for SimpleITK by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

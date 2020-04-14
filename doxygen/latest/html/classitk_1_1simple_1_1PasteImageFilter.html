@@ -19,7 +19,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">SimpleITK
-   &#160;<span id="projectnumber">2.0.0rc1.post73</span>
+   &#160;<span id="projectnumber">2.0.0rc1.post121</span>
    </div>
   </td>
  </tr>
@@ -144,6 +144,8 @@ Public Types</h2></td></tr>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:ab6cccb55cd211d957f8808e1e6eb1920"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classitk_1_1simple_1_1Image.html">Image</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1PasteImageFilter.html#ab6cccb55cd211d957f8808e1e6eb1920">Execute</a> (const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> &amp;destinationImage, const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> &amp;sourceImage)</td></tr>
 <tr class="separator:ab6cccb55cd211d957f8808e1e6eb1920"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aba38381389bc97ae40c1b6f1944f4943"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classitk_1_1simple_1_1Image.html">Image</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1PasteImageFilter.html#aba38381389bc97ae40c1b6f1944f4943">Execute</a> (<a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> &amp;&amp;destinationImage, const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> &amp;sourceImage)</td></tr>
+<tr class="separator:aba38381389bc97ae40c1b6f1944f4943"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afb67632d586836d35a3469881c64e765"><td class="memItemLeft" align="right" valign="top">std::vector&lt; int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1PasteImageFilter.html#afb67632d586836d35a3469881c64e765">GetDestinationIndex</a> () const</td></tr>
 <tr class="separator:afb67632d586836d35a3469881c64e765"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6cc2cf69df63a4dbd9d0f03552065df6"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1PasteImageFilter.html#a6cc2cf69df63a4dbd9d0f03552065df6">GetName</a> () const</td></tr>
@@ -217,13 +219,15 @@ Private Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
-<tr class="memitem:a326c1c813f8c017390b76c48c94f612d"><td class="memItemLeft" align="right" valign="top">std::vector&lt; int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1PasteImageFilter.html#a326c1c813f8c017390b76c48c94f612d">m_DestinationIndex</a></td></tr>
+<tr class="memitem:a326c1c813f8c017390b76c48c94f612d"><td class="memItemLeft" align="right" valign="top">std::vector&lt; int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1PasteImageFilter.html#a326c1c813f8c017390b76c48c94f612d">m_DestinationIndex</a> {std::vector&lt;int&gt;(3, 0)}</td></tr>
 <tr class="separator:a326c1c813f8c017390b76c48c94f612d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0e6e58a9b5cc0961c88952f9ff261cb3"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1PasteImageFilter.html#a0e6e58a9b5cc0961c88952f9ff261cb3">m_InPlace</a> {false}</td></tr>
+<tr class="separator:a0e6e58a9b5cc0961c88952f9ff261cb3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9b2f9c54b6991a3b35b651879e19d818"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="classitk_1_1simple_1_1detail_1_1MemberFunctionFactory.html">detail::MemberFunctionFactory</a>&lt; <a class="el" href="classitk_1_1simple_1_1PasteImageFilter.html#a6da8b903cf4f72fd2ca9bf029b30c63d">MemberFunctionType</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1PasteImageFilter.html#a9b2f9c54b6991a3b35b651879e19d818">m_MemberFactory</a></td></tr>
 <tr class="separator:a9b2f9c54b6991a3b35b651879e19d818"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acb6cb3ae25fdc4e96451055107128477"><td class="memItemLeft" align="right" valign="top">std::vector&lt; int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1PasteImageFilter.html#acb6cb3ae25fdc4e96451055107128477">m_SourceIndex</a></td></tr>
+<tr class="memitem:acb6cb3ae25fdc4e96451055107128477"><td class="memItemLeft" align="right" valign="top">std::vector&lt; int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1PasteImageFilter.html#acb6cb3ae25fdc4e96451055107128477">m_SourceIndex</a> {std::vector&lt;int&gt;(3, 0)}</td></tr>
 <tr class="separator:acb6cb3ae25fdc4e96451055107128477"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af8f37b176d232592bcb9061790cfb018"><td class="memItemLeft" align="right" valign="top">std::vector&lt; unsigned int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1PasteImageFilter.html#af8f37b176d232592bcb9061790cfb018">m_SourceSize</a></td></tr>
+<tr class="memitem:af8f37b176d232592bcb9061790cfb018"><td class="memItemLeft" align="right" valign="top">std::vector&lt; unsigned int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1PasteImageFilter.html#af8f37b176d232592bcb9061790cfb018">m_SourceSize</a> {std::vector&lt;unsigned int&gt;(3, 1)}</td></tr>
 <tr class="separator:af8f37b176d232592bcb9061790cfb018"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
@@ -321,7 +325,7 @@ Additional Inherited Members</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Paste an image into another image. </p>
 <p><a class="el" href="classitk_1_1simple_1_1PasteImageFilter.html" title="Paste an image into another image.">PasteImageFilter</a> allows you to take a section of one image and paste into another image. The <a class="el" href="classitk_1_1simple_1_1PasteImageFilter.html#ac5e7c322810cf240c76d666a0744cc1d">SetDestinationIndex()</a> method prescribes where in the first input to start pasting data from the second input. The SetSourceRegion method prescribes the section of the second image to paste into the first. If the output requested region does not include the SourceRegion after it has been repositioned to DestinationIndex, then the output will just be a copy of the input.</p>
-<p>The two inputs and output image will have the same pixel type. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="namespaceitk_1_1simple.html#af2e644c40962403fbbc91822974bd592" title="Paste an image into another image.">itk::simple::Paste</a> for the procedural interface </dd>
+<p>The two inputs and output image will have the same pixel type. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="namespaceitk_1_1simple.html#affcdd0e6e935277c4e9a4b61df5fc0d7" title="Paste an image into another image.">itk::simple::Paste</a> for the procedural interface </dd>
 <dd>
 <a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1PasteImageFilter.html">itk::PasteImageFilter</a> for the Doxygen on the original ITK class. </dd></dl>
 
@@ -348,7 +352,7 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 <p>Setup for member function dispatching </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkPasteImageFilter_8h_source.html#l00099">99</a> of file <a class="el" href="sitkPasteImageFilter_8h_source.html">sitkPasteImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkPasteImageFilter_8h_source.html#l00102">102</a> of file <a class="el" href="sitkPasteImageFilter_8h_source.html">sitkPasteImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -432,7 +436,7 @@ Additional Inherited Members</h2></td></tr>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
 <a id="ab6cccb55cd211d957f8808e1e6eb1920"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab6cccb55cd211d957f8808e1e6eb1920">&#9670;&nbsp;</a></span>Execute()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ab6cccb55cd211d957f8808e1e6eb1920">&#9670;&nbsp;</a></span>Execute() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -441,6 +445,34 @@ Additional Inherited Members</h2></td></tr>
           <td class="memname"><a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> itk::simple::PasteImageFilter::Execute </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> &amp;&#160;</td>
+          <td class="paramname"><em>destinationImage</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> &amp;&#160;</td>
+          <td class="paramname"><em>sourceImage</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aba38381389bc97ae40c1b6f1944f4943"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aba38381389bc97ae40c1b6f1944f4943">&#9670;&nbsp;</a></span>Execute() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> itk::simple::PasteImageFilter::Execute </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> &amp;&amp;&#160;</td>
           <td class="paramname"><em>destinationImage</em>, </td>
         </tr>
         <tr>
@@ -744,7 +776,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkPasteImageFilter_8h_source.html#l00103">103</a> of file <a class="el" href="sitkPasteImageFilter_8h_source.html">sitkPasteImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkPasteImageFilter_8h_source.html#l00106">106</a> of file <a class="el" href="sitkPasteImageFilter_8h_source.html">sitkPasteImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -759,7 +791,7 @@ template&lt;class TImageType &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::vector&lt;int&gt; itk::simple::PasteImageFilter::m_DestinationIndex</td>
+          <td class="memname">std::vector&lt;int&gt; itk::simple::PasteImageFilter::m_DestinationIndex {std::vector&lt;int&gt;(3, 0)}</td>
         </tr>
       </table>
   </td>
@@ -769,7 +801,31 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkPasteImageFilter_8h_source.html#l00110">110</a> of file <a class="el" href="sitkPasteImageFilter_8h_source.html">sitkPasteImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkPasteImageFilter_8h_source.html#l00115">115</a> of file <a class="el" href="sitkPasteImageFilter_8h_source.html">sitkPasteImageFilter.h</a>.</p>
+
+</div>
+</div>
+<a id="a0e6e58a9b5cc0961c88952f9ff261cb3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0e6e58a9b5cc0961c88952f9ff261cb3">&#9670;&nbsp;</a></span>m_InPlace</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool itk::simple::PasteImageFilter::m_InPlace {false}</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="sitkPasteImageFilter_8h_source.html#l00118">118</a> of file <a class="el" href="sitkPasteImageFilter_8h_source.html">sitkPasteImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -793,7 +849,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkPasteImageFilter_8h_source.html#l00105">105</a> of file <a class="el" href="sitkPasteImageFilter_8h_source.html">sitkPasteImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkPasteImageFilter_8h_source.html#l00108">108</a> of file <a class="el" href="sitkPasteImageFilter_8h_source.html">sitkPasteImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -807,7 +863,7 @@ template&lt;class TImageType &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::vector&lt;int&gt; itk::simple::PasteImageFilter::m_SourceIndex</td>
+          <td class="memname">std::vector&lt;int&gt; itk::simple::PasteImageFilter::m_SourceIndex {std::vector&lt;int&gt;(3, 0)}</td>
         </tr>
       </table>
   </td>
@@ -817,7 +873,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkPasteImageFilter_8h_source.html#l00109">109</a> of file <a class="el" href="sitkPasteImageFilter_8h_source.html">sitkPasteImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkPasteImageFilter_8h_source.html#l00113">113</a> of file <a class="el" href="sitkPasteImageFilter_8h_source.html">sitkPasteImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -831,7 +887,7 @@ template&lt;class TImageType &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::vector&lt;unsigned int&gt; itk::simple::PasteImageFilter::m_SourceSize</td>
+          <td class="memname">std::vector&lt;unsigned int&gt; itk::simple::PasteImageFilter::m_SourceSize {std::vector&lt;unsigned int&gt;(3, 1)}</td>
         </tr>
       </table>
   </td>
@@ -841,7 +897,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkPasteImageFilter_8h_source.html#l00108">108</a> of file <a class="el" href="sitkPasteImageFilter_8h_source.html">sitkPasteImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkPasteImageFilter_8h_source.html#l00111">111</a> of file <a class="el" href="sitkPasteImageFilter_8h_source.html">sitkPasteImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -851,7 +907,7 @@ template&lt;class TImageType &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Apr 7 2020 03:21:38 for SimpleITK by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Apr 14 2020 02:53:32 for SimpleITK by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

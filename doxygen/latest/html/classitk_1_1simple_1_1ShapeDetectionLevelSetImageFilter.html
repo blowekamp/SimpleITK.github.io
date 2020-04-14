@@ -19,7 +19,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">SimpleITK
-   &#160;<span id="projectnumber">2.0.0rc1.post73</span>
+   &#160;<span id="projectnumber">2.0.0rc1.post121</span>
    </div>
   </td>
  </tr>
@@ -142,6 +142,8 @@ Public Types</h2></td></tr>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:aa05480da04d2afbd562190ce920fd94e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classitk_1_1simple_1_1Image.html">Image</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1ShapeDetectionLevelSetImageFilter.html#aa05480da04d2afbd562190ce920fd94e">Execute</a> (const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> &amp;initialImage, const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> &amp;featureImage)</td></tr>
 <tr class="separator:aa05480da04d2afbd562190ce920fd94e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7f708461ee777ca5ead6b7bd66d46572"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classitk_1_1simple_1_1Image.html">Image</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1ShapeDetectionLevelSetImageFilter.html#a7f708461ee777ca5ead6b7bd66d46572">Execute</a> (<a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> &amp;&amp;initialImage, const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> &amp;featureImage)</td></tr>
+<tr class="separator:a7f708461ee777ca5ead6b7bd66d46572"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad6d08f8adab68ca11fadbdfdd8bb9d2e"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1ShapeDetectionLevelSetImageFilter.html#ad6d08f8adab68ca11fadbdfdd8bb9d2e">GetCurvatureScaling</a> () const</td></tr>
 <tr class="separator:ad6d08f8adab68ca11fadbdfdd8bb9d2e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4b09b04648ea4ba2d3446379615441a6"><td class="memItemLeft" align="right" valign="top"><a class="elRef" href="https://www.itk.org/Doxygen/html/namespaceitk.html#a575b8e3e1ee797dd1bbaf9724ed68f92">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1ShapeDetectionLevelSetImageFilter.html#a4b09b04648ea4ba2d3446379615441a6">GetElapsedIterations</a> () const</td></tr>
@@ -233,21 +235,23 @@ Private Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
-<tr class="memitem:a798970a1be2d297aa597d40f86dc54d3"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1ShapeDetectionLevelSetImageFilter.html#a798970a1be2d297aa597d40f86dc54d3">m_CurvatureScaling</a></td></tr>
+<tr class="memitem:a798970a1be2d297aa597d40f86dc54d3"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1ShapeDetectionLevelSetImageFilter.html#a798970a1be2d297aa597d40f86dc54d3">m_CurvatureScaling</a> {1.0}</td></tr>
 <tr class="separator:a798970a1be2d297aa597d40f86dc54d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a63f350bc6a06fb77ac9fdd1c18252ac9"><td class="memItemLeft" align="right" valign="top"><a class="elRef" href="https://www.itk.org/Doxygen/html/namespaceitk.html#a575b8e3e1ee797dd1bbaf9724ed68f92">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1ShapeDetectionLevelSetImageFilter.html#a63f350bc6a06fb77ac9fdd1c18252ac9">m_ElapsedIterations</a></td></tr>
+<tr class="memitem:a63f350bc6a06fb77ac9fdd1c18252ac9"><td class="memItemLeft" align="right" valign="top"><a class="elRef" href="https://www.itk.org/Doxygen/html/namespaceitk.html#a575b8e3e1ee797dd1bbaf9724ed68f92">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1ShapeDetectionLevelSetImageFilter.html#a63f350bc6a06fb77ac9fdd1c18252ac9">m_ElapsedIterations</a> {0}</td></tr>
 <tr class="separator:a63f350bc6a06fb77ac9fdd1c18252ac9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a01bdc6c2a56d6fd92ecb5c1d7b6fd89e"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1ShapeDetectionLevelSetImageFilter.html#a01bdc6c2a56d6fd92ecb5c1d7b6fd89e">m_MaximumRMSError</a></td></tr>
+<tr class="memitem:af1630b959f5b89a8d2874490e4c305ec"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1ShapeDetectionLevelSetImageFilter.html#af1630b959f5b89a8d2874490e4c305ec">m_InPlace</a> {false}</td></tr>
+<tr class="separator:af1630b959f5b89a8d2874490e4c305ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a01bdc6c2a56d6fd92ecb5c1d7b6fd89e"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1ShapeDetectionLevelSetImageFilter.html#a01bdc6c2a56d6fd92ecb5c1d7b6fd89e">m_MaximumRMSError</a> {0.02}</td></tr>
 <tr class="separator:a01bdc6c2a56d6fd92ecb5c1d7b6fd89e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3ef57b5c4690f8885773e1a1a331131f"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="classitk_1_1simple_1_1detail_1_1MemberFunctionFactory.html">detail::MemberFunctionFactory</a>&lt; <a class="el" href="classitk_1_1simple_1_1ShapeDetectionLevelSetImageFilter.html#a73336ca4c54ed0d802cab801f05d9d7d">MemberFunctionType</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1ShapeDetectionLevelSetImageFilter.html#a3ef57b5c4690f8885773e1a1a331131f">m_MemberFactory</a></td></tr>
 <tr class="separator:a3ef57b5c4690f8885773e1a1a331131f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acaae4ef209ca8c65c0288ab3edd33279"><td class="memItemLeft" align="right" valign="top"><a class="elRef" href="https://www.itk.org/Doxygen/html/namespaceitk.html#a575b8e3e1ee797dd1bbaf9724ed68f92">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1ShapeDetectionLevelSetImageFilter.html#acaae4ef209ca8c65c0288ab3edd33279">m_NumberOfIterations</a></td></tr>
+<tr class="memitem:acaae4ef209ca8c65c0288ab3edd33279"><td class="memItemLeft" align="right" valign="top"><a class="elRef" href="https://www.itk.org/Doxygen/html/namespaceitk.html#a575b8e3e1ee797dd1bbaf9724ed68f92">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1ShapeDetectionLevelSetImageFilter.html#acaae4ef209ca8c65c0288ab3edd33279">m_NumberOfIterations</a> {1000u}</td></tr>
 <tr class="separator:acaae4ef209ca8c65c0288ab3edd33279"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a671d66e0cb41559c6dd4859349b9733e"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1ShapeDetectionLevelSetImageFilter.html#a671d66e0cb41559c6dd4859349b9733e">m_PropagationScaling</a></td></tr>
+<tr class="memitem:a671d66e0cb41559c6dd4859349b9733e"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1ShapeDetectionLevelSetImageFilter.html#a671d66e0cb41559c6dd4859349b9733e">m_PropagationScaling</a> {1.0}</td></tr>
 <tr class="separator:a671d66e0cb41559c6dd4859349b9733e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8118bc2bbc7ffef3ac74e85df0989bc4"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1ShapeDetectionLevelSetImageFilter.html#a8118bc2bbc7ffef3ac74e85df0989bc4">m_ReverseExpansionDirection</a></td></tr>
+<tr class="memitem:a8118bc2bbc7ffef3ac74e85df0989bc4"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1ShapeDetectionLevelSetImageFilter.html#a8118bc2bbc7ffef3ac74e85df0989bc4">m_ReverseExpansionDirection</a> {false}</td></tr>
 <tr class="separator:a8118bc2bbc7ffef3ac74e85df0989bc4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abca3e20a408c197b0a9f2f450598b886"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1ShapeDetectionLevelSetImageFilter.html#abca3e20a408c197b0a9f2f450598b886">m_RMSChange</a></td></tr>
+<tr class="memitem:abca3e20a408c197b0a9f2f450598b886"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1ShapeDetectionLevelSetImageFilter.html#abca3e20a408c197b0a9f2f450598b886">m_RMSChange</a> {0.0}</td></tr>
 <tr class="separator:abca3e20a408c197b0a9f2f450598b886"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
@@ -369,7 +373,7 @@ Additional Inherited Members</h2></td></tr>
 <dd>
 <a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1SparseFieldLevelSetImageFilter.html">SparseFieldLevelSetImageFilter</a> </dd>
 <dd>
-<a class="el" href="namespaceitk_1_1simple.html#ac158368791cdbe4c3a40f8b099c42098" title="Segments structures in images based on a user supplied edge potential map.">itk::simple::ShapeDetectionLevelSet</a> for the procedural interface </dd>
+<a class="el" href="namespaceitk_1_1simple.html#a23bd74d486cce50ac474f0165205faf0" title="Segments structures in images based on a user supplied edge potential map.">itk::simple::ShapeDetectionLevelSet</a> for the procedural interface </dd>
 <dd>
 <a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1ShapeDetectionLevelSetImageFilter.html">itk::ShapeDetectionLevelSetImageFilter</a> for the Doxygen on the original ITK class. </dd></dl>
 
@@ -396,7 +400,7 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 <p>Setup for member function dispatching </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkShapeDetectionLevelSetImageFilter_8h_source.html#l00185">185</a> of file <a class="el" href="sitkShapeDetectionLevelSetImageFilter_8h_source.html">sitkShapeDetectionLevelSetImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkShapeDetectionLevelSetImageFilter_8h_source.html#l00188">188</a> of file <a class="el" href="sitkShapeDetectionLevelSetImageFilter_8h_source.html">sitkShapeDetectionLevelSetImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -480,7 +484,7 @@ Additional Inherited Members</h2></td></tr>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
 <a id="aa05480da04d2afbd562190ce920fd94e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa05480da04d2afbd562190ce920fd94e">&#9670;&nbsp;</a></span>Execute()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#aa05480da04d2afbd562190ce920fd94e">&#9670;&nbsp;</a></span>Execute() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -489,6 +493,34 @@ Additional Inherited Members</h2></td></tr>
           <td class="memname"><a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> itk::simple::ShapeDetectionLevelSetImageFilter::Execute </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> &amp;&#160;</td>
+          <td class="paramname"><em>initialImage</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> &amp;&#160;</td>
+          <td class="paramname"><em>featureImage</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a7f708461ee777ca5ead6b7bd66d46572"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7f708461ee777ca5ead6b7bd66d46572">&#9670;&nbsp;</a></span>Execute() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> itk::simple::ShapeDetectionLevelSetImageFilter::Execute </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> &amp;&amp;&#160;</td>
           <td class="paramname"><em>initialImage</em>, </td>
         </tr>
         <tr>
@@ -1015,7 +1047,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkShapeDetectionLevelSetImageFilter_8h_source.html#l00189">189</a> of file <a class="el" href="sitkShapeDetectionLevelSetImageFilter_8h_source.html">sitkShapeDetectionLevelSetImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkShapeDetectionLevelSetImageFilter_8h_source.html#l00192">192</a> of file <a class="el" href="sitkShapeDetectionLevelSetImageFilter_8h_source.html">sitkShapeDetectionLevelSetImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -1030,7 +1062,7 @@ template&lt;class TImageType &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">double itk::simple::ShapeDetectionLevelSetImageFilter::m_CurvatureScaling</td>
+          <td class="memname">double itk::simple::ShapeDetectionLevelSetImageFilter::m_CurvatureScaling {1.0}</td>
         </tr>
       </table>
   </td>
@@ -1040,7 +1072,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkShapeDetectionLevelSetImageFilter_8h_source.html#l00199">199</a> of file <a class="el" href="sitkShapeDetectionLevelSetImageFilter_8h_source.html">sitkShapeDetectionLevelSetImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkShapeDetectionLevelSetImageFilter_8h_source.html#l00204">204</a> of file <a class="el" href="sitkShapeDetectionLevelSetImageFilter_8h_source.html">sitkShapeDetectionLevelSetImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -1054,7 +1086,7 @@ template&lt;class TImageType &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="elRef" href="https://www.itk.org/Doxygen/html/namespaceitk.html#a575b8e3e1ee797dd1bbaf9724ed68f92">uint32_t</a> itk::simple::ShapeDetectionLevelSetImageFilter::m_ElapsedIterations</td>
+          <td class="memname"><a class="elRef" href="https://www.itk.org/Doxygen/html/namespaceitk.html#a575b8e3e1ee797dd1bbaf9724ed68f92">uint32_t</a> itk::simple::ShapeDetectionLevelSetImageFilter::m_ElapsedIterations {0}</td>
         </tr>
       </table>
   </td>
@@ -1064,7 +1096,31 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkShapeDetectionLevelSetImageFilter_8h_source.html#l00205">205</a> of file <a class="el" href="sitkShapeDetectionLevelSetImageFilter_8h_source.html">sitkShapeDetectionLevelSetImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkShapeDetectionLevelSetImageFilter_8h_source.html#l00213">213</a> of file <a class="el" href="sitkShapeDetectionLevelSetImageFilter_8h_source.html">sitkShapeDetectionLevelSetImageFilter.h</a>.</p>
+
+</div>
+</div>
+<a id="af1630b959f5b89a8d2874490e4c305ec"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af1630b959f5b89a8d2874490e4c305ec">&#9670;&nbsp;</a></span>m_InPlace</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool itk::simple::ShapeDetectionLevelSetImageFilter::m_InPlace {false}</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="sitkShapeDetectionLevelSetImageFilter_8h_source.html#l00218">218</a> of file <a class="el" href="sitkShapeDetectionLevelSetImageFilter_8h_source.html">sitkShapeDetectionLevelSetImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -1078,7 +1134,7 @@ template&lt;class TImageType &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">double itk::simple::ShapeDetectionLevelSetImageFilter::m_MaximumRMSError</td>
+          <td class="memname">double itk::simple::ShapeDetectionLevelSetImageFilter::m_MaximumRMSError {0.02}</td>
         </tr>
       </table>
   </td>
@@ -1088,7 +1144,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkShapeDetectionLevelSetImageFilter_8h_source.html#l00195">195</a> of file <a class="el" href="sitkShapeDetectionLevelSetImageFilter_8h_source.html">sitkShapeDetectionLevelSetImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkShapeDetectionLevelSetImageFilter_8h_source.html#l00198">198</a> of file <a class="el" href="sitkShapeDetectionLevelSetImageFilter_8h_source.html">sitkShapeDetectionLevelSetImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -1112,7 +1168,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkShapeDetectionLevelSetImageFilter_8h_source.html#l00191">191</a> of file <a class="el" href="sitkShapeDetectionLevelSetImageFilter_8h_source.html">sitkShapeDetectionLevelSetImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkShapeDetectionLevelSetImageFilter_8h_source.html#l00194">194</a> of file <a class="el" href="sitkShapeDetectionLevelSetImageFilter_8h_source.html">sitkShapeDetectionLevelSetImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -1126,79 +1182,7 @@ template&lt;class TImageType &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="elRef" href="https://www.itk.org/Doxygen/html/namespaceitk.html#a575b8e3e1ee797dd1bbaf9724ed68f92">uint32_t</a> itk::simple::ShapeDetectionLevelSetImageFilter::m_NumberOfIterations</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="sitkShapeDetectionLevelSetImageFilter_8h_source.html#l00201">201</a> of file <a class="el" href="sitkShapeDetectionLevelSetImageFilter_8h_source.html">sitkShapeDetectionLevelSetImageFilter.h</a>.</p>
-
-</div>
-</div>
-<a id="a671d66e0cb41559c6dd4859349b9733e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a671d66e0cb41559c6dd4859349b9733e">&#9670;&nbsp;</a></span>m_PropagationScaling</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">double itk::simple::ShapeDetectionLevelSetImageFilter::m_PropagationScaling</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="sitkShapeDetectionLevelSetImageFilter_8h_source.html#l00197">197</a> of file <a class="el" href="sitkShapeDetectionLevelSetImageFilter_8h_source.html">sitkShapeDetectionLevelSetImageFilter.h</a>.</p>
-
-</div>
-</div>
-<a id="a8118bc2bbc7ffef3ac74e85df0989bc4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8118bc2bbc7ffef3ac74e85df0989bc4">&#9670;&nbsp;</a></span>m_ReverseExpansionDirection</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool itk::simple::ShapeDetectionLevelSetImageFilter::m_ReverseExpansionDirection</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="sitkShapeDetectionLevelSetImageFilter_8h_source.html#l00203">203</a> of file <a class="el" href="sitkShapeDetectionLevelSetImageFilter_8h_source.html">sitkShapeDetectionLevelSetImageFilter.h</a>.</p>
-
-</div>
-</div>
-<a id="abca3e20a408c197b0a9f2f450598b886"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abca3e20a408c197b0a9f2f450598b886">&#9670;&nbsp;</a></span>m_RMSChange</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">double itk::simple::ShapeDetectionLevelSetImageFilter::m_RMSChange</td>
+          <td class="memname"><a class="elRef" href="https://www.itk.org/Doxygen/html/namespaceitk.html#a575b8e3e1ee797dd1bbaf9724ed68f92">uint32_t</a> itk::simple::ShapeDetectionLevelSetImageFilter::m_NumberOfIterations {1000u}</td>
         </tr>
       </table>
   </td>
@@ -1212,13 +1196,85 @@ template&lt;class TImageType &gt; </div>
 
 </div>
 </div>
+<a id="a671d66e0cb41559c6dd4859349b9733e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a671d66e0cb41559c6dd4859349b9733e">&#9670;&nbsp;</a></span>m_PropagationScaling</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double itk::simple::ShapeDetectionLevelSetImageFilter::m_PropagationScaling {1.0}</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="sitkShapeDetectionLevelSetImageFilter_8h_source.html#l00201">201</a> of file <a class="el" href="sitkShapeDetectionLevelSetImageFilter_8h_source.html">sitkShapeDetectionLevelSetImageFilter.h</a>.</p>
+
+</div>
+</div>
+<a id="a8118bc2bbc7ffef3ac74e85df0989bc4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8118bc2bbc7ffef3ac74e85df0989bc4">&#9670;&nbsp;</a></span>m_ReverseExpansionDirection</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool itk::simple::ShapeDetectionLevelSetImageFilter::m_ReverseExpansionDirection {false}</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="sitkShapeDetectionLevelSetImageFilter_8h_source.html#l00210">210</a> of file <a class="el" href="sitkShapeDetectionLevelSetImageFilter_8h_source.html">sitkShapeDetectionLevelSetImageFilter.h</a>.</p>
+
+</div>
+</div>
+<a id="abca3e20a408c197b0a9f2f450598b886"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abca3e20a408c197b0a9f2f450598b886">&#9670;&nbsp;</a></span>m_RMSChange</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double itk::simple::ShapeDetectionLevelSetImageFilter::m_RMSChange {0.0}</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="sitkShapeDetectionLevelSetImageFilter_8h_source.html#l00215">215</a> of file <a class="el" href="sitkShapeDetectionLevelSetImageFilter_8h_source.html">sitkShapeDetectionLevelSetImageFilter.h</a>.</p>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li><a class="el" href="sitkShapeDetectionLevelSetImageFilter_8h_source.html">sitkShapeDetectionLevelSetImageFilter.h</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Apr 7 2020 03:21:39 for SimpleITK by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Apr 14 2020 02:53:33 for SimpleITK by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

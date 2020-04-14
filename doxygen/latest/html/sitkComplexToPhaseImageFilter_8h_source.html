@@ -19,7 +19,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">SimpleITK
-   &#160;<span id="projectnumber">2.0.0rc1.post73</span>
+   &#160;<span id="projectnumber">2.0.0rc1.post121</span>
    </div>
   </td>
  </tr>
@@ -97,29 +97,37 @@ $(function() {
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;      std::string ToString() <span class="keyword">const</span>;</div>
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160; </div>
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160; </div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;      <a class="code" href="classitk_1_1simple_1_1Image.html">Image</a> Execute ( <span class="keyword">const</span> <a class="code" href="classitk_1_1simple_1_1Image.html">Image</a>&amp; image1 );</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160; </div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    <span class="keyword">private</span>:</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160; </div>
-<div class="line"><a name="l00071"></a><span class="lineno"><a class="line" href="classitk_1_1simple_1_1ComplexToPhaseImageFilter.html#a99b33e2ec39953d730a426ffaf8cbd7f">   71</a></span>&#160;      <span class="keyword">typedef</span> <a class="code" href="classitk_1_1simple_1_1Image.html">Image</a> (<a class="code" href="classitk_1_1simple_1_1ProcessObject.html">Self</a>::*MemberFunctionType)( <span class="keyword">const</span> <a class="code" href="classitk_1_1simple_1_1Image.html">Image</a>&amp; image1 );</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;      <span class="keyword">template</span> &lt;<span class="keyword">class</span> TImageType&gt; <a class="code" href="classitk_1_1simple_1_1Image.html">Image</a> ExecuteInternal ( <span class="keyword">const</span> <a class="code" href="classitk_1_1simple_1_1Image.html">Image</a>&amp; image1 );</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160; </div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160; </div>
-<div class="line"><a name="l00075"></a><span class="lineno"><a class="line" href="classitk_1_1simple_1_1ComplexToPhaseImageFilter.html#af82f64823e6df0f5b2063b8fc7dd0c26">   75</a></span>&#160;      <span class="keyword">friend</span> <span class="keyword">struct </span><a class="code" href="structitk_1_1simple_1_1detail_1_1MemberFunctionAddressor.html">detail::MemberFunctionAddressor</a>&lt;MemberFunctionType&gt;;</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<span class="preprocessor">#ifndef SWIG</span></div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;      <a class="code" href="classitk_1_1simple_1_1Image.html">Image</a> Execute ( <a class="code" href="classitk_1_1simple_1_1Image.html">Image</a>&amp;&amp; image1 );</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;      <a class="code" href="classitk_1_1simple_1_1Image.html">Image</a> Execute ( <span class="keyword">const</span> <a class="code" href="classitk_1_1simple_1_1Image.html">Image</a>&amp; image1 );</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160; </div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160; </div>
+<div class="line"><a name="l00074"></a><span class="lineno"><a class="line" href="classitk_1_1simple_1_1ComplexToPhaseImageFilter.html#a99b33e2ec39953d730a426ffaf8cbd7f">   74</a></span>&#160;      <span class="keyword">typedef</span> <a class="code" href="classitk_1_1simple_1_1Image.html">Image</a> (<a class="code" href="classitk_1_1simple_1_1ProcessObject.html">Self</a>::*MemberFunctionType)( <span class="keyword">const</span> <a class="code" href="classitk_1_1simple_1_1Image.html">Image</a>&amp; image1 );</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;      <span class="keyword">template</span> &lt;<span class="keyword">class</span> TImageType&gt; <a class="code" href="classitk_1_1simple_1_1Image.html">Image</a> ExecuteInternal ( <span class="keyword">const</span> <a class="code" href="classitk_1_1simple_1_1Image.html">Image</a>&amp; image1 );</div>
 <div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160; </div>
-<div class="line"><a name="l00077"></a><span class="lineno"><a class="line" href="classitk_1_1simple_1_1ComplexToPhaseImageFilter.html#a42b19c1e0f8649c50d16e8b2f5c790ba">   77</a></span>&#160;      std::unique_ptr&lt;detail::MemberFunctionFactory&lt;MemberFunctionType&gt; &gt; <a class="code" href="classitk_1_1simple_1_1ComplexToPhaseImageFilter.html#a42b19c1e0f8649c50d16e8b2f5c790ba">m_MemberFactory</a>;</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160; </div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160; </div>
+<div class="line"><a name="l00078"></a><span class="lineno"><a class="line" href="classitk_1_1simple_1_1ComplexToPhaseImageFilter.html#af82f64823e6df0f5b2063b8fc7dd0c26">   78</a></span>&#160;      <span class="keyword">friend</span> <span class="keyword">struct </span><a class="code" href="structitk_1_1simple_1_1detail_1_1MemberFunctionAddressor.html">detail::MemberFunctionAddressor</a>&lt;MemberFunctionType&gt;;</div>
 <div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160; </div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    };</div>
+<div class="line"><a name="l00080"></a><span class="lineno"><a class="line" href="classitk_1_1simple_1_1ComplexToPhaseImageFilter.html#a42b19c1e0f8649c50d16e8b2f5c790ba">   80</a></span>&#160;      std::unique_ptr&lt;detail::MemberFunctionFactory&lt;MemberFunctionType&gt; &gt; <a class="code" href="classitk_1_1simple_1_1ComplexToPhaseImageFilter.html#a42b19c1e0f8649c50d16e8b2f5c790ba">m_MemberFactory</a>;</div>
 <div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160; </div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;     <a class="code" href="sitkBasicFilters_8h.html#a8c00663d3a7bae36066e320f83381283">SITKBasicFilters_EXPORT</a> <a class="code" href="classitk_1_1simple_1_1Image.html">Image</a> <a class="code" href="namespaceitk_1_1simple.html#aabe02ef68dbd83cb55e8a52f4b175a48">ComplexToPhase</a> ( <span class="keyword">const</span> <a class="code" href="classitk_1_1simple_1_1Image.html">Image</a>&amp; image1 );</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160; </div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;  }</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;}</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160; </div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160; </div>
+<div class="line"><a name="l00084"></a><span class="lineno"><a class="line" href="classitk_1_1simple_1_1ComplexToPhaseImageFilter.html#a7fc0f4ae3bdd5792b950c63b077f2636">   84</a></span>&#160;      <span class="keywordtype">bool</span> m_InPlace{<span class="keyword">false</span>};</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    };</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160; </div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;<span class="preprocessor">#ifndef SWIG</span></div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;     <a class="code" href="sitkBasicFilters_8h.html#a8c00663d3a7bae36066e320f83381283">SITKBasicFilters_EXPORT</a> <a class="codeRef" href="https://www.itk.org/Doxygen/html/classitk_1_1Image.html">Image</a> <a class="code" href="namespaceitk_1_1simple.html#a640794fd844a72a94e4700e3ecbfafaf">ComplexToPhase</a> ( <a class="codeRef" href="https://www.itk.org/Doxygen/html/classitk_1_1Image.html">Image</a>&amp;&amp; image1 );</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;     <a class="code" href="sitkBasicFilters_8h.html#a8c00663d3a7bae36066e320f83381283">SITKBasicFilters_EXPORT</a> <a class="codeRef" href="https://www.itk.org/Doxygen/html/classitk_1_1Image.html">Image</a> <a class="code" href="namespaceitk_1_1simple.html#a640794fd844a72a94e4700e3ecbfafaf">ComplexToPhase</a> ( <span class="keyword">const</span> <a class="codeRef" href="https://www.itk.org/Doxygen/html/classitk_1_1Image.html">Image</a>&amp; image1 );</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160; </div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;  }</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;}</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;<span class="preprocessor">#endif</span></div>
 </div><!-- fragment --></div><!-- contents -->
 <div class="ttc" id="aclassitk_1_1simple_1_1Image_html"><div class="ttname"><a href="classitk_1_1simple_1_1Image.html">itk::simple::Image</a></div><div class="ttdoc">The Image class for SimpleITK.</div><div class="ttdef"><b>Definition:</b> <a href="sitkImage_8h_source.html#l00075">sitkImage.h:75</a></div></div>
-<div class="ttc" id="aclassitk_1_1simple_1_1ComplexToPhaseImageFilter_html_a42b19c1e0f8649c50d16e8b2f5c790ba"><div class="ttname"><a href="classitk_1_1simple_1_1ComplexToPhaseImageFilter.html#a42b19c1e0f8649c50d16e8b2f5c790ba">itk::simple::ComplexToPhaseImageFilter::m_MemberFactory</a></div><div class="ttdeci">std::unique_ptr&lt; detail::MemberFunctionFactory&lt; MemberFunctionType &gt; &gt; m_MemberFactory</div><div class="ttdef"><b>Definition:</b> <a href="sitkComplexToPhaseImageFilter_8h_source.html#l00077">sitkComplexToPhaseImageFilter.h:77</a></div></div>
+<div class="ttc" id="aclassitk_1_1simple_1_1ComplexToPhaseImageFilter_html_a42b19c1e0f8649c50d16e8b2f5c790ba"><div class="ttname"><a href="classitk_1_1simple_1_1ComplexToPhaseImageFilter.html#a42b19c1e0f8649c50d16e8b2f5c790ba">itk::simple::ComplexToPhaseImageFilter::m_MemberFactory</a></div><div class="ttdeci">std::unique_ptr&lt; detail::MemberFunctionFactory&lt; MemberFunctionType &gt; &gt; m_MemberFactory</div><div class="ttdef"><b>Definition:</b> <a href="sitkComplexToPhaseImageFilter_8h_source.html#l00080">sitkComplexToPhaseImageFilter.h:80</a></div></div>
 <div class="ttc" id="asitkBasicFilters_8h_html"><div class="ttname"><a href="sitkBasicFilters_8h.html">sitkBasicFilters.h</a></div></div>
 <div class="ttc" id="aclassitk_1_1simple_1_1ComplexToPhaseImageFilter_html_ad50a1128d7396db9ccbae9694a6c1b93"><div class="ttname"><a href="classitk_1_1simple_1_1ComplexToPhaseImageFilter.html#ad50a1128d7396db9ccbae9694a6c1b93">itk::simple::ComplexToPhaseImageFilter::PixelIDTypeList</a></div><div class="ttdeci">ComplexPixelIDTypeList PixelIDTypeList</div><div class="ttdef"><b>Definition:</b> <a href="sitkComplexToPhaseImageFilter_8h_source.html#l00054">sitkComplexToPhaseImageFilter.h:54</a></div></div>
 <div class="ttc" id="astructitk_1_1simple_1_1detail_1_1MemberFunctionAddressor_html"><div class="ttname"><a href="structitk_1_1simple_1_1detail_1_1MemberFunctionAddressor.html">itk::simple::detail::MemberFunctionAddressor</a></div><div class="ttdef"><b>Definition:</b> <a href="sitkDetail_8h_source.html#l00032">sitkDetail.h:32</a></div></div>
@@ -128,14 +136,15 @@ $(function() {
 <div class="ttc" id="asitkImageFilter_8h_html"><div class="ttname"><a href="sitkImageFilter_8h.html">sitkImageFilter.h</a></div></div>
 <div class="ttc" id="anamespaceitk_1_1simple_html_a32d8fcb9cf18eb032ea2e89df7ce9014"><div class="ttname"><a href="namespaceitk_1_1simple.html#a32d8fcb9cf18eb032ea2e89df7ce9014">itk::simple::ComplexPixelIDTypeList</a></div><div class="ttdeci">typelist::MakeTypeList&lt; BasicPixelID&lt; std::complex&lt; float &gt; &gt;, BasicPixelID&lt; std::complex&lt; double &gt; &gt; &gt;::Type ComplexPixelIDTypeList</div><div class="ttdef"><b>Definition:</b> <a href="sitkPixelIDTypeLists_8h_source.html#l00103">sitkPixelIDTypeLists.h:103</a></div></div>
 <div class="ttc" id="asitkBasicFilters_8h_html_a8c00663d3a7bae36066e320f83381283"><div class="ttname"><a href="sitkBasicFilters_8h.html#a8c00663d3a7bae36066e320f83381283">SITKBasicFilters_EXPORT</a></div><div class="ttdeci">#define SITKBasicFilters_EXPORT</div><div class="ttdef"><b>Definition:</b> <a href="sitkBasicFilters_8h_source.html#l00052">sitkBasicFilters.h:52</a></div></div>
-<div class="ttc" id="anamespaceitk_1_1simple_html_aabe02ef68dbd83cb55e8a52f4b175a48"><div class="ttname"><a href="namespaceitk_1_1simple.html#aabe02ef68dbd83cb55e8a52f4b175a48">itk::simple::ComplexToPhase</a></div><div class="ttdeci">Image ComplexToPhase(const Image &amp;image1)</div><div class="ttdoc">Computes pixel-wise the modulus of a complex image.</div></div>
 <div class="ttc" id="anamespaceitk_html"><div class="ttname"><a href="namespaceitk.html">itk</a></div></div>
 <div class="ttc" id="aclassitk_1_1simple_1_1ComplexToPhaseImageFilter_html_a39a60bb857be59d4b96e1e0d4de8afcb"><div class="ttname"><a href="classitk_1_1simple_1_1ComplexToPhaseImageFilter.html#a39a60bb857be59d4b96e1e0d4de8afcb">itk::simple::ComplexToPhaseImageFilter::Self</a></div><div class="ttdeci">ComplexToPhaseImageFilter Self</div><div class="ttdef"><b>Definition:</b> <a href="sitkComplexToPhaseImageFilter_8h_source.html#l00044">sitkComplexToPhaseImageFilter.h:44</a></div></div>
 <div class="ttc" id="aclassitk_1_1simple_1_1ImageFilter_html"><div class="ttname"><a href="classitk_1_1simple_1_1ImageFilter.html">itk::simple::ImageFilter</a></div><div class="ttdoc">The base interface for SimpleITK filters that take one input image.</div><div class="ttdef"><b>Definition:</b> <a href="sitkImageFilter_8h_source.html#l00037">sitkImageFilter.h:37</a></div></div>
 <div class="ttc" id="aclassitk_1_1simple_1_1ProcessObject_html"><div class="ttname"><a href="classitk_1_1simple_1_1ProcessObject.html">itk::simple::ProcessObject</a></div><div class="ttdoc">Base class for SimpleITK classes based on ProcessObject.</div><div class="ttdef"><b>Definition:</b> <a href="sitkProcessObject_8h_source.html#l00051">sitkProcessObject.h:51</a></div></div>
+<div class="ttc" id="aclassitk_1_1Image_html"><div class="ttname"><a href="https://www.itk.org/Doxygen/html/classitk_1_1Image.html">itk::Image</a></div><div class="ttdef"><b>Definition:</b> <a href="sitkPixelIDTypes_8h_source.html#l00026">sitkPixelIDTypes.h:26</a></div></div>
+<div class="ttc" id="anamespaceitk_1_1simple_html_a640794fd844a72a94e4700e3ecbfafaf"><div class="ttname"><a href="namespaceitk_1_1simple.html#a640794fd844a72a94e4700e3ecbfafaf">itk::simple::ComplexToPhase</a></div><div class="ttdeci">Image ComplexToPhase(Image &amp;&amp;image1)</div><div class="ttdoc">Computes pixel-wise the modulus of a complex image.</div></div>
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Apr 7 2020 03:21:10 for SimpleITK by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Apr 14 2020 02:53:00 for SimpleITK by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

@@ -19,7 +19,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">SimpleITK
-   &#160;<span id="projectnumber">2.0.0rc1.post73</span>
+   &#160;<span id="projectnumber">2.0.0rc1.post121</span>
    </div>
   </td>
  </tr>
@@ -142,6 +142,8 @@ Public Types</h2></td></tr>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a9b7dc6fa2fe5f1de7057d852a647b22f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classitk_1_1simple_1_1Image.html">Image</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1LabelContourImageFilter.html#a9b7dc6fa2fe5f1de7057d852a647b22f">Execute</a> (const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> &amp;image1)</td></tr>
 <tr class="separator:a9b7dc6fa2fe5f1de7057d852a647b22f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6779f3129563e1ed56486f761e8f5c44"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classitk_1_1simple_1_1Image.html">Image</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1LabelContourImageFilter.html#a6779f3129563e1ed56486f761e8f5c44">Execute</a> (<a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> &amp;&amp;image1)</td></tr>
+<tr class="separator:a6779f3129563e1ed56486f761e8f5c44"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5b6f8edce96f9fab645cb4914e5b0d4c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classitk_1_1simple_1_1ProcessObject.html#a6babc7ad2c4441fd6b302cdb13d54882">Self</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1LabelContourImageFilter.html#a5b6f8edce96f9fab645cb4914e5b0d4c">FullyConnectedOff</a> ()</td></tr>
 <tr class="separator:a5b6f8edce96f9fab645cb4914e5b0d4c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a616892dac5074c38cf338b708a58ed7d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classitk_1_1simple_1_1ProcessObject.html#a6babc7ad2c4441fd6b302cdb13d54882">Self</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1LabelContourImageFilter.html#a616892dac5074c38cf338b708a58ed7d">FullyConnectedOn</a> ()</td></tr>
@@ -215,10 +217,12 @@ Private Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
-<tr class="memitem:a3f82606e5639178bfebab92acee56f66"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1LabelContourImageFilter.html#a3f82606e5639178bfebab92acee56f66">m_BackgroundValue</a></td></tr>
+<tr class="memitem:a3f82606e5639178bfebab92acee56f66"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1LabelContourImageFilter.html#a3f82606e5639178bfebab92acee56f66">m_BackgroundValue</a> {0}</td></tr>
 <tr class="separator:a3f82606e5639178bfebab92acee56f66"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aed0d0489b2492b4a898ccaf897800c06"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1LabelContourImageFilter.html#aed0d0489b2492b4a898ccaf897800c06">m_FullyConnected</a></td></tr>
+<tr class="memitem:aed0d0489b2492b4a898ccaf897800c06"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1LabelContourImageFilter.html#aed0d0489b2492b4a898ccaf897800c06">m_FullyConnected</a> {false}</td></tr>
 <tr class="separator:aed0d0489b2492b4a898ccaf897800c06"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac7bf630fe3acb23da37403494fb3c6d8"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1LabelContourImageFilter.html#ac7bf630fe3acb23da37403494fb3c6d8">m_InPlace</a> {false}</td></tr>
+<tr class="separator:ac7bf630fe3acb23da37403494fb3c6d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aea314de56c569a0923c0931bea22e2dd"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="classitk_1_1simple_1_1detail_1_1MemberFunctionFactory.html">detail::MemberFunctionFactory</a>&lt; <a class="el" href="classitk_1_1simple_1_1LabelContourImageFilter.html#a12898f9001ebc8dabff7c83987f3d72f">MemberFunctionType</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1LabelContourImageFilter.html#aea314de56c569a0923c0931bea22e2dd">m_MemberFactory</a></td></tr>
 <tr class="separator:aea314de56c569a0923c0931bea22e2dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -322,7 +326,7 @@ Additional Inherited Members</h2></td></tr>
 <dl class="section author"><dt>Author</dt><dd>Gaetan Lehmann. Biologie du Developpement et de la Reproduction, INRA de Jouy-en-Josas, France.</dd></dl>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="classitk_1_1simple_1_1BinaryContourImageFilter.html" title="Labels the pixels on the border of the objects in a binary image.">BinaryContourImageFilter</a> </dd>
 <dd>
-<a class="el" href="namespaceitk_1_1simple.html#a1f0d8dfd5f5ed2b7e3f8cfbabf636e28" title="Labels the pixels on the border of the objects in a labeled image.">itk::simple::LabelContour</a> for the procedural interface </dd>
+<a class="el" href="namespaceitk_1_1simple.html#a0f4728e886fdbe0cddfbd701cb95a654" title="Labels the pixels on the border of the objects in a labeled image.">itk::simple::LabelContour</a> for the procedural interface </dd>
 <dd>
 <a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1LabelContourImageFilter.html">itk::LabelContourImageFilter</a> for the Doxygen on the original ITK class. </dd></dl>
 
@@ -349,7 +353,7 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 <p>Setup for member function dispatching </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkLabelContourImageFilter_8h_source.html#l00104">104</a> of file <a class="el" href="sitkLabelContourImageFilter_8h_source.html">sitkLabelContourImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkLabelContourImageFilter_8h_source.html#l00107">107</a> of file <a class="el" href="sitkLabelContourImageFilter_8h_source.html">sitkLabelContourImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -433,7 +437,7 @@ Additional Inherited Members</h2></td></tr>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
 <a id="a9b7dc6fa2fe5f1de7057d852a647b22f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9b7dc6fa2fe5f1de7057d852a647b22f">&#9670;&nbsp;</a></span>Execute()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a9b7dc6fa2fe5f1de7057d852a647b22f">&#9670;&nbsp;</a></span>Execute() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -442,6 +446,24 @@ Additional Inherited Members</h2></td></tr>
           <td class="memname"><a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> itk::simple::LabelContourImageFilter::Execute </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> &amp;&#160;</td>
+          <td class="paramname"><em>image1</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a6779f3129563e1ed56486f761e8f5c44"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6779f3129563e1ed56486f761e8f5c44">&#9670;&nbsp;</a></span>Execute() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> itk::simple::LabelContourImageFilter::Execute </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> &amp;&amp;&#160;</td>
           <td class="paramname"><em>image1</em></td><td>)</td>
           <td></td>
         </tr>
@@ -727,7 +749,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkLabelContourImageFilter_8h_source.html#l00108">108</a> of file <a class="el" href="sitkLabelContourImageFilter_8h_source.html">sitkLabelContourImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkLabelContourImageFilter_8h_source.html#l00111">111</a> of file <a class="el" href="sitkLabelContourImageFilter_8h_source.html">sitkLabelContourImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -742,7 +764,7 @@ template&lt;class TImageType &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">double itk::simple::LabelContourImageFilter::m_BackgroundValue</td>
+          <td class="memname">double itk::simple::LabelContourImageFilter::m_BackgroundValue {0}</td>
         </tr>
       </table>
   </td>
@@ -752,7 +774,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkLabelContourImageFilter_8h_source.html#l00115">115</a> of file <a class="el" href="sitkLabelContourImageFilter_8h_source.html">sitkLabelContourImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkLabelContourImageFilter_8h_source.html#l00119">119</a> of file <a class="el" href="sitkLabelContourImageFilter_8h_source.html">sitkLabelContourImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -766,7 +788,7 @@ template&lt;class TImageType &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">bool itk::simple::LabelContourImageFilter::m_FullyConnected</td>
+          <td class="memname">bool itk::simple::LabelContourImageFilter::m_FullyConnected {false}</td>
         </tr>
       </table>
   </td>
@@ -776,7 +798,31 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkLabelContourImageFilter_8h_source.html#l00114">114</a> of file <a class="el" href="sitkLabelContourImageFilter_8h_source.html">sitkLabelContourImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkLabelContourImageFilter_8h_source.html#l00117">117</a> of file <a class="el" href="sitkLabelContourImageFilter_8h_source.html">sitkLabelContourImageFilter.h</a>.</p>
+
+</div>
+</div>
+<a id="ac7bf630fe3acb23da37403494fb3c6d8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac7bf630fe3acb23da37403494fb3c6d8">&#9670;&nbsp;</a></span>m_InPlace</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool itk::simple::LabelContourImageFilter::m_InPlace {false}</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="sitkLabelContourImageFilter_8h_source.html#l00122">122</a> of file <a class="el" href="sitkLabelContourImageFilter_8h_source.html">sitkLabelContourImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -800,7 +846,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkLabelContourImageFilter_8h_source.html#l00110">110</a> of file <a class="el" href="sitkLabelContourImageFilter_8h_source.html">sitkLabelContourImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkLabelContourImageFilter_8h_source.html#l00113">113</a> of file <a class="el" href="sitkLabelContourImageFilter_8h_source.html">sitkLabelContourImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -810,7 +856,7 @@ template&lt;class TImageType &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Apr 7 2020 03:21:36 for SimpleITK by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Apr 14 2020 02:53:29 for SimpleITK by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

@@ -143,8 +143,10 @@ var menudata={children:[
 {text:"~",url:"functions_func_~.html#index__7E"}]},
 {text:"Variables",url:"functions_vars.html",children:[
 {text:"d",url:"functions_vars.html#index_d"},
+{text:"f",url:"functions_vars_f.html#index_f"},
 {text:"m",url:"functions_vars_m.html#index_m"},
 {text:"p",url:"functions_vars_p.html#index_p"},
+{text:"r",url:"functions_vars_r.html#index_r"},
 {text:"t",url:"functions_vars_t.html#index_t"},
 {text:"v",url:"functions_vars_v.html#index_v"}]},
 {text:"Typedefs",url:"functions_type.html",children:[

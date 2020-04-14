@@ -19,7 +19,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">SimpleITK
-   &#160;<span id="projectnumber">2.0.0rc1.post73</span>
+   &#160;<span id="projectnumber">2.0.0rc1.post121</span>
    </div>
   </td>
  </tr>
@@ -142,6 +142,8 @@ Public Types</h2></td></tr>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:ab014254c3050389dad731dedbbbbc6bf"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classitk_1_1simple_1_1Image.html">Image</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1SaltAndPepperNoiseImageFilter.html#ab014254c3050389dad731dedbbbbc6bf">Execute</a> (const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> &amp;image1)</td></tr>
 <tr class="separator:ab014254c3050389dad731dedbbbbc6bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac01dce6f635a2726c2736936219c842a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classitk_1_1simple_1_1Image.html">Image</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1SaltAndPepperNoiseImageFilter.html#ac01dce6f635a2726c2736936219c842a">Execute</a> (<a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> &amp;&amp;image1)</td></tr>
+<tr class="separator:ac01dce6f635a2726c2736936219c842a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a771a4fbabefaf87ee8a2ca8cd3233180"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1SaltAndPepperNoiseImageFilter.html#a771a4fbabefaf87ee8a2ca8cd3233180">GetName</a> () const</td></tr>
 <tr class="separator:a771a4fbabefaf87ee8a2ca8cd3233180"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a639d5f1b8f662fe9bf98eb20add436af"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1SaltAndPepperNoiseImageFilter.html#a639d5f1b8f662fe9bf98eb20add436af">GetProbability</a> () const</td></tr>
@@ -214,11 +216,13 @@ Private Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
+<tr class="memitem:aced5cb1ef3378e83d5c752a39951f0b7"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1SaltAndPepperNoiseImageFilter.html#aced5cb1ef3378e83d5c752a39951f0b7">m_InPlace</a> {false}</td></tr>
+<tr class="separator:aced5cb1ef3378e83d5c752a39951f0b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3221f56a94e3be586ebdeb8e6419f46f"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="classitk_1_1simple_1_1detail_1_1MemberFunctionFactory.html">detail::MemberFunctionFactory</a>&lt; <a class="el" href="classitk_1_1simple_1_1SaltAndPepperNoiseImageFilter.html#a633b82fb55233c00b5f3075572874180">MemberFunctionType</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1SaltAndPepperNoiseImageFilter.html#a3221f56a94e3be586ebdeb8e6419f46f">m_MemberFactory</a></td></tr>
 <tr class="separator:a3221f56a94e3be586ebdeb8e6419f46f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad2f7166eb8250a8c2e0d253ff7d67e12"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1SaltAndPepperNoiseImageFilter.html#ad2f7166eb8250a8c2e0d253ff7d67e12">m_Probability</a></td></tr>
+<tr class="memitem:ad2f7166eb8250a8c2e0d253ff7d67e12"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1SaltAndPepperNoiseImageFilter.html#ad2f7166eb8250a8c2e0d253ff7d67e12">m_Probability</a> {0.01}</td></tr>
 <tr class="separator:ad2f7166eb8250a8c2e0d253ff7d67e12"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a591805eb78e5d6af0af0a38219d1f17f"><td class="memItemLeft" align="right" valign="top"><a class="elRef" href="https://www.itk.org/Doxygen/html/namespaceitk.html#a575b8e3e1ee797dd1bbaf9724ed68f92">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1SaltAndPepperNoiseImageFilter.html#a591805eb78e5d6af0af0a38219d1f17f">m_Seed</a></td></tr>
+<tr class="memitem:a591805eb78e5d6af0af0a38219d1f17f"><td class="memItemLeft" align="right" valign="top"><a class="elRef" href="https://www.itk.org/Doxygen/html/namespaceitk.html#a575b8e3e1ee797dd1bbaf9724ed68f92">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1SaltAndPepperNoiseImageFilter.html#a591805eb78e5d6af0af0a38219d1f17f">m_Seed</a> {(<a class="elRef" href="https://www.itk.org/Doxygen/html/namespaceitk.html#a575b8e3e1ee797dd1bbaf9724ed68f92">uint32_t</a>) <a class="el" href="namespaceitk_1_1simple.html#aa044c932b88a9e29176dafbf2a67ed10aa0288037bc3529e2fedbf3881487f38f">itk::simple::sitkWallClock</a>}</td></tr>
 <tr class="separator:a591805eb78e5d6af0af0a38219d1f17f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
@@ -323,7 +327,7 @@ Additional Inherited Members</h2></td></tr>
 <p>Pixel alteration occurs at a user defined probability. Salt and pepper pixels are equally distributed.</p>
 <dl class="section author"><dt>Author</dt><dd>Gaetan Lehmann</dd></dl>
 <p>This code was contributed in the Insight Journal paper "Noise
- Simulation". <a href="https://hdl.handle.net/10380/3158">https://hdl.handle.net/10380/3158</a> </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="namespaceitk_1_1simple.html#a31fde060829f2718ac65eeece30a86ec" title="Alter an image with fixed value impulse noise, often called salt and pepper noise.">itk::simple::SaltAndPepperNoise</a> for the procedural interface </dd>
+ Simulation". <a href="https://hdl.handle.net/10380/3158">https://hdl.handle.net/10380/3158</a> </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="namespaceitk_1_1simple.html#a3748edae76a63878015ee8347e424978" title="Alter an image with fixed value impulse noise, often called salt and pepper noise.">itk::simple::SaltAndPepperNoise</a> for the procedural interface </dd>
 <dd>
 <a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1SaltAndPepperNoiseImageFilter.html">itk::SaltAndPepperNoiseImageFilter</a> for the Doxygen on the original ITK class. </dd></dl>
 
@@ -350,7 +354,7 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 <p>Setup for member function dispatching </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkSaltAndPepperNoiseImageFilter_8h_source.html#l00105">105</a> of file <a class="el" href="sitkSaltAndPepperNoiseImageFilter_8h_source.html">sitkSaltAndPepperNoiseImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkSaltAndPepperNoiseImageFilter_8h_source.html#l00108">108</a> of file <a class="el" href="sitkSaltAndPepperNoiseImageFilter_8h_source.html">sitkSaltAndPepperNoiseImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -434,7 +438,7 @@ Additional Inherited Members</h2></td></tr>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
 <a id="ab014254c3050389dad731dedbbbbc6bf"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab014254c3050389dad731dedbbbbc6bf">&#9670;&nbsp;</a></span>Execute()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ab014254c3050389dad731dedbbbbc6bf">&#9670;&nbsp;</a></span>Execute() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -443,6 +447,24 @@ Additional Inherited Members</h2></td></tr>
           <td class="memname"><a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> itk::simple::SaltAndPepperNoiseImageFilter::Execute </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> &amp;&#160;</td>
+          <td class="paramname"><em>image1</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac01dce6f635a2726c2736936219c842a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac01dce6f635a2726c2736936219c842a">&#9670;&nbsp;</a></span>Execute() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> itk::simple::SaltAndPepperNoiseImageFilter::Execute </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> &amp;&amp;&#160;</td>
           <td class="paramname"><em>image1</em></td><td>)</td>
           <td></td>
         </tr>
@@ -700,7 +722,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkSaltAndPepperNoiseImageFilter_8h_source.html#l00111">111</a> of file <a class="el" href="sitkSaltAndPepperNoiseImageFilter_8h_source.html">sitkSaltAndPepperNoiseImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkSaltAndPepperNoiseImageFilter_8h_source.html#l00114">114</a> of file <a class="el" href="sitkSaltAndPepperNoiseImageFilter_8h_source.html">sitkSaltAndPepperNoiseImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -724,11 +746,35 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkSaltAndPepperNoiseImageFilter_8h_source.html#l00110">110</a> of file <a class="el" href="sitkSaltAndPepperNoiseImageFilter_8h_source.html">sitkSaltAndPepperNoiseImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkSaltAndPepperNoiseImageFilter_8h_source.html#l00113">113</a> of file <a class="el" href="sitkSaltAndPepperNoiseImageFilter_8h_source.html">sitkSaltAndPepperNoiseImageFilter.h</a>.</p>
 
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
+<a id="aced5cb1ef3378e83d5c752a39951f0b7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aced5cb1ef3378e83d5c752a39951f0b7">&#9670;&nbsp;</a></span>m_InPlace</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool itk::simple::SaltAndPepperNoiseImageFilter::m_InPlace {false}</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="sitkSaltAndPepperNoiseImageFilter_8h_source.html#l00123">123</a> of file <a class="el" href="sitkSaltAndPepperNoiseImageFilter_8h_source.html">sitkSaltAndPepperNoiseImageFilter.h</a>.</p>
+
+</div>
+</div>
 <a id="a3221f56a94e3be586ebdeb8e6419f46f"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a3221f56a94e3be586ebdeb8e6419f46f">&#9670;&nbsp;</a></span>m_MemberFactory</h2>
 
@@ -749,7 +795,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkSaltAndPepperNoiseImageFilter_8h_source.html#l00112">112</a> of file <a class="el" href="sitkSaltAndPepperNoiseImageFilter_8h_source.html">sitkSaltAndPepperNoiseImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkSaltAndPepperNoiseImageFilter_8h_source.html#l00115">115</a> of file <a class="el" href="sitkSaltAndPepperNoiseImageFilter_8h_source.html">sitkSaltAndPepperNoiseImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -763,7 +809,7 @@ template&lt;class TImageType &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">double itk::simple::SaltAndPepperNoiseImageFilter::m_Probability</td>
+          <td class="memname">double itk::simple::SaltAndPepperNoiseImageFilter::m_Probability {0.01}</td>
         </tr>
       </table>
   </td>
@@ -773,7 +819,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkSaltAndPepperNoiseImageFilter_8h_source.html#l00115">115</a> of file <a class="el" href="sitkSaltAndPepperNoiseImageFilter_8h_source.html">sitkSaltAndPepperNoiseImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkSaltAndPepperNoiseImageFilter_8h_source.html#l00118">118</a> of file <a class="el" href="sitkSaltAndPepperNoiseImageFilter_8h_source.html">sitkSaltAndPepperNoiseImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -787,7 +833,7 @@ template&lt;class TImageType &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="elRef" href="https://www.itk.org/Doxygen/html/namespaceitk.html#a575b8e3e1ee797dd1bbaf9724ed68f92">uint32_t</a> itk::simple::SaltAndPepperNoiseImageFilter::m_Seed</td>
+          <td class="memname"><a class="elRef" href="https://www.itk.org/Doxygen/html/namespaceitk.html#a575b8e3e1ee797dd1bbaf9724ed68f92">uint32_t</a> itk::simple::SaltAndPepperNoiseImageFilter::m_Seed {(<a class="elRef" href="https://www.itk.org/Doxygen/html/namespaceitk.html#a575b8e3e1ee797dd1bbaf9724ed68f92">uint32_t</a>) <a class="el" href="namespaceitk_1_1simple.html#aa044c932b88a9e29176dafbf2a67ed10aa0288037bc3529e2fedbf3881487f38f">itk::simple::sitkWallClock</a>}</td>
         </tr>
       </table>
   </td>
@@ -797,7 +843,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkSaltAndPepperNoiseImageFilter_8h_source.html#l00116">116</a> of file <a class="el" href="sitkSaltAndPepperNoiseImageFilter_8h_source.html">sitkSaltAndPepperNoiseImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkSaltAndPepperNoiseImageFilter_8h_source.html#l00120">120</a> of file <a class="el" href="sitkSaltAndPepperNoiseImageFilter_8h_source.html">sitkSaltAndPepperNoiseImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -807,7 +853,7 @@ template&lt;class TImageType &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Apr 7 2020 03:21:39 for SimpleITK by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Apr 14 2020 02:53:32 for SimpleITK by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

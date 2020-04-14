@@ -19,7 +19,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">SimpleITK
-   &#160;<span id="projectnumber">2.0.0rc1.post73</span>
+   &#160;<span id="projectnumber">2.0.0rc1.post121</span>
    </div>
   </td>
  </tr>
@@ -144,6 +144,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:aabe6c41d0d20b85eabf2a6aede55beb6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3c718f7d15e34b1ccc500a53011df0df"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classitk_1_1simple_1_1Image.html">Image</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1AdditiveGaussianNoiseImageFilter.html#a3c718f7d15e34b1ccc500a53011df0df">Execute</a> (const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> &amp;image1)</td></tr>
 <tr class="separator:a3c718f7d15e34b1ccc500a53011df0df"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaa6edf8003f542f2ecaa811a6136d22f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classitk_1_1simple_1_1Image.html">Image</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1AdditiveGaussianNoiseImageFilter.html#aaa6edf8003f542f2ecaa811a6136d22f">Execute</a> (<a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> &amp;&amp;image1)</td></tr>
+<tr class="separator:aaa6edf8003f542f2ecaa811a6136d22f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acc722b0d7513314d064b4a6c567e4079"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1AdditiveGaussianNoiseImageFilter.html#acc722b0d7513314d064b4a6c567e4079">GetMean</a> () const</td></tr>
 <tr class="separator:acc722b0d7513314d064b4a6c567e4079"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7aab5816b10e0ec7ead9267466d38531"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1AdditiveGaussianNoiseImageFilter.html#a7aab5816b10e0ec7ead9267466d38531">GetName</a> () const</td></tr>
@@ -218,13 +220,15 @@ Private Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
-<tr class="memitem:a5e4da9b73fcc542f255f9c3d1d93c7cf"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1AdditiveGaussianNoiseImageFilter.html#a5e4da9b73fcc542f255f9c3d1d93c7cf">m_Mean</a></td></tr>
+<tr class="memitem:a87d9b0bed3db6f2137b3aaab402b5958"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1AdditiveGaussianNoiseImageFilter.html#a87d9b0bed3db6f2137b3aaab402b5958">m_InPlace</a> {false}</td></tr>
+<tr class="separator:a87d9b0bed3db6f2137b3aaab402b5958"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5e4da9b73fcc542f255f9c3d1d93c7cf"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1AdditiveGaussianNoiseImageFilter.html#a5e4da9b73fcc542f255f9c3d1d93c7cf">m_Mean</a> {0.0}</td></tr>
 <tr class="separator:a5e4da9b73fcc542f255f9c3d1d93c7cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9e7db1da7a5f2127445422c5efb30dfa"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="classitk_1_1simple_1_1detail_1_1MemberFunctionFactory.html">detail::MemberFunctionFactory</a>&lt; <a class="el" href="classitk_1_1simple_1_1AdditiveGaussianNoiseImageFilter.html#a10a2eb3fde8f73011e2bf55e24f9169a">MemberFunctionType</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1AdditiveGaussianNoiseImageFilter.html#a9e7db1da7a5f2127445422c5efb30dfa">m_MemberFactory</a></td></tr>
 <tr class="separator:a9e7db1da7a5f2127445422c5efb30dfa"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aed009e2f0dbbbb219b90d39789d78433"><td class="memItemLeft" align="right" valign="top"><a class="elRef" href="https://www.itk.org/Doxygen/html/namespaceitk.html#a575b8e3e1ee797dd1bbaf9724ed68f92">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1AdditiveGaussianNoiseImageFilter.html#aed009e2f0dbbbb219b90d39789d78433">m_Seed</a></td></tr>
+<tr class="memitem:aed009e2f0dbbbb219b90d39789d78433"><td class="memItemLeft" align="right" valign="top"><a class="elRef" href="https://www.itk.org/Doxygen/html/namespaceitk.html#a575b8e3e1ee797dd1bbaf9724ed68f92">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1AdditiveGaussianNoiseImageFilter.html#aed009e2f0dbbbb219b90d39789d78433">m_Seed</a> {(<a class="elRef" href="https://www.itk.org/Doxygen/html/namespaceitk.html#a575b8e3e1ee797dd1bbaf9724ed68f92">uint32_t</a>) <a class="el" href="namespaceitk_1_1simple.html#aa044c932b88a9e29176dafbf2a67ed10aa0288037bc3529e2fedbf3881487f38f">itk::simple::sitkWallClock</a>}</td></tr>
 <tr class="separator:aed009e2f0dbbbb219b90d39789d78433"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0eebe22c4703670f12d91ad73f4ee5a6"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1AdditiveGaussianNoiseImageFilter.html#a0eebe22c4703670f12d91ad73f4ee5a6">m_StandardDeviation</a></td></tr>
+<tr class="memitem:a0eebe22c4703670f12d91ad73f4ee5a6"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1AdditiveGaussianNoiseImageFilter.html#a0eebe22c4703670f12d91ad73f4ee5a6">m_StandardDeviation</a> {1.0}</td></tr>
 <tr class="separator:a0eebe22c4703670f12d91ad73f4ee5a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
@@ -330,7 +334,7 @@ Additional Inherited Members</h2></td></tr>
 <p>The noise is independent of the pixel intensities.</p>
 <dl class="section author"><dt>Author</dt><dd>Gaetan Lehmann</dd></dl>
 <p>This code was contributed in the Insight Journal paper "Noise
- Simulation". <a href="https://hdl.handle.net/10380/3158">https://hdl.handle.net/10380/3158</a> </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="namespaceitk_1_1simple.html#a40dac80f74f507c78052eaead03cf6ca" title="Alter an image with additive Gaussian white noise.">itk::simple::AdditiveGaussianNoise</a> for the procedural interface </dd>
+ Simulation". <a href="https://hdl.handle.net/10380/3158">https://hdl.handle.net/10380/3158</a> </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="namespaceitk_1_1simple.html#a2183627d8aaf5ac4fedd8994ef069e95" title="Alter an image with additive Gaussian white noise.">itk::simple::AdditiveGaussianNoise</a> for the procedural interface </dd>
 <dd>
 <a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1AdditiveGaussianNoiseImageFilter.html">itk::AdditiveGaussianNoiseImageFilter</a> for the Doxygen on the original ITK class. </dd></dl>
 
@@ -357,7 +361,7 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 <p>Setup for member function dispatching </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkAdditiveGaussianNoiseImageFilter_8h_source.html#l00119">119</a> of file <a class="el" href="sitkAdditiveGaussianNoiseImageFilter_8h_source.html">sitkAdditiveGaussianNoiseImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkAdditiveGaussianNoiseImageFilter_8h_source.html#l00122">122</a> of file <a class="el" href="sitkAdditiveGaussianNoiseImageFilter_8h_source.html">sitkAdditiveGaussianNoiseImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -441,7 +445,7 @@ Additional Inherited Members</h2></td></tr>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
 <a id="a3c718f7d15e34b1ccc500a53011df0df"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3c718f7d15e34b1ccc500a53011df0df">&#9670;&nbsp;</a></span>Execute()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a3c718f7d15e34b1ccc500a53011df0df">&#9670;&nbsp;</a></span>Execute() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -450,6 +454,24 @@ Additional Inherited Members</h2></td></tr>
           <td class="memname"><a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> itk::simple::AdditiveGaussianNoiseImageFilter::Execute </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> &amp;&#160;</td>
+          <td class="paramname"><em>image1</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aaa6edf8003f542f2ecaa811a6136d22f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaa6edf8003f542f2ecaa811a6136d22f">&#9670;&nbsp;</a></span>Execute() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> itk::simple::AdditiveGaussianNoiseImageFilter::Execute </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> &amp;&amp;&#160;</td>
           <td class="paramname"><em>image1</em></td><td>)</td>
           <td></td>
         </tr>
@@ -766,7 +788,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkAdditiveGaussianNoiseImageFilter_8h_source.html#l00125">125</a> of file <a class="el" href="sitkAdditiveGaussianNoiseImageFilter_8h_source.html">sitkAdditiveGaussianNoiseImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkAdditiveGaussianNoiseImageFilter_8h_source.html#l00128">128</a> of file <a class="el" href="sitkAdditiveGaussianNoiseImageFilter_8h_source.html">sitkAdditiveGaussianNoiseImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -790,11 +812,35 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkAdditiveGaussianNoiseImageFilter_8h_source.html#l00124">124</a> of file <a class="el" href="sitkAdditiveGaussianNoiseImageFilter_8h_source.html">sitkAdditiveGaussianNoiseImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkAdditiveGaussianNoiseImageFilter_8h_source.html#l00127">127</a> of file <a class="el" href="sitkAdditiveGaussianNoiseImageFilter_8h_source.html">sitkAdditiveGaussianNoiseImageFilter.h</a>.</p>
 
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
+<a id="a87d9b0bed3db6f2137b3aaab402b5958"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a87d9b0bed3db6f2137b3aaab402b5958">&#9670;&nbsp;</a></span>m_InPlace</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool itk::simple::AdditiveGaussianNoiseImageFilter::m_InPlace {false}</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="sitkAdditiveGaussianNoiseImageFilter_8h_source.html#l00139">139</a> of file <a class="el" href="sitkAdditiveGaussianNoiseImageFilter_8h_source.html">sitkAdditiveGaussianNoiseImageFilter.h</a>.</p>
+
+</div>
+</div>
 <a id="a5e4da9b73fcc542f255f9c3d1d93c7cf"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a5e4da9b73fcc542f255f9c3d1d93c7cf">&#9670;&nbsp;</a></span>m_Mean</h2>
 
@@ -805,7 +851,7 @@ template&lt;class TImageType &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">double itk::simple::AdditiveGaussianNoiseImageFilter::m_Mean</td>
+          <td class="memname">double itk::simple::AdditiveGaussianNoiseImageFilter::m_Mean {0.0}</td>
         </tr>
       </table>
   </td>
@@ -815,7 +861,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkAdditiveGaussianNoiseImageFilter_8h_source.html#l00130">130</a> of file <a class="el" href="sitkAdditiveGaussianNoiseImageFilter_8h_source.html">sitkAdditiveGaussianNoiseImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkAdditiveGaussianNoiseImageFilter_8h_source.html#l00134">134</a> of file <a class="el" href="sitkAdditiveGaussianNoiseImageFilter_8h_source.html">sitkAdditiveGaussianNoiseImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -839,7 +885,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkAdditiveGaussianNoiseImageFilter_8h_source.html#l00126">126</a> of file <a class="el" href="sitkAdditiveGaussianNoiseImageFilter_8h_source.html">sitkAdditiveGaussianNoiseImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkAdditiveGaussianNoiseImageFilter_8h_source.html#l00129">129</a> of file <a class="el" href="sitkAdditiveGaussianNoiseImageFilter_8h_source.html">sitkAdditiveGaussianNoiseImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -853,7 +899,7 @@ template&lt;class TImageType &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="elRef" href="https://www.itk.org/Doxygen/html/namespaceitk.html#a575b8e3e1ee797dd1bbaf9724ed68f92">uint32_t</a> itk::simple::AdditiveGaussianNoiseImageFilter::m_Seed</td>
+          <td class="memname"><a class="elRef" href="https://www.itk.org/Doxygen/html/namespaceitk.html#a575b8e3e1ee797dd1bbaf9724ed68f92">uint32_t</a> itk::simple::AdditiveGaussianNoiseImageFilter::m_Seed {(<a class="elRef" href="https://www.itk.org/Doxygen/html/namespaceitk.html#a575b8e3e1ee797dd1bbaf9724ed68f92">uint32_t</a>) <a class="el" href="namespaceitk_1_1simple.html#aa044c932b88a9e29176dafbf2a67ed10aa0288037bc3529e2fedbf3881487f38f">itk::simple::sitkWallClock</a>}</td>
         </tr>
       </table>
   </td>
@@ -863,7 +909,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkAdditiveGaussianNoiseImageFilter_8h_source.html#l00131">131</a> of file <a class="el" href="sitkAdditiveGaussianNoiseImageFilter_8h_source.html">sitkAdditiveGaussianNoiseImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkAdditiveGaussianNoiseImageFilter_8h_source.html#l00136">136</a> of file <a class="el" href="sitkAdditiveGaussianNoiseImageFilter_8h_source.html">sitkAdditiveGaussianNoiseImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -877,7 +923,7 @@ template&lt;class TImageType &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">double itk::simple::AdditiveGaussianNoiseImageFilter::m_StandardDeviation</td>
+          <td class="memname">double itk::simple::AdditiveGaussianNoiseImageFilter::m_StandardDeviation {1.0}</td>
         </tr>
       </table>
   </td>
@@ -887,7 +933,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkAdditiveGaussianNoiseImageFilter_8h_source.html#l00129">129</a> of file <a class="el" href="sitkAdditiveGaussianNoiseImageFilter_8h_source.html">sitkAdditiveGaussianNoiseImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkAdditiveGaussianNoiseImageFilter_8h_source.html#l00132">132</a> of file <a class="el" href="sitkAdditiveGaussianNoiseImageFilter_8h_source.html">sitkAdditiveGaussianNoiseImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -897,7 +943,7 @@ template&lt;class TImageType &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Apr 7 2020 03:21:31 for SimpleITK by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Apr 14 2020 02:53:24 for SimpleITK by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

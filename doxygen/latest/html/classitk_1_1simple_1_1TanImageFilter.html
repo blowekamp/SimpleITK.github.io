@@ -19,7 +19,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">SimpleITK
-   &#160;<span id="projectnumber">2.0.0rc1.post73</span>
+   &#160;<span id="projectnumber">2.0.0rc1.post121</span>
    </div>
   </td>
  </tr>
@@ -142,6 +142,8 @@ Public Types</h2></td></tr>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a3a0316e677e1eff1245dba56101c03bc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classitk_1_1simple_1_1Image.html">Image</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1TanImageFilter.html#a3a0316e677e1eff1245dba56101c03bc">Execute</a> (const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> &amp;image1)</td></tr>
 <tr class="separator:a3a0316e677e1eff1245dba56101c03bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae4931c8409180d22b2648a2e795a1ecd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classitk_1_1simple_1_1Image.html">Image</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1TanImageFilter.html#ae4931c8409180d22b2648a2e795a1ecd">Execute</a> (<a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> &amp;&amp;image1)</td></tr>
+<tr class="separator:ae4931c8409180d22b2648a2e795a1ecd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8901025ff280fe99c5fc0cc38d4add3d"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1TanImageFilter.html#a8901025ff280fe99c5fc0cc38d4add3d">GetName</a> () const</td></tr>
 <tr class="separator:a8901025ff280fe99c5fc0cc38d4add3d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aeb79592d1550811745f39685059e5835"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1TanImageFilter.html#aeb79592d1550811745f39685059e5835">TanImageFilter</a> ()</td></tr>
@@ -206,6 +208,8 @@ Private Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
+<tr class="memitem:af3bcb49d9c31250a45a83bd3335a8b14"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1TanImageFilter.html#af3bcb49d9c31250a45a83bd3335a8b14">m_InPlace</a> {false}</td></tr>
+<tr class="separator:af3bcb49d9c31250a45a83bd3335a8b14"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abf0549ad36c1ca6eb99c9d8901f155a5"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="classitk_1_1simple_1_1detail_1_1MemberFunctionFactory.html">detail::MemberFunctionFactory</a>&lt; <a class="el" href="classitk_1_1simple_1_1TanImageFilter.html#a92a05771b6e169bb7bdce8086d3a6ebe">MemberFunctionType</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1TanImageFilter.html#abf0549ad36c1ca6eb99c9d8901f155a5">m_MemberFactory</a></td></tr>
 <tr class="separator:abf0549ad36c1ca6eb99c9d8901f155a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -305,7 +309,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Computes the tangent of each input pixel. </p>
-<p>The computations are performed using std::tan(x). </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="namespaceitk_1_1simple.html#a16c4ed67bcf0b119b28cd8ebdf7aa36a" title="Computes the tangent of each input pixel.">itk::simple::Tan</a> for the procedural interface </dd>
+<p>The computations are performed using std::tan(x). </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="namespaceitk_1_1simple.html#a3c5c3d8f9ba0b6fa8da418ab54b4dd8a" title="Computes the tangent of each input pixel.">itk::simple::Tan</a> for the procedural interface </dd>
 <dd>
 <a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1TanImageFilter.html">itk::TanImageFilter</a> for the Doxygen on the original ITK class. </dd></dl>
 
@@ -332,7 +336,7 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 <p>Setup for member function dispatching </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkTanImageFilter_8h_source.html#l00071">71</a> of file <a class="el" href="sitkTanImageFilter_8h_source.html">sitkTanImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkTanImageFilter_8h_source.html#l00074">74</a> of file <a class="el" href="sitkTanImageFilter_8h_source.html">sitkTanImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -416,7 +420,7 @@ Additional Inherited Members</h2></td></tr>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
 <a id="a3a0316e677e1eff1245dba56101c03bc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3a0316e677e1eff1245dba56101c03bc">&#9670;&nbsp;</a></span>Execute()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a3a0316e677e1eff1245dba56101c03bc">&#9670;&nbsp;</a></span>Execute() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -425,6 +429,24 @@ Additional Inherited Members</h2></td></tr>
           <td class="memname"><a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> itk::simple::TanImageFilter::Execute </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> &amp;&#160;</td>
+          <td class="paramname"><em>image1</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae4931c8409180d22b2648a2e795a1ecd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae4931c8409180d22b2648a2e795a1ecd">&#9670;&nbsp;</a></span>Execute() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> itk::simple::TanImageFilter::Execute </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> &amp;&amp;&#160;</td>
           <td class="paramname"><em>image1</em></td><td>)</td>
           <td></td>
         </tr>
@@ -570,7 +592,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkTanImageFilter_8h_source.html#l00077">77</a> of file <a class="el" href="sitkTanImageFilter_8h_source.html">sitkTanImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkTanImageFilter_8h_source.html#l00080">80</a> of file <a class="el" href="sitkTanImageFilter_8h_source.html">sitkTanImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -594,11 +616,35 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkTanImageFilter_8h_source.html#l00076">76</a> of file <a class="el" href="sitkTanImageFilter_8h_source.html">sitkTanImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkTanImageFilter_8h_source.html#l00079">79</a> of file <a class="el" href="sitkTanImageFilter_8h_source.html">sitkTanImageFilter.h</a>.</p>
 
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
+<a id="af3bcb49d9c31250a45a83bd3335a8b14"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af3bcb49d9c31250a45a83bd3335a8b14">&#9670;&nbsp;</a></span>m_InPlace</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool itk::simple::TanImageFilter::m_InPlace {false}</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="sitkTanImageFilter_8h_source.html#l00085">85</a> of file <a class="el" href="sitkTanImageFilter_8h_source.html">sitkTanImageFilter.h</a>.</p>
+
+</div>
+</div>
 <a id="abf0549ad36c1ca6eb99c9d8901f155a5"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#abf0549ad36c1ca6eb99c9d8901f155a5">&#9670;&nbsp;</a></span>m_MemberFactory</h2>
 
@@ -619,7 +665,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkTanImageFilter_8h_source.html#l00078">78</a> of file <a class="el" href="sitkTanImageFilter_8h_source.html">sitkTanImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkTanImageFilter_8h_source.html#l00081">81</a> of file <a class="el" href="sitkTanImageFilter_8h_source.html">sitkTanImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -629,7 +675,7 @@ template&lt;class TImageType &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Apr 7 2020 03:21:40 for SimpleITK by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Apr 14 2020 02:53:34 for SimpleITK by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

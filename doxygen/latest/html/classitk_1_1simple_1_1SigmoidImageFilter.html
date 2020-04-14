@@ -19,7 +19,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">SimpleITK
-   &#160;<span id="projectnumber">2.0.0rc1.post73</span>
+   &#160;<span id="projectnumber">2.0.0rc1.post121</span>
    </div>
   </td>
  </tr>
@@ -142,6 +142,8 @@ Public Types</h2></td></tr>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:addef759a1e937b2fafc504b558167265"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classitk_1_1simple_1_1Image.html">Image</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1SigmoidImageFilter.html#addef759a1e937b2fafc504b558167265">Execute</a> (const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> &amp;image1)</td></tr>
 <tr class="separator:addef759a1e937b2fafc504b558167265"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aab305cd692f705f45f82950d00600e94"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classitk_1_1simple_1_1Image.html">Image</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1SigmoidImageFilter.html#aab305cd692f705f45f82950d00600e94">Execute</a> (<a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> &amp;&amp;image1)</td></tr>
+<tr class="separator:aab305cd692f705f45f82950d00600e94"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae5669d15b6521c107273d7501f4af252"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1SigmoidImageFilter.html#ae5669d15b6521c107273d7501f4af252">GetAlpha</a> () const</td></tr>
 <tr class="separator:ae5669d15b6521c107273d7501f4af252"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a14e0252bd91ab18b1565440158768236"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1SigmoidImageFilter.html#a14e0252bd91ab18b1565440158768236">GetBeta</a> () const</td></tr>
@@ -219,15 +221,17 @@ Private Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
-<tr class="memitem:a819727e62737a44abf24ce9fe2013a40"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1SigmoidImageFilter.html#a819727e62737a44abf24ce9fe2013a40">m_Alpha</a></td></tr>
+<tr class="memitem:a819727e62737a44abf24ce9fe2013a40"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1SigmoidImageFilter.html#a819727e62737a44abf24ce9fe2013a40">m_Alpha</a> {1}</td></tr>
 <tr class="separator:a819727e62737a44abf24ce9fe2013a40"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a77e8254510d5ecbd4b39eb89f77860f2"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1SigmoidImageFilter.html#a77e8254510d5ecbd4b39eb89f77860f2">m_Beta</a></td></tr>
+<tr class="memitem:a77e8254510d5ecbd4b39eb89f77860f2"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1SigmoidImageFilter.html#a77e8254510d5ecbd4b39eb89f77860f2">m_Beta</a> {0}</td></tr>
 <tr class="separator:a77e8254510d5ecbd4b39eb89f77860f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5c079df2badc206ea19a46702f7a4a5e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1SigmoidImageFilter.html#a5c079df2badc206ea19a46702f7a4a5e">m_InPlace</a> {false}</td></tr>
+<tr class="separator:a5c079df2badc206ea19a46702f7a4a5e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6a3fd2e4c35e782e94392b0062869807"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="classitk_1_1simple_1_1detail_1_1MemberFunctionFactory.html">detail::MemberFunctionFactory</a>&lt; <a class="el" href="classitk_1_1simple_1_1SigmoidImageFilter.html#a73945a0538252ec8f78b6de997920145">MemberFunctionType</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1SigmoidImageFilter.html#a6a3fd2e4c35e782e94392b0062869807">m_MemberFactory</a></td></tr>
 <tr class="separator:a6a3fd2e4c35e782e94392b0062869807"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a61d2274872a80022c60b6fe33663e837"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1SigmoidImageFilter.html#a61d2274872a80022c60b6fe33663e837">m_OutputMaximum</a></td></tr>
+<tr class="memitem:a61d2274872a80022c60b6fe33663e837"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1SigmoidImageFilter.html#a61d2274872a80022c60b6fe33663e837">m_OutputMaximum</a> {255}</td></tr>
 <tr class="separator:a61d2274872a80022c60b6fe33663e837"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a590304bf73cea1a5ec26bd4f32bd904c"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1SigmoidImageFilter.html#a590304bf73cea1a5ec26bd4f32bd904c">m_OutputMinimum</a></td></tr>
+<tr class="memitem:a590304bf73cea1a5ec26bd4f32bd904c"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1SigmoidImageFilter.html#a590304bf73cea1a5ec26bd4f32bd904c">m_OutputMinimum</a> {0}</td></tr>
 <tr class="separator:a590304bf73cea1a5ec26bd4f32bd904c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
@@ -328,7 +332,7 @@ Additional Inherited Members</h2></td></tr>
 <p class="formulaDsp">
 <img class="formulaDsp" alt="\[ f(x) = (Max-Min) \cdot \frac{1}{\left(1+e^{- \frac{ x - \beta }{\alpha}}\right)} + Min \]" src="form_87.png"/>
 </p>
-<p>Every output pixel is equal to f(x). Where x is the intensity of the homologous input pixel, and alpha and beta are user-provided constants. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="namespaceitk_1_1simple.html#ade35a21c2e044a43a244ed9a96a0abb6" title="Computes the sigmoid function pixel-wise.">itk::simple::Sigmoid</a> for the procedural interface </dd>
+<p>Every output pixel is equal to f(x). Where x is the intensity of the homologous input pixel, and alpha and beta are user-provided constants. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="namespaceitk_1_1simple.html#a8f6776e8a8565ae78751b167812999e8" title="Computes the sigmoid function pixel-wise.">itk::simple::Sigmoid</a> for the procedural interface </dd>
 <dd>
 <a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1SigmoidImageFilter.html">itk::SigmoidImageFilter</a> for the Doxygen on the original ITK class. </dd></dl>
 <dl class="section examples"><dt>Examples</dt><dd><a class="el" href="FastMarchingSegmentation_2FastMarchingSegmentation_8cxx-example.html#_a11">FastMarchingSegmentation/FastMarchingSegmentation.cxx</a>.</dd>
@@ -357,7 +361,7 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 <p>Setup for member function dispatching </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkSigmoidImageFilter_8h_source.html#l00107">107</a> of file <a class="el" href="sitkSigmoidImageFilter_8h_source.html">sitkSigmoidImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkSigmoidImageFilter_8h_source.html#l00110">110</a> of file <a class="el" href="sitkSigmoidImageFilter_8h_source.html">sitkSigmoidImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -441,7 +445,7 @@ Additional Inherited Members</h2></td></tr>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
 <a id="addef759a1e937b2fafc504b558167265"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#addef759a1e937b2fafc504b558167265">&#9670;&nbsp;</a></span>Execute()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#addef759a1e937b2fafc504b558167265">&#9670;&nbsp;</a></span>Execute() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -450,6 +454,24 @@ Additional Inherited Members</h2></td></tr>
           <td class="memname"><a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> itk::simple::SigmoidImageFilter::Execute </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> &amp;&#160;</td>
+          <td class="paramname"><em>image1</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aab305cd692f705f45f82950d00600e94"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aab305cd692f705f45f82950d00600e94">&#9670;&nbsp;</a></span>Execute() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> itk::simple::SigmoidImageFilter::Execute </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> &amp;&amp;&#160;</td>
           <td class="paramname"><em>image1</em></td><td>)</td>
           <td></td>
         </tr>
@@ -796,7 +818,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkSigmoidImageFilter_8h_source.html#l00111">111</a> of file <a class="el" href="sitkSigmoidImageFilter_8h_source.html">sitkSigmoidImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkSigmoidImageFilter_8h_source.html#l00114">114</a> of file <a class="el" href="sitkSigmoidImageFilter_8h_source.html">sitkSigmoidImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -811,7 +833,7 @@ template&lt;class TImageType &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">double itk::simple::SigmoidImageFilter::m_Alpha</td>
+          <td class="memname">double itk::simple::SigmoidImageFilter::m_Alpha {1}</td>
         </tr>
       </table>
   </td>
@@ -821,7 +843,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkSigmoidImageFilter_8h_source.html#l00117">117</a> of file <a class="el" href="sitkSigmoidImageFilter_8h_source.html">sitkSigmoidImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkSigmoidImageFilter_8h_source.html#l00120">120</a> of file <a class="el" href="sitkSigmoidImageFilter_8h_source.html">sitkSigmoidImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -835,7 +857,7 @@ template&lt;class TImageType &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">double itk::simple::SigmoidImageFilter::m_Beta</td>
+          <td class="memname">double itk::simple::SigmoidImageFilter::m_Beta {0}</td>
         </tr>
       </table>
   </td>
@@ -845,7 +867,31 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkSigmoidImageFilter_8h_source.html#l00119">119</a> of file <a class="el" href="sitkSigmoidImageFilter_8h_source.html">sitkSigmoidImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkSigmoidImageFilter_8h_source.html#l00123">123</a> of file <a class="el" href="sitkSigmoidImageFilter_8h_source.html">sitkSigmoidImageFilter.h</a>.</p>
+
+</div>
+</div>
+<a id="a5c079df2badc206ea19a46702f7a4a5e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5c079df2badc206ea19a46702f7a4a5e">&#9670;&nbsp;</a></span>m_InPlace</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool itk::simple::SigmoidImageFilter::m_InPlace {false}</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="sitkSigmoidImageFilter_8h_source.html#l00130">130</a> of file <a class="el" href="sitkSigmoidImageFilter_8h_source.html">sitkSigmoidImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -869,7 +915,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkSigmoidImageFilter_8h_source.html#l00113">113</a> of file <a class="el" href="sitkSigmoidImageFilter_8h_source.html">sitkSigmoidImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkSigmoidImageFilter_8h_source.html#l00116">116</a> of file <a class="el" href="sitkSigmoidImageFilter_8h_source.html">sitkSigmoidImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -883,7 +929,7 @@ template&lt;class TImageType &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">double itk::simple::SigmoidImageFilter::m_OutputMaximum</td>
+          <td class="memname">double itk::simple::SigmoidImageFilter::m_OutputMaximum {255}</td>
         </tr>
       </table>
   </td>
@@ -893,7 +939,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkSigmoidImageFilter_8h_source.html#l00120">120</a> of file <a class="el" href="sitkSigmoidImageFilter_8h_source.html">sitkSigmoidImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkSigmoidImageFilter_8h_source.html#l00125">125</a> of file <a class="el" href="sitkSigmoidImageFilter_8h_source.html">sitkSigmoidImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -907,7 +953,7 @@ template&lt;class TImageType &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">double itk::simple::SigmoidImageFilter::m_OutputMinimum</td>
+          <td class="memname">double itk::simple::SigmoidImageFilter::m_OutputMinimum {0}</td>
         </tr>
       </table>
   </td>
@@ -917,7 +963,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkSigmoidImageFilter_8h_source.html#l00121">121</a> of file <a class="el" href="sitkSigmoidImageFilter_8h_source.html">sitkSigmoidImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkSigmoidImageFilter_8h_source.html#l00127">127</a> of file <a class="el" href="sitkSigmoidImageFilter_8h_source.html">sitkSigmoidImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -927,7 +973,7 @@ template&lt;class TImageType &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Apr 7 2020 03:21:39 for SimpleITK by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Apr 14 2020 02:53:33 for SimpleITK by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

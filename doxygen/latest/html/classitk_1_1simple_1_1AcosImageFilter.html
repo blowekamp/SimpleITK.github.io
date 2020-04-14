@@ -19,7 +19,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">SimpleITK
-   &#160;<span id="projectnumber">2.0.0rc1.post73</span>
+   &#160;<span id="projectnumber">2.0.0rc1.post121</span>
    </div>
   </td>
  </tr>
@@ -144,6 +144,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a74e50b5d44d1b3e5fd9c759e40bc52ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a720b94a4d01f91634753b4c39c12edf2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classitk_1_1simple_1_1Image.html">Image</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1AcosImageFilter.html#a720b94a4d01f91634753b4c39c12edf2">Execute</a> (const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> &amp;image1)</td></tr>
 <tr class="separator:a720b94a4d01f91634753b4c39c12edf2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae1e373bd3f55edc33d69992cccc6d9f9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classitk_1_1simple_1_1Image.html">Image</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1AcosImageFilter.html#ae1e373bd3f55edc33d69992cccc6d9f9">Execute</a> (<a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> &amp;&amp;image1)</td></tr>
+<tr class="separator:ae1e373bd3f55edc33d69992cccc6d9f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a520b8f2cf05ff1155245228bbba6e1bf"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1AcosImageFilter.html#a520b8f2cf05ff1155245228bbba6e1bf">GetName</a> () const</td></tr>
 <tr class="separator:a520b8f2cf05ff1155245228bbba6e1bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab3bf2da1b60baec540b0c686e3101da2"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1AcosImageFilter.html#ab3bf2da1b60baec540b0c686e3101da2">ToString</a> () const</td></tr>
@@ -206,6 +208,8 @@ Private Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
+<tr class="memitem:ae04c6f47ecf6ae293240cf2203971755"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1AcosImageFilter.html#ae04c6f47ecf6ae293240cf2203971755">m_InPlace</a> {false}</td></tr>
+<tr class="separator:ae04c6f47ecf6ae293240cf2203971755"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3861c945e787de445c085990f8b359ca"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="classitk_1_1simple_1_1detail_1_1MemberFunctionFactory.html">detail::MemberFunctionFactory</a>&lt; <a class="el" href="classitk_1_1simple_1_1AcosImageFilter.html#ad19a7e1962d834e5e1b06bb31017496c">MemberFunctionType</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1AcosImageFilter.html#a3861c945e787de445c085990f8b359ca">m_MemberFactory</a></td></tr>
 <tr class="separator:a3861c945e787de445c085990f8b359ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -319,7 +323,7 @@ Additional Inherited Members</h2></td></tr>
 <ul>
 <li>store the casted value into the output image.</li>
 </ul>
-<p>The filter expects both images to have the same dimension (e.g. both 2D, or both 3D, or both ND). </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="namespaceitk_1_1simple.html#a88e420c0a596b5b0434e9462109cfb36" title="Computes the inverse cosine of each pixel.">itk::simple::Acos</a> for the procedural interface </dd>
+<p>The filter expects both images to have the same dimension (e.g. both 2D, or both 3D, or both ND). </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="namespaceitk_1_1simple.html#a99695a6a6ef26d13d45acdc84f4fe8b0" title="Computes the inverse cosine of each pixel.">itk::simple::Acos</a> for the procedural interface </dd>
 <dd>
 <a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1AcosImageFilter.html">itk::AcosImageFilter</a> for the Doxygen on the original ITK class. </dd></dl>
 
@@ -346,7 +350,7 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 <p>Setup for member function dispatching </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkAcosImageFilter_8h_source.html#l00090">90</a> of file <a class="el" href="sitkAcosImageFilter_8h_source.html">sitkAcosImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkAcosImageFilter_8h_source.html#l00093">93</a> of file <a class="el" href="sitkAcosImageFilter_8h_source.html">sitkAcosImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -430,7 +434,7 @@ Additional Inherited Members</h2></td></tr>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
 <a id="a720b94a4d01f91634753b4c39c12edf2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a720b94a4d01f91634753b4c39c12edf2">&#9670;&nbsp;</a></span>Execute()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a720b94a4d01f91634753b4c39c12edf2">&#9670;&nbsp;</a></span>Execute() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -439,6 +443,24 @@ Additional Inherited Members</h2></td></tr>
           <td class="memname"><a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> itk::simple::AcosImageFilter::Execute </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> &amp;&#160;</td>
+          <td class="paramname"><em>image1</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae1e373bd3f55edc33d69992cccc6d9f9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae1e373bd3f55edc33d69992cccc6d9f9">&#9670;&nbsp;</a></span>Execute() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> itk::simple::AcosImageFilter::Execute </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> &amp;&amp;&#160;</td>
           <td class="paramname"><em>image1</em></td><td>)</td>
           <td></td>
         </tr>
@@ -584,7 +606,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkAcosImageFilter_8h_source.html#l00096">96</a> of file <a class="el" href="sitkAcosImageFilter_8h_source.html">sitkAcosImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkAcosImageFilter_8h_source.html#l00099">99</a> of file <a class="el" href="sitkAcosImageFilter_8h_source.html">sitkAcosImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -608,11 +630,35 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkAcosImageFilter_8h_source.html#l00095">95</a> of file <a class="el" href="sitkAcosImageFilter_8h_source.html">sitkAcosImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkAcosImageFilter_8h_source.html#l00098">98</a> of file <a class="el" href="sitkAcosImageFilter_8h_source.html">sitkAcosImageFilter.h</a>.</p>
 
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
+<a id="ae04c6f47ecf6ae293240cf2203971755"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae04c6f47ecf6ae293240cf2203971755">&#9670;&nbsp;</a></span>m_InPlace</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool itk::simple::AcosImageFilter::m_InPlace {false}</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="sitkAcosImageFilter_8h_source.html#l00104">104</a> of file <a class="el" href="sitkAcosImageFilter_8h_source.html">sitkAcosImageFilter.h</a>.</p>
+
+</div>
+</div>
 <a id="a3861c945e787de445c085990f8b359ca"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a3861c945e787de445c085990f8b359ca">&#9670;&nbsp;</a></span>m_MemberFactory</h2>
 
@@ -633,7 +679,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkAcosImageFilter_8h_source.html#l00097">97</a> of file <a class="el" href="sitkAcosImageFilter_8h_source.html">sitkAcosImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkAcosImageFilter_8h_source.html#l00100">100</a> of file <a class="el" href="sitkAcosImageFilter_8h_source.html">sitkAcosImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -643,7 +689,7 @@ template&lt;class TImageType &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Apr 7 2020 03:21:31 for SimpleITK by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Apr 14 2020 02:53:24 for SimpleITK by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

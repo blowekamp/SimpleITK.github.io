@@ -19,7 +19,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">SimpleITK
-   &#160;<span id="projectnumber">2.0.0rc1.post73</span>
+   &#160;<span id="projectnumber">2.0.0rc1.post121</span>
    </div>
   </td>
  </tr>
@@ -142,6 +142,8 @@ Public Types</h2></td></tr>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a80a48dc019d6fe9bd17fd7ad981a3861"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classitk_1_1simple_1_1Image.html">Image</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1TernaryMagnitudeSquaredImageFilter.html#a80a48dc019d6fe9bd17fd7ad981a3861">Execute</a> (const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> &amp;image1, const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> &amp;image2, const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> &amp;image3)</td></tr>
 <tr class="separator:a80a48dc019d6fe9bd17fd7ad981a3861"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a979d22bea2d644075b617fc0248fa97d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classitk_1_1simple_1_1Image.html">Image</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1TernaryMagnitudeSquaredImageFilter.html#a979d22bea2d644075b617fc0248fa97d">Execute</a> (<a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> &amp;&amp;image1, const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> &amp;image2, const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> &amp;image3)</td></tr>
+<tr class="separator:a979d22bea2d644075b617fc0248fa97d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a84673bb03e761ca6bcac5d86f5f89a91"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1TernaryMagnitudeSquaredImageFilter.html#a84673bb03e761ca6bcac5d86f5f89a91">GetName</a> () const</td></tr>
 <tr class="separator:a84673bb03e761ca6bcac5d86f5f89a91"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1e0d12b2345217803b55b08b0261524d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1TernaryMagnitudeSquaredImageFilter.html#a1e0d12b2345217803b55b08b0261524d">TernaryMagnitudeSquaredImageFilter</a> ()</td></tr>
@@ -203,6 +205,8 @@ Private Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
+<tr class="memitem:a663b330dbd2fcd1243832170bd279ee0"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1TernaryMagnitudeSquaredImageFilter.html#a663b330dbd2fcd1243832170bd279ee0">m_InPlace</a> {false}</td></tr>
+<tr class="separator:a663b330dbd2fcd1243832170bd279ee0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae8b1c955d09884274a48869be8024768"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="classitk_1_1simple_1_1detail_1_1MemberFunctionFactory.html">detail::MemberFunctionFactory</a>&lt; <a class="el" href="classitk_1_1simple_1_1TernaryMagnitudeSquaredImageFilter.html#a12bb13917b31d4af259f4b92307c507b">MemberFunctionType</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1TernaryMagnitudeSquaredImageFilter.html#ae8b1c955d09884274a48869be8024768">m_MemberFactory</a></td></tr>
 <tr class="separator:ae8b1c955d09884274a48869be8024768"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -300,7 +304,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Compute the pixel-wise squared magnitude of three images. </p>
-<p>This class is templated over the types of the three input images and the type of the output image. Numeric conversions (castings) are done by the C++ defaults. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="namespaceitk_1_1simple.html#a3971f99943bf68a2784a52dd61f44c19" title="Compute the pixel-wise squared magnitude of three images.">itk::simple::TernaryMagnitudeSquared</a> for the procedural interface </dd>
+<p>This class is templated over the types of the three input images and the type of the output image. Numeric conversions (castings) are done by the C++ defaults. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="namespaceitk_1_1simple.html#a6e4232be4afb365c03fb362f7505fab7" title="Compute the pixel-wise squared magnitude of three images.">itk::simple::TernaryMagnitudeSquared</a> for the procedural interface </dd>
 <dd>
 <a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1TernaryMagnitudeSquaredImageFilter.html">itk::TernaryMagnitudeSquaredImageFilter</a> for the Doxygen on the original ITK class. </dd></dl>
 
@@ -327,7 +331,7 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 <p>Setup for member function dispatching </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkTernaryMagnitudeSquaredImageFilter_8h_source.html#l00071">71</a> of file <a class="el" href="sitkTernaryMagnitudeSquaredImageFilter_8h_source.html">sitkTernaryMagnitudeSquaredImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkTernaryMagnitudeSquaredImageFilter_8h_source.html#l00074">74</a> of file <a class="el" href="sitkTernaryMagnitudeSquaredImageFilter_8h_source.html">sitkTernaryMagnitudeSquaredImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -411,7 +415,7 @@ Additional Inherited Members</h2></td></tr>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
 <a id="a80a48dc019d6fe9bd17fd7ad981a3861"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a80a48dc019d6fe9bd17fd7ad981a3861">&#9670;&nbsp;</a></span>Execute()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a80a48dc019d6fe9bd17fd7ad981a3861">&#9670;&nbsp;</a></span>Execute() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -420,6 +424,40 @@ Additional Inherited Members</h2></td></tr>
           <td class="memname"><a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> itk::simple::TernaryMagnitudeSquaredImageFilter::Execute </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> &amp;&#160;</td>
+          <td class="paramname"><em>image1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> &amp;&#160;</td>
+          <td class="paramname"><em>image2</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> &amp;&#160;</td>
+          <td class="paramname"><em>image3</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a979d22bea2d644075b617fc0248fa97d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a979d22bea2d644075b617fc0248fa97d">&#9670;&nbsp;</a></span>Execute() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> itk::simple::TernaryMagnitudeSquaredImageFilter::Execute </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> &amp;&amp;&#160;</td>
           <td class="paramname"><em>image1</em>, </td>
         </tr>
         <tr>
@@ -568,11 +606,35 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkTernaryMagnitudeSquaredImageFilter_8h_source.html#l00075">75</a> of file <a class="el" href="sitkTernaryMagnitudeSquaredImageFilter_8h_source.html">sitkTernaryMagnitudeSquaredImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkTernaryMagnitudeSquaredImageFilter_8h_source.html#l00078">78</a> of file <a class="el" href="sitkTernaryMagnitudeSquaredImageFilter_8h_source.html">sitkTernaryMagnitudeSquaredImageFilter.h</a>.</p>
 
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
+<a id="a663b330dbd2fcd1243832170bd279ee0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a663b330dbd2fcd1243832170bd279ee0">&#9670;&nbsp;</a></span>m_InPlace</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool itk::simple::TernaryMagnitudeSquaredImageFilter::m_InPlace {false}</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="sitkTernaryMagnitudeSquaredImageFilter_8h_source.html#l00084">84</a> of file <a class="el" href="sitkTernaryMagnitudeSquaredImageFilter_8h_source.html">sitkTernaryMagnitudeSquaredImageFilter.h</a>.</p>
+
+</div>
+</div>
 <a id="ae8b1c955d09884274a48869be8024768"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ae8b1c955d09884274a48869be8024768">&#9670;&nbsp;</a></span>m_MemberFactory</h2>
 
@@ -593,7 +655,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkTernaryMagnitudeSquaredImageFilter_8h_source.html#l00077">77</a> of file <a class="el" href="sitkTernaryMagnitudeSquaredImageFilter_8h_source.html">sitkTernaryMagnitudeSquaredImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkTernaryMagnitudeSquaredImageFilter_8h_source.html#l00080">80</a> of file <a class="el" href="sitkTernaryMagnitudeSquaredImageFilter_8h_source.html">sitkTernaryMagnitudeSquaredImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -603,7 +665,7 @@ template&lt;class TImageType &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Apr 7 2020 03:21:40 for SimpleITK by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Apr 14 2020 02:53:34 for SimpleITK by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

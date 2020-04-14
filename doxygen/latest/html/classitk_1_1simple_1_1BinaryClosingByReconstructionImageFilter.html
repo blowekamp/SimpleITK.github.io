@@ -19,7 +19,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">SimpleITK
-   &#160;<span id="projectnumber">2.0.0rc1.post73</span>
+   &#160;<span id="projectnumber">2.0.0rc1.post121</span>
    </div>
   </td>
  </tr>
@@ -226,13 +226,13 @@ Private Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
-<tr class="memitem:a3420d044c3cb90483d2ec886e22cb33a"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1BinaryClosingByReconstructionImageFilter.html#a3420d044c3cb90483d2ec886e22cb33a">m_ForegroundValue</a></td></tr>
+<tr class="memitem:a3420d044c3cb90483d2ec886e22cb33a"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1BinaryClosingByReconstructionImageFilter.html#a3420d044c3cb90483d2ec886e22cb33a">m_ForegroundValue</a> {1.0}</td></tr>
 <tr class="separator:a3420d044c3cb90483d2ec886e22cb33a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acae4cd58d043454987942fb1b9ad3178"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1BinaryClosingByReconstructionImageFilter.html#acae4cd58d043454987942fb1b9ad3178">m_FullyConnected</a></td></tr>
+<tr class="memitem:acae4cd58d043454987942fb1b9ad3178"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1BinaryClosingByReconstructionImageFilter.html#acae4cd58d043454987942fb1b9ad3178">m_FullyConnected</a> {false}</td></tr>
 <tr class="separator:acae4cd58d043454987942fb1b9ad3178"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a69823b3123ee2cea7b06df9426bf60ec"><td class="memItemLeft" align="right" valign="top">std::vector&lt; unsigned int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1BinaryClosingByReconstructionImageFilter.html#a69823b3123ee2cea7b06df9426bf60ec">m_KernelRadius</a></td></tr>
+<tr class="memitem:a69823b3123ee2cea7b06df9426bf60ec"><td class="memItemLeft" align="right" valign="top">std::vector&lt; unsigned int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1BinaryClosingByReconstructionImageFilter.html#a69823b3123ee2cea7b06df9426bf60ec">m_KernelRadius</a> {std::vector&lt;<a class="elRef" href="https://www.itk.org/Doxygen/html/namespaceitk.html#a575b8e3e1ee797dd1bbaf9724ed68f92">uint32_t</a>&gt;(3, 1)}</td></tr>
 <tr class="separator:a69823b3123ee2cea7b06df9426bf60ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3481f57914de6306ee5597f1165ececa"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceitk_1_1simple.html#a38998f2c7b469b1ad8e337a0c6c0697b">KernelEnum</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1BinaryClosingByReconstructionImageFilter.html#a3481f57914de6306ee5597f1165ececa">m_KernelType</a></td></tr>
+<tr class="memitem:a3481f57914de6306ee5597f1165ececa"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceitk_1_1simple.html#a38998f2c7b469b1ad8e337a0c6c0697b">KernelEnum</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1BinaryClosingByReconstructionImageFilter.html#a3481f57914de6306ee5597f1165ececa">m_KernelType</a> {<a class="el" href="namespaceitk_1_1simple.html#a38998f2c7b469b1ad8e337a0c6c0697ba7951c7f81812d95d162e114e8b2265f7">itk::simple::sitkBall</a>}</td></tr>
 <tr class="separator:a3481f57914de6306ee5597f1165ececa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a71c2527884411cedf07e3cfccdd3880a"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="classitk_1_1simple_1_1detail_1_1MemberFunctionFactory.html">detail::MemberFunctionFactory</a>&lt; <a class="el" href="classitk_1_1simple_1_1BinaryClosingByReconstructionImageFilter.html#a4ff86da87bad1c3e34b0b82c18b9886d">MemberFunctionType</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1BinaryClosingByReconstructionImageFilter.html#a71c2527884411cedf07e3cfccdd3880a">m_MemberFactory</a></td></tr>
 <tr class="separator:a71c2527884411cedf07e3cfccdd3880a"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -364,7 +364,7 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 <p>Setup for member function dispatching </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkBinaryClosingByReconstructionImageFilter_8h_source.html#l00128">128</a> of file <a class="el" href="sitkBinaryClosingByReconstructionImageFilter_8h_source.html">sitkBinaryClosingByReconstructionImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkBinaryClosingByReconstructionImageFilter_8h_source.html#l00129">129</a> of file <a class="el" href="sitkBinaryClosingByReconstructionImageFilter_8h_source.html">sitkBinaryClosingByReconstructionImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -885,7 +885,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkBinaryClosingByReconstructionImageFilter_8h_source.html#l00132">132</a> of file <a class="el" href="sitkBinaryClosingByReconstructionImageFilter_8h_source.html">sitkBinaryClosingByReconstructionImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkBinaryClosingByReconstructionImageFilter_8h_source.html#l00133">133</a> of file <a class="el" href="sitkBinaryClosingByReconstructionImageFilter_8h_source.html">sitkBinaryClosingByReconstructionImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -900,7 +900,7 @@ template&lt;class TImageType &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">double itk::simple::BinaryClosingByReconstructionImageFilter::m_ForegroundValue</td>
+          <td class="memname">double itk::simple::BinaryClosingByReconstructionImageFilter::m_ForegroundValue {1.0}</td>
         </tr>
       </table>
   </td>
@@ -910,7 +910,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkBinaryClosingByReconstructionImageFilter_8h_source.html#l00140">140</a> of file <a class="el" href="sitkBinaryClosingByReconstructionImageFilter_8h_source.html">sitkBinaryClosingByReconstructionImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkBinaryClosingByReconstructionImageFilter_8h_source.html#l00143">143</a> of file <a class="el" href="sitkBinaryClosingByReconstructionImageFilter_8h_source.html">sitkBinaryClosingByReconstructionImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -924,7 +924,7 @@ template&lt;class TImageType &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">bool itk::simple::BinaryClosingByReconstructionImageFilter::m_FullyConnected</td>
+          <td class="memname">bool itk::simple::BinaryClosingByReconstructionImageFilter::m_FullyConnected {false}</td>
         </tr>
       </table>
   </td>
@@ -934,7 +934,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkBinaryClosingByReconstructionImageFilter_8h_source.html#l00142">142</a> of file <a class="el" href="sitkBinaryClosingByReconstructionImageFilter_8h_source.html">sitkBinaryClosingByReconstructionImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkBinaryClosingByReconstructionImageFilter_8h_source.html#l00146">146</a> of file <a class="el" href="sitkBinaryClosingByReconstructionImageFilter_8h_source.html">sitkBinaryClosingByReconstructionImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -948,7 +948,7 @@ template&lt;class TImageType &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::vector&lt;unsigned int&gt; itk::simple::BinaryClosingByReconstructionImageFilter::m_KernelRadius</td>
+          <td class="memname">std::vector&lt;unsigned int&gt; itk::simple::BinaryClosingByReconstructionImageFilter::m_KernelRadius {std::vector&lt;<a class="elRef" href="https://www.itk.org/Doxygen/html/namespaceitk.html#a575b8e3e1ee797dd1bbaf9724ed68f92">uint32_t</a>&gt;(3, 1)}</td>
         </tr>
       </table>
   </td>
@@ -958,7 +958,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkBinaryClosingByReconstructionImageFilter_8h_source.html#l00138">138</a> of file <a class="el" href="sitkBinaryClosingByReconstructionImageFilter_8h_source.html">sitkBinaryClosingByReconstructionImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkBinaryClosingByReconstructionImageFilter_8h_source.html#l00139">139</a> of file <a class="el" href="sitkBinaryClosingByReconstructionImageFilter_8h_source.html">sitkBinaryClosingByReconstructionImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -972,7 +972,7 @@ template&lt;class TImageType &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="namespaceitk_1_1simple.html#a38998f2c7b469b1ad8e337a0c6c0697b">KernelEnum</a> itk::simple::BinaryClosingByReconstructionImageFilter::m_KernelType</td>
+          <td class="memname"><a class="el" href="namespaceitk_1_1simple.html#a38998f2c7b469b1ad8e337a0c6c0697b">KernelEnum</a> itk::simple::BinaryClosingByReconstructionImageFilter::m_KernelType {<a class="el" href="namespaceitk_1_1simple.html#a38998f2c7b469b1ad8e337a0c6c0697ba7951c7f81812d95d162e114e8b2265f7">itk::simple::sitkBall</a>}</td>
         </tr>
       </table>
   </td>
@@ -982,7 +982,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkBinaryClosingByReconstructionImageFilter_8h_source.html#l00139">139</a> of file <a class="el" href="sitkBinaryClosingByReconstructionImageFilter_8h_source.html">sitkBinaryClosingByReconstructionImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkBinaryClosingByReconstructionImageFilter_8h_source.html#l00141">141</a> of file <a class="el" href="sitkBinaryClosingByReconstructionImageFilter_8h_source.html">sitkBinaryClosingByReconstructionImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -1006,7 +1006,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkBinaryClosingByReconstructionImageFilter_8h_source.html#l00134">134</a> of file <a class="el" href="sitkBinaryClosingByReconstructionImageFilter_8h_source.html">sitkBinaryClosingByReconstructionImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkBinaryClosingByReconstructionImageFilter_8h_source.html#l00135">135</a> of file <a class="el" href="sitkBinaryClosingByReconstructionImageFilter_8h_source.html">sitkBinaryClosingByReconstructionImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -1016,7 +1016,7 @@ template&lt;class TImageType &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Apr 7 2020 03:21:31 for SimpleITK by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Apr 14 2020 02:53:24 for SimpleITK by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

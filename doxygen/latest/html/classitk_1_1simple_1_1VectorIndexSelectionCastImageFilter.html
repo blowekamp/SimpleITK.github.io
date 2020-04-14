@@ -19,7 +19,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">SimpleITK
-   &#160;<span id="projectnumber">2.0.0rc1.post73</span>
+   &#160;<span id="projectnumber">2.0.0rc1.post121</span>
    </div>
   </td>
  </tr>
@@ -142,6 +142,8 @@ Public Types</h2></td></tr>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a8c6dcc0aa4b38a2a8ee60229904e8282"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classitk_1_1simple_1_1Image.html">Image</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1VectorIndexSelectionCastImageFilter.html#a8c6dcc0aa4b38a2a8ee60229904e8282">Execute</a> (const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> &amp;image1)</td></tr>
 <tr class="separator:a8c6dcc0aa4b38a2a8ee60229904e8282"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1f5ea81df8c09d1ae32f861192799df7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classitk_1_1simple_1_1Image.html">Image</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1VectorIndexSelectionCastImageFilter.html#a1f5ea81df8c09d1ae32f861192799df7">Execute</a> (<a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> &amp;&amp;image1)</td></tr>
+<tr class="separator:a1f5ea81df8c09d1ae32f861192799df7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a42004f8665bf9f4db37f75bf09e5cc78"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1VectorIndexSelectionCastImageFilter.html#a42004f8665bf9f4db37f75bf09e5cc78">GetIndex</a> () const</td></tr>
 <tr class="separator:a42004f8665bf9f4db37f75bf09e5cc78"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a459e8284a02d9a02aabb7a55dcfd4ef9"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1VectorIndexSelectionCastImageFilter.html#a459e8284a02d9a02aabb7a55dcfd4ef9">GetName</a> () const</td></tr>
@@ -215,9 +217,11 @@ Private Member Functions</h2></td></tr>
 Private Attributes</h2></td></tr>
 <tr class="memitem:a0ee0cf2a693bcc58a6c6b70f44b24de8"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="classitk_1_1simple_1_1detail_1_1DualMemberFunctionFactory.html">detail::DualMemberFunctionFactory</a>&lt; <a class="el" href="classitk_1_1simple_1_1VectorIndexSelectionCastImageFilter.html#a190429e3bba88063a185ecf177df1900">MemberFunctionType</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1VectorIndexSelectionCastImageFilter.html#a0ee0cf2a693bcc58a6c6b70f44b24de8">m_DualMemberFactory</a></td></tr>
 <tr class="separator:a0ee0cf2a693bcc58a6c6b70f44b24de8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acf231a85979fbeb97b9f6eaf0b569b74"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1VectorIndexSelectionCastImageFilter.html#acf231a85979fbeb97b9f6eaf0b569b74">m_Index</a></td></tr>
+<tr class="memitem:acf231a85979fbeb97b9f6eaf0b569b74"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1VectorIndexSelectionCastImageFilter.html#acf231a85979fbeb97b9f6eaf0b569b74">m_Index</a> {0u}</td></tr>
 <tr class="separator:acf231a85979fbeb97b9f6eaf0b569b74"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adf14d4f92627579f564dd37c682e2e47"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceitk_1_1simple.html#ae40bd64640f4014fba1a8a872ab4df98">PixelIDValueEnum</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1VectorIndexSelectionCastImageFilter.html#adf14d4f92627579f564dd37c682e2e47">m_OutputPixelType</a></td></tr>
+<tr class="memitem:abe14ff95a2baf940c72bf9117e063b75"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1VectorIndexSelectionCastImageFilter.html#abe14ff95a2baf940c72bf9117e063b75">m_InPlace</a> {false}</td></tr>
+<tr class="separator:abe14ff95a2baf940c72bf9117e063b75"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adf14d4f92627579f564dd37c682e2e47"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceitk_1_1simple.html#ae40bd64640f4014fba1a8a872ab4df98">PixelIDValueEnum</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1VectorIndexSelectionCastImageFilter.html#adf14d4f92627579f564dd37c682e2e47">m_OutputPixelType</a> {<a class="el" href="namespaceitk_1_1simple.html#ae40bd64640f4014fba1a8a872ab4df98a25f496c19c2388217b9fede6686144ac">itk::simple::sitkUnknown</a>}</td></tr>
 <tr class="separator:adf14d4f92627579f564dd37c682e2e47"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
@@ -318,7 +322,7 @@ Additional Inherited Members</h2></td></tr>
 <p>The filter expect the input image pixel type to be a vector and the output image pixel type to be a scalar. The only requirement on the type used for representing the vector is that it must provide an operator[].</p>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="classitk_1_1simple_1_1ComposeImageFilter.html" title="ComposeImageFilter combine several scalar images into a multicomponent image.">ComposeImageFilter</a> </dd>
 <dd>
-<a class="el" href="namespaceitk_1_1simple.html#acb4fa175b74855a0b85c6129f4095061" title="Extracts the selected index of the vector that is the input pixel type.">itk::simple::VectorIndexSelectionCast</a> for the procedural interface </dd>
+<a class="el" href="namespaceitk_1_1simple.html#a06ac2837d55572dc1c8b12e622d6d93f" title="Extracts the selected index of the vector that is the input pixel type.">itk::simple::VectorIndexSelectionCast</a> for the procedural interface </dd>
 <dd>
 <a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1VectorIndexSelectionCastImageFilter.html">itk::VectorIndexSelectionCastImageFilter</a> for the Doxygen on the original ITK class. </dd></dl>
 
@@ -345,7 +349,7 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 <p>Setup for member function dispatching </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkVectorIndexSelectionCastImageFilter_8h_source.html#l00095">95</a> of file <a class="el" href="sitkVectorIndexSelectionCastImageFilter_8h_source.html">sitkVectorIndexSelectionCastImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkVectorIndexSelectionCastImageFilter_8h_source.html#l00098">98</a> of file <a class="el" href="sitkVectorIndexSelectionCastImageFilter_8h_source.html">sitkVectorIndexSelectionCastImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -457,7 +461,7 @@ template&lt;class TImageType1 , class TImageType2 &gt; </div>
 </div>
 </div>
 <a id="a8c6dcc0aa4b38a2a8ee60229904e8282"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8c6dcc0aa4b38a2a8ee60229904e8282">&#9670;&nbsp;</a></span>Execute()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a8c6dcc0aa4b38a2a8ee60229904e8282">&#9670;&nbsp;</a></span>Execute() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -466,6 +470,24 @@ template&lt;class TImageType1 , class TImageType2 &gt; </div>
           <td class="memname"><a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> itk::simple::VectorIndexSelectionCastImageFilter::Execute </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> &amp;&#160;</td>
+          <td class="paramname"><em>image1</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a1f5ea81df8c09d1ae32f861192799df7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1f5ea81df8c09d1ae32f861192799df7">&#9670;&nbsp;</a></span>Execute() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> itk::simple::VectorIndexSelectionCastImageFilter::Execute </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> &amp;&amp;&#160;</td>
           <td class="paramname"><em>image1</em></td><td>)</td>
           <td></td>
         </tr>
@@ -670,7 +692,7 @@ template&lt;class TImageType1 , class TImageType2 &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkVectorIndexSelectionCastImageFilter_8h_source.html#l00097">97</a> of file <a class="el" href="sitkVectorIndexSelectionCastImageFilter_8h_source.html">sitkVectorIndexSelectionCastImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkVectorIndexSelectionCastImageFilter_8h_source.html#l00100">100</a> of file <a class="el" href="sitkVectorIndexSelectionCastImageFilter_8h_source.html">sitkVectorIndexSelectionCastImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -695,7 +717,7 @@ template&lt;class TImageType1 , class TImageType2 &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkVectorIndexSelectionCastImageFilter_8h_source.html#l00101">101</a> of file <a class="el" href="sitkVectorIndexSelectionCastImageFilter_8h_source.html">sitkVectorIndexSelectionCastImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkVectorIndexSelectionCastImageFilter_8h_source.html#l00104">104</a> of file <a class="el" href="sitkVectorIndexSelectionCastImageFilter_8h_source.html">sitkVectorIndexSelectionCastImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -709,7 +731,7 @@ template&lt;class TImageType1 , class TImageType2 &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">unsigned int itk::simple::VectorIndexSelectionCastImageFilter::m_Index</td>
+          <td class="memname">unsigned int itk::simple::VectorIndexSelectionCastImageFilter::m_Index {0u}</td>
         </tr>
       </table>
   </td>
@@ -719,7 +741,31 @@ template&lt;class TImageType1 , class TImageType2 &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkVectorIndexSelectionCastImageFilter_8h_source.html#l00106">106</a> of file <a class="el" href="sitkVectorIndexSelectionCastImageFilter_8h_source.html">sitkVectorIndexSelectionCastImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkVectorIndexSelectionCastImageFilter_8h_source.html#l00109">109</a> of file <a class="el" href="sitkVectorIndexSelectionCastImageFilter_8h_source.html">sitkVectorIndexSelectionCastImageFilter.h</a>.</p>
+
+</div>
+</div>
+<a id="abe14ff95a2baf940c72bf9117e063b75"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abe14ff95a2baf940c72bf9117e063b75">&#9670;&nbsp;</a></span>m_InPlace</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool itk::simple::VectorIndexSelectionCastImageFilter::m_InPlace {false}</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="sitkVectorIndexSelectionCastImageFilter_8h_source.html#l00114">114</a> of file <a class="el" href="sitkVectorIndexSelectionCastImageFilter_8h_source.html">sitkVectorIndexSelectionCastImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -733,7 +779,7 @@ template&lt;class TImageType1 , class TImageType2 &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="namespaceitk_1_1simple.html#ae40bd64640f4014fba1a8a872ab4df98">PixelIDValueEnum</a> itk::simple::VectorIndexSelectionCastImageFilter::m_OutputPixelType</td>
+          <td class="memname"><a class="el" href="namespaceitk_1_1simple.html#ae40bd64640f4014fba1a8a872ab4df98">PixelIDValueEnum</a> itk::simple::VectorIndexSelectionCastImageFilter::m_OutputPixelType {<a class="el" href="namespaceitk_1_1simple.html#ae40bd64640f4014fba1a8a872ab4df98a25f496c19c2388217b9fede6686144ac">itk::simple::sitkUnknown</a>}</td>
         </tr>
       </table>
   </td>
@@ -743,7 +789,7 @@ template&lt;class TImageType1 , class TImageType2 &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkVectorIndexSelectionCastImageFilter_8h_source.html#l00107">107</a> of file <a class="el" href="sitkVectorIndexSelectionCastImageFilter_8h_source.html">sitkVectorIndexSelectionCastImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkVectorIndexSelectionCastImageFilter_8h_source.html#l00111">111</a> of file <a class="el" href="sitkVectorIndexSelectionCastImageFilter_8h_source.html">sitkVectorIndexSelectionCastImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -753,7 +799,7 @@ template&lt;class TImageType1 , class TImageType2 &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Apr 7 2020 03:21:41 for SimpleITK by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Apr 14 2020 02:53:34 for SimpleITK by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

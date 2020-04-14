@@ -19,7 +19,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">SimpleITK
-   &#160;<span id="projectnumber">2.0.0rc1.post73</span>
+   &#160;<span id="projectnumber">2.0.0rc1.post121</span>
    </div>
   </td>
  </tr>
@@ -144,6 +144,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a72f5d32e3a16c99f419fef77b3cc0077"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a057816aa1fe02b3efb260b7087fbdde3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classitk_1_1simple_1_1Image.html">Image</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1EdgePotentialImageFilter.html#a057816aa1fe02b3efb260b7087fbdde3">Execute</a> (const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> &amp;image1)</td></tr>
 <tr class="separator:a057816aa1fe02b3efb260b7087fbdde3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1adc1768dab8615a6015198d6e6d58f4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classitk_1_1simple_1_1Image.html">Image</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1EdgePotentialImageFilter.html#a1adc1768dab8615a6015198d6e6d58f4">Execute</a> (<a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> &amp;&amp;image1)</td></tr>
+<tr class="separator:a1adc1768dab8615a6015198d6e6d58f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2d990cb4b3c7f61c5088ff61ef738b4a"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1EdgePotentialImageFilter.html#a2d990cb4b3c7f61c5088ff61ef738b4a">GetName</a> () const</td></tr>
 <tr class="separator:a2d990cb4b3c7f61c5088ff61ef738b4a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5860429ead023b5b72b68b26644dea6f"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1EdgePotentialImageFilter.html#a5860429ead023b5b72b68b26644dea6f">ToString</a> () const</td></tr>
@@ -203,6 +205,8 @@ Private Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
+<tr class="memitem:a83eb09cb2839bd48f4d131c531b303af"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1EdgePotentialImageFilter.html#a83eb09cb2839bd48f4d131c531b303af">m_InPlace</a> {false}</td></tr>
+<tr class="separator:a83eb09cb2839bd48f4d131c531b303af"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5080f8e128977a90f32ae2ce718f22ce"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="classitk_1_1simple_1_1detail_1_1MemberFunctionFactory.html">detail::MemberFunctionFactory</a>&lt; <a class="el" href="classitk_1_1simple_1_1EdgePotentialImageFilter.html#a433da59be5de12eeb543aa917c8a521d">MemberFunctionType</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1EdgePotentialImageFilter.html#a5080f8e128977a90f32ae2ce718f22ce">m_MemberFactory</a></td></tr>
 <tr class="separator:a5080f8e128977a90f32ae2ce718f22ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -301,7 +305,7 @@ Additional Inherited Members</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Computes the edge potential of an image from the image gradient. </p>
 <p>Input to this filter should be a <a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1CovariantVector.html">CovariantVector</a> image representing the image gradient.</p>
-<p>The filter expect both the input and output images to have the same number of dimensions, and the output to be of a scalar image type. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="namespaceitk_1_1simple.html#a90d94cc26ee4b4c36aefeefe85f58f51" title="Computes the edge potential of an image from the image gradient.">itk::simple::EdgePotential</a> for the procedural interface </dd>
+<p>The filter expect both the input and output images to have the same number of dimensions, and the output to be of a scalar image type. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="namespaceitk_1_1simple.html#a3a6502d4fe960f438d4d813719f47a12" title="Computes the edge potential of an image from the image gradient.">itk::simple::EdgePotential</a> for the procedural interface </dd>
 <dd>
 <a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1EdgePotentialImageFilter.html">itk::EdgePotentialImageFilter</a> for the Doxygen on the original ITK class. </dd></dl>
 
@@ -328,7 +332,7 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 <p>Setup for member function dispatching </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkEdgePotentialImageFilter_8h_source.html#l00073">73</a> of file <a class="el" href="sitkEdgePotentialImageFilter_8h_source.html">sitkEdgePotentialImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkEdgePotentialImageFilter_8h_source.html#l00076">76</a> of file <a class="el" href="sitkEdgePotentialImageFilter_8h_source.html">sitkEdgePotentialImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -412,7 +416,7 @@ Additional Inherited Members</h2></td></tr>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
 <a id="a057816aa1fe02b3efb260b7087fbdde3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a057816aa1fe02b3efb260b7087fbdde3">&#9670;&nbsp;</a></span>Execute()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a057816aa1fe02b3efb260b7087fbdde3">&#9670;&nbsp;</a></span>Execute() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -421,6 +425,24 @@ Additional Inherited Members</h2></td></tr>
           <td class="memname"><a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> itk::simple::EdgePotentialImageFilter::Execute </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> &amp;&#160;</td>
+          <td class="paramname"><em>image1</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a1adc1768dab8615a6015198d6e6d58f4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1adc1768dab8615a6015198d6e6d58f4">&#9670;&nbsp;</a></span>Execute() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> itk::simple::EdgePotentialImageFilter::Execute </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> &amp;&amp;&#160;</td>
           <td class="paramname"><em>image1</em></td><td>)</td>
           <td></td>
         </tr>
@@ -537,11 +559,35 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkEdgePotentialImageFilter_8h_source.html#l00077">77</a> of file <a class="el" href="sitkEdgePotentialImageFilter_8h_source.html">sitkEdgePotentialImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkEdgePotentialImageFilter_8h_source.html#l00080">80</a> of file <a class="el" href="sitkEdgePotentialImageFilter_8h_source.html">sitkEdgePotentialImageFilter.h</a>.</p>
 
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
+<a id="a83eb09cb2839bd48f4d131c531b303af"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a83eb09cb2839bd48f4d131c531b303af">&#9670;&nbsp;</a></span>m_InPlace</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool itk::simple::EdgePotentialImageFilter::m_InPlace {false}</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="sitkEdgePotentialImageFilter_8h_source.html#l00086">86</a> of file <a class="el" href="sitkEdgePotentialImageFilter_8h_source.html">sitkEdgePotentialImageFilter.h</a>.</p>
+
+</div>
+</div>
 <a id="a5080f8e128977a90f32ae2ce718f22ce"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a5080f8e128977a90f32ae2ce718f22ce">&#9670;&nbsp;</a></span>m_MemberFactory</h2>
 
@@ -562,7 +608,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkEdgePotentialImageFilter_8h_source.html#l00079">79</a> of file <a class="el" href="sitkEdgePotentialImageFilter_8h_source.html">sitkEdgePotentialImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkEdgePotentialImageFilter_8h_source.html#l00082">82</a> of file <a class="el" href="sitkEdgePotentialImageFilter_8h_source.html">sitkEdgePotentialImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -572,7 +618,7 @@ template&lt;class TImageType &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Apr 7 2020 03:21:33 for SimpleITK by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Apr 14 2020 02:53:27 for SimpleITK by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

@@ -19,7 +19,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">SimpleITK
-   &#160;<span id="projectnumber">2.0.0rc1.post73</span>
+   &#160;<span id="projectnumber">2.0.0rc1.post121</span>
    </div>
   </td>
  </tr>
@@ -219,11 +219,11 @@ Private Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
-<tr class="memitem:a718666e6f3c327fbe80b7146f02cbb83"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1BinaryGrindPeakImageFilter.html#a718666e6f3c327fbe80b7146f02cbb83">m_BackgroundValue</a></td></tr>
+<tr class="memitem:a718666e6f3c327fbe80b7146f02cbb83"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1BinaryGrindPeakImageFilter.html#a718666e6f3c327fbe80b7146f02cbb83">m_BackgroundValue</a> {0}</td></tr>
 <tr class="separator:a718666e6f3c327fbe80b7146f02cbb83"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac7719f14af4cd97ce53724ebb07690ac"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1BinaryGrindPeakImageFilter.html#ac7719f14af4cd97ce53724ebb07690ac">m_ForegroundValue</a></td></tr>
+<tr class="memitem:ac7719f14af4cd97ce53724ebb07690ac"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1BinaryGrindPeakImageFilter.html#ac7719f14af4cd97ce53724ebb07690ac">m_ForegroundValue</a> {1.0}</td></tr>
 <tr class="separator:ac7719f14af4cd97ce53724ebb07690ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a82944c1371c02a7052e51a2d80a08d83"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1BinaryGrindPeakImageFilter.html#a82944c1371c02a7052e51a2d80a08d83">m_FullyConnected</a></td></tr>
+<tr class="memitem:a82944c1371c02a7052e51a2d80a08d83"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1BinaryGrindPeakImageFilter.html#a82944c1371c02a7052e51a2d80a08d83">m_FullyConnected</a> {false}</td></tr>
 <tr class="separator:a82944c1371c02a7052e51a2d80a08d83"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aafd464be0af16cd8630ad55cf83b2ec4"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="classitk_1_1simple_1_1detail_1_1MemberFunctionFactory.html">detail::MemberFunctionFactory</a>&lt; <a class="el" href="classitk_1_1simple_1_1BinaryGrindPeakImageFilter.html#a454ff727ebf472df632013bcc1eb1bf1">MemberFunctionType</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1BinaryGrindPeakImageFilter.html#aafd464be0af16cd8630ad55cf83b2ec4">m_MemberFactory</a></td></tr>
 <tr class="separator:aafd464be0af16cd8630ad55cf83b2ec4"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -356,7 +356,7 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 <p>Setup for member function dispatching </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkBinaryGrindPeakImageFilter_8h_source.html#l00115">115</a> of file <a class="el" href="sitkBinaryGrindPeakImageFilter_8h_source.html">sitkBinaryGrindPeakImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkBinaryGrindPeakImageFilter_8h_source.html#l00116">116</a> of file <a class="el" href="sitkBinaryGrindPeakImageFilter_8h_source.html">sitkBinaryGrindPeakImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -791,7 +791,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkBinaryGrindPeakImageFilter_8h_source.html#l00119">119</a> of file <a class="el" href="sitkBinaryGrindPeakImageFilter_8h_source.html">sitkBinaryGrindPeakImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkBinaryGrindPeakImageFilter_8h_source.html#l00120">120</a> of file <a class="el" href="sitkBinaryGrindPeakImageFilter_8h_source.html">sitkBinaryGrindPeakImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -806,7 +806,7 @@ template&lt;class TImageType &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">double itk::simple::BinaryGrindPeakImageFilter::m_BackgroundValue</td>
+          <td class="memname">double itk::simple::BinaryGrindPeakImageFilter::m_BackgroundValue {0}</td>
         </tr>
       </table>
   </td>
@@ -816,7 +816,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkBinaryGrindPeakImageFilter_8h_source.html#l00127">127</a> of file <a class="el" href="sitkBinaryGrindPeakImageFilter_8h_source.html">sitkBinaryGrindPeakImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkBinaryGrindPeakImageFilter_8h_source.html#l00130">130</a> of file <a class="el" href="sitkBinaryGrindPeakImageFilter_8h_source.html">sitkBinaryGrindPeakImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -830,7 +830,7 @@ template&lt;class TImageType &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">double itk::simple::BinaryGrindPeakImageFilter::m_ForegroundValue</td>
+          <td class="memname">double itk::simple::BinaryGrindPeakImageFilter::m_ForegroundValue {1.0}</td>
         </tr>
       </table>
   </td>
@@ -840,7 +840,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkBinaryGrindPeakImageFilter_8h_source.html#l00126">126</a> of file <a class="el" href="sitkBinaryGrindPeakImageFilter_8h_source.html">sitkBinaryGrindPeakImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkBinaryGrindPeakImageFilter_8h_source.html#l00128">128</a> of file <a class="el" href="sitkBinaryGrindPeakImageFilter_8h_source.html">sitkBinaryGrindPeakImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -854,7 +854,7 @@ template&lt;class TImageType &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">bool itk::simple::BinaryGrindPeakImageFilter::m_FullyConnected</td>
+          <td class="memname">bool itk::simple::BinaryGrindPeakImageFilter::m_FullyConnected {false}</td>
         </tr>
       </table>
   </td>
@@ -864,7 +864,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkBinaryGrindPeakImageFilter_8h_source.html#l00125">125</a> of file <a class="el" href="sitkBinaryGrindPeakImageFilter_8h_source.html">sitkBinaryGrindPeakImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkBinaryGrindPeakImageFilter_8h_source.html#l00126">126</a> of file <a class="el" href="sitkBinaryGrindPeakImageFilter_8h_source.html">sitkBinaryGrindPeakImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -888,7 +888,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkBinaryGrindPeakImageFilter_8h_source.html#l00121">121</a> of file <a class="el" href="sitkBinaryGrindPeakImageFilter_8h_source.html">sitkBinaryGrindPeakImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkBinaryGrindPeakImageFilter_8h_source.html#l00122">122</a> of file <a class="el" href="sitkBinaryGrindPeakImageFilter_8h_source.html">sitkBinaryGrindPeakImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -898,7 +898,7 @@ template&lt;class TImageType &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Apr 7 2020 03:21:31 for SimpleITK by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Apr 14 2020 02:53:24 for SimpleITK by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

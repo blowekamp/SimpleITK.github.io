@@ -19,7 +19,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">SimpleITK
-   &#160;<span id="projectnumber">2.0.0rc1.post73</span>
+   &#160;<span id="projectnumber">2.0.0rc1.post121</span>
    </div>
   </td>
  </tr>
@@ -152,6 +152,10 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ac00c449e89fe800ad22487f45d8abe47"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1f721b9de33e1dd0a96c352f238f18bb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classitk_1_1simple_1_1Image.html">Image</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1MultiplyImageFilter.html#a1f721b9de33e1dd0a96c352f238f18bb">Execute</a> (double constant, const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> &amp;image2)</td></tr>
 <tr class="separator:a1f721b9de33e1dd0a96c352f238f18bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a474642c6d6e9b12ecc991d2b1fe2f79f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classitk_1_1simple_1_1Image.html">Image</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1MultiplyImageFilter.html#a474642c6d6e9b12ecc991d2b1fe2f79f">Execute</a> (<a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> &amp;&amp;image1, const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> &amp;image2)</td></tr>
+<tr class="separator:a474642c6d6e9b12ecc991d2b1fe2f79f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0468a3855db17a6ffd26ca2903149b33"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classitk_1_1simple_1_1Image.html">Image</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1MultiplyImageFilter.html#a0468a3855db17a6ffd26ca2903149b33">Execute</a> (<a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> &amp;&amp;image1, double constant)</td></tr>
+<tr class="separator:a0468a3855db17a6ffd26ca2903149b33"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad3f893370e133fd3789b023724e6bb61"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1MultiplyImageFilter.html#ad3f893370e133fd3789b023724e6bb61">GetName</a> () const</td></tr>
 <tr class="separator:ad3f893370e133fd3789b023724e6bb61"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a75894800f5de21f4577e5de5662cda41"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1MultiplyImageFilter.html#a75894800f5de21f4577e5de5662cda41">MultiplyImageFilter</a> ()</td></tr>
@@ -223,6 +227,8 @@ Private Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
+<tr class="memitem:a78262361560fd9e9dcaf2cbd74840776"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1MultiplyImageFilter.html#a78262361560fd9e9dcaf2cbd74840776">m_InPlace</a> {false}</td></tr>
+<tr class="separator:a78262361560fd9e9dcaf2cbd74840776"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac83fec6392f1d42836fd6f10bcc872d9"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="classitk_1_1simple_1_1detail_1_1MemberFunctionFactory.html">detail::MemberFunctionFactory</a>&lt; <a class="el" href="classitk_1_1simple_1_1MultiplyImageFilter.html#a736fa2ccd644e85e4ece4144ceb0e9c1">MemberFunctionType</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1MultiplyImageFilter.html#ac83fec6392f1d42836fd6f10bcc872d9">m_MemberFactory</a></td></tr>
 <tr class="separator:ac83fec6392f1d42836fd6f10bcc872d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a32fe16da7feecb6928ca4631053200c7"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="classitk_1_1simple_1_1detail_1_1MemberFunctionFactory.html">detail::MemberFunctionFactory</a>&lt; <a class="el" href="classitk_1_1simple_1_1MultiplyImageFilter.html#aa6961d6ef628dfbc7751fbccdfe7881f">MemberFunction1Type</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1MultiplyImageFilter.html#a32fe16da7feecb6928ca4631053200c7">m_MemberFactory1</a></td></tr>
@@ -328,7 +334,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Pixel-wise multiplication of two images. </p>
-<p>This class is templated over the types of the two input images and the type of the output image. Numeric conversions (castings) are done by the C++ defaults. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="namespaceitk_1_1simple.html#a85d1a237d15cd9237227bd88e2afadb2" title="Pixel-wise multiplication of two images.">itk::simple::Multiply</a> for the procedural interface </dd>
+<p>This class is templated over the types of the two input images and the type of the output image. Numeric conversions (castings) are done by the C++ defaults. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="namespaceitk_1_1simple.html#aa871ad5da65c694188b5cd49fd9c31c2" title="Pixel-wise multiplication of two images.">itk::simple::Multiply</a> for the procedural interface </dd>
 <dd>
 <a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1MultiplyImageFilter.html">itk::MultiplyImageFilter</a> for the Doxygen on the original ITK class. </dd></dl>
 
@@ -354,7 +360,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkMultiplyImageFilter_8h_source.html#l00083">83</a> of file <a class="el" href="sitkMultiplyImageFilter_8h_source.html">sitkMultiplyImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkMultiplyImageFilter_8h_source.html#l00089">89</a> of file <a class="el" href="sitkMultiplyImageFilter_8h_source.html">sitkMultiplyImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -378,7 +384,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkMultiplyImageFilter_8h_source.html#l00088">88</a> of file <a class="el" href="sitkMultiplyImageFilter_8h_source.html">sitkMultiplyImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkMultiplyImageFilter_8h_source.html#l00094">94</a> of file <a class="el" href="sitkMultiplyImageFilter_8h_source.html">sitkMultiplyImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -403,7 +409,7 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 <p>Setup for member function dispatching </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkMultiplyImageFilter_8h_source.html#l00076">76</a> of file <a class="el" href="sitkMultiplyImageFilter_8h_source.html">sitkMultiplyImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkMultiplyImageFilter_8h_source.html#l00082">82</a> of file <a class="el" href="sitkMultiplyImageFilter_8h_source.html">sitkMultiplyImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -487,7 +493,7 @@ Additional Inherited Members</h2></td></tr>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
 <a id="addf5f57ec65cd0dfe6baa571ab951206"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#addf5f57ec65cd0dfe6baa571ab951206">&#9670;&nbsp;</a></span>Execute() <span class="overload">[1/3]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#addf5f57ec65cd0dfe6baa571ab951206">&#9670;&nbsp;</a></span>Execute() <span class="overload">[1/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -511,12 +517,11 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Execute the filter on the input images </p>
 
 </div>
 </div>
 <a id="ac00c449e89fe800ad22487f45d8abe47"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac00c449e89fe800ad22487f45d8abe47">&#9670;&nbsp;</a></span>Execute() <span class="overload">[2/3]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ac00c449e89fe800ad22487f45d8abe47">&#9670;&nbsp;</a></span>Execute() <span class="overload">[2/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -545,7 +550,7 @@ Additional Inherited Members</h2></td></tr>
 </div>
 </div>
 <a id="a1f721b9de33e1dd0a96c352f238f18bb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1f721b9de33e1dd0a96c352f238f18bb">&#9670;&nbsp;</a></span>Execute() <span class="overload">[3/3]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a1f721b9de33e1dd0a96c352f238f18bb">&#9670;&nbsp;</a></span>Execute() <span class="overload">[3/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -561,6 +566,63 @@ Additional Inherited Members</h2></td></tr>
           <td></td>
           <td class="paramtype">const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> &amp;&#160;</td>
           <td class="paramname"><em>image2</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a474642c6d6e9b12ecc991d2b1fe2f79f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a474642c6d6e9b12ecc991d2b1fe2f79f">&#9670;&nbsp;</a></span>Execute() <span class="overload">[4/5]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> itk::simple::MultiplyImageFilter::Execute </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> &amp;&amp;&#160;</td>
+          <td class="paramname"><em>image1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> &amp;&#160;</td>
+          <td class="paramname"><em>image2</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Execute the filter on the input images </p>
+
+</div>
+</div>
+<a id="a0468a3855db17a6ffd26ca2903149b33"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0468a3855db17a6ffd26ca2903149b33">&#9670;&nbsp;</a></span>Execute() <span class="overload">[5/5]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> itk::simple::MultiplyImageFilter::Execute </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> &amp;&amp;&#160;</td>
+          <td class="paramname"><em>image1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>constant</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -765,7 +827,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkMultiplyImageFilter_8h_source.html#l00085">85</a> of file <a class="el" href="sitkMultiplyImageFilter_8h_source.html">sitkMultiplyImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkMultiplyImageFilter_8h_source.html#l00091">91</a> of file <a class="el" href="sitkMultiplyImageFilter_8h_source.html">sitkMultiplyImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -789,7 +851,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkMultiplyImageFilter_8h_source.html#l00090">90</a> of file <a class="el" href="sitkMultiplyImageFilter_8h_source.html">sitkMultiplyImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkMultiplyImageFilter_8h_source.html#l00096">96</a> of file <a class="el" href="sitkMultiplyImageFilter_8h_source.html">sitkMultiplyImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -813,11 +875,35 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkMultiplyImageFilter_8h_source.html#l00080">80</a> of file <a class="el" href="sitkMultiplyImageFilter_8h_source.html">sitkMultiplyImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkMultiplyImageFilter_8h_source.html#l00086">86</a> of file <a class="el" href="sitkMultiplyImageFilter_8h_source.html">sitkMultiplyImageFilter.h</a>.</p>
 
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
+<a id="a78262361560fd9e9dcaf2cbd74840776"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a78262361560fd9e9dcaf2cbd74840776">&#9670;&nbsp;</a></span>m_InPlace</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool itk::simple::MultiplyImageFilter::m_InPlace {false}</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="sitkMultiplyImageFilter_8h_source.html#l00101">101</a> of file <a class="el" href="sitkMultiplyImageFilter_8h_source.html">sitkMultiplyImageFilter.h</a>.</p>
+
+</div>
+</div>
 <a id="ac83fec6392f1d42836fd6f10bcc872d9"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ac83fec6392f1d42836fd6f10bcc872d9">&#9670;&nbsp;</a></span>m_MemberFactory</h2>
 
@@ -838,7 +924,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkMultiplyImageFilter_8h_source.html#l00082">82</a> of file <a class="el" href="sitkMultiplyImageFilter_8h_source.html">sitkMultiplyImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkMultiplyImageFilter_8h_source.html#l00088">88</a> of file <a class="el" href="sitkMultiplyImageFilter_8h_source.html">sitkMultiplyImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -862,7 +948,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkMultiplyImageFilter_8h_source.html#l00086">86</a> of file <a class="el" href="sitkMultiplyImageFilter_8h_source.html">sitkMultiplyImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkMultiplyImageFilter_8h_source.html#l00092">92</a> of file <a class="el" href="sitkMultiplyImageFilter_8h_source.html">sitkMultiplyImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -886,7 +972,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkMultiplyImageFilter_8h_source.html#l00091">91</a> of file <a class="el" href="sitkMultiplyImageFilter_8h_source.html">sitkMultiplyImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkMultiplyImageFilter_8h_source.html#l00097">97</a> of file <a class="el" href="sitkMultiplyImageFilter_8h_source.html">sitkMultiplyImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -896,7 +982,7 @@ template&lt;class TImageType &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Apr 7 2020 03:21:38 for SimpleITK by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Apr 14 2020 02:53:31 for SimpleITK by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

@@ -19,7 +19,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">SimpleITK
-   &#160;<span id="projectnumber">2.0.0rc1.post73</span>
+   &#160;<span id="projectnumber">2.0.0rc1.post121</span>
    </div>
   </td>
  </tr>
@@ -142,6 +142,8 @@ Public Types</h2></td></tr>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a9ebf3e67fa339260f183703e7a94f8d2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classitk_1_1simple_1_1Image.html">Image</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1RoundImageFilter.html#a9ebf3e67fa339260f183703e7a94f8d2">Execute</a> (const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> &amp;image1)</td></tr>
 <tr class="separator:a9ebf3e67fa339260f183703e7a94f8d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aec5979fce89ea6b9898b6ff06e2ab9d4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classitk_1_1simple_1_1Image.html">Image</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1RoundImageFilter.html#aec5979fce89ea6b9898b6ff06e2ab9d4">Execute</a> (<a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> &amp;&amp;image1)</td></tr>
+<tr class="separator:aec5979fce89ea6b9898b6ff06e2ab9d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2186c25430a68ce3177da56e5f10a556"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1RoundImageFilter.html#a2186c25430a68ce3177da56e5f10a556">GetName</a> () const</td></tr>
 <tr class="separator:a2186c25430a68ce3177da56e5f10a556"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a088e787d222b8a5d393c1571779fb3f9"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1RoundImageFilter.html#a088e787d222b8a5d393c1571779fb3f9">RoundImageFilter</a> ()</td></tr>
@@ -203,6 +205,8 @@ Private Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
+<tr class="memitem:a56bf6d56f85cc55c5dcea5f2a381b690"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1RoundImageFilter.html#a56bf6d56f85cc55c5dcea5f2a381b690">m_InPlace</a> {false}</td></tr>
+<tr class="separator:a56bf6d56f85cc55c5dcea5f2a381b690"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7a31f868da624fbce9c5700562446d2c"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="classitk_1_1simple_1_1detail_1_1MemberFunctionFactory.html">detail::MemberFunctionFactory</a>&lt; <a class="el" href="classitk_1_1simple_1_1RoundImageFilter.html#a2f54baac5fd12094b58fc3d77b89a23c">MemberFunctionType</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1RoundImageFilter.html#a7a31f868da624fbce9c5700562446d2c">m_MemberFactory</a></td></tr>
 <tr class="separator:a7a31f868da624fbce9c5700562446d2c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -300,7 +304,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Rounds the value of each pixel. </p>
-<p>The computations are performed using itk::Math::Round(x). </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="namespaceitk_1_1simple.html#a7ef60c9eb46741a06c5447bf4d2395bf" title="Rounds the value of each pixel.">itk::simple::Round</a> for the procedural interface </dd>
+<p>The computations are performed using itk::Math::Round(x). </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="namespaceitk_1_1simple.html#acd65a4710bb065575037681754f2b883" title="Rounds the value of each pixel.">itk::simple::Round</a> for the procedural interface </dd>
 <dd>
 <a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1RoundImageFilter.html">itk::RoundImageFilter</a> for the Doxygen on the original ITK class. </dd></dl>
 
@@ -327,7 +331,7 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 <p>Setup for member function dispatching </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkRoundImageFilter_8h_source.html#l00071">71</a> of file <a class="el" href="sitkRoundImageFilter_8h_source.html">sitkRoundImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkRoundImageFilter_8h_source.html#l00074">74</a> of file <a class="el" href="sitkRoundImageFilter_8h_source.html">sitkRoundImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -411,7 +415,7 @@ Additional Inherited Members</h2></td></tr>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
 <a id="a9ebf3e67fa339260f183703e7a94f8d2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9ebf3e67fa339260f183703e7a94f8d2">&#9670;&nbsp;</a></span>Execute()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a9ebf3e67fa339260f183703e7a94f8d2">&#9670;&nbsp;</a></span>Execute() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -420,6 +424,24 @@ Additional Inherited Members</h2></td></tr>
           <td class="memname"><a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> itk::simple::RoundImageFilter::Execute </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> &amp;&#160;</td>
+          <td class="paramname"><em>image1</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aec5979fce89ea6b9898b6ff06e2ab9d4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aec5979fce89ea6b9898b6ff06e2ab9d4">&#9670;&nbsp;</a></span>Execute() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> itk::simple::RoundImageFilter::Execute </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> &amp;&amp;&#160;</td>
           <td class="paramname"><em>image1</em></td><td>)</td>
           <td></td>
         </tr>
@@ -536,11 +558,35 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkRoundImageFilter_8h_source.html#l00075">75</a> of file <a class="el" href="sitkRoundImageFilter_8h_source.html">sitkRoundImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkRoundImageFilter_8h_source.html#l00078">78</a> of file <a class="el" href="sitkRoundImageFilter_8h_source.html">sitkRoundImageFilter.h</a>.</p>
 
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
+<a id="a56bf6d56f85cc55c5dcea5f2a381b690"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a56bf6d56f85cc55c5dcea5f2a381b690">&#9670;&nbsp;</a></span>m_InPlace</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool itk::simple::RoundImageFilter::m_InPlace {false}</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="sitkRoundImageFilter_8h_source.html#l00084">84</a> of file <a class="el" href="sitkRoundImageFilter_8h_source.html">sitkRoundImageFilter.h</a>.</p>
+
+</div>
+</div>
 <a id="a7a31f868da624fbce9c5700562446d2c"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a7a31f868da624fbce9c5700562446d2c">&#9670;&nbsp;</a></span>m_MemberFactory</h2>
 
@@ -561,7 +607,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkRoundImageFilter_8h_source.html#l00077">77</a> of file <a class="el" href="sitkRoundImageFilter_8h_source.html">sitkRoundImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkRoundImageFilter_8h_source.html#l00080">80</a> of file <a class="el" href="sitkRoundImageFilter_8h_source.html">sitkRoundImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -571,7 +617,7 @@ template&lt;class TImageType &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Apr 7 2020 03:21:39 for SimpleITK by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Apr 14 2020 02:53:32 for SimpleITK by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

@@ -19,7 +19,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">SimpleITK
-   &#160;<span id="projectnumber">2.0.0rc1.post73</span>
+   &#160;<span id="projectnumber">2.0.0rc1.post121</span>
    </div>
   </td>
  </tr>
@@ -142,6 +142,8 @@ Public Types</h2></td></tr>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:ae4603900ad9e5caeecdbadb95d064db8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classitk_1_1simple_1_1Image.html">Image</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1RescaleIntensityImageFilter.html#ae4603900ad9e5caeecdbadb95d064db8">Execute</a> (const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> &amp;image1)</td></tr>
 <tr class="separator:ae4603900ad9e5caeecdbadb95d064db8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0269f6cc7963dd0a8579fff8e13122de"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classitk_1_1simple_1_1Image.html">Image</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1RescaleIntensityImageFilter.html#a0269f6cc7963dd0a8579fff8e13122de">Execute</a> (<a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> &amp;&amp;image1)</td></tr>
+<tr class="separator:a0269f6cc7963dd0a8579fff8e13122de"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af1dfc20e9c0165be94b68af2b0589a11"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1RescaleIntensityImageFilter.html#af1dfc20e9c0165be94b68af2b0589a11">GetName</a> () const</td></tr>
 <tr class="separator:af1dfc20e9c0165be94b68af2b0589a11"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7993be1794d54f8757cd8617576deb23"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1RescaleIntensityImageFilter.html#a7993be1794d54f8757cd8617576deb23">GetOutputMaximum</a> () const</td></tr>
@@ -214,11 +216,13 @@ Private Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
+<tr class="memitem:ad967274999ead041446cbf6868231023"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1RescaleIntensityImageFilter.html#ad967274999ead041446cbf6868231023">m_InPlace</a> {false}</td></tr>
+<tr class="separator:ad967274999ead041446cbf6868231023"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a08a2d314a78de49bbd3b0da41b624b10"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="classitk_1_1simple_1_1detail_1_1MemberFunctionFactory.html">detail::MemberFunctionFactory</a>&lt; <a class="el" href="classitk_1_1simple_1_1RescaleIntensityImageFilter.html#ac1f89fe5476090c4f786864cf014f7d1">MemberFunctionType</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1RescaleIntensityImageFilter.html#a08a2d314a78de49bbd3b0da41b624b10">m_MemberFactory</a></td></tr>
 <tr class="separator:a08a2d314a78de49bbd3b0da41b624b10"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad5827b329502c2eda61e63039122b48a"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1RescaleIntensityImageFilter.html#ad5827b329502c2eda61e63039122b48a">m_OutputMaximum</a></td></tr>
+<tr class="memitem:ad5827b329502c2eda61e63039122b48a"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1RescaleIntensityImageFilter.html#ad5827b329502c2eda61e63039122b48a">m_OutputMaximum</a> {255}</td></tr>
 <tr class="separator:ad5827b329502c2eda61e63039122b48a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a29cc05cbfbfe227a6484f00d92c7ff38"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1RescaleIntensityImageFilter.html#a29cc05cbfbfe227a6484f00d92c7ff38">m_OutputMinimum</a></td></tr>
+<tr class="memitem:a29cc05cbfbfe227a6484f00d92c7ff38"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1RescaleIntensityImageFilter.html#a29cc05cbfbfe227a6484f00d92c7ff38">m_OutputMinimum</a> {0}</td></tr>
 <tr class="separator:a29cc05cbfbfe227a6484f00d92c7ff38"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
@@ -327,7 +331,7 @@ Additional Inherited Members</h2></td></tr>
 <p>NOTE: In this filter the minimum and maximum values of the input image are computed internally using the <a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1MinimumMaximumImageCalculator.html">MinimumMaximumImageCalculator</a> . Users are not supposed to set those values in this filter. If you need a filter where you can set the minimum and maximum values of the input, please use the <a class="el" href="classitk_1_1simple_1_1IntensityWindowingImageFilter.html" title="Applies a linear transformation to the intensity levels of the input Image that are inside a user-def...">IntensityWindowingImageFilter</a> . If you want a filter that can use a user-defined linear transformation for the intensity, then please use the <a class="el" href="classitk_1_1simple_1_1ShiftScaleImageFilter.html" title="Shift and scale the pixels in an image.">ShiftScaleImageFilter</a> .</p>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="classitk_1_1simple_1_1IntensityWindowingImageFilter.html" title="Applies a linear transformation to the intensity levels of the input Image that are inside a user-def...">IntensityWindowingImageFilter</a> </dd>
 <dd>
-<a class="el" href="namespaceitk_1_1simple.html#a8d78adbcb368cae2d47c09df908d5398" title="Applies a linear transformation to the intensity levels of the input Image .">itk::simple::RescaleIntensity</a> for the procedural interface </dd>
+<a class="el" href="namespaceitk_1_1simple.html#af34ebbd0c41ae0d0a7a152ac1382bac6" title="Applies a linear transformation to the intensity levels of the input Image .">itk::simple::RescaleIntensity</a> for the procedural interface </dd>
 <dd>
 <a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1RescaleIntensityImageFilter.html">itk::RescaleIntensityImageFilter</a> for the Doxygen on the original ITK class. </dd></dl>
 
@@ -354,7 +358,7 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 <p>Setup for member function dispatching </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkRescaleIntensityImageFilter_8h_source.html#l00098">98</a> of file <a class="el" href="sitkRescaleIntensityImageFilter_8h_source.html">sitkRescaleIntensityImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkRescaleIntensityImageFilter_8h_source.html#l00101">101</a> of file <a class="el" href="sitkRescaleIntensityImageFilter_8h_source.html">sitkRescaleIntensityImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -438,7 +442,7 @@ Additional Inherited Members</h2></td></tr>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
 <a id="ae4603900ad9e5caeecdbadb95d064db8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae4603900ad9e5caeecdbadb95d064db8">&#9670;&nbsp;</a></span>Execute()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ae4603900ad9e5caeecdbadb95d064db8">&#9670;&nbsp;</a></span>Execute() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -447,6 +451,24 @@ Additional Inherited Members</h2></td></tr>
           <td class="memname"><a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> itk::simple::RescaleIntensityImageFilter::Execute </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> &amp;&#160;</td>
+          <td class="paramname"><em>image1</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a0269f6cc7963dd0a8579fff8e13122de"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0269f6cc7963dd0a8579fff8e13122de">&#9670;&nbsp;</a></span>Execute() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> itk::simple::RescaleIntensityImageFilter::Execute </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> &amp;&amp;&#160;</td>
           <td class="paramname"><em>image1</em></td><td>)</td>
           <td></td>
         </tr>
@@ -702,7 +724,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkRescaleIntensityImageFilter_8h_source.html#l00104">104</a> of file <a class="el" href="sitkRescaleIntensityImageFilter_8h_source.html">sitkRescaleIntensityImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkRescaleIntensityImageFilter_8h_source.html#l00107">107</a> of file <a class="el" href="sitkRescaleIntensityImageFilter_8h_source.html">sitkRescaleIntensityImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -726,11 +748,35 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkRescaleIntensityImageFilter_8h_source.html#l00103">103</a> of file <a class="el" href="sitkRescaleIntensityImageFilter_8h_source.html">sitkRescaleIntensityImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkRescaleIntensityImageFilter_8h_source.html#l00106">106</a> of file <a class="el" href="sitkRescaleIntensityImageFilter_8h_source.html">sitkRescaleIntensityImageFilter.h</a>.</p>
 
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
+<a id="ad967274999ead041446cbf6868231023"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad967274999ead041446cbf6868231023">&#9670;&nbsp;</a></span>m_InPlace</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool itk::simple::RescaleIntensityImageFilter::m_InPlace {false}</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="sitkRescaleIntensityImageFilter_8h_source.html#l00118">118</a> of file <a class="el" href="sitkRescaleIntensityImageFilter_8h_source.html">sitkRescaleIntensityImageFilter.h</a>.</p>
+
+</div>
+</div>
 <a id="a08a2d314a78de49bbd3b0da41b624b10"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a08a2d314a78de49bbd3b0da41b624b10">&#9670;&nbsp;</a></span>m_MemberFactory</h2>
 
@@ -751,7 +797,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkRescaleIntensityImageFilter_8h_source.html#l00105">105</a> of file <a class="el" href="sitkRescaleIntensityImageFilter_8h_source.html">sitkRescaleIntensityImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkRescaleIntensityImageFilter_8h_source.html#l00108">108</a> of file <a class="el" href="sitkRescaleIntensityImageFilter_8h_source.html">sitkRescaleIntensityImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -765,7 +811,7 @@ template&lt;class TImageType &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">double itk::simple::RescaleIntensityImageFilter::m_OutputMaximum</td>
+          <td class="memname">double itk::simple::RescaleIntensityImageFilter::m_OutputMaximum {255}</td>
         </tr>
       </table>
   </td>
@@ -775,7 +821,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkRescaleIntensityImageFilter_8h_source.html#l00111">111</a> of file <a class="el" href="sitkRescaleIntensityImageFilter_8h_source.html">sitkRescaleIntensityImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkRescaleIntensityImageFilter_8h_source.html#l00115">115</a> of file <a class="el" href="sitkRescaleIntensityImageFilter_8h_source.html">sitkRescaleIntensityImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -789,7 +835,7 @@ template&lt;class TImageType &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">double itk::simple::RescaleIntensityImageFilter::m_OutputMinimum</td>
+          <td class="memname">double itk::simple::RescaleIntensityImageFilter::m_OutputMinimum {0}</td>
         </tr>
       </table>
   </td>
@@ -799,7 +845,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkRescaleIntensityImageFilter_8h_source.html#l00109">109</a> of file <a class="el" href="sitkRescaleIntensityImageFilter_8h_source.html">sitkRescaleIntensityImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkRescaleIntensityImageFilter_8h_source.html#l00112">112</a> of file <a class="el" href="sitkRescaleIntensityImageFilter_8h_source.html">sitkRescaleIntensityImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -809,7 +855,7 @@ template&lt;class TImageType &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Apr 7 2020 03:21:39 for SimpleITK by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Apr 14 2020 02:53:32 for SimpleITK by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

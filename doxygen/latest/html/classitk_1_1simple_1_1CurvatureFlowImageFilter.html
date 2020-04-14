@@ -19,7 +19,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">SimpleITK
-   &#160;<span id="projectnumber">2.0.0rc1.post73</span>
+   &#160;<span id="projectnumber">2.0.0rc1.post121</span>
    </div>
   </td>
  </tr>
@@ -144,6 +144,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a8ef349b929739a051f0a9b8a13c0ef5c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a23611746057972057e6df81148c93594"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classitk_1_1simple_1_1Image.html">Image</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1CurvatureFlowImageFilter.html#a23611746057972057e6df81148c93594">Execute</a> (const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> &amp;image1)</td></tr>
 <tr class="separator:a23611746057972057e6df81148c93594"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4eaa5843da4be15a3b1502426c56bada"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classitk_1_1simple_1_1Image.html">Image</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1CurvatureFlowImageFilter.html#a4eaa5843da4be15a3b1502426c56bada">Execute</a> (<a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> &amp;&amp;image1)</td></tr>
+<tr class="separator:a4eaa5843da4be15a3b1502426c56bada"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae624bd5cfdd62c109f9fe4085c93b979"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1CurvatureFlowImageFilter.html#ae624bd5cfdd62c109f9fe4085c93b979">GetName</a> () const</td></tr>
 <tr class="separator:ae624bd5cfdd62c109f9fe4085c93b979"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9907a719ee1fc84419fe2ac2db02e866"><td class="memItemLeft" align="right" valign="top"><a class="elRef" href="https://www.itk.org/Doxygen/html/namespaceitk.html#a575b8e3e1ee797dd1bbaf9724ed68f92">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1CurvatureFlowImageFilter.html#a9907a719ee1fc84419fe2ac2db02e866">GetNumberOfIterations</a> () const</td></tr>
@@ -211,11 +213,13 @@ Private Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
+<tr class="memitem:a0589fe3b844e88ba10a2820b9a2db675"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1CurvatureFlowImageFilter.html#a0589fe3b844e88ba10a2820b9a2db675">m_InPlace</a> {false}</td></tr>
+<tr class="separator:a0589fe3b844e88ba10a2820b9a2db675"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9d835207dfe695afa7a53d4cdd38643a"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="classitk_1_1simple_1_1detail_1_1MemberFunctionFactory.html">detail::MemberFunctionFactory</a>&lt; <a class="el" href="classitk_1_1simple_1_1CurvatureFlowImageFilter.html#acd73ea29fdc77a4f8977c489619c5fa9">MemberFunctionType</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1CurvatureFlowImageFilter.html#a9d835207dfe695afa7a53d4cdd38643a">m_MemberFactory</a></td></tr>
 <tr class="separator:a9d835207dfe695afa7a53d4cdd38643a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac98b3b5a37d72bc017201169849be57d"><td class="memItemLeft" align="right" valign="top"><a class="elRef" href="https://www.itk.org/Doxygen/html/namespaceitk.html#a575b8e3e1ee797dd1bbaf9724ed68f92">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1CurvatureFlowImageFilter.html#ac98b3b5a37d72bc017201169849be57d">m_NumberOfIterations</a></td></tr>
+<tr class="memitem:ac98b3b5a37d72bc017201169849be57d"><td class="memItemLeft" align="right" valign="top"><a class="elRef" href="https://www.itk.org/Doxygen/html/namespaceitk.html#a575b8e3e1ee797dd1bbaf9724ed68f92">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1CurvatureFlowImageFilter.html#ac98b3b5a37d72bc017201169849be57d">m_NumberOfIterations</a> {5u}</td></tr>
 <tr class="separator:ac98b3b5a37d72bc017201169849be57d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:add60a6e2740995410dfbb7de9c7d7f90"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1CurvatureFlowImageFilter.html#add60a6e2740995410dfbb7de9c7d7f90">m_TimeStep</a></td></tr>
+<tr class="memitem:add60a6e2740995410dfbb7de9c7d7f90"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1CurvatureFlowImageFilter.html#add60a6e2740995410dfbb7de9c7d7f90">m_TimeStep</a> {0.05}</td></tr>
 <tr class="separator:add60a6e2740995410dfbb7de9c7d7f90"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
@@ -333,7 +337,7 @@ Additional Inherited Members</h2></td></tr>
 <dd>
 <a class="el" href="classitk_1_1simple_1_1BinaryMinMaxCurvatureFlowImageFilter.html" title="Denoise a binary image using min/max curvature flow.">BinaryMinMaxCurvatureFlowImageFilter</a> </dd>
 <dd>
-<a class="el" href="namespaceitk_1_1simple.html#a18314e73ea16405c103234d97c1b9b6e" title="Denoise an image using curvature driven flow.">itk::simple::CurvatureFlow</a> for the procedural interface </dd>
+<a class="el" href="namespaceitk_1_1simple.html#acc0c8dcbfd1069ed9f5c2bbce6e06a4d" title="Denoise an image using curvature driven flow.">itk::simple::CurvatureFlow</a> for the procedural interface </dd>
 <dd>
 <a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1CurvatureFlowImageFilter.html">itk::CurvatureFlowImageFilter</a> for the Doxygen on the original ITK class. </dd></dl>
 <dl class="section examples"><dt>Examples</dt><dd><a class="el" href="Segmentation_2ConnectedThresholdImageFilter_8cxx-example.html#_a4">Segmentation/ConnectedThresholdImageFilter.cxx</a>, and <a class="el" href="Segmentation_2NeighborhoodConnectedImageFilter_8cxx-example.html#_a6">Segmentation/NeighborhoodConnectedImageFilter.cxx</a>.</dd>
@@ -362,7 +366,7 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 <p>Setup for member function dispatching </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkCurvatureFlowImageFilter_8h_source.html#l00119">119</a> of file <a class="el" href="sitkCurvatureFlowImageFilter_8h_source.html">sitkCurvatureFlowImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkCurvatureFlowImageFilter_8h_source.html#l00122">122</a> of file <a class="el" href="sitkCurvatureFlowImageFilter_8h_source.html">sitkCurvatureFlowImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -446,7 +450,7 @@ Additional Inherited Members</h2></td></tr>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
 <a id="a23611746057972057e6df81148c93594"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a23611746057972057e6df81148c93594">&#9670;&nbsp;</a></span>Execute()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a23611746057972057e6df81148c93594">&#9670;&nbsp;</a></span>Execute() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -455,6 +459,24 @@ Additional Inherited Members</h2></td></tr>
           <td class="memname"><a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> itk::simple::CurvatureFlowImageFilter::Execute </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> &amp;&#160;</td>
+          <td class="paramname"><em>image1</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a4eaa5843da4be15a3b1502426c56bada"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4eaa5843da4be15a3b1502426c56bada">&#9670;&nbsp;</a></span>Execute() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> itk::simple::CurvatureFlowImageFilter::Execute </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> &amp;&amp;&#160;</td>
           <td class="paramname"><em>image1</em></td><td>)</td>
           <td></td>
         </tr>
@@ -689,11 +711,35 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkCurvatureFlowImageFilter_8h_source.html#l00123">123</a> of file <a class="el" href="sitkCurvatureFlowImageFilter_8h_source.html">sitkCurvatureFlowImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkCurvatureFlowImageFilter_8h_source.html#l00126">126</a> of file <a class="el" href="sitkCurvatureFlowImageFilter_8h_source.html">sitkCurvatureFlowImageFilter.h</a>.</p>
 
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
+<a id="a0589fe3b844e88ba10a2820b9a2db675"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0589fe3b844e88ba10a2820b9a2db675">&#9670;&nbsp;</a></span>m_InPlace</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool itk::simple::CurvatureFlowImageFilter::m_InPlace {false}</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="sitkCurvatureFlowImageFilter_8h_source.html#l00138">138</a> of file <a class="el" href="sitkCurvatureFlowImageFilter_8h_source.html">sitkCurvatureFlowImageFilter.h</a>.</p>
+
+</div>
+</div>
 <a id="a9d835207dfe695afa7a53d4cdd38643a"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a9d835207dfe695afa7a53d4cdd38643a">&#9670;&nbsp;</a></span>m_MemberFactory</h2>
 
@@ -714,7 +760,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkCurvatureFlowImageFilter_8h_source.html#l00125">125</a> of file <a class="el" href="sitkCurvatureFlowImageFilter_8h_source.html">sitkCurvatureFlowImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkCurvatureFlowImageFilter_8h_source.html#l00128">128</a> of file <a class="el" href="sitkCurvatureFlowImageFilter_8h_source.html">sitkCurvatureFlowImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -728,7 +774,7 @@ template&lt;class TImageType &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="elRef" href="https://www.itk.org/Doxygen/html/namespaceitk.html#a575b8e3e1ee797dd1bbaf9724ed68f92">uint32_t</a> itk::simple::CurvatureFlowImageFilter::m_NumberOfIterations</td>
+          <td class="memname"><a class="elRef" href="https://www.itk.org/Doxygen/html/namespaceitk.html#a575b8e3e1ee797dd1bbaf9724ed68f92">uint32_t</a> itk::simple::CurvatureFlowImageFilter::m_NumberOfIterations {5u}</td>
         </tr>
       </table>
   </td>
@@ -738,7 +784,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkCurvatureFlowImageFilter_8h_source.html#l00131">131</a> of file <a class="el" href="sitkCurvatureFlowImageFilter_8h_source.html">sitkCurvatureFlowImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkCurvatureFlowImageFilter_8h_source.html#l00135">135</a> of file <a class="el" href="sitkCurvatureFlowImageFilter_8h_source.html">sitkCurvatureFlowImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -752,7 +798,7 @@ template&lt;class TImageType &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">double itk::simple::CurvatureFlowImageFilter::m_TimeStep</td>
+          <td class="memname">double itk::simple::CurvatureFlowImageFilter::m_TimeStep {0.05}</td>
         </tr>
       </table>
   </td>
@@ -762,7 +808,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkCurvatureFlowImageFilter_8h_source.html#l00129">129</a> of file <a class="el" href="sitkCurvatureFlowImageFilter_8h_source.html">sitkCurvatureFlowImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkCurvatureFlowImageFilter_8h_source.html#l00132">132</a> of file <a class="el" href="sitkCurvatureFlowImageFilter_8h_source.html">sitkCurvatureFlowImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -772,7 +818,7 @@ template&lt;class TImageType &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Apr 7 2020 03:21:33 for SimpleITK by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Apr 14 2020 02:53:26 for SimpleITK by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

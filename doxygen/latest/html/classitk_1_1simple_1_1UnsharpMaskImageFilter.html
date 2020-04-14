@@ -19,7 +19,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">SimpleITK
-   &#160;<span id="projectnumber">2.0.0rc1.post73</span>
+   &#160;<span id="projectnumber">2.0.0rc1.post121</span>
    </div>
   </td>
  </tr>
@@ -157,7 +157,7 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a9176bc0b3c2459035860db24e84200d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae776c568f43e54bb453b16f580d94852"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classitk_1_1simple_1_1ProcessObject.html#a6babc7ad2c4441fd6b302cdb13d54882">Self</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1UnsharpMaskImageFilter.html#ae776c568f43e54bb453b16f580d94852">SetSigmas</a> (double s)</td></tr>
 <tr class="separator:ae776c568f43e54bb453b16f580d94852"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a37f2290f3993366fa3a6df512d7e8ce1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classitk_1_1simple_1_1ProcessObject.html#a6babc7ad2c4441fd6b302cdb13d54882">Self</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1UnsharpMaskImageFilter.html#a37f2290f3993366fa3a6df512d7e8ce1">SetThreshold</a> (double <a class="el" href="namespaceitk_1_1simple.html#aa8480665475f1763a34f69cd76ac699b">Threshold</a>)</td></tr>
+<tr class="memitem:a37f2290f3993366fa3a6df512d7e8ce1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classitk_1_1simple_1_1ProcessObject.html#a6babc7ad2c4441fd6b302cdb13d54882">Self</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1UnsharpMaskImageFilter.html#a37f2290f3993366fa3a6df512d7e8ce1">SetThreshold</a> (double <a class="el" href="namespaceitk_1_1simple.html#a4441b751c680531cd91dc7eb329573e1">Threshold</a>)</td></tr>
 <tr class="separator:a37f2290f3993366fa3a6df512d7e8ce1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1666eb855339687389f2553554d691e1"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1UnsharpMaskImageFilter.html#a1666eb855339687389f2553554d691e1">ToString</a> () const</td></tr>
 <tr class="separator:a1666eb855339687389f2553554d691e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -218,13 +218,13 @@ Private Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
-<tr class="memitem:ab8001019a45a74429ee2d92c7c76e925"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1UnsharpMaskImageFilter.html#ab8001019a45a74429ee2d92c7c76e925">m_Amount</a></td></tr>
+<tr class="memitem:ab8001019a45a74429ee2d92c7c76e925"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1UnsharpMaskImageFilter.html#ab8001019a45a74429ee2d92c7c76e925">m_Amount</a> {0.5}</td></tr>
 <tr class="separator:ab8001019a45a74429ee2d92c7c76e925"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a80e63973dd852e54f7beff533151327b"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="classitk_1_1simple_1_1detail_1_1MemberFunctionFactory.html">detail::MemberFunctionFactory</a>&lt; <a class="el" href="classitk_1_1simple_1_1UnsharpMaskImageFilter.html#a589e8aadcce0f8645ab445f5df1c89bd">MemberFunctionType</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1UnsharpMaskImageFilter.html#a80e63973dd852e54f7beff533151327b">m_MemberFactory</a></td></tr>
 <tr class="separator:a80e63973dd852e54f7beff533151327b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a28ab689f63917eee76b362163a8143d2"><td class="memItemLeft" align="right" valign="top">std::vector&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1UnsharpMaskImageFilter.html#a28ab689f63917eee76b362163a8143d2">m_Sigmas</a></td></tr>
+<tr class="memitem:a28ab689f63917eee76b362163a8143d2"><td class="memItemLeft" align="right" valign="top">std::vector&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1UnsharpMaskImageFilter.html#a28ab689f63917eee76b362163a8143d2">m_Sigmas</a> {std::vector&lt;double&gt;(3, 1.0)}</td></tr>
 <tr class="separator:a28ab689f63917eee76b362163a8143d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a31dec785b26fd98a32885507baf6b8bc"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1UnsharpMaskImageFilter.html#a31dec785b26fd98a32885507baf6b8bc">m_Threshold</a></td></tr>
+<tr class="memitem:a31dec785b26fd98a32885507baf6b8bc"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1UnsharpMaskImageFilter.html#a31dec785b26fd98a32885507baf6b8bc">m_Threshold</a> {0.0}</td></tr>
 <tr class="separator:a31dec785b26fd98a32885507baf6b8bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
@@ -358,7 +358,7 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 <p>Setup for member function dispatching </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkUnsharpMaskImageFilter_8h_source.html#l00117">117</a> of file <a class="el" href="sitkUnsharpMaskImageFilter_8h_source.html">sitkUnsharpMaskImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkUnsharpMaskImageFilter_8h_source.html#l00118">118</a> of file <a class="el" href="sitkUnsharpMaskImageFilter_8h_source.html">sitkUnsharpMaskImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -716,7 +716,7 @@ template&lt;class TImageType &gt; </div>
 
 <p class="definition">Definition at line <a class="el" href="sitkUnsharpMaskImageFilter_8h_source.html#l00097">97</a> of file <a class="el" href="sitkUnsharpMaskImageFilter_8h_source.html">sitkUnsharpMaskImageFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="namespaceitk_1_1simple.html#aa8480665475f1763a34f69cd76ac699b">itk::simple::Threshold()</a>.</p>
+<p class="reference">References <a class="el" href="namespaceitk_1_1simple.html#a4441b751c680531cd91dc7eb329573e1">itk::simple::Threshold()</a>.</p>
 
 </div>
 </div>
@@ -769,7 +769,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkUnsharpMaskImageFilter_8h_source.html#l00121">121</a> of file <a class="el" href="sitkUnsharpMaskImageFilter_8h_source.html">sitkUnsharpMaskImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkUnsharpMaskImageFilter_8h_source.html#l00122">122</a> of file <a class="el" href="sitkUnsharpMaskImageFilter_8h_source.html">sitkUnsharpMaskImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -784,7 +784,7 @@ template&lt;class TImageType &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">double itk::simple::UnsharpMaskImageFilter::m_Amount</td>
+          <td class="memname">double itk::simple::UnsharpMaskImageFilter::m_Amount {0.5}</td>
         </tr>
       </table>
   </td>
@@ -794,7 +794,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkUnsharpMaskImageFilter_8h_source.html#l00127">127</a> of file <a class="el" href="sitkUnsharpMaskImageFilter_8h_source.html">sitkUnsharpMaskImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkUnsharpMaskImageFilter_8h_source.html#l00129">129</a> of file <a class="el" href="sitkUnsharpMaskImageFilter_8h_source.html">sitkUnsharpMaskImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -818,7 +818,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkUnsharpMaskImageFilter_8h_source.html#l00123">123</a> of file <a class="el" href="sitkUnsharpMaskImageFilter_8h_source.html">sitkUnsharpMaskImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkUnsharpMaskImageFilter_8h_source.html#l00124">124</a> of file <a class="el" href="sitkUnsharpMaskImageFilter_8h_source.html">sitkUnsharpMaskImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -832,7 +832,7 @@ template&lt;class TImageType &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::vector&lt;double&gt; itk::simple::UnsharpMaskImageFilter::m_Sigmas</td>
+          <td class="memname">std::vector&lt;double&gt; itk::simple::UnsharpMaskImageFilter::m_Sigmas {std::vector&lt;double&gt;(3, 1.0)}</td>
         </tr>
       </table>
   </td>
@@ -842,7 +842,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkUnsharpMaskImageFilter_8h_source.html#l00126">126</a> of file <a class="el" href="sitkUnsharpMaskImageFilter_8h_source.html">sitkUnsharpMaskImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkUnsharpMaskImageFilter_8h_source.html#l00127">127</a> of file <a class="el" href="sitkUnsharpMaskImageFilter_8h_source.html">sitkUnsharpMaskImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -856,7 +856,7 @@ template&lt;class TImageType &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">double itk::simple::UnsharpMaskImageFilter::m_Threshold</td>
+          <td class="memname">double itk::simple::UnsharpMaskImageFilter::m_Threshold {0.0}</td>
         </tr>
       </table>
   </td>
@@ -866,7 +866,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkUnsharpMaskImageFilter_8h_source.html#l00128">128</a> of file <a class="el" href="sitkUnsharpMaskImageFilter_8h_source.html">sitkUnsharpMaskImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkUnsharpMaskImageFilter_8h_source.html#l00131">131</a> of file <a class="el" href="sitkUnsharpMaskImageFilter_8h_source.html">sitkUnsharpMaskImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -876,7 +876,7 @@ template&lt;class TImageType &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Apr 7 2020 03:21:41 for SimpleITK by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Apr 14 2020 02:53:34 for SimpleITK by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

@@ -19,7 +19,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">SimpleITK
-   &#160;<span id="projectnumber">2.0.0rc1.post73</span>
+   &#160;<span id="projectnumber">2.0.0rc1.post121</span>
    </div>
   </td>
  </tr>
@@ -101,7 +101,7 @@ $(function() {
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;      <span class="keyword">template</span>&lt; <span class="keyword">class</span> TImageType&gt;</div>
 <div class="line"><a name="l00066"></a><span class="lineno"><a class="line" href="classitk_1_1simple_1_1ImageFilter.html#a290da82711bc42b15b6fc1a310a8b682">   66</a></span>&#160;      <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="classitk_1_1simple_1_1ImageFilter.html#a290da82711bc42b15b6fc1a310a8b682">FixNonZeroIndex</a>( TImageType * img )</div>
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;      {</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;        assert( img != NULL );</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;        assert( img );</div>
 <div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160; </div>
 <div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;        <span class="keyword">typename</span> TImageType::RegionType r = img-&gt;GetLargestPossibleRegion();</div>
 <div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;        <span class="keyword">typename</span> TImageType::IndexType idx = r.GetIndex();</div>
@@ -151,7 +151,7 @@ $(function() {
 <div class="ttc" id="aclassitk_1_1simple_1_1ProcessObject_html"><div class="ttname"><a href="classitk_1_1simple_1_1ProcessObject.html">itk::simple::ProcessObject</a></div><div class="ttdoc">Base class for SimpleITK classes based on ProcessObject.</div><div class="ttdef"><b>Definition:</b> <a href="sitkProcessObject_8h_source.html#l00051">sitkProcessObject.h:51</a></div></div>
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Apr 7 2020 03:21:12 for SimpleITK by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Apr 14 2020 02:53:02 for SimpleITK by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

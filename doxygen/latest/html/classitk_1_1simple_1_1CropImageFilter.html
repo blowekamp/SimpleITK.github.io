@@ -19,7 +19,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">SimpleITK
-   &#160;<span id="projectnumber">2.0.0rc1.post73</span>
+   &#160;<span id="projectnumber">2.0.0rc1.post121</span>
    </div>
   </td>
  </tr>
@@ -145,6 +145,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a9155de15e197b2be18a18887afab51aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a02525c763436c22e11844633184078b9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classitk_1_1simple_1_1Image.html">Image</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1CropImageFilter.html#a02525c763436c22e11844633184078b9">Execute</a> (const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> &amp;image1)</td></tr>
 <tr class="separator:a02525c763436c22e11844633184078b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a03277b3a30741889649144c3b84d7709"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classitk_1_1simple_1_1Image.html">Image</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1CropImageFilter.html#a03277b3a30741889649144c3b84d7709">Execute</a> (<a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> &amp;&amp;image1)</td></tr>
+<tr class="separator:a03277b3a30741889649144c3b84d7709"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aead9bf4d63d4a31c9aecc97dd34fcba1"><td class="memItemLeft" align="right" valign="top">std::vector&lt; unsigned int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1CropImageFilter.html#aead9bf4d63d4a31c9aecc97dd34fcba1">GetLowerBoundaryCropSize</a> () const</td></tr>
 <tr class="separator:aead9bf4d63d4a31c9aecc97dd34fcba1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6c9661a83ff2751d194b60018d7a83d3"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1CropImageFilter.html#a6c9661a83ff2751d194b60018d7a83d3">GetName</a> () const</td></tr>
@@ -212,11 +214,13 @@ Private Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
-<tr class="memitem:a472f6beb7e6bf69af34fdebbc8a83d34"><td class="memItemLeft" align="right" valign="top">std::vector&lt; unsigned int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1CropImageFilter.html#a472f6beb7e6bf69af34fdebbc8a83d34">m_LowerBoundaryCropSize</a></td></tr>
+<tr class="memitem:a098d6895122192a37b9ec4a16569794d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1CropImageFilter.html#a098d6895122192a37b9ec4a16569794d">m_InPlace</a> {false}</td></tr>
+<tr class="separator:a098d6895122192a37b9ec4a16569794d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a472f6beb7e6bf69af34fdebbc8a83d34"><td class="memItemLeft" align="right" valign="top">std::vector&lt; unsigned int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1CropImageFilter.html#a472f6beb7e6bf69af34fdebbc8a83d34">m_LowerBoundaryCropSize</a> {std::vector&lt;unsigned int&gt;(3, 0)}</td></tr>
 <tr class="separator:a472f6beb7e6bf69af34fdebbc8a83d34"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abeb5917a022bd7a71a1fc6203b710ce8"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="classitk_1_1simple_1_1detail_1_1MemberFunctionFactory.html">detail::MemberFunctionFactory</a>&lt; <a class="el" href="classitk_1_1simple_1_1CropImageFilter.html#abcea1d4431be63d2b176862d64de4fb9">MemberFunctionType</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1CropImageFilter.html#abeb5917a022bd7a71a1fc6203b710ce8">m_MemberFactory</a></td></tr>
 <tr class="separator:abeb5917a022bd7a71a1fc6203b710ce8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac6688774764504b7da1430a568d4a7a7"><td class="memItemLeft" align="right" valign="top">std::vector&lt; unsigned int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1CropImageFilter.html#ac6688774764504b7da1430a568d4a7a7">m_UpperBoundaryCropSize</a></td></tr>
+<tr class="memitem:ac6688774764504b7da1430a568d4a7a7"><td class="memItemLeft" align="right" valign="top">std::vector&lt; unsigned int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1CropImageFilter.html#ac6688774764504b7da1430a568d4a7a7">m_UpperBoundaryCropSize</a> {std::vector&lt;unsigned int&gt;(3, 0)}</td></tr>
 <tr class="separator:ac6688774764504b7da1430a568d4a7a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
@@ -314,7 +318,7 @@ Additional Inherited Members</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Decrease the image size by cropping the image by an <a class="elRef" href="https://www.itk.org/Doxygen/html/structitk_1_1Size.html">itk::Size</a> at both the upper and lower bounds of the largest possible region. </p>
 <p><a class="el" href="classitk_1_1simple_1_1CropImageFilter.html" title="Decrease the image size by cropping the image by an itk::Size at both the upper and lower bounds of t...">CropImageFilter</a> changes the image boundary of an image by removing pixels outside the target region. The target region is not specified in advance, but calculated in BeforeThreadedGenerateData() .</p>
-<p>This filter uses <a class="el" href="classitk_1_1simple_1_1ExtractImageFilter.html" title="Decrease the image size by cropping the image to the selected region bounds.">ExtractImageFilter</a> to perform the cropping. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="namespaceitk_1_1simple.html#a4458c40720e7d78ace07181e13064865" title="Decrease the image size by cropping the image by an itk::Size at both the upper and lower bounds of t...">itk::simple::Crop</a> for the procedural interface </dd>
+<p>This filter uses <a class="el" href="classitk_1_1simple_1_1ExtractImageFilter.html" title="Decrease the image size by cropping the image to the selected region bounds.">ExtractImageFilter</a> to perform the cropping. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="namespaceitk_1_1simple.html#adcc2388655c0dd02bd80440dd53611b5" title="Decrease the image size by cropping the image by an itk::Size at both the upper and lower bounds of t...">itk::simple::Crop</a> for the procedural interface </dd>
 <dd>
 <a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1CropImageFilter.html">itk::CropImageFilter</a> for the Doxygen on the original ITK class. </dd></dl>
 
@@ -341,7 +345,7 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 <p>Setup for member function dispatching </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkCropImageFilter_8h_source.html#l00093">93</a> of file <a class="el" href="sitkCropImageFilter_8h_source.html">sitkCropImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkCropImageFilter_8h_source.html#l00096">96</a> of file <a class="el" href="sitkCropImageFilter_8h_source.html">sitkCropImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -425,7 +429,7 @@ Additional Inherited Members</h2></td></tr>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
 <a id="a02525c763436c22e11844633184078b9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a02525c763436c22e11844633184078b9">&#9670;&nbsp;</a></span>Execute()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a02525c763436c22e11844633184078b9">&#9670;&nbsp;</a></span>Execute() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -434,6 +438,24 @@ Additional Inherited Members</h2></td></tr>
           <td class="memname"><a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> itk::simple::CropImageFilter::Execute </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> &amp;&#160;</td>
+          <td class="paramname"><em>image1</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a03277b3a30741889649144c3b84d7709"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a03277b3a30741889649144c3b84d7709">&#9670;&nbsp;</a></span>Execute() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> itk::simple::CropImageFilter::Execute </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> &amp;&amp;&#160;</td>
           <td class="paramname"><em>image1</em></td><td>)</td>
           <td></td>
         </tr>
@@ -664,11 +686,35 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkCropImageFilter_8h_source.html#l00097">97</a> of file <a class="el" href="sitkCropImageFilter_8h_source.html">sitkCropImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkCropImageFilter_8h_source.html#l00100">100</a> of file <a class="el" href="sitkCropImageFilter_8h_source.html">sitkCropImageFilter.h</a>.</p>
 
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
+<a id="a098d6895122192a37b9ec4a16569794d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a098d6895122192a37b9ec4a16569794d">&#9670;&nbsp;</a></span>m_InPlace</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool itk::simple::CropImageFilter::m_InPlace {false}</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="sitkCropImageFilter_8h_source.html#l00112">112</a> of file <a class="el" href="sitkCropImageFilter_8h_source.html">sitkCropImageFilter.h</a>.</p>
+
+</div>
+</div>
 <a id="a472f6beb7e6bf69af34fdebbc8a83d34"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a472f6beb7e6bf69af34fdebbc8a83d34">&#9670;&nbsp;</a></span>m_LowerBoundaryCropSize</h2>
 
@@ -679,7 +725,7 @@ template&lt;class TImageType &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::vector&lt;unsigned int&gt; itk::simple::CropImageFilter::m_LowerBoundaryCropSize</td>
+          <td class="memname">std::vector&lt;unsigned int&gt; itk::simple::CropImageFilter::m_LowerBoundaryCropSize {std::vector&lt;unsigned int&gt;(3, 0)}</td>
         </tr>
       </table>
   </td>
@@ -689,7 +735,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkCropImageFilter_8h_source.html#l00103">103</a> of file <a class="el" href="sitkCropImageFilter_8h_source.html">sitkCropImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkCropImageFilter_8h_source.html#l00106">106</a> of file <a class="el" href="sitkCropImageFilter_8h_source.html">sitkCropImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -713,7 +759,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkCropImageFilter_8h_source.html#l00099">99</a> of file <a class="el" href="sitkCropImageFilter_8h_source.html">sitkCropImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkCropImageFilter_8h_source.html#l00102">102</a> of file <a class="el" href="sitkCropImageFilter_8h_source.html">sitkCropImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -727,7 +773,7 @@ template&lt;class TImageType &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::vector&lt;unsigned int&gt; itk::simple::CropImageFilter::m_UpperBoundaryCropSize</td>
+          <td class="memname">std::vector&lt;unsigned int&gt; itk::simple::CropImageFilter::m_UpperBoundaryCropSize {std::vector&lt;unsigned int&gt;(3, 0)}</td>
         </tr>
       </table>
   </td>
@@ -737,7 +783,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkCropImageFilter_8h_source.html#l00105">105</a> of file <a class="el" href="sitkCropImageFilter_8h_source.html">sitkCropImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkCropImageFilter_8h_source.html#l00109">109</a> of file <a class="el" href="sitkCropImageFilter_8h_source.html">sitkCropImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -747,7 +793,7 @@ template&lt;class TImageType &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Apr 7 2020 03:21:33 for SimpleITK by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Apr 14 2020 02:53:26 for SimpleITK by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

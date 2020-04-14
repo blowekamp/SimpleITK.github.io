@@ -19,7 +19,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">SimpleITK
-   &#160;<span id="projectnumber">2.0.0rc1.post73</span>
+   &#160;<span id="projectnumber">2.0.0rc1.post121</span>
    </div>
   </td>
  </tr>
@@ -223,11 +223,11 @@ Private Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
-<tr class="memitem:ace911106e885fb67df57def4a3bb5e29"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1MorphologicalWatershedImageFilter.html#ace911106e885fb67df57def4a3bb5e29">m_FullyConnected</a></td></tr>
+<tr class="memitem:ace911106e885fb67df57def4a3bb5e29"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1MorphologicalWatershedImageFilter.html#ace911106e885fb67df57def4a3bb5e29">m_FullyConnected</a> {false}</td></tr>
 <tr class="separator:ace911106e885fb67df57def4a3bb5e29"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab45e684351a12001b01781185fd0d06d"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1MorphologicalWatershedImageFilter.html#ab45e684351a12001b01781185fd0d06d">m_Level</a></td></tr>
+<tr class="memitem:ab45e684351a12001b01781185fd0d06d"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1MorphologicalWatershedImageFilter.html#ab45e684351a12001b01781185fd0d06d">m_Level</a> {0.0}</td></tr>
 <tr class="separator:ab45e684351a12001b01781185fd0d06d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2fb90fb6c0af244b43e3a5f8f94c86eb"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1MorphologicalWatershedImageFilter.html#a2fb90fb6c0af244b43e3a5f8f94c86eb">m_MarkWatershedLine</a></td></tr>
+<tr class="memitem:a2fb90fb6c0af244b43e3a5f8f94c86eb"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1MorphologicalWatershedImageFilter.html#a2fb90fb6c0af244b43e3a5f8f94c86eb">m_MarkWatershedLine</a> {true}</td></tr>
 <tr class="separator:a2fb90fb6c0af244b43e3a5f8f94c86eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a98fd7870365582841531186b40ac84b1"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="classitk_1_1simple_1_1detail_1_1MemberFunctionFactory.html">detail::MemberFunctionFactory</a>&lt; <a class="el" href="classitk_1_1simple_1_1MorphologicalWatershedImageFilter.html#a29fb8fe560dcffbddca146c026640aaa">MemberFunctionType</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1MorphologicalWatershedImageFilter.html#a98fd7870365582841531186b40ac84b1">m_MemberFactory</a></td></tr>
 <tr class="separator:a98fd7870365582841531186b40ac84b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -360,7 +360,7 @@ Principles and Applications", Second Edition, Springer, 2003.</p>
 </div><div class="memdoc">
 <p>Setup for member function dispatching </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkMorphologicalWatershedImageFilter_8h_source.html#l00117">117</a> of file <a class="el" href="sitkMorphologicalWatershedImageFilter_8h_source.html">sitkMorphologicalWatershedImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkMorphologicalWatershedImageFilter_8h_source.html#l00118">118</a> of file <a class="el" href="sitkMorphologicalWatershedImageFilter_8h_source.html">sitkMorphologicalWatershedImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -848,7 +848,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkMorphologicalWatershedImageFilter_8h_source.html#l00121">121</a> of file <a class="el" href="sitkMorphologicalWatershedImageFilter_8h_source.html">sitkMorphologicalWatershedImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkMorphologicalWatershedImageFilter_8h_source.html#l00122">122</a> of file <a class="el" href="sitkMorphologicalWatershedImageFilter_8h_source.html">sitkMorphologicalWatershedImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -863,7 +863,7 @@ template&lt;class TImageType &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">bool itk::simple::MorphologicalWatershedImageFilter::m_FullyConnected</td>
+          <td class="memname">bool itk::simple::MorphologicalWatershedImageFilter::m_FullyConnected {false}</td>
         </tr>
       </table>
   </td>
@@ -873,7 +873,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkMorphologicalWatershedImageFilter_8h_source.html#l00129">129</a> of file <a class="el" href="sitkMorphologicalWatershedImageFilter_8h_source.html">sitkMorphologicalWatershedImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkMorphologicalWatershedImageFilter_8h_source.html#l00132">132</a> of file <a class="el" href="sitkMorphologicalWatershedImageFilter_8h_source.html">sitkMorphologicalWatershedImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -887,7 +887,7 @@ template&lt;class TImageType &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">double itk::simple::MorphologicalWatershedImageFilter::m_Level</td>
+          <td class="memname">double itk::simple::MorphologicalWatershedImageFilter::m_Level {0.0}</td>
         </tr>
       </table>
   </td>
@@ -897,7 +897,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkMorphologicalWatershedImageFilter_8h_source.html#l00126">126</a> of file <a class="el" href="sitkMorphologicalWatershedImageFilter_8h_source.html">sitkMorphologicalWatershedImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkMorphologicalWatershedImageFilter_8h_source.html#l00127">127</a> of file <a class="el" href="sitkMorphologicalWatershedImageFilter_8h_source.html">sitkMorphologicalWatershedImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -911,7 +911,7 @@ template&lt;class TImageType &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">bool itk::simple::MorphologicalWatershedImageFilter::m_MarkWatershedLine</td>
+          <td class="memname">bool itk::simple::MorphologicalWatershedImageFilter::m_MarkWatershedLine {true}</td>
         </tr>
       </table>
   </td>
@@ -921,7 +921,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkMorphologicalWatershedImageFilter_8h_source.html#l00127">127</a> of file <a class="el" href="sitkMorphologicalWatershedImageFilter_8h_source.html">sitkMorphologicalWatershedImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkMorphologicalWatershedImageFilter_8h_source.html#l00129">129</a> of file <a class="el" href="sitkMorphologicalWatershedImageFilter_8h_source.html">sitkMorphologicalWatershedImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -945,7 +945,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkMorphologicalWatershedImageFilter_8h_source.html#l00123">123</a> of file <a class="el" href="sitkMorphologicalWatershedImageFilter_8h_source.html">sitkMorphologicalWatershedImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkMorphologicalWatershedImageFilter_8h_source.html#l00124">124</a> of file <a class="el" href="sitkMorphologicalWatershedImageFilter_8h_source.html">sitkMorphologicalWatershedImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -955,7 +955,7 @@ template&lt;class TImageType &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Apr 7 2020 03:21:38 for SimpleITK by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Apr 14 2020 02:53:31 for SimpleITK by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

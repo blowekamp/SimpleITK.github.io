@@ -19,7 +19,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">SimpleITK
-   &#160;<span id="projectnumber">2.0.0rc1.post73</span>
+   &#160;<span id="projectnumber">2.0.0rc1.post121</span>
    </div>
   </td>
  </tr>
@@ -225,15 +225,15 @@ Private Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
-<tr class="memitem:a113e247f9e7bfdfdf3d5dbe78c25b1f2"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1CannyEdgeDetectionImageFilter.html#a113e247f9e7bfdfdf3d5dbe78c25b1f2">m_LowerThreshold</a></td></tr>
+<tr class="memitem:a113e247f9e7bfdfdf3d5dbe78c25b1f2"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1CannyEdgeDetectionImageFilter.html#a113e247f9e7bfdfdf3d5dbe78c25b1f2">m_LowerThreshold</a> {0.0}</td></tr>
 <tr class="separator:a113e247f9e7bfdfdf3d5dbe78c25b1f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a29e7880a8fa50501f31bcd67ee5fb0b9"><td class="memItemLeft" align="right" valign="top">std::vector&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1CannyEdgeDetectionImageFilter.html#a29e7880a8fa50501f31bcd67ee5fb0b9">m_MaximumError</a></td></tr>
+<tr class="memitem:a29e7880a8fa50501f31bcd67ee5fb0b9"><td class="memItemLeft" align="right" valign="top">std::vector&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1CannyEdgeDetectionImageFilter.html#a29e7880a8fa50501f31bcd67ee5fb0b9">m_MaximumError</a> {std::vector&lt;double&gt;(3, 0.01)}</td></tr>
 <tr class="separator:a29e7880a8fa50501f31bcd67ee5fb0b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a399e8e2632fd20f77958b382d69ce7e2"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="classitk_1_1simple_1_1detail_1_1MemberFunctionFactory.html">detail::MemberFunctionFactory</a>&lt; <a class="el" href="classitk_1_1simple_1_1CannyEdgeDetectionImageFilter.html#a6499f69338199288cbbbbc473f14fac0">MemberFunctionType</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1CannyEdgeDetectionImageFilter.html#a399e8e2632fd20f77958b382d69ce7e2">m_MemberFactory</a></td></tr>
 <tr class="separator:a399e8e2632fd20f77958b382d69ce7e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a459a93f70c0d726083306713d7958819"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1CannyEdgeDetectionImageFilter.html#a459a93f70c0d726083306713d7958819">m_UpperThreshold</a></td></tr>
+<tr class="memitem:a459a93f70c0d726083306713d7958819"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1CannyEdgeDetectionImageFilter.html#a459a93f70c0d726083306713d7958819">m_UpperThreshold</a> {0.0}</td></tr>
 <tr class="separator:a459a93f70c0d726083306713d7958819"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae2dc40f00265c96e9f1e9cd586850855"><td class="memItemLeft" align="right" valign="top">std::vector&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1CannyEdgeDetectionImageFilter.html#ae2dc40f00265c96e9f1e9cd586850855">m_Variance</a></td></tr>
+<tr class="memitem:ae2dc40f00265c96e9f1e9cd586850855"><td class="memItemLeft" align="right" valign="top">std::vector&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1CannyEdgeDetectionImageFilter.html#ae2dc40f00265c96e9f1e9cd586850855">m_Variance</a> {std::vector&lt;double&gt;(3, 0.0)}</td></tr>
 <tr class="separator:ae2dc40f00265c96e9f1e9cd586850855"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
@@ -370,7 +370,7 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 <p>Setup for member function dispatching </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkCannyEdgeDetectionImageFilter_8h_source.html#l00146">146</a> of file <a class="el" href="sitkCannyEdgeDetectionImageFilter_8h_source.html">sitkCannyEdgeDetectionImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkCannyEdgeDetectionImageFilter_8h_source.html#l00147">147</a> of file <a class="el" href="sitkCannyEdgeDetectionImageFilter_8h_source.html">sitkCannyEdgeDetectionImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -863,7 +863,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkCannyEdgeDetectionImageFilter_8h_source.html#l00150">150</a> of file <a class="el" href="sitkCannyEdgeDetectionImageFilter_8h_source.html">sitkCannyEdgeDetectionImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkCannyEdgeDetectionImageFilter_8h_source.html#l00151">151</a> of file <a class="el" href="sitkCannyEdgeDetectionImageFilter_8h_source.html">sitkCannyEdgeDetectionImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -878,7 +878,7 @@ template&lt;class TImageType &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">double itk::simple::CannyEdgeDetectionImageFilter::m_LowerThreshold</td>
+          <td class="memname">double itk::simple::CannyEdgeDetectionImageFilter::m_LowerThreshold {0.0}</td>
         </tr>
       </table>
   </td>
@@ -888,7 +888,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkCannyEdgeDetectionImageFilter_8h_source.html#l00155">155</a> of file <a class="el" href="sitkCannyEdgeDetectionImageFilter_8h_source.html">sitkCannyEdgeDetectionImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkCannyEdgeDetectionImageFilter_8h_source.html#l00156">156</a> of file <a class="el" href="sitkCannyEdgeDetectionImageFilter_8h_source.html">sitkCannyEdgeDetectionImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -902,7 +902,7 @@ template&lt;class TImageType &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::vector&lt;double&gt; itk::simple::CannyEdgeDetectionImageFilter::m_MaximumError</td>
+          <td class="memname">std::vector&lt;double&gt; itk::simple::CannyEdgeDetectionImageFilter::m_MaximumError {std::vector&lt;double&gt;(3, 0.01)}</td>
         </tr>
       </table>
   </td>
@@ -912,7 +912,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkCannyEdgeDetectionImageFilter_8h_source.html#l00160">160</a> of file <a class="el" href="sitkCannyEdgeDetectionImageFilter_8h_source.html">sitkCannyEdgeDetectionImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkCannyEdgeDetectionImageFilter_8h_source.html#l00164">164</a> of file <a class="el" href="sitkCannyEdgeDetectionImageFilter_8h_source.html">sitkCannyEdgeDetectionImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -936,7 +936,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkCannyEdgeDetectionImageFilter_8h_source.html#l00152">152</a> of file <a class="el" href="sitkCannyEdgeDetectionImageFilter_8h_source.html">sitkCannyEdgeDetectionImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkCannyEdgeDetectionImageFilter_8h_source.html#l00153">153</a> of file <a class="el" href="sitkCannyEdgeDetectionImageFilter_8h_source.html">sitkCannyEdgeDetectionImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -950,31 +950,7 @@ template&lt;class TImageType &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">double itk::simple::CannyEdgeDetectionImageFilter::m_UpperThreshold</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="sitkCannyEdgeDetectionImageFilter_8h_source.html#l00156">156</a> of file <a class="el" href="sitkCannyEdgeDetectionImageFilter_8h_source.html">sitkCannyEdgeDetectionImageFilter.h</a>.</p>
-
-</div>
-</div>
-<a id="ae2dc40f00265c96e9f1e9cd586850855"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae2dc40f00265c96e9f1e9cd586850855">&#9670;&nbsp;</a></span>m_Variance</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::vector&lt;double&gt; itk::simple::CannyEdgeDetectionImageFilter::m_Variance</td>
+          <td class="memname">double itk::simple::CannyEdgeDetectionImageFilter::m_UpperThreshold {0.0}</td>
         </tr>
       </table>
   </td>
@@ -988,13 +964,37 @@ template&lt;class TImageType &gt; </div>
 
 </div>
 </div>
+<a id="ae2dc40f00265c96e9f1e9cd586850855"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae2dc40f00265c96e9f1e9cd586850855">&#9670;&nbsp;</a></span>m_Variance</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;double&gt; itk::simple::CannyEdgeDetectionImageFilter::m_Variance {std::vector&lt;double&gt;(3, 0.0)}</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="sitkCannyEdgeDetectionImageFilter_8h_source.html#l00161">161</a> of file <a class="el" href="sitkCannyEdgeDetectionImageFilter_8h_source.html">sitkCannyEdgeDetectionImageFilter.h</a>.</p>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li><a class="el" href="sitkCannyEdgeDetectionImageFilter_8h_source.html">sitkCannyEdgeDetectionImageFilter.h</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Apr 7 2020 03:21:32 for SimpleITK by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Apr 14 2020 02:53:25 for SimpleITK by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

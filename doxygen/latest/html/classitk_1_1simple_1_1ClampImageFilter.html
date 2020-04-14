@@ -19,7 +19,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">SimpleITK
-   &#160;<span id="projectnumber">2.0.0rc1.post73</span>
+   &#160;<span id="projectnumber">2.0.0rc1.post121</span>
    </div>
   </td>
  </tr>
@@ -144,6 +144,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:aae29ae62cc3fd183e328b2c27d04bee1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7464a96a8c34ca3b1bf4745e212f02eb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classitk_1_1simple_1_1Image.html">Image</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1ClampImageFilter.html#a7464a96a8c34ca3b1bf4745e212f02eb">Execute</a> (const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> &amp;image1)</td></tr>
 <tr class="separator:a7464a96a8c34ca3b1bf4745e212f02eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a14efbfd8ffc2523a1c9cf1ae1e038453"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classitk_1_1simple_1_1Image.html">Image</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1ClampImageFilter.html#a14efbfd8ffc2523a1c9cf1ae1e038453">Execute</a> (<a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> &amp;&amp;image1)</td></tr>
+<tr class="separator:a14efbfd8ffc2523a1c9cf1ae1e038453"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4eceab62061a334485570fef70d613b6"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1ClampImageFilter.html#a4eceab62061a334485570fef70d613b6">GetLowerBound</a> () const</td></tr>
 <tr class="separator:a4eceab62061a334485570fef70d613b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac27ba642468877b4d07739574c77ce91"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1ClampImageFilter.html#ac27ba642468877b4d07739574c77ce91">GetName</a> () const</td></tr>
@@ -220,11 +222,13 @@ Private Member Functions</h2></td></tr>
 Private Attributes</h2></td></tr>
 <tr class="memitem:a644ae556e43264d03d6d8cca672c89ac"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="classitk_1_1simple_1_1detail_1_1DualMemberFunctionFactory.html">detail::DualMemberFunctionFactory</a>&lt; <a class="el" href="classitk_1_1simple_1_1ClampImageFilter.html#a2a079e0e4749dd475c4a4de872d51959">MemberFunctionType</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1ClampImageFilter.html#a644ae556e43264d03d6d8cca672c89ac">m_DualMemberFactory</a></td></tr>
 <tr class="separator:a644ae556e43264d03d6d8cca672c89ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a933e7d3d59638cd515f4ce73b7e799b6"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1ClampImageFilter.html#a933e7d3d59638cd515f4ce73b7e799b6">m_LowerBound</a></td></tr>
+<tr class="memitem:a61eda2e6fd4f2a71d3baca0ebf6d8433"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1ClampImageFilter.html#a61eda2e6fd4f2a71d3baca0ebf6d8433">m_InPlace</a> {false}</td></tr>
+<tr class="separator:a61eda2e6fd4f2a71d3baca0ebf6d8433"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a933e7d3d59638cd515f4ce73b7e799b6"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1ClampImageFilter.html#a933e7d3d59638cd515f4ce73b7e799b6">m_LowerBound</a> {-std::numeric_limits&lt;double&gt;::max()}</td></tr>
 <tr class="separator:a933e7d3d59638cd515f4ce73b7e799b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0d396a11d129bf525543b751e5d091c1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceitk_1_1simple.html#ae40bd64640f4014fba1a8a872ab4df98">PixelIDValueEnum</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1ClampImageFilter.html#a0d396a11d129bf525543b751e5d091c1">m_OutputPixelType</a></td></tr>
+<tr class="memitem:a0d396a11d129bf525543b751e5d091c1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceitk_1_1simple.html#ae40bd64640f4014fba1a8a872ab4df98">PixelIDValueEnum</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1ClampImageFilter.html#a0d396a11d129bf525543b751e5d091c1">m_OutputPixelType</a> {<a class="el" href="namespaceitk_1_1simple.html#ae40bd64640f4014fba1a8a872ab4df98a25f496c19c2388217b9fede6686144ac">itk::simple::sitkUnknown</a>}</td></tr>
 <tr class="separator:a0d396a11d129bf525543b751e5d091c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a64b50f3b6db6bb6dc41234a08c46056e"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1ClampImageFilter.html#a64b50f3b6db6bb6dc41234a08c46056e">m_UpperBound</a></td></tr>
+<tr class="memitem:a64b50f3b6db6bb6dc41234a08c46056e"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1ClampImageFilter.html#a64b50f3b6db6bb6dc41234a08c46056e">m_UpperBound</a> {std::numeric_limits&lt;double&gt;::max()}</td></tr>
 <tr class="separator:a64b50f3b6db6bb6dc41234a08c46056e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
@@ -330,7 +334,7 @@ Additional Inherited Members</h2></td></tr>
 <dd>
 <a class="el" href="classitk_1_1simple_1_1CastImageFilter.html" title="A hybrid cast image filter to convert images to other types of images.">CastImageFilter</a> </dd>
 <dd>
-<a class="el" href="namespaceitk_1_1simple.html#ac02bab9c1756fd3e5c33d1b1d4a77741" title="Casts input pixels to output pixel type and clamps the output pixel values to a specified range.">itk::simple::Clamp</a> for the procedural interface </dd>
+<a class="el" href="namespaceitk_1_1simple.html#af1ac7546d90a3660b7f68fd1f40307d3" title="Casts input pixels to output pixel type and clamps the output pixel values to a specified range.">itk::simple::Clamp</a> for the procedural interface </dd>
 <dd>
 <a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1ClampImageFilter.html">itk::ClampImageFilter</a> for the Doxygen on the original ITK class. </dd></dl>
 
@@ -357,7 +361,7 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 <p>Setup for member function dispatching </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkClampImageFilter_8h_source.html#l00105">105</a> of file <a class="el" href="sitkClampImageFilter_8h_source.html">sitkClampImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkClampImageFilter_8h_source.html#l00108">108</a> of file <a class="el" href="sitkClampImageFilter_8h_source.html">sitkClampImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -497,7 +501,7 @@ template&lt;class TImageType1 , class TImageType2 &gt; </div>
 </div>
 </div>
 <a id="a7464a96a8c34ca3b1bf4745e212f02eb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7464a96a8c34ca3b1bf4745e212f02eb">&#9670;&nbsp;</a></span>Execute()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a7464a96a8c34ca3b1bf4745e212f02eb">&#9670;&nbsp;</a></span>Execute() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -506,6 +510,24 @@ template&lt;class TImageType1 , class TImageType2 &gt; </div>
           <td class="memname"><a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> itk::simple::ClampImageFilter::Execute </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> &amp;&#160;</td>
+          <td class="paramname"><em>image1</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a14efbfd8ffc2523a1c9cf1ae1e038453"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a14efbfd8ffc2523a1c9cf1ae1e038453">&#9670;&nbsp;</a></span>Execute() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> itk::simple::ClampImageFilter::Execute </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> &amp;&amp;&#160;</td>
           <td class="paramname"><em>image1</em></td><td>)</td>
           <td></td>
         </tr>
@@ -759,7 +781,7 @@ template&lt;class TImageType1 , class TImageType2 &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkClampImageFilter_8h_source.html#l00107">107</a> of file <a class="el" href="sitkClampImageFilter_8h_source.html">sitkClampImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkClampImageFilter_8h_source.html#l00110">110</a> of file <a class="el" href="sitkClampImageFilter_8h_source.html">sitkClampImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -783,7 +805,7 @@ template&lt;class TImageType1 , class TImageType2 &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkClampImageFilter_8h_source.html#l00109">109</a> of file <a class="el" href="sitkClampImageFilter_8h_source.html">sitkClampImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkClampImageFilter_8h_source.html#l00112">112</a> of file <a class="el" href="sitkClampImageFilter_8h_source.html">sitkClampImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -808,7 +830,31 @@ template&lt;class TImageType1 , class TImageType2 &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkClampImageFilter_8h_source.html#l00112">112</a> of file <a class="el" href="sitkClampImageFilter_8h_source.html">sitkClampImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkClampImageFilter_8h_source.html#l00115">115</a> of file <a class="el" href="sitkClampImageFilter_8h_source.html">sitkClampImageFilter.h</a>.</p>
+
+</div>
+</div>
+<a id="a61eda2e6fd4f2a71d3baca0ebf6d8433"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a61eda2e6fd4f2a71d3baca0ebf6d8433">&#9670;&nbsp;</a></span>m_InPlace</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool itk::simple::ClampImageFilter::m_InPlace {false}</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="sitkClampImageFilter_8h_source.html#l00126">126</a> of file <a class="el" href="sitkClampImageFilter_8h_source.html">sitkClampImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -822,7 +868,7 @@ template&lt;class TImageType1 , class TImageType2 &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">double itk::simple::ClampImageFilter::m_LowerBound</td>
+          <td class="memname">double itk::simple::ClampImageFilter::m_LowerBound {-std::numeric_limits&lt;double&gt;::max()}</td>
         </tr>
       </table>
   </td>
@@ -832,7 +878,7 @@ template&lt;class TImageType1 , class TImageType2 &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkClampImageFilter_8h_source.html#l00117">117</a> of file <a class="el" href="sitkClampImageFilter_8h_source.html">sitkClampImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkClampImageFilter_8h_source.html#l00121">121</a> of file <a class="el" href="sitkClampImageFilter_8h_source.html">sitkClampImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -846,7 +892,7 @@ template&lt;class TImageType1 , class TImageType2 &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="namespaceitk_1_1simple.html#ae40bd64640f4014fba1a8a872ab4df98">PixelIDValueEnum</a> itk::simple::ClampImageFilter::m_OutputPixelType</td>
+          <td class="memname"><a class="el" href="namespaceitk_1_1simple.html#ae40bd64640f4014fba1a8a872ab4df98">PixelIDValueEnum</a> itk::simple::ClampImageFilter::m_OutputPixelType {<a class="el" href="namespaceitk_1_1simple.html#ae40bd64640f4014fba1a8a872ab4df98a25f496c19c2388217b9fede6686144ac">itk::simple::sitkUnknown</a>}</td>
         </tr>
       </table>
   </td>
@@ -856,7 +902,7 @@ template&lt;class TImageType1 , class TImageType2 &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkClampImageFilter_8h_source.html#l00116">116</a> of file <a class="el" href="sitkClampImageFilter_8h_source.html">sitkClampImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkClampImageFilter_8h_source.html#l00119">119</a> of file <a class="el" href="sitkClampImageFilter_8h_source.html">sitkClampImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -870,7 +916,7 @@ template&lt;class TImageType1 , class TImageType2 &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">double itk::simple::ClampImageFilter::m_UpperBound</td>
+          <td class="memname">double itk::simple::ClampImageFilter::m_UpperBound {std::numeric_limits&lt;double&gt;::max()}</td>
         </tr>
       </table>
   </td>
@@ -880,7 +926,7 @@ template&lt;class TImageType1 , class TImageType2 &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkClampImageFilter_8h_source.html#l00118">118</a> of file <a class="el" href="sitkClampImageFilter_8h_source.html">sitkClampImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkClampImageFilter_8h_source.html#l00123">123</a> of file <a class="el" href="sitkClampImageFilter_8h_source.html">sitkClampImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -890,7 +936,7 @@ template&lt;class TImageType1 , class TImageType2 &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Apr 7 2020 03:21:32 for SimpleITK by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Apr 14 2020 02:53:25 for SimpleITK by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

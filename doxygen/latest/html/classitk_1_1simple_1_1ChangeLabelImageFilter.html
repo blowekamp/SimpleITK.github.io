@@ -19,7 +19,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">SimpleITK
-   &#160;<span id="projectnumber">2.0.0rc1.post73</span>
+   &#160;<span id="projectnumber">2.0.0rc1.post121</span>
    </div>
   </td>
  </tr>
@@ -145,6 +145,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a4fd109cdd8824e14ece31a3d0def6fe9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1779de485659871b1e984ae646880450"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classitk_1_1simple_1_1Image.html">Image</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1ChangeLabelImageFilter.html#a1779de485659871b1e984ae646880450">Execute</a> (const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> &amp;image1)</td></tr>
 <tr class="separator:a1779de485659871b1e984ae646880450"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a30dc48c489cdfa5ba44cfa339c80261c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classitk_1_1simple_1_1Image.html">Image</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1ChangeLabelImageFilter.html#a30dc48c489cdfa5ba44cfa339c80261c">Execute</a> (<a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> &amp;&amp;image1)</td></tr>
+<tr class="separator:a30dc48c489cdfa5ba44cfa339c80261c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4e6ba83a1e598ae5d1f7c4c0b71f28d0"><td class="memItemLeft" align="right" valign="top">std::map&lt; double, double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1ChangeLabelImageFilter.html#a4e6ba83a1e598ae5d1f7c4c0b71f28d0">GetChangeMap</a> () const</td></tr>
 <tr class="separator:a4e6ba83a1e598ae5d1f7c4c0b71f28d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a20ac1577d7286f4d06dbeda4546e67dc"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1ChangeLabelImageFilter.html#a20ac1577d7286f4d06dbeda4546e67dc">GetName</a> () const</td></tr>
@@ -208,8 +210,10 @@ Private Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
-<tr class="memitem:a64192edc86effc88b44475a358a4c2f6"><td class="memItemLeft" align="right" valign="top">std::map&lt; double, double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1ChangeLabelImageFilter.html#a64192edc86effc88b44475a358a4c2f6">m_ChangeMap</a></td></tr>
+<tr class="memitem:a64192edc86effc88b44475a358a4c2f6"><td class="memItemLeft" align="right" valign="top">std::map&lt; double, double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1ChangeLabelImageFilter.html#a64192edc86effc88b44475a358a4c2f6">m_ChangeMap</a> {std::map&lt;double,double&gt;()}</td></tr>
 <tr class="separator:a64192edc86effc88b44475a358a4c2f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afecfbfa099c362ad977b05a8b6fde034"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1ChangeLabelImageFilter.html#afecfbfa099c362ad977b05a8b6fde034">m_InPlace</a> {false}</td></tr>
+<tr class="separator:afecfbfa099c362ad977b05a8b6fde034"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a50aaa18989f409b49d16375e2edfe3ce"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="classitk_1_1simple_1_1detail_1_1MemberFunctionFactory.html">detail::MemberFunctionFactory</a>&lt; <a class="el" href="classitk_1_1simple_1_1ChangeLabelImageFilter.html#a80809575d862d8cb7856dd92093cf333">MemberFunctionType</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1ChangeLabelImageFilter.html#a50aaa18989f409b49d16375e2edfe3ce">m_MemberFactory</a></td></tr>
 <tr class="separator:a50aaa18989f409b49d16375e2edfe3ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -312,7 +316,7 @@ Additional Inherited Members</h2></td></tr>
 <p>The filter expect both images to have the same number of dimensions.</p>
 <dl class="section author"><dt>Author</dt><dd>Tim Kelliher. GE Research, Niskayuna, NY.</dd></dl>
 <dl class="section note"><dt>Note</dt><dd>This work was supported by a grant from DARPA, executed by the U.S. Army Medical Research and Materiel Command/TATRC Assistance Agreement, Contract::W81XWH-05-2-0059. </dd></dl>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="namespaceitk_1_1simple.html#aa9bd7354efb356013cd45c88a0ea56e6" title="Change Sets of Labels.">itk::simple::ChangeLabel</a> for the procedural interface </dd>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="namespaceitk_1_1simple.html#aca986ec2e943eecf7598c47abaa7ac08" title="Change Sets of Labels.">itk::simple::ChangeLabel</a> for the procedural interface </dd>
 <dd>
 <a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1ChangeLabelImageFilter.html">itk::ChangeLabelImageFilter</a> for the Doxygen on the original ITK class. </dd></dl>
 
@@ -339,7 +343,7 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 <p>Setup for member function dispatching </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkChangeLabelImageFilter_8h_source.html#l00089">89</a> of file <a class="el" href="sitkChangeLabelImageFilter_8h_source.html">sitkChangeLabelImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkChangeLabelImageFilter_8h_source.html#l00092">92</a> of file <a class="el" href="sitkChangeLabelImageFilter_8h_source.html">sitkChangeLabelImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -423,7 +427,7 @@ Additional Inherited Members</h2></td></tr>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
 <a id="a1779de485659871b1e984ae646880450"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1779de485659871b1e984ae646880450">&#9670;&nbsp;</a></span>Execute()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a1779de485659871b1e984ae646880450">&#9670;&nbsp;</a></span>Execute() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -432,6 +436,24 @@ Additional Inherited Members</h2></td></tr>
           <td class="memname"><a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> itk::simple::ChangeLabelImageFilter::Execute </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> &amp;&#160;</td>
+          <td class="paramname"><em>image1</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a30dc48c489cdfa5ba44cfa339c80261c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a30dc48c489cdfa5ba44cfa339c80261c">&#9670;&nbsp;</a></span>Execute() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> itk::simple::ChangeLabelImageFilter::Execute </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> &amp;&amp;&#160;</td>
           <td class="paramname"><em>image1</em></td><td>)</td>
           <td></td>
         </tr>
@@ -604,7 +626,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkChangeLabelImageFilter_8h_source.html#l00093">93</a> of file <a class="el" href="sitkChangeLabelImageFilter_8h_source.html">sitkChangeLabelImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkChangeLabelImageFilter_8h_source.html#l00096">96</a> of file <a class="el" href="sitkChangeLabelImageFilter_8h_source.html">sitkChangeLabelImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -619,7 +641,7 @@ template&lt;class TImageType &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::map&lt;double,double&gt; itk::simple::ChangeLabelImageFilter::m_ChangeMap</td>
+          <td class="memname">std::map&lt;double,double&gt; itk::simple::ChangeLabelImageFilter::m_ChangeMap {std::map&lt;double,double&gt;()}</td>
         </tr>
       </table>
   </td>
@@ -629,7 +651,31 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkChangeLabelImageFilter_8h_source.html#l00098">98</a> of file <a class="el" href="sitkChangeLabelImageFilter_8h_source.html">sitkChangeLabelImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkChangeLabelImageFilter_8h_source.html#l00101">101</a> of file <a class="el" href="sitkChangeLabelImageFilter_8h_source.html">sitkChangeLabelImageFilter.h</a>.</p>
+
+</div>
+</div>
+<a id="afecfbfa099c362ad977b05a8b6fde034"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afecfbfa099c362ad977b05a8b6fde034">&#9670;&nbsp;</a></span>m_InPlace</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool itk::simple::ChangeLabelImageFilter::m_InPlace {false}</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="sitkChangeLabelImageFilter_8h_source.html#l00104">104</a> of file <a class="el" href="sitkChangeLabelImageFilter_8h_source.html">sitkChangeLabelImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -653,7 +699,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkChangeLabelImageFilter_8h_source.html#l00095">95</a> of file <a class="el" href="sitkChangeLabelImageFilter_8h_source.html">sitkChangeLabelImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkChangeLabelImageFilter_8h_source.html#l00098">98</a> of file <a class="el" href="sitkChangeLabelImageFilter_8h_source.html">sitkChangeLabelImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -663,7 +709,7 @@ template&lt;class TImageType &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Apr 7 2020 03:21:32 for SimpleITK by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Apr 14 2020 02:53:25 for SimpleITK by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

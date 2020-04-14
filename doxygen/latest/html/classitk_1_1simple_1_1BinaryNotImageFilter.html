@@ -19,7 +19,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">SimpleITK
-   &#160;<span id="projectnumber">2.0.0rc1.post73</span>
+   &#160;<span id="projectnumber">2.0.0rc1.post121</span>
    </div>
   </td>
  </tr>
@@ -144,6 +144,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a18eb9769644b45f62bad218eadfacf46"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aaad3948c3cd62c8efc80c1faec97563e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classitk_1_1simple_1_1Image.html">Image</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1BinaryNotImageFilter.html#aaad3948c3cd62c8efc80c1faec97563e">Execute</a> (const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> &amp;image1)</td></tr>
 <tr class="separator:aaad3948c3cd62c8efc80c1faec97563e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9c9478e62d1b851f97df841375e37bac"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classitk_1_1simple_1_1Image.html">Image</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1BinaryNotImageFilter.html#a9c9478e62d1b851f97df841375e37bac">Execute</a> (<a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> &amp;&amp;image1)</td></tr>
+<tr class="separator:a9c9478e62d1b851f97df841375e37bac"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6755018dc23fb6066e999f85eddbf1ea"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1BinaryNotImageFilter.html#a6755018dc23fb6066e999f85eddbf1ea">GetBackgroundValue</a> () const</td></tr>
 <tr class="separator:a6755018dc23fb6066e999f85eddbf1ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aad08fda763345109dccbb6eb59c8c541"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1BinaryNotImageFilter.html#aad08fda763345109dccbb6eb59c8c541">GetForegroundValue</a> () const</td></tr>
@@ -211,10 +213,12 @@ Private Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
-<tr class="memitem:aca0cafb51dd07ddefcd97fd722a9b649"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1BinaryNotImageFilter.html#aca0cafb51dd07ddefcd97fd722a9b649">m_BackgroundValue</a></td></tr>
+<tr class="memitem:aca0cafb51dd07ddefcd97fd722a9b649"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1BinaryNotImageFilter.html#aca0cafb51dd07ddefcd97fd722a9b649">m_BackgroundValue</a> {0.0}</td></tr>
 <tr class="separator:aca0cafb51dd07ddefcd97fd722a9b649"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2e32806b4ccf68d926ee380abdb8da6d"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1BinaryNotImageFilter.html#a2e32806b4ccf68d926ee380abdb8da6d">m_ForegroundValue</a></td></tr>
+<tr class="memitem:a2e32806b4ccf68d926ee380abdb8da6d"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1BinaryNotImageFilter.html#a2e32806b4ccf68d926ee380abdb8da6d">m_ForegroundValue</a> {1.0}</td></tr>
 <tr class="separator:a2e32806b4ccf68d926ee380abdb8da6d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a015b0833c64968aac3bccc9dfad55e6c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1BinaryNotImageFilter.html#a015b0833c64968aac3bccc9dfad55e6c">m_InPlace</a> {false}</td></tr>
+<tr class="separator:a015b0833c64968aac3bccc9dfad55e6c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9ed9ce79da504182e68ceae97ded9a90"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="classitk_1_1simple_1_1detail_1_1MemberFunctionFactory.html">detail::MemberFunctionFactory</a>&lt; <a class="el" href="classitk_1_1simple_1_1BinaryNotImageFilter.html#a2d96ce50a1cf4d1f3b0f9fcafae635c7">MemberFunctionType</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1BinaryNotImageFilter.html#a9ed9ce79da504182e68ceae97ded9a90">m_MemberFactory</a></td></tr>
 <tr class="separator:a9ed9ce79da504182e68ceae97ded9a90"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -317,7 +321,7 @@ Additional Inherited Members</h2></td></tr>
 <p>output_pixel = static_cast&lt;PixelType&gt;( input1_pixel != input2_pixel )</p>
 <p>Where "!=" is the equality operator in C++.</p>
 <dl class="section author"><dt>Author</dt><dd>Gaetan Lehmann. Biologie du Developpement et de la Reproduction, INRA de Jouy-en-Josas, France.</dd></dl>
-<p>This implementation was taken from the Insight Journal paper: <a href="https://hdl.handle.net/1926/584">https://hdl.handle.net/1926/584</a> or <a href="http://www.insight-journal.org/browse/publication/176">http://www.insight-journal.org/browse/publication/176</a> </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="namespaceitk_1_1simple.html#adb7f960e15a6c1acfe845844bedf3c43" title="Implements the BinaryNot logical operator pixel-wise between two images.">itk::simple::BinaryNot</a> for the procedural interface </dd>
+<p>This implementation was taken from the Insight Journal paper: <a href="https://hdl.handle.net/1926/584">https://hdl.handle.net/1926/584</a> or <a href="http://www.insight-journal.org/browse/publication/176">http://www.insight-journal.org/browse/publication/176</a> </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="namespaceitk_1_1simple.html#a98c1d5fcd437cf7c1a9f3b02804918a9" title="Implements the BinaryNot logical operator pixel-wise between two images.">itk::simple::BinaryNot</a> for the procedural interface </dd>
 <dd>
 <a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1BinaryNotImageFilter.html">itk::BinaryNotImageFilter</a> for the Doxygen on the original ITK class. </dd></dl>
 
@@ -344,7 +348,7 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 <p>Setup for member function dispatching </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkBinaryNotImageFilter_8h_source.html#l00102">102</a> of file <a class="el" href="sitkBinaryNotImageFilter_8h_source.html">sitkBinaryNotImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkBinaryNotImageFilter_8h_source.html#l00105">105</a> of file <a class="el" href="sitkBinaryNotImageFilter_8h_source.html">sitkBinaryNotImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -428,7 +432,7 @@ Additional Inherited Members</h2></td></tr>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
 <a id="aaad3948c3cd62c8efc80c1faec97563e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aaad3948c3cd62c8efc80c1faec97563e">&#9670;&nbsp;</a></span>Execute()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#aaad3948c3cd62c8efc80c1faec97563e">&#9670;&nbsp;</a></span>Execute() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -437,6 +441,24 @@ Additional Inherited Members</h2></td></tr>
           <td class="memname"><a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> itk::simple::BinaryNotImageFilter::Execute </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> &amp;&#160;</td>
+          <td class="paramname"><em>image1</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a9c9478e62d1b851f97df841375e37bac"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9c9478e62d1b851f97df841375e37bac">&#9670;&nbsp;</a></span>Execute() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> itk::simple::BinaryNotImageFilter::Execute </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> &amp;&amp;&#160;</td>
           <td class="paramname"><em>image1</em></td><td>)</td>
           <td></td>
         </tr>
@@ -667,7 +689,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkBinaryNotImageFilter_8h_source.html#l00106">106</a> of file <a class="el" href="sitkBinaryNotImageFilter_8h_source.html">sitkBinaryNotImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkBinaryNotImageFilter_8h_source.html#l00109">109</a> of file <a class="el" href="sitkBinaryNotImageFilter_8h_source.html">sitkBinaryNotImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -682,7 +704,7 @@ template&lt;class TImageType &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">double itk::simple::BinaryNotImageFilter::m_BackgroundValue</td>
+          <td class="memname">double itk::simple::BinaryNotImageFilter::m_BackgroundValue {0.0}</td>
         </tr>
       </table>
   </td>
@@ -692,7 +714,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkBinaryNotImageFilter_8h_source.html#l00112">112</a> of file <a class="el" href="sitkBinaryNotImageFilter_8h_source.html">sitkBinaryNotImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkBinaryNotImageFilter_8h_source.html#l00116">116</a> of file <a class="el" href="sitkBinaryNotImageFilter_8h_source.html">sitkBinaryNotImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -706,7 +728,7 @@ template&lt;class TImageType &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">double itk::simple::BinaryNotImageFilter::m_ForegroundValue</td>
+          <td class="memname">double itk::simple::BinaryNotImageFilter::m_ForegroundValue {1.0}</td>
         </tr>
       </table>
   </td>
@@ -716,7 +738,31 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkBinaryNotImageFilter_8h_source.html#l00111">111</a> of file <a class="el" href="sitkBinaryNotImageFilter_8h_source.html">sitkBinaryNotImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkBinaryNotImageFilter_8h_source.html#l00114">114</a> of file <a class="el" href="sitkBinaryNotImageFilter_8h_source.html">sitkBinaryNotImageFilter.h</a>.</p>
+
+</div>
+</div>
+<a id="a015b0833c64968aac3bccc9dfad55e6c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a015b0833c64968aac3bccc9dfad55e6c">&#9670;&nbsp;</a></span>m_InPlace</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool itk::simple::BinaryNotImageFilter::m_InPlace {false}</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="sitkBinaryNotImageFilter_8h_source.html#l00119">119</a> of file <a class="el" href="sitkBinaryNotImageFilter_8h_source.html">sitkBinaryNotImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -740,7 +786,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkBinaryNotImageFilter_8h_source.html#l00108">108</a> of file <a class="el" href="sitkBinaryNotImageFilter_8h_source.html">sitkBinaryNotImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkBinaryNotImageFilter_8h_source.html#l00111">111</a> of file <a class="el" href="sitkBinaryNotImageFilter_8h_source.html">sitkBinaryNotImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -750,7 +796,7 @@ template&lt;class TImageType &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Apr 7 2020 03:21:31 for SimpleITK by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Apr 14 2020 02:53:25 for SimpleITK by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

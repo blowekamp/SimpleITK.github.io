@@ -19,7 +19,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">SimpleITK
-   &#160;<span id="projectnumber">2.0.0rc1.post73</span>
+   &#160;<span id="projectnumber">2.0.0rc1.post121</span>
    </div>
   </td>
  </tr>
@@ -220,13 +220,13 @@ Private Member Functions</h2></td></tr>
 Private Attributes</h2></td></tr>
 <tr class="memitem:ab4affb4c60fe9754cc622df9ee4cf90c"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="classitk_1_1simple_1_1detail_1_1MemberFunctionFactory.html">detail::MemberFunctionFactory</a>&lt; <a class="el" href="classitk_1_1simple_1_1ShiftScaleImageFilter.html#a6168c758ef3a0fe2f3cf2b10ce2ba50b">MemberFunctionType</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1ShiftScaleImageFilter.html#ab4affb4c60fe9754cc622df9ee4cf90c">m_MemberFactory</a></td></tr>
 <tr class="separator:ab4affb4c60fe9754cc622df9ee4cf90c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0a58926c49195434c1fefd788f45dda4"><td class="memItemLeft" align="right" valign="top"><a class="elRef" href="https://www.itk.org/Doxygen/html/namespaceitk.html#a0adcc0f339674dca616b7f740a86c58c">int64_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1ShiftScaleImageFilter.html#a0a58926c49195434c1fefd788f45dda4">m_OverflowCount</a></td></tr>
+<tr class="memitem:a0a58926c49195434c1fefd788f45dda4"><td class="memItemLeft" align="right" valign="top"><a class="elRef" href="https://www.itk.org/Doxygen/html/namespaceitk.html#a0adcc0f339674dca616b7f740a86c58c">int64_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1ShiftScaleImageFilter.html#a0a58926c49195434c1fefd788f45dda4">m_OverflowCount</a> {0u}</td></tr>
 <tr class="separator:a0a58926c49195434c1fefd788f45dda4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1aba8d79ceb63b67f35a6131e7cd67d1"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1ShiftScaleImageFilter.html#a1aba8d79ceb63b67f35a6131e7cd67d1">m_Scale</a></td></tr>
+<tr class="memitem:a1aba8d79ceb63b67f35a6131e7cd67d1"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1ShiftScaleImageFilter.html#a1aba8d79ceb63b67f35a6131e7cd67d1">m_Scale</a> {1.0}</td></tr>
 <tr class="separator:a1aba8d79ceb63b67f35a6131e7cd67d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad42d3e6e9027341faad0eba8a6d2f781"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1ShiftScaleImageFilter.html#ad42d3e6e9027341faad0eba8a6d2f781">m_Shift</a></td></tr>
+<tr class="memitem:ad42d3e6e9027341faad0eba8a6d2f781"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1ShiftScaleImageFilter.html#ad42d3e6e9027341faad0eba8a6d2f781">m_Shift</a> {0}</td></tr>
 <tr class="separator:ad42d3e6e9027341faad0eba8a6d2f781"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac543cd44a41b3c04443c8aedae23a239"><td class="memItemLeft" align="right" valign="top"><a class="elRef" href="https://www.itk.org/Doxygen/html/namespaceitk.html#a0adcc0f339674dca616b7f740a86c58c">int64_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1ShiftScaleImageFilter.html#ac543cd44a41b3c04443c8aedae23a239">m_UnderflowCount</a></td></tr>
+<tr class="memitem:ac543cd44a41b3c04443c8aedae23a239"><td class="memItemLeft" align="right" valign="top"><a class="elRef" href="https://www.itk.org/Doxygen/html/namespaceitk.html#a0adcc0f339674dca616b7f740a86c58c">int64_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1ShiftScaleImageFilter.html#ac543cd44a41b3c04443c8aedae23a239">m_UnderflowCount</a> {0u}</td></tr>
 <tr class="separator:ac543cd44a41b3c04443c8aedae23a239"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
@@ -352,7 +352,7 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 <p>Setup for member function dispatching </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkShiftScaleImageFilter_8h_source.html#l00107">107</a> of file <a class="el" href="sitkShiftScaleImageFilter_8h_source.html">sitkShiftScaleImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkShiftScaleImageFilter_8h_source.html#l00108">108</a> of file <a class="el" href="sitkShiftScaleImageFilter_8h_source.html">sitkShiftScaleImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -762,7 +762,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkShiftScaleImageFilter_8h_source.html#l00113">113</a> of file <a class="el" href="sitkShiftScaleImageFilter_8h_source.html">sitkShiftScaleImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkShiftScaleImageFilter_8h_source.html#l00114">114</a> of file <a class="el" href="sitkShiftScaleImageFilter_8h_source.html">sitkShiftScaleImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -786,7 +786,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkShiftScaleImageFilter_8h_source.html#l00112">112</a> of file <a class="el" href="sitkShiftScaleImageFilter_8h_source.html">sitkShiftScaleImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkShiftScaleImageFilter_8h_source.html#l00113">113</a> of file <a class="el" href="sitkShiftScaleImageFilter_8h_source.html">sitkShiftScaleImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -811,7 +811,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkShiftScaleImageFilter_8h_source.html#l00114">114</a> of file <a class="el" href="sitkShiftScaleImageFilter_8h_source.html">sitkShiftScaleImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkShiftScaleImageFilter_8h_source.html#l00115">115</a> of file <a class="el" href="sitkShiftScaleImageFilter_8h_source.html">sitkShiftScaleImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -825,7 +825,7 @@ template&lt;class TImageType &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="elRef" href="https://www.itk.org/Doxygen/html/namespaceitk.html#a0adcc0f339674dca616b7f740a86c58c">int64_t</a> itk::simple::ShiftScaleImageFilter::m_OverflowCount</td>
+          <td class="memname"><a class="elRef" href="https://www.itk.org/Doxygen/html/namespaceitk.html#a0adcc0f339674dca616b7f740a86c58c">int64_t</a> itk::simple::ShiftScaleImageFilter::m_OverflowCount {0u}</td>
         </tr>
       </table>
   </td>
@@ -835,7 +835,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkShiftScaleImageFilter_8h_source.html#l00122">122</a> of file <a class="el" href="sitkShiftScaleImageFilter_8h_source.html">sitkShiftScaleImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkShiftScaleImageFilter_8h_source.html#l00125">125</a> of file <a class="el" href="sitkShiftScaleImageFilter_8h_source.html">sitkShiftScaleImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -849,55 +849,7 @@ template&lt;class TImageType &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">double itk::simple::ShiftScaleImageFilter::m_Scale</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="sitkShiftScaleImageFilter_8h_source.html#l00118">118</a> of file <a class="el" href="sitkShiftScaleImageFilter_8h_source.html">sitkShiftScaleImageFilter.h</a>.</p>
-
-</div>
-</div>
-<a id="ad42d3e6e9027341faad0eba8a6d2f781"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad42d3e6e9027341faad0eba8a6d2f781">&#9670;&nbsp;</a></span>m_Shift</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">double itk::simple::ShiftScaleImageFilter::m_Shift</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="sitkShiftScaleImageFilter_8h_source.html#l00117">117</a> of file <a class="el" href="sitkShiftScaleImageFilter_8h_source.html">sitkShiftScaleImageFilter.h</a>.</p>
-
-</div>
-</div>
-<a id="ac543cd44a41b3c04443c8aedae23a239"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac543cd44a41b3c04443c8aedae23a239">&#9670;&nbsp;</a></span>m_UnderflowCount</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="elRef" href="https://www.itk.org/Doxygen/html/namespaceitk.html#a0adcc0f339674dca616b7f740a86c58c">int64_t</a> itk::simple::ShiftScaleImageFilter::m_UnderflowCount</td>
+          <td class="memname">double itk::simple::ShiftScaleImageFilter::m_Scale {1.0}</td>
         </tr>
       </table>
   </td>
@@ -911,13 +863,61 @@ template&lt;class TImageType &gt; </div>
 
 </div>
 </div>
+<a id="ad42d3e6e9027341faad0eba8a6d2f781"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad42d3e6e9027341faad0eba8a6d2f781">&#9670;&nbsp;</a></span>m_Shift</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double itk::simple::ShiftScaleImageFilter::m_Shift {0}</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="sitkShiftScaleImageFilter_8h_source.html#l00118">118</a> of file <a class="el" href="sitkShiftScaleImageFilter_8h_source.html">sitkShiftScaleImageFilter.h</a>.</p>
+
+</div>
+</div>
+<a id="ac543cd44a41b3c04443c8aedae23a239"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac543cd44a41b3c04443c8aedae23a239">&#9670;&nbsp;</a></span>m_UnderflowCount</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="elRef" href="https://www.itk.org/Doxygen/html/namespaceitk.html#a0adcc0f339674dca616b7f740a86c58c">int64_t</a> itk::simple::ShiftScaleImageFilter::m_UnderflowCount {0u}</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="sitkShiftScaleImageFilter_8h_source.html#l00123">123</a> of file <a class="el" href="sitkShiftScaleImageFilter_8h_source.html">sitkShiftScaleImageFilter.h</a>.</p>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li><a class="el" href="sitkShiftScaleImageFilter_8h_source.html">sitkShiftScaleImageFilter.h</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Apr 7 2020 03:21:39 for SimpleITK by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Apr 14 2020 02:53:33 for SimpleITK by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

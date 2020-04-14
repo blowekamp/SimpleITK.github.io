@@ -19,7 +19,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">SimpleITK
-   &#160;<span id="projectnumber">2.0.0rc1.post73</span>
+   &#160;<span id="projectnumber">2.0.0rc1.post121</span>
    </div>
   </td>
  </tr>
@@ -145,6 +145,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a96e1eefadf196ecdfc86ee08d85a4f9b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0430aff1411e9f1a3fd68d0630528d7d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classitk_1_1simple_1_1Image.html">Image</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1ChangeLabelLabelMapFilter.html#a0430aff1411e9f1a3fd68d0630528d7d">Execute</a> (const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> &amp;image1)</td></tr>
 <tr class="separator:a0430aff1411e9f1a3fd68d0630528d7d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0531d17571eaf935867faa3fadfdd166"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classitk_1_1simple_1_1Image.html">Image</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1ChangeLabelLabelMapFilter.html#a0531d17571eaf935867faa3fadfdd166">Execute</a> (<a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> &amp;&amp;image1)</td></tr>
+<tr class="separator:a0531d17571eaf935867faa3fadfdd166"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0befe061e59c9089086f11a50113ef9b"><td class="memItemLeft" align="right" valign="top">std::map&lt; double, double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1ChangeLabelLabelMapFilter.html#a0befe061e59c9089086f11a50113ef9b">GetChangeMap</a> () const</td></tr>
 <tr class="separator:a0befe061e59c9089086f11a50113ef9b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acf3a4bc8658648488ca3580fdb0c1289"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1ChangeLabelLabelMapFilter.html#acf3a4bc8658648488ca3580fdb0c1289">GetName</a> () const</td></tr>
@@ -208,8 +210,10 @@ Private Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
-<tr class="memitem:abc438e9e0201666b8697b02e40af3bd7"><td class="memItemLeft" align="right" valign="top">std::map&lt; double, double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1ChangeLabelLabelMapFilter.html#abc438e9e0201666b8697b02e40af3bd7">m_ChangeMap</a></td></tr>
+<tr class="memitem:abc438e9e0201666b8697b02e40af3bd7"><td class="memItemLeft" align="right" valign="top">std::map&lt; double, double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1ChangeLabelLabelMapFilter.html#abc438e9e0201666b8697b02e40af3bd7">m_ChangeMap</a> {std::map&lt;double,double&gt;()}</td></tr>
 <tr class="separator:abc438e9e0201666b8697b02e40af3bd7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab8bc92e94c6debc4a2eb18ff66a95bc7"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1ChangeLabelLabelMapFilter.html#ab8bc92e94c6debc4a2eb18ff66a95bc7">m_InPlace</a> {false}</td></tr>
+<tr class="separator:ab8bc92e94c6debc4a2eb18ff66a95bc7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac81aba8ad3dcfcc330e16c3ea3246429"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="classitk_1_1simple_1_1detail_1_1MemberFunctionFactory.html">detail::MemberFunctionFactory</a>&lt; <a class="el" href="classitk_1_1simple_1_1ChangeLabelLabelMapFilter.html#a729a691964c8e87d621de7681b8b5ba3">MemberFunctionType</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1ChangeLabelLabelMapFilter.html#ac81aba8ad3dcfcc330e16c3ea3246429">m_MemberFactory</a></td></tr>
 <tr class="separator:ac81aba8ad3dcfcc330e16c3ea3246429"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -340,7 +344,7 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 <p>Setup for member function dispatching </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkChangeLabelLabelMapFilter_8h_source.html#l00088">88</a> of file <a class="el" href="sitkChangeLabelLabelMapFilter_8h_source.html">sitkChangeLabelLabelMapFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkChangeLabelLabelMapFilter_8h_source.html#l00091">91</a> of file <a class="el" href="sitkChangeLabelLabelMapFilter_8h_source.html">sitkChangeLabelLabelMapFilter.h</a>.</p>
 
 </div>
 </div>
@@ -424,7 +428,7 @@ Additional Inherited Members</h2></td></tr>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
 <a id="a0430aff1411e9f1a3fd68d0630528d7d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0430aff1411e9f1a3fd68d0630528d7d">&#9670;&nbsp;</a></span>Execute()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a0430aff1411e9f1a3fd68d0630528d7d">&#9670;&nbsp;</a></span>Execute() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -433,6 +437,24 @@ Additional Inherited Members</h2></td></tr>
           <td class="memname"><a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> itk::simple::ChangeLabelLabelMapFilter::Execute </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> &amp;&#160;</td>
+          <td class="paramname"><em>image1</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a0531d17571eaf935867faa3fadfdd166"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0531d17571eaf935867faa3fadfdd166">&#9670;&nbsp;</a></span>Execute() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> itk::simple::ChangeLabelLabelMapFilter::Execute </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> &amp;&amp;&#160;</td>
           <td class="paramname"><em>image1</em></td><td>)</td>
           <td></td>
         </tr>
@@ -604,7 +626,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkChangeLabelLabelMapFilter_8h_source.html#l00092">92</a> of file <a class="el" href="sitkChangeLabelLabelMapFilter_8h_source.html">sitkChangeLabelLabelMapFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkChangeLabelLabelMapFilter_8h_source.html#l00095">95</a> of file <a class="el" href="sitkChangeLabelLabelMapFilter_8h_source.html">sitkChangeLabelLabelMapFilter.h</a>.</p>
 
 </div>
 </div>
@@ -619,7 +641,7 @@ template&lt;class TImageType &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::map&lt;double,double&gt; itk::simple::ChangeLabelLabelMapFilter::m_ChangeMap</td>
+          <td class="memname">std::map&lt;double,double&gt; itk::simple::ChangeLabelLabelMapFilter::m_ChangeMap {std::map&lt;double,double&gt;()}</td>
         </tr>
       </table>
   </td>
@@ -629,7 +651,31 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkChangeLabelLabelMapFilter_8h_source.html#l00097">97</a> of file <a class="el" href="sitkChangeLabelLabelMapFilter_8h_source.html">sitkChangeLabelLabelMapFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkChangeLabelLabelMapFilter_8h_source.html#l00100">100</a> of file <a class="el" href="sitkChangeLabelLabelMapFilter_8h_source.html">sitkChangeLabelLabelMapFilter.h</a>.</p>
+
+</div>
+</div>
+<a id="ab8bc92e94c6debc4a2eb18ff66a95bc7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab8bc92e94c6debc4a2eb18ff66a95bc7">&#9670;&nbsp;</a></span>m_InPlace</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool itk::simple::ChangeLabelLabelMapFilter::m_InPlace {false}</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="sitkChangeLabelLabelMapFilter_8h_source.html#l00103">103</a> of file <a class="el" href="sitkChangeLabelLabelMapFilter_8h_source.html">sitkChangeLabelLabelMapFilter.h</a>.</p>
 
 </div>
 </div>
@@ -653,7 +699,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkChangeLabelLabelMapFilter_8h_source.html#l00094">94</a> of file <a class="el" href="sitkChangeLabelLabelMapFilter_8h_source.html">sitkChangeLabelLabelMapFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkChangeLabelLabelMapFilter_8h_source.html#l00097">97</a> of file <a class="el" href="sitkChangeLabelLabelMapFilter_8h_source.html">sitkChangeLabelLabelMapFilter.h</a>.</p>
 
 </div>
 </div>
@@ -663,7 +709,7 @@ template&lt;class TImageType &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Apr 7 2020 03:21:32 for SimpleITK by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Apr 14 2020 02:53:25 for SimpleITK by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

@@ -19,7 +19,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">SimpleITK
-   &#160;<span id="projectnumber">2.0.0rc1.post73</span>
+   &#160;<span id="projectnumber">2.0.0rc1.post121</span>
    </div>
   </td>
  </tr>
@@ -228,15 +228,15 @@ Private Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
-<tr class="memitem:ab70cba43f537b37046f7b26835389812"><td class="memItemLeft" align="right" valign="top">std::vector&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1DiscreteGaussianImageFilter.html#ab70cba43f537b37046f7b26835389812">m_MaximumError</a></td></tr>
+<tr class="memitem:ab70cba43f537b37046f7b26835389812"><td class="memItemLeft" align="right" valign="top">std::vector&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1DiscreteGaussianImageFilter.html#ab70cba43f537b37046f7b26835389812">m_MaximumError</a> {std::vector&lt;double&gt;(3, 0.01)}</td></tr>
 <tr class="separator:ab70cba43f537b37046f7b26835389812"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aecba75bbcdeb531a782c176d8f0e347d"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1DiscreteGaussianImageFilter.html#aecba75bbcdeb531a782c176d8f0e347d">m_MaximumKernelWidth</a></td></tr>
+<tr class="memitem:aecba75bbcdeb531a782c176d8f0e347d"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1DiscreteGaussianImageFilter.html#aecba75bbcdeb531a782c176d8f0e347d">m_MaximumKernelWidth</a> {32u}</td></tr>
 <tr class="separator:aecba75bbcdeb531a782c176d8f0e347d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a24dda1065616944f695b2d1bfc979c29"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="classitk_1_1simple_1_1detail_1_1MemberFunctionFactory.html">detail::MemberFunctionFactory</a>&lt; <a class="el" href="classitk_1_1simple_1_1DiscreteGaussianImageFilter.html#ac941e76e120c3b4bee8fb1cd2029fea2">MemberFunctionType</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1DiscreteGaussianImageFilter.html#a24dda1065616944f695b2d1bfc979c29">m_MemberFactory</a></td></tr>
 <tr class="separator:a24dda1065616944f695b2d1bfc979c29"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5bb4e388ef9bd4986bc0bc71a0c6b93f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1DiscreteGaussianImageFilter.html#a5bb4e388ef9bd4986bc0bc71a0c6b93f">m_UseImageSpacing</a></td></tr>
+<tr class="memitem:a5bb4e388ef9bd4986bc0bc71a0c6b93f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1DiscreteGaussianImageFilter.html#a5bb4e388ef9bd4986bc0bc71a0c6b93f">m_UseImageSpacing</a> {true}</td></tr>
 <tr class="separator:a5bb4e388ef9bd4986bc0bc71a0c6b93f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a056534435306d86b47fbcf5fcd3b65f1"><td class="memItemLeft" align="right" valign="top">std::vector&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1DiscreteGaussianImageFilter.html#a056534435306d86b47fbcf5fcd3b65f1">m_Variance</a></td></tr>
+<tr class="memitem:a056534435306d86b47fbcf5fcd3b65f1"><td class="memItemLeft" align="right" valign="top">std::vector&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1DiscreteGaussianImageFilter.html#a056534435306d86b47fbcf5fcd3b65f1">m_Variance</a> {std::vector&lt;double&gt;(3,1.0)}</td></tr>
 <tr class="separator:a056534435306d86b47fbcf5fcd3b65f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
@@ -375,7 +375,7 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 <p>Setup for member function dispatching </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkDiscreteGaussianImageFilter_8h_source.html#l00139">139</a> of file <a class="el" href="sitkDiscreteGaussianImageFilter_8h_source.html">sitkDiscreteGaussianImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkDiscreteGaussianImageFilter_8h_source.html#l00140">140</a> of file <a class="el" href="sitkDiscreteGaussianImageFilter_8h_source.html">sitkDiscreteGaussianImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -927,7 +927,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkDiscreteGaussianImageFilter_8h_source.html#l00143">143</a> of file <a class="el" href="sitkDiscreteGaussianImageFilter_8h_source.html">sitkDiscreteGaussianImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkDiscreteGaussianImageFilter_8h_source.html#l00144">144</a> of file <a class="el" href="sitkDiscreteGaussianImageFilter_8h_source.html">sitkDiscreteGaussianImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -942,7 +942,7 @@ template&lt;class TImageType &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::vector&lt;double&gt; itk::simple::DiscreteGaussianImageFilter::m_MaximumError</td>
+          <td class="memname">std::vector&lt;double&gt; itk::simple::DiscreteGaussianImageFilter::m_MaximumError {std::vector&lt;double&gt;(3, 0.01)}</td>
         </tr>
       </table>
   </td>
@@ -952,7 +952,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkDiscreteGaussianImageFilter_8h_source.html#l00150">150</a> of file <a class="el" href="sitkDiscreteGaussianImageFilter_8h_source.html">sitkDiscreteGaussianImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkDiscreteGaussianImageFilter_8h_source.html#l00153">153</a> of file <a class="el" href="sitkDiscreteGaussianImageFilter_8h_source.html">sitkDiscreteGaussianImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -966,7 +966,7 @@ template&lt;class TImageType &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">unsigned int itk::simple::DiscreteGaussianImageFilter::m_MaximumKernelWidth</td>
+          <td class="memname">unsigned int itk::simple::DiscreteGaussianImageFilter::m_MaximumKernelWidth {32u}</td>
         </tr>
       </table>
   </td>
@@ -976,7 +976,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkDiscreteGaussianImageFilter_8h_source.html#l00149">149</a> of file <a class="el" href="sitkDiscreteGaussianImageFilter_8h_source.html">sitkDiscreteGaussianImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkDiscreteGaussianImageFilter_8h_source.html#l00151">151</a> of file <a class="el" href="sitkDiscreteGaussianImageFilter_8h_source.html">sitkDiscreteGaussianImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -1000,7 +1000,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkDiscreteGaussianImageFilter_8h_source.html#l00145">145</a> of file <a class="el" href="sitkDiscreteGaussianImageFilter_8h_source.html">sitkDiscreteGaussianImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkDiscreteGaussianImageFilter_8h_source.html#l00146">146</a> of file <a class="el" href="sitkDiscreteGaussianImageFilter_8h_source.html">sitkDiscreteGaussianImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -1014,7 +1014,7 @@ template&lt;class TImageType &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">bool itk::simple::DiscreteGaussianImageFilter::m_UseImageSpacing</td>
+          <td class="memname">bool itk::simple::DiscreteGaussianImageFilter::m_UseImageSpacing {true}</td>
         </tr>
       </table>
   </td>
@@ -1024,7 +1024,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkDiscreteGaussianImageFilter_8h_source.html#l00151">151</a> of file <a class="el" href="sitkDiscreteGaussianImageFilter_8h_source.html">sitkDiscreteGaussianImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkDiscreteGaussianImageFilter_8h_source.html#l00155">155</a> of file <a class="el" href="sitkDiscreteGaussianImageFilter_8h_source.html">sitkDiscreteGaussianImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -1038,7 +1038,7 @@ template&lt;class TImageType &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::vector&lt;double&gt; itk::simple::DiscreteGaussianImageFilter::m_Variance</td>
+          <td class="memname">std::vector&lt;double&gt; itk::simple::DiscreteGaussianImageFilter::m_Variance {std::vector&lt;double&gt;(3,1.0)}</td>
         </tr>
       </table>
   </td>
@@ -1048,7 +1048,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkDiscreteGaussianImageFilter_8h_source.html#l00148">148</a> of file <a class="el" href="sitkDiscreteGaussianImageFilter_8h_source.html">sitkDiscreteGaussianImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkDiscreteGaussianImageFilter_8h_source.html#l00149">149</a> of file <a class="el" href="sitkDiscreteGaussianImageFilter_8h_source.html">sitkDiscreteGaussianImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -1058,7 +1058,7 @@ template&lt;class TImageType &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Apr 7 2020 03:21:33 for SimpleITK by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Apr 14 2020 02:53:26 for SimpleITK by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

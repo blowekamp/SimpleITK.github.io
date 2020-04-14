@@ -19,7 +19,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">SimpleITK
-   &#160;<span id="projectnumber">2.0.0rc1.post73</span>
+   &#160;<span id="projectnumber">2.0.0rc1.post121</span>
    </div>
   </td>
  </tr>
@@ -236,17 +236,17 @@ Private Member Functions</h2></td></tr>
 Private Attributes</h2></td></tr>
 <tr class="memitem:abf04ed21f964656d2c0bf90b26b02a1c"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="classitk_1_1simple_1_1detail_1_1DualMemberFunctionFactory.html">detail::DualMemberFunctionFactory</a>&lt; <a class="el" href="classitk_1_1simple_1_1WarpImageFilter.html#aac3a40a6872129b599c56863c5dbec9e">MemberFunctionType</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1WarpImageFilter.html#abf04ed21f964656d2c0bf90b26b02a1c">m_DualMemberFactory</a></td></tr>
 <tr class="separator:abf04ed21f964656d2c0bf90b26b02a1c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af42f1e223b7562a727fd4b6b35354070"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1WarpImageFilter.html#af42f1e223b7562a727fd4b6b35354070">m_EdgePaddingValue</a></td></tr>
+<tr class="memitem:af42f1e223b7562a727fd4b6b35354070"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1WarpImageFilter.html#af42f1e223b7562a727fd4b6b35354070">m_EdgePaddingValue</a> {0.0}</td></tr>
 <tr class="separator:af42f1e223b7562a727fd4b6b35354070"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4fcf2712d19b3e572eae264de34eb6ca"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceitk_1_1simple.html#a7cb1ef8bd02c669c02ea2f9f5aa374e5">InterpolatorEnum</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1WarpImageFilter.html#a4fcf2712d19b3e572eae264de34eb6ca">m_Interpolator</a></td></tr>
+<tr class="memitem:a4fcf2712d19b3e572eae264de34eb6ca"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceitk_1_1simple.html#a7cb1ef8bd02c669c02ea2f9f5aa374e5">InterpolatorEnum</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1WarpImageFilter.html#a4fcf2712d19b3e572eae264de34eb6ca">m_Interpolator</a> {<a class="el" href="namespaceitk_1_1simple.html#a7cb1ef8bd02c669c02ea2f9f5aa374e5ab1d3c20fe43968ed72c71ae2a59d860a">itk::simple::sitkLinear</a>}</td></tr>
 <tr class="separator:a4fcf2712d19b3e572eae264de34eb6ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aac9d9c34bd19212ac0409c7e785e05c7"><td class="memItemLeft" align="right" valign="top">std::vector&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1WarpImageFilter.html#aac9d9c34bd19212ac0409c7e785e05c7">m_OutputDirection</a></td></tr>
+<tr class="memitem:aac9d9c34bd19212ac0409c7e785e05c7"><td class="memItemLeft" align="right" valign="top">std::vector&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1WarpImageFilter.html#aac9d9c34bd19212ac0409c7e785e05c7">m_OutputDirection</a> {std::vector&lt;double&gt;()}</td></tr>
 <tr class="separator:aac9d9c34bd19212ac0409c7e785e05c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7eaba1252f37fca728562fa1918e60fc"><td class="memItemLeft" align="right" valign="top">std::vector&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1WarpImageFilter.html#a7eaba1252f37fca728562fa1918e60fc">m_OutputOrigin</a></td></tr>
+<tr class="memitem:a7eaba1252f37fca728562fa1918e60fc"><td class="memItemLeft" align="right" valign="top">std::vector&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1WarpImageFilter.html#a7eaba1252f37fca728562fa1918e60fc">m_OutputOrigin</a> {std::vector&lt;double&gt;(3, 0.0)}</td></tr>
 <tr class="separator:a7eaba1252f37fca728562fa1918e60fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0e85d5ca9f5ee7b6fb44b72a7aa81346"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="elRef" href="https://www.itk.org/Doxygen/html/namespaceitk.html#a575b8e3e1ee797dd1bbaf9724ed68f92">uint32_t</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1WarpImageFilter.html#a0e85d5ca9f5ee7b6fb44b72a7aa81346">m_OutputSize</a></td></tr>
+<tr class="memitem:a0e85d5ca9f5ee7b6fb44b72a7aa81346"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="elRef" href="https://www.itk.org/Doxygen/html/namespaceitk.html#a575b8e3e1ee797dd1bbaf9724ed68f92">uint32_t</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1WarpImageFilter.html#a0e85d5ca9f5ee7b6fb44b72a7aa81346">m_OutputSize</a> {std::vector&lt;<a class="elRef" href="https://www.itk.org/Doxygen/html/namespaceitk.html#a575b8e3e1ee797dd1bbaf9724ed68f92">uint32_t</a>&gt;(3, 0)}</td></tr>
 <tr class="separator:a0e85d5ca9f5ee7b6fb44b72a7aa81346"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5d367ed28336db310bdccb2c583c060f"><td class="memItemLeft" align="right" valign="top">std::vector&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1WarpImageFilter.html#a5d367ed28336db310bdccb2c583c060f">m_OutputSpacing</a></td></tr>
+<tr class="memitem:a5d367ed28336db310bdccb2c583c060f"><td class="memItemLeft" align="right" valign="top">std::vector&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1WarpImageFilter.html#a5d367ed28336db310bdccb2c583c060f">m_OutputSpacing</a> {std::vector&lt;double&gt;(3, 1.0)}</td></tr>
 <tr class="separator:a5d367ed28336db310bdccb2c583c060f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
@@ -386,7 +386,7 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 <p>Setup for member function dispatching </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkWarpImageFilter_8h_source.html#l00157">157</a> of file <a class="el" href="sitkWarpImageFilter_8h_source.html">sitkWarpImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkWarpImageFilter_8h_source.html#l00158">158</a> of file <a class="el" href="sitkWarpImageFilter_8h_source.html">sitkWarpImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -1014,7 +1014,7 @@ template&lt;class TImageType1 , class TImageType2 &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkWarpImageFilter_8h_source.html#l00159">159</a> of file <a class="el" href="sitkWarpImageFilter_8h_source.html">sitkWarpImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkWarpImageFilter_8h_source.html#l00160">160</a> of file <a class="el" href="sitkWarpImageFilter_8h_source.html">sitkWarpImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -1038,7 +1038,7 @@ template&lt;class TImageType1 , class TImageType2 &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkWarpImageFilter_8h_source.html#l00161">161</a> of file <a class="el" href="sitkWarpImageFilter_8h_source.html">sitkWarpImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkWarpImageFilter_8h_source.html#l00162">162</a> of file <a class="el" href="sitkWarpImageFilter_8h_source.html">sitkWarpImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -1063,7 +1063,7 @@ template&lt;class TImageType1 , class TImageType2 &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkWarpImageFilter_8h_source.html#l00164">164</a> of file <a class="el" href="sitkWarpImageFilter_8h_source.html">sitkWarpImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkWarpImageFilter_8h_source.html#l00165">165</a> of file <a class="el" href="sitkWarpImageFilter_8h_source.html">sitkWarpImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -1077,7 +1077,7 @@ template&lt;class TImageType1 , class TImageType2 &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">double itk::simple::WarpImageFilter::m_EdgePaddingValue</td>
+          <td class="memname">double itk::simple::WarpImageFilter::m_EdgePaddingValue {0.0}</td>
         </tr>
       </table>
   </td>
@@ -1087,7 +1087,7 @@ template&lt;class TImageType1 , class TImageType2 &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkWarpImageFilter_8h_source.html#l00178">178</a> of file <a class="el" href="sitkWarpImageFilter_8h_source.html">sitkWarpImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkWarpImageFilter_8h_source.html#l00184">184</a> of file <a class="el" href="sitkWarpImageFilter_8h_source.html">sitkWarpImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -1101,7 +1101,7 @@ template&lt;class TImageType1 , class TImageType2 &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="namespaceitk_1_1simple.html#a7cb1ef8bd02c669c02ea2f9f5aa374e5">InterpolatorEnum</a> itk::simple::WarpImageFilter::m_Interpolator</td>
+          <td class="memname"><a class="el" href="namespaceitk_1_1simple.html#a7cb1ef8bd02c669c02ea2f9f5aa374e5">InterpolatorEnum</a> itk::simple::WarpImageFilter::m_Interpolator {<a class="el" href="namespaceitk_1_1simple.html#a7cb1ef8bd02c669c02ea2f9f5aa374e5ab1d3c20fe43968ed72c71ae2a59d860a">itk::simple::sitkLinear</a>}</td>
         </tr>
       </table>
   </td>
@@ -1111,7 +1111,7 @@ template&lt;class TImageType1 , class TImageType2 &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkWarpImageFilter_8h_source.html#l00169">169</a> of file <a class="el" href="sitkWarpImageFilter_8h_source.html">sitkWarpImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkWarpImageFilter_8h_source.html#l00170">170</a> of file <a class="el" href="sitkWarpImageFilter_8h_source.html">sitkWarpImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -1125,7 +1125,7 @@ template&lt;class TImageType1 , class TImageType2 &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::vector&lt;double&gt; itk::simple::WarpImageFilter::m_OutputDirection</td>
+          <td class="memname">std::vector&lt;double&gt; itk::simple::WarpImageFilter::m_OutputDirection {std::vector&lt;double&gt;()}</td>
         </tr>
       </table>
   </td>
@@ -1135,7 +1135,7 @@ template&lt;class TImageType1 , class TImageType2 &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkWarpImageFilter_8h_source.html#l00177">177</a> of file <a class="el" href="sitkWarpImageFilter_8h_source.html">sitkWarpImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkWarpImageFilter_8h_source.html#l00182">182</a> of file <a class="el" href="sitkWarpImageFilter_8h_source.html">sitkWarpImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -1149,7 +1149,7 @@ template&lt;class TImageType1 , class TImageType2 &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::vector&lt;double&gt; itk::simple::WarpImageFilter::m_OutputOrigin</td>
+          <td class="memname">std::vector&lt;double&gt; itk::simple::WarpImageFilter::m_OutputOrigin {std::vector&lt;double&gt;(3, 0.0)}</td>
         </tr>
       </table>
   </td>
@@ -1159,7 +1159,7 @@ template&lt;class TImageType1 , class TImageType2 &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkWarpImageFilter_8h_source.html#l00173">173</a> of file <a class="el" href="sitkWarpImageFilter_8h_source.html">sitkWarpImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkWarpImageFilter_8h_source.html#l00176">176</a> of file <a class="el" href="sitkWarpImageFilter_8h_source.html">sitkWarpImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -1173,7 +1173,7 @@ template&lt;class TImageType1 , class TImageType2 &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::vector&lt;<a class="elRef" href="https://www.itk.org/Doxygen/html/namespaceitk.html#a575b8e3e1ee797dd1bbaf9724ed68f92">uint32_t</a>&gt; itk::simple::WarpImageFilter::m_OutputSize</td>
+          <td class="memname">std::vector&lt;<a class="elRef" href="https://www.itk.org/Doxygen/html/namespaceitk.html#a575b8e3e1ee797dd1bbaf9724ed68f92">uint32_t</a>&gt; itk::simple::WarpImageFilter::m_OutputSize {std::vector&lt;<a class="elRef" href="https://www.itk.org/Doxygen/html/namespaceitk.html#a575b8e3e1ee797dd1bbaf9724ed68f92">uint32_t</a>&gt;(3, 0)}</td>
         </tr>
       </table>
   </td>
@@ -1183,7 +1183,7 @@ template&lt;class TImageType1 , class TImageType2 &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkWarpImageFilter_8h_source.html#l00171">171</a> of file <a class="el" href="sitkWarpImageFilter_8h_source.html">sitkWarpImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkWarpImageFilter_8h_source.html#l00173">173</a> of file <a class="el" href="sitkWarpImageFilter_8h_source.html">sitkWarpImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -1197,7 +1197,7 @@ template&lt;class TImageType1 , class TImageType2 &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::vector&lt;double&gt; itk::simple::WarpImageFilter::m_OutputSpacing</td>
+          <td class="memname">std::vector&lt;double&gt; itk::simple::WarpImageFilter::m_OutputSpacing {std::vector&lt;double&gt;(3, 1.0)}</td>
         </tr>
       </table>
   </td>
@@ -1207,7 +1207,7 @@ template&lt;class TImageType1 , class TImageType2 &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkWarpImageFilter_8h_source.html#l00175">175</a> of file <a class="el" href="sitkWarpImageFilter_8h_source.html">sitkWarpImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkWarpImageFilter_8h_source.html#l00179">179</a> of file <a class="el" href="sitkWarpImageFilter_8h_source.html">sitkWarpImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -1217,7 +1217,7 @@ template&lt;class TImageType1 , class TImageType2 &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Apr 7 2020 03:21:41 for SimpleITK by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Apr 14 2020 02:53:35 for SimpleITK by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

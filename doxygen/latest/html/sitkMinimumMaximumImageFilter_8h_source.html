@@ -19,7 +19,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">SimpleITK
-   &#160;<span id="projectnumber">2.0.0rc1.post73</span>
+   &#160;<span id="projectnumber">2.0.0rc1.post121</span>
    </div>
   </td>
  </tr>
@@ -101,39 +101,38 @@ $(function() {
 <div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;      std::string ToString() <span class="keyword">const</span>;</div>
 <div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160; </div>
 <div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160; </div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;      <span class="keywordtype">void</span> Execute ( <span class="keyword">const</span> <a class="code" href="classitk_1_1simple_1_1Image.html">Image</a> &amp; image );</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160; </div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    <span class="keyword">private</span>:</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160; </div>
-<div class="line"><a name="l00095"></a><span class="lineno"><a class="line" href="classitk_1_1simple_1_1MinimumMaximumImageFilter.html#a67f56fdadf929d45a21cc2743a46ff14">   95</a></span>&#160;      <span class="keyword">typedef</span> void (<a class="code" href="classitk_1_1simple_1_1ProcessObject.html">Self</a>::*MemberFunctionType)( <span class="keyword">const</span> <a class="code" href="classitk_1_1simple_1_1Image.html">Image</a> * image );</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;      <span class="keyword">template</span> &lt;<span class="keyword">class</span> TImageType&gt; <span class="keywordtype">void</span> ExecuteInternal ( <span class="keyword">const</span> <a class="code" href="classitk_1_1simple_1_1Image.html">Image</a> * image );</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160; </div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;      <span class="keywordtype">void</span> Execute ( <span class="keyword">const</span> <a class="code" href="classitk_1_1simple_1_1Image.html">Image</a> &amp; image );</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160; </div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160; </div>
+<div class="line"><a name="l00096"></a><span class="lineno"><a class="line" href="classitk_1_1simple_1_1MinimumMaximumImageFilter.html#a67f56fdadf929d45a21cc2743a46ff14">   96</a></span>&#160;      <span class="keyword">typedef</span> void (<a class="code" href="classitk_1_1simple_1_1ProcessObject.html">Self</a>::*MemberFunctionType)( <span class="keyword">const</span> <a class="code" href="classitk_1_1simple_1_1Image.html">Image</a> * image );</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;      <span class="keyword">template</span> &lt;<span class="keyword">class</span> TImageType&gt; <span class="keywordtype">void</span> ExecuteInternal ( <span class="keyword">const</span> <a class="code" href="classitk_1_1simple_1_1Image.html">Image</a> * image );</div>
 <div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160; </div>
-<div class="line"><a name="l00099"></a><span class="lineno"><a class="line" href="classitk_1_1simple_1_1MinimumMaximumImageFilter.html#af82f64823e6df0f5b2063b8fc7dd0c26">   99</a></span>&#160;      <span class="keyword">friend</span> <span class="keyword">struct </span><a class="code" href="structitk_1_1simple_1_1detail_1_1MemberFunctionAddressor.html">detail::MemberFunctionAddressor</a>&lt;MemberFunctionType&gt;;</div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160; </div>
-<div class="line"><a name="l00101"></a><span class="lineno"><a class="line" href="classitk_1_1simple_1_1MinimumMaximumImageFilter.html#a5a8507df231692e3285b31450853d848">  101</a></span>&#160;      std::unique_ptr&lt;detail::MemberFunctionFactory&lt;MemberFunctionType&gt; &gt; <a class="code" href="classitk_1_1simple_1_1MinimumMaximumImageFilter.html#a5a8507df231692e3285b31450853d848">m_MemberFactory</a>;</div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160; </div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160; </div>
+<div class="line"><a name="l00100"></a><span class="lineno"><a class="line" href="classitk_1_1simple_1_1MinimumMaximumImageFilter.html#af82f64823e6df0f5b2063b8fc7dd0c26">  100</a></span>&#160;      <span class="keyword">friend</span> <span class="keyword">struct </span><a class="code" href="structitk_1_1simple_1_1detail_1_1MemberFunctionAddressor.html">detail::MemberFunctionAddressor</a>&lt;MemberFunctionType&gt;;</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160; </div>
+<div class="line"><a name="l00102"></a><span class="lineno"><a class="line" href="classitk_1_1simple_1_1MinimumMaximumImageFilter.html#a5a8507df231692e3285b31450853d848">  102</a></span>&#160;      std::unique_ptr&lt;detail::MemberFunctionFactory&lt;MemberFunctionType&gt; &gt; <a class="code" href="classitk_1_1simple_1_1MinimumMaximumImageFilter.html#a5a8507df231692e3285b31450853d848">m_MemberFactory</a>;</div>
 <div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160; </div>
 <div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160; </div>
-<div class="line"><a name="l00105"></a><span class="lineno"><a class="line" href="classitk_1_1simple_1_1MinimumMaximumImageFilter.html#af490ceadffd5f41913afb0895f80c70c">  105</a></span>&#160;      <span class="keywordtype">double</span> <a class="code" href="classitk_1_1simple_1_1MinimumMaximumImageFilter.html#af490ceadffd5f41913afb0895f80c70c">m_Minimum</a>;</div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160; </div>
-<div class="line"><a name="l00107"></a><span class="lineno"><a class="line" href="classitk_1_1simple_1_1MinimumMaximumImageFilter.html#aafaf28112d410b8530a55764fa160fd5">  107</a></span>&#160;      <span class="keywordtype">double</span> <a class="code" href="classitk_1_1simple_1_1MinimumMaximumImageFilter.html#aafaf28112d410b8530a55764fa160fd5">m_Maximum</a>;</div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160; </div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;    };</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160; </div>
+<div class="line"><a name="l00106"></a><span class="lineno"><a class="line" href="classitk_1_1simple_1_1MinimumMaximumImageFilter.html#af490ceadffd5f41913afb0895f80c70c">  106</a></span>&#160;      <span class="keywordtype">double</span> m_Minimum{0.0};</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160; </div>
+<div class="line"><a name="l00108"></a><span class="lineno"><a class="line" href="classitk_1_1simple_1_1MinimumMaximumImageFilter.html#aafaf28112d410b8530a55764fa160fd5">  108</a></span>&#160;      <span class="keywordtype">double</span> m_Maximum{0.0};</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160; </div>
 <div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160; </div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160; </div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;  }</div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;}</div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;    };</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160; </div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160; </div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;  }</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;}</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;<span class="preprocessor">#endif</span></div>
 </div><!-- fragment --></div><!-- contents -->
 <div class="ttc" id="aclassitk_1_1simple_1_1Image_html"><div class="ttname"><a href="classitk_1_1simple_1_1Image.html">itk::simple::Image</a></div><div class="ttdoc">The Image class for SimpleITK.</div><div class="ttdef"><b>Definition:</b> <a href="sitkImage_8h_source.html#l00075">sitkImage.h:75</a></div></div>
-<div class="ttc" id="aclassitk_1_1simple_1_1MinimumMaximumImageFilter_html_aafaf28112d410b8530a55764fa160fd5"><div class="ttname"><a href="classitk_1_1simple_1_1MinimumMaximumImageFilter.html#aafaf28112d410b8530a55764fa160fd5">itk::simple::MinimumMaximumImageFilter::m_Maximum</a></div><div class="ttdeci">double m_Maximum</div><div class="ttdef"><b>Definition:</b> <a href="sitkMinimumMaximumImageFilter_8h_source.html#l00107">sitkMinimumMaximumImageFilter.h:107</a></div></div>
 <div class="ttc" id="aclassitk_1_1simple_1_1MinimumMaximumImageFilter_html_a95b004ce4ecbcb2d4574e2bba3954af8"><div class="ttname"><a href="classitk_1_1simple_1_1MinimumMaximumImageFilter.html#a95b004ce4ecbcb2d4574e2bba3954af8">itk::simple::MinimumMaximumImageFilter::PixelIDTypeList</a></div><div class="ttdeci">BasicPixelIDTypeList PixelIDTypeList</div><div class="ttdef"><b>Definition:</b> <a href="sitkMinimumMaximumImageFilter_8h_source.html#l00062">sitkMinimumMaximumImageFilter.h:62</a></div></div>
 <div class="ttc" id="asitkBasicFilters_8h_html"><div class="ttname"><a href="sitkBasicFilters_8h.html">sitkBasicFilters.h</a></div></div>
-<div class="ttc" id="aclassitk_1_1simple_1_1MinimumMaximumImageFilter_html_af490ceadffd5f41913afb0895f80c70c"><div class="ttname"><a href="classitk_1_1simple_1_1MinimumMaximumImageFilter.html#af490ceadffd5f41913afb0895f80c70c">itk::simple::MinimumMaximumImageFilter::m_Minimum</a></div><div class="ttdeci">double m_Minimum</div><div class="ttdef"><b>Definition:</b> <a href="sitkMinimumMaximumImageFilter_8h_source.html#l00105">sitkMinimumMaximumImageFilter.h:105</a></div></div>
 <div class="ttc" id="aclassitk_1_1simple_1_1MinimumMaximumImageFilter_html_a2436074223ff781c987aa28d9993410d"><div class="ttname"><a href="classitk_1_1simple_1_1MinimumMaximumImageFilter.html#a2436074223ff781c987aa28d9993410d">itk::simple::MinimumMaximumImageFilter::GetMaximum</a></div><div class="ttdeci">double GetMaximum() const</div><div class="ttdef"><b>Definition:</b> <a href="sitkMinimumMaximumImageFilter_8h_source.html#l00079">sitkMinimumMaximumImageFilter.h:79</a></div></div>
 <div class="ttc" id="astructitk_1_1simple_1_1detail_1_1MemberFunctionAddressor_html"><div class="ttname"><a href="structitk_1_1simple_1_1detail_1_1MemberFunctionAddressor.html">itk::simple::detail::MemberFunctionAddressor</a></div><div class="ttdef"><b>Definition:</b> <a href="sitkDetail_8h_source.html#l00032">sitkDetail.h:32</a></div></div>
-<div class="ttc" id="aclassitk_1_1simple_1_1MinimumMaximumImageFilter_html_a5a8507df231692e3285b31450853d848"><div class="ttname"><a href="classitk_1_1simple_1_1MinimumMaximumImageFilter.html#a5a8507df231692e3285b31450853d848">itk::simple::MinimumMaximumImageFilter::m_MemberFactory</a></div><div class="ttdeci">std::unique_ptr&lt; detail::MemberFunctionFactory&lt; MemberFunctionType &gt; &gt; m_MemberFactory</div><div class="ttdef"><b>Definition:</b> <a href="sitkMinimumMaximumImageFilter_8h_source.html#l00101">sitkMinimumMaximumImageFilter.h:101</a></div></div>
+<div class="ttc" id="aclassitk_1_1simple_1_1MinimumMaximumImageFilter_html_a5a8507df231692e3285b31450853d848"><div class="ttname"><a href="classitk_1_1simple_1_1MinimumMaximumImageFilter.html#a5a8507df231692e3285b31450853d848">itk::simple::MinimumMaximumImageFilter::m_MemberFactory</a></div><div class="ttdeci">std::unique_ptr&lt; detail::MemberFunctionFactory&lt; MemberFunctionType &gt; &gt; m_MemberFactory</div><div class="ttdef"><b>Definition:</b> <a href="sitkMinimumMaximumImageFilter_8h_source.html#l00102">sitkMinimumMaximumImageFilter.h:102</a></div></div>
 <div class="ttc" id="aclassitk_1_1simple_1_1MinimumMaximumImageFilter_html_af2c5b89252c4015365c86cba5c165cf2"><div class="ttname"><a href="classitk_1_1simple_1_1MinimumMaximumImageFilter.html#af2c5b89252c4015365c86cba5c165cf2">itk::simple::MinimumMaximumImageFilter::GetMinimum</a></div><div class="ttdeci">double GetMinimum() const</div><div class="ttdef"><b>Definition:</b> <a href="sitkMinimumMaximumImageFilter_8h_source.html#l00071">sitkMinimumMaximumImageFilter.h:71</a></div></div>
 <div class="ttc" id="anamespaceitk_1_1simple_html_a53bfeb202d5f9e68918553d264b17a91"><div class="ttname"><a href="namespaceitk_1_1simple.html#a53bfeb202d5f9e68918553d264b17a91">itk::simple::BasicPixelIDTypeList</a></div><div class="ttdeci">typelist::MakeTypeList&lt; BasicPixelID&lt; int8_t &gt;, BasicPixelID&lt; uint8_t &gt;, BasicPixelID&lt; int16_t &gt;, BasicPixelID&lt; uint16_t &gt;, BasicPixelID&lt; int32_t &gt;, BasicPixelID&lt; uint32_t &gt;, BasicPixelID&lt; float &gt;, BasicPixelID&lt; double &gt; &gt;::Type BasicPixelIDTypeList</div><div class="ttdef"><b>Definition:</b> <a href="sitkPixelIDTypeLists_8h_source.html#l00053">sitkPixelIDTypeLists.h:53</a></div></div>
 <div class="ttc" id="asitkImageFilter_8h_html"><div class="ttname"><a href="sitkImageFilter_8h.html">sitkImageFilter.h</a></div></div>
@@ -146,7 +145,7 @@ $(function() {
 <div class="ttc" id="aclassitk_1_1simple_1_1ProcessObject_html"><div class="ttname"><a href="classitk_1_1simple_1_1ProcessObject.html">itk::simple::ProcessObject</a></div><div class="ttdoc">Base class for SimpleITK classes based on ProcessObject.</div><div class="ttdef"><b>Definition:</b> <a href="sitkProcessObject_8h_source.html#l00051">sitkProcessObject.h:51</a></div></div>
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Apr 7 2020 03:21:13 for SimpleITK by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Apr 14 2020 02:53:04 for SimpleITK by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

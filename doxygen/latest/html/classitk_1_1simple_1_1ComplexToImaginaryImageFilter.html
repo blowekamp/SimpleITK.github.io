@@ -19,7 +19,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">SimpleITK
-   &#160;<span id="projectnumber">2.0.0rc1.post73</span>
+   &#160;<span id="projectnumber">2.0.0rc1.post121</span>
    </div>
   </td>
  </tr>
@@ -144,6 +144,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a1f34a3b1ada0451a7248dbb891796803"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a28d4512142de5dc68841ef46ebd0c982"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classitk_1_1simple_1_1Image.html">Image</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1ComplexToImaginaryImageFilter.html#a28d4512142de5dc68841ef46ebd0c982">Execute</a> (const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> &amp;image1)</td></tr>
 <tr class="separator:a28d4512142de5dc68841ef46ebd0c982"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a71be793691ce3e67cc4a66921b7a8070"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classitk_1_1simple_1_1Image.html">Image</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1ComplexToImaginaryImageFilter.html#a71be793691ce3e67cc4a66921b7a8070">Execute</a> (<a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> &amp;&amp;image1)</td></tr>
+<tr class="separator:a71be793691ce3e67cc4a66921b7a8070"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af89581631893c2c96e92849089a5c036"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1ComplexToImaginaryImageFilter.html#af89581631893c2c96e92849089a5c036">GetName</a> () const</td></tr>
 <tr class="separator:af89581631893c2c96e92849089a5c036"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a656875aa2e4ede973fac97cc0e434464"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1ComplexToImaginaryImageFilter.html#a656875aa2e4ede973fac97cc0e434464">ToString</a> () const</td></tr>
@@ -203,6 +205,8 @@ Private Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
+<tr class="memitem:a37756d53faea0acbca19a7f94ae61067"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1ComplexToImaginaryImageFilter.html#a37756d53faea0acbca19a7f94ae61067">m_InPlace</a> {false}</td></tr>
+<tr class="separator:a37756d53faea0acbca19a7f94ae61067"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0fe5c9c0eb716b9630ab3a05a22a6782"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="classitk_1_1simple_1_1detail_1_1MemberFunctionFactory.html">detail::MemberFunctionFactory</a>&lt; <a class="el" href="classitk_1_1simple_1_1ComplexToImaginaryImageFilter.html#a120939ff8b0bbc476b5c1197a61dcd25">MemberFunctionType</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1ComplexToImaginaryImageFilter.html#a0fe5c9c0eb716b9630ab3a05a22a6782">m_MemberFactory</a></td></tr>
 <tr class="separator:a0fe5c9c0eb716b9630ab3a05a22a6782"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -300,7 +304,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Computes pixel-wise the imaginary part of a complex image. </p>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="namespaceitk_1_1simple.html#a5a60b71b75a172bfb4a621be78d68797" title="Computes pixel-wise the imaginary part of a complex image.">itk::simple::ComplexToImaginary</a> for the procedural interface </dd>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="namespaceitk_1_1simple.html#adb466ab633890e62ac25802541f0ecb2" title="Computes pixel-wise the imaginary part of a complex image.">itk::simple::ComplexToImaginary</a> for the procedural interface </dd>
 <dd>
 <a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1ComplexToImaginaryImageFilter.html">itk::ComplexToImaginaryImageFilter</a> for the Doxygen on the original ITK class. </dd></dl>
 
@@ -327,7 +331,7 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 <p>Setup for member function dispatching </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkComplexToImaginaryImageFilter_8h_source.html#l00071">71</a> of file <a class="el" href="sitkComplexToImaginaryImageFilter_8h_source.html">sitkComplexToImaginaryImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkComplexToImaginaryImageFilter_8h_source.html#l00074">74</a> of file <a class="el" href="sitkComplexToImaginaryImageFilter_8h_source.html">sitkComplexToImaginaryImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -411,7 +415,7 @@ Additional Inherited Members</h2></td></tr>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
 <a id="a28d4512142de5dc68841ef46ebd0c982"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a28d4512142de5dc68841ef46ebd0c982">&#9670;&nbsp;</a></span>Execute()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a28d4512142de5dc68841ef46ebd0c982">&#9670;&nbsp;</a></span>Execute() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -420,6 +424,24 @@ Additional Inherited Members</h2></td></tr>
           <td class="memname"><a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> itk::simple::ComplexToImaginaryImageFilter::Execute </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> &amp;&#160;</td>
+          <td class="paramname"><em>image1</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a71be793691ce3e67cc4a66921b7a8070"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a71be793691ce3e67cc4a66921b7a8070">&#9670;&nbsp;</a></span>Execute() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> itk::simple::ComplexToImaginaryImageFilter::Execute </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> &amp;&amp;&#160;</td>
           <td class="paramname"><em>image1</em></td><td>)</td>
           <td></td>
         </tr>
@@ -536,11 +558,35 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkComplexToImaginaryImageFilter_8h_source.html#l00075">75</a> of file <a class="el" href="sitkComplexToImaginaryImageFilter_8h_source.html">sitkComplexToImaginaryImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkComplexToImaginaryImageFilter_8h_source.html#l00078">78</a> of file <a class="el" href="sitkComplexToImaginaryImageFilter_8h_source.html">sitkComplexToImaginaryImageFilter.h</a>.</p>
 
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
+<a id="a37756d53faea0acbca19a7f94ae61067"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a37756d53faea0acbca19a7f94ae61067">&#9670;&nbsp;</a></span>m_InPlace</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool itk::simple::ComplexToImaginaryImageFilter::m_InPlace {false}</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="sitkComplexToImaginaryImageFilter_8h_source.html#l00084">84</a> of file <a class="el" href="sitkComplexToImaginaryImageFilter_8h_source.html">sitkComplexToImaginaryImageFilter.h</a>.</p>
+
+</div>
+</div>
 <a id="a0fe5c9c0eb716b9630ab3a05a22a6782"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a0fe5c9c0eb716b9630ab3a05a22a6782">&#9670;&nbsp;</a></span>m_MemberFactory</h2>
 
@@ -561,7 +607,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkComplexToImaginaryImageFilter_8h_source.html#l00077">77</a> of file <a class="el" href="sitkComplexToImaginaryImageFilter_8h_source.html">sitkComplexToImaginaryImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkComplexToImaginaryImageFilter_8h_source.html#l00080">80</a> of file <a class="el" href="sitkComplexToImaginaryImageFilter_8h_source.html">sitkComplexToImaginaryImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -571,7 +617,7 @@ template&lt;class TImageType &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Apr 7 2020 03:21:32 for SimpleITK by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Apr 14 2020 02:53:26 for SimpleITK by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

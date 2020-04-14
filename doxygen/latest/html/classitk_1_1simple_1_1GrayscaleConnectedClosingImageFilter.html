@@ -19,7 +19,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">SimpleITK
-   &#160;<span id="projectnumber">2.0.0rc1.post73</span>
+   &#160;<span id="projectnumber">2.0.0rc1.post121</span>
    </div>
   </td>
  </tr>
@@ -216,11 +216,11 @@ Private Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
-<tr class="memitem:a04dc0ab1b1fc0c8d37ea099678b429bb"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1GrayscaleConnectedClosingImageFilter.html#a04dc0ab1b1fc0c8d37ea099678b429bb">m_FullyConnected</a></td></tr>
+<tr class="memitem:a04dc0ab1b1fc0c8d37ea099678b429bb"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1GrayscaleConnectedClosingImageFilter.html#a04dc0ab1b1fc0c8d37ea099678b429bb">m_FullyConnected</a> {false}</td></tr>
 <tr class="separator:a04dc0ab1b1fc0c8d37ea099678b429bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af2a7a65f9b9aea45b83f44012f130ca1"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="classitk_1_1simple_1_1detail_1_1MemberFunctionFactory.html">detail::MemberFunctionFactory</a>&lt; <a class="el" href="classitk_1_1simple_1_1GrayscaleConnectedClosingImageFilter.html#ac1bd3551af07a62efb4e2bdd204366ba">MemberFunctionType</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1GrayscaleConnectedClosingImageFilter.html#af2a7a65f9b9aea45b83f44012f130ca1">m_MemberFactory</a></td></tr>
 <tr class="separator:af2a7a65f9b9aea45b83f44012f130ca1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a91bd0dff348bcdeeae4e0846127c42d9"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="elRef" href="https://www.itk.org/Doxygen/html/namespaceitk.html#a575b8e3e1ee797dd1bbaf9724ed68f92">uint32_t</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1GrayscaleConnectedClosingImageFilter.html#a91bd0dff348bcdeeae4e0846127c42d9">m_Seed</a></td></tr>
+<tr class="memitem:a91bd0dff348bcdeeae4e0846127c42d9"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="elRef" href="https://www.itk.org/Doxygen/html/namespaceitk.html#a575b8e3e1ee797dd1bbaf9724ed68f92">uint32_t</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1GrayscaleConnectedClosingImageFilter.html#a91bd0dff348bcdeeae4e0846127c42d9">m_Seed</a> {std::vector&lt;<a class="elRef" href="https://www.itk.org/Doxygen/html/namespaceitk.html#a575b8e3e1ee797dd1bbaf9724ed68f92">uint32_t</a>&gt;(3, 0)}</td></tr>
 <tr class="separator:a91bd0dff348bcdeeae4e0846127c42d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
@@ -351,7 +351,7 @@ Analysis: Principles and Applications", Second Edition, Springer, 2003.</p>
 </div><div class="memdoc">
 <p>Setup for member function dispatching </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkGrayscaleConnectedClosingImageFilter_8h_source.html#l00103">103</a> of file <a class="el" href="sitkGrayscaleConnectedClosingImageFilter_8h_source.html">sitkGrayscaleConnectedClosingImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkGrayscaleConnectedClosingImageFilter_8h_source.html#l00104">104</a> of file <a class="el" href="sitkGrayscaleConnectedClosingImageFilter_8h_source.html">sitkGrayscaleConnectedClosingImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -729,7 +729,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkGrayscaleConnectedClosingImageFilter_8h_source.html#l00107">107</a> of file <a class="el" href="sitkGrayscaleConnectedClosingImageFilter_8h_source.html">sitkGrayscaleConnectedClosingImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkGrayscaleConnectedClosingImageFilter_8h_source.html#l00108">108</a> of file <a class="el" href="sitkGrayscaleConnectedClosingImageFilter_8h_source.html">sitkGrayscaleConnectedClosingImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -744,7 +744,7 @@ template&lt;class TImageType &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">bool itk::simple::GrayscaleConnectedClosingImageFilter::m_FullyConnected</td>
+          <td class="memname">bool itk::simple::GrayscaleConnectedClosingImageFilter::m_FullyConnected {false}</td>
         </tr>
       </table>
   </td>
@@ -754,7 +754,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkGrayscaleConnectedClosingImageFilter_8h_source.html#l00113">113</a> of file <a class="el" href="sitkGrayscaleConnectedClosingImageFilter_8h_source.html">sitkGrayscaleConnectedClosingImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkGrayscaleConnectedClosingImageFilter_8h_source.html#l00115">115</a> of file <a class="el" href="sitkGrayscaleConnectedClosingImageFilter_8h_source.html">sitkGrayscaleConnectedClosingImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -778,7 +778,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkGrayscaleConnectedClosingImageFilter_8h_source.html#l00109">109</a> of file <a class="el" href="sitkGrayscaleConnectedClosingImageFilter_8h_source.html">sitkGrayscaleConnectedClosingImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkGrayscaleConnectedClosingImageFilter_8h_source.html#l00110">110</a> of file <a class="el" href="sitkGrayscaleConnectedClosingImageFilter_8h_source.html">sitkGrayscaleConnectedClosingImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -792,7 +792,7 @@ template&lt;class TImageType &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::vector&lt;<a class="elRef" href="https://www.itk.org/Doxygen/html/namespaceitk.html#a575b8e3e1ee797dd1bbaf9724ed68f92">uint32_t</a>&gt; itk::simple::GrayscaleConnectedClosingImageFilter::m_Seed</td>
+          <td class="memname">std::vector&lt;<a class="elRef" href="https://www.itk.org/Doxygen/html/namespaceitk.html#a575b8e3e1ee797dd1bbaf9724ed68f92">uint32_t</a>&gt; itk::simple::GrayscaleConnectedClosingImageFilter::m_Seed {std::vector&lt;<a class="elRef" href="https://www.itk.org/Doxygen/html/namespaceitk.html#a575b8e3e1ee797dd1bbaf9724ed68f92">uint32_t</a>&gt;(3, 0)}</td>
         </tr>
       </table>
   </td>
@@ -802,7 +802,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkGrayscaleConnectedClosingImageFilter_8h_source.html#l00112">112</a> of file <a class="el" href="sitkGrayscaleConnectedClosingImageFilter_8h_source.html">sitkGrayscaleConnectedClosingImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkGrayscaleConnectedClosingImageFilter_8h_source.html#l00113">113</a> of file <a class="el" href="sitkGrayscaleConnectedClosingImageFilter_8h_source.html">sitkGrayscaleConnectedClosingImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -812,7 +812,7 @@ template&lt;class TImageType &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Apr 7 2020 03:21:35 for SimpleITK by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Apr 14 2020 02:53:28 for SimpleITK by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

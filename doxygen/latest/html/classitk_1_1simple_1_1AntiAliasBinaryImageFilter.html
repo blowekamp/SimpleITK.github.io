@@ -19,7 +19,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">SimpleITK
-   &#160;<span id="projectnumber">2.0.0rc1.post73</span>
+   &#160;<span id="projectnumber">2.0.0rc1.post121</span>
    </div>
   </td>
  </tr>
@@ -144,6 +144,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a4cbc8c91975e6eeba1b56286899967dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6e650d05dd7ba0164d64ce86374acd32"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classitk_1_1simple_1_1Image.html">Image</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1AntiAliasBinaryImageFilter.html#a6e650d05dd7ba0164d64ce86374acd32">Execute</a> (const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> &amp;image1)</td></tr>
 <tr class="separator:a6e650d05dd7ba0164d64ce86374acd32"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a72488855eb1eded7fb3333caa4a95be6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classitk_1_1simple_1_1Image.html">Image</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1AntiAliasBinaryImageFilter.html#a72488855eb1eded7fb3333caa4a95be6">Execute</a> (<a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> &amp;&amp;image1)</td></tr>
+<tr class="separator:a72488855eb1eded7fb3333caa4a95be6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a814f76fdd96336d2bc06dd6630650f5b"><td class="memItemLeft" align="right" valign="top"><a class="elRef" href="https://www.itk.org/Doxygen/html/namespaceitk.html#a575b8e3e1ee797dd1bbaf9724ed68f92">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1AntiAliasBinaryImageFilter.html#a814f76fdd96336d2bc06dd6630650f5b">GetElapsedIterations</a> () const</td></tr>
 <tr class="memdesc:a814f76fdd96336d2bc06dd6630650f5b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Number of iterations run.  <a href="classitk_1_1simple_1_1AntiAliasBinaryImageFilter.html#a814f76fdd96336d2bc06dd6630650f5b">More...</a><br /></td></tr>
 <tr class="separator:a814f76fdd96336d2bc06dd6630650f5b"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -217,15 +219,17 @@ Private Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
-<tr class="memitem:a6d02b10165c40306250d86cf47bcfbb6"><td class="memItemLeft" align="right" valign="top"><a class="elRef" href="https://www.itk.org/Doxygen/html/namespaceitk.html#a575b8e3e1ee797dd1bbaf9724ed68f92">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1AntiAliasBinaryImageFilter.html#a6d02b10165c40306250d86cf47bcfbb6">m_ElapsedIterations</a></td></tr>
+<tr class="memitem:a6d02b10165c40306250d86cf47bcfbb6"><td class="memItemLeft" align="right" valign="top"><a class="elRef" href="https://www.itk.org/Doxygen/html/namespaceitk.html#a575b8e3e1ee797dd1bbaf9724ed68f92">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1AntiAliasBinaryImageFilter.html#a6d02b10165c40306250d86cf47bcfbb6">m_ElapsedIterations</a> {0}</td></tr>
 <tr class="separator:a6d02b10165c40306250d86cf47bcfbb6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aad84ed4b1e1558e053a3ce18760315e7"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1AntiAliasBinaryImageFilter.html#aad84ed4b1e1558e053a3ce18760315e7">m_MaximumRMSError</a></td></tr>
+<tr class="memitem:a6e3a255bc31d67b482bcef19f12803e5"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1AntiAliasBinaryImageFilter.html#a6e3a255bc31d67b482bcef19f12803e5">m_InPlace</a> {false}</td></tr>
+<tr class="separator:a6e3a255bc31d67b482bcef19f12803e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aad84ed4b1e1558e053a3ce18760315e7"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1AntiAliasBinaryImageFilter.html#aad84ed4b1e1558e053a3ce18760315e7">m_MaximumRMSError</a> {0.07}</td></tr>
 <tr class="separator:aad84ed4b1e1558e053a3ce18760315e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a53bef5e122909ea51fbb54eab0916966"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="classitk_1_1simple_1_1detail_1_1MemberFunctionFactory.html">detail::MemberFunctionFactory</a>&lt; <a class="el" href="classitk_1_1simple_1_1AntiAliasBinaryImageFilter.html#a3a0fd375737377ada440bbaba2cf04ae">MemberFunctionType</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1AntiAliasBinaryImageFilter.html#a53bef5e122909ea51fbb54eab0916966">m_MemberFactory</a></td></tr>
 <tr class="separator:a53bef5e122909ea51fbb54eab0916966"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa1f8bcee56ea8a6cc68533453c3d4242"><td class="memItemLeft" align="right" valign="top"><a class="elRef" href="https://www.itk.org/Doxygen/html/namespaceitk.html#a575b8e3e1ee797dd1bbaf9724ed68f92">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1AntiAliasBinaryImageFilter.html#aa1f8bcee56ea8a6cc68533453c3d4242">m_NumberOfIterations</a></td></tr>
+<tr class="memitem:aa1f8bcee56ea8a6cc68533453c3d4242"><td class="memItemLeft" align="right" valign="top"><a class="elRef" href="https://www.itk.org/Doxygen/html/namespaceitk.html#a575b8e3e1ee797dd1bbaf9724ed68f92">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1AntiAliasBinaryImageFilter.html#aa1f8bcee56ea8a6cc68533453c3d4242">m_NumberOfIterations</a> {1000u}</td></tr>
 <tr class="separator:aa1f8bcee56ea8a6cc68533453c3d4242"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1f3d28d092e60a2c5db7e397464496e0"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1AntiAliasBinaryImageFilter.html#a1f3d28d092e60a2c5db7e397464496e0">m_RMSChange</a></td></tr>
+<tr class="memitem:a1f3d28d092e60a2c5db7e397464496e0"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1AntiAliasBinaryImageFilter.html#a1f3d28d092e60a2c5db7e397464496e0">m_RMSChange</a> {0.0}</td></tr>
 <tr class="separator:a1f3d28d092e60a2c5db7e397464496e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
@@ -339,7 +343,7 @@ Volumes" IEEE Volume Visualization and Graphics Symposium, October 2000, pp.23-3
 <dl class="section user"><dt>IMPORTANT!</dt><dd>The output image type you use to instantiate this filter should be a real valued scalar type. In other words: doubles or floats.</dd></dl>
 <dl class="section user"><dt>USING THIS FILTER</dt><dd>The filter is relatively straightforward to use. Tests and examples exist to illustrate. The important thing is to understand the input and output types so you can properly interpret your results.</dd></dl>
 <dl class="section user"><dt></dt><dd>In the common case, the only parameter that will need to be set is the MaximumRMSChange parameter, which determines when the solver halts. </dd></dl>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="namespaceitk_1_1simple.html#ae284c4d282b0d1c37a7c3e35ea42447f" title="A method for estimation of a surface from a binary volume.">itk::simple::AntiAliasBinary</a> for the procedural interface </dd>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="namespaceitk_1_1simple.html#a13fe5d2ad19c55c4ac54edb1d279aee5" title="A method for estimation of a surface from a binary volume.">itk::simple::AntiAliasBinary</a> for the procedural interface </dd>
 <dd>
 <a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1AntiAliasBinaryImageFilter.html">itk::AntiAliasBinaryImageFilter</a> for the Doxygen on the original ITK class. </dd></dl>
 
@@ -366,7 +370,7 @@ Volumes" IEEE Volume Visualization and Graphics Symposium, October 2000, pp.23-3
 </div><div class="memdoc">
 <p>Setup for member function dispatching </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkAntiAliasBinaryImageFilter_8h_source.html#l00153">153</a> of file <a class="el" href="sitkAntiAliasBinaryImageFilter_8h_source.html">sitkAntiAliasBinaryImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkAntiAliasBinaryImageFilter_8h_source.html#l00156">156</a> of file <a class="el" href="sitkAntiAliasBinaryImageFilter_8h_source.html">sitkAntiAliasBinaryImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -450,7 +454,7 @@ Volumes" IEEE Volume Visualization and Graphics Symposium, October 2000, pp.23-3
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
 <a id="a6e650d05dd7ba0164d64ce86374acd32"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6e650d05dd7ba0164d64ce86374acd32">&#9670;&nbsp;</a></span>Execute()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a6e650d05dd7ba0164d64ce86374acd32">&#9670;&nbsp;</a></span>Execute() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -459,6 +463,24 @@ Volumes" IEEE Volume Visualization and Graphics Symposium, October 2000, pp.23-3
           <td class="memname"><a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> itk::simple::AntiAliasBinaryImageFilter::Execute </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> &amp;&#160;</td>
+          <td class="paramname"><em>image1</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a72488855eb1eded7fb3333caa4a95be6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a72488855eb1eded7fb3333caa4a95be6">&#9670;&nbsp;</a></span>Execute() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> itk::simple::AntiAliasBinaryImageFilter::Execute </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> &amp;&amp;&#160;</td>
           <td class="paramname"><em>image1</em></td><td>)</td>
           <td></td>
         </tr>
@@ -745,7 +767,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkAntiAliasBinaryImageFilter_8h_source.html#l00157">157</a> of file <a class="el" href="sitkAntiAliasBinaryImageFilter_8h_source.html">sitkAntiAliasBinaryImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkAntiAliasBinaryImageFilter_8h_source.html#l00160">160</a> of file <a class="el" href="sitkAntiAliasBinaryImageFilter_8h_source.html">sitkAntiAliasBinaryImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -760,7 +782,7 @@ template&lt;class TImageType &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="elRef" href="https://www.itk.org/Doxygen/html/namespaceitk.html#a575b8e3e1ee797dd1bbaf9724ed68f92">uint32_t</a> itk::simple::AntiAliasBinaryImageFilter::m_ElapsedIterations</td>
+          <td class="memname"><a class="elRef" href="https://www.itk.org/Doxygen/html/namespaceitk.html#a575b8e3e1ee797dd1bbaf9724ed68f92">uint32_t</a> itk::simple::AntiAliasBinaryImageFilter::m_ElapsedIterations {0}</td>
         </tr>
       </table>
   </td>
@@ -770,7 +792,31 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkAntiAliasBinaryImageFilter_8h_source.html#l00167">167</a> of file <a class="el" href="sitkAntiAliasBinaryImageFilter_8h_source.html">sitkAntiAliasBinaryImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkAntiAliasBinaryImageFilter_8h_source.html#l00172">172</a> of file <a class="el" href="sitkAntiAliasBinaryImageFilter_8h_source.html">sitkAntiAliasBinaryImageFilter.h</a>.</p>
+
+</div>
+</div>
+<a id="a6e3a255bc31d67b482bcef19f12803e5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6e3a255bc31d67b482bcef19f12803e5">&#9670;&nbsp;</a></span>m_InPlace</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool itk::simple::AntiAliasBinaryImageFilter::m_InPlace {false}</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="sitkAntiAliasBinaryImageFilter_8h_source.html#l00177">177</a> of file <a class="el" href="sitkAntiAliasBinaryImageFilter_8h_source.html">sitkAntiAliasBinaryImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -784,7 +830,7 @@ template&lt;class TImageType &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">double itk::simple::AntiAliasBinaryImageFilter::m_MaximumRMSError</td>
+          <td class="memname">double itk::simple::AntiAliasBinaryImageFilter::m_MaximumRMSError {0.07}</td>
         </tr>
       </table>
   </td>
@@ -794,7 +840,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkAntiAliasBinaryImageFilter_8h_source.html#l00163">163</a> of file <a class="el" href="sitkAntiAliasBinaryImageFilter_8h_source.html">sitkAntiAliasBinaryImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkAntiAliasBinaryImageFilter_8h_source.html#l00166">166</a> of file <a class="el" href="sitkAntiAliasBinaryImageFilter_8h_source.html">sitkAntiAliasBinaryImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -818,7 +864,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkAntiAliasBinaryImageFilter_8h_source.html#l00159">159</a> of file <a class="el" href="sitkAntiAliasBinaryImageFilter_8h_source.html">sitkAntiAliasBinaryImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkAntiAliasBinaryImageFilter_8h_source.html#l00162">162</a> of file <a class="el" href="sitkAntiAliasBinaryImageFilter_8h_source.html">sitkAntiAliasBinaryImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -832,31 +878,7 @@ template&lt;class TImageType &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="elRef" href="https://www.itk.org/Doxygen/html/namespaceitk.html#a575b8e3e1ee797dd1bbaf9724ed68f92">uint32_t</a> itk::simple::AntiAliasBinaryImageFilter::m_NumberOfIterations</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="sitkAntiAliasBinaryImageFilter_8h_source.html#l00165">165</a> of file <a class="el" href="sitkAntiAliasBinaryImageFilter_8h_source.html">sitkAntiAliasBinaryImageFilter.h</a>.</p>
-
-</div>
-</div>
-<a id="a1f3d28d092e60a2c5db7e397464496e0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1f3d28d092e60a2c5db7e397464496e0">&#9670;&nbsp;</a></span>m_RMSChange</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">double itk::simple::AntiAliasBinaryImageFilter::m_RMSChange</td>
+          <td class="memname"><a class="elRef" href="https://www.itk.org/Doxygen/html/namespaceitk.html#a575b8e3e1ee797dd1bbaf9724ed68f92">uint32_t</a> itk::simple::AntiAliasBinaryImageFilter::m_NumberOfIterations {1000u}</td>
         </tr>
       </table>
   </td>
@@ -870,13 +892,37 @@ template&lt;class TImageType &gt; </div>
 
 </div>
 </div>
+<a id="a1f3d28d092e60a2c5db7e397464496e0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1f3d28d092e60a2c5db7e397464496e0">&#9670;&nbsp;</a></span>m_RMSChange</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double itk::simple::AntiAliasBinaryImageFilter::m_RMSChange {0.0}</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="sitkAntiAliasBinaryImageFilter_8h_source.html#l00174">174</a> of file <a class="el" href="sitkAntiAliasBinaryImageFilter_8h_source.html">sitkAntiAliasBinaryImageFilter.h</a>.</p>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li><a class="el" href="sitkAntiAliasBinaryImageFilter_8h_source.html">sitkAntiAliasBinaryImageFilter.h</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Apr 7 2020 03:21:31 for SimpleITK by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Apr 14 2020 02:53:24 for SimpleITK by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

@@ -19,7 +19,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">SimpleITK
-   &#160;<span id="projectnumber">2.0.0rc1.post73</span>
+   &#160;<span id="projectnumber">2.0.0rc1.post121</span>
    </div>
   </td>
  </tr>
@@ -228,15 +228,15 @@ Private Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
-<tr class="memitem:a23dc0ecef3732cb7ccee780f492210e5"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1SignedDanielssonDistanceMapImageFilter.html#a23dc0ecef3732cb7ccee780f492210e5">m_InsideIsPositive</a></td></tr>
+<tr class="memitem:a23dc0ecef3732cb7ccee780f492210e5"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1SignedDanielssonDistanceMapImageFilter.html#a23dc0ecef3732cb7ccee780f492210e5">m_InsideIsPositive</a> {false}</td></tr>
 <tr class="separator:a23dc0ecef3732cb7ccee780f492210e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7ead125ad1cbb6efdeadc7d513f4ae14"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="classitk_1_1simple_1_1detail_1_1MemberFunctionFactory.html">detail::MemberFunctionFactory</a>&lt; <a class="el" href="classitk_1_1simple_1_1SignedDanielssonDistanceMapImageFilter.html#ae0fc51222290dd9e43465b980f612258">MemberFunctionType</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1SignedDanielssonDistanceMapImageFilter.html#a7ead125ad1cbb6efdeadc7d513f4ae14">m_MemberFactory</a></td></tr>
 <tr class="separator:a7ead125ad1cbb6efdeadc7d513f4ae14"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a75863ef614640b82fe9b391665578ba2"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1SignedDanielssonDistanceMapImageFilter.html#a75863ef614640b82fe9b391665578ba2">m_SquaredDistance</a></td></tr>
+<tr class="memitem:a75863ef614640b82fe9b391665578ba2"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1SignedDanielssonDistanceMapImageFilter.html#a75863ef614640b82fe9b391665578ba2">m_SquaredDistance</a> {false}</td></tr>
 <tr class="separator:a75863ef614640b82fe9b391665578ba2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae54c97c5069cad48b4ee5e448977f90f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1SignedDanielssonDistanceMapImageFilter.html#ae54c97c5069cad48b4ee5e448977f90f">m_UseImageSpacing</a></td></tr>
+<tr class="memitem:ae54c97c5069cad48b4ee5e448977f90f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1SignedDanielssonDistanceMapImageFilter.html#ae54c97c5069cad48b4ee5e448977f90f">m_UseImageSpacing</a> {false}</td></tr>
 <tr class="separator:ae54c97c5069cad48b4ee5e448977f90f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8a33cd7972eab05f2e6c9e6231e4fa50"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classitk_1_1simple_1_1Image.html">Image</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1SignedDanielssonDistanceMapImageFilter.html#a8a33cd7972eab05f2e6c9e6231e4fa50">m_VoronoiMap</a></td></tr>
+<tr class="memitem:a8a33cd7972eab05f2e6c9e6231e4fa50"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classitk_1_1simple_1_1Image.html">Image</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1SignedDanielssonDistanceMapImageFilter.html#a8a33cd7972eab05f2e6c9e6231e4fa50">m_VoronoiMap</a> {<a class="el" href="classitk_1_1simple_1_1Image.html">Image</a>()}</td></tr>
 <tr class="separator:a8a33cd7972eab05f2e6c9e6231e4fa50"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
@@ -377,7 +377,7 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 <p>Setup for member function dispatching </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkSignedDanielssonDistanceMapImageFilter_8h_source.html#l00144">144</a> of file <a class="el" href="sitkSignedDanielssonDistanceMapImageFilter_8h_source.html">sitkSignedDanielssonDistanceMapImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkSignedDanielssonDistanceMapImageFilter_8h_source.html#l00145">145</a> of file <a class="el" href="sitkSignedDanielssonDistanceMapImageFilter_8h_source.html">sitkSignedDanielssonDistanceMapImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -951,7 +951,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkSignedDanielssonDistanceMapImageFilter_8h_source.html#l00148">148</a> of file <a class="el" href="sitkSignedDanielssonDistanceMapImageFilter_8h_source.html">sitkSignedDanielssonDistanceMapImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkSignedDanielssonDistanceMapImageFilter_8h_source.html#l00149">149</a> of file <a class="el" href="sitkSignedDanielssonDistanceMapImageFilter_8h_source.html">sitkSignedDanielssonDistanceMapImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -966,7 +966,7 @@ template&lt;class TImageType &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">bool itk::simple::SignedDanielssonDistanceMapImageFilter::m_InsideIsPositive</td>
+          <td class="memname">bool itk::simple::SignedDanielssonDistanceMapImageFilter::m_InsideIsPositive {false}</td>
         </tr>
       </table>
   </td>
@@ -976,7 +976,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkSignedDanielssonDistanceMapImageFilter_8h_source.html#l00153">153</a> of file <a class="el" href="sitkSignedDanielssonDistanceMapImageFilter_8h_source.html">sitkSignedDanielssonDistanceMapImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkSignedDanielssonDistanceMapImageFilter_8h_source.html#l00154">154</a> of file <a class="el" href="sitkSignedDanielssonDistanceMapImageFilter_8h_source.html">sitkSignedDanielssonDistanceMapImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -1000,7 +1000,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkSignedDanielssonDistanceMapImageFilter_8h_source.html#l00150">150</a> of file <a class="el" href="sitkSignedDanielssonDistanceMapImageFilter_8h_source.html">sitkSignedDanielssonDistanceMapImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkSignedDanielssonDistanceMapImageFilter_8h_source.html#l00151">151</a> of file <a class="el" href="sitkSignedDanielssonDistanceMapImageFilter_8h_source.html">sitkSignedDanielssonDistanceMapImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -1014,7 +1014,7 @@ template&lt;class TImageType &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">bool itk::simple::SignedDanielssonDistanceMapImageFilter::m_SquaredDistance</td>
+          <td class="memname">bool itk::simple::SignedDanielssonDistanceMapImageFilter::m_SquaredDistance {false}</td>
         </tr>
       </table>
   </td>
@@ -1024,7 +1024,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkSignedDanielssonDistanceMapImageFilter_8h_source.html#l00154">154</a> of file <a class="el" href="sitkSignedDanielssonDistanceMapImageFilter_8h_source.html">sitkSignedDanielssonDistanceMapImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkSignedDanielssonDistanceMapImageFilter_8h_source.html#l00156">156</a> of file <a class="el" href="sitkSignedDanielssonDistanceMapImageFilter_8h_source.html">sitkSignedDanielssonDistanceMapImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -1038,7 +1038,7 @@ template&lt;class TImageType &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">bool itk::simple::SignedDanielssonDistanceMapImageFilter::m_UseImageSpacing</td>
+          <td class="memname">bool itk::simple::SignedDanielssonDistanceMapImageFilter::m_UseImageSpacing {false}</td>
         </tr>
       </table>
   </td>
@@ -1048,7 +1048,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkSignedDanielssonDistanceMapImageFilter_8h_source.html#l00155">155</a> of file <a class="el" href="sitkSignedDanielssonDistanceMapImageFilter_8h_source.html">sitkSignedDanielssonDistanceMapImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkSignedDanielssonDistanceMapImageFilter_8h_source.html#l00158">158</a> of file <a class="el" href="sitkSignedDanielssonDistanceMapImageFilter_8h_source.html">sitkSignedDanielssonDistanceMapImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -1062,7 +1062,7 @@ template&lt;class TImageType &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> itk::simple::SignedDanielssonDistanceMapImageFilter::m_VoronoiMap</td>
+          <td class="memname"><a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> itk::simple::SignedDanielssonDistanceMapImageFilter::m_VoronoiMap {<a class="el" href="classitk_1_1simple_1_1Image.html">Image</a>()}</td>
         </tr>
       </table>
   </td>
@@ -1072,7 +1072,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkSignedDanielssonDistanceMapImageFilter_8h_source.html#l00157">157</a> of file <a class="el" href="sitkSignedDanielssonDistanceMapImageFilter_8h_source.html">sitkSignedDanielssonDistanceMapImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkSignedDanielssonDistanceMapImageFilter_8h_source.html#l00161">161</a> of file <a class="el" href="sitkSignedDanielssonDistanceMapImageFilter_8h_source.html">sitkSignedDanielssonDistanceMapImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -1082,7 +1082,7 @@ template&lt;class TImageType &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Apr 7 2020 03:21:39 for SimpleITK by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Apr 14 2020 02:53:33 for SimpleITK by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

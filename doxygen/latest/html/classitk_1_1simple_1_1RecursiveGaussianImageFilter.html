@@ -19,7 +19,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">SimpleITK
-   &#160;<span id="projectnumber">2.0.0rc1.post73</span>
+   &#160;<span id="projectnumber">2.0.0rc1.post121</span>
    </div>
   </td>
  </tr>
@@ -151,6 +151,8 @@ Public Types</h2></td></tr>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a6b390f933b70a224c2b10034112e7046"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classitk_1_1simple_1_1Image.html">Image</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1RecursiveGaussianImageFilter.html#a6b390f933b70a224c2b10034112e7046">Execute</a> (const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> &amp;image1)</td></tr>
 <tr class="separator:a6b390f933b70a224c2b10034112e7046"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0a36ae65fa32e6c44ac86e23e107d540"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classitk_1_1simple_1_1Image.html">Image</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1RecursiveGaussianImageFilter.html#a0a36ae65fa32e6c44ac86e23e107d540">Execute</a> (<a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> &amp;&amp;image1)</td></tr>
+<tr class="separator:a0a36ae65fa32e6c44ac86e23e107d540"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a211352937034e016598ee5e329b1a143"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1RecursiveGaussianImageFilter.html#a211352937034e016598ee5e329b1a143">GetDirection</a> () const</td></tr>
 <tr class="separator:a211352937034e016598ee5e329b1a143"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a87f21de70dad0bcc84791029f5c539d2"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1RecursiveGaussianImageFilter.html#a87f21de70dad0bcc84791029f5c539d2">GetName</a> () const</td></tr>
@@ -232,15 +234,17 @@ Private Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
-<tr class="memitem:aebdabe2a8633b875ba5f05f5f05a2884"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1RecursiveGaussianImageFilter.html#aebdabe2a8633b875ba5f05f5f05a2884">m_Direction</a></td></tr>
+<tr class="memitem:aebdabe2a8633b875ba5f05f5f05a2884"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1RecursiveGaussianImageFilter.html#aebdabe2a8633b875ba5f05f5f05a2884">m_Direction</a> {0u}</td></tr>
 <tr class="separator:aebdabe2a8633b875ba5f05f5f05a2884"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac7fdb58ad2904ca7b8ff4d06bbe10748"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1RecursiveGaussianImageFilter.html#ac7fdb58ad2904ca7b8ff4d06bbe10748">m_InPlace</a> {false}</td></tr>
+<tr class="separator:ac7fdb58ad2904ca7b8ff4d06bbe10748"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acff84472dd186ddb5f50bde1efdd1361"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="classitk_1_1simple_1_1detail_1_1MemberFunctionFactory.html">detail::MemberFunctionFactory</a>&lt; <a class="el" href="classitk_1_1simple_1_1RecursiveGaussianImageFilter.html#a3e3c020fd39712de7155d4c33332fc38">MemberFunctionType</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1RecursiveGaussianImageFilter.html#acff84472dd186ddb5f50bde1efdd1361">m_MemberFactory</a></td></tr>
 <tr class="separator:acff84472dd186ddb5f50bde1efdd1361"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a69c27e61501357ca52bf26e115b4aba7"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1RecursiveGaussianImageFilter.html#a69c27e61501357ca52bf26e115b4aba7">m_NormalizeAcrossScale</a></td></tr>
+<tr class="memitem:a69c27e61501357ca52bf26e115b4aba7"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1RecursiveGaussianImageFilter.html#a69c27e61501357ca52bf26e115b4aba7">m_NormalizeAcrossScale</a> {false}</td></tr>
 <tr class="separator:a69c27e61501357ca52bf26e115b4aba7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a525285d6ac43fc493145eda00042fb1a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classitk_1_1simple_1_1RecursiveGaussianImageFilter.html#a2581d78ff6ffc9a672aecc6e49b3c1e8">OrderType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1RecursiveGaussianImageFilter.html#a525285d6ac43fc493145eda00042fb1a">m_Order</a></td></tr>
+<tr class="memitem:a525285d6ac43fc493145eda00042fb1a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classitk_1_1simple_1_1RecursiveGaussianImageFilter.html#a2581d78ff6ffc9a672aecc6e49b3c1e8">OrderType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1RecursiveGaussianImageFilter.html#a525285d6ac43fc493145eda00042fb1a">m_Order</a> {<a class="el" href="classitk_1_1simple_1_1RecursiveGaussianImageFilter.html#a2581d78ff6ffc9a672aecc6e49b3c1e8a31d4e702f58b06879344cd83f9c26ef1">itk::simple::RecursiveGaussianImageFilter::ZeroOrder</a>}</td></tr>
 <tr class="separator:a525285d6ac43fc493145eda00042fb1a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a14f20d97a3f62fcc6adcb4388bf06f13"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1RecursiveGaussianImageFilter.html#a14f20d97a3f62fcc6adcb4388bf06f13">m_Sigma</a></td></tr>
+<tr class="memitem:a14f20d97a3f62fcc6adcb4388bf06f13"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1RecursiveGaussianImageFilter.html#a14f20d97a3f62fcc6adcb4388bf06f13">m_Sigma</a> {1.0}</td></tr>
 <tr class="separator:a14f20d97a3f62fcc6adcb4388bf06f13"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
@@ -347,7 +351,7 @@ Additional Inherited Members</h2></td></tr>
 <p>As compared to <a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1DiscreteGaussianImageFilter.html">itk::DiscreteGaussianImageFilter</a> , this filter tends to be faster for large kernels, and it can take the derivative of the blurred image in one step. Also, note that we have <a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1RecursiveGaussianImageFilter.html#a4eb60805326e6ee3815c0872d1fc9d6e">itk::RecursiveGaussianImageFilter::SetSigma()</a> , but <a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1DiscreteGaussianImageFilter.html#af01b5c4a3c6f340332b0ae1e639cda82">itk::DiscreteGaussianImageFilter::SetVariance()</a> .</p>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="classitk_1_1simple_1_1DiscreteGaussianImageFilter.html" title="Blurs an image by separable convolution with discrete gaussian kernels. This filter performs Gaussian...">DiscreteGaussianImageFilter</a> </dd>
 <dd>
-<a class="el" href="namespaceitk_1_1simple.html#a14a1d8698de4ae57531146c512544fd8" title="Base class for computing IIR convolution with an approximation of a Gaussian kernel.">itk::simple::RecursiveGaussian</a> for the procedural interface </dd>
+<a class="el" href="namespaceitk_1_1simple.html#a0e9c0db5f951189ea71f388e1744adc2" title="Base class for computing IIR convolution with an approximation of a Gaussian kernel.">itk::simple::RecursiveGaussian</a> for the procedural interface </dd>
 <dd>
 <a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1RecursiveGaussianImageFilter.html">itk::RecursiveGaussianImageFilter</a> for the Doxygen on the original ITK class. </dd></dl>
 
@@ -374,7 +378,7 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 <p>Setup for member function dispatching </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkRecursiveGaussianImageFilter_8h_source.html#l00153">153</a> of file <a class="el" href="sitkRecursiveGaussianImageFilter_8h_source.html">sitkRecursiveGaussianImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkRecursiveGaussianImageFilter_8h_source.html#l00156">156</a> of file <a class="el" href="sitkRecursiveGaussianImageFilter_8h_source.html">sitkRecursiveGaussianImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -480,7 +484,7 @@ Additional Inherited Members</h2></td></tr>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
 <a id="a6b390f933b70a224c2b10034112e7046"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6b390f933b70a224c2b10034112e7046">&#9670;&nbsp;</a></span>Execute()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a6b390f933b70a224c2b10034112e7046">&#9670;&nbsp;</a></span>Execute() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -489,6 +493,24 @@ Additional Inherited Members</h2></td></tr>
           <td class="memname"><a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> itk::simple::RecursiveGaussianImageFilter::Execute </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> &amp;&#160;</td>
+          <td class="paramname"><em>image1</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a0a36ae65fa32e6c44ac86e23e107d540"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0a36ae65fa32e6c44ac86e23e107d540">&#9670;&nbsp;</a></span>Execute() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> itk::simple::RecursiveGaussianImageFilter::Execute </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> &amp;&amp;&#160;</td>
           <td class="paramname"><em>image1</em></td><td>)</td>
           <td></td>
         </tr>
@@ -931,7 +953,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkRecursiveGaussianImageFilter_8h_source.html#l00157">157</a> of file <a class="el" href="sitkRecursiveGaussianImageFilter_8h_source.html">sitkRecursiveGaussianImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkRecursiveGaussianImageFilter_8h_source.html#l00160">160</a> of file <a class="el" href="sitkRecursiveGaussianImageFilter_8h_source.html">sitkRecursiveGaussianImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -946,7 +968,7 @@ template&lt;class TImageType &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">unsigned int itk::simple::RecursiveGaussianImageFilter::m_Direction</td>
+          <td class="memname">unsigned int itk::simple::RecursiveGaussianImageFilter::m_Direction {0u}</td>
         </tr>
       </table>
   </td>
@@ -956,7 +978,31 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkRecursiveGaussianImageFilter_8h_source.html#l00169">169</a> of file <a class="el" href="sitkRecursiveGaussianImageFilter_8h_source.html">sitkRecursiveGaussianImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkRecursiveGaussianImageFilter_8h_source.html#l00175">175</a> of file <a class="el" href="sitkRecursiveGaussianImageFilter_8h_source.html">sitkRecursiveGaussianImageFilter.h</a>.</p>
+
+</div>
+</div>
+<a id="ac7fdb58ad2904ca7b8ff4d06bbe10748"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac7fdb58ad2904ca7b8ff4d06bbe10748">&#9670;&nbsp;</a></span>m_InPlace</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool itk::simple::RecursiveGaussianImageFilter::m_InPlace {false}</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="sitkRecursiveGaussianImageFilter_8h_source.html#l00178">178</a> of file <a class="el" href="sitkRecursiveGaussianImageFilter_8h_source.html">sitkRecursiveGaussianImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -980,7 +1026,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkRecursiveGaussianImageFilter_8h_source.html#l00159">159</a> of file <a class="el" href="sitkRecursiveGaussianImageFilter_8h_source.html">sitkRecursiveGaussianImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkRecursiveGaussianImageFilter_8h_source.html#l00162">162</a> of file <a class="el" href="sitkRecursiveGaussianImageFilter_8h_source.html">sitkRecursiveGaussianImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -994,7 +1040,7 @@ template&lt;class TImageType &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">bool itk::simple::RecursiveGaussianImageFilter::m_NormalizeAcrossScale</td>
+          <td class="memname">bool itk::simple::RecursiveGaussianImageFilter::m_NormalizeAcrossScale {false}</td>
         </tr>
       </table>
   </td>
@@ -1004,7 +1050,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkRecursiveGaussianImageFilter_8h_source.html#l00165">165</a> of file <a class="el" href="sitkRecursiveGaussianImageFilter_8h_source.html">sitkRecursiveGaussianImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkRecursiveGaussianImageFilter_8h_source.html#l00169">169</a> of file <a class="el" href="sitkRecursiveGaussianImageFilter_8h_source.html">sitkRecursiveGaussianImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -1018,7 +1064,7 @@ template&lt;class TImageType &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classitk_1_1simple_1_1RecursiveGaussianImageFilter.html#a2581d78ff6ffc9a672aecc6e49b3c1e8">OrderType</a> itk::simple::RecursiveGaussianImageFilter::m_Order</td>
+          <td class="memname"><a class="el" href="classitk_1_1simple_1_1RecursiveGaussianImageFilter.html#a2581d78ff6ffc9a672aecc6e49b3c1e8">OrderType</a> itk::simple::RecursiveGaussianImageFilter::m_Order {<a class="el" href="classitk_1_1simple_1_1RecursiveGaussianImageFilter.html#a2581d78ff6ffc9a672aecc6e49b3c1e8a31d4e702f58b06879344cd83f9c26ef1">itk::simple::RecursiveGaussianImageFilter::ZeroOrder</a>}</td>
         </tr>
       </table>
   </td>
@@ -1028,7 +1074,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkRecursiveGaussianImageFilter_8h_source.html#l00167">167</a> of file <a class="el" href="sitkRecursiveGaussianImageFilter_8h_source.html">sitkRecursiveGaussianImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkRecursiveGaussianImageFilter_8h_source.html#l00172">172</a> of file <a class="el" href="sitkRecursiveGaussianImageFilter_8h_source.html">sitkRecursiveGaussianImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -1042,7 +1088,7 @@ template&lt;class TImageType &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">double itk::simple::RecursiveGaussianImageFilter::m_Sigma</td>
+          <td class="memname">double itk::simple::RecursiveGaussianImageFilter::m_Sigma {1.0}</td>
         </tr>
       </table>
   </td>
@@ -1052,7 +1098,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkRecursiveGaussianImageFilter_8h_source.html#l00163">163</a> of file <a class="el" href="sitkRecursiveGaussianImageFilter_8h_source.html">sitkRecursiveGaussianImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkRecursiveGaussianImageFilter_8h_source.html#l00166">166</a> of file <a class="el" href="sitkRecursiveGaussianImageFilter_8h_source.html">sitkRecursiveGaussianImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -1062,7 +1108,7 @@ template&lt;class TImageType &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Apr 7 2020 03:21:39 for SimpleITK by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Apr 14 2020 02:53:32 for SimpleITK by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

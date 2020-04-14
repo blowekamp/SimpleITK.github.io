@@ -19,7 +19,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">SimpleITK
-   &#160;<span id="projectnumber">2.0.0rc1.post73</span>
+   &#160;<span id="projectnumber">2.0.0rc1.post121</span>
    </div>
   </td>
  </tr>
@@ -97,26 +97,34 @@ $(function() {
 <div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;      std::string ToString() <span class="keyword">const</span>;</div>
 <div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160; </div>
 <div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160; </div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;      <a class="code" href="classitk_1_1simple_1_1Image.html">Image</a> Execute ( <span class="keyword">const</span> <a class="code" href="classitk_1_1simple_1_1Image.html">Image</a>&amp; image1 );</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160; </div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    <span class="keyword">private</span>:</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160; </div>
-<div class="line"><a name="l00078"></a><span class="lineno"><a class="line" href="classitk_1_1simple_1_1BitwiseNotImageFilter.html#acc7a4ed53511ffc9807341fcb69e4ca6">   78</a></span>&#160;      <span class="keyword">typedef</span> <a class="code" href="classitk_1_1simple_1_1Image.html">Image</a> (<a class="code" href="classitk_1_1simple_1_1ProcessObject.html">Self</a>::*MemberFunctionType)( <span class="keyword">const</span> <a class="code" href="classitk_1_1simple_1_1Image.html">Image</a>&amp; image1 );</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;      <span class="keyword">template</span> &lt;<span class="keyword">class</span> TImageType&gt; <a class="code" href="classitk_1_1simple_1_1Image.html">Image</a> ExecuteInternal ( <span class="keyword">const</span> <a class="code" href="classitk_1_1simple_1_1Image.html">Image</a>&amp; image1 );</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160; </div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160; </div>
-<div class="line"><a name="l00082"></a><span class="lineno"><a class="line" href="classitk_1_1simple_1_1BitwiseNotImageFilter.html#af82f64823e6df0f5b2063b8fc7dd0c26">   82</a></span>&#160;      <span class="keyword">friend</span> <span class="keyword">struct </span><a class="code" href="structitk_1_1simple_1_1detail_1_1MemberFunctionAddressor.html">detail::MemberFunctionAddressor</a>&lt;MemberFunctionType&gt;;</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;<span class="preprocessor">#ifndef SWIG</span></div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;      <a class="code" href="classitk_1_1simple_1_1Image.html">Image</a> Execute ( <a class="code" href="classitk_1_1simple_1_1Image.html">Image</a>&amp;&amp; image1 );</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;      <a class="code" href="classitk_1_1simple_1_1Image.html">Image</a> Execute ( <span class="keyword">const</span> <a class="code" href="classitk_1_1simple_1_1Image.html">Image</a>&amp; image1 );</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160; </div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160; </div>
+<div class="line"><a name="l00081"></a><span class="lineno"><a class="line" href="classitk_1_1simple_1_1BitwiseNotImageFilter.html#acc7a4ed53511ffc9807341fcb69e4ca6">   81</a></span>&#160;      <span class="keyword">typedef</span> <a class="code" href="classitk_1_1simple_1_1Image.html">Image</a> (<a class="code" href="classitk_1_1simple_1_1ProcessObject.html">Self</a>::*MemberFunctionType)( <span class="keyword">const</span> <a class="code" href="classitk_1_1simple_1_1Image.html">Image</a>&amp; image1 );</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;      <span class="keyword">template</span> &lt;<span class="keyword">class</span> TImageType&gt; <a class="code" href="classitk_1_1simple_1_1Image.html">Image</a> ExecuteInternal ( <span class="keyword">const</span> <a class="code" href="classitk_1_1simple_1_1Image.html">Image</a>&amp; image1 );</div>
 <div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160; </div>
-<div class="line"><a name="l00084"></a><span class="lineno"><a class="line" href="classitk_1_1simple_1_1BitwiseNotImageFilter.html#a20f92bde86ece24fd1617e5896dddb1e">   84</a></span>&#160;      std::unique_ptr&lt;detail::MemberFunctionFactory&lt;MemberFunctionType&gt; &gt; <a class="code" href="classitk_1_1simple_1_1BitwiseNotImageFilter.html#a20f92bde86ece24fd1617e5896dddb1e">m_MemberFactory</a>;</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160; </div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160; </div>
+<div class="line"><a name="l00085"></a><span class="lineno"><a class="line" href="classitk_1_1simple_1_1BitwiseNotImageFilter.html#af82f64823e6df0f5b2063b8fc7dd0c26">   85</a></span>&#160;      <span class="keyword">friend</span> <span class="keyword">struct </span><a class="code" href="structitk_1_1simple_1_1detail_1_1MemberFunctionAddressor.html">detail::MemberFunctionAddressor</a>&lt;MemberFunctionType&gt;;</div>
 <div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160; </div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    };</div>
+<div class="line"><a name="l00087"></a><span class="lineno"><a class="line" href="classitk_1_1simple_1_1BitwiseNotImageFilter.html#a20f92bde86ece24fd1617e5896dddb1e">   87</a></span>&#160;      std::unique_ptr&lt;detail::MemberFunctionFactory&lt;MemberFunctionType&gt; &gt; <a class="code" href="classitk_1_1simple_1_1BitwiseNotImageFilter.html#a20f92bde86ece24fd1617e5896dddb1e">m_MemberFactory</a>;</div>
 <div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160; </div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;     <a class="code" href="sitkBasicFilters_8h.html#a8c00663d3a7bae36066e320f83381283">SITKBasicFilters_EXPORT</a> <a class="code" href="classitk_1_1simple_1_1Image.html">Image</a> <a class="code" href="namespaceitk_1_1simple.html#a933e7b645274b9d1c0e31cf56bc852f0">BitwiseNot</a> ( <span class="keyword">const</span> <a class="code" href="classitk_1_1simple_1_1Image.html">Image</a>&amp; image1 );</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160; </div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;  }</div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;}</div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160; </div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160; </div>
+<div class="line"><a name="l00091"></a><span class="lineno"><a class="line" href="classitk_1_1simple_1_1BitwiseNotImageFilter.html#a93d6f7e2ba14c8a9ea7ac07c7ef5f4b8">   91</a></span>&#160;      <span class="keywordtype">bool</span> m_InPlace{<span class="keyword">false</span>};</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    };</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160; </div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;<span class="preprocessor">#ifndef SWIG</span></div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;     <a class="code" href="sitkBasicFilters_8h.html#a8c00663d3a7bae36066e320f83381283">SITKBasicFilters_EXPORT</a> <a class="codeRef" href="https://www.itk.org/Doxygen/html/classitk_1_1Image.html">Image</a> <a class="code" href="namespaceitk_1_1simple.html#a974c9940fabde82323abb08731d9e01d">BitwiseNot</a> ( <a class="codeRef" href="https://www.itk.org/Doxygen/html/classitk_1_1Image.html">Image</a>&amp;&amp; image1 );</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;     <a class="code" href="sitkBasicFilters_8h.html#a8c00663d3a7bae36066e320f83381283">SITKBasicFilters_EXPORT</a> <a class="codeRef" href="https://www.itk.org/Doxygen/html/classitk_1_1Image.html">Image</a> <a class="code" href="namespaceitk_1_1simple.html#a974c9940fabde82323abb08731d9e01d">BitwiseNot</a> ( <span class="keyword">const</span> <a class="codeRef" href="https://www.itk.org/Doxygen/html/classitk_1_1Image.html">Image</a>&amp; image1 );</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160; </div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;  }</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;}</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;<span class="preprocessor">#endif</span></div>
 </div><!-- fragment --></div><!-- contents -->
 <div class="ttc" id="aclassitk_1_1simple_1_1Image_html"><div class="ttname"><a href="classitk_1_1simple_1_1Image.html">itk::simple::Image</a></div><div class="ttdoc">The Image class for SimpleITK.</div><div class="ttdef"><b>Definition:</b> <a href="sitkImage_8h_source.html#l00075">sitkImage.h:75</a></div></div>
 <div class="ttc" id="asitkBasicFilters_8h_html"><div class="ttname"><a href="sitkBasicFilters_8h.html">sitkBasicFilters.h</a></div></div>
@@ -124,18 +132,19 @@ $(function() {
 <div class="ttc" id="aclassitk_1_1simple_1_1BitwiseNotImageFilter_html_a111652fc58ba6821b3861d642a73d7fd"><div class="ttname"><a href="classitk_1_1simple_1_1BitwiseNotImageFilter.html#a111652fc58ba6821b3861d642a73d7fd">itk::simple::BitwiseNotImageFilter::GetName</a></div><div class="ttdeci">std::string GetName() const</div><div class="ttdef"><b>Definition:</b> <a href="sitkBitwiseNotImageFilter_8h_source.html#l00065">sitkBitwiseNotImageFilter.h:65</a></div></div>
 <div class="ttc" id="aclassitk_1_1simple_1_1BitwiseNotImageFilter_html"><div class="ttname"><a href="classitk_1_1simple_1_1BitwiseNotImageFilter.html">itk::simple::BitwiseNotImageFilter</a></div><div class="ttdoc">Implements pixel-wise generic operation on one image.</div><div class="ttdef"><b>Definition:</b> <a href="sitkBitwiseNotImageFilter_8h_source.html#l00049">sitkBitwiseNotImageFilter.h:49</a></div></div>
 <div class="ttc" id="asitkImageFilter_8h_html"><div class="ttname"><a href="sitkImageFilter_8h.html">sitkImageFilter.h</a></div></div>
-<div class="ttc" id="aclassitk_1_1simple_1_1BitwiseNotImageFilter_html_a20f92bde86ece24fd1617e5896dddb1e"><div class="ttname"><a href="classitk_1_1simple_1_1BitwiseNotImageFilter.html#a20f92bde86ece24fd1617e5896dddb1e">itk::simple::BitwiseNotImageFilter::m_MemberFactory</a></div><div class="ttdeci">std::unique_ptr&lt; detail::MemberFunctionFactory&lt; MemberFunctionType &gt; &gt; m_MemberFactory</div><div class="ttdef"><b>Definition:</b> <a href="sitkBitwiseNotImageFilter_8h_source.html#l00084">sitkBitwiseNotImageFilter.h:84</a></div></div>
+<div class="ttc" id="aclassitk_1_1simple_1_1BitwiseNotImageFilter_html_a20f92bde86ece24fd1617e5896dddb1e"><div class="ttname"><a href="classitk_1_1simple_1_1BitwiseNotImageFilter.html#a20f92bde86ece24fd1617e5896dddb1e">itk::simple::BitwiseNotImageFilter::m_MemberFactory</a></div><div class="ttdeci">std::unique_ptr&lt; detail::MemberFunctionFactory&lt; MemberFunctionType &gt; &gt; m_MemberFactory</div><div class="ttdef"><b>Definition:</b> <a href="sitkBitwiseNotImageFilter_8h_source.html#l00087">sitkBitwiseNotImageFilter.h:87</a></div></div>
+<div class="ttc" id="anamespaceitk_1_1simple_html_a974c9940fabde82323abb08731d9e01d"><div class="ttname"><a href="namespaceitk_1_1simple.html#a974c9940fabde82323abb08731d9e01d">itk::simple::BitwiseNot</a></div><div class="ttdeci">Image BitwiseNot(Image &amp;&amp;image1)</div><div class="ttdoc">Implements pixel-wise generic operation on one image.</div></div>
 <div class="ttc" id="aclassitk_1_1simple_1_1BitwiseNotImageFilter_html_a573b935713fb900b636506a6dd087e3f"><div class="ttname"><a href="classitk_1_1simple_1_1BitwiseNotImageFilter.html#a573b935713fb900b636506a6dd087e3f">itk::simple::BitwiseNotImageFilter::PixelIDTypeList</a></div><div class="ttdeci">IntegerPixelIDTypeList PixelIDTypeList</div><div class="ttdef"><b>Definition:</b> <a href="sitkBitwiseNotImageFilter_8h_source.html#l00061">sitkBitwiseNotImageFilter.h:61</a></div></div>
 <div class="ttc" id="asitkBasicFilters_8h_html_a8c00663d3a7bae36066e320f83381283"><div class="ttname"><a href="sitkBasicFilters_8h.html#a8c00663d3a7bae36066e320f83381283">SITKBasicFilters_EXPORT</a></div><div class="ttdeci">#define SITKBasicFilters_EXPORT</div><div class="ttdef"><b>Definition:</b> <a href="sitkBasicFilters_8h_source.html#l00052">sitkBasicFilters.h:52</a></div></div>
-<div class="ttc" id="anamespaceitk_1_1simple_html_a933e7b645274b9d1c0e31cf56bc852f0"><div class="ttname"><a href="namespaceitk_1_1simple.html#a933e7b645274b9d1c0e31cf56bc852f0">itk::simple::BitwiseNot</a></div><div class="ttdeci">Image BitwiseNot(const Image &amp;image1)</div><div class="ttdoc">Implements pixel-wise generic operation on one image.</div></div>
 <div class="ttc" id="anamespaceitk_html"><div class="ttname"><a href="namespaceitk.html">itk</a></div></div>
 <div class="ttc" id="aclassitk_1_1simple_1_1ImageFilter_html"><div class="ttname"><a href="classitk_1_1simple_1_1ImageFilter.html">itk::simple::ImageFilter</a></div><div class="ttdoc">The base interface for SimpleITK filters that take one input image.</div><div class="ttdef"><b>Definition:</b> <a href="sitkImageFilter_8h_source.html#l00037">sitkImageFilter.h:37</a></div></div>
 <div class="ttc" id="aclassitk_1_1simple_1_1ProcessObject_html"><div class="ttname"><a href="classitk_1_1simple_1_1ProcessObject.html">itk::simple::ProcessObject</a></div><div class="ttdoc">Base class for SimpleITK classes based on ProcessObject.</div><div class="ttdef"><b>Definition:</b> <a href="sitkProcessObject_8h_source.html#l00051">sitkProcessObject.h:51</a></div></div>
+<div class="ttc" id="aclassitk_1_1Image_html"><div class="ttname"><a href="https://www.itk.org/Doxygen/html/classitk_1_1Image.html">itk::Image</a></div><div class="ttdef"><b>Definition:</b> <a href="sitkPixelIDTypes_8h_source.html#l00026">sitkPixelIDTypes.h:26</a></div></div>
 <div class="ttc" id="aclassitk_1_1simple_1_1BitwiseNotImageFilter_html_a4a05f118fb81fa34b34a3653045b1182"><div class="ttname"><a href="classitk_1_1simple_1_1BitwiseNotImageFilter.html#a4a05f118fb81fa34b34a3653045b1182">itk::simple::BitwiseNotImageFilter::Self</a></div><div class="ttdeci">BitwiseNotImageFilter Self</div><div class="ttdef"><b>Definition:</b> <a href="sitkBitwiseNotImageFilter_8h_source.html#l00051">sitkBitwiseNotImageFilter.h:51</a></div></div>
 <div class="ttc" id="anamespaceitk_1_1simple_html_a471d433ce5ac8ee3fb8477f5002a2629"><div class="ttname"><a href="namespaceitk_1_1simple.html#a471d433ce5ac8ee3fb8477f5002a2629">itk::simple::IntegerPixelIDTypeList</a></div><div class="ttdeci">typelist::MakeTypeList&lt; BasicPixelID&lt; int8_t &gt;, BasicPixelID&lt; uint8_t &gt;, BasicPixelID&lt; int16_t &gt;, BasicPixelID&lt; uint16_t &gt;, BasicPixelID&lt; int32_t &gt;, BasicPixelID&lt; uint32_t &gt; &gt;::Type IntegerPixelIDTypeList</div><div class="ttdef"><b>Definition:</b> <a href="sitkPixelIDTypeLists_8h_source.html#l00076">sitkPixelIDTypeLists.h:76</a></div></div>
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Apr 7 2020 03:21:10 for SimpleITK by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Apr 14 2020 02:53:00 for SimpleITK by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

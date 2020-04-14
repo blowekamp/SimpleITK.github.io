@@ -19,7 +19,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">SimpleITK
-   &#160;<span id="projectnumber">2.0.0rc1.post73</span>
+   &#160;<span id="projectnumber">2.0.0rc1.post121</span>
    </div>
   </td>
  </tr>
@@ -143,6 +143,8 @@ Public Types</h2></td></tr>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a09ab1af65a2150e94f71f5ba1a597366"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classitk_1_1simple_1_1Image.html">Image</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1LabelToRGBImageFilter.html#a09ab1af65a2150e94f71f5ba1a597366">Execute</a> (const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> &amp;image1)</td></tr>
 <tr class="separator:a09ab1af65a2150e94f71f5ba1a597366"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a914197c5ed2db407e965722ca9bd3a37"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classitk_1_1simple_1_1Image.html">Image</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1LabelToRGBImageFilter.html#a914197c5ed2db407e965722ca9bd3a37">Execute</a> (<a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> &amp;&amp;image1)</td></tr>
+<tr class="separator:a914197c5ed2db407e965722ca9bd3a37"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3a1e1f31e1232082271fdac4e159e0b2"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1LabelToRGBImageFilter.html#a3a1e1f31e1232082271fdac4e159e0b2">GetBackgroundValue</a> () const</td></tr>
 <tr class="separator:a3a1e1f31e1232082271fdac4e159e0b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aadf69a1f6613014bc0818ef5ab02f919"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="elRef" href="https://www.itk.org/Doxygen/html/namespaceitk.html#a5037a19c1b11bcb33173a2a3e3d8b8a0">uint8_t</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1LabelToRGBImageFilter.html#aadf69a1f6613014bc0818ef5ab02f919">GetColormap</a> () const</td></tr>
@@ -212,10 +214,12 @@ Private Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
-<tr class="memitem:a3b3494cf0d9bf7942c749a408362e3de"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1LabelToRGBImageFilter.html#a3b3494cf0d9bf7942c749a408362e3de">m_BackgroundValue</a></td></tr>
+<tr class="memitem:a3b3494cf0d9bf7942c749a408362e3de"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1LabelToRGBImageFilter.html#a3b3494cf0d9bf7942c749a408362e3de">m_BackgroundValue</a> {0.0}</td></tr>
 <tr class="separator:a3b3494cf0d9bf7942c749a408362e3de"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5e1d8330d934f5e029c38c49a2668ee6"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="elRef" href="https://www.itk.org/Doxygen/html/namespaceitk.html#a5037a19c1b11bcb33173a2a3e3d8b8a0">uint8_t</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1LabelToRGBImageFilter.html#a5e1d8330d934f5e029c38c49a2668ee6">m_Colormap</a></td></tr>
+<tr class="memitem:a5e1d8330d934f5e029c38c49a2668ee6"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="elRef" href="https://www.itk.org/Doxygen/html/namespaceitk.html#a5037a19c1b11bcb33173a2a3e3d8b8a0">uint8_t</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1LabelToRGBImageFilter.html#a5e1d8330d934f5e029c38c49a2668ee6">m_Colormap</a> {std::vector&lt;<a class="elRef" href="https://www.itk.org/Doxygen/html/namespaceitk.html#a5037a19c1b11bcb33173a2a3e3d8b8a0">uint8_t</a>&gt;()}</td></tr>
 <tr class="separator:a5e1d8330d934f5e029c38c49a2668ee6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac8e29d65043e59369dbee5f2beec50fb"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1LabelToRGBImageFilter.html#ac8e29d65043e59369dbee5f2beec50fb">m_InPlace</a> {false}</td></tr>
+<tr class="separator:ac8e29d65043e59369dbee5f2beec50fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae9f78080b18a2952921faea8a8ee1ead"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="classitk_1_1simple_1_1detail_1_1MemberFunctionFactory.html">detail::MemberFunctionFactory</a>&lt; <a class="el" href="classitk_1_1simple_1_1LabelToRGBImageFilter.html#aa6bec828168508f3c662c38d17d74d2f">MemberFunctionType</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1LabelToRGBImageFilter.html#ae9f78080b18a2952921faea8a8ee1ead">m_MemberFactory</a></td></tr>
 <tr class="separator:ae9f78080b18a2952921faea8a8ee1ead"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -322,7 +326,7 @@ Richard Beare. Department of Medicine, Monash University, Melbourne, Australia.<
 <dd>
 <a class="el" href="classitk_1_1simple_1_1LabelMapToRGBImageFilter.html" title="Convert a LabelMap to a colored image.">LabelMapToRGBImageFilter</a> , LabelToRGBFunctor, ScalarToRGBPixelFunctor </dd>
 <dd>
-<a class="el" href="namespaceitk_1_1simple.html#a5f40b1f38e5ac98142e85a814ae3fee8" title="Apply a colormap to a label image.">itk::simple::LabelToRGB</a> for the procedural interface </dd>
+<a class="el" href="namespaceitk_1_1simple.html#a4de5dd549a1852832e661a2ac9ac491c" title="Apply a colormap to a label image.">itk::simple::LabelToRGB</a> for the procedural interface </dd>
 <dd>
 <a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1LabelToRGBImageFilter.html">itk::LabelToRGBImageFilter</a> for the Doxygen on the original ITK class. </dd></dl>
 
@@ -349,7 +353,7 @@ Richard Beare. Department of Medicine, Monash University, Melbourne, Australia.<
 </div><div class="memdoc">
 <p>Setup for member function dispatching </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkLabelToRGBImageFilter_8h_source.html#l00102">102</a> of file <a class="el" href="sitkLabelToRGBImageFilter_8h_source.html">sitkLabelToRGBImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkLabelToRGBImageFilter_8h_source.html#l00105">105</a> of file <a class="el" href="sitkLabelToRGBImageFilter_8h_source.html">sitkLabelToRGBImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -433,7 +437,7 @@ Richard Beare. Department of Medicine, Monash University, Melbourne, Australia.<
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
 <a id="a09ab1af65a2150e94f71f5ba1a597366"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a09ab1af65a2150e94f71f5ba1a597366">&#9670;&nbsp;</a></span>Execute()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a09ab1af65a2150e94f71f5ba1a597366">&#9670;&nbsp;</a></span>Execute() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -442,6 +446,24 @@ Richard Beare. Department of Medicine, Monash University, Melbourne, Australia.<
           <td class="memname"><a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> itk::simple::LabelToRGBImageFilter::Execute </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> &amp;&#160;</td>
+          <td class="paramname"><em>image1</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a914197c5ed2db407e965722ca9bd3a37"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a914197c5ed2db407e965722ca9bd3a37">&#9670;&nbsp;</a></span>Execute() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> itk::simple::LabelToRGBImageFilter::Execute </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> &amp;&amp;&#160;</td>
           <td class="paramname"><em>image1</em></td><td>)</td>
           <td></td>
         </tr>
@@ -670,7 +692,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkLabelToRGBImageFilter_8h_source.html#l00106">106</a> of file <a class="el" href="sitkLabelToRGBImageFilter_8h_source.html">sitkLabelToRGBImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkLabelToRGBImageFilter_8h_source.html#l00109">109</a> of file <a class="el" href="sitkLabelToRGBImageFilter_8h_source.html">sitkLabelToRGBImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -685,7 +707,7 @@ template&lt;class TImageType &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">double itk::simple::LabelToRGBImageFilter::m_BackgroundValue</td>
+          <td class="memname">double itk::simple::LabelToRGBImageFilter::m_BackgroundValue {0.0}</td>
         </tr>
       </table>
   </td>
@@ -695,7 +717,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkLabelToRGBImageFilter_8h_source.html#l00112">112</a> of file <a class="el" href="sitkLabelToRGBImageFilter_8h_source.html">sitkLabelToRGBImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkLabelToRGBImageFilter_8h_source.html#l00115">115</a> of file <a class="el" href="sitkLabelToRGBImageFilter_8h_source.html">sitkLabelToRGBImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -709,7 +731,7 @@ template&lt;class TImageType &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::vector&lt;<a class="elRef" href="https://www.itk.org/Doxygen/html/namespaceitk.html#a5037a19c1b11bcb33173a2a3e3d8b8a0">uint8_t</a>&gt; itk::simple::LabelToRGBImageFilter::m_Colormap</td>
+          <td class="memname">std::vector&lt;<a class="elRef" href="https://www.itk.org/Doxygen/html/namespaceitk.html#a5037a19c1b11bcb33173a2a3e3d8b8a0">uint8_t</a>&gt; itk::simple::LabelToRGBImageFilter::m_Colormap {std::vector&lt;<a class="elRef" href="https://www.itk.org/Doxygen/html/namespaceitk.html#a5037a19c1b11bcb33173a2a3e3d8b8a0">uint8_t</a>&gt;()}</td>
         </tr>
       </table>
   </td>
@@ -719,7 +741,31 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkLabelToRGBImageFilter_8h_source.html#l00113">113</a> of file <a class="el" href="sitkLabelToRGBImageFilter_8h_source.html">sitkLabelToRGBImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkLabelToRGBImageFilter_8h_source.html#l00117">117</a> of file <a class="el" href="sitkLabelToRGBImageFilter_8h_source.html">sitkLabelToRGBImageFilter.h</a>.</p>
+
+</div>
+</div>
+<a id="ac8e29d65043e59369dbee5f2beec50fb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac8e29d65043e59369dbee5f2beec50fb">&#9670;&nbsp;</a></span>m_InPlace</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool itk::simple::LabelToRGBImageFilter::m_InPlace {false}</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="sitkLabelToRGBImageFilter_8h_source.html#l00120">120</a> of file <a class="el" href="sitkLabelToRGBImageFilter_8h_source.html">sitkLabelToRGBImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -743,7 +789,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkLabelToRGBImageFilter_8h_source.html#l00108">108</a> of file <a class="el" href="sitkLabelToRGBImageFilter_8h_source.html">sitkLabelToRGBImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkLabelToRGBImageFilter_8h_source.html#l00111">111</a> of file <a class="el" href="sitkLabelToRGBImageFilter_8h_source.html">sitkLabelToRGBImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -753,7 +799,7 @@ template&lt;class TImageType &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Apr 7 2020 03:21:37 for SimpleITK by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Apr 14 2020 02:53:30 for SimpleITK by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

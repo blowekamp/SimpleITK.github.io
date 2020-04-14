@@ -19,7 +19,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">SimpleITK
-   &#160;<span id="projectnumber">2.0.0rc1.post73</span>
+   &#160;<span id="projectnumber">2.0.0rc1.post121</span>
    </div>
   </td>
  </tr>
@@ -142,6 +142,8 @@ Public Types</h2></td></tr>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a578f39d49d327b3591a1e9e6589142d5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classitk_1_1simple_1_1Image.html">Image</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1LaplacianSegmentationLevelSetImageFilter.html#a578f39d49d327b3591a1e9e6589142d5">Execute</a> (const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> &amp;initialImage, const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> &amp;featureImage)</td></tr>
 <tr class="separator:a578f39d49d327b3591a1e9e6589142d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a821a68a59e1d271370da3d249299b2e0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classitk_1_1simple_1_1Image.html">Image</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1LaplacianSegmentationLevelSetImageFilter.html#a821a68a59e1d271370da3d249299b2e0">Execute</a> (<a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> &amp;&amp;initialImage, const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> &amp;featureImage)</td></tr>
+<tr class="separator:a821a68a59e1d271370da3d249299b2e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6292e5331d417d3e34df11b9ca6bd43f"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1LaplacianSegmentationLevelSetImageFilter.html#a6292e5331d417d3e34df11b9ca6bd43f">GetCurvatureScaling</a> () const</td></tr>
 <tr class="separator:a6292e5331d417d3e34df11b9ca6bd43f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a95d20e9644d9c666ba3394c283a14837"><td class="memItemLeft" align="right" valign="top"><a class="elRef" href="https://www.itk.org/Doxygen/html/namespaceitk.html#a575b8e3e1ee797dd1bbaf9724ed68f92">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1LaplacianSegmentationLevelSetImageFilter.html#a95d20e9644d9c666ba3394c283a14837">GetElapsedIterations</a> () const</td></tr>
@@ -233,21 +235,23 @@ Private Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
-<tr class="memitem:ae070299d4bd583696e3b5ffc8418ae30"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1LaplacianSegmentationLevelSetImageFilter.html#ae070299d4bd583696e3b5ffc8418ae30">m_CurvatureScaling</a></td></tr>
+<tr class="memitem:ae070299d4bd583696e3b5ffc8418ae30"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1LaplacianSegmentationLevelSetImageFilter.html#ae070299d4bd583696e3b5ffc8418ae30">m_CurvatureScaling</a> {1.0}</td></tr>
 <tr class="separator:ae070299d4bd583696e3b5ffc8418ae30"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad29a1fc3d03bb2c4bceeafbc80a05953"><td class="memItemLeft" align="right" valign="top"><a class="elRef" href="https://www.itk.org/Doxygen/html/namespaceitk.html#a575b8e3e1ee797dd1bbaf9724ed68f92">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1LaplacianSegmentationLevelSetImageFilter.html#ad29a1fc3d03bb2c4bceeafbc80a05953">m_ElapsedIterations</a></td></tr>
+<tr class="memitem:ad29a1fc3d03bb2c4bceeafbc80a05953"><td class="memItemLeft" align="right" valign="top"><a class="elRef" href="https://www.itk.org/Doxygen/html/namespaceitk.html#a575b8e3e1ee797dd1bbaf9724ed68f92">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1LaplacianSegmentationLevelSetImageFilter.html#ad29a1fc3d03bb2c4bceeafbc80a05953">m_ElapsedIterations</a> {0}</td></tr>
 <tr class="separator:ad29a1fc3d03bb2c4bceeafbc80a05953"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a81c18f3c7ea9a1b1630df22852090431"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1LaplacianSegmentationLevelSetImageFilter.html#a81c18f3c7ea9a1b1630df22852090431">m_MaximumRMSError</a></td></tr>
+<tr class="memitem:a7f5a54ceec3bfbf1a37f3876421e2d2d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1LaplacianSegmentationLevelSetImageFilter.html#a7f5a54ceec3bfbf1a37f3876421e2d2d">m_InPlace</a> {false}</td></tr>
+<tr class="separator:a7f5a54ceec3bfbf1a37f3876421e2d2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a81c18f3c7ea9a1b1630df22852090431"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1LaplacianSegmentationLevelSetImageFilter.html#a81c18f3c7ea9a1b1630df22852090431">m_MaximumRMSError</a> {0.02}</td></tr>
 <tr class="separator:a81c18f3c7ea9a1b1630df22852090431"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a630247d58a999975dd58607526a7fa05"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="classitk_1_1simple_1_1detail_1_1MemberFunctionFactory.html">detail::MemberFunctionFactory</a>&lt; <a class="el" href="classitk_1_1simple_1_1LaplacianSegmentationLevelSetImageFilter.html#a7683b130d78dedd37c9a53c877445944">MemberFunctionType</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1LaplacianSegmentationLevelSetImageFilter.html#a630247d58a999975dd58607526a7fa05">m_MemberFactory</a></td></tr>
 <tr class="separator:a630247d58a999975dd58607526a7fa05"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac802bd209725c0b1925524d80750a15c"><td class="memItemLeft" align="right" valign="top"><a class="elRef" href="https://www.itk.org/Doxygen/html/namespaceitk.html#a575b8e3e1ee797dd1bbaf9724ed68f92">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1LaplacianSegmentationLevelSetImageFilter.html#ac802bd209725c0b1925524d80750a15c">m_NumberOfIterations</a></td></tr>
+<tr class="memitem:ac802bd209725c0b1925524d80750a15c"><td class="memItemLeft" align="right" valign="top"><a class="elRef" href="https://www.itk.org/Doxygen/html/namespaceitk.html#a575b8e3e1ee797dd1bbaf9724ed68f92">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1LaplacianSegmentationLevelSetImageFilter.html#ac802bd209725c0b1925524d80750a15c">m_NumberOfIterations</a> {1000u}</td></tr>
 <tr class="separator:ac802bd209725c0b1925524d80750a15c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3a5205ebcb1eef6cabab7298d6d09935"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1LaplacianSegmentationLevelSetImageFilter.html#a3a5205ebcb1eef6cabab7298d6d09935">m_PropagationScaling</a></td></tr>
+<tr class="memitem:a3a5205ebcb1eef6cabab7298d6d09935"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1LaplacianSegmentationLevelSetImageFilter.html#a3a5205ebcb1eef6cabab7298d6d09935">m_PropagationScaling</a> {1.0}</td></tr>
 <tr class="separator:a3a5205ebcb1eef6cabab7298d6d09935"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af759130d2bea5497cfda10945d8c85a1"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1LaplacianSegmentationLevelSetImageFilter.html#af759130d2bea5497cfda10945d8c85a1">m_ReverseExpansionDirection</a></td></tr>
+<tr class="memitem:af759130d2bea5497cfda10945d8c85a1"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1LaplacianSegmentationLevelSetImageFilter.html#af759130d2bea5497cfda10945d8c85a1">m_ReverseExpansionDirection</a> {false}</td></tr>
 <tr class="separator:af759130d2bea5497cfda10945d8c85a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ade0a853c9f7ebf866b701ad9c37034d0"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1LaplacianSegmentationLevelSetImageFilter.html#ade0a853c9f7ebf866b701ad9c37034d0">m_RMSChange</a></td></tr>
+<tr class="memitem:ade0a853c9f7ebf866b701ad9c37034d0"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1LaplacianSegmentationLevelSetImageFilter.html#ade0a853c9f7ebf866b701ad9c37034d0">m_RMSChange</a> {0.0}</td></tr>
 <tr class="separator:ade0a853c9f7ebf866b701ad9c37034d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
@@ -361,7 +365,7 @@ Additional Inherited Members</h2></td></tr>
 <dd>
 <a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1SparseFieldLevelSetImageFilter.html">SparseFieldLevelSetImageFilter</a> </dd>
 <dd>
-<a class="el" href="namespaceitk_1_1simple.html#a6b392ebf80dd568e7ebb73efb9314b42" title="Segments structures in images based on a second derivative image features.">itk::simple::LaplacianSegmentationLevelSet</a> for the procedural interface </dd>
+<a class="el" href="namespaceitk_1_1simple.html#adb18906fabce3e90329bcb98aa3f38b0" title="Segments structures in images based on a second derivative image features.">itk::simple::LaplacianSegmentationLevelSet</a> for the procedural interface </dd>
 <dd>
 <a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1LaplacianSegmentationLevelSetImageFilter.html">itk::LaplacianSegmentationLevelSetImageFilter</a> for the Doxygen on the original ITK class. </dd></dl>
 
@@ -388,7 +392,7 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 <p>Setup for member function dispatching </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkLaplacianSegmentationLevelSetImageFilter_8h_source.html#l00179">179</a> of file <a class="el" href="sitkLaplacianSegmentationLevelSetImageFilter_8h_source.html">sitkLaplacianSegmentationLevelSetImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkLaplacianSegmentationLevelSetImageFilter_8h_source.html#l00182">182</a> of file <a class="el" href="sitkLaplacianSegmentationLevelSetImageFilter_8h_source.html">sitkLaplacianSegmentationLevelSetImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -472,7 +476,7 @@ Additional Inherited Members</h2></td></tr>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
 <a id="a578f39d49d327b3591a1e9e6589142d5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a578f39d49d327b3591a1e9e6589142d5">&#9670;&nbsp;</a></span>Execute()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a578f39d49d327b3591a1e9e6589142d5">&#9670;&nbsp;</a></span>Execute() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -481,6 +485,34 @@ Additional Inherited Members</h2></td></tr>
           <td class="memname"><a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> itk::simple::LaplacianSegmentationLevelSetImageFilter::Execute </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> &amp;&#160;</td>
+          <td class="paramname"><em>initialImage</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> &amp;&#160;</td>
+          <td class="paramname"><em>featureImage</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a821a68a59e1d271370da3d249299b2e0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a821a68a59e1d271370da3d249299b2e0">&#9670;&nbsp;</a></span>Execute() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> itk::simple::LaplacianSegmentationLevelSetImageFilter::Execute </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> &amp;&amp;&#160;</td>
           <td class="paramname"><em>initialImage</em>, </td>
         </tr>
         <tr>
@@ -1007,7 +1039,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkLaplacianSegmentationLevelSetImageFilter_8h_source.html#l00183">183</a> of file <a class="el" href="sitkLaplacianSegmentationLevelSetImageFilter_8h_source.html">sitkLaplacianSegmentationLevelSetImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkLaplacianSegmentationLevelSetImageFilter_8h_source.html#l00186">186</a> of file <a class="el" href="sitkLaplacianSegmentationLevelSetImageFilter_8h_source.html">sitkLaplacianSegmentationLevelSetImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -1022,7 +1054,7 @@ template&lt;class TImageType &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">double itk::simple::LaplacianSegmentationLevelSetImageFilter::m_CurvatureScaling</td>
+          <td class="memname">double itk::simple::LaplacianSegmentationLevelSetImageFilter::m_CurvatureScaling {1.0}</td>
         </tr>
       </table>
   </td>
@@ -1032,7 +1064,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkLaplacianSegmentationLevelSetImageFilter_8h_source.html#l00193">193</a> of file <a class="el" href="sitkLaplacianSegmentationLevelSetImageFilter_8h_source.html">sitkLaplacianSegmentationLevelSetImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkLaplacianSegmentationLevelSetImageFilter_8h_source.html#l00198">198</a> of file <a class="el" href="sitkLaplacianSegmentationLevelSetImageFilter_8h_source.html">sitkLaplacianSegmentationLevelSetImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -1046,7 +1078,7 @@ template&lt;class TImageType &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="elRef" href="https://www.itk.org/Doxygen/html/namespaceitk.html#a575b8e3e1ee797dd1bbaf9724ed68f92">uint32_t</a> itk::simple::LaplacianSegmentationLevelSetImageFilter::m_ElapsedIterations</td>
+          <td class="memname"><a class="elRef" href="https://www.itk.org/Doxygen/html/namespaceitk.html#a575b8e3e1ee797dd1bbaf9724ed68f92">uint32_t</a> itk::simple::LaplacianSegmentationLevelSetImageFilter::m_ElapsedIterations {0}</td>
         </tr>
       </table>
   </td>
@@ -1056,7 +1088,31 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkLaplacianSegmentationLevelSetImageFilter_8h_source.html#l00199">199</a> of file <a class="el" href="sitkLaplacianSegmentationLevelSetImageFilter_8h_source.html">sitkLaplacianSegmentationLevelSetImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkLaplacianSegmentationLevelSetImageFilter_8h_source.html#l00207">207</a> of file <a class="el" href="sitkLaplacianSegmentationLevelSetImageFilter_8h_source.html">sitkLaplacianSegmentationLevelSetImageFilter.h</a>.</p>
+
+</div>
+</div>
+<a id="a7f5a54ceec3bfbf1a37f3876421e2d2d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7f5a54ceec3bfbf1a37f3876421e2d2d">&#9670;&nbsp;</a></span>m_InPlace</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool itk::simple::LaplacianSegmentationLevelSetImageFilter::m_InPlace {false}</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="sitkLaplacianSegmentationLevelSetImageFilter_8h_source.html#l00212">212</a> of file <a class="el" href="sitkLaplacianSegmentationLevelSetImageFilter_8h_source.html">sitkLaplacianSegmentationLevelSetImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -1070,7 +1126,7 @@ template&lt;class TImageType &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">double itk::simple::LaplacianSegmentationLevelSetImageFilter::m_MaximumRMSError</td>
+          <td class="memname">double itk::simple::LaplacianSegmentationLevelSetImageFilter::m_MaximumRMSError {0.02}</td>
         </tr>
       </table>
   </td>
@@ -1080,7 +1136,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkLaplacianSegmentationLevelSetImageFilter_8h_source.html#l00189">189</a> of file <a class="el" href="sitkLaplacianSegmentationLevelSetImageFilter_8h_source.html">sitkLaplacianSegmentationLevelSetImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkLaplacianSegmentationLevelSetImageFilter_8h_source.html#l00192">192</a> of file <a class="el" href="sitkLaplacianSegmentationLevelSetImageFilter_8h_source.html">sitkLaplacianSegmentationLevelSetImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -1104,7 +1160,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkLaplacianSegmentationLevelSetImageFilter_8h_source.html#l00185">185</a> of file <a class="el" href="sitkLaplacianSegmentationLevelSetImageFilter_8h_source.html">sitkLaplacianSegmentationLevelSetImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkLaplacianSegmentationLevelSetImageFilter_8h_source.html#l00188">188</a> of file <a class="el" href="sitkLaplacianSegmentationLevelSetImageFilter_8h_source.html">sitkLaplacianSegmentationLevelSetImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -1118,79 +1174,7 @@ template&lt;class TImageType &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="elRef" href="https://www.itk.org/Doxygen/html/namespaceitk.html#a575b8e3e1ee797dd1bbaf9724ed68f92">uint32_t</a> itk::simple::LaplacianSegmentationLevelSetImageFilter::m_NumberOfIterations</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="sitkLaplacianSegmentationLevelSetImageFilter_8h_source.html#l00195">195</a> of file <a class="el" href="sitkLaplacianSegmentationLevelSetImageFilter_8h_source.html">sitkLaplacianSegmentationLevelSetImageFilter.h</a>.</p>
-
-</div>
-</div>
-<a id="a3a5205ebcb1eef6cabab7298d6d09935"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3a5205ebcb1eef6cabab7298d6d09935">&#9670;&nbsp;</a></span>m_PropagationScaling</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">double itk::simple::LaplacianSegmentationLevelSetImageFilter::m_PropagationScaling</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="sitkLaplacianSegmentationLevelSetImageFilter_8h_source.html#l00191">191</a> of file <a class="el" href="sitkLaplacianSegmentationLevelSetImageFilter_8h_source.html">sitkLaplacianSegmentationLevelSetImageFilter.h</a>.</p>
-
-</div>
-</div>
-<a id="af759130d2bea5497cfda10945d8c85a1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af759130d2bea5497cfda10945d8c85a1">&#9670;&nbsp;</a></span>m_ReverseExpansionDirection</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool itk::simple::LaplacianSegmentationLevelSetImageFilter::m_ReverseExpansionDirection</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="sitkLaplacianSegmentationLevelSetImageFilter_8h_source.html#l00197">197</a> of file <a class="el" href="sitkLaplacianSegmentationLevelSetImageFilter_8h_source.html">sitkLaplacianSegmentationLevelSetImageFilter.h</a>.</p>
-
-</div>
-</div>
-<a id="ade0a853c9f7ebf866b701ad9c37034d0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ade0a853c9f7ebf866b701ad9c37034d0">&#9670;&nbsp;</a></span>m_RMSChange</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">double itk::simple::LaplacianSegmentationLevelSetImageFilter::m_RMSChange</td>
+          <td class="memname"><a class="elRef" href="https://www.itk.org/Doxygen/html/namespaceitk.html#a575b8e3e1ee797dd1bbaf9724ed68f92">uint32_t</a> itk::simple::LaplacianSegmentationLevelSetImageFilter::m_NumberOfIterations {1000u}</td>
         </tr>
       </table>
   </td>
@@ -1204,13 +1188,85 @@ template&lt;class TImageType &gt; </div>
 
 </div>
 </div>
+<a id="a3a5205ebcb1eef6cabab7298d6d09935"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3a5205ebcb1eef6cabab7298d6d09935">&#9670;&nbsp;</a></span>m_PropagationScaling</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double itk::simple::LaplacianSegmentationLevelSetImageFilter::m_PropagationScaling {1.0}</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="sitkLaplacianSegmentationLevelSetImageFilter_8h_source.html#l00195">195</a> of file <a class="el" href="sitkLaplacianSegmentationLevelSetImageFilter_8h_source.html">sitkLaplacianSegmentationLevelSetImageFilter.h</a>.</p>
+
+</div>
+</div>
+<a id="af759130d2bea5497cfda10945d8c85a1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af759130d2bea5497cfda10945d8c85a1">&#9670;&nbsp;</a></span>m_ReverseExpansionDirection</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool itk::simple::LaplacianSegmentationLevelSetImageFilter::m_ReverseExpansionDirection {false}</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="sitkLaplacianSegmentationLevelSetImageFilter_8h_source.html#l00204">204</a> of file <a class="el" href="sitkLaplacianSegmentationLevelSetImageFilter_8h_source.html">sitkLaplacianSegmentationLevelSetImageFilter.h</a>.</p>
+
+</div>
+</div>
+<a id="ade0a853c9f7ebf866b701ad9c37034d0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ade0a853c9f7ebf866b701ad9c37034d0">&#9670;&nbsp;</a></span>m_RMSChange</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double itk::simple::LaplacianSegmentationLevelSetImageFilter::m_RMSChange {0.0}</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="sitkLaplacianSegmentationLevelSetImageFilter_8h_source.html#l00209">209</a> of file <a class="el" href="sitkLaplacianSegmentationLevelSetImageFilter_8h_source.html">sitkLaplacianSegmentationLevelSetImageFilter.h</a>.</p>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li><a class="el" href="sitkLaplacianSegmentationLevelSetImageFilter_8h_source.html">sitkLaplacianSegmentationLevelSetImageFilter.h</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Apr 7 2020 03:21:37 for SimpleITK by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Apr 14 2020 02:53:30 for SimpleITK by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

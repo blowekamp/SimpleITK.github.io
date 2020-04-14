@@ -19,7 +19,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">SimpleITK
-   &#160;<span id="projectnumber">2.0.0rc1.post73</span>
+   &#160;<span id="projectnumber">2.0.0rc1.post121</span>
    </div>
   </td>
  </tr>
@@ -142,6 +142,8 @@ Public Types</h2></td></tr>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:ae2d62d9e75175275c65040ad73f85a32"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classitk_1_1simple_1_1Image.html">Image</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1ThresholdSegmentationLevelSetImageFilter.html#ae2d62d9e75175275c65040ad73f85a32">Execute</a> (const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> &amp;initialImage, const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> &amp;featureImage)</td></tr>
 <tr class="separator:ae2d62d9e75175275c65040ad73f85a32"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a19d87eb3713edc3ef3875bc887389cbb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classitk_1_1simple_1_1Image.html">Image</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1ThresholdSegmentationLevelSetImageFilter.html#a19d87eb3713edc3ef3875bc887389cbb">Execute</a> (<a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> &amp;&amp;initialImage, const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> &amp;featureImage)</td></tr>
+<tr class="separator:a19d87eb3713edc3ef3875bc887389cbb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afb97f2fabff1ca0398b0b67c77c8e2b9"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1ThresholdSegmentationLevelSetImageFilter.html#afb97f2fabff1ca0398b0b67c77c8e2b9">GetCurvatureScaling</a> () const</td></tr>
 <tr class="separator:afb97f2fabff1ca0398b0b67c77c8e2b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a768a665be57aec3a149d7f269ec395a2"><td class="memItemLeft" align="right" valign="top"><a class="elRef" href="https://www.itk.org/Doxygen/html/namespaceitk.html#a575b8e3e1ee797dd1bbaf9724ed68f92">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1ThresholdSegmentationLevelSetImageFilter.html#a768a665be57aec3a149d7f269ec395a2">GetElapsedIterations</a> () const</td></tr>
@@ -241,25 +243,27 @@ Private Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
-<tr class="memitem:a2dcf10331d0e57404d70195bb543a36e"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1ThresholdSegmentationLevelSetImageFilter.html#a2dcf10331d0e57404d70195bb543a36e">m_CurvatureScaling</a></td></tr>
+<tr class="memitem:a2dcf10331d0e57404d70195bb543a36e"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1ThresholdSegmentationLevelSetImageFilter.html#a2dcf10331d0e57404d70195bb543a36e">m_CurvatureScaling</a> {1.0}</td></tr>
 <tr class="separator:a2dcf10331d0e57404d70195bb543a36e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1401ccaf6bd7245b1894fdaf3256b19e"><td class="memItemLeft" align="right" valign="top"><a class="elRef" href="https://www.itk.org/Doxygen/html/namespaceitk.html#a575b8e3e1ee797dd1bbaf9724ed68f92">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1ThresholdSegmentationLevelSetImageFilter.html#a1401ccaf6bd7245b1894fdaf3256b19e">m_ElapsedIterations</a></td></tr>
+<tr class="memitem:a1401ccaf6bd7245b1894fdaf3256b19e"><td class="memItemLeft" align="right" valign="top"><a class="elRef" href="https://www.itk.org/Doxygen/html/namespaceitk.html#a575b8e3e1ee797dd1bbaf9724ed68f92">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1ThresholdSegmentationLevelSetImageFilter.html#a1401ccaf6bd7245b1894fdaf3256b19e">m_ElapsedIterations</a> {0}</td></tr>
 <tr class="separator:a1401ccaf6bd7245b1894fdaf3256b19e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a22a1563e093e3d508bfc969a9fbd41ac"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1ThresholdSegmentationLevelSetImageFilter.html#a22a1563e093e3d508bfc969a9fbd41ac">m_LowerThreshold</a></td></tr>
+<tr class="memitem:a2350b4c0881a2a1a70228c5e42e04179"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1ThresholdSegmentationLevelSetImageFilter.html#a2350b4c0881a2a1a70228c5e42e04179">m_InPlace</a> {false}</td></tr>
+<tr class="separator:a2350b4c0881a2a1a70228c5e42e04179"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a22a1563e093e3d508bfc969a9fbd41ac"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1ThresholdSegmentationLevelSetImageFilter.html#a22a1563e093e3d508bfc969a9fbd41ac">m_LowerThreshold</a> {0.0}</td></tr>
 <tr class="separator:a22a1563e093e3d508bfc969a9fbd41ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6041667d859bb4b4ce3852ee2a40eb5d"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1ThresholdSegmentationLevelSetImageFilter.html#a6041667d859bb4b4ce3852ee2a40eb5d">m_MaximumRMSError</a></td></tr>
+<tr class="memitem:a6041667d859bb4b4ce3852ee2a40eb5d"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1ThresholdSegmentationLevelSetImageFilter.html#a6041667d859bb4b4ce3852ee2a40eb5d">m_MaximumRMSError</a> {0.02}</td></tr>
 <tr class="separator:a6041667d859bb4b4ce3852ee2a40eb5d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa4ced3b4570157fe54ba260a237cebe1"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="classitk_1_1simple_1_1detail_1_1MemberFunctionFactory.html">detail::MemberFunctionFactory</a>&lt; <a class="el" href="classitk_1_1simple_1_1ThresholdSegmentationLevelSetImageFilter.html#a6fd93e00e18cb8711684662fcf2f0e8e">MemberFunctionType</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1ThresholdSegmentationLevelSetImageFilter.html#aa4ced3b4570157fe54ba260a237cebe1">m_MemberFactory</a></td></tr>
 <tr class="separator:aa4ced3b4570157fe54ba260a237cebe1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a114edc85799695ac68af0fa94948e097"><td class="memItemLeft" align="right" valign="top"><a class="elRef" href="https://www.itk.org/Doxygen/html/namespaceitk.html#a575b8e3e1ee797dd1bbaf9724ed68f92">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1ThresholdSegmentationLevelSetImageFilter.html#a114edc85799695ac68af0fa94948e097">m_NumberOfIterations</a></td></tr>
+<tr class="memitem:a114edc85799695ac68af0fa94948e097"><td class="memItemLeft" align="right" valign="top"><a class="elRef" href="https://www.itk.org/Doxygen/html/namespaceitk.html#a575b8e3e1ee797dd1bbaf9724ed68f92">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1ThresholdSegmentationLevelSetImageFilter.html#a114edc85799695ac68af0fa94948e097">m_NumberOfIterations</a> {1000u}</td></tr>
 <tr class="separator:a114edc85799695ac68af0fa94948e097"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa726e002a5db0b0a76bcd18f6da55e46"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1ThresholdSegmentationLevelSetImageFilter.html#aa726e002a5db0b0a76bcd18f6da55e46">m_PropagationScaling</a></td></tr>
+<tr class="memitem:aa726e002a5db0b0a76bcd18f6da55e46"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1ThresholdSegmentationLevelSetImageFilter.html#aa726e002a5db0b0a76bcd18f6da55e46">m_PropagationScaling</a> {1.0}</td></tr>
 <tr class="separator:aa726e002a5db0b0a76bcd18f6da55e46"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4bbb6cd2cf414d0260b6250fffe389c3"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1ThresholdSegmentationLevelSetImageFilter.html#a4bbb6cd2cf414d0260b6250fffe389c3">m_ReverseExpansionDirection</a></td></tr>
+<tr class="memitem:a4bbb6cd2cf414d0260b6250fffe389c3"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1ThresholdSegmentationLevelSetImageFilter.html#a4bbb6cd2cf414d0260b6250fffe389c3">m_ReverseExpansionDirection</a> {false}</td></tr>
 <tr class="separator:a4bbb6cd2cf414d0260b6250fffe389c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aafd2454a5671961a5f673a4ae51f3369"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1ThresholdSegmentationLevelSetImageFilter.html#aafd2454a5671961a5f673a4ae51f3369">m_RMSChange</a></td></tr>
+<tr class="memitem:aafd2454a5671961a5f673a4ae51f3369"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1ThresholdSegmentationLevelSetImageFilter.html#aafd2454a5671961a5f673a4ae51f3369">m_RMSChange</a> {0.0}</td></tr>
 <tr class="separator:aafd2454a5671961a5f673a4ae51f3369"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a42233177e8b2ffea8f2d16b6db5e8637"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1ThresholdSegmentationLevelSetImageFilter.html#a42233177e8b2ffea8f2d16b6db5e8637">m_UpperThreshold</a></td></tr>
+<tr class="memitem:a42233177e8b2ffea8f2d16b6db5e8637"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1ThresholdSegmentationLevelSetImageFilter.html#a42233177e8b2ffea8f2d16b6db5e8637">m_UpperThreshold</a> {255.0}</td></tr>
 <tr class="separator:a42233177e8b2ffea8f2d16b6db5e8637"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
@@ -370,7 +374,7 @@ Additional Inherited Members</h2></td></tr>
 <dd>
 <a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1SparseFieldLevelSetImageFilter.html">SparseFieldLevelSetImageFilter</a> </dd>
 <dd>
-<a class="el" href="namespaceitk_1_1simple.html#ae3761a000b6a9369b908b242d467e308" title="Segments structures in images based on intensity values.">itk::simple::ThresholdSegmentationLevelSet</a> for the procedural interface </dd>
+<a class="el" href="namespaceitk_1_1simple.html#ac07e05c9b99a40ed3f50680f23961378" title="Segments structures in images based on intensity values.">itk::simple::ThresholdSegmentationLevelSet</a> for the procedural interface </dd>
 <dd>
 <a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1ThresholdSegmentationLevelSetImageFilter.html">itk::ThresholdSegmentationLevelSetImageFilter</a> for the Doxygen on the original ITK class. </dd></dl>
 
@@ -397,7 +401,7 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 <p>Setup for member function dispatching </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkThresholdSegmentationLevelSetImageFilter_8h_source.html#l00186">186</a> of file <a class="el" href="sitkThresholdSegmentationLevelSetImageFilter_8h_source.html">sitkThresholdSegmentationLevelSetImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkThresholdSegmentationLevelSetImageFilter_8h_source.html#l00189">189</a> of file <a class="el" href="sitkThresholdSegmentationLevelSetImageFilter_8h_source.html">sitkThresholdSegmentationLevelSetImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -481,7 +485,7 @@ Additional Inherited Members</h2></td></tr>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
 <a id="ae2d62d9e75175275c65040ad73f85a32"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae2d62d9e75175275c65040ad73f85a32">&#9670;&nbsp;</a></span>Execute()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ae2d62d9e75175275c65040ad73f85a32">&#9670;&nbsp;</a></span>Execute() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -490,6 +494,34 @@ Additional Inherited Members</h2></td></tr>
           <td class="memname"><a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> itk::simple::ThresholdSegmentationLevelSetImageFilter::Execute </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> &amp;&#160;</td>
+          <td class="paramname"><em>initialImage</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> &amp;&#160;</td>
+          <td class="paramname"><em>featureImage</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a19d87eb3713edc3ef3875bc887389cbb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a19d87eb3713edc3ef3875bc887389cbb">&#9670;&nbsp;</a></span>Execute() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> itk::simple::ThresholdSegmentationLevelSetImageFilter::Execute </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> &amp;&amp;&#160;</td>
           <td class="paramname"><em>initialImage</em>, </td>
         </tr>
         <tr>
@@ -1127,7 +1159,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkThresholdSegmentationLevelSetImageFilter_8h_source.html#l00190">190</a> of file <a class="el" href="sitkThresholdSegmentationLevelSetImageFilter_8h_source.html">sitkThresholdSegmentationLevelSetImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkThresholdSegmentationLevelSetImageFilter_8h_source.html#l00193">193</a> of file <a class="el" href="sitkThresholdSegmentationLevelSetImageFilter_8h_source.html">sitkThresholdSegmentationLevelSetImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -1142,7 +1174,7 @@ template&lt;class TImageType &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">double itk::simple::ThresholdSegmentationLevelSetImageFilter::m_CurvatureScaling</td>
+          <td class="memname">double itk::simple::ThresholdSegmentationLevelSetImageFilter::m_CurvatureScaling {1.0}</td>
         </tr>
       </table>
   </td>
@@ -1152,7 +1184,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkThresholdSegmentationLevelSetImageFilter_8h_source.html#l00202">202</a> of file <a class="el" href="sitkThresholdSegmentationLevelSetImageFilter_8h_source.html">sitkThresholdSegmentationLevelSetImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkThresholdSegmentationLevelSetImageFilter_8h_source.html#l00209">209</a> of file <a class="el" href="sitkThresholdSegmentationLevelSetImageFilter_8h_source.html">sitkThresholdSegmentationLevelSetImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -1166,7 +1198,7 @@ template&lt;class TImageType &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="elRef" href="https://www.itk.org/Doxygen/html/namespaceitk.html#a575b8e3e1ee797dd1bbaf9724ed68f92">uint32_t</a> itk::simple::ThresholdSegmentationLevelSetImageFilter::m_ElapsedIterations</td>
+          <td class="memname"><a class="elRef" href="https://www.itk.org/Doxygen/html/namespaceitk.html#a575b8e3e1ee797dd1bbaf9724ed68f92">uint32_t</a> itk::simple::ThresholdSegmentationLevelSetImageFilter::m_ElapsedIterations {0}</td>
         </tr>
       </table>
   </td>
@@ -1176,7 +1208,31 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkThresholdSegmentationLevelSetImageFilter_8h_source.html#l00208">208</a> of file <a class="el" href="sitkThresholdSegmentationLevelSetImageFilter_8h_source.html">sitkThresholdSegmentationLevelSetImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkThresholdSegmentationLevelSetImageFilter_8h_source.html#l00218">218</a> of file <a class="el" href="sitkThresholdSegmentationLevelSetImageFilter_8h_source.html">sitkThresholdSegmentationLevelSetImageFilter.h</a>.</p>
+
+</div>
+</div>
+<a id="a2350b4c0881a2a1a70228c5e42e04179"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2350b4c0881a2a1a70228c5e42e04179">&#9670;&nbsp;</a></span>m_InPlace</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool itk::simple::ThresholdSegmentationLevelSetImageFilter::m_InPlace {false}</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="sitkThresholdSegmentationLevelSetImageFilter_8h_source.html#l00223">223</a> of file <a class="el" href="sitkThresholdSegmentationLevelSetImageFilter_8h_source.html">sitkThresholdSegmentationLevelSetImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -1190,7 +1246,7 @@ template&lt;class TImageType &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">double itk::simple::ThresholdSegmentationLevelSetImageFilter::m_LowerThreshold</td>
+          <td class="memname">double itk::simple::ThresholdSegmentationLevelSetImageFilter::m_LowerThreshold {0.0}</td>
         </tr>
       </table>
   </td>
@@ -1200,7 +1256,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkThresholdSegmentationLevelSetImageFilter_8h_source.html#l00195">195</a> of file <a class="el" href="sitkThresholdSegmentationLevelSetImageFilter_8h_source.html">sitkThresholdSegmentationLevelSetImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkThresholdSegmentationLevelSetImageFilter_8h_source.html#l00198">198</a> of file <a class="el" href="sitkThresholdSegmentationLevelSetImageFilter_8h_source.html">sitkThresholdSegmentationLevelSetImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -1214,7 +1270,7 @@ template&lt;class TImageType &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">double itk::simple::ThresholdSegmentationLevelSetImageFilter::m_MaximumRMSError</td>
+          <td class="memname">double itk::simple::ThresholdSegmentationLevelSetImageFilter::m_MaximumRMSError {0.02}</td>
         </tr>
       </table>
   </td>
@@ -1224,7 +1280,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkThresholdSegmentationLevelSetImageFilter_8h_source.html#l00198">198</a> of file <a class="el" href="sitkThresholdSegmentationLevelSetImageFilter_8h_source.html">sitkThresholdSegmentationLevelSetImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkThresholdSegmentationLevelSetImageFilter_8h_source.html#l00203">203</a> of file <a class="el" href="sitkThresholdSegmentationLevelSetImageFilter_8h_source.html">sitkThresholdSegmentationLevelSetImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -1248,7 +1304,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkThresholdSegmentationLevelSetImageFilter_8h_source.html#l00192">192</a> of file <a class="el" href="sitkThresholdSegmentationLevelSetImageFilter_8h_source.html">sitkThresholdSegmentationLevelSetImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkThresholdSegmentationLevelSetImageFilter_8h_source.html#l00195">195</a> of file <a class="el" href="sitkThresholdSegmentationLevelSetImageFilter_8h_source.html">sitkThresholdSegmentationLevelSetImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -1262,7 +1318,7 @@ template&lt;class TImageType &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="elRef" href="https://www.itk.org/Doxygen/html/namespaceitk.html#a575b8e3e1ee797dd1bbaf9724ed68f92">uint32_t</a> itk::simple::ThresholdSegmentationLevelSetImageFilter::m_NumberOfIterations</td>
+          <td class="memname"><a class="elRef" href="https://www.itk.org/Doxygen/html/namespaceitk.html#a575b8e3e1ee797dd1bbaf9724ed68f92">uint32_t</a> itk::simple::ThresholdSegmentationLevelSetImageFilter::m_NumberOfIterations {1000u}</td>
         </tr>
       </table>
   </td>
@@ -1272,7 +1328,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkThresholdSegmentationLevelSetImageFilter_8h_source.html#l00204">204</a> of file <a class="el" href="sitkThresholdSegmentationLevelSetImageFilter_8h_source.html">sitkThresholdSegmentationLevelSetImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkThresholdSegmentationLevelSetImageFilter_8h_source.html#l00212">212</a> of file <a class="el" href="sitkThresholdSegmentationLevelSetImageFilter_8h_source.html">sitkThresholdSegmentationLevelSetImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -1286,31 +1342,7 @@ template&lt;class TImageType &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">double itk::simple::ThresholdSegmentationLevelSetImageFilter::m_PropagationScaling</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="sitkThresholdSegmentationLevelSetImageFilter_8h_source.html#l00200">200</a> of file <a class="el" href="sitkThresholdSegmentationLevelSetImageFilter_8h_source.html">sitkThresholdSegmentationLevelSetImageFilter.h</a>.</p>
-
-</div>
-</div>
-<a id="a4bbb6cd2cf414d0260b6250fffe389c3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4bbb6cd2cf414d0260b6250fffe389c3">&#9670;&nbsp;</a></span>m_ReverseExpansionDirection</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool itk::simple::ThresholdSegmentationLevelSetImageFilter::m_ReverseExpansionDirection</td>
+          <td class="memname">double itk::simple::ThresholdSegmentationLevelSetImageFilter::m_PropagationScaling {1.0}</td>
         </tr>
       </table>
   </td>
@@ -1324,6 +1356,30 @@ template&lt;class TImageType &gt; </div>
 
 </div>
 </div>
+<a id="a4bbb6cd2cf414d0260b6250fffe389c3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4bbb6cd2cf414d0260b6250fffe389c3">&#9670;&nbsp;</a></span>m_ReverseExpansionDirection</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool itk::simple::ThresholdSegmentationLevelSetImageFilter::m_ReverseExpansionDirection {false}</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="sitkThresholdSegmentationLevelSetImageFilter_8h_source.html#l00215">215</a> of file <a class="el" href="sitkThresholdSegmentationLevelSetImageFilter_8h_source.html">sitkThresholdSegmentationLevelSetImageFilter.h</a>.</p>
+
+</div>
+</div>
 <a id="aafd2454a5671961a5f673a4ae51f3369"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aafd2454a5671961a5f673a4ae51f3369">&#9670;&nbsp;</a></span>m_RMSChange</h2>
 
@@ -1334,7 +1390,7 @@ template&lt;class TImageType &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">double itk::simple::ThresholdSegmentationLevelSetImageFilter::m_RMSChange</td>
+          <td class="memname">double itk::simple::ThresholdSegmentationLevelSetImageFilter::m_RMSChange {0.0}</td>
         </tr>
       </table>
   </td>
@@ -1344,7 +1400,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkThresholdSegmentationLevelSetImageFilter_8h_source.html#l00210">210</a> of file <a class="el" href="sitkThresholdSegmentationLevelSetImageFilter_8h_source.html">sitkThresholdSegmentationLevelSetImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkThresholdSegmentationLevelSetImageFilter_8h_source.html#l00220">220</a> of file <a class="el" href="sitkThresholdSegmentationLevelSetImageFilter_8h_source.html">sitkThresholdSegmentationLevelSetImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -1358,7 +1414,7 @@ template&lt;class TImageType &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">double itk::simple::ThresholdSegmentationLevelSetImageFilter::m_UpperThreshold</td>
+          <td class="memname">double itk::simple::ThresholdSegmentationLevelSetImageFilter::m_UpperThreshold {255.0}</td>
         </tr>
       </table>
   </td>
@@ -1368,7 +1424,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkThresholdSegmentationLevelSetImageFilter_8h_source.html#l00196">196</a> of file <a class="el" href="sitkThresholdSegmentationLevelSetImageFilter_8h_source.html">sitkThresholdSegmentationLevelSetImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkThresholdSegmentationLevelSetImageFilter_8h_source.html#l00200">200</a> of file <a class="el" href="sitkThresholdSegmentationLevelSetImageFilter_8h_source.html">sitkThresholdSegmentationLevelSetImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -1378,7 +1434,7 @@ template&lt;class TImageType &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Apr 7 2020 03:21:40 for SimpleITK by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Apr 14 2020 02:53:34 for SimpleITK by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

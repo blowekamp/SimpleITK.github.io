@@ -19,7 +19,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">SimpleITK
-   &#160;<span id="projectnumber">2.0.0rc1.post73</span>
+   &#160;<span id="projectnumber">2.0.0rc1.post121</span>
    </div>
   </td>
  </tr>
@@ -144,6 +144,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:adb24443fcdc9231da19b76dfd4b07123"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac5ce4544d35bc1d04d28b21d875b546b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classitk_1_1simple_1_1Image.html">Image</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1BinaryMagnitudeImageFilter.html#ac5ce4544d35bc1d04d28b21d875b546b">Execute</a> (const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> &amp;image1, const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> &amp;image2)</td></tr>
 <tr class="separator:ac5ce4544d35bc1d04d28b21d875b546b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a636a566c900327f1ba79ab5ef817c919"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classitk_1_1simple_1_1Image.html">Image</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1BinaryMagnitudeImageFilter.html#a636a566c900327f1ba79ab5ef817c919">Execute</a> (<a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> &amp;&amp;image1, const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> &amp;image2)</td></tr>
+<tr class="separator:a636a566c900327f1ba79ab5ef817c919"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adf853eae21bd03c6b4d0b7e2c81ad53f"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1BinaryMagnitudeImageFilter.html#adf853eae21bd03c6b4d0b7e2c81ad53f">GetName</a> () const</td></tr>
 <tr class="separator:adf853eae21bd03c6b4d0b7e2c81ad53f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a90db124378898321465fe383e6fe3bd6"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1BinaryMagnitudeImageFilter.html#a90db124378898321465fe383e6fe3bd6">ToString</a> () const</td></tr>
@@ -203,6 +205,8 @@ Private Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
+<tr class="memitem:a594c21d401277a5d4cb6bd23eda7e98b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1BinaryMagnitudeImageFilter.html#a594c21d401277a5d4cb6bd23eda7e98b">m_InPlace</a> {false}</td></tr>
+<tr class="separator:a594c21d401277a5d4cb6bd23eda7e98b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab7555f867dd954d492391e2d27b70b03"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="classitk_1_1simple_1_1detail_1_1MemberFunctionFactory.html">detail::MemberFunctionFactory</a>&lt; <a class="el" href="classitk_1_1simple_1_1BinaryMagnitudeImageFilter.html#a690ab3f460714ebdea6cb59d593d428b">MemberFunctionType</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1BinaryMagnitudeImageFilter.html#ab7555f867dd954d492391e2d27b70b03">m_MemberFactory</a></td></tr>
 <tr class="separator:ab7555f867dd954d492391e2d27b70b03"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -321,7 +325,7 @@ Additional Inherited Members</h2></td></tr>
 <ul>
 <li>store the cast value into the output image.</li>
 </ul>
-<p>The filter expects all images to have the same dimension (e.g. all 2D, or all 3D, or all ND) </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="namespaceitk_1_1simple.html#a04ce48bb443b736d47b1876ca6b7870f" title="Computes the square root of the sum of squares of corresponding input pixels.">itk::simple::BinaryMagnitude</a> for the procedural interface </dd>
+<p>The filter expects all images to have the same dimension (e.g. all 2D, or all 3D, or all ND) </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="namespaceitk_1_1simple.html#a5a3ecb885ac12da3d80e596cc94e92fd" title="Computes the square root of the sum of squares of corresponding input pixels.">itk::simple::BinaryMagnitude</a> for the procedural interface </dd>
 <dd>
 <a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1BinaryMagnitudeImageFilter.html">itk::BinaryMagnitudeImageFilter</a> for the Doxygen on the original ITK class. </dd></dl>
 
@@ -348,7 +352,7 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 <p>Setup for member function dispatching </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkBinaryMagnitudeImageFilter_8h_source.html#l00098">98</a> of file <a class="el" href="sitkBinaryMagnitudeImageFilter_8h_source.html">sitkBinaryMagnitudeImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkBinaryMagnitudeImageFilter_8h_source.html#l00101">101</a> of file <a class="el" href="sitkBinaryMagnitudeImageFilter_8h_source.html">sitkBinaryMagnitudeImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -432,7 +436,7 @@ Additional Inherited Members</h2></td></tr>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
 <a id="ac5ce4544d35bc1d04d28b21d875b546b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac5ce4544d35bc1d04d28b21d875b546b">&#9670;&nbsp;</a></span>Execute()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ac5ce4544d35bc1d04d28b21d875b546b">&#9670;&nbsp;</a></span>Execute() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -441,6 +445,34 @@ Additional Inherited Members</h2></td></tr>
           <td class="memname"><a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> itk::simple::BinaryMagnitudeImageFilter::Execute </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> &amp;&#160;</td>
+          <td class="paramname"><em>image1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> &amp;&#160;</td>
+          <td class="paramname"><em>image2</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a636a566c900327f1ba79ab5ef817c919"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a636a566c900327f1ba79ab5ef817c919">&#9670;&nbsp;</a></span>Execute() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> itk::simple::BinaryMagnitudeImageFilter::Execute </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> &amp;&amp;&#160;</td>
           <td class="paramname"><em>image1</em>, </td>
         </tr>
         <tr>
@@ -577,11 +609,35 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkBinaryMagnitudeImageFilter_8h_source.html#l00102">102</a> of file <a class="el" href="sitkBinaryMagnitudeImageFilter_8h_source.html">sitkBinaryMagnitudeImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkBinaryMagnitudeImageFilter_8h_source.html#l00105">105</a> of file <a class="el" href="sitkBinaryMagnitudeImageFilter_8h_source.html">sitkBinaryMagnitudeImageFilter.h</a>.</p>
 
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
+<a id="a594c21d401277a5d4cb6bd23eda7e98b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a594c21d401277a5d4cb6bd23eda7e98b">&#9670;&nbsp;</a></span>m_InPlace</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool itk::simple::BinaryMagnitudeImageFilter::m_InPlace {false}</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="sitkBinaryMagnitudeImageFilter_8h_source.html#l00111">111</a> of file <a class="el" href="sitkBinaryMagnitudeImageFilter_8h_source.html">sitkBinaryMagnitudeImageFilter.h</a>.</p>
+
+</div>
+</div>
 <a id="ab7555f867dd954d492391e2d27b70b03"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ab7555f867dd954d492391e2d27b70b03">&#9670;&nbsp;</a></span>m_MemberFactory</h2>
 
@@ -602,7 +658,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkBinaryMagnitudeImageFilter_8h_source.html#l00104">104</a> of file <a class="el" href="sitkBinaryMagnitudeImageFilter_8h_source.html">sitkBinaryMagnitudeImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkBinaryMagnitudeImageFilter_8h_source.html#l00107">107</a> of file <a class="el" href="sitkBinaryMagnitudeImageFilter_8h_source.html">sitkBinaryMagnitudeImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -612,7 +668,7 @@ template&lt;class TImageType &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Apr 7 2020 03:21:31 for SimpleITK by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Apr 14 2020 02:53:24 for SimpleITK by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

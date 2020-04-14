@@ -19,7 +19,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">SimpleITK
-   &#160;<span id="projectnumber">2.0.0rc1.post73</span>
+   &#160;<span id="projectnumber">2.0.0rc1.post121</span>
    </div>
   </td>
  </tr>
@@ -221,11 +221,11 @@ Private Member Functions</h2></td></tr>
 Private Attributes</h2></td></tr>
 <tr class="memitem:aad22c08e18571d6412aaa847c5a86342"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="classitk_1_1simple_1_1detail_1_1MemberFunctionFactory.html">detail::MemberFunctionFactory</a>&lt; <a class="el" href="classitk_1_1simple_1_1HistogramMatchingImageFilter.html#a9666bc1201765d0d07e001b21112c6fb">MemberFunctionType</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1HistogramMatchingImageFilter.html#aad22c08e18571d6412aaa847c5a86342">m_MemberFactory</a></td></tr>
 <tr class="separator:aad22c08e18571d6412aaa847c5a86342"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a83df2ea0a311774e16c12fa80e4480b0"><td class="memItemLeft" align="right" valign="top"><a class="elRef" href="https://www.itk.org/Doxygen/html/namespaceitk.html#a575b8e3e1ee797dd1bbaf9724ed68f92">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1HistogramMatchingImageFilter.html#a83df2ea0a311774e16c12fa80e4480b0">m_NumberOfHistogramLevels</a></td></tr>
+<tr class="memitem:a83df2ea0a311774e16c12fa80e4480b0"><td class="memItemLeft" align="right" valign="top"><a class="elRef" href="https://www.itk.org/Doxygen/html/namespaceitk.html#a575b8e3e1ee797dd1bbaf9724ed68f92">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1HistogramMatchingImageFilter.html#a83df2ea0a311774e16c12fa80e4480b0">m_NumberOfHistogramLevels</a> {256u}</td></tr>
 <tr class="separator:a83df2ea0a311774e16c12fa80e4480b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7d66e5f72640a3735c89e9abd00922e5"><td class="memItemLeft" align="right" valign="top"><a class="elRef" href="https://www.itk.org/Doxygen/html/namespaceitk.html#a575b8e3e1ee797dd1bbaf9724ed68f92">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1HistogramMatchingImageFilter.html#a7d66e5f72640a3735c89e9abd00922e5">m_NumberOfMatchPoints</a></td></tr>
+<tr class="memitem:a7d66e5f72640a3735c89e9abd00922e5"><td class="memItemLeft" align="right" valign="top"><a class="elRef" href="https://www.itk.org/Doxygen/html/namespaceitk.html#a575b8e3e1ee797dd1bbaf9724ed68f92">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1HistogramMatchingImageFilter.html#a7d66e5f72640a3735c89e9abd00922e5">m_NumberOfMatchPoints</a> {1u}</td></tr>
 <tr class="separator:a7d66e5f72640a3735c89e9abd00922e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aff26a4c3bb2465f2ca093c0e899c0cc2"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1HistogramMatchingImageFilter.html#aff26a4c3bb2465f2ca093c0e899c0cc2">m_ThresholdAtMeanIntensity</a></td></tr>
+<tr class="memitem:aff26a4c3bb2465f2ca093c0e899c0cc2"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1HistogramMatchingImageFilter.html#aff26a4c3bb2465f2ca093c0e899c0cc2">m_ThresholdAtMeanIntensity</a> {true}</td></tr>
 <tr class="separator:aff26a4c3bb2465f2ca093c0e899c0cc2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
@@ -358,7 +358,7 @@ of MRI Scale Standardization", IEEE Transactions on Medical Imaging, 19(2):143-1
 </div><div class="memdoc">
 <p>Setup for member function dispatching </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkHistogramMatchingImageFilter_8h_source.html#l00117">117</a> of file <a class="el" href="sitkHistogramMatchingImageFilter_8h_source.html">sitkHistogramMatchingImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkHistogramMatchingImageFilter_8h_source.html#l00118">118</a> of file <a class="el" href="sitkHistogramMatchingImageFilter_8h_source.html">sitkHistogramMatchingImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -821,7 +821,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkHistogramMatchingImageFilter_8h_source.html#l00121">121</a> of file <a class="el" href="sitkHistogramMatchingImageFilter_8h_source.html">sitkHistogramMatchingImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkHistogramMatchingImageFilter_8h_source.html#l00122">122</a> of file <a class="el" href="sitkHistogramMatchingImageFilter_8h_source.html">sitkHistogramMatchingImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -846,7 +846,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkHistogramMatchingImageFilter_8h_source.html#l00123">123</a> of file <a class="el" href="sitkHistogramMatchingImageFilter_8h_source.html">sitkHistogramMatchingImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkHistogramMatchingImageFilter_8h_source.html#l00124">124</a> of file <a class="el" href="sitkHistogramMatchingImageFilter_8h_source.html">sitkHistogramMatchingImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -860,31 +860,7 @@ template&lt;class TImageType &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="elRef" href="https://www.itk.org/Doxygen/html/namespaceitk.html#a575b8e3e1ee797dd1bbaf9724ed68f92">uint32_t</a> itk::simple::HistogramMatchingImageFilter::m_NumberOfHistogramLevels</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="sitkHistogramMatchingImageFilter_8h_source.html#l00126">126</a> of file <a class="el" href="sitkHistogramMatchingImageFilter_8h_source.html">sitkHistogramMatchingImageFilter.h</a>.</p>
-
-</div>
-</div>
-<a id="a7d66e5f72640a3735c89e9abd00922e5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7d66e5f72640a3735c89e9abd00922e5">&#9670;&nbsp;</a></span>m_NumberOfMatchPoints</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="elRef" href="https://www.itk.org/Doxygen/html/namespaceitk.html#a575b8e3e1ee797dd1bbaf9724ed68f92">uint32_t</a> itk::simple::HistogramMatchingImageFilter::m_NumberOfMatchPoints</td>
+          <td class="memname"><a class="elRef" href="https://www.itk.org/Doxygen/html/namespaceitk.html#a575b8e3e1ee797dd1bbaf9724ed68f92">uint32_t</a> itk::simple::HistogramMatchingImageFilter::m_NumberOfHistogramLevels {256u}</td>
         </tr>
       </table>
   </td>
@@ -898,6 +874,30 @@ template&lt;class TImageType &gt; </div>
 
 </div>
 </div>
+<a id="a7d66e5f72640a3735c89e9abd00922e5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7d66e5f72640a3735c89e9abd00922e5">&#9670;&nbsp;</a></span>m_NumberOfMatchPoints</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="elRef" href="https://www.itk.org/Doxygen/html/namespaceitk.html#a575b8e3e1ee797dd1bbaf9724ed68f92">uint32_t</a> itk::simple::HistogramMatchingImageFilter::m_NumberOfMatchPoints {1u}</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="sitkHistogramMatchingImageFilter_8h_source.html#l00129">129</a> of file <a class="el" href="sitkHistogramMatchingImageFilter_8h_source.html">sitkHistogramMatchingImageFilter.h</a>.</p>
+
+</div>
+</div>
 <a id="aff26a4c3bb2465f2ca093c0e899c0cc2"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aff26a4c3bb2465f2ca093c0e899c0cc2">&#9670;&nbsp;</a></span>m_ThresholdAtMeanIntensity</h2>
 
@@ -908,7 +908,7 @@ template&lt;class TImageType &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">bool itk::simple::HistogramMatchingImageFilter::m_ThresholdAtMeanIntensity</td>
+          <td class="memname">bool itk::simple::HistogramMatchingImageFilter::m_ThresholdAtMeanIntensity {true}</td>
         </tr>
       </table>
   </td>
@@ -918,7 +918,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkHistogramMatchingImageFilter_8h_source.html#l00128">128</a> of file <a class="el" href="sitkHistogramMatchingImageFilter_8h_source.html">sitkHistogramMatchingImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkHistogramMatchingImageFilter_8h_source.html#l00131">131</a> of file <a class="el" href="sitkHistogramMatchingImageFilter_8h_source.html">sitkHistogramMatchingImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -928,7 +928,7 @@ template&lt;class TImageType &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Apr 7 2020 03:21:35 for SimpleITK by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Apr 14 2020 02:53:28 for SimpleITK by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

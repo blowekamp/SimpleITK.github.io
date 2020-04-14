@@ -19,7 +19,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">SimpleITK
-   &#160;<span id="projectnumber">2.0.0rc1.post73</span>
+   &#160;<span id="projectnumber">2.0.0rc1.post121</span>
    </div>
   </td>
  </tr>
@@ -225,11 +225,11 @@ Private Member Functions</h2></td></tr>
 Private Attributes</h2></td></tr>
 <tr class="memitem:a8b0b18f2b1924a8612415e4e7f83932f"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="classitk_1_1simple_1_1detail_1_1MemberFunctionFactory.html">detail::MemberFunctionFactory</a>&lt; <a class="el" href="classitk_1_1simple_1_1FastMarchingImageFilter.html#a56640e8f0006f08a06bb7c14d60412ea">MemberFunctionType</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1FastMarchingImageFilter.html#a8b0b18f2b1924a8612415e4e7f83932f">m_MemberFactory</a></td></tr>
 <tr class="separator:a8b0b18f2b1924a8612415e4e7f83932f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6da5deae0e3164c1470dbe6ac6cc2268"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1FastMarchingImageFilter.html#a6da5deae0e3164c1470dbe6ac6cc2268">m_NormalizationFactor</a></td></tr>
+<tr class="memitem:a6da5deae0e3164c1470dbe6ac6cc2268"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1FastMarchingImageFilter.html#a6da5deae0e3164c1470dbe6ac6cc2268">m_NormalizationFactor</a> {1.0}</td></tr>
 <tr class="separator:a6da5deae0e3164c1470dbe6ac6cc2268"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a21cee0b9f12641f4006e8700a17c5364"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1FastMarchingImageFilter.html#a21cee0b9f12641f4006e8700a17c5364">m_StoppingValue</a></td></tr>
+<tr class="memitem:a21cee0b9f12641f4006e8700a17c5364"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1FastMarchingImageFilter.html#a21cee0b9f12641f4006e8700a17c5364">m_StoppingValue</a> {std::numeric_limits&lt;double&gt;::max()/2.0}</td></tr>
 <tr class="separator:a21cee0b9f12641f4006e8700a17c5364"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a07cba0e471ca1db5d6c47d54bf30ad2d"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::vector&lt; unsigned int &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1FastMarchingImageFilter.html#a07cba0e471ca1db5d6c47d54bf30ad2d">m_TrialPoints</a></td></tr>
+<tr class="memitem:a07cba0e471ca1db5d6c47d54bf30ad2d"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::vector&lt; unsigned int &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1FastMarchingImageFilter.html#a07cba0e471ca1db5d6c47d54bf30ad2d">m_TrialPoints</a> {std::vector&lt; std::vector&lt;unsigned int &gt; &gt;()}</td></tr>
 <tr class="separator:a07cba0e471ca1db5d6c47d54bf30ad2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
@@ -371,7 +371,7 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 <p>Setup for member function dispatching </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkFastMarchingImageFilter_8h_source.html#l00133">133</a> of file <a class="el" href="sitkFastMarchingImageFilter_8h_source.html">sitkFastMarchingImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkFastMarchingImageFilter_8h_source.html#l00134">134</a> of file <a class="el" href="sitkFastMarchingImageFilter_8h_source.html">sitkFastMarchingImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -816,7 +816,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkFastMarchingImageFilter_8h_source.html#l00137">137</a> of file <a class="el" href="sitkFastMarchingImageFilter_8h_source.html">sitkFastMarchingImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkFastMarchingImageFilter_8h_source.html#l00138">138</a> of file <a class="el" href="sitkFastMarchingImageFilter_8h_source.html">sitkFastMarchingImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -841,7 +841,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkFastMarchingImageFilter_8h_source.html#l00139">139</a> of file <a class="el" href="sitkFastMarchingImageFilter_8h_source.html">sitkFastMarchingImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkFastMarchingImageFilter_8h_source.html#l00140">140</a> of file <a class="el" href="sitkFastMarchingImageFilter_8h_source.html">sitkFastMarchingImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -855,7 +855,7 @@ template&lt;class TImageType &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">double itk::simple::FastMarchingImageFilter::m_NormalizationFactor</td>
+          <td class="memname">double itk::simple::FastMarchingImageFilter::m_NormalizationFactor {1.0}</td>
         </tr>
       </table>
   </td>
@@ -865,7 +865,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkFastMarchingImageFilter_8h_source.html#l00143">143</a> of file <a class="el" href="sitkFastMarchingImageFilter_8h_source.html">sitkFastMarchingImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkFastMarchingImageFilter_8h_source.html#l00145">145</a> of file <a class="el" href="sitkFastMarchingImageFilter_8h_source.html">sitkFastMarchingImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -879,7 +879,7 @@ template&lt;class TImageType &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">double itk::simple::FastMarchingImageFilter::m_StoppingValue</td>
+          <td class="memname">double itk::simple::FastMarchingImageFilter::m_StoppingValue {std::numeric_limits&lt;double&gt;::max()/2.0}</td>
         </tr>
       </table>
   </td>
@@ -889,7 +889,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkFastMarchingImageFilter_8h_source.html#l00144">144</a> of file <a class="el" href="sitkFastMarchingImageFilter_8h_source.html">sitkFastMarchingImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkFastMarchingImageFilter_8h_source.html#l00147">147</a> of file <a class="el" href="sitkFastMarchingImageFilter_8h_source.html">sitkFastMarchingImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -903,7 +903,7 @@ template&lt;class TImageType &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::vector&lt; std::vector&lt;unsigned int&gt; &gt; itk::simple::FastMarchingImageFilter::m_TrialPoints</td>
+          <td class="memname">std::vector&lt; std::vector&lt;unsigned int&gt; &gt; itk::simple::FastMarchingImageFilter::m_TrialPoints {std::vector&lt; std::vector&lt;unsigned int &gt; &gt;()}</td>
         </tr>
       </table>
   </td>
@@ -913,7 +913,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkFastMarchingImageFilter_8h_source.html#l00142">142</a> of file <a class="el" href="sitkFastMarchingImageFilter_8h_source.html">sitkFastMarchingImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkFastMarchingImageFilter_8h_source.html#l00143">143</a> of file <a class="el" href="sitkFastMarchingImageFilter_8h_source.html">sitkFastMarchingImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -923,7 +923,7 @@ template&lt;class TImageType &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Apr 7 2020 03:21:34 for SimpleITK by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Apr 14 2020 02:53:27 for SimpleITK by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

@@ -19,7 +19,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">SimpleITK
-   &#160;<span id="projectnumber">2.0.0rc1.post73</span>
+   &#160;<span id="projectnumber">2.0.0rc1.post121</span>
    </div>
   </td>
  </tr>
@@ -144,6 +144,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ab35a8fbc6c8c613b9b12c6c59f592016"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3ed9f56aca175d9833a0ceab45dce72e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classitk_1_1simple_1_1Image.html">Image</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1BinaryThresholdImageFilter.html#a3ed9f56aca175d9833a0ceab45dce72e">Execute</a> (const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> &amp;image1)</td></tr>
 <tr class="separator:a3ed9f56aca175d9833a0ceab45dce72e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8a04956acd6cfa6ed312ce26a77d9007"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classitk_1_1simple_1_1Image.html">Image</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1BinaryThresholdImageFilter.html#a8a04956acd6cfa6ed312ce26a77d9007">Execute</a> (<a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> &amp;&amp;image1)</td></tr>
+<tr class="separator:a8a04956acd6cfa6ed312ce26a77d9007"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5642c07bc3a4c30f9e1c1b47e71fc370"><td class="memItemLeft" align="right" valign="top"><a class="elRef" href="https://www.itk.org/Doxygen/html/namespaceitk.html#a5037a19c1b11bcb33173a2a3e3d8b8a0">uint8_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1BinaryThresholdImageFilter.html#a5642c07bc3a4c30f9e1c1b47e71fc370">GetInsideValue</a> () const</td></tr>
 <tr class="separator:a5642c07bc3a4c30f9e1c1b47e71fc370"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2e41af96824575ea53a4323f8bb072ec"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1BinaryThresholdImageFilter.html#a2e41af96824575ea53a4323f8bb072ec">GetLowerThreshold</a> () const</td></tr>
@@ -219,15 +221,17 @@ Private Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
-<tr class="memitem:a11ef24413b316ea2ff8420773990d32b"><td class="memItemLeft" align="right" valign="top"><a class="elRef" href="https://www.itk.org/Doxygen/html/namespaceitk.html#a5037a19c1b11bcb33173a2a3e3d8b8a0">uint8_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1BinaryThresholdImageFilter.html#a11ef24413b316ea2ff8420773990d32b">m_InsideValue</a></td></tr>
+<tr class="memitem:a15aebad8e599b9b3cee7e44f541aa486"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1BinaryThresholdImageFilter.html#a15aebad8e599b9b3cee7e44f541aa486">m_InPlace</a> {false}</td></tr>
+<tr class="separator:a15aebad8e599b9b3cee7e44f541aa486"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a11ef24413b316ea2ff8420773990d32b"><td class="memItemLeft" align="right" valign="top"><a class="elRef" href="https://www.itk.org/Doxygen/html/namespaceitk.html#a5037a19c1b11bcb33173a2a3e3d8b8a0">uint8_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1BinaryThresholdImageFilter.html#a11ef24413b316ea2ff8420773990d32b">m_InsideValue</a> {1u}</td></tr>
 <tr class="separator:a11ef24413b316ea2ff8420773990d32b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad025b38843e850b07a0505e79acf258b"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1BinaryThresholdImageFilter.html#ad025b38843e850b07a0505e79acf258b">m_LowerThreshold</a></td></tr>
+<tr class="memitem:ad025b38843e850b07a0505e79acf258b"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1BinaryThresholdImageFilter.html#ad025b38843e850b07a0505e79acf258b">m_LowerThreshold</a> {0.0}</td></tr>
 <tr class="separator:ad025b38843e850b07a0505e79acf258b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a00a27e87f340ccb828454e5be1cbb36c"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="classitk_1_1simple_1_1detail_1_1MemberFunctionFactory.html">detail::MemberFunctionFactory</a>&lt; <a class="el" href="classitk_1_1simple_1_1BinaryThresholdImageFilter.html#ae0f499258a6d89e518ebda27906a581f">MemberFunctionType</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1BinaryThresholdImageFilter.html#a00a27e87f340ccb828454e5be1cbb36c">m_MemberFactory</a></td></tr>
 <tr class="separator:a00a27e87f340ccb828454e5be1cbb36c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3bf72edd68218e06efe1a202a107e191"><td class="memItemLeft" align="right" valign="top"><a class="elRef" href="https://www.itk.org/Doxygen/html/namespaceitk.html#a5037a19c1b11bcb33173a2a3e3d8b8a0">uint8_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1BinaryThresholdImageFilter.html#a3bf72edd68218e06efe1a202a107e191">m_OutsideValue</a></td></tr>
+<tr class="memitem:a3bf72edd68218e06efe1a202a107e191"><td class="memItemLeft" align="right" valign="top"><a class="elRef" href="https://www.itk.org/Doxygen/html/namespaceitk.html#a5037a19c1b11bcb33173a2a3e3d8b8a0">uint8_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1BinaryThresholdImageFilter.html#a3bf72edd68218e06efe1a202a107e191">m_OutsideValue</a> {0u}</td></tr>
 <tr class="separator:a3bf72edd68218e06efe1a202a107e191"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a87c9e65284b76c5632106cdee34b1aa3"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1BinaryThresholdImageFilter.html#a87c9e65284b76c5632106cdee34b1aa3">m_UpperThreshold</a></td></tr>
+<tr class="memitem:a87c9e65284b76c5632106cdee34b1aa3"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1BinaryThresholdImageFilter.html#a87c9e65284b76c5632106cdee34b1aa3">m_UpperThreshold</a> {255.0}</td></tr>
 <tr class="separator:a87c9e65284b76c5632106cdee34b1aa3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
@@ -330,7 +334,7 @@ Additional Inherited Members</h2></td></tr>
 </p>
 <p>This filter is templated over the input image type and the output image type.</p>
 <p>The filter expect both images to have the same number of dimensions.</p>
-<p>The default values for LowerThreshold and UpperThreshold are: LowerThreshold = <a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1NumericTraits.html#a130b93e7399bc5e5d81614cdaf46e4f1">NumericTraits&lt;TInput&gt;::NonpositiveMin()</a> ; UpperThreshold = <a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1NumericTraits.html#a1341dd4e5b9b45217923f82b9175fb2d">NumericTraits&lt;TInput&gt;::max()</a> ; Therefore, generally only one of these needs to be set, depending on whether the user wants to threshold above or below the desired threshold. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="namespaceitk_1_1simple.html#a9422e1bef3de9588cc00f94666cff7b7" title="Binarize an input image by thresholding.">itk::simple::BinaryThreshold</a> for the procedural interface </dd>
+<p>The default values for LowerThreshold and UpperThreshold are: LowerThreshold = <a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1NumericTraits.html#a130b93e7399bc5e5d81614cdaf46e4f1">NumericTraits&lt;TInput&gt;::NonpositiveMin()</a> ; UpperThreshold = <a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1NumericTraits.html#a1341dd4e5b9b45217923f82b9175fb2d">NumericTraits&lt;TInput&gt;::max()</a> ; Therefore, generally only one of these needs to be set, depending on whether the user wants to threshold above or below the desired threshold. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="namespaceitk_1_1simple.html#aea13be645bbf2b4998a88a9e3f837901" title="Binarize an input image by thresholding.">itk::simple::BinaryThreshold</a> for the procedural interface </dd>
 <dd>
 <a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1BinaryThresholdImageFilter.html">itk::BinaryThresholdImageFilter</a> for the Doxygen on the original ITK class. </dd></dl>
 <dl class="section examples"><dt>Examples</dt><dd><a class="el" href="FastMarchingSegmentation_2FastMarchingSegmentation_8cxx-example.html#_a21">FastMarchingSegmentation/FastMarchingSegmentation.cxx</a>.</dd>
@@ -359,7 +363,7 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 <p>Setup for member function dispatching </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkBinaryThresholdImageFilter_8h_source.html#l00117">117</a> of file <a class="el" href="sitkBinaryThresholdImageFilter_8h_source.html">sitkBinaryThresholdImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkBinaryThresholdImageFilter_8h_source.html#l00120">120</a> of file <a class="el" href="sitkBinaryThresholdImageFilter_8h_source.html">sitkBinaryThresholdImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -443,7 +447,7 @@ Additional Inherited Members</h2></td></tr>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
 <a id="a3ed9f56aca175d9833a0ceab45dce72e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3ed9f56aca175d9833a0ceab45dce72e">&#9670;&nbsp;</a></span>Execute()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a3ed9f56aca175d9833a0ceab45dce72e">&#9670;&nbsp;</a></span>Execute() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -452,6 +456,24 @@ Additional Inherited Members</h2></td></tr>
           <td class="memname"><a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> itk::simple::BinaryThresholdImageFilter::Execute </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> &amp;&#160;</td>
+          <td class="paramname"><em>image1</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a8a04956acd6cfa6ed312ce26a77d9007"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8a04956acd6cfa6ed312ce26a77d9007">&#9670;&nbsp;</a></span>Execute() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> itk::simple::BinaryThresholdImageFilter::Execute </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> &amp;&amp;&#160;</td>
           <td class="paramname"><em>image1</em></td><td>)</td>
           <td></td>
         </tr>
@@ -804,11 +826,35 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkBinaryThresholdImageFilter_8h_source.html#l00121">121</a> of file <a class="el" href="sitkBinaryThresholdImageFilter_8h_source.html">sitkBinaryThresholdImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkBinaryThresholdImageFilter_8h_source.html#l00124">124</a> of file <a class="el" href="sitkBinaryThresholdImageFilter_8h_source.html">sitkBinaryThresholdImageFilter.h</a>.</p>
 
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
+<a id="a15aebad8e599b9b3cee7e44f541aa486"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a15aebad8e599b9b3cee7e44f541aa486">&#9670;&nbsp;</a></span>m_InPlace</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool itk::simple::BinaryThresholdImageFilter::m_InPlace {false}</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="sitkBinaryThresholdImageFilter_8h_source.html#l00138">138</a> of file <a class="el" href="sitkBinaryThresholdImageFilter_8h_source.html">sitkBinaryThresholdImageFilter.h</a>.</p>
+
+</div>
+</div>
 <a id="a11ef24413b316ea2ff8420773990d32b"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a11ef24413b316ea2ff8420773990d32b">&#9670;&nbsp;</a></span>m_InsideValue</h2>
 
@@ -819,7 +865,7 @@ template&lt;class TImageType &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="elRef" href="https://www.itk.org/Doxygen/html/namespaceitk.html#a5037a19c1b11bcb33173a2a3e3d8b8a0">uint8_t</a> itk::simple::BinaryThresholdImageFilter::m_InsideValue</td>
+          <td class="memname"><a class="elRef" href="https://www.itk.org/Doxygen/html/namespaceitk.html#a5037a19c1b11bcb33173a2a3e3d8b8a0">uint8_t</a> itk::simple::BinaryThresholdImageFilter::m_InsideValue {1u}</td>
         </tr>
       </table>
   </td>
@@ -829,7 +875,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkBinaryThresholdImageFilter_8h_source.html#l00128">128</a> of file <a class="el" href="sitkBinaryThresholdImageFilter_8h_source.html">sitkBinaryThresholdImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkBinaryThresholdImageFilter_8h_source.html#l00133">133</a> of file <a class="el" href="sitkBinaryThresholdImageFilter_8h_source.html">sitkBinaryThresholdImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -843,7 +889,7 @@ template&lt;class TImageType &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">double itk::simple::BinaryThresholdImageFilter::m_LowerThreshold</td>
+          <td class="memname">double itk::simple::BinaryThresholdImageFilter::m_LowerThreshold {0.0}</td>
         </tr>
       </table>
   </td>
@@ -853,7 +899,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkBinaryThresholdImageFilter_8h_source.html#l00126">126</a> of file <a class="el" href="sitkBinaryThresholdImageFilter_8h_source.html">sitkBinaryThresholdImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkBinaryThresholdImageFilter_8h_source.html#l00129">129</a> of file <a class="el" href="sitkBinaryThresholdImageFilter_8h_source.html">sitkBinaryThresholdImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -877,7 +923,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkBinaryThresholdImageFilter_8h_source.html#l00123">123</a> of file <a class="el" href="sitkBinaryThresholdImageFilter_8h_source.html">sitkBinaryThresholdImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkBinaryThresholdImageFilter_8h_source.html#l00126">126</a> of file <a class="el" href="sitkBinaryThresholdImageFilter_8h_source.html">sitkBinaryThresholdImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -891,7 +937,7 @@ template&lt;class TImageType &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="elRef" href="https://www.itk.org/Doxygen/html/namespaceitk.html#a5037a19c1b11bcb33173a2a3e3d8b8a0">uint8_t</a> itk::simple::BinaryThresholdImageFilter::m_OutsideValue</td>
+          <td class="memname"><a class="elRef" href="https://www.itk.org/Doxygen/html/namespaceitk.html#a5037a19c1b11bcb33173a2a3e3d8b8a0">uint8_t</a> itk::simple::BinaryThresholdImageFilter::m_OutsideValue {0u}</td>
         </tr>
       </table>
   </td>
@@ -901,7 +947,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkBinaryThresholdImageFilter_8h_source.html#l00129">129</a> of file <a class="el" href="sitkBinaryThresholdImageFilter_8h_source.html">sitkBinaryThresholdImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkBinaryThresholdImageFilter_8h_source.html#l00135">135</a> of file <a class="el" href="sitkBinaryThresholdImageFilter_8h_source.html">sitkBinaryThresholdImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -915,7 +961,7 @@ template&lt;class TImageType &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">double itk::simple::BinaryThresholdImageFilter::m_UpperThreshold</td>
+          <td class="memname">double itk::simple::BinaryThresholdImageFilter::m_UpperThreshold {255.0}</td>
         </tr>
       </table>
   </td>
@@ -925,7 +971,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkBinaryThresholdImageFilter_8h_source.html#l00127">127</a> of file <a class="el" href="sitkBinaryThresholdImageFilter_8h_source.html">sitkBinaryThresholdImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkBinaryThresholdImageFilter_8h_source.html#l00131">131</a> of file <a class="el" href="sitkBinaryThresholdImageFilter_8h_source.html">sitkBinaryThresholdImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -935,7 +981,7 @@ template&lt;class TImageType &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Apr 7 2020 03:21:32 for SimpleITK by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Apr 14 2020 02:53:25 for SimpleITK by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

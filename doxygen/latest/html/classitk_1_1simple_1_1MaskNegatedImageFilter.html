@@ -19,7 +19,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">SimpleITK
-   &#160;<span id="projectnumber">2.0.0rc1.post73</span>
+   &#160;<span id="projectnumber">2.0.0rc1.post121</span>
    </div>
   </td>
  </tr>
@@ -142,6 +142,8 @@ Public Types</h2></td></tr>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:ad5c71726224210803c9233e5ed8473d0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classitk_1_1simple_1_1Image.html">Image</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1MaskNegatedImageFilter.html#ad5c71726224210803c9233e5ed8473d0">Execute</a> (const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> &amp;image, const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> &amp;maskImage)</td></tr>
 <tr class="separator:ad5c71726224210803c9233e5ed8473d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad26ad15b3c0d41ef02076218689ddf4d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classitk_1_1simple_1_1Image.html">Image</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1MaskNegatedImageFilter.html#ad26ad15b3c0d41ef02076218689ddf4d">Execute</a> (<a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> &amp;&amp;image, const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> &amp;maskImage)</td></tr>
+<tr class="separator:ad26ad15b3c0d41ef02076218689ddf4d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1f5fd38ac52aade2596c9ce1dd9cd9e6"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1MaskNegatedImageFilter.html#a1f5fd38ac52aade2596c9ce1dd9cd9e6">GetMaskingValue</a> () const</td></tr>
 <tr class="separator:a1f5fd38ac52aade2596c9ce1dd9cd9e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8088f99aa267b75b5c9a55d3383ca6fe"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1MaskNegatedImageFilter.html#a8088f99aa267b75b5c9a55d3383ca6fe">GetName</a> () const</td></tr>
@@ -211,11 +213,13 @@ Private Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
-<tr class="memitem:af29e021b2f5d43bb6361dcc3e483b29c"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1MaskNegatedImageFilter.html#af29e021b2f5d43bb6361dcc3e483b29c">m_MaskingValue</a></td></tr>
+<tr class="memitem:a104610b61706db1406df78664b97e487"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1MaskNegatedImageFilter.html#a104610b61706db1406df78664b97e487">m_InPlace</a> {false}</td></tr>
+<tr class="separator:a104610b61706db1406df78664b97e487"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af29e021b2f5d43bb6361dcc3e483b29c"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1MaskNegatedImageFilter.html#af29e021b2f5d43bb6361dcc3e483b29c">m_MaskingValue</a> {0}</td></tr>
 <tr class="separator:af29e021b2f5d43bb6361dcc3e483b29c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa3f5e7136476481789c22484a5bf9769"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="classitk_1_1simple_1_1detail_1_1MemberFunctionFactory.html">detail::MemberFunctionFactory</a>&lt; <a class="el" href="classitk_1_1simple_1_1MaskNegatedImageFilter.html#ac98a6f4ebf012b2916851edf6df9bc68">MemberFunctionType</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1MaskNegatedImageFilter.html#aa3f5e7136476481789c22484a5bf9769">m_MemberFactory</a></td></tr>
 <tr class="separator:aa3f5e7136476481789c22484a5bf9769"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a48a19623672816e223042c6d08c8c371"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1MaskNegatedImageFilter.html#a48a19623672816e223042c6d08c8c371">m_OutsideValue</a></td></tr>
+<tr class="memitem:a48a19623672816e223042c6d08c8c371"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1MaskNegatedImageFilter.html#a48a19623672816e223042c6d08c8c371">m_OutsideValue</a> {0}</td></tr>
 <tr class="separator:a48a19623672816e223042c6d08c8c371"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
@@ -326,7 +330,7 @@ Additional Inherited Members</h2></td></tr>
 <dl class="section warning"><dt>Warning</dt><dd>Only pixel value with mask_value ( defaults to 0 ) will be preserved.</dd></dl>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="classitk_1_1simple_1_1MaskImageFilter.html" title="Mask an image with a mask.">MaskImageFilter</a> </dd>
 <dd>
-<a class="el" href="namespaceitk_1_1simple.html#a07ef4ec78bf1f4cbd3c1392f5031c681" title="Mask an image with the negation (or logical compliment) of a mask.">itk::simple::MaskNegated</a> for the procedural interface </dd>
+<a class="el" href="namespaceitk_1_1simple.html#a207474218314356bdc64251e0bf23dff" title="Mask an image with the negation (or logical compliment) of a mask.">itk::simple::MaskNegated</a> for the procedural interface </dd>
 <dd>
 <a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1MaskNegatedImageFilter.html">itk::MaskNegatedImageFilter</a> for the Doxygen on the original ITK class. </dd></dl>
 
@@ -353,7 +357,7 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 <p>Setup for member function dispatching </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkMaskNegatedImageFilter_8h_source.html#l00113">113</a> of file <a class="el" href="sitkMaskNegatedImageFilter_8h_source.html">sitkMaskNegatedImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkMaskNegatedImageFilter_8h_source.html#l00116">116</a> of file <a class="el" href="sitkMaskNegatedImageFilter_8h_source.html">sitkMaskNegatedImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -437,7 +441,7 @@ Additional Inherited Members</h2></td></tr>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
 <a id="ad5c71726224210803c9233e5ed8473d0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad5c71726224210803c9233e5ed8473d0">&#9670;&nbsp;</a></span>Execute()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ad5c71726224210803c9233e5ed8473d0">&#9670;&nbsp;</a></span>Execute() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -446,6 +450,34 @@ Additional Inherited Members</h2></td></tr>
           <td class="memname"><a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> itk::simple::MaskNegatedImageFilter::Execute </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> &amp;&#160;</td>
+          <td class="paramname"><em>image</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> &amp;&#160;</td>
+          <td class="paramname"><em>maskImage</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad26ad15b3c0d41ef02076218689ddf4d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad26ad15b3c0d41ef02076218689ddf4d">&#9670;&nbsp;</a></span>Execute() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> itk::simple::MaskNegatedImageFilter::Execute </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> &amp;&amp;&#160;</td>
           <td class="paramname"><em>image</em>, </td>
         </tr>
         <tr>
@@ -695,11 +727,35 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkMaskNegatedImageFilter_8h_source.html#l00117">117</a> of file <a class="el" href="sitkMaskNegatedImageFilter_8h_source.html">sitkMaskNegatedImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkMaskNegatedImageFilter_8h_source.html#l00120">120</a> of file <a class="el" href="sitkMaskNegatedImageFilter_8h_source.html">sitkMaskNegatedImageFilter.h</a>.</p>
 
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
+<a id="a104610b61706db1406df78664b97e487"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a104610b61706db1406df78664b97e487">&#9670;&nbsp;</a></span>m_InPlace</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool itk::simple::MaskNegatedImageFilter::m_InPlace {false}</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="sitkMaskNegatedImageFilter_8h_source.html#l00130">130</a> of file <a class="el" href="sitkMaskNegatedImageFilter_8h_source.html">sitkMaskNegatedImageFilter.h</a>.</p>
+
+</div>
+</div>
 <a id="af29e021b2f5d43bb6361dcc3e483b29c"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#af29e021b2f5d43bb6361dcc3e483b29c">&#9670;&nbsp;</a></span>m_MaskingValue</h2>
 
@@ -710,7 +766,7 @@ template&lt;class TImageType &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">double itk::simple::MaskNegatedImageFilter::m_MaskingValue</td>
+          <td class="memname">double itk::simple::MaskNegatedImageFilter::m_MaskingValue {0}</td>
         </tr>
       </table>
   </td>
@@ -720,7 +776,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkMaskNegatedImageFilter_8h_source.html#l00123">123</a> of file <a class="el" href="sitkMaskNegatedImageFilter_8h_source.html">sitkMaskNegatedImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkMaskNegatedImageFilter_8h_source.html#l00127">127</a> of file <a class="el" href="sitkMaskNegatedImageFilter_8h_source.html">sitkMaskNegatedImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -744,7 +800,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkMaskNegatedImageFilter_8h_source.html#l00119">119</a> of file <a class="el" href="sitkMaskNegatedImageFilter_8h_source.html">sitkMaskNegatedImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkMaskNegatedImageFilter_8h_source.html#l00122">122</a> of file <a class="el" href="sitkMaskNegatedImageFilter_8h_source.html">sitkMaskNegatedImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -758,7 +814,7 @@ template&lt;class TImageType &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">double itk::simple::MaskNegatedImageFilter::m_OutsideValue</td>
+          <td class="memname">double itk::simple::MaskNegatedImageFilter::m_OutsideValue {0}</td>
         </tr>
       </table>
   </td>
@@ -768,7 +824,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkMaskNegatedImageFilter_8h_source.html#l00122">122</a> of file <a class="el" href="sitkMaskNegatedImageFilter_8h_source.html">sitkMaskNegatedImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkMaskNegatedImageFilter_8h_source.html#l00125">125</a> of file <a class="el" href="sitkMaskNegatedImageFilter_8h_source.html">sitkMaskNegatedImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -778,7 +834,7 @@ template&lt;class TImageType &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Apr 7 2020 03:21:37 for SimpleITK by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Apr 14 2020 02:53:30 for SimpleITK by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>
