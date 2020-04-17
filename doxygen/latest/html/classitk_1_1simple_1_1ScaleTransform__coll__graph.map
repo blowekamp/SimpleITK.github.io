@@ -1,4 +1,0 @@
-<map id="itk::simple::ScaleTransform" name="itk::simple::ScaleTransform">
-<area shape="rect" id="node1" title="A 2D or 3D anisotropic scale of coordinate space around a fixed center." alt="" coords="5,80,204,107"/>
-<area shape="rect" id="node2" href="$classitk_1_1simple_1_1Transform.html" title="A simplified wrapper around a variety of ITK transforms." alt="" coords="23,5,187,32"/>
-</map>

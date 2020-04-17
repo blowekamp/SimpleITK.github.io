@@ -1,7 +1,0 @@
-<map id="itk::simple::LaplacianSharpeningImageFilter" name="itk::simple::LaplacianSharpeningImageFilter">
-<area shape="rect" id="node1" title="This filter sharpens an image using a Laplacian. LaplacianSharpening highlights regions of rapid inte..." alt="" coords="5,323,240,364"/>
-<area shape="rect" id="node2" href="$classitk_1_1simple_1_1ImageFilter.html" title=" " alt="" coords="17,247,228,273"/>
-<area shape="rect" id="node3" href="$classitk_1_1simple_1_1ProcessObject.html" title="Base class for SimpleITK classes based on ProcessObject." alt="" coords="22,81,213,108"/>
-<area shape="rect" id="node5" href="$classitk_1_1simple_1_1ImageFilter.html" title="The base interface for SimpleITK filters that take one input image." alt="" coords="138,157,350,184"/>
-<area shape="rect" id="node4" href="$classitk_1_1simple_1_1NonCopyable.html" title="An inheritable class to disable copying of a class." alt="" coords="24,5,211,32"/>
-</map>

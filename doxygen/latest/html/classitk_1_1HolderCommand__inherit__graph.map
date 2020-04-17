@@ -1,6 +1,0 @@
-<map id="itk::HolderCommand&lt; T &gt;" name="itk::HolderCommand&lt; T &gt;">
-<area shape="rect" id="node1" title="An ITK Command class to hold a object until destruction." alt="" coords="5,229,200,256"/>
-<area shape="rect" id="node2" href="/work/SimpleITK-build/SimpleITK-build/Documentation/Doxygen/InsightDoxygen.tag$classitk_1_1Command.html" title=" " alt="" coords="45,155,160,181"/>
-<area shape="rect" id="node3" href="/work/SimpleITK-build/SimpleITK-build/Documentation/Doxygen/InsightDoxygen.tag$classitk_1_1Object.html" title=" " alt="" coords="58,80,147,107"/>
-<area shape="rect" id="node4" href="/work/SimpleITK-build/SimpleITK-build/Documentation/Doxygen/InsightDoxygen.tag$classitk_1_1LightObject.html" title=" " alt="" coords="42,5,163,32"/>
-</map>

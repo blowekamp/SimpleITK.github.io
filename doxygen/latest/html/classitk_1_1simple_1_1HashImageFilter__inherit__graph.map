@@ -1,5 +1,0 @@
-<map id="itk::simple::HashImageFilter" name="itk::simple::HashImageFilter">
-<area shape="rect" id="node1" title="Compute the sha1 or md5 hash of an image." alt="" coords="5,155,211,181"/>
-<area shape="rect" id="node2" href="$classitk_1_1simple_1_1ProcessObject.html" title="Base class for SimpleITK classes based on ProcessObject." alt="" coords="13,80,203,107"/>
-<area shape="rect" id="node3" href="$classitk_1_1simple_1_1NonCopyable.html" title="An inheritable class to disable copying of a class." alt="" coords="15,5,201,32"/>
-</map>
