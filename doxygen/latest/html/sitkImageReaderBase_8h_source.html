@@ -19,7 +19,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">SimpleITK
-   &#160;<span id="projectnumber">2.0.0rc1.post127</span>
+   &#160;<span id="projectnumber">2.0.0rc1.post151</span>
    </div>
   </td>
  </tr>
@@ -85,20 +85,20 @@ $(function() {
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;      <span class="keyword">public</span> <a class="code" href="classitk_1_1simple_1_1ProcessObject.html">ProcessObject</a></div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    {</div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00043"></a><span class="lineno"><a class="line" href="classitk_1_1simple_1_1ImageReaderBase.html#a21edddc79bc94b40b109779a88992d95">   43</a></span>&#160;      <span class="keyword">typedef</span> <a class="code" href="classitk_1_1simple_1_1ImageReaderBase.html">ImageReaderBase</a> <a class="code" href="classitk_1_1simple_1_1ImageReaderBase.html#a21edddc79bc94b40b109779a88992d95">Self</a>;</div>
+<div class="line"><a name="l00043"></a><span class="lineno"><a class="line" href="classitk_1_1simple_1_1ImageReaderBase.html#a7910661fc3821b51c4dc9677653ee079">   43</a></span>&#160;      <span class="keyword">using</span> <a class="code" href="classitk_1_1simple_1_1ProcessObject.html">Self</a> = <a class="code" href="classitk_1_1simple_1_1ImageReaderBase.html">ImageReaderBase</a>;</div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160; </div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;      <span class="keyword">virtual</span> ~<a class="code" href="classitk_1_1simple_1_1ImageReaderBase.html">ImageReaderBase</a>();</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;      ~<a class="code" href="classitk_1_1simple_1_1ImageReaderBase.html">ImageReaderBase</a>() <span class="keyword">override</span>;</div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160; </div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;      <a class="code" href="classitk_1_1simple_1_1ImageReaderBase.html">ImageReaderBase</a>();</div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160; </div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160; </div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;      SITK_RETURN_SELF_TYPE_HEADER SetOutputPixelType( <a class="code" href="namespaceitk_1_1simple.html#ae40bd64640f4014fba1a8a872ab4df98">PixelIDValueEnum</a> pixelID );</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;      <a class="code" href="namespaceitk_1_1simple.html#ae40bd64640f4014fba1a8a872ab4df98">PixelIDValueEnum</a> GetOutputPixelType( <span class="keywordtype">void</span> ) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;      <a class="code" href="namespaceitk_1_1simple.html#ae40bd64640f4014fba1a8a872ab4df98">PixelIDValueEnum</a> GetOutputPixelType( ) <span class="keyword">const</span>;</div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;      <span class="comment">/* @} */</span></div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160; </div>
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;      <span class="keyword">virtual</span> <a class="code" href="classitk_1_1simple_1_1Image.html">Image</a> Execute() = 0;</div>
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160; </div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;      <span class="keyword">virtual</span> std::string ToString() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;      std::string ToString() <span class="keyword">const override</span>;</div>
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160; </div>
 <div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;      <span class="keyword">virtual</span> std::vector&lt;std::string&gt; <a class="code" href="namespaceitk_1_1simple_1_1ioutils.html#a6bcd447009067e0328a6a61f35039bad">GetRegisteredImageIOs</a>() <span class="keyword">const</span>;</div>
 <div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160; </div>
@@ -110,7 +110,7 @@ $(function() {
 <div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160; </div>
 <div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160; </div>
 <div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;      <span class="keyword">virtual</span> SITK_RETURN_SELF_TYPE_HEADER SetImageIO(<span class="keyword">const</span> std::string &amp;imageio);</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;      <span class="keyword">virtual</span> std::string GetImageIO( <span class="keywordtype">void</span> ) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;      <span class="keyword">virtual</span> std::string GetImageIO( ) <span class="keyword">const</span>;</div>
 <div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;      <span class="comment">/* @} */</span></div>
 <div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160; </div>
 <div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160; </div>
@@ -119,10 +119,10 @@ $(function() {
 <div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;      <a class="codeRef" href="https://www.itk.org/Doxygen/html/classitk_1_1SmartPointer.html">itk::SmartPointer&lt;ImageIOBase&gt;</a> GetImageIOBase(<span class="keyword">const</span> std::string &amp;fileName);</div>
 <div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160; </div>
 <div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;      <span class="keywordtype">void</span> GetPixelIDFromImageIO( <span class="keyword">const</span> std::string &amp;fileName,</div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;                                  <a class="code" href="namespaceitk_1_1simple.html#a5f7941a19eca02cbc08e86ea0d024f72">PixelIDValueType</a> &amp;outPixelType,</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;                                  <a class="code" href="namespaceitk_1_1simple.html#ae47036246a9a1312411ce2fc6d296d1d">PixelIDValueType</a> &amp;outPixelType,</div>
 <div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;                                  <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> &amp; outDimensions );</div>
 <div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;      <span class="keywordtype">void</span> GetPixelIDFromImageIO( <span class="keyword">const</span> <a class="codeRef" href="https://www.itk.org/Doxygen/html/classitk_1_1ImageIOBase.html">itk::ImageIOBase</a>* iobase,</div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;                                  <a class="code" href="namespaceitk_1_1simple.html#a5f7941a19eca02cbc08e86ea0d024f72">PixelIDValueType</a> &amp;outPixelType,</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;                                  <a class="code" href="namespaceitk_1_1simple.html#ae47036246a9a1312411ce2fc6d296d1d">PixelIDValueType</a> &amp;outPixelType,</div>
 <div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;                                  <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> &amp; outDimensions );</div>
 <div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160; </div>
 <div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;      <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> GetDimensionFromImageIO( <span class="keyword">const</span> std::string &amp;fileName, <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> i );</div>
@@ -131,11 +131,11 @@ $(function() {
 <div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160; </div>
 <div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;    <span class="keyword">private</span>:</div>
 <div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160; </div>
-<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;      <a class="code" href="namespaceitk_1_1simple.html#a5f7941a19eca02cbc08e86ea0d024f72">PixelIDValueType</a> ExecuteInternalReadScalar( <span class="keywordtype">int</span> componentType );</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;      <a class="code" href="namespaceitk_1_1simple.html#ae47036246a9a1312411ce2fc6d296d1d">PixelIDValueType</a> ExecuteInternalReadScalar( <span class="keywordtype">int</span> componentType );</div>
 <div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160; </div>
-<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;      <a class="code" href="namespaceitk_1_1simple.html#a5f7941a19eca02cbc08e86ea0d024f72">PixelIDValueType</a> ExecuteInternalReadVector( <span class="keywordtype">int</span> componentType );</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;      <a class="code" href="namespaceitk_1_1simple.html#ae47036246a9a1312411ce2fc6d296d1d">PixelIDValueType</a> ExecuteInternalReadVector( <span class="keywordtype">int</span> componentType );</div>
 <div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160; </div>
-<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;      <a class="code" href="namespaceitk_1_1simple.html#a5f7941a19eca02cbc08e86ea0d024f72">PixelIDValueType</a> ExecuteInternalReadComplex( <span class="keywordtype">int</span> componentType );</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;      <a class="code" href="namespaceitk_1_1simple.html#ae47036246a9a1312411ce2fc6d296d1d">PixelIDValueType</a> ExecuteInternalReadComplex( <span class="keywordtype">int</span> componentType );</div>
 <div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160; </div>
 <div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160; </div>
 <div class="line"><a name="l00124"></a><span class="lineno"><a class="line" href="classitk_1_1simple_1_1ImageReaderBase.html#a42d3dc683d2c169be7a7733ff0b723c6">  124</a></span>&#160;      <a class="code" href="namespaceitk_1_1simple.html#ae40bd64640f4014fba1a8a872ab4df98">PixelIDValueEnum</a> <a class="code" href="classitk_1_1simple_1_1ImageReaderBase.html#a42d3dc683d2c169be7a7733ff0b723c6">m_OutputPixelType</a>;</div>
@@ -152,9 +152,7 @@ $(function() {
 </div><!-- fragment --></div><!-- contents -->
 <div class="ttc" id="aclassitk_1_1simple_1_1Image_html"><div class="ttname"><a href="classitk_1_1simple_1_1Image.html">itk::simple::Image</a></div><div class="ttdoc">The Image class for SimpleITK.</div><div class="ttdef"><b>Definition:</b> <a href="sitkImage_8h_source.html#l00075">sitkImage.h:75</a></div></div>
 <div class="ttc" id="aclassitk_1_1ImageIOBase_html"><div class="ttname"><a href="https://www.itk.org/Doxygen/html/classitk_1_1ImageIOBase.html">itk::ImageIOBase</a></div></div>
-<div class="ttc" id="anamespaceitk_1_1simple_html_a5f7941a19eca02cbc08e86ea0d024f72"><div class="ttname"><a href="namespaceitk_1_1simple.html#a5f7941a19eca02cbc08e86ea0d024f72">itk::simple::PixelIDValueType</a></div><div class="ttdeci">int PixelIDValueType</div><div class="ttdef"><b>Definition:</b> <a href="sitkPixelIDValues_8h_source.html#l00032">sitkPixelIDValues.h:32</a></div></div>
 <div class="ttc" id="asitkIO_8h_html_aef9ccf1c7e28e86fbc79f1a7cd0fd0d5"><div class="ttname"><a href="sitkIO_8h.html#aef9ccf1c7e28e86fbc79f1a7cd0fd0d5">SITKIO_EXPORT</a></div><div class="ttdeci">#define SITKIO_EXPORT</div><div class="ttdef"><b>Definition:</b> <a href="sitkIO_8h_source.html#l00033">sitkIO.h:33</a></div></div>
-<div class="ttc" id="aclassitk_1_1simple_1_1ImageReaderBase_html_a21edddc79bc94b40b109779a88992d95"><div class="ttname"><a href="classitk_1_1simple_1_1ImageReaderBase.html#a21edddc79bc94b40b109779a88992d95">itk::simple::ImageReaderBase::Self</a></div><div class="ttdeci">ImageReaderBase Self</div><div class="ttdef"><b>Definition:</b> <a href="sitkImageReaderBase_8h_source.html#l00043">sitkImageReaderBase.h:43</a></div></div>
 <div class="ttc" id="aclassitk_1_1SmartPointer_html"><div class="ttname"><a href="https://www.itk.org/Doxygen/html/classitk_1_1SmartPointer.html">itk::SmartPointer</a></div><div class="ttdef"><b>Definition:</b> <a href="sitkImage_8h_source.html#l00037">sitkImage.h:37</a></div></div>
 <div class="ttc" id="anamespaceitk_1_1simple_html_ae40bd64640f4014fba1a8a872ab4df98"><div class="ttname"><a href="namespaceitk_1_1simple.html#ae40bd64640f4014fba1a8a872ab4df98">itk::simple::PixelIDValueEnum</a></div><div class="ttdeci">PixelIDValueEnum</div><div class="ttdoc">Enumerated values of pixelIDs.</div><div class="ttdef"><b>Definition:</b> <a href="sitkPixelIDValues_8h_source.html#l00090">sitkPixelIDValues.h:90</a></div></div>
 <div class="ttc" id="anamespaceitk_1_1simple_1_1ioutils_html_a6bcd447009067e0328a6a61f35039bad"><div class="ttname"><a href="namespaceitk_1_1simple_1_1ioutils.html#a6bcd447009067e0328a6a61f35039bad">itk::simple::ioutils::GetRegisteredImageIOs</a></div><div class="ttdeci">SITKIO_HIDDEN std::vector&lt; std::string &gt; GetRegisteredImageIOs()</div></div>
@@ -167,9 +165,10 @@ $(function() {
 <div class="ttc" id="aclassitk_1_1simple_1_1ImageReaderBase_html_aac3285b7fef8b98f0ac86eef38e01c0c"><div class="ttname"><a href="classitk_1_1simple_1_1ImageReaderBase.html#aac3285b7fef8b98f0ac86eef38e01c0c">itk::simple::ImageReaderBase::m_LoadPrivateTags</a></div><div class="ttdeci">bool m_LoadPrivateTags</div><div class="ttdoc">Set/Get The output PixelType of the image.</div><div class="ttdef"><b>Definition:</b> <a href="sitkImageReaderBase_8h_source.html#l00125">sitkImageReaderBase.h:125</a></div></div>
 <div class="ttc" id="aclassitk_1_1simple_1_1ProcessObject_html"><div class="ttname"><a href="classitk_1_1simple_1_1ProcessObject.html">itk::simple::ProcessObject</a></div><div class="ttdoc">Base class for SimpleITK classes based on ProcessObject.</div><div class="ttdef"><b>Definition:</b> <a href="sitkProcessObject_8h_source.html#l00051">sitkProcessObject.h:51</a></div></div>
 <div class="ttc" id="asitkIO_8h_html"><div class="ttname"><a href="sitkIO_8h.html">sitkIO.h</a></div></div>
+<div class="ttc" id="anamespaceitk_1_1simple_html_ae47036246a9a1312411ce2fc6d296d1d"><div class="ttname"><a href="namespaceitk_1_1simple.html#ae47036246a9a1312411ce2fc6d296d1d">itk::simple::PixelIDValueType</a></div><div class="ttdeci">int PixelIDValueType</div><div class="ttdef"><b>Definition:</b> <a href="sitkPixelIDValues_8h_source.html#l00032">sitkPixelIDValues.h:32</a></div></div>
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Apr 15 2020 02:51:41 for SimpleITK by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Apr 18 2020 02:51:38 for SimpleITK by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

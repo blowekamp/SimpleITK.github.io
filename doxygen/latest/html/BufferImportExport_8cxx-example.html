@@ -19,7 +19,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">SimpleITK
-   &#160;<span id="projectnumber">2.0.0rc1.post127</span>
+   &#160;<span id="projectnumber">2.0.0rc1.post151</span>
    </div>
   </td>
  </tr>
@@ -89,7 +89,7 @@ $(function() {
 <div class="line">  importer.<a name="a4"></a><a class="code" href="classitk_1_1simple_1_1ImportImageFilter.html#ab9eca69658af4258ad54d438f2d37d03">SetBufferAsUInt8</a>( in );</div>
 <div class="line"> </div>
 <div class="line">  <span class="comment">// actually convert the buffer to a simpleITK image</span></div>
-<div class="line">  <a name="_a5"></a><a class="code" href="classitk_1_1simple_1_1Image.html">sitk::Image</a> img = importer.<a name="a6"></a><a class="code" href="classitk_1_1simple_1_1ImportImageFilter.html#a80e38896e4329eb274fdaa1bfc71f2c1">Execute</a>();</div>
+<div class="line">  <a name="_a5"></a><a class="code" href="classitk_1_1simple_1_1Image.html">sitk::Image</a> img = importer.<a name="a6"></a><a class="code" href="classitk_1_1simple_1_1ImportImageFilter.html#a49a13cc260d27888b733ba5c2b4dbc21">Execute</a>();</div>
 <div class="line"> </div>
 <div class="line"> </div>
 <div class="line">  <a name="a7"></a><a class="code" href="namespaceitk_1_1simple.html#a86cb9e226d455efca3ba034dc2154605">sitk::Show</a>( img );</div>
@@ -103,7 +103,7 @@ $(function() {
 <div class="line">  <span class="comment">// The output type of the morpholgy will be the same pixel type as</span></div>
 <div class="line">  <span class="comment">// the input. But we place the assert to clarify and verify out</span></div>
 <div class="line">  <span class="comment">// logic.</span></div>
-<div class="line">  assert( img.<a name="a9"></a><a class="code" href="classitk_1_1simple_1_1Image.html#a973897827a32296cbe410a816ada2df5">GetPixelID</a>() == <a name="a10"></a><a class="code" href="namespaceitk_1_1simple.html#ae40bd64640f4014fba1a8a872ab4df98a07153aa69823432ba773112b71f31813">sitk::sitkUInt8</a> );</div>
+<div class="line">  assert( img.<a name="a9"></a><a class="code" href="classitk_1_1simple_1_1Image.html#a780923bec6a71b14be35d81069f343f6">GetPixelID</a>() == <a name="a10"></a><a class="code" href="namespaceitk_1_1simple.html#ae40bd64640f4014fba1a8a872ab4df98a07153aa69823432ba773112b71f31813">sitk::sitkUInt8</a> );</div>
 <div class="line"> </div>
 <div class="line">  <span class="comment">// The method which matches the actual pixel type of the image must</span></div>
 <div class="line">  <span class="comment">// be called.</span></div>
@@ -124,18 +124,18 @@ $(function() {
 <div class="ttc" id="anamespaceitk_1_1simple_html_a86cb9e226d455efca3ba034dc2154605"><div class="ttname"><a href="namespaceitk_1_1simple.html#a86cb9e226d455efca3ba034dc2154605">itk::simple::Show</a></div><div class="ttdeci">void SITKIO_EXPORT Show(const Image &amp;image, const std::string &amp;title=&quot;&quot;, const bool debugOn=ProcessObject::GetGlobalDefaultDebug())</div></div>
 <div class="ttc" id="aSimpleITK_8h_html"><div class="ttname"><a href="SimpleITK_8h.html">SimpleITK.h</a></div></div>
 <div class="ttc" id="aclassitk_1_1simple_1_1ImportImageFilter_html_ad60615a09320112cd635b94bc4221862"><div class="ttname"><a href="classitk_1_1simple_1_1ImportImageFilter.html#ad60615a09320112cd635b94bc4221862">itk::simple::ImportImageFilter::SetSize</a></div><div class="ttdeci">Self &amp; SetSize(const std::vector&lt; unsigned int &gt; &amp;size)</div></div>
-<div class="ttc" id="aclassitk_1_1simple_1_1Image_html_a973897827a32296cbe410a816ada2df5"><div class="ttname"><a href="classitk_1_1simple_1_1Image.html#a973897827a32296cbe410a816ada2df5">itk::simple::Image::GetPixelID</a></div><div class="ttdeci">PixelIDValueEnum GetPixelID(void) const</div></div>
+<div class="ttc" id="aclassitk_1_1simple_1_1Image_html_a780923bec6a71b14be35d81069f343f6"><div class="ttname"><a href="classitk_1_1simple_1_1Image.html#a780923bec6a71b14be35d81069f343f6">itk::simple::Image::GetPixelID</a></div><div class="ttdeci">PixelIDValueEnum GetPixelID() const</div></div>
 <div class="ttc" id="aclassitk_1_1simple_1_1ImportImageFilter_html_ab9eca69658af4258ad54d438f2d37d03"><div class="ttname"><a href="classitk_1_1simple_1_1ImportImageFilter.html#ab9eca69658af4258ad54d438f2d37d03">itk::simple::ImportImageFilter::SetBufferAsUInt8</a></div><div class="ttdeci">Self &amp; SetBufferAsUInt8(uint8_t *buffer, unsigned int numberOfComponents=1)</div></div>
 <div class="ttc" id="aclassitk_1_1simple_1_1ImportImageFilter_html"><div class="ttname"><a href="classitk_1_1simple_1_1ImportImageFilter.html">itk::simple::ImportImageFilter</a></div><div class="ttdoc">Compose a 2D or 3D image and return a smart pointer to a SimpleITK image.</div><div class="ttdef"><b>Definition:</b> <a href="sitkImportImageFilter_8h_source.html#l00047">sitkImportImageFilter.h:47</a></div></div>
-<div class="ttc" id="aclassitk_1_1simple_1_1ImportImageFilter_html_a80e38896e4329eb274fdaa1bfc71f2c1"><div class="ttname"><a href="classitk_1_1simple_1_1ImportImageFilter.html#a80e38896e4329eb274fdaa1bfc71f2c1">itk::simple::ImportImageFilter::Execute</a></div><div class="ttdeci">Image Execute()</div><div class="ttdoc">Set/Get The output PixelType of the image.</div></div>
 <div class="ttc" id="anamespaceitk_1_1simple_html_ae40bd64640f4014fba1a8a872ab4df98a07153aa69823432ba773112b71f31813"><div class="ttname"><a href="namespaceitk_1_1simple.html#ae40bd64640f4014fba1a8a872ab4df98a07153aa69823432ba773112b71f31813">itk::simple::sitkUInt8</a></div><div class="ttdeci">@ sitkUInt8</div><div class="ttdoc">Unsigned 8 bit integer.</div><div class="ttdef"><b>Definition:</b> <a href="sitkPixelIDValues_8h_source.html#l00092">sitkPixelIDValues.h:92</a></div></div>
 <div class="ttc" id="anamespaceitk_1_1simple_html_a587998d947f9c09853040c9f7782fbe5"><div class="ttname"><a href="namespaceitk_1_1simple.html#a587998d947f9c09853040c9f7782fbe5">itk::simple::GrayscaleErode</a></div><div class="ttdeci">Image GrayscaleErode(const Image &amp;image1, const std::vector&lt; unsigned int &gt; &amp;kernelRadius=std::vector&lt; uint32_t &gt;(3, 1), KernelEnum kernelType=itk::simple::sitkBall)</div><div class="ttdoc">Grayscale erosion of an image.</div></div>
 <div class="ttc" id="aclassitk_1_1simple_1_1ImportImageFilter_html_a8500809633172066aa925ca2b5ea7a41"><div class="ttname"><a href="classitk_1_1simple_1_1ImportImageFilter.html#a8500809633172066aa925ca2b5ea7a41">itk::simple::ImportImageFilter::SetOrigin</a></div><div class="ttdeci">Self &amp; SetOrigin(const std::vector&lt; double &gt; &amp;origin)</div></div>
 <div class="ttc" id="aclassitk_1_1simple_1_1ImportImageFilter_html_afb166d8101e46d63ebed7b6592dc71e3"><div class="ttname"><a href="classitk_1_1simple_1_1ImportImageFilter.html#afb166d8101e46d63ebed7b6592dc71e3">itk::simple::ImportImageFilter::SetSpacing</a></div><div class="ttdeci">Self &amp; SetSpacing(const std::vector&lt; double &gt; &amp;spacing)</div></div>
+<div class="ttc" id="aclassitk_1_1simple_1_1ImportImageFilter_html_a49a13cc260d27888b733ba5c2b4dbc21"><div class="ttname"><a href="classitk_1_1simple_1_1ImportImageFilter.html#a49a13cc260d27888b733ba5c2b4dbc21">itk::simple::ImportImageFilter::Execute</a></div><div class="ttdeci">Image Execute() override</div><div class="ttdoc">Set/Get The output PixelType of the image.</div></div>
 <div class="ttc" id="anamespaceitk_1_1simple_html"><div class="ttname"><a href="namespaceitk_1_1simple.html">itk::simple</a></div><div class="ttdef"><b>Definition:</b> <a href="sitkAdditionalProcedures_8h_source.html#l00029">sitkAdditionalProcedures.h:29</a></div></div>
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Apr 15 2020 02:51:38 for SimpleITK by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Apr 18 2020 02:51:34 for SimpleITK by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

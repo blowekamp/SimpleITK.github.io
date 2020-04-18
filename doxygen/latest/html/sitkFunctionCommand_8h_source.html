@@ -19,7 +19,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">SimpleITK
-   &#160;<span id="projectnumber">2.0.0rc1.post127</span>
+   &#160;<span id="projectnumber">2.0.0rc1.post151</span>
    </div>
   </td>
  </tr>
@@ -80,14 +80,14 @@ $(function() {
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;{</div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="keyword">public</span>:</div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160; </div>
-<div class="line"><a name="l00038"></a><span class="lineno"><a class="line" href="classitk_1_1simple_1_1FunctionCommand.html#a40f8956c4071f5a7d83fe6963f5b4356">   38</a></span>&#160;  <span class="keyword">typedef</span> <a class="code" href="classitk_1_1simple_1_1FunctionCommand.html">FunctionCommand</a> <a class="code" href="classitk_1_1simple_1_1FunctionCommand.html#a40f8956c4071f5a7d83fe6963f5b4356">Self</a>;</div>
+<div class="line"><a name="l00038"></a><span class="lineno"><a class="line" href="classitk_1_1simple_1_1FunctionCommand.html#a351ebd9d79b9024c326242de8161032e">   38</a></span>&#160;  <span class="keyword">using</span> <a class="code" href="classitk_1_1simple_1_1FunctionCommand.html">Self</a> = <a class="code" href="classitk_1_1simple_1_1FunctionCommand.html">FunctionCommand</a>;</div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160; </div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160; </div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;  <span class="keyword">virtual</span> ~<a class="code" href="classitk_1_1simple_1_1FunctionCommand.html">FunctionCommand</a>();</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;  ~<a class="code" href="classitk_1_1simple_1_1FunctionCommand.html">FunctionCommand</a>() <span class="keyword">override</span>;</div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160; </div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;  <a class="code" href="classitk_1_1simple_1_1FunctionCommand.html">FunctionCommand</a>();</div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160; </div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">void</span> Execute(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;  <span class="keywordtype">void</span> Execute() <span class="keyword">override</span>;</div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160; </div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;  <span class="keyword">template</span> &lt;<span class="keyword">class</span> T&gt;</div>
 <div class="line"><a name="l00051"></a><span class="lineno"><a class="line" href="classitk_1_1simple_1_1FunctionCommand.html#ab910a40d1e5fc0e25e01e3fbf21f9e2a">   51</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classitk_1_1simple_1_1FunctionCommand.html#ab910a40d1e5fc0e25e01e3fbf21f9e2a">SetCallbackFunction</a> ( T *<span class="keywordtype">object</span>, <span class="keywordtype">void</span>(T::* pMemberFunction )() )</div>
@@ -103,8 +103,8 @@ $(function() {
 <div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160; </div>
 <div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;<span class="keyword">private</span>:</div>
 <div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160; </div>
-<div class="line"><a name="l00071"></a><span class="lineno"><a class="line" href="classitk_1_1simple_1_1FunctionCommand.html#a43e00b9e920e34ccd7ca1885d945a551">   71</a></span>&#160;  <span class="keyword">typedef</span> std::function&lt;void()&gt; <a class="code" href="classitk_1_1simple_1_1FunctionCommand.html#a43e00b9e920e34ccd7ca1885d945a551">FunctionObjectType</a>;</div>
-<div class="line"><a name="l00072"></a><span class="lineno"><a class="line" href="classitk_1_1simple_1_1FunctionCommand.html#a2451215a204e987934918bfdd87b9ffb">   72</a></span>&#160;  <a class="code" href="classitk_1_1simple_1_1FunctionCommand.html#a43e00b9e920e34ccd7ca1885d945a551">FunctionObjectType</a> <a class="code" href="classitk_1_1simple_1_1FunctionCommand.html#a2451215a204e987934918bfdd87b9ffb">m_Function</a>;</div>
+<div class="line"><a name="l00071"></a><span class="lineno"><a class="line" href="classitk_1_1simple_1_1FunctionCommand.html#a0cb79692a6cbfaca6cfcd0c7250a1da0">   71</a></span>&#160;  <span class="keyword">using</span> <a class="code" href="classitk_1_1simple_1_1FunctionCommand.html#a0cb79692a6cbfaca6cfcd0c7250a1da0">FunctionObjectType</a> = std::function&lt;void()&gt;;</div>
+<div class="line"><a name="l00072"></a><span class="lineno"><a class="line" href="classitk_1_1simple_1_1FunctionCommand.html#a2451215a204e987934918bfdd87b9ffb">   72</a></span>&#160;  <a class="code" href="classitk_1_1simple_1_1FunctionCommand.html#a0cb79692a6cbfaca6cfcd0c7250a1da0">FunctionObjectType</a> <a class="code" href="classitk_1_1simple_1_1FunctionCommand.html#a2451215a204e987934918bfdd87b9ffb">m_Function</a>;</div>
 <div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160; </div>
 <div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;};</div>
 <div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160; </div>
@@ -113,18 +113,17 @@ $(function() {
 <div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160; </div>
 <div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;<span class="preprocessor">#endif</span></div>
 </div><!-- fragment --></div><!-- contents -->
+<div class="ttc" id="aclassitk_1_1simple_1_1FunctionCommand_html_a0cb79692a6cbfaca6cfcd0c7250a1da0"><div class="ttname"><a href="classitk_1_1simple_1_1FunctionCommand.html#a0cb79692a6cbfaca6cfcd0c7250a1da0">itk::simple::FunctionCommand::FunctionObjectType</a></div><div class="ttdeci">std::function&lt; void()&gt; FunctionObjectType</div><div class="ttdef"><b>Definition:</b> <a href="sitkFunctionCommand_8h_source.html#l00071">sitkFunctionCommand.h:71</a></div></div>
 <div class="ttc" id="aclassitk_1_1simple_1_1FunctionCommand_html_a2451215a204e987934918bfdd87b9ffb"><div class="ttname"><a href="classitk_1_1simple_1_1FunctionCommand.html#a2451215a204e987934918bfdd87b9ffb">itk::simple::FunctionCommand::m_Function</a></div><div class="ttdeci">FunctionObjectType m_Function</div><div class="ttdef"><b>Definition:</b> <a href="sitkFunctionCommand_8h_source.html#l00072">sitkFunctionCommand.h:72</a></div></div>
 <div class="ttc" id="aclassitk_1_1simple_1_1Command_html"><div class="ttname"><a href="classitk_1_1simple_1_1Command.html">itk::simple::Command</a></div><div class="ttdoc">An implementation of the Command design pattern for callback.</div><div class="ttdef"><b>Definition:</b> <a href="sitkCommand_8h_source.html#l00044">sitkCommand.h:44</a></div></div>
 <div class="ttc" id="aclassitk_1_1simple_1_1FunctionCommand_html_ab910a40d1e5fc0e25e01e3fbf21f9e2a"><div class="ttname"><a href="classitk_1_1simple_1_1FunctionCommand.html#ab910a40d1e5fc0e25e01e3fbf21f9e2a">itk::simple::FunctionCommand::SetCallbackFunction</a></div><div class="ttdeci">void SetCallbackFunction(T *object, void(T::*pMemberFunction)())</div><div class="ttdef"><b>Definition:</b> <a href="sitkFunctionCommand_8h_source.html#l00051">sitkFunctionCommand.h:51</a></div></div>
-<div class="ttc" id="aclassitk_1_1simple_1_1FunctionCommand_html_a40f8956c4071f5a7d83fe6963f5b4356"><div class="ttname"><a href="classitk_1_1simple_1_1FunctionCommand.html#a40f8956c4071f5a7d83fe6963f5b4356">itk::simple::FunctionCommand::Self</a></div><div class="ttdeci">FunctionCommand Self</div><div class="ttdef"><b>Definition:</b> <a href="sitkFunctionCommand_8h_source.html#l00038">sitkFunctionCommand.h:38</a></div></div>
 <div class="ttc" id="asitkCommon_8h_html_ab09867679406ccae193848f08fdc3444"><div class="ttname"><a href="sitkCommon_8h.html#ab09867679406ccae193848f08fdc3444">SITKCommon_EXPORT</a></div><div class="ttdeci">#define SITKCommon_EXPORT</div><div class="ttdef"><b>Definition:</b> <a href="sitkCommon_8h_source.html#l00041">sitkCommon.h:41</a></div></div>
-<div class="ttc" id="aclassitk_1_1simple_1_1FunctionCommand_html_a43e00b9e920e34ccd7ca1885d945a551"><div class="ttname"><a href="classitk_1_1simple_1_1FunctionCommand.html#a43e00b9e920e34ccd7ca1885d945a551">itk::simple::FunctionCommand::FunctionObjectType</a></div><div class="ttdeci">std::function&lt; void()&gt; FunctionObjectType</div><div class="ttdef"><b>Definition:</b> <a href="sitkFunctionCommand_8h_source.html#l00071">sitkFunctionCommand.h:71</a></div></div>
 <div class="ttc" id="aclassitk_1_1simple_1_1FunctionCommand_html"><div class="ttname"><a href="classitk_1_1simple_1_1FunctionCommand.html">itk::simple::FunctionCommand</a></div><div class="ttdoc">A Command class which allows setting an external function, or member function.</div><div class="ttdef"><b>Definition:</b> <a href="sitkFunctionCommand_8h_source.html#l00033">sitkFunctionCommand.h:33</a></div></div>
 <div class="ttc" id="anamespaceitk_html"><div class="ttname"><a href="namespaceitk.html">itk</a></div></div>
 <div class="ttc" id="asitkCommand_8h_html"><div class="ttname"><a href="sitkCommand_8h.html">sitkCommand.h</a></div></div>
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Apr 15 2020 02:51:40 for SimpleITK by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Apr 18 2020 02:51:37 for SimpleITK by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

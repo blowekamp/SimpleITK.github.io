@@ -19,7 +19,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">SimpleITK
-   &#160;<span id="projectnumber">2.0.0rc1.post127</span>
+   &#160;<span id="projectnumber">2.0.0rc1.post151</span>
    </div>
   </td>
  </tr>
@@ -79,15 +79,15 @@ $(function() {
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;      : <span class="keyword">public</span> <a class="code" href="classitk_1_1simple_1_1ImageReaderBase.html">ImageReaderBase</a></div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    {</div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00049"></a><span class="lineno"><a class="line" href="classitk_1_1simple_1_1ImageSeriesReader.html#a2f0215cdeb11bd0970f3b379ba562f92">   49</a></span>&#160;      <span class="keyword">typedef</span> <a class="code" href="classitk_1_1simple_1_1ImageSeriesReader.html">ImageSeriesReader</a> <a class="code" href="classitk_1_1simple_1_1ImageSeriesReader.html#a2f0215cdeb11bd0970f3b379ba562f92">Self</a>;</div>
+<div class="line"><a name="l00049"></a><span class="lineno"><a class="line" href="classitk_1_1simple_1_1ImageSeriesReader.html#a10409a6e8adf82e7d478ac7a7756a58f">   49</a></span>&#160;      <span class="keyword">using</span> <a class="code" href="classitk_1_1simple_1_1ProcessObject.html">Self</a> = <a class="code" href="classitk_1_1simple_1_1ImageSeriesReader.html">ImageSeriesReader</a>;</div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160; </div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;      <span class="keyword">virtual</span> ~<a class="code" href="classitk_1_1simple_1_1ImageSeriesReader.html">ImageSeriesReader</a>();</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;      ~<a class="code" href="classitk_1_1simple_1_1ImageSeriesReader.html">ImageSeriesReader</a>() <span class="keyword">override</span>;</div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160; </div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;      <a class="code" href="classitk_1_1simple_1_1ImageSeriesReader.html">ImageSeriesReader</a>();</div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160; </div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;      <span class="keyword">virtual</span> std::string ToString() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;      std::string ToString() <span class="keyword">const override</span>;</div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160; </div>
-<div class="line"><a name="l00059"></a><span class="lineno"><a class="line" href="classitk_1_1simple_1_1ImageSeriesReader.html#a93031cd59728d6375d46cb48c4013584">   59</a></span>&#160;      <span class="keyword">virtual</span> std::string <a class="code" href="classitk_1_1simple_1_1ImageSeriesReader.html#a93031cd59728d6375d46cb48c4013584">GetName</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> std::string(<span class="stringliteral">&quot;ImageSeriesReader&quot;</span>); }</div>
+<div class="line"><a name="l00059"></a><span class="lineno"><a class="line" href="classitk_1_1simple_1_1ImageSeriesReader.html#a2187cf97f48fc95dd77bba44625621f8">   59</a></span>&#160;      std::string <a class="code" href="classitk_1_1simple_1_1ImageSeriesReader.html#a2187cf97f48fc95dd77bba44625621f8">GetName</a>()<span class="keyword"> const override </span>{ <span class="keywordflow">return</span> std::string(<span class="stringliteral">&quot;ImageSeriesReader&quot;</span>); }</div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160; </div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160; </div>
 <div class="line"><a name="l00067"></a><span class="lineno"><a class="line" href="classitk_1_1simple_1_1ImageSeriesReader.html#aee37ccf11738fd80d17133b71827fcbe">   67</a></span>&#160;      SITK_RETURN_SELF_TYPE_HEADER <a class="code" href="classitk_1_1simple_1_1ImageSeriesReader.html#aee37ccf11738fd80d17133b71827fcbe">SetMetaDataDictionaryArrayUpdate</a> ( <span class="keywordtype">bool</span> metaDataDictionaryArrayUpdate )</div>
@@ -110,7 +110,7 @@ $(function() {
 <div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;      SITK_RETURN_SELF_TYPE_HEADER SetFileNames ( <span class="keyword">const</span> std::vector&lt;std::string&gt; &amp;fileNames );</div>
 <div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;      <span class="keyword">const</span> std::vector&lt;std::string&gt; &amp;GetFileNames() <span class="keyword">const</span>;</div>
 <div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160; </div>
-<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;      <a class="code" href="classitk_1_1simple_1_1Image.html">Image</a> Execute();</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;      <a class="code" href="classitk_1_1simple_1_1Image.html">Image</a> Execute() <span class="keyword">override</span>;</div>
 <div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160; </div>
 <div class="line"><a name="l00132"></a><span class="lineno"><a class="line" href="classitk_1_1simple_1_1ImageSeriesReader.html#a2ca3a7225b554b3451c05edc17233428">  132</a></span>&#160;      std::vector&lt;std::string&gt; <a class="code" href="classitk_1_1simple_1_1ImageSeriesReader.html#a2ca3a7225b554b3451c05edc17233428">GetMetaDataKeys</a>( <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> slice )<span class="keyword"> const </span>{ <span class="keywordflow">return</span> this-&gt;m_pfGetMetaDataKeys(slice); }</div>
 <div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160; </div>
@@ -165,10 +165,8 @@ $(function() {
 <div class="ttc" id="aclassitk_1_1simple_1_1ImageSeriesReader_html_a26d16c76a63c7adab96b0b70c6c9418c"><div class="ttname"><a href="classitk_1_1simple_1_1ImageSeriesReader.html#a26d16c76a63c7adab96b0b70c6c9418c">itk::simple::ImageSeriesReader::HasMetaDataKey</a></div><div class="ttdeci">bool HasMetaDataKey(unsigned int slice, const std::string &amp;key) const</div><div class="ttdoc">Query a meta-data dictionary for the existence of a key.</div><div class="ttdef"><b>Definition:</b> <a href="sitkImageSeriesReader_8h_source.html#l00136">sitkImageSeriesReader.h:136</a></div></div>
 <div class="ttc" id="asitkIO_8h_html_aef9ccf1c7e28e86fbc79f1a7cd0fd0d5"><div class="ttname"><a href="sitkIO_8h.html#aef9ccf1c7e28e86fbc79f1a7cd0fd0d5">SITKIO_EXPORT</a></div><div class="ttdeci">#define SITKIO_EXPORT</div><div class="ttdef"><b>Definition:</b> <a href="sitkIO_8h_source.html#l00033">sitkIO.h:33</a></div></div>
 <div class="ttc" id="asitkImage_8h_html"><div class="ttname"><a href="sitkImage_8h.html">sitkImage.h</a></div></div>
-<div class="ttc" id="aclassitk_1_1simple_1_1ImageSeriesReader_html_a2f0215cdeb11bd0970f3b379ba562f92"><div class="ttname"><a href="classitk_1_1simple_1_1ImageSeriesReader.html#a2f0215cdeb11bd0970f3b379ba562f92">itk::simple::ImageSeriesReader::Self</a></div><div class="ttdeci">ImageSeriesReader Self</div><div class="ttdef"><b>Definition:</b> <a href="sitkImageSeriesReader_8h_source.html#l00049">sitkImageSeriesReader.h:49</a></div></div>
 <div class="ttc" id="anamespaceitk_1_1simple_html_ae40bd64640f4014fba1a8a872ab4df98"><div class="ttname"><a href="namespaceitk_1_1simple.html#ae40bd64640f4014fba1a8a872ab4df98">itk::simple::PixelIDValueEnum</a></div><div class="ttdeci">PixelIDValueEnum</div><div class="ttdoc">Enumerated values of pixelIDs.</div><div class="ttdef"><b>Definition:</b> <a href="sitkPixelIDValues_8h_source.html#l00090">sitkPixelIDValues.h:90</a></div></div>
 <div class="ttc" id="asitkMemberFunctionFactory_8h_html"><div class="ttname"><a href="sitkMemberFunctionFactory_8h.html">sitkMemberFunctionFactory.h</a></div></div>
-<div class="ttc" id="aclassitk_1_1simple_1_1ImageSeriesReader_html_a93031cd59728d6375d46cb48c4013584"><div class="ttname"><a href="classitk_1_1simple_1_1ImageSeriesReader.html#a93031cd59728d6375d46cb48c4013584">itk::simple::ImageSeriesReader::GetName</a></div><div class="ttdeci">virtual std::string GetName() const</div><div class="ttdef"><b>Definition:</b> <a href="sitkImageSeriesReader_8h_source.html#l00059">sitkImageSeriesReader.h:59</a></div></div>
 <div class="ttc" id="aclassitk_1_1simple_1_1ImageSeriesReader_html_af592dcbc32d3753ff494ba494e5fdf97"><div class="ttname"><a href="classitk_1_1simple_1_1ImageSeriesReader.html#af592dcbc32d3753ff494ba494e5fdf97">itk::simple::ImageSeriesReader::m_pfGetMetaDataKeys</a></div><div class="ttdeci">std::function&lt; std::vector&lt; std::string &gt;int)&gt; m_pfGetMetaDataKeys</div><div class="ttdef"><b>Definition:</b> <a href="sitkImageSeriesReader_8h_source.html#l00163">sitkImageSeriesReader.h:163</a></div></div>
 <div class="ttc" id="asitkMacro_8h_html"><div class="ttname"><a href="sitkMacro_8h.html">sitkMacro.h</a></div></div>
 <div class="ttc" id="asitkImageReaderBase_8h_html"><div class="ttname"><a href="sitkImageReaderBase_8h.html">sitkImageReaderBase.h</a></div></div>
@@ -185,10 +183,11 @@ $(function() {
 <div class="ttc" id="aclassitk_1_1simple_1_1ImageSeriesReader_html_a79b712cb2efa433a8627939d89c5de94"><div class="ttname"><a href="classitk_1_1simple_1_1ImageSeriesReader.html#a79b712cb2efa433a8627939d89c5de94">itk::simple::ImageSeriesReader::m_FileNames</a></div><div class="ttdeci">std::vector&lt; std::string &gt; m_FileNames</div><div class="ttdef"><b>Definition:</b> <a href="sitkImageSeriesReader_8h_source.html#l00171">sitkImageSeriesReader.h:171</a></div></div>
 <div class="ttc" id="aclassitk_1_1ProcessObject_html"><div class="ttname"><a href="https://www.itk.org/Doxygen/html/classitk_1_1ProcessObject.html">itk::ProcessObject</a></div></div>
 <div class="ttc" id="aclassitk_1_1simple_1_1ProcessObject_html"><div class="ttname"><a href="classitk_1_1simple_1_1ProcessObject.html">itk::simple::ProcessObject</a></div><div class="ttdoc">Base class for SimpleITK classes based on ProcessObject.</div><div class="ttdef"><b>Definition:</b> <a href="sitkProcessObject_8h_source.html#l00051">sitkProcessObject.h:51</a></div></div>
+<div class="ttc" id="aclassitk_1_1simple_1_1ImageSeriesReader_html_a2187cf97f48fc95dd77bba44625621f8"><div class="ttname"><a href="classitk_1_1simple_1_1ImageSeriesReader.html#a2187cf97f48fc95dd77bba44625621f8">itk::simple::ImageSeriesReader::GetName</a></div><div class="ttdeci">std::string GetName() const override</div><div class="ttdef"><b>Definition:</b> <a href="sitkImageSeriesReader_8h_source.html#l00059">sitkImageSeriesReader.h:59</a></div></div>
 <div class="ttc" id="anamespaceitk_1_1simple_html_ae40bd64640f4014fba1a8a872ab4df98a25f496c19c2388217b9fede6686144ac"><div class="ttname"><a href="namespaceitk_1_1simple.html#ae40bd64640f4014fba1a8a872ab4df98a25f496c19c2388217b9fede6686144ac">itk::simple::sitkUnknown</a></div><div class="ttdeci">@ sitkUnknown</div><div class="ttdef"><b>Definition:</b> <a href="sitkPixelIDValues_8h_source.html#l00091">sitkPixelIDValues.h:91</a></div></div>
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Apr 15 2020 02:51:41 for SimpleITK by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Apr 18 2020 02:51:38 for SimpleITK by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

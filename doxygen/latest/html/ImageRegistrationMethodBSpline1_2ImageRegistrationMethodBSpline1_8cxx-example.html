@@ -19,7 +19,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">SimpleITK
-   &#160;<span id="projectnumber">2.0.0rc1.post127</span>
+   &#160;<span id="projectnumber">2.0.0rc1.post151</span>
    </div>
   </td>
  </tr>
@@ -84,8 +84,8 @@ $(function() {
 <div class="line">    : m_Method(m)</div>
 <div class="line">    {}</div>
 <div class="line"> </div>
-<div class="line">  <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a name="a2"></a><a class="code" href="classitk_1_1simple_1_1Command.html#a4302151c912d7967e24ffe1fad1c5ade">Execute</a>( )</div>
-<div class="line">    {</div>
+<div class="line">  <span class="keywordtype">void</span> <a name="a2"></a><a class="code" href="classitk_1_1simple_1_1Command.html#a7e0b4c7093c207adcc72fa2995073abc">Execute</a>( )<span class="keyword"> override</span></div>
+<div class="line"><span class="keyword">    </span>{</div>
 <div class="line">      <span class="comment">// use sitk&#39;s output operator for std::vector etc..</span></div>
 <div class="line">      <span class="keyword">using</span> sitk::operator&lt;&lt;;</div>
 <div class="line"> </div>
@@ -124,11 +124,11 @@ $(function() {
 <div class="line"> </div>
 <div class="line">  <a class="code" href="classitk_1_1simple_1_1Image.html">sitk::Image</a> moving = <a class="code" href="namespaceitk_1_1simple.html#af50ad403a7aa88acbb78e5b2d1099b9c">sitk::ReadImage</a>( argv[2], <a class="code" href="namespaceitk_1_1simple.html#ae40bd64640f4014fba1a8a872ab4df98a31ef682ba5b93b71ceeb7b9c084834f7">sitk::sitkFloat32</a> );</div>
 <div class="line"> </div>
-<div class="line">  std::vector&lt;unsigned int&gt; transformDomainMeshSize(fixed.<a name="a6"></a><a class="code" href="classitk_1_1simple_1_1Image.html#a2ff41e835dc57361da6b4cd6e1767e52">GetDimension</a>(),8);</div>
+<div class="line">  std::vector&lt;unsigned int&gt; transformDomainMeshSize(fixed.<a name="a6"></a><a class="code" href="classitk_1_1simple_1_1Image.html#a43163c72ca1a49abf615b3dc71e01a36">GetDimension</a>(),8);</div>
 <div class="line"> </div>
 <div class="line">  <a name="_a7"></a><a class="code" href="classitk_1_1simple_1_1BSplineTransform.html">sitk::BSplineTransform</a> tx = <a name="a8"></a><a class="code" href="namespaceitk_1_1simple.html#aad94f01ca22c07a705afb1e87f4b4ecf">sitk::BSplineTransformInitializer</a>(fixed, transformDomainMeshSize);</div>
 <div class="line"> </div>
-<div class="line">  std::cout &lt;&lt; <span class="stringliteral">&quot;Initial Parameters:&quot;</span> &lt;&lt; tx.<a name="a9"></a><a class="code" href="classitk_1_1simple_1_1Transform.html#aa624ff429f5457108fa67eae34675345">GetParameters</a>() &lt;&lt; std::endl;</div>
+<div class="line">  std::cout &lt;&lt; <span class="stringliteral">&quot;Initial Parameters:&quot;</span> &lt;&lt; tx.<a name="a9"></a><a class="code" href="classitk_1_1simple_1_1Transform.html#a7ed9f6c8fec722ff7d128c192b30c259">GetParameters</a>() &lt;&lt; std::endl;</div>
 <div class="line"> </div>
 <div class="line"> </div>
 <div class="line">  <a class="code" href="classitk_1_1simple_1_1ImageRegistrationMethod.html">sitk::ImageRegistrationMethod</a> R;</div>
@@ -153,7 +153,7 @@ $(function() {
 <div class="line">  <a name="_a18"></a><a class="code" href="classitk_1_1simple_1_1Transform.html">sitk::Transform</a> outTx = R.<a name="a19"></a><a class="code" href="classitk_1_1simple_1_1ImageRegistrationMethod.html#a3ba46dbf038828c8f2952875b8f6e0de">Execute</a>( fixed, moving );</div>
 <div class="line"> </div>
 <div class="line">  std::cout &lt;&lt; <span class="stringliteral">&quot;-------&quot;</span> &lt;&lt; std::endl;</div>
-<div class="line">  std::cout &lt;&lt; outTx.<a name="a20"></a><a class="code" href="classitk_1_1simple_1_1Transform.html#a7679f5957ded645cdb4eac04723e1091">ToString</a>() &lt;&lt; std::endl;</div>
+<div class="line">  std::cout &lt;&lt; outTx.<a name="a20"></a><a class="code" href="classitk_1_1simple_1_1Transform.html#a27e02b327b0d6939bf2676c76b53bfee">ToString</a>() &lt;&lt; std::endl;</div>
 <div class="line">  std::cout &lt;&lt; <span class="stringliteral">&quot;Optimizer stop condition: &quot;</span> &lt;&lt; R.<a name="a21"></a><a class="code" href="classitk_1_1simple_1_1ImageRegistrationMethod.html#a6f2bf8c8b205dcaf6c4e1a0613b365b0">GetOptimizerStopConditionDescription</a>() &lt;&lt; std::endl;</div>
 <div class="line">  std::cout &lt;&lt; <span class="stringliteral">&quot; Iteration: &quot;</span> &lt;&lt; R.<a name="a22"></a><a class="code" href="classitk_1_1simple_1_1ImageRegistrationMethod.html#ad3f2e8373e1d7375a4bffeec2a506ff4">GetOptimizerIteration</a>() &lt;&lt; std::endl;</div>
 <div class="line">  std::cout &lt;&lt; <span class="stringliteral">&quot; Metric value: &quot;</span> &lt;&lt; R.<a name="a23"></a><a class="code" href="classitk_1_1simple_1_1ImageRegistrationMethod.html#ad4ebd9d40e13f50444f0cb205f9805f4">GetMetricValue</a>() &lt;&lt; std::endl;</div>
@@ -173,25 +173,25 @@ $(function() {
 <div class="ttc" id="aSimpleITK_8h_html"><div class="ttname"><a href="SimpleITK_8h.html">SimpleITK.h</a></div></div>
 <div class="ttc" id="aclassitk_1_1simple_1_1Command_html"><div class="ttname"><a href="classitk_1_1simple_1_1Command.html">itk::simple::Command</a></div><div class="ttdoc">An implementation of the Command design pattern for callback.</div><div class="ttdef"><b>Definition:</b> <a href="sitkCommand_8h_source.html#l00044">sitkCommand.h:44</a></div></div>
 <div class="ttc" id="aclassitk_1_1simple_1_1ImageRegistrationMethod_html_ad4ebd9d40e13f50444f0cb205f9805f4"><div class="ttname"><a href="classitk_1_1simple_1_1ImageRegistrationMethod.html#ad4ebd9d40e13f50444f0cb205f9805f4">itk::simple::ImageRegistrationMethod::GetMetricValue</a></div><div class="ttdeci">double GetMetricValue() const</div></div>
-<div class="ttc" id="aclassitk_1_1simple_1_1Command_html_a4302151c912d7967e24ffe1fad1c5ade"><div class="ttname"><a href="classitk_1_1simple_1_1Command.html#a4302151c912d7967e24ffe1fad1c5ade">itk::simple::Command::Execute</a></div><div class="ttdeci">virtual void Execute(void)</div></div>
+<div class="ttc" id="aclassitk_1_1simple_1_1Image_html_a43163c72ca1a49abf615b3dc71e01a36"><div class="ttname"><a href="classitk_1_1simple_1_1Image.html#a43163c72ca1a49abf615b3dc71e01a36">itk::simple::Image::GetDimension</a></div><div class="ttdeci">unsigned int GetDimension() const</div></div>
 <div class="ttc" id="anamespaceitk_1_1simple_html_ae40bd64640f4014fba1a8a872ab4df98a31ef682ba5b93b71ceeb7b9c084834f7"><div class="ttname"><a href="namespaceitk_1_1simple.html#ae40bd64640f4014fba1a8a872ab4df98a31ef682ba5b93b71ceeb7b9c084834f7">itk::simple::sitkFloat32</a></div><div class="ttdeci">@ sitkFloat32</div><div class="ttdoc">32 bit float</div><div class="ttdef"><b>Definition:</b> <a href="sitkPixelIDValues_8h_source.html#l00100">sitkPixelIDValues.h:100</a></div></div>
 <div class="ttc" id="aclassitk_1_1simple_1_1ImageRegistrationMethod_html_a0c9b9ea93f661ab9486d1f346c18c71f"><div class="ttname"><a href="classitk_1_1simple_1_1ImageRegistrationMethod.html#a0c9b9ea93f661ab9486d1f346c18c71f">itk::simple::ImageRegistrationMethod::SetMetricAsCorrelation</a></div><div class="ttdeci">Self &amp; SetMetricAsCorrelation()</div><div class="ttdoc">Use negative normalized cross correlation image metric.</div></div>
-<div class="ttc" id="aclassitk_1_1simple_1_1Transform_html_aa624ff429f5457108fa67eae34675345"><div class="ttname"><a href="classitk_1_1simple_1_1Transform.html#aa624ff429f5457108fa67eae34675345">itk::simple::Transform::GetParameters</a></div><div class="ttdeci">std::vector&lt; double &gt; GetParameters(void) const</div></div>
 <div class="ttc" id="anamespaceitk_1_1simple_html_af50ad403a7aa88acbb78e5b2d1099b9c"><div class="ttname"><a href="namespaceitk_1_1simple.html#af50ad403a7aa88acbb78e5b2d1099b9c">itk::simple::ReadImage</a></div><div class="ttdeci">SITKIO_EXPORT Image ReadImage(const std::string &amp;filename, PixelIDValueEnum outputPixelType=sitkUnknown, const std::string &amp;imageIO=&quot;&quot;)</div><div class="ttdoc">ReadImage is a procedural interface to the ImageFileReader class which is convenient for most image r...</div></div>
 <div class="ttc" id="aclassitk_1_1simple_1_1ImageRegistrationMethod_html"><div class="ttname"><a href="classitk_1_1simple_1_1ImageRegistrationMethod.html">itk::simple::ImageRegistrationMethod</a></div><div class="ttdoc">An interface method to the modular ITKv4 registration framework.</div><div class="ttdef"><b>Definition:</b> <a href="sitkImageRegistrationMethod_8h_source.html#l00089">sitkImageRegistrationMethod.h:89</a></div></div>
 <div class="ttc" id="aclassitk_1_1simple_1_1ImageRegistrationMethod_html_a6d2a1b1dd30453ca0d9b1c670b6bfd29"><div class="ttname"><a href="classitk_1_1simple_1_1ImageRegistrationMethod.html#a6d2a1b1dd30453ca0d9b1c670b6bfd29">itk::simple::ImageRegistrationMethod::SetInitialTransform</a></div><div class="ttdeci">Self &amp; SetInitialTransform(const Transform &amp;transform)</div><div class="ttdoc">Set the initial transform and parameters to optimize.</div></div>
 <div class="ttc" id="aclassitk_1_1simple_1_1ImageRegistrationMethod_html_a3ba46dbf038828c8f2952875b8f6e0de"><div class="ttname"><a href="classitk_1_1simple_1_1ImageRegistrationMethod.html#a3ba46dbf038828c8f2952875b8f6e0de">itk::simple::ImageRegistrationMethod::Execute</a></div><div class="ttdeci">Transform Execute(const Image &amp;fixed, const Image &amp;moving)</div><div class="ttdoc">Optimize the configured registration problem.</div></div>
 <div class="ttc" id="anamespaceitk_1_1simple_html_aa7399868984d99493c5a307cce373acead234b8019e5aea11dca7617461145faa"><div class="ttname"><a href="namespaceitk_1_1simple.html#aa7399868984d99493c5a307cce373acead234b8019e5aea11dca7617461145faa">itk::simple::sitkIterationEvent</a></div><div class="ttdeci">@ sitkIterationEvent</div><div class="ttdoc">Occurs with some algorithms that run for a fixed or undetermined number of iterations.</div><div class="ttdef"><b>Definition:</b> <a href="sitkEvent_8h_source.html#l00046">sitkEvent.h:46</a></div></div>
-<div class="ttc" id="aclassitk_1_1simple_1_1Transform_html_a7679f5957ded645cdb4eac04723e1091"><div class="ttname"><a href="classitk_1_1simple_1_1Transform.html#a7679f5957ded645cdb4eac04723e1091">itk::simple::Transform::ToString</a></div><div class="ttdeci">std::string ToString(void) const</div></div>
+<div class="ttc" id="aclassitk_1_1simple_1_1Command_html_a7e0b4c7093c207adcc72fa2995073abc"><div class="ttname"><a href="classitk_1_1simple_1_1Command.html#a7e0b4c7093c207adcc72fa2995073abc">itk::simple::Command::Execute</a></div><div class="ttdeci">virtual void Execute()</div></div>
 <div class="ttc" id="aclassitk_1_1simple_1_1ImageRegistrationMethod_html_abbc7ac9efb6de282513e41a8a8d81db7"><div class="ttname"><a href="classitk_1_1simple_1_1ImageRegistrationMethod.html#abbc7ac9efb6de282513e41a8a8d81db7">itk::simple::ImageRegistrationMethod::SetOptimizerAsLBFGSB</a></div><div class="ttdeci">Self &amp; SetOptimizerAsLBFGSB(double gradientConvergenceTolerance=1e-5, unsigned int numberOfIterations=500, unsigned int maximumNumberOfCorrections=5, unsigned int maximumNumberOfFunctionEvaluations=2000, double costFunctionConvergenceFactor=1e+7, double lowerBound=std::numeric_limits&lt; double &gt;::min(), double upperBound=std::numeric_limits&lt; double &gt;::max(), bool trace=false)</div><div class="ttdoc">Limited memory Broyden Fletcher Goldfarb Shannon minimization with simple bounds.</div></div>
 <div class="ttc" id="aclassitk_1_1simple_1_1ImageRegistrationMethod_html_a146e309a54daed77b95f6b379ef1f8d2"><div class="ttname"><a href="classitk_1_1simple_1_1ImageRegistrationMethod.html#a146e309a54daed77b95f6b379ef1f8d2">itk::simple::ImageRegistrationMethod::SetInterpolator</a></div><div class="ttdeci">Self &amp; SetInterpolator(InterpolatorEnum Interpolator)</div><div class="ttdoc">Set and get the interpolator to use.</div><div class="ttdef"><b>Definition:</b> <a href="sitkImageRegistrationMethod_8h_source.html#l00117">sitkImageRegistrationMethod.h:117</a></div></div>
-<div class="ttc" id="aclassitk_1_1simple_1_1Image_html_a2ff41e835dc57361da6b4cd6e1767e52"><div class="ttname"><a href="classitk_1_1simple_1_1Image.html#a2ff41e835dc57361da6b4cd6e1767e52">itk::simple::Image::GetDimension</a></div><div class="ttdeci">unsigned int GetDimension(void) const</div></div>
+<div class="ttc" id="aclassitk_1_1simple_1_1Transform_html_a7ed9f6c8fec722ff7d128c192b30c259"><div class="ttname"><a href="classitk_1_1simple_1_1Transform.html#a7ed9f6c8fec722ff7d128c192b30c259">itk::simple::Transform::GetParameters</a></div><div class="ttdeci">std::vector&lt; double &gt; GetParameters() const</div></div>
 <div class="ttc" id="aclassitk_1_1simple_1_1BSplineTransform_html"><div class="ttname"><a href="classitk_1_1simple_1_1BSplineTransform.html">itk::simple::BSplineTransform</a></div><div class="ttdoc">A deformable transform over a bounded spatial domain using a BSpline representation for a 2D or 3D co...</div><div class="ttdef"><b>Definition:</b> <a href="sitkBSplineTransform_8h_source.html#l00035">sitkBSplineTransform.h:35</a></div></div>
 <div class="ttc" id="anamespaceitk_1_1simple_html"><div class="ttname"><a href="namespaceitk_1_1simple.html">itk::simple</a></div><div class="ttdef"><b>Definition:</b> <a href="sitkAdditionalProcedures_8h_source.html#l00029">sitkAdditionalProcedures.h:29</a></div></div>
 <div class="ttc" id="aclassitk_1_1simple_1_1ImageRegistrationMethod_html_ad3f2e8373e1d7375a4bffeec2a506ff4"><div class="ttname"><a href="classitk_1_1simple_1_1ImageRegistrationMethod.html#ad3f2e8373e1d7375a4bffeec2a506ff4">itk::simple::ImageRegistrationMethod::GetOptimizerIteration</a></div><div class="ttdeci">unsigned int GetOptimizerIteration() const</div></div>
+<div class="ttc" id="aclassitk_1_1simple_1_1Transform_html_a27e02b327b0d6939bf2676c76b53bfee"><div class="ttname"><a href="classitk_1_1simple_1_1Transform.html#a27e02b327b0d6939bf2676c76b53bfee">itk::simple::Transform::ToString</a></div><div class="ttdeci">std::string ToString() const</div></div>
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Apr 15 2020 02:51:38 for SimpleITK by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Apr 18 2020 02:51:35 for SimpleITK by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

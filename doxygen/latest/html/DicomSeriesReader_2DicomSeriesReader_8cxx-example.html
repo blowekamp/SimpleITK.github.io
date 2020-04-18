@@ -19,7 +19,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">SimpleITK
-   &#160;<span id="projectnumber">2.0.0rc1.post127</span>
+   &#160;<span id="projectnumber">2.0.0rc1.post151</span>
    </div>
   </td>
  </tr>
@@ -85,9 +85,9 @@ $(function() {
 <div class="line">  <span class="keyword">const</span> std::vector&lt;std::string&gt; dicom_names = <a name="a1"></a><a class="code" href="classitk_1_1simple_1_1ImageSeriesReader.html#a148badf23595d59e34b1d9360c79b539">sitk::ImageSeriesReader::GetGDCMSeriesFileNames</a>( argv[1] );</div>
 <div class="line">  reader.<a name="a2"></a><a class="code" href="classitk_1_1simple_1_1ImageSeriesReader.html#a0c494d1a8b50bd0639927767f25247c0">SetFileNames</a>( dicom_names );</div>
 <div class="line"> </div>
-<div class="line">  <a name="_a3"></a><a class="code" href="classitk_1_1simple_1_1Image.html">sitk::Image</a> image = reader.<a name="a4"></a><a class="code" href="classitk_1_1simple_1_1ImageSeriesReader.html#a5bbadcd2b78d8f90d1cc384910b76ab2">Execute</a>();</div>
+<div class="line">  <a name="_a3"></a><a class="code" href="classitk_1_1simple_1_1Image.html">sitk::Image</a> image = reader.<a name="a4"></a><a class="code" href="classitk_1_1simple_1_1ImageSeriesReader.html#a8274da0a6f4a04b5b504b9e6b377e706">Execute</a>();</div>
 <div class="line"> </div>
-<div class="line">  std::vector&lt;unsigned int&gt; size = image.<a name="a5"></a><a class="code" href="classitk_1_1simple_1_1Image.html#aec227b93da0786eb539508466b72586e">GetSize</a>();</div>
+<div class="line">  std::vector&lt;unsigned int&gt; size = image.<a name="a5"></a><a class="code" href="classitk_1_1simple_1_1Image.html#ade45738b2c906a51f23532aa972f6169">GetSize</a>();</div>
 <div class="line">  std::cout &lt;&lt; <span class="stringliteral">&quot;Image size: &quot;</span> &lt;&lt; size[0] &lt;&lt; <span class="stringliteral">&quot; &quot;</span> &lt;&lt; size[1] &lt;&lt; <span class="stringliteral">&quot; &quot;</span> &lt;&lt; size[2] &lt;&lt; std::endl;</div>
 <div class="line"> </div>
 <div class="line">  std::cout &lt;&lt; <span class="stringliteral">&quot;Writing &quot;</span> &lt;&lt; argv[2] &lt;&lt; std::endl;</div>
@@ -101,14 +101,14 @@ $(function() {
 <div class="ttc" id="aclassitk_1_1simple_1_1ImageSeriesReader_html_a0c494d1a8b50bd0639927767f25247c0"><div class="ttname"><a href="classitk_1_1simple_1_1ImageSeriesReader.html#a0c494d1a8b50bd0639927767f25247c0">itk::simple::ImageSeriesReader::SetFileNames</a></div><div class="ttdeci">Self &amp; SetFileNames(const std::vector&lt; std::string &gt; &amp;fileNames)</div></div>
 <div class="ttc" id="aSimpleITK_8h_html"><div class="ttname"><a href="SimpleITK_8h.html">SimpleITK.h</a></div></div>
 <div class="ttc" id="aclassitk_1_1simple_1_1ImageSeriesReader_html_a148badf23595d59e34b1d9360c79b539"><div class="ttname"><a href="classitk_1_1simple_1_1ImageSeriesReader.html#a148badf23595d59e34b1d9360c79b539">itk::simple::ImageSeriesReader::GetGDCMSeriesFileNames</a></div><div class="ttdeci">static std::vector&lt; std::string &gt; GetGDCMSeriesFileNames(const std::string &amp;directory, const std::string &amp;seriesID=&quot;&quot;, bool useSeriesDetails=false, bool recursive=false, bool loadSequences=false)</div><div class="ttdoc">Generate a sequence of filenames from a directory with a DICOM data set and a series ID.</div></div>
+<div class="ttc" id="aclassitk_1_1simple_1_1Image_html_ade45738b2c906a51f23532aa972f6169"><div class="ttname"><a href="classitk_1_1simple_1_1Image.html#ade45738b2c906a51f23532aa972f6169">itk::simple::Image::GetSize</a></div><div class="ttdeci">std::vector&lt; unsigned int &gt; GetSize() const</div></div>
+<div class="ttc" id="aclassitk_1_1simple_1_1ImageSeriesReader_html_a8274da0a6f4a04b5b504b9e6b377e706"><div class="ttname"><a href="classitk_1_1simple_1_1ImageSeriesReader.html#a8274da0a6f4a04b5b504b9e6b377e706">itk::simple::ImageSeriesReader::Execute</a></div><div class="ttdeci">Image Execute() override</div><div class="ttdoc">Set/Get The output PixelType of the image.</div></div>
 <div class="ttc" id="aclassitk_1_1simple_1_1ImageSeriesReader_html"><div class="ttname"><a href="classitk_1_1simple_1_1ImageSeriesReader.html">itk::simple::ImageSeriesReader</a></div><div class="ttdoc">Read series of image files into a SimpleITK image.</div><div class="ttdef"><b>Definition:</b> <a href="sitkImageSeriesReader_8h_source.html#l00045">sitkImageSeriesReader.h:45</a></div></div>
-<div class="ttc" id="aclassitk_1_1simple_1_1ImageSeriesReader_html_a5bbadcd2b78d8f90d1cc384910b76ab2"><div class="ttname"><a href="classitk_1_1simple_1_1ImageSeriesReader.html#a5bbadcd2b78d8f90d1cc384910b76ab2">itk::simple::ImageSeriesReader::Execute</a></div><div class="ttdeci">Image Execute()</div><div class="ttdoc">Set/Get The output PixelType of the image.</div></div>
 <div class="ttc" id="anamespaceitk_1_1simple_html_aee1844ed9be481d8ed9cc4c7049d588d"><div class="ttname"><a href="namespaceitk_1_1simple.html#aee1844ed9be481d8ed9cc4c7049d588d">itk::simple::WriteImage</a></div><div class="ttdeci">SITKIO_EXPORT void WriteImage(const Image &amp;image, const std::string &amp;fileName, bool useCompression=false, int compressionLevel=-1)</div></div>
 <div class="ttc" id="anamespaceitk_1_1simple_html"><div class="ttname"><a href="namespaceitk_1_1simple.html">itk::simple</a></div><div class="ttdef"><b>Definition:</b> <a href="sitkAdditionalProcedures_8h_source.html#l00029">sitkAdditionalProcedures.h:29</a></div></div>
-<div class="ttc" id="aclassitk_1_1simple_1_1Image_html_aec227b93da0786eb539508466b72586e"><div class="ttname"><a href="classitk_1_1simple_1_1Image.html#aec227b93da0786eb539508466b72586e">itk::simple::Image::GetSize</a></div><div class="ttdeci">std::vector&lt; unsigned int &gt; GetSize(void) const</div></div>
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Apr 15 2020 02:51:38 for SimpleITK by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Apr 18 2020 02:51:35 for SimpleITK by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

@@ -19,7 +19,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">SimpleITK
-   &#160;<span id="projectnumber">2.0.0rc1.post127</span>
+   &#160;<span id="projectnumber">2.0.0rc1.post151</span>
    </div>
   </td>
  </tr>
@@ -79,10 +79,10 @@ $(function() {
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;  : <span class="keyword">public</span> <a class="code" href="classitk_1_1simple_1_1Transform.html">Transform</a></div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;{</div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="classitk_1_1simple_1_1Euler2DTransform.html#aaf8ca81f38a72a4660de36fc5371aff9">   39</a></span>&#160;  <span class="keyword">typedef</span> <a class="code" href="classitk_1_1simple_1_1Euler2DTransform.html">Euler2DTransform</a> <a class="code" href="classitk_1_1simple_1_1Euler2DTransform.html#aaf8ca81f38a72a4660de36fc5371aff9">Self</a>;</div>
-<div class="line"><a name="l00040"></a><span class="lineno"><a class="line" href="classitk_1_1simple_1_1Euler2DTransform.html#abe1c46a0b20792a63f3575afee9605c3">   40</a></span>&#160;  <span class="keyword">typedef</span> <a class="code" href="classitk_1_1simple_1_1Transform.html">Transform</a>        <a class="code" href="classitk_1_1simple_1_1Euler2DTransform.html#abe1c46a0b20792a63f3575afee9605c3">Superclass</a>;</div>
+<div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="classitk_1_1simple_1_1Euler2DTransform.html#ad69f6fee007e19e69266525fc9c2bcf7">   39</a></span>&#160;  <span class="keyword">using</span> <a class="code" href="classitk_1_1simple_1_1Euler2DTransform.html">Self</a> = <a class="code" href="classitk_1_1simple_1_1Euler2DTransform.html">Euler2DTransform</a>;</div>
+<div class="line"><a name="l00040"></a><span class="lineno"><a class="line" href="classitk_1_1simple_1_1Euler2DTransform.html#a1d3c252dd3393c25c48564a64ffe0797">   40</a></span>&#160;  <span class="keyword">using</span> <a class="code" href="classitk_1_1simple_1_1Transform.html">Superclass</a> = <a class="code" href="classitk_1_1simple_1_1Transform.html">Transform</a>;</div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160; </div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;  <span class="keyword">virtual</span> ~<a class="code" href="classitk_1_1simple_1_1Euler2DTransform.html">Euler2DTransform</a>();</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;  ~<a class="code" href="classitk_1_1simple_1_1Euler2DTransform.html">Euler2DTransform</a>() <span class="keyword">override</span>;</div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160; </div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;  <span class="comment">// construct identity</span></div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;  <a class="code" href="classitk_1_1simple_1_1Euler2DTransform.html">Euler2DTransform</a>();</div>
@@ -97,7 +97,7 @@ $(function() {
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160; </div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;  <a class="code" href="classitk_1_1simple_1_1Euler2DTransform.html">Euler2DTransform</a> &amp;operator=( <span class="keyword">const</span> <a class="code" href="classitk_1_1simple_1_1Euler2DTransform.html">Euler2DTransform</a> &amp; );</div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160; </div>
-<div class="line"><a name="l00058"></a><span class="lineno"><a class="line" href="classitk_1_1simple_1_1Euler2DTransform.html#a6be3211d7bd5b5d21891381d8a0a7b19">   58</a></span>&#160;  std::string <a class="code" href="classitk_1_1simple_1_1Euler2DTransform.html#a6be3211d7bd5b5d21891381d8a0a7b19">GetName</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> std::string (<span class="stringliteral">&quot;Euler2DTransform&quot;</span>); }</div>
+<div class="line"><a name="l00058"></a><span class="lineno"><a class="line" href="classitk_1_1simple_1_1Euler2DTransform.html#a81f3e891de6e2396f8aafaf5635c4ea2">   58</a></span>&#160;  std::string <a class="code" href="classitk_1_1simple_1_1Euler2DTransform.html#a81f3e891de6e2396f8aafaf5635c4ea2">GetName</a>()<span class="keyword"> const override </span>{ <span class="keywordflow">return</span> std::string (<span class="stringliteral">&quot;Euler2DTransform&quot;</span>); }</div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160; </div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;  SITK_RETURN_SELF_TYPE_HEADER SetCenter(<span class="keyword">const</span> std::vector&lt;double&gt; &amp;params);</div>
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;  std::vector&lt;double&gt; GetCenter( ) <span class="keyword">const</span>;</div>
@@ -113,7 +113,7 @@ $(function() {
 <div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160; </div>
 <div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;<span class="keyword">protected</span>:</div>
 <div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160; </div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">void</span> SetPimpleTransform( PimpleTransformBase *pimpleTransform );</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;  <span class="keywordtype">void</span> SetPimpleTransform( PimpleTransformBase *pimpleTransform ) <span class="keyword">override</span>;</div>
 <div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160; </div>
 <div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;<span class="keyword">private</span>:</div>
 <div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160; </div>
@@ -142,12 +142,10 @@ $(function() {
 </div><!-- fragment --></div><!-- contents -->
 <div class="ttc" id="aclassitk_1_1simple_1_1Transform_html"><div class="ttname"><a href="classitk_1_1simple_1_1Transform.html">itk::simple::Transform</a></div><div class="ttdoc">A simplified wrapper around a variety of ITK transforms.</div><div class="ttdef"><b>Definition:</b> <a href="sitkTransform_8h_source.html#l00084">sitkTransform.h:84</a></div></div>
 <div class="ttc" id="aclassitk_1_1simple_1_1Euler2DTransform_html_a493a5074859f2678e42f12b2ef092c78"><div class="ttname"><a href="classitk_1_1simple_1_1Euler2DTransform.html#a493a5074859f2678e42f12b2ef092c78">itk::simple::Euler2DTransform::m_pfGetTranslation</a></div><div class="ttdeci">std::function&lt; std::vector&lt; double &gt;)&gt; m_pfGetTranslation</div><div class="ttdef"><b>Definition:</b> <a href="sitkEuler2DTransform_8h_source.html#l00093">sitkEuler2DTransform.h:93</a></div></div>
+<div class="ttc" id="aclassitk_1_1simple_1_1Euler2DTransform_html_a81f3e891de6e2396f8aafaf5635c4ea2"><div class="ttname"><a href="classitk_1_1simple_1_1Euler2DTransform.html#a81f3e891de6e2396f8aafaf5635c4ea2">itk::simple::Euler2DTransform::GetName</a></div><div class="ttdeci">std::string GetName() const override</div><div class="ttdef"><b>Definition:</b> <a href="sitkEuler2DTransform_8h_source.html#l00058">sitkEuler2DTransform.h:58</a></div></div>
 <div class="ttc" id="aclassitk_1_1simple_1_1Euler2DTransform_html_a5c97db8ca5a591a4b180f5037480be72"><div class="ttname"><a href="classitk_1_1simple_1_1Euler2DTransform.html#a5c97db8ca5a591a4b180f5037480be72">itk::simple::Euler2DTransform::m_pfGetAngle</a></div><div class="ttdeci">std::function&lt; double()&gt; m_pfGetAngle</div><div class="ttdef"><b>Definition:</b> <a href="sitkEuler2DTransform_8h_source.html#l00091">sitkEuler2DTransform.h:91</a></div></div>
-<div class="ttc" id="aclassitk_1_1simple_1_1Euler2DTransform_html_aaf8ca81f38a72a4660de36fc5371aff9"><div class="ttname"><a href="classitk_1_1simple_1_1Euler2DTransform.html#aaf8ca81f38a72a4660de36fc5371aff9">itk::simple::Euler2DTransform::Self</a></div><div class="ttdeci">Euler2DTransform Self</div><div class="ttdef"><b>Definition:</b> <a href="sitkEuler2DTransform_8h_source.html#l00039">sitkEuler2DTransform.h:39</a></div></div>
-<div class="ttc" id="aclassitk_1_1simple_1_1Euler2DTransform_html_abe1c46a0b20792a63f3575afee9605c3"><div class="ttname"><a href="classitk_1_1simple_1_1Euler2DTransform.html#abe1c46a0b20792a63f3575afee9605c3">itk::simple::Euler2DTransform::Superclass</a></div><div class="ttdeci">Transform Superclass</div><div class="ttdef"><b>Definition:</b> <a href="sitkEuler2DTransform_8h_source.html#l00040">sitkEuler2DTransform.h:40</a></div></div>
 <div class="ttc" id="asitkCommon_8h_html"><div class="ttname"><a href="sitkCommon_8h.html">sitkCommon.h</a></div></div>
 <div class="ttc" id="aclassitk_1_1simple_1_1Euler2DTransform_html_ac3d40b85f8c59e0461d44e3741a4b29a"><div class="ttname"><a href="classitk_1_1simple_1_1Euler2DTransform.html#ac3d40b85f8c59e0461d44e3741a4b29a">itk::simple::Euler2DTransform::m_pfSetAngle</a></div><div class="ttdeci">std::function&lt; void(double)&gt; m_pfSetAngle</div><div class="ttdef"><b>Definition:</b> <a href="sitkEuler2DTransform_8h_source.html#l00090">sitkEuler2DTransform.h:90</a></div></div>
-<div class="ttc" id="aclassitk_1_1simple_1_1Euler2DTransform_html_a6be3211d7bd5b5d21891381d8a0a7b19"><div class="ttname"><a href="classitk_1_1simple_1_1Euler2DTransform.html#a6be3211d7bd5b5d21891381d8a0a7b19">itk::simple::Euler2DTransform::GetName</a></div><div class="ttdeci">std::string GetName() const</div><div class="ttdef"><b>Definition:</b> <a href="sitkEuler2DTransform_8h_source.html#l00058">sitkEuler2DTransform.h:58</a></div></div>
 <div class="ttc" id="aclassitk_1_1simple_1_1Euler2DTransform_html"><div class="ttname"><a href="classitk_1_1simple_1_1Euler2DTransform.html">itk::simple::Euler2DTransform</a></div><div class="ttdoc">A rigid 2D transform with rotation in radians around a fixed center with translation.</div><div class="ttdef"><b>Definition:</b> <a href="sitkEuler2DTransform_8h_source.html#l00035">sitkEuler2DTransform.h:35</a></div></div>
 <div class="ttc" id="asitkCommon_8h_html_ab09867679406ccae193848f08fdc3444"><div class="ttname"><a href="sitkCommon_8h.html#ab09867679406ccae193848f08fdc3444">SITKCommon_EXPORT</a></div><div class="ttdeci">#define SITKCommon_EXPORT</div><div class="ttdef"><b>Definition:</b> <a href="sitkCommon_8h_source.html#l00041">sitkCommon.h:41</a></div></div>
 <div class="ttc" id="aclassitk_1_1simple_1_1Euler2DTransform_html_a09d8075fcb8db8dbea17a3f3a1bff8c7"><div class="ttname"><a href="classitk_1_1simple_1_1Euler2DTransform.html#a09d8075fcb8db8dbea17a3f3a1bff8c7">itk::simple::Euler2DTransform::m_pfGetCenter</a></div><div class="ttdeci">std::function&lt; std::vector&lt; double &gt;)&gt; m_pfGetCenter</div><div class="ttdef"><b>Definition:</b> <a href="sitkEuler2DTransform_8h_source.html#l00089">sitkEuler2DTransform.h:89</a></div></div>
@@ -160,7 +158,7 @@ $(function() {
 <div class="ttc" id="aclassitk_1_1TransformBaseTemplate_html"><div class="ttname"><a href="https://www.itk.org/Doxygen/html/classitk_1_1TransformBaseTemplate.html">itk::TransformBaseTemplate</a></div><div class="ttdef"><b>Definition:</b> <a href="sitkTransform_8h_source.html#l00037">sitkTransform.h:37</a></div></div>
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Apr 15 2020 02:51:40 for SimpleITK by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Apr 18 2020 02:51:37 for SimpleITK by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>
