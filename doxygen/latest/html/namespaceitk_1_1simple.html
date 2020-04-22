@@ -9,6 +9,13 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    extensions: ["tex2jax.js"],
+    jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script type="text/javascript" async="async" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -19,7 +26,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">SimpleITK
-   &#160;<span id="projectnumber">2.0.0rc1.post151</span>
+   &#160;<span id="projectnumber">2.0.0rc1.post161</span>
    </div>
   </td>
  </tr>
@@ -2023,7 +2030,7 @@ Functions</h2></td></tr>
 </td></tr>
 <tr><td class="fieldname"><a id="a7cb1ef8bd02c669c02ea2f9f5aa374e5a669a445542add85de1f7d6dc83f48eee"></a>sitkHammingWindowedSinc&#160;</td><td class="fielddoc"><p>Windowed sinc interpolation. </p>
 <p class="formulaDsp">
-<img class="formulaDsp" alt="\[ w(x) = 0.54 + 0.46 cos(\frac{\pi x}{m} ) \]" src="form_0.png"/>
+\[ w(x) = 0.54 + 0.46 cos(\frac{\pi x}{m} ) \]
 </p>
 <dl class="section see"><dt>See also</dt><dd><a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1WindowedSincInterpolateImageFunction.html">itk::WindowedSincInterpolateImageFunction</a> </dd>
 <dd>
@@ -2031,7 +2038,7 @@ Functions</h2></td></tr>
 </td></tr>
 <tr><td class="fieldname"><a id="a7cb1ef8bd02c669c02ea2f9f5aa374e5a2208c676c667ab0474bea23ae4cd87df"></a>sitkCosineWindowedSinc&#160;</td><td class="fielddoc"><p>Windowed sinc interpolation. </p>
 <p class="formulaDsp">
-<img class="formulaDsp" alt="\[ w(x) = cos(\frac{\pi x}{2 m} ) \]" src="form_1.png"/>
+\[ w(x) = cos(\frac{\pi x}{2 m} ) \]
 </p>
 <dl class="section see"><dt>See also</dt><dd><a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1WindowedSincInterpolateImageFunction.html">itk::WindowedSincInterpolateImageFunction</a> </dd>
 <dd>
@@ -2039,7 +2046,7 @@ Functions</h2></td></tr>
 </td></tr>
 <tr><td class="fieldname"><a id="a7cb1ef8bd02c669c02ea2f9f5aa374e5a95405b6d01c7e61a0e06439928464165"></a>sitkWelchWindowedSinc&#160;</td><td class="fielddoc"><p>Windowed sinc interpolation. </p>
 <p class="formulaDsp">
-<img class="formulaDsp" alt="\[ w(x) = 1 - ( \frac{x^2}{m^2} ) \]" src="form_2.png"/>
+\[ w(x) = 1 - ( \frac{x^2}{m^2} ) \]
 </p>
 <dl class="section see"><dt>See also</dt><dd><a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1WindowedSincInterpolateImageFunction.html">itk::WindowedSincInterpolateImageFunction</a> </dd>
 <dd>
@@ -2047,7 +2054,7 @@ Functions</h2></td></tr>
 </td></tr>
 <tr><td class="fieldname"><a id="a7cb1ef8bd02c669c02ea2f9f5aa374e5a6ef1716ea1e91e75eaff9a92b8f18a0d"></a>sitkLanczosWindowedSinc&#160;</td><td class="fielddoc"><p>Windowed sinc interpolation. </p>
 <p class="formulaDsp">
-<img class="formulaDsp" alt="\[ w(x) = \textrm{sinc} ( \frac{x}{m} ) \]" src="form_3.png"/>
+\[ w(x) = \textrm{sinc} ( \frac{x}{m} ) \]
 </p>
 <dl class="section see"><dt>See also</dt><dd><a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1WindowedSincInterpolateImageFunction.html">itk::WindowedSincInterpolateImageFunction</a> </dd>
 <dd>
@@ -2055,7 +2062,7 @@ Functions</h2></td></tr>
 </td></tr>
 <tr><td class="fieldname"><a id="a7cb1ef8bd02c669c02ea2f9f5aa374e5a2a2a28f98315c79ad8f4f3f66e262da2"></a>sitkBlackmanWindowedSinc&#160;</td><td class="fielddoc"><p>Windowed sinc interpolation. </p>
 <p class="formulaDsp">
-<img class="formulaDsp" alt="\[ w(x) = 0.42 + 0.5 cos(\frac{\pi x}{m}) + 0.08 cos(\frac{2 \pi x}{m}) \]" src="form_4.png"/>
+\[ w(x) = 0.42 + 0.5 cos(\frac{\pi x}{m}) + 0.08 cos(\frac{2 \pi x}{m}) \]
 </p>
 <dl class="section see"><dt>See also</dt><dd><a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1WindowedSincInterpolateImageFunction.html">itk::WindowedSincInterpolateImageFunction</a> </dd>
 <dd>
@@ -26923,7 +26930,7 @@ template&lt;typename T &gt; </div>
 <div class="ttc" id="anamespaceitk_1_1simple_html_ae40bd64640f4014fba1a8a872ab4df98a25f496c19c2388217b9fede6686144ac"><div class="ttname"><a href="namespaceitk_1_1simple.html#ae40bd64640f4014fba1a8a872ab4df98a25f496c19c2388217b9fede6686144ac">itk::simple::sitkUnknown</a></div><div class="ttdeci">@ sitkUnknown</div><div class="ttdef"><b>Definition:</b> <a href="sitkPixelIDValues_8h_source.html#l00091">sitkPixelIDValues.h:91</a></div></div>
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Apr 18 2020 02:51:57 for SimpleITK by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Apr 22 2020 02:51:03 for SimpleITK by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

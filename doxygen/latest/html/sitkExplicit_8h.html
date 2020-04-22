@@ -9,6 +9,13 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    extensions: ["tex2jax.js"],
+    jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script type="text/javascript" async="async" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -19,7 +26,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">SimpleITK
-   &#160;<span id="projectnumber">2.0.0rc1.post151</span>
+   &#160;<span id="projectnumber">2.0.0rc1.post161</span>
    </div>
   </td>
  </tr>
@@ -55,45 +62,16 @@ $(function() {
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="sitkExplicit_8h__incl.png" border="0" usemap="#sitkExplicit_8h" alt=""/></div>
-<map name="sitkExplicit_8h" id="sitkExplicit_8h">
-<area shape="rect" title=" " alt="" coords="229,5,335,32"/>
-<area shape="rect" href="sitkMacro_8h.html" title=" " alt="" coords="233,80,331,107"/>
-<area shape="rect" title=" " alt="" coords="5,155,76,181"/>
-<area shape="rect" title=" " alt="" coords="101,155,175,181"/>
-<area shape="rect" title=" " alt="" coords="199,155,269,181"/>
-<area shape="rect" title=" " alt="" coords="293,155,367,181"/>
-<area shape="rect" title=" " alt="" coords="391,155,450,181"/>
-<area shape="rect" href="sitkConfigure_8h.html" title=" " alt="" coords="474,155,594,181"/>
-</map>
+<div class="center"><iframe scrolling="no" frameborder="0" src="sitkExplicit_8h__incl.svg" width="600" height="187"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </div><div class="textblock"><div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-1-trigger" src="closed.png" alt="+"/> This graph shows which files directly or indirectly include this file:</div>
 <div id="dynsection-1-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="sitkExplicit_8h__dep__incl.png" border="0" usemap="#sitkExplicit_8hdep" alt=""/></div>
-<map name="sitkExplicit_8hdep" id="sitkExplicit_8hdep">
-<area shape="rect" title=" " alt="" coords="1818,5,1925,32"/>
-<area shape="rect" href="sitkExplicitITKImageRegion_8h.html" title=" " alt="" coords="5,87,217,114"/>
-<area shape="rect" href="sitkExplicitITKDefaultPixelAccessor_8h.html" title=" " alt="" coords="242,80,437,121"/>
-<area shape="rect" href="sitkExplicitITKDefaultVectorPixelAccessor_8h.html" title=" " alt="" coords="461,80,665,121"/>
-<area shape="rect" href="sitkExplicitITKImportImageContainer_8h.html" title=" " alt="" coords="689,80,888,121"/>
-<area shape="rect" href="sitkExplicitITKImageBase_8h.html" title=" " alt="" coords="911,87,1111,114"/>
-<area shape="rect" href="sitkExplicitITKImage_8h.html" title=" " alt="" coords="1135,87,1303,114"/>
-<area shape="rect" href="sitkExplicitITKLabelMap_8h.html" title=" " alt="" coords="1327,87,1517,114"/>
-<area shape="rect" href="sitkExplicitITKVectorImage_8h.html" title=" " alt="" coords="1541,87,1751,114"/>
-<area shape="rect" href="sitkExplicitITKImageConstIterator_8h.html" title=" " alt="" coords="1775,80,1968,121"/>
-<area shape="rect" href="sitkExplicitITKImageRegionConstIterator_8h.html" title=" " alt="" coords="1993,80,2193,121"/>
-<area shape="rect" href="sitkExplicitITKImageScanlineConstIterator_8h.html" title=" " alt="" coords="2217,80,2427,121"/>
-<area shape="rect" href="sitkExplicitITKImageScanlineIterator_8h.html" title=" " alt="" coords="2451,80,2662,121"/>
-<area shape="rect" href="sitkExplicitITKImageSource_8h.html" title=" " alt="" coords="2685,87,2897,114"/>
-<area shape="rect" href="sitkExplicitITKImageToImageFilter_8h.html" title=" " alt="" coords="2921,80,3131,121"/>
-<area shape="rect" href="sitkExplicitITKInPlaceImageFilter_8h.html" title=" " alt="" coords="3155,80,3358,121"/>
-<area shape="rect" href="sitkExplicitITKComposeImageFilter_8h.html" title=" " alt="" coords="3382,80,3598,121"/>
-<area shape="rect" href="sitkExplicitITKVectorIndexSelectionCastImageFilter_8h.html" title=" " alt="" coords="3622,80,3817,121"/>
-<area shape="rect" href="sitkExplicitITK_8h.html" title=" " alt="" coords="1808,169,1935,196"/>
-</map>
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="sitkExplicit_8h__dep__incl.svg" width="100%" height="451"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
 </div>
 </div>
 <p><a href="sitkExplicit_8h_source.html">Go to the source code of this file.</a></p>
@@ -159,7 +137,7 @@ Macros</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Apr 18 2020 02:51:42 for SimpleITK by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Apr 22 2020 02:50:48 for SimpleITK by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

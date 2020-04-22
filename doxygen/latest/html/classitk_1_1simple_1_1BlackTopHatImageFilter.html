@@ -9,6 +9,13 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    extensions: ["tex2jax.js"],
+    jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script type="text/javascript" async="async" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -19,7 +26,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">SimpleITK
-   &#160;<span id="projectnumber">2.0.0rc1.post151</span>
+   &#160;<span id="projectnumber">2.0.0rc1.post161</span>
    </div>
   </td>
  </tr>
@@ -65,63 +72,16 @@ $(function() {
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="classitk_1_1simple_1_1BlackTopHatImageFilter__inherit__graph.png" border="0" usemap="#itk_1_1simple_1_1BlackTopHatImageFilter_inherit__map" alt="Inheritance graph"/></div>
-<map name="itk_1_1simple_1_1BlackTopHatImageFilter_inherit__map" id="itk_1_1simple_1_1BlackTopHatImageFilter_inherit__map">
-<area shape="rect" title="Black top hat extracts local minima that are smaller than the structuring element." alt="" coords="11,229,191,271"/>
-<area shape="rect" href="classitk_1_1simple_1_1ImageFilter.html" title="The base interface for SimpleITK filters that take one input image." alt="" coords="15,155,187,181"/>
-<area shape="rect" href="classitk_1_1simple_1_1ProcessObject.html" title="Base class for SimpleITK classes based on ProcessObject." alt="" coords="5,80,196,107"/>
-<area shape="rect" href="classitk_1_1simple_1_1NonCopyable.html" title="An inheritable class to disable copying of a class." alt="" coords="7,5,194,32"/>
-</map>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classitk_1_1simple_1_1BlackTopHatImageFilter__inherit__graph.svg" width="202" height="276"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Collaboration diagram for itk::simple::BlackTopHatImageFilter:</div>
 <div id="dynsection-1-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="classitk_1_1simple_1_1BlackTopHatImageFilter__coll__graph.png" border="0" usemap="#itk_1_1simple_1_1BlackTopHatImageFilter_coll__map" alt="Collaboration graph"/></div>
-<map name="itk_1_1simple_1_1BlackTopHatImageFilter_coll__map" id="itk_1_1simple_1_1BlackTopHatImageFilter_coll__map">
-<area shape="rect" title="Black top hat extracts local minima that are smaller than the structuring element." alt="" coords="3149,227,3329,269"/>
-<area shape="rect" href="classitk_1_1simple_1_1ImageFilter.html" title="The base interface for SimpleITK filters that take one input image." alt="" coords="2743,440,2915,467"/>
-<area shape="rect" href="classitk_1_1simple_1_1ProcessObject.html" title="Base class for SimpleITK classes based on ProcessObject." alt="" coords="2429,627,2620,653"/>
-<area shape="rect" title=" " alt="" coords="2752,757,2907,798"/>
-<area shape="rect" href="classitk_1_1simple_1_1NonCopyable.html" title="An inheritable class to disable copying of a class." alt="" coords="1991,692,2178,719"/>
-<area shape="rect" href="classitk_1_1simple_1_1Command.html" title="An implementation of the Command design pattern for callback." alt="" coords="3156,735,3323,761"/>
-<area shape="rect" title=" " alt="" coords="3773,619,4023,661"/>
-<area shape="rect" href="structitk_1_1simple_1_1ProcessObject_1_1EventCommand.html" title=" " alt="" coords="3469,683,3660,725"/>
-<area shape="rect" title="STL class." alt="" coords="1079,832,1166,859"/>
-<area shape="rect" href="https://www.itk.org/Doxygen/html/classitk_1_1Object.html" title=" " alt="" coords="1549,495,1639,521"/>
-<area shape="rect" title=" " alt="" coords="1486,853,1702,894"/>
-<area shape="rect" title=" " alt="" coords="1481,743,1707,785"/>
-<area shape="rect" title=" " alt="" coords="1481,678,1707,719"/>
-<area shape="rect" title="STL class." alt="" coords="613,827,752,869"/>
-<area shape="rect" title="STL class." alt="" coords="1068,953,1177,980"/>
-<area shape="rect" title=" " alt="" coords="5,835,44,861"/>
-<area shape="rect" title="STL class." alt="" coords="169,716,303,743"/>
-<area shape="rect" title="STL class." alt="" coords="395,39,503,65"/>
-<area shape="rect" title=" " alt="" coords="5,359,44,385"/>
-<area shape="rect" title="STL class." alt="" coords="169,493,303,520"/>
-<area shape="rect" title="STL class." alt="" coords="157,400,315,427"/>
-<area shape="rect" title="STL class." alt="" coords="1058,319,1187,345"/>
-<area shape="rect" title="STL class." alt="" coords="1274,111,1431,137"/>
-<area shape="rect" href="https://www.itk.org/Doxygen/html/classitk_1_1ProcessObject.html" title=" " alt="" coords="2015,627,2154,653"/>
-<area shape="rect" href="https://www.itk.org/Doxygen/html/classitk_1_1LightObject.html" title=" " alt="" coords="1062,420,1183,447"/>
-<area shape="rect" title=" " alt="" coords="611,401,754,428"/>
-<area shape="rect" href="https://www.itk.org/Doxygen/html/classitk_1_1TimeStamp.html" title=" " alt="" coords="1061,521,1184,548"/>
-<area shape="rect" title=" " alt="" coords="809,599,987,625"/>
-<area shape="rect" href="https://www.itk.org/Doxygen/html/classitk_1_1MetaDataDictionary.html" title=" " alt="" coords="1034,471,1211,497"/>
-<area shape="rect" title=" " alt="" coords="584,453,781,494"/>
-<area shape="rect" title=" " alt="" coords="1481,371,1707,413"/>
-<area shape="rect" title="STL iterator class." alt="" coords="1027,369,1218,396"/>
-<area shape="rect" title=" " alt="" coords="1763,149,1928,190"/>
-<area shape="rect" href="https://www.itk.org/Doxygen/html/classitk_1_1SmartPointer.html" title=" " alt="" coords="1051,650,1194,691"/>
-<area shape="rect" href="https://www.itk.org/Doxygen/html/classitk_1_1SmartPointer.html" title=" " alt="" coords="611,650,754,691"/>
-<area shape="rect" title=" " alt="" coords="2704,220,2955,276"/>
-<area shape="rect" href="classitk_1_1simple_1_1detail_1_1MemberFunctionFactory.html" title=" " alt="" coords="2430,225,2619,281"/>
-<area shape="rect" href="classitk_1_1simple_1_1detail_1_1MemberFunctionFactoryBase.html" title=" " alt="" coords="1737,199,1953,255"/>
-<area shape="rect" href="classitk_1_1simple_1_1detail_1_1MemberFunctionFactoryBase.html" title="A base class for the MemberFunctionFactory." alt="" coords="1015,230,1231,271"/>
-<area shape="rect" href="classitk_1_1simple_1_1detail_1_1MemberFunctionFactoryBase.html" title=" " alt="" coords="1475,264,1713,320"/>
-<area shape="rect" href="classitk_1_1simple_1_1detail_1_1MemberFunctionFactory.html" title="A class used to instantiate and generate function object to templated member functions." alt="" coords="1978,265,2191,321"/>
-</map>
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classitk_1_1simple_1_1BlackTopHatImageFilter__coll__graph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
@@ -925,7 +885,7 @@ template&lt;class TImageType &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Apr 18 2020 02:51:58 for SimpleITK by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Apr 22 2020 02:51:04 for SimpleITK by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

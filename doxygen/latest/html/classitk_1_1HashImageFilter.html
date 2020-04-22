@@ -9,6 +9,13 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    extensions: ["tex2jax.js"],
+    jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script type="text/javascript" async="async" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -19,7 +26,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">SimpleITK
-   &#160;<span id="projectnumber">2.0.0rc1.post151</span>
+   &#160;<span id="projectnumber">2.0.0rc1.post161</span>
    </div>
   </td>
  </tr>
@@ -64,62 +71,16 @@ $(function() {
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="classitk_1_1HashImageFilter__inherit__graph.png" border="0" usemap="#itk_1_1HashImageFilter_3_01TImageType_01_4_inherit__map" alt="Inheritance graph"/></div>
-<map name="itk_1_1HashImageFilter_3_01TImageType_01_4_inherit__map" id="itk_1_1HashImageFilter_3_01TImageType_01_4_inherit__map">
-<area shape="rect" title="Generates a hash string from an image." alt="" coords="2159,71,2312,113"/>
-<area shape="rect" href="https://www.itk.org/Doxygen/html/classitk_1_1CastImageFilter.html" title=" " alt="" coords="1891,71,2109,113"/>
-<area shape="rect" href="https://www.itk.org/Doxygen/html/classitk_1_1InPlaceImageFilter.html" title=" " alt="" coords="1123,71,1357,113"/>
-<area shape="rect" href="https://www.itk.org/Doxygen/html/classitk_1_1CastImageFilter.html" title=" " alt="" coords="1407,101,1641,142"/>
-<area shape="rect" href="https://www.itk.org/Doxygen/html/classitk_1_1ImageToImageFilter.html" title=" " alt="" coords="839,71,1073,113"/>
-<area shape="rect" href="https://www.itk.org/Doxygen/html/classitk_1_1ImageSource.html" title=" " alt="" coords="573,29,771,70"/>
-<area shape="rect" href="https://www.itk.org/Doxygen/html/classitk_1_1ProcessObject.html" title=" " alt="" coords="341,5,479,32"/>
-<area shape="rect" href="https://www.itk.org/Doxygen/html/classitk_1_1Object.html" title=" " alt="" coords="176,5,265,32"/>
-<area shape="rect" href="https://www.itk.org/Doxygen/html/classitk_1_1LightObject.html" title=" " alt="" coords="5,5,127,32"/>
-<area shape="rect" href="https://www.itk.org/Doxygen/html/structitk_1_1ImageSourceCommon.html" title=" " alt="" coords="315,56,505,83"/>
-<area shape="rect" href="https://www.itk.org/Doxygen/html/classitk_1_1ImageToImageFilterCommon.html" title=" " alt="" coords="555,95,789,121"/>
-</map>
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classitk_1_1HashImageFilter__inherit__graph.svg" width="100%" height="411"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Collaboration diagram for itk::HashImageFilter&lt; TImageType &gt;:</div>
 <div id="dynsection-1-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="classitk_1_1HashImageFilter__coll__graph.png" border="0" usemap="#itk_1_1HashImageFilter_3_01TImageType_01_4_coll__map" alt="Collaboration graph"/></div>
-<map name="itk_1_1HashImageFilter_3_01TImageType_01_4_coll__map" id="itk_1_1HashImageFilter_3_01TImageType_01_4_coll__map">
-<area shape="rect" title="Generates a hash string from an image." alt="" coords="3883,342,4036,383"/>
-<area shape="rect" href="https://www.itk.org/Doxygen/html/classitk_1_1CastImageFilter.html" title=" " alt="" coords="3504,301,3723,342"/>
-<area shape="rect" href="https://www.itk.org/Doxygen/html/classitk_1_1InPlaceImageFilter.html" title=" " alt="" coords="2736,307,2971,349"/>
-<area shape="rect" href="https://www.itk.org/Doxygen/html/classitk_1_1CastImageFilter.html" title=" " alt="" coords="3020,337,3255,378"/>
-<area shape="rect" href="https://www.itk.org/Doxygen/html/classitk_1_1ImageToImageFilter.html" title=" " alt="" coords="2452,307,2687,349"/>
-<area shape="rect" href="https://www.itk.org/Doxygen/html/classitk_1_1ImageSource.html" title=" " alt="" coords="2186,265,2385,306"/>
-<area shape="rect" href="https://www.itk.org/Doxygen/html/classitk_1_1ProcessObject.html" title=" " alt="" coords="1954,243,2093,269"/>
-<area shape="rect" href="https://www.itk.org/Doxygen/html/classitk_1_1Object.html" title=" " alt="" coords="1535,191,1624,217"/>
-<area shape="rect" href="https://www.itk.org/Doxygen/html/classitk_1_1LightObject.html" title=" " alt="" coords="1115,163,1236,189"/>
-<area shape="rect" title=" " alt="" coords="659,161,801,188"/>
-<area shape="rect" title="STL class." alt="" coords="186,183,319,209"/>
-<area shape="rect" href="https://www.itk.org/Doxygen/html/classitk_1_1TimeStamp.html" title=" " alt="" coords="1114,213,1237,240"/>
-<area shape="rect" title=" " alt="" coords="875,111,1054,137"/>
-<area shape="rect" title=" " alt="" coords="5,212,44,239"/>
-<area shape="rect" title="STL class." alt="" coords="185,341,320,368"/>
-<area shape="rect" title="STL class." alt="" coords="174,249,331,276"/>
-<area shape="rect" title="STL class." alt="" coords="188,99,317,125"/>
-<area shape="rect" title="STL class." alt="" coords="1132,424,1219,451"/>
-<area shape="rect" title=" " alt="" coords="1471,439,1687,481"/>
-<area shape="rect" title=" " alt="" coords="1467,314,1692,355"/>
-<area shape="rect" title=" " alt="" coords="1467,539,1692,581"/>
-<area shape="rect" title="STL class." alt="" coords="661,417,799,458"/>
-<area shape="rect" href="https://www.itk.org/Doxygen/html/classitk_1_1MetaDataDictionary.html" title=" " alt="" coords="1087,277,1264,304"/>
-<area shape="rect" title=" " alt="" coords="631,275,829,317"/>
-<area shape="rect" title=" " alt="" coords="5,476,44,503"/>
-<area shape="rect" title="STL class." alt="" coords="428,680,537,707"/>
-<area shape="rect" title=" " alt="" coords="617,45,843,86"/>
-<area shape="rect" title="STL iterator class." alt="" coords="157,5,348,32"/>
-<area shape="rect" href="https://www.itk.org/Doxygen/html/classitk_1_1SmartPointer.html" title=" " alt="" coords="1104,581,1247,622"/>
-<area shape="rect" href="https://www.itk.org/Doxygen/html/classitk_1_1SmartPointer.html" title=" " alt="" coords="659,581,801,622"/>
-<area shape="rect" href="https://www.itk.org/Doxygen/html/structitk_1_1ImageSourceCommon.html" title=" " alt="" coords="1928,293,2119,320"/>
-<area shape="rect" href="https://www.itk.org/Doxygen/html/classitk_1_1ImageToImageFilterCommon.html" title=" " alt="" coords="2168,331,2403,357"/>
-<area shape="rect" href="https://www.itk.org/Doxygen/html/classHashFunction.html" title=" " alt="" coords="3559,367,3668,393"/>
-</map>
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classitk_1_1HashImageFilter__coll__graph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
@@ -1460,7 +1421,7 @@ template&lt;class TImageType &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Apr 18 2020 02:51:57 for SimpleITK by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Apr 22 2020 02:51:02 for SimpleITK by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

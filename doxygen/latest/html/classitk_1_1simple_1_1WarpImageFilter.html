@@ -9,6 +9,13 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    extensions: ["tex2jax.js"],
+    jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script type="text/javascript" async="async" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -19,7 +26,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">SimpleITK
-   &#160;<span id="projectnumber">2.0.0rc1.post151</span>
+   &#160;<span id="projectnumber">2.0.0rc1.post161</span>
    </div>
   </td>
  </tr>
@@ -65,64 +72,16 @@ $(function() {
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="classitk_1_1simple_1_1WarpImageFilter__inherit__graph.png" border="0" usemap="#itk_1_1simple_1_1WarpImageFilter_inherit__map" alt="Inheritance graph"/></div>
-<map name="itk_1_1simple_1_1WarpImageFilter_inherit__map" id="itk_1_1simple_1_1WarpImageFilter_inherit__map">
-<area shape="rect" title="Warps an image using an input displacement field." alt="" coords="5,229,211,256"/>
-<area shape="rect" href="classitk_1_1simple_1_1ImageFilter.html" title="The base interface for SimpleITK filters that take one input image." alt="" coords="22,155,194,181"/>
-<area shape="rect" href="classitk_1_1simple_1_1ProcessObject.html" title="Base class for SimpleITK classes based on ProcessObject." alt="" coords="13,80,203,107"/>
-<area shape="rect" href="classitk_1_1simple_1_1NonCopyable.html" title="An inheritable class to disable copying of a class." alt="" coords="15,5,201,32"/>
-</map>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classitk_1_1simple_1_1WarpImageFilter__inherit__graph.svg" width="216" height="262"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Collaboration diagram for itk::simple::WarpImageFilter:</div>
 <div id="dynsection-1-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="classitk_1_1simple_1_1WarpImageFilter__coll__graph.png" border="0" usemap="#itk_1_1simple_1_1WarpImageFilter_coll__map" alt="Collaboration graph"/></div>
-<map name="itk_1_1simple_1_1WarpImageFilter_coll__map" id="itk_1_1simple_1_1WarpImageFilter_coll__map">
-<area shape="rect" title="Warps an image using an input displacement field." alt="" coords="3311,763,3516,789"/>
-<area shape="rect" href="classitk_1_1simple_1_1ImageFilter.html" title="The base interface for SimpleITK filters that take one input image." alt="" coords="2869,681,3041,708"/>
-<area shape="rect" href="classitk_1_1simple_1_1ProcessObject.html" title="Base class for SimpleITK classes based on ProcessObject." alt="" coords="2428,384,2619,411"/>
-<area shape="rect" title=" " alt="" coords="2878,242,3033,283"/>
-<area shape="rect" href="classitk_1_1simple_1_1NonCopyable.html" title="An inheritable class to disable copying of a class." alt="" coords="1978,321,2165,348"/>
-<area shape="rect" href="classitk_1_1simple_1_1Command.html" title="An implementation of the Command design pattern for callback." alt="" coords="3330,283,3497,309"/>
-<area shape="rect" title=" " alt="" coords="3960,379,4209,421"/>
-<area shape="rect" href="structitk_1_1simple_1_1ProcessObject_1_1EventCommand.html" title=" " alt="" coords="3656,311,3847,353"/>
-<area shape="rect" title="STL class." alt="" coords="1079,169,1166,196"/>
-<area shape="rect" href="https://www.itk.org/Doxygen/html/classitk_1_1Object.html" title=" " alt="" coords="1543,435,1632,461"/>
-<area shape="rect" title=" " alt="" coords="1479,138,1695,179"/>
-<area shape="rect" title=" " alt="" coords="1475,203,1700,245"/>
-<area shape="rect" title=" " alt="" coords="1475,275,1700,317"/>
-<area shape="rect" title="STL class." alt="" coords="613,162,752,203"/>
-<area shape="rect" title="STL class." alt="" coords="1068,5,1177,32"/>
-<area shape="rect" title=" " alt="" coords="5,109,44,136"/>
-<area shape="rect" title="STL class." alt="" coords="169,245,303,272"/>
-<area shape="rect" title="STL class." alt="" coords="395,624,503,651"/>
-<area shape="rect" title=" " alt="" coords="5,593,44,620"/>
-<area shape="rect" title="STL class." alt="" coords="169,503,303,529"/>
-<area shape="rect" title="STL class." alt="" coords="157,396,315,423"/>
-<area shape="rect" title="STL class." alt="" coords="1058,715,1187,741"/>
-<area shape="rect" title="STL class." alt="" coords="1274,987,1431,1013"/>
-<area shape="rect" href="https://www.itk.org/Doxygen/html/classitk_1_1ProcessObject.html" title=" " alt="" coords="2002,384,2141,411"/>
-<area shape="rect" href="https://www.itk.org/Doxygen/html/classitk_1_1LightObject.html" title=" " alt="" coords="1062,476,1183,503"/>
-<area shape="rect" title=" " alt="" coords="611,479,754,505"/>
-<area shape="rect" href="https://www.itk.org/Doxygen/html/classitk_1_1TimeStamp.html" title=" " alt="" coords="1061,531,1184,557"/>
-<area shape="rect" title=" " alt="" coords="809,421,987,448"/>
-<area shape="rect" href="https://www.itk.org/Doxygen/html/classitk_1_1MetaDataDictionary.html" title=" " alt="" coords="1034,363,1211,389"/>
-<area shape="rect" title=" " alt="" coords="584,362,781,403"/>
-<area shape="rect" title=" " alt="" coords="1475,567,1700,609"/>
-<area shape="rect" title="STL iterator class." alt="" coords="1027,583,1218,609"/>
-<area shape="rect" title=" " alt="" coords="1745,728,1919,755"/>
-<area shape="rect" title=" " alt="" coords="2215,787,2380,813"/>
-<area shape="rect" href="https://www.itk.org/Doxygen/html/classitk_1_1SmartPointer.html" title=" " alt="" coords="1051,297,1194,338"/>
-<area shape="rect" href="https://www.itk.org/Doxygen/html/classitk_1_1SmartPointer.html" title=" " alt="" coords="611,297,754,338"/>
-<area shape="rect" title=" " alt="" coords="2803,869,3108,925"/>
-<area shape="rect" href="classitk_1_1simple_1_1detail_1_1DualMemberFunctionFactory.html" title=" " alt="" coords="2416,869,2631,925"/>
-<area shape="rect" href="classitk_1_1simple_1_1detail_1_1MemberFunctionFactoryBase.html" title=" " alt="" coords="1724,902,1940,973"/>
-<area shape="rect" href="classitk_1_1simple_1_1detail_1_1MemberFunctionFactoryBase.html" title="A base class for the MemberFunctionFactory." alt="" coords="1015,877,1231,918"/>
-<area shape="rect" href="classitk_1_1simple_1_1detail_1_1MemberFunctionFactoryBase.html" title=" " alt="" coords="1479,842,1695,913"/>
-<area shape="rect" href="classitk_1_1simple_1_1detail_1_1DualMemberFunctionFactory.html" title="A class used to instantiate and generate function objects of templated member functions with two temp..." alt="" coords="1964,839,2179,895"/>
-</map>
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classitk_1_1simple_1_1WarpImageFilter__coll__graph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
@@ -349,7 +308,7 @@ Additional Inherited Members</h2></td></tr>
 <p>The output image is produced by inverse mapping: the output pixels are mapped back onto the input image. This scheme avoids the creation of any holes and overlaps in the output image.</p>
 <p>Each vector in the displacement field represent the distance between a geometric point in the input space and a point in the output space such that:</p>
 <p class="formulaDsp">
-<img class="formulaDsp" alt="\[ p_{in} = p_{out} + d \]" src="form_99.png"/>
+\[ p_{in} = p_{out} + d \]
 </p>
 <p>Typically the mapped position does not correspond to an integer pixel position in the input image. Interpolation via an image function is used to compute values at non-integer positions. The default interpolation typed used is the <a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1LinearInterpolateImageFunction.html">LinearInterpolateImageFunction</a> . The user can specify a particular interpolation function via <a class="el" href="classitk_1_1simple_1_1WarpImageFilter.html#a05ee625d25e7368f7bf7c25ed9b187e7">SetInterpolator()</a> . Note that the input interpolator must derive from base class <a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1InterpolateImageFunction.html">InterpolateImageFunction</a> .</p>
 <p>Position mapped to outside of the input image buffer are assigned a edge padding value.</p>
@@ -1216,7 +1175,7 @@ template&lt;class TImageType1 , class TImageType2 &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Apr 18 2020 02:52:08 for SimpleITK by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Apr 22 2020 02:51:12 for SimpleITK by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

@@ -9,6 +9,13 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    extensions: ["tex2jax.js"],
+    jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script type="text/javascript" async="async" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -19,7 +26,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">SimpleITK
-   &#160;<span id="projectnumber">2.0.0rc1.post151</span>
+   &#160;<span id="projectnumber">2.0.0rc1.post161</span>
    </div>
   </td>
  </tr>
@@ -68,98 +75,16 @@ $(function() {
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="classitk_1_1simple_1_1ProcessObject__inherit__graph.png" border="0" usemap="#itk_1_1simple_1_1ProcessObject_inherit__map" alt="Inheritance graph"/></div>
-<map name="itk_1_1simple_1_1ProcessObject_inherit__map" id="itk_1_1simple_1_1ProcessObject_inherit__map">
-<area shape="rect" title="Base class for SimpleITK classes based on ProcessObject." alt="" coords="240,1075,431,1101"/>
-<area shape="rect" href="classitk_1_1simple_1_1BSplineTransformInitializerFilter.html" title="BSplineTransformInitializerFilter is a helper class intended to initialize the control point grid suc..." alt="" coords="483,827,697,869"/>
-<area shape="rect" href="classitk_1_1simple_1_1CenteredTransformInitializerFilter.html" title="CenteredTransformInitializerFilter is a helper class intended to initialize the center of rotation an..." alt="" coords="479,893,701,934"/>
-<area shape="rect" href="classitk_1_1simple_1_1CenteredVersorTransformInitializerFilter.html" title="CenteredVersorTransformInitializerFilter is a helper class intended to initialize the center of rotat..." alt="" coords="491,958,689,999"/>
-<area shape="rect" href="classitk_1_1simple_1_1HashImageFilter.html" title="Compute the sha1 or md5 hash of an image." alt="" coords="487,1024,693,1051"/>
-<area shape="rect" href="classitk_1_1simple_1_1ImageFileWriter.html" title="Write out a SimpleITK image to the specified file location." alt="" coords="489,1075,691,1101"/>
-<area shape="rect" href="classitk_1_1simple_1_1ImageFilter.html" title="The base interface for SimpleITK filters that take one input image." alt="" coords="504,1125,676,1152"/>
-<area shape="rect" href="classitk_1_1simple_1_1ImageReaderBase.html" title="An abract base class for image readers." alt="" coords="481,1176,699,1203"/>
-<area shape="rect" href="classitk_1_1simple_1_1ImageRegistrationMethod.html" title="An interface method to the modular ITKv4 registration framework." alt="" coords="481,1227,699,1269"/>
-<area shape="rect" href="classitk_1_1simple_1_1ImageSeriesWriter.html" title="Writer series of image from a SimpleITK image." alt="" coords="500,1293,680,1334"/>
-<area shape="rect" href="classitk_1_1simple_1_1NonCopyable.html" title="An inheritable class to disable copying of a class." alt="" coords="5,1075,192,1101"/>
-<area shape="rect" href="classitk_1_1simple_1_1AbsImageFilter.html" title="Computes the absolute value of each pixel." alt="" coords="770,5,966,32"/>
-<area shape="rect" href="classitk_1_1simple_1_1AbsoluteValueDifferenceImageFilter.html" title="Implements pixel&#45;wise the computation of absolute value difference." alt="" coords="772,57,964,98"/>
-<area shape="rect" href="classitk_1_1simple_1_1AcosImageFilter.html" title="Computes the inverse cosine of each pixel." alt="" coords="767,123,969,149"/>
-<area shape="rect" href="classitk_1_1simple_1_1AdaptiveHistogramEqualizationImageFilter.html" title="Power Law Adaptive Histogram Equalization." alt="" coords="755,174,981,215"/>
-<area shape="rect" href="classitk_1_1simple_1_1AddImageFilter.html" title="Pixel&#45;wise addition of two images." alt="" coords="769,240,967,267"/>
-<area shape="rect" href="classitk_1_1simple_1_1AdditiveGaussianNoiseImageFilter.html" title="Alter an image with additive Gaussian white noise." alt="" coords="761,291,975,333"/>
-<area shape="rect" href="classitk_1_1simple_1_1AggregateLabelMapFilter.html" title="Collapses all labels into the first label." alt="" coords="767,357,969,398"/>
-<area shape="rect" href="classitk_1_1simple_1_1AndImageFilter.html" title="Implements the AND bitwise operator pixel&#45;wise between two images." alt="" coords="769,423,967,449"/>
-<area shape="rect" href="classitk_1_1simple_1_1AntiAliasBinaryImageFilter.html" title="A method for estimation of a surface from a binary volume." alt="" coords="769,474,967,515"/>
-<area shape="rect" href="classitk_1_1simple_1_1ApproximateSignedDistanceMapImageFilter.html" title="Create a map of the approximate signed distance from the boundaries of a binary image." alt="" coords="757,539,979,581"/>
-<area shape="rect" href="classitk_1_1simple_1_1AsinImageFilter.html" title="Computes the sine of each pixel." alt="" coords="768,605,968,632"/>
-<area shape="rect" href="classitk_1_1simple_1_1Atan2ImageFilter.html" title="Computes two argument inverse tangent." alt="" coords="763,656,973,683"/>
-<area shape="rect" href="classitk_1_1simple_1_1AtanImageFilter.html" title="Computes the one&#45;argument inverse tangent of each pixel." alt="" coords="767,707,969,733"/>
-<area shape="rect" href="classitk_1_1simple_1_1BilateralImageFilter.html" title="Blurs an image while preserving edges." alt="" coords="771,758,965,799"/>
-<area shape="rect" href="classitk_1_1simple_1_1BinaryClosingByReconstructionImageFilter.html" title="binary closing by reconstruction of an image." alt="" coords="764,823,972,865"/>
-<area shape="rect" href="classitk_1_1simple_1_1BinaryContourImageFilter.html" title="Labels the pixels on the border of the objects in a binary image." alt="" coords="772,889,964,930"/>
-<area shape="rect" href="classitk_1_1simple_1_1BinaryDilateImageFilter.html" title="Fast binary dilation of a single intensity value in the image." alt="" coords="778,954,958,995"/>
-<area shape="rect" href="classitk_1_1simple_1_1BinaryErodeImageFilter.html" title="Fast binary erosion of a single intensity value in the image." alt="" coords="779,1019,957,1061"/>
-<area shape="rect" href="classitk_1_1simple_1_1BinaryFillholeImageFilter.html" title="Remove holes not connected to the boundary of the image." alt="" coords="775,1085,961,1126"/>
-<area shape="rect" href="classitk_1_1simple_1_1BinaryGrindPeakImageFilter.html" title="Remove the objects not connected to the boundary of the image." alt="" coords="780,1150,956,1191"/>
-<area shape="rect" href="classitk_1_1simple_1_1BinaryImageToLabelMapFilter.html" title="Label the connected components in a binary image and produce a collection of label objects." alt="" coords="777,1215,959,1257"/>
-<area shape="rect" href="classitk_1_1simple_1_1BinaryMagnitudeImageFilter.html" title="Computes the square root of the sum of squares of corresponding input pixels." alt="" coords="763,1281,973,1322"/>
-<area shape="rect" href="classitk_1_1simple_1_1BinaryMedianImageFilter.html" title="Applies a version of the median filter optimized for binary images." alt="" coords="774,1346,962,1387"/>
-<area shape="rect" href="classitk_1_1simple_1_1BinaryMinMaxCurvatureFlowImageFilter.html" title="Denoise a binary image using min/max curvature flow." alt="" coords="773,1411,963,1453"/>
-<area shape="rect" href="classitk_1_1simple_1_1BinaryMorphologicalClosingImageFilter.html" title="binary morphological closing of an image." alt="" coords="752,1477,984,1518"/>
-<area shape="rect" href="classitk_1_1simple_1_1BinaryMorphologicalOpeningImageFilter.html" title="binary morphological opening of an image." alt="" coords="752,1542,984,1583"/>
-<area shape="rect" href="classitk_1_1simple_1_1BinaryNotImageFilter.html" title="Implements the BinaryNot logical operator pixel&#45;wise between two images." alt="" coords="765,1607,971,1649"/>
-<area shape="rect" href="classitk_1_1simple_1_1BinaryOpeningByReconstructionImageFilter.html" title="binary morphological closing of an image." alt="" coords="764,1673,972,1714"/>
-<area shape="rect" href="classitk_1_1simple_1_1BinaryProjectionImageFilter.html" title="Binary projection." alt="" coords="765,1738,971,1779"/>
-<area shape="rect" href="classitk_1_1simple_1_1BinaryPruningImageFilter.html" title="This filter removes &quot;spurs&quot; of less than a certain length in the input image." alt="" coords="773,1803,963,1845"/>
-<area shape="rect" href="classitk_1_1simple_1_1BinaryReconstructionByDilationImageFilter.html" title="binary reconstruction by dilation of an image" alt="" coords="749,1869,987,1910"/>
-<area shape="rect" href="classitk_1_1simple_1_1BinaryReconstructionByErosionImageFilter.html" title="binary reconstruction by erosion of an image" alt="" coords="749,1934,987,1975"/>
-<area shape="rect" href="classitk_1_1simple_1_1BinaryThinningImageFilter.html" title="This filter computes one&#45;pixel&#45;wide edges of the input image." alt="" coords="769,1999,967,2041"/>
-<area shape="rect" href="classitk_1_1simple_1_1BinaryThresholdImageFilter.html" title="Binarize an input image by thresholding." alt="" coords="765,2065,971,2106"/>
-<area shape="rect" href="classitk_1_1simple_1_1BinaryThresholdProjectionImageFilter.html" title="BinaryThreshold projection." alt="" coords="765,2130,971,2171"/>
-<area shape="rect" href="classitk_1_1simple_1_1BinomialBlurImageFilter.html" title="Performs a separable blur on each dimension of an image." alt="" coords="777,2195,959,2237"/>
-<area shape="rect" href="classitk_1_1simple_1_1BinShrinkImageFilter.html" title="Reduce the size of an image by an integer factor in each dimension while performing averaging of an i..." alt="" coords="767,2261,969,2302"/>
-<area shape="rect" href="classitk_1_1simple_1_1BitwiseNotImageFilter.html" title="Implements pixel&#45;wise generic operation on one image." alt="" coords="763,2326,973,2367"/>
-</map>
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classitk_1_1simple_1_1ProcessObject__inherit__graph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Collaboration diagram for itk::simple::ProcessObject:</div>
 <div id="dynsection-1-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="classitk_1_1simple_1_1ProcessObject__coll__graph.png" border="0" usemap="#itk_1_1simple_1_1ProcessObject_coll__map" alt="Collaboration graph"/></div>
-<map name="itk_1_1simple_1_1ProcessObject_coll__map" id="itk_1_1simple_1_1ProcessObject_coll__map">
-<area shape="rect" title="Base class for SimpleITK classes based on ProcessObject." alt="" coords="2411,263,2601,289"/>
-<area shape="rect" title=" " alt="" coords="2685,255,2840,297"/>
-<area shape="rect" href="classitk_1_1simple_1_1NonCopyable.html" title="An inheritable class to disable copying of a class." alt="" coords="1973,333,2159,360"/>
-<area shape="rect" href="classitk_1_1simple_1_1Command.html" title="An implementation of the Command design pattern for callback." alt="" coords="3035,340,3201,367"/>
-<area shape="rect" title=" " alt="" coords="3645,333,3895,374"/>
-<area shape="rect" href="structitk_1_1simple_1_1ProcessObject_1_1EventCommand.html" title=" " alt="" coords="3341,333,3532,374"/>
-<area shape="rect" title="STL class." alt="" coords="1121,396,1208,423"/>
-<area shape="rect" href="https://www.itk.org/Doxygen/html/classitk_1_1Object.html" title=" " alt="" coords="1565,487,1655,513"/>
-<area shape="rect" title=" " alt="" coords="1502,178,1718,219"/>
-<area shape="rect" title=" " alt="" coords="1497,309,1723,350"/>
-<area shape="rect" title=" " alt="" coords="1497,113,1723,154"/>
-<area shape="rect" title="STL class." alt="" coords="661,389,799,430"/>
-<area shape="rect" title="STL class." alt="" coords="1110,53,1219,80"/>
-<area shape="rect" title=" " alt="" coords="5,181,44,208"/>
-<area shape="rect" title="STL class." alt="" coords="185,316,320,343"/>
-<area shape="rect" title="STL class." alt="" coords="429,723,537,749"/>
-<area shape="rect" title=" " alt="" coords="5,472,44,499"/>
-<area shape="rect" title="STL class." alt="" coords="186,573,319,600"/>
-<area shape="rect" title="STL class." alt="" coords="174,472,331,499"/>
-<area shape="rect" title="STL class." alt="" coords="188,256,317,283"/>
-<area shape="rect" href="https://www.itk.org/Doxygen/html/classitk_1_1ProcessObject.html" title=" " alt="" coords="1997,276,2135,303"/>
-<area shape="rect" href="https://www.itk.org/Doxygen/html/classitk_1_1LightObject.html" title=" " alt="" coords="1104,531,1225,557"/>
-<area shape="rect" title=" " alt="" coords="659,536,801,563"/>
-<area shape="rect" href="https://www.itk.org/Doxygen/html/classitk_1_1TimeStamp.html" title=" " alt="" coords="1103,599,1226,625"/>
-<area shape="rect" title=" " alt="" coords="870,676,1049,703"/>
-<area shape="rect" href="https://www.itk.org/Doxygen/html/classitk_1_1MetaDataDictionary.html" title=" " alt="" coords="1076,476,1253,503"/>
-<area shape="rect" title=" " alt="" coords="631,465,829,506"/>
-<area shape="rect" title=" " alt="" coords="617,221,843,262"/>
-<area shape="rect" title="STL iterator class." alt="" coords="157,104,348,131"/>
-<area shape="rect" href="https://www.itk.org/Doxygen/html/classitk_1_1SmartPointer.html" title=" " alt="" coords="1093,157,1236,198"/>
-<area shape="rect" href="https://www.itk.org/Doxygen/html/classitk_1_1SmartPointer.html" title=" " alt="" coords="659,155,801,197"/>
-</map>
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classitk_1_1simple_1_1ProcessObject__coll__graph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
@@ -1840,7 +1765,7 @@ template&lt;typename T &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Apr 18 2020 02:52:05 for SimpleITK by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Apr 22 2020 02:51:10 for SimpleITK by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>
