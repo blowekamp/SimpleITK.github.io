@@ -1,7 +1,0 @@
-<map id="itk::simple::ConnectedComponentImageFilter" name="itk::simple::ConnectedComponentImageFilter">
-<area shape="rect" id="node1" title="Label the objects in a binary image." alt="" coords="5,323,248,364"/>
-<area shape="rect" id="node2" href="$classitk_1_1simple_1_1ImageFilter.html" title=" " alt="" coords="21,247,232,273"/>
-<area shape="rect" id="node3" href="$classitk_1_1simple_1_1ProcessObject.html" title="Base class for SimpleITK classes based on ProcessObject." alt="" coords="26,81,217,108"/>
-<area shape="rect" id="node5" href="$classitk_1_1simple_1_1ImageFilter.html" title="The base interface for SimpleITK filters that take one input image." alt="" coords="142,157,354,184"/>
-<area shape="rect" id="node4" href="$classitk_1_1simple_1_1NonCopyable.html" title="An inheritable class to disable copying of a class." alt="" coords="28,5,215,32"/>
-</map>

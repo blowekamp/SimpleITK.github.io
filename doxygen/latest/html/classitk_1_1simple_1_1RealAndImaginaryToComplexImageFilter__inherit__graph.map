@@ -1,7 +1,0 @@
-<map id="itk::simple::RealAndImaginaryToComplexImageFilter" name="itk::simple::RealAndImaginaryToComplexImageFilter">
-<area shape="rect" id="node1" title="ComposeImageFilter combine several scalar images into a multicomponent image." alt="" coords="5,323,224,364"/>
-<area shape="rect" id="node2" href="$classitk_1_1simple_1_1ImageFilter.html" title=" " alt="" coords="9,247,220,273"/>
-<area shape="rect" id="node3" href="$classitk_1_1simple_1_1ProcessObject.html" title="Base class for SimpleITK classes based on ProcessObject." alt="" coords="14,81,205,108"/>
-<area shape="rect" id="node5" href="$classitk_1_1simple_1_1ImageFilter.html" title="The base interface for SimpleITK filters that take one input image." alt="" coords="130,157,342,184"/>
-<area shape="rect" id="node4" href="$classitk_1_1simple_1_1NonCopyable.html" title="An inheritable class to disable copying of a class." alt="" coords="16,5,203,32"/>
-</map>

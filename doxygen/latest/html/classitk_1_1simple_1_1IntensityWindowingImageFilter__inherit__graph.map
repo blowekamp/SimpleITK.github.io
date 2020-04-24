@@ -1,7 +1,0 @@
-<map id="itk::simple::IntensityWindowingImageFilter" name="itk::simple::IntensityWindowingImageFilter">
-<area shape="rect" id="node1" title="Applies a linear transformation to the intensity levels of the input Image that are inside a user&#45;def..." alt="" coords="5,323,233,364"/>
-<area shape="rect" id="node2" href="$classitk_1_1simple_1_1ImageFilter.html" title=" " alt="" coords="14,247,225,273"/>
-<area shape="rect" id="node3" href="$classitk_1_1simple_1_1ProcessObject.html" title="Base class for SimpleITK classes based on ProcessObject." alt="" coords="19,81,209,108"/>
-<area shape="rect" id="node5" href="$classitk_1_1simple_1_1ImageFilter.html" title="The base interface for SimpleITK filters that take one input image." alt="" coords="135,157,347,184"/>
-<area shape="rect" id="node4" href="$classitk_1_1simple_1_1NonCopyable.html" title="An inheritable class to disable copying of a class." alt="" coords="21,5,207,32"/>
-</map>

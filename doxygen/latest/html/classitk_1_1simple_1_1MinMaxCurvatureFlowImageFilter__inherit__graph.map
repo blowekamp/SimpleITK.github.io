@@ -1,7 +1,0 @@
-<map id="itk::simple::MinMaxCurvatureFlowImageFilter" name="itk::simple::MinMaxCurvatureFlowImageFilter">
-<area shape="rect" id="node1" title="Denoise an image using min/max curvature flow." alt="" coords="5,323,219,364"/>
-<area shape="rect" id="node2" href="$classitk_1_1simple_1_1ImageFilter.html" title=" " alt="" coords="7,247,217,273"/>
-<area shape="rect" id="node3" href="$classitk_1_1simple_1_1ProcessObject.html" title="Base class for SimpleITK classes based on ProcessObject." alt="" coords="11,81,202,108"/>
-<area shape="rect" id="node5" href="$classitk_1_1simple_1_1ImageFilter.html" title="The base interface for SimpleITK filters that take one input image." alt="" coords="127,157,339,184"/>
-<area shape="rect" id="node4" href="$classitk_1_1simple_1_1NonCopyable.html" title="An inheritable class to disable copying of a class." alt="" coords="13,5,200,32"/>
-</map>

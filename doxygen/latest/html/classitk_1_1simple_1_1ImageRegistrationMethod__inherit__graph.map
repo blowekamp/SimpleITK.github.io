@@ -1,5 +1,0 @@
-<map id="itk::simple::ImageRegistrationMethod" name="itk::simple::ImageRegistrationMethod">
-<area shape="rect" id="node1" title="An interface method to the modular ITKv4 registration framework." alt="" coords="5,155,224,196"/>
-<area shape="rect" id="node2" href="$classitk_1_1simple_1_1ProcessObject.html" title="Base class for SimpleITK classes based on ProcessObject." alt="" coords="19,80,210,107"/>
-<area shape="rect" id="node3" href="$classitk_1_1simple_1_1NonCopyable.html" title="An inheritable class to disable copying of a class." alt="" coords="21,5,208,32"/>
-</map>

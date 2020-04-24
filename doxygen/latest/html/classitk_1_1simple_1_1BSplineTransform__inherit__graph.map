@@ -1,4 +1,0 @@
-<map id="itk::simple::BSplineTransform" name="itk::simple::BSplineTransform">
-<area shape="rect" id="node1" title="A deformable transform over a bounded spatial domain using a BSpline representation for a 2D or 3D co..." alt="" coords="5,80,219,107"/>
-<area shape="rect" id="node2" href="$classitk_1_1simple_1_1Transform.html" title="A simplified wrapper around a variety of ITK transforms." alt="" coords="30,5,194,32"/>
-</map>

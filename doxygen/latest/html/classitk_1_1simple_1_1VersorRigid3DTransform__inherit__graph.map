@@ -1,4 +1,0 @@
-<map id="itk::simple::VersorRigid3DTransform" name="itk::simple::VersorRigid3DTransform">
-<area shape="rect" id="node1" title="A rotation as a versor around a fixed center with translation of a 3D coordinate space." alt="" coords="5,80,187,121"/>
-<area shape="rect" id="node2" href="$classitk_1_1simple_1_1Transform.html" title="A simplified wrapper around a variety of ITK transforms." alt="" coords="14,5,178,32"/>
-</map>
