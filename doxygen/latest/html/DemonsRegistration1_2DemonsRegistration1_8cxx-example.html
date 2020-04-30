@@ -26,7 +26,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">SimpleITK
-   &#160;<span id="projectnumber">2.0.0rc1.post173</span>
+   &#160;<span id="projectnumber">2.0.0rc1.post177</span>
    </div>
   </td>
  </tr>
@@ -135,7 +135,7 @@ $(function() {
 <div class="line">  filter.<a name="a11"></a><a class="code" href="classitk_1_1simple_1_1ProcessObject.html#a2199e5cca19b45d504676a595e1f6cfd">AddCommand</a>( <a name="a12"></a><a class="code" href="namespaceitk_1_1simple.html#aa7399868984d99493c5a307cce373acead234b8019e5aea11dca7617461145faa">sitk::sitkIterationEvent</a>, cmd );</div>
 <div class="line"> </div>
 <div class="line">  filter.<a name="a13"></a><a class="code" href="classitk_1_1simple_1_1DemonsRegistrationFilter.html#aff086ff300642f22748c368461df2162">SetNumberOfIterations</a>( 50 );</div>
-<div class="line">  filter.<a name="a14"></a><a class="code" href="classitk_1_1simple_1_1DemonsRegistrationFilter.html#acadcfed9905d12bd68c517b44dfa2a26">SetStandardDeviations</a>( 1.0 );</div>
+<div class="line">  filter.<a name="a14"></a><a class="code" href="classitk_1_1simple_1_1DemonsRegistrationFilter.html#a38d978c54bdc58fc71fafe82e1971543">SetStandardDeviations</a>( 1.0 );</div>
 <div class="line"> </div>
 <div class="line">  <a class="code" href="classitk_1_1simple_1_1Image.html">sitk::Image</a> displacementField = filter.<a name="a15"></a><a class="code" href="classitk_1_1simple_1_1DemonsRegistrationFilter.html#afbb69c2466ec156b603a711ded0395c3">Execute</a>( fixed, moving );</div>
 <div class="line"> </div>
@@ -169,12 +169,12 @@ $(function() {
 <div class="ttc" id="aclassitk_1_1simple_1_1HistogramMatchingImageFilter_html_ad1d8b3d307b386119164b0bd614404ac"><div class="ttname"><a href="classitk_1_1simple_1_1HistogramMatchingImageFilter.html#ad1d8b3d307b386119164b0bd614404ac">itk::simple::HistogramMatchingImageFilter::SetNumberOfHistogramLevels</a></div><div class="ttdeci">Self &amp; SetNumberOfHistogramLevels(uint32_t NumberOfHistogramLevels)</div><div class="ttdef"><b>Definition:</b> <a href="sitkHistogramMatchingImageFilter_8h_source.html#l00072">sitkHistogramMatchingImageFilter.h:72</a></div></div>
 <div class="ttc" id="anamespaceitk_1_1simple_html_aa7399868984d99493c5a307cce373acead234b8019e5aea11dca7617461145faa"><div class="ttname"><a href="namespaceitk_1_1simple.html#aa7399868984d99493c5a307cce373acead234b8019e5aea11dca7617461145faa">itk::simple::sitkIterationEvent</a></div><div class="ttdeci">@ sitkIterationEvent</div><div class="ttdoc">Occurs with some algorithms that run for a fixed or undetermined number of iterations.</div><div class="ttdef"><b>Definition:</b> <a href="sitkEvent_8h_source.html#l00046">sitkEvent.h:46</a></div></div>
 <div class="ttc" id="aclassitk_1_1simple_1_1Command_html_a7e0b4c7093c207adcc72fa2995073abc"><div class="ttname"><a href="classitk_1_1simple_1_1Command.html#a7e0b4c7093c207adcc72fa2995073abc">itk::simple::Command::Execute</a></div><div class="ttdeci">virtual void Execute()</div></div>
+<div class="ttc" id="aclassitk_1_1simple_1_1DemonsRegistrationFilter_html_a38d978c54bdc58fc71fafe82e1971543"><div class="ttname"><a href="classitk_1_1simple_1_1DemonsRegistrationFilter.html#a38d978c54bdc58fc71fafe82e1971543">itk::simple::DemonsRegistrationFilter::SetStandardDeviations</a></div><div class="ttdeci">Self &amp; SetStandardDeviations(std::vector&lt; double &gt; StandardDeviations)</div><div class="ttdef"><b>Definition:</b> <a href="sitkDemonsRegistrationFilter_8h_source.html#l00077">sitkDemonsRegistrationFilter.h:77</a></div></div>
 <div class="ttc" id="anamespaceitk_1_1simple_html"><div class="ttname"><a href="namespaceitk_1_1simple.html">itk::simple</a></div><div class="ttdef"><b>Definition:</b> <a href="sitkAdditionalProcedures_8h_source.html#l00029">sitkAdditionalProcedures.h:29</a></div></div>
 <div class="ttc" id="aclassitk_1_1simple_1_1DemonsRegistrationFilter_html_a8399d91a534ded060a9ef03c95c34c7e"><div class="ttname"><a href="classitk_1_1simple_1_1DemonsRegistrationFilter.html#a8399d91a534ded060a9ef03c95c34c7e">itk::simple::DemonsRegistrationFilter::GetRMSChange</a></div><div class="ttdeci">double GetRMSChange() const</div><div class="ttdoc">The Root Mean Square of the levelset upon termination.</div><div class="ttdef"><b>Definition:</b> <a href="sitkDemonsRegistrationFilter_8h_source.html#l00213">sitkDemonsRegistrationFilter.h:213</a></div></div>
-<div class="ttc" id="aclassitk_1_1simple_1_1DemonsRegistrationFilter_html_acadcfed9905d12bd68c517b44dfa2a26"><div class="ttname"><a href="classitk_1_1simple_1_1DemonsRegistrationFilter.html#acadcfed9905d12bd68c517b44dfa2a26">itk::simple::DemonsRegistrationFilter::SetStandardDeviations</a></div><div class="ttdeci">Self &amp; SetStandardDeviations(const std::vector&lt; double &gt; &amp;StandardDeviations)</div><div class="ttdef"><b>Definition:</b> <a href="sitkDemonsRegistrationFilter_8h_source.html#l00077">sitkDemonsRegistrationFilter.h:77</a></div></div>
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Apr 24 2020 02:50:48 for SimpleITK by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Apr 30 2020 02:48:30 for SimpleITK by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

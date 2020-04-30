@@ -26,7 +26,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">SimpleITK
-   &#160;<span id="projectnumber">2.0.0rc1.post173</span>
+   &#160;<span id="projectnumber">2.0.0rc1.post177</span>
    </div>
   </td>
  </tr>
@@ -137,10 +137,10 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a2b9a7a3850869695de94ab398375036d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a348c36bf3d41dfd4cef15027fda4ffce"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classitk_1_1simple_1_1ImageFilter.html#a425df9cfde5122a435e1eedd6086480b">Self</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1FastMarchingUpwindGradientImageFilter.html#a348c36bf3d41dfd4cef15027fda4ffce">SetTargetOffset</a> (double TargetOffset)</td></tr>
 <tr class="separator:a348c36bf3d41dfd4cef15027fda4ffce"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ada8ba14a9722fec82bc83967ddfa2212"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classitk_1_1simple_1_1ImageFilter.html#a425df9cfde5122a435e1eedd6086480b">Self</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1FastMarchingUpwindGradientImageFilter.html#ada8ba14a9722fec82bc83967ddfa2212">SetTargetPoints</a> (const std::vector&lt; std::vector&lt; unsigned int &gt; &gt; &amp;TargetPoints)</td></tr>
-<tr class="separator:ada8ba14a9722fec82bc83967ddfa2212"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad39c6ee8039cec819b9351bd04f8c1a3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classitk_1_1simple_1_1ImageFilter.html#a425df9cfde5122a435e1eedd6086480b">Self</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1FastMarchingUpwindGradientImageFilter.html#ad39c6ee8039cec819b9351bd04f8c1a3">SetTrialPoints</a> (const std::vector&lt; std::vector&lt; unsigned int &gt; &gt; &amp;TrialPoints)</td></tr>
-<tr class="separator:ad39c6ee8039cec819b9351bd04f8c1a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a95ea6e5bf2e96eb6f441221d0be9e41c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classitk_1_1simple_1_1ImageFilter.html#a425df9cfde5122a435e1eedd6086480b">Self</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1FastMarchingUpwindGradientImageFilter.html#a95ea6e5bf2e96eb6f441221d0be9e41c">SetTargetPoints</a> (std::vector&lt; std::vector&lt; unsigned int &gt; &gt; TargetPoints)</td></tr>
+<tr class="separator:a95ea6e5bf2e96eb6f441221d0be9e41c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab1225ccf23467509af5a5cac8d1e0e68"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classitk_1_1simple_1_1ImageFilter.html#a425df9cfde5122a435e1eedd6086480b">Self</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1FastMarchingUpwindGradientImageFilter.html#ab1225ccf23467509af5a5cac8d1e0e68">SetTrialPoints</a> (std::vector&lt; std::vector&lt; unsigned int &gt; &gt; TrialPoints)</td></tr>
+<tr class="separator:ab1225ccf23467509af5a5cac8d1e0e68"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a017515c7eaca106ed82db5a5ee15f32d"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1FastMarchingUpwindGradientImageFilter.html#a017515c7eaca106ed82db5a5ee15f32d">ToString</a> () const</td></tr>
 <tr class="separator:a017515c7eaca106ed82db5a5ee15f32d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2e58caffdf1418758156dbe8a122bc26"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1FastMarchingUpwindGradientImageFilter.html#a2e58caffdf1418758156dbe8a122bc26">~FastMarchingUpwindGradientImageFilter</a> ()</td></tr>
@@ -316,7 +316,7 @@ Additional Inherited Members</h2></td></tr>
 <p>One more extra feature is the possibility to define a set of Target points where the propagation stops. This can be used to avoid computing the Eikonal solution for the whole domain. The front can be stopped either when one Target point is reached or all Target points are reached. The propagation can stop after a time TargetOffset has passed since the stop condition is met. This way the solution is computed a bit downstream the Target points, so that the level sets of T(x) corresponding to the Target are smooth.</p>
 <p>For an alternative implementation, see <a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1FastMarchingUpwindGradientImageFilterBase.html">itk::FastMarchingUpwindGradientImageFilterBase</a> .</p>
 <dl class="section author"><dt>Author</dt><dd>Luca Antiga Ph.D. Biomedical Technologies Laboratory, Bioengineering Department, Mario Negri Institute, Italy. </dd></dl>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="namespaceitk_1_1simple.html#a0bfd70161347cc25941d5e9fd959a883" title="Generates the upwind gradient field of fast marching arrival times.">itk::simple::FastMarchingUpwindGradient</a> for the procedural interface </dd>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="namespaceitk_1_1simple.html#a1a3989d87c5e6e90524eaa8ea80a4e4c" title="Generates the upwind gradient field of fast marching arrival times.">itk::simple::FastMarchingUpwindGradient</a> for the procedural interface </dd>
 <dd>
 <a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1FastMarchingUpwindGradientImageFilter.html">itk::FastMarchingUpwindGradientImageFilter</a> for the Doxygen on the original ITK class. </dd></dl>
 
@@ -904,8 +904,8 @@ template&lt;class TImageType &gt; </div>
 
 </div>
 </div>
-<a id="ada8ba14a9722fec82bc83967ddfa2212"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ada8ba14a9722fec82bc83967ddfa2212">&#9670;&nbsp;</a></span>SetTargetPoints()</h2>
+<a id="a95ea6e5bf2e96eb6f441221d0be9e41c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a95ea6e5bf2e96eb6f441221d0be9e41c">&#9670;&nbsp;</a></span>SetTargetPoints()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -916,7 +916,7 @@ template&lt;class TImageType &gt; </div>
         <tr>
           <td class="memname"><a class="el" href="classitk_1_1simple_1_1ImageFilter.html#a425df9cfde5122a435e1eedd6086480b">Self</a>&amp; itk::simple::FastMarchingUpwindGradientImageFilter::SetTargetPoints </td>
           <td>(</td>
-          <td class="paramtype">const std::vector&lt; std::vector&lt; unsigned int &gt; &gt; &amp;&#160;</td>
+          <td class="paramtype">std::vector&lt; std::vector&lt; unsigned int &gt; &gt;&#160;</td>
           <td class="paramname"><em>TargetPoints</em></td><td>)</td>
           <td></td>
         </tr>
@@ -933,8 +933,8 @@ template&lt;class TImageType &gt; </div>
 
 </div>
 </div>
-<a id="ad39c6ee8039cec819b9351bd04f8c1a3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad39c6ee8039cec819b9351bd04f8c1a3">&#9670;&nbsp;</a></span>SetTrialPoints()</h2>
+<a id="ab1225ccf23467509af5a5cac8d1e0e68"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab1225ccf23467509af5a5cac8d1e0e68">&#9670;&nbsp;</a></span>SetTrialPoints()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -945,7 +945,7 @@ template&lt;class TImageType &gt; </div>
         <tr>
           <td class="memname"><a class="el" href="classitk_1_1simple_1_1ImageFilter.html#a425df9cfde5122a435e1eedd6086480b">Self</a>&amp; itk::simple::FastMarchingUpwindGradientImageFilter::SetTrialPoints </td>
           <td>(</td>
-          <td class="paramtype">const std::vector&lt; std::vector&lt; unsigned int &gt; &gt; &amp;&#160;</td>
+          <td class="paramtype">std::vector&lt; std::vector&lt; unsigned int &gt; &gt;&#160;</td>
           <td class="paramname"><em>TrialPoints</em></td><td>)</td>
           <td></td>
         </tr>
@@ -1213,7 +1213,7 @@ template&lt;class TImageType &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Apr 24 2020 02:51:12 for SimpleITK by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Apr 30 2020 02:48:51 for SimpleITK by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

@@ -26,7 +26,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">SimpleITK
-   &#160;<span id="projectnumber">2.0.0rc1.post173</span>
+   &#160;<span id="projectnumber">2.0.0rc1.post177</span>
    </div>
   </td>
  </tr>
@@ -125,8 +125,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a775dbf5cbc87ede2e4d754e232395928"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a87e399d46b206b17fbb25f167ff3a316"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classitk_1_1simple_1_1ImageFilter.html#a425df9cfde5122a435e1eedd6086480b">Self</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1BinaryDilateImageFilter.html#a87e399d46b206b17fbb25f167ff3a316">SetForegroundValue</a> (double ForegroundValue)</td></tr>
 <tr class="separator:a87e399d46b206b17fbb25f167ff3a316"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af4c036914f9f2e23e90175416923978f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classitk_1_1simple_1_1ImageFilter.html#a425df9cfde5122a435e1eedd6086480b">Self</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1BinaryDilateImageFilter.html#af4c036914f9f2e23e90175416923978f">SetKernelRadius</a> (const std::vector&lt; unsigned int &gt; &amp;KernelRadius)</td></tr>
-<tr class="separator:af4c036914f9f2e23e90175416923978f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a519dabab8bcf42b3704ab70a81115974"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classitk_1_1simple_1_1ImageFilter.html#a425df9cfde5122a435e1eedd6086480b">Self</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1BinaryDilateImageFilter.html#a519dabab8bcf42b3704ab70a81115974">SetKernelRadius</a> (std::vector&lt; unsigned int &gt; KernelRadius)</td></tr>
+<tr class="separator:a519dabab8bcf42b3704ab70a81115974"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5caf1e50dd634921309b33f9193ebf80"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classitk_1_1simple_1_1ImageFilter.html#a425df9cfde5122a435e1eedd6086480b">Self</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1BinaryDilateImageFilter.html#a5caf1e50dd634921309b33f9193ebf80">SetKernelRadius</a> (unsigned int value)</td></tr>
 <tr class="separator:a5caf1e50dd634921309b33f9193ebf80"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aefbad61c7d8c4828222ecfa9486fc01c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classitk_1_1simple_1_1ImageFilter.html#a425df9cfde5122a435e1eedd6086480b">Self</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1BinaryDilateImageFilter.html#aefbad61c7d8c4828222ecfa9486fc01c">SetKernelType</a> (<a class="el" href="namespaceitk_1_1simple.html#a38998f2c7b469b1ad8e337a0c6c0697b">KernelEnum</a> KernelType)</td></tr>
@@ -305,7 +305,7 @@ arbitrary structuring elements", and</p>
 <p>N.Nikopoulos et al. "An efficient algorithm for 3d binary morphological transformations with 3d structuring elements for arbitrary size and shape". IEEE Transactions on <a class="el" href="classitk_1_1simple_1_1Image.html" title="The Image class for SimpleITK.">Image</a> Processing. Vol. 9. No. 3. 2000. pp. 283-286.</p>
 <dl class="section see"><dt>See also</dt><dd><a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1ImageToImageFilter.html">ImageToImageFilter</a> <a class="el" href="classitk_1_1simple_1_1BinaryErodeImageFilter.html" title="Fast binary erosion of a single intensity value in the image.">BinaryErodeImageFilter</a> <a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1BinaryMorphologyImageFilter.html">BinaryMorphologyImageFilter</a> </dd>
 <dd>
-<a class="el" href="namespaceitk_1_1simple.html#aa64edc1a2fcc77853b62643ec5925cd0" title="Fast binary dilation of a single intensity value in the image.">itk::simple::BinaryDilate</a> for the procedural interface </dd>
+<a class="el" href="namespaceitk_1_1simple.html#a066294ceb0336d8cb49013b32e5c9a01" title="Fast binary dilation of a single intensity value in the image.">itk::simple::BinaryDilate</a> for the procedural interface </dd>
 <dd>
 <a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1BinaryDilateImageFilter.html">itk::BinaryDilateImageFilter</a> for the Doxygen on the original ITK class. </dd></dl>
 
@@ -768,8 +768,8 @@ template&lt;class TImageType &gt; </div>
 
 </div>
 </div>
-<a id="af4c036914f9f2e23e90175416923978f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af4c036914f9f2e23e90175416923978f">&#9670;&nbsp;</a></span>SetKernelRadius() <span class="overload">[1/2]</span></h2>
+<a id="a519dabab8bcf42b3704ab70a81115974"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a519dabab8bcf42b3704ab70a81115974">&#9670;&nbsp;</a></span>SetKernelRadius() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -780,7 +780,7 @@ template&lt;class TImageType &gt; </div>
         <tr>
           <td class="memname"><a class="el" href="classitk_1_1simple_1_1ImageFilter.html#a425df9cfde5122a435e1eedd6086480b">Self</a>&amp; itk::simple::BinaryDilateImageFilter::SetKernelRadius </td>
           <td>(</td>
-          <td class="paramtype">const std::vector&lt; unsigned int &gt; &amp;&#160;</td>
+          <td class="paramtype">std::vector&lt; unsigned int &gt;&#160;</td>
           <td class="paramname"><em>KernelRadius</em></td><td>)</td>
           <td></td>
         </tr>
@@ -1059,7 +1059,7 @@ template&lt;class TImageType &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Apr 24 2020 02:51:09 for SimpleITK by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Apr 30 2020 02:48:49 for SimpleITK by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

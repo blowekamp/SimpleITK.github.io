@@ -26,7 +26,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">SimpleITK
-   &#160;<span id="projectnumber">2.0.0rc1.post173</span>
+   &#160;<span id="projectnumber">2.0.0rc1.post177</span>
    </div>
   </td>
  </tr>
@@ -93,7 +93,7 @@ $(function() {
 <div class="line">  <span class="comment">// This filters perform a gaussian bluring with sigma in physical</span></div>
 <div class="line">  <span class="comment">// space. The output image will be of real type.</span></div>
 <div class="line">  <a name="_a4"></a><a class="code" href="classitk_1_1simple_1_1SmoothingRecursiveGaussianImageFilter.html">sitk::SmoothingRecursiveGaussianImageFilter</a> gaussian;</div>
-<div class="line">  gaussian.<a name="a5"></a><a class="code" href="classitk_1_1simple_1_1SmoothingRecursiveGaussianImageFilter.html#ad593ac08f346cb48940340d00b5b1095">SetSigma</a> ( atof ( argv[2] ) );</div>
+<div class="line">  gaussian.<a name="a5"></a><a class="code" href="classitk_1_1simple_1_1SmoothingRecursiveGaussianImageFilter.html#acc71181d185664bd4cc34fedf78d0efd">SetSigma</a> ( atof ( argv[2] ) );</div>
 <div class="line">  <a class="code" href="classitk_1_1simple_1_1Image.html">sitk::Image</a> blurredImage = gaussian.<a name="a6"></a><a class="code" href="classitk_1_1simple_1_1SmoothingRecursiveGaussianImageFilter.html#ace5737a33068c8a91d638896c2c22bb6">Execute</a> ( image );</div>
 <div class="line"> </div>
 <div class="line">  <span class="comment">// Covert the real output image back to the original pixel type, to</span></div>
@@ -118,10 +118,10 @@ $(function() {
 <div class="ttc" id="aclassitk_1_1simple_1_1ImageFileReader_html"><div class="ttname"><a href="classitk_1_1simple_1_1ImageFileReader.html">itk::simple::ImageFileReader</a></div><div class="ttdoc">Read an image file and return a SimpleITK Image.</div><div class="ttdef"><b>Definition:</b> <a href="sitkImageFileReader_8h_source.html#l00060">sitkImageFileReader.h:60</a></div></div>
 <div class="ttc" id="aSimpleITK_8h_html"><div class="ttname"><a href="SimpleITK_8h.html">SimpleITK.h</a></div></div>
 <div class="ttc" id="aclassitk_1_1simple_1_1ImageFileReader_html_ad5f34a4f287eee8979bbfafa34901072"><div class="ttname"><a href="classitk_1_1simple_1_1ImageFileReader.html#ad5f34a4f287eee8979bbfafa34901072">itk::simple::ImageFileReader::SetFileName</a></div><div class="ttdeci">Self &amp; SetFileName(const std::string &amp;fn)</div></div>
-<div class="ttc" id="aclassitk_1_1simple_1_1SmoothingRecursiveGaussianImageFilter_html_ad593ac08f346cb48940340d00b5b1095"><div class="ttname"><a href="classitk_1_1simple_1_1SmoothingRecursiveGaussianImageFilter.html#ad593ac08f346cb48940340d00b5b1095">itk::simple::SmoothingRecursiveGaussianImageFilter::SetSigma</a></div><div class="ttdeci">Self &amp; SetSigma(const std::vector&lt; double &gt; &amp;Sigma)</div><div class="ttdef"><b>Definition:</b> <a href="sitkSmoothingRecursiveGaussianImageFilter_8h_source.html#l00062">sitkSmoothingRecursiveGaussianImageFilter.h:62</a></div></div>
 <div class="ttc" id="aclassitk_1_1simple_1_1Image_html_a780923bec6a71b14be35d81069f343f6"><div class="ttname"><a href="classitk_1_1simple_1_1Image.html#a780923bec6a71b14be35d81069f343f6">itk::simple::Image::GetPixelID</a></div><div class="ttdeci">PixelIDValueEnum GetPixelID() const</div></div>
 <div class="ttc" id="aclassitk_1_1simple_1_1SmoothingRecursiveGaussianImageFilter_html_ace5737a33068c8a91d638896c2c22bb6"><div class="ttname"><a href="classitk_1_1simple_1_1SmoothingRecursiveGaussianImageFilter.html#ace5737a33068c8a91d638896c2c22bb6">itk::simple::SmoothingRecursiveGaussianImageFilter::Execute</a></div><div class="ttdeci">Image Execute(Image &amp;&amp;image1)</div></div>
 <div class="ttc" id="aclassitk_1_1simple_1_1CastImageFilter_html"><div class="ttname"><a href="classitk_1_1simple_1_1CastImageFilter.html">itk::simple::CastImageFilter</a></div><div class="ttdoc">A hybrid cast image filter to convert images to other types of images.</div><div class="ttdef"><b>Definition:</b> <a href="sitkCastImageFilter_8h_source.html#l00041">sitkCastImageFilter.h:41</a></div></div>
+<div class="ttc" id="aclassitk_1_1simple_1_1SmoothingRecursiveGaussianImageFilter_html_acc71181d185664bd4cc34fedf78d0efd"><div class="ttname"><a href="classitk_1_1simple_1_1SmoothingRecursiveGaussianImageFilter.html#acc71181d185664bd4cc34fedf78d0efd">itk::simple::SmoothingRecursiveGaussianImageFilter::SetSigma</a></div><div class="ttdeci">Self &amp; SetSigma(std::vector&lt; double &gt; Sigma)</div><div class="ttdef"><b>Definition:</b> <a href="sitkSmoothingRecursiveGaussianImageFilter_8h_source.html#l00062">sitkSmoothingRecursiveGaussianImageFilter.h:62</a></div></div>
 <div class="ttc" id="aclassitk_1_1simple_1_1ImageFileReader_html_ab8d91d4ca4ee13f704d72205d344837e"><div class="ttname"><a href="classitk_1_1simple_1_1ImageFileReader.html#ab8d91d4ca4ee13f704d72205d344837e">itk::simple::ImageFileReader::Execute</a></div><div class="ttdeci">Image Execute() override</div><div class="ttdoc">Set/Get The output PixelType of the image.</div></div>
 <div class="ttc" id="aclassitk_1_1simple_1_1CastImageFilter_html_ad2959e0f67b8b42713de9ce1372a8970"><div class="ttname"><a href="classitk_1_1simple_1_1CastImageFilter.html#ad2959e0f67b8b42713de9ce1372a8970">itk::simple::CastImageFilter::SetOutputPixelType</a></div><div class="ttdeci">Self &amp; SetOutputPixelType(PixelIDValueEnum pixelID)</div></div>
 <div class="ttc" id="anamespaceitk_1_1simple_html"><div class="ttname"><a href="namespaceitk_1_1simple.html">itk::simple</a></div><div class="ttdef"><b>Definition:</b> <a href="sitkAdditionalProcedures_8h_source.html#l00029">sitkAdditionalProcedures.h:29</a></div></div>
@@ -129,7 +129,7 @@ $(function() {
 <div class="ttc" id="aclassitk_1_1simple_1_1CastImageFilter_html_a6dd7e906b7da687abf864cca1729ec9c"><div class="ttname"><a href="classitk_1_1simple_1_1CastImageFilter.html#a6dd7e906b7da687abf864cca1729ec9c">itk::simple::CastImageFilter::Execute</a></div><div class="ttdeci">Image Execute(const Image &amp;)</div></div>
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Apr 24 2020 02:50:48 for SimpleITK by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Apr 30 2020 02:48:30 for SimpleITK by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

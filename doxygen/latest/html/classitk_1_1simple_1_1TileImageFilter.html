@@ -26,7 +26,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">SimpleITK
-   &#160;<span id="projectnumber">2.0.0rc1.post173</span>
+   &#160;<span id="projectnumber">2.0.0rc1.post177</span>
    </div>
   </td>
  </tr>
@@ -119,8 +119,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a29ed9525c1b598e3e5a7fedb812440c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adb797772b8692cf483d8e644e7305fb1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classitk_1_1simple_1_1ImageFilter.html#a425df9cfde5122a435e1eedd6086480b">Self</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1TileImageFilter.html#adb797772b8692cf483d8e644e7305fb1">SetDefaultPixelValue</a> (double DefaultPixelValue)</td></tr>
 <tr class="separator:adb797772b8692cf483d8e644e7305fb1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaabe115fcccdf2fb903153e993ebd84b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classitk_1_1simple_1_1ImageFilter.html#a425df9cfde5122a435e1eedd6086480b">Self</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1TileImageFilter.html#aaabe115fcccdf2fb903153e993ebd84b">SetLayout</a> (const std::vector&lt; <a class="elRef" href="https://www.itk.org/Doxygen/html/namespaceitk.html#a575b8e3e1ee797dd1bbaf9724ed68f92">uint32_t</a> &gt; &amp;Layout)</td></tr>
-<tr class="separator:aaabe115fcccdf2fb903153e993ebd84b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abf3dfeb128f4356a4e06571ebdd7517a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classitk_1_1simple_1_1ImageFilter.html#a425df9cfde5122a435e1eedd6086480b">Self</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1TileImageFilter.html#abf3dfeb128f4356a4e06571ebdd7517a">SetLayout</a> (std::vector&lt; <a class="elRef" href="https://www.itk.org/Doxygen/html/namespaceitk.html#a575b8e3e1ee797dd1bbaf9724ed68f92">uint32_t</a> &gt; Layout)</td></tr>
+<tr class="separator:abf3dfeb128f4356a4e06571ebdd7517a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab94108122d39b98b8e5f13780b9236c7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1TileImageFilter.html#ab94108122d39b98b8e5f13780b9236c7">TileImageFilter</a> ()</td></tr>
 <tr class="separator:ab94108122d39b98b8e5f13780b9236c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a02f6bc69ef4f8966382a174a414f4401"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1TileImageFilter.html#a02f6bc69ef4f8966382a174a414f4401">ToString</a> () const</td></tr>
@@ -283,7 +283,7 @@ Additional Inherited Members</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Tile multiple input images into a single output image. </p>
 <p>This filter will tile multiple images using a user-specified layout. The tile sizes will be large enough to accommodate the largest image for each tile. The layout is specified with the SetLayout method. The layout has the same dimension as the output image. If all entries of the layout are positive, the tiled output will contain the exact number of tiles. If the layout contains a 0 in the last dimension, the filter will compute a size that will accommodate all of the images. Empty tiles are filled with the value specified with the SetDefault value method. The input images must have a dimension less than or equal to the output image. The output image have a larger dimension than the input images. This filter can be used to create a volume from a series of inputs by specifying a layout of 1,1,0.</p>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="namespaceitk_1_1simple.html#a7b5f66e08db8b381245ba3c7b792ae17" title="Tile multiple input images into a single output image.">itk::simple::Tile</a> for the procedural interface </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="namespaceitk_1_1simple.html#aed9aaa60df6aa8b0d210e197060ecd54" title="Tile multiple input images into a single output image.">itk::simple::Tile</a> for the procedural interface </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="sitkTileImageFilter_8h_source.html#l00043">43</a> of file <a class="el" href="sitkTileImageFilter_8h_source.html">sitkTileImageFilter.h</a>.</p>
 </div><h2 class="groupheader">Member Typedef Documentation</h2>
@@ -719,8 +719,8 @@ template&lt;class TImageType &gt; </div>
 
 </div>
 </div>
-<a id="aaabe115fcccdf2fb903153e993ebd84b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aaabe115fcccdf2fb903153e993ebd84b">&#9670;&nbsp;</a></span>SetLayout()</h2>
+<a id="abf3dfeb128f4356a4e06571ebdd7517a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abf3dfeb128f4356a4e06571ebdd7517a">&#9670;&nbsp;</a></span>SetLayout()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -731,7 +731,7 @@ template&lt;class TImageType &gt; </div>
         <tr>
           <td class="memname"><a class="el" href="classitk_1_1simple_1_1ImageFilter.html#a425df9cfde5122a435e1eedd6086480b">Self</a>&amp; itk::simple::TileImageFilter::SetLayout </td>
           <td>(</td>
-          <td class="paramtype">const std::vector&lt; <a class="elRef" href="https://www.itk.org/Doxygen/html/namespaceitk.html#a575b8e3e1ee797dd1bbaf9724ed68f92">uint32_t</a> &gt; &amp;&#160;</td>
+          <td class="paramtype">std::vector&lt; <a class="elRef" href="https://www.itk.org/Doxygen/html/namespaceitk.html#a575b8e3e1ee797dd1bbaf9724ed68f92">uint32_t</a> &gt;&#160;</td>
           <td class="paramname"><em>Layout</em></td><td>)</td>
           <td></td>
         </tr>
@@ -880,7 +880,7 @@ template&lt;class TImageType &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Apr 24 2020 02:51:18 for SimpleITK by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Apr 30 2020 02:48:56 for SimpleITK by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

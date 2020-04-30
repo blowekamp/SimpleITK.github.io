@@ -26,7 +26,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">SimpleITK
-   &#160;<span id="projectnumber">2.0.0rc1.post173</span>
+   &#160;<span id="projectnumber">2.0.0rc1.post177</span>
    </div>
   </td>
  </tr>
@@ -107,10 +107,10 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a1b4f51ea5a63f4b6de1cf6de9b4f9c60"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a37b19a3b13e2060c654e440fd281ae2d"><td class="memItemLeft" align="right" valign="top">std::vector&lt; int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1CyclicShiftImageFilter.html#a37b19a3b13e2060c654e440fd281ae2d">GetShift</a> () const</td></tr>
 <tr class="separator:a37b19a3b13e2060c654e440fd281ae2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3f8072e15353241dd84d1f08f4d719e1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classitk_1_1simple_1_1ImageFilter.html#a425df9cfde5122a435e1eedd6086480b">Self</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1CyclicShiftImageFilter.html#a3f8072e15353241dd84d1f08f4d719e1">SetShift</a> (const std::vector&lt; int &gt; &amp;Shift)</td></tr>
-<tr class="separator:a3f8072e15353241dd84d1f08f4d719e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a88951b2a35dac55e30a0e56c4aea8753"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classitk_1_1simple_1_1ImageFilter.html#a425df9cfde5122a435e1eedd6086480b">Self</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1CyclicShiftImageFilter.html#a88951b2a35dac55e30a0e56c4aea8753">SetShift</a> (int value)</td></tr>
 <tr class="separator:a88951b2a35dac55e30a0e56c4aea8753"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1820620eece68aac082735f4c88e8057"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classitk_1_1simple_1_1ImageFilter.html#a425df9cfde5122a435e1eedd6086480b">Self</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1CyclicShiftImageFilter.html#a1820620eece68aac082735f4c88e8057">SetShift</a> (std::vector&lt; int &gt; Shift)</td></tr>
+<tr class="separator:a1820620eece68aac082735f4c88e8057"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aba4aa4370b4b0d25127f7ab93da6b259"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1CyclicShiftImageFilter.html#aba4aa4370b4b0d25127f7ab93da6b259">ToString</a> () const</td></tr>
 <tr class="separator:aba4aa4370b4b0d25127f7ab93da6b259"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afc13e4343bcab034665919e3c54e2fd7"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1CyclicShiftImageFilter.html#afc13e4343bcab034665919e3c54e2fd7">~CyclicShiftImageFilter</a> ()</td></tr>
@@ -269,7 +269,7 @@ Additional Inherited Members</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Perform a cyclic spatial shift of image intensities on the image grid. </p>
 <p>This filter supports arbitrary cyclic shifts of pixel values on the image grid. If the Shift is set to [xOff, yOff], the value of the pixel at [0, 0] in the input image will be the value of the pixel in the output image at index [xOff modulo xSize, yOff modulo ySize] where xSize and ySize are the sizes of the image in the x and y dimensions, respectively. If a pixel value is moved across a boundary, the pixel value is wrapped around that boundary. For example, if the image is 40-by-40 and the Shift is [13, 47], then the value of the pixel at [0, 0] in the input image will be the value of the pixel in the output image at index [13, 7].</p>
-<p>Negative Shifts are supported. This filter also works with images whose largest possible region starts at a non-zero index. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="namespaceitk_1_1simple.html#af0eb1df3bedebc0453906cd5d1c7abbf" title="Perform a cyclic spatial shift of image intensities on the image grid.">itk::simple::CyclicShift</a> for the procedural interface </dd>
+<p>Negative Shifts are supported. This filter also works with images whose largest possible region starts at a non-zero index. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="namespaceitk_1_1simple.html#acd2db665655b000a908c40866f828e78" title="Perform a cyclic spatial shift of image intensities on the image grid.">itk::simple::CyclicShift</a> for the procedural interface </dd>
 <dd>
 <a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1CyclicShiftImageFilter.html">itk::CyclicShiftImageFilter</a> for the Doxygen on the original ITK class. </dd></dl>
 
@@ -484,37 +484,8 @@ template&lt;class TImageType &gt; </div>
 
 </div>
 </div>
-<a id="a3f8072e15353241dd84d1f08f4d719e1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3f8072e15353241dd84d1f08f4d719e1">&#9670;&nbsp;</a></span>SetShift() <span class="overload">[1/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="classitk_1_1simple_1_1ImageFilter.html#a425df9cfde5122a435e1eedd6086480b">Self</a>&amp; itk::simple::CyclicShiftImageFilter::SetShift </td>
-          <td>(</td>
-          <td class="paramtype">const std::vector&lt; int &gt; &amp;&#160;</td>
-          <td class="paramname"><em>Shift</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Set/get the shift. Shifts may be positive or negative. </p>
-
-<p class="definition">Definition at line <a class="el" href="sitkCyclicShiftImageFilter_8h_source.html#l00062">62</a> of file <a class="el" href="sitkCyclicShiftImageFilter_8h_source.html">sitkCyclicShiftImageFilter.h</a>.</p>
-
-</div>
-</div>
 <a id="a88951b2a35dac55e30a0e56c4aea8753"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a88951b2a35dac55e30a0e56c4aea8753">&#9670;&nbsp;</a></span>SetShift() <span class="overload">[2/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a88951b2a35dac55e30a0e56c4aea8753">&#9670;&nbsp;</a></span>SetShift() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -539,6 +510,35 @@ template&lt;class TImageType &gt; </div>
 <p>Set the values of the Shift vector all to value </p>
 
 <p class="definition">Definition at line <a class="el" href="sitkCyclicShiftImageFilter_8h_source.html#l00065">65</a> of file <a class="el" href="sitkCyclicShiftImageFilter_8h_source.html">sitkCyclicShiftImageFilter.h</a>.</p>
+
+</div>
+</div>
+<a id="a1820620eece68aac082735f4c88e8057"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1820620eece68aac082735f4c88e8057">&#9670;&nbsp;</a></span>SetShift() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classitk_1_1simple_1_1ImageFilter.html#a425df9cfde5122a435e1eedd6086480b">Self</a>&amp; itk::simple::CyclicShiftImageFilter::SetShift </td>
+          <td>(</td>
+          <td class="paramtype">std::vector&lt; int &gt;&#160;</td>
+          <td class="paramname"><em>Shift</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Set/get the shift. Shifts may be positive or negative. </p>
+
+<p class="definition">Definition at line <a class="el" href="sitkCyclicShiftImageFilter_8h_source.html#l00062">62</a> of file <a class="el" href="sitkCyclicShiftImageFilter_8h_source.html">sitkCyclicShiftImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -650,7 +650,7 @@ template&lt;class TImageType &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Apr 24 2020 02:51:11 for SimpleITK by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Apr 30 2020 02:48:50 for SimpleITK by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

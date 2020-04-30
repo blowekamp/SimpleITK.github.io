@@ -26,7 +26,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">SimpleITK
-   &#160;<span id="projectnumber">2.0.0rc1.post173</span>
+   &#160;<span id="projectnumber">2.0.0rc1.post177</span>
    </div>
   </td>
  </tr>
@@ -93,12 +93,12 @@ $(function() {
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160; </div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;fixed = <a class="code" href="namespaceitk_1_1simple.html#a62a1be75703e22b14339e6409858ab61">sitk.ReadImage</a>(sys.argv[1], sitk.sitkFloat32)</div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;fixed = <a class="code" href="namespaceitk_1_1simple.html#a603f415c1d5f0475aff976d8d784dba7">sitk.Normalize</a>(fixed)</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;fixed = <a class="code" href="namespaceitk_1_1simple.html#aa8ae9efc33500c4c839993e0529b15f6">sitk.DiscreteGaussian</a>(fixed, 2.0)</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;fixed = <a class="code" href="namespaceitk_1_1simple.html#a1b84496cd167eae879a4ee37e1a6cb8a">sitk.DiscreteGaussian</a>(fixed, 2.0)</div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160; </div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160; </div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;moving = <a class="code" href="namespaceitk_1_1simple.html#a62a1be75703e22b14339e6409858ab61">sitk.ReadImage</a>(sys.argv[2], sitk.sitkFloat32)</div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;moving = <a class="code" href="namespaceitk_1_1simple.html#a603f415c1d5f0475aff976d8d784dba7">sitk.Normalize</a>(moving)</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;moving = <a class="code" href="namespaceitk_1_1simple.html#aa8ae9efc33500c4c839993e0529b15f6">sitk.DiscreteGaussian</a>(moving, 2.0)</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;moving = <a class="code" href="namespaceitk_1_1simple.html#a1b84496cd167eae879a4ee37e1a6cb8a">sitk.DiscreteGaussian</a>(moving, 2.0)</div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160; </div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160; </div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;R = <a class="code" href="classitk_1_1simple_1_1ImageRegistrationMethod.html">sitk.ImageRegistrationMethod</a>()</div>
@@ -146,16 +146,16 @@ $(function() {
 <div class="ttc" id="anamespaceitk_1_1simple_html_a603f415c1d5f0475aff976d8d784dba7"><div class="ttname"><a href="namespaceitk_1_1simple.html#a603f415c1d5f0475aff976d8d784dba7">itk::simple::Normalize</a></div><div class="ttdeci">Image Normalize(const Image &amp;image1)</div><div class="ttdoc">Normalize an image by setting its mean to zero and variance to one.</div></div>
 <div class="ttc" id="anamespaceitk_1_1simple_html_a8d78adbcb368cae2d47c09df908d5398"><div class="ttname"><a href="namespaceitk_1_1simple.html#a8d78adbcb368cae2d47c09df908d5398">itk::simple::RescaleIntensity</a></div><div class="ttdeci">Image RescaleIntensity(const Image &amp;image1, double outputMinimum=0, double outputMaximum=255)</div><div class="ttdoc">Applies a linear transformation to the intensity levels of the input Image .</div></div>
 <div class="ttc" id="anamespaceitk_1_1simple_html_a86cb9e226d455efca3ba034dc2154605"><div class="ttname"><a href="namespaceitk_1_1simple.html#a86cb9e226d455efca3ba034dc2154605">itk::simple::Show</a></div><div class="ttdeci">void SITKIO_EXPORT Show(const Image &amp;image, const std::string &amp;title=&quot;&quot;, const bool debugOn=ProcessObject::GetGlobalDefaultDebug())</div></div>
-<div class="ttc" id="anamespaceitk_1_1simple_html_aa8ae9efc33500c4c839993e0529b15f6"><div class="ttname"><a href="namespaceitk_1_1simple.html#aa8ae9efc33500c4c839993e0529b15f6">itk::simple::DiscreteGaussian</a></div><div class="ttdeci">Image DiscreteGaussian(const Image &amp;image1, const std::vector&lt; double &gt; &amp;variance=std::vector&lt; double &gt;(3, 1.0), unsigned int maximumKernelWidth=32u, const std::vector&lt; double &gt; &amp;maximumError=std::vector&lt; double &gt;(3, 0.01), bool useImageSpacing=true)</div><div class="ttdoc">Blurs an image by separable convolution with discrete gaussian kernels. This filter performs Gaussian...</div></div>
 <div class="ttc" id="anamespaceitk_1_1simple_html_a62a1be75703e22b14339e6409858ab61"><div class="ttname"><a href="namespaceitk_1_1simple.html#a62a1be75703e22b14339e6409858ab61">itk::simple::ReadImage</a></div><div class="ttdeci">SITKIO_EXPORT Image ReadImage(const std::vector&lt; std::string &gt; &amp;fileNames, PixelIDValueEnum outputPixelType=sitkUnknown, const std::string &amp;imageIO=&quot;&quot;)</div><div class="ttdoc">ReadImage is a procedural interface to the ImageSeriesReader class which is convenient for most image...</div></div>
 <div class="ttc" id="aclassitk_1_1simple_1_1TranslationTransform_html"><div class="ttname"><a href="classitk_1_1simple_1_1TranslationTransform.html">itk::simple::TranslationTransform</a></div><div class="ttdoc">Translation of a 2D or 3D coordinate space.</div><div class="ttdef"><b>Definition:</b> <a href="sitkTranslationTransform_8h_source.html#l00035">sitkTranslationTransform.h:35</a></div></div>
 <div class="ttc" id="anamespaceitk_1_1simple_html_af8c9d7cc96a299a05890e9c3db911885"><div class="ttname"><a href="namespaceitk_1_1simple.html#af8c9d7cc96a299a05890e9c3db911885">itk::simple::Cast</a></div><div class="ttdeci">Image Cast(const Image &amp;image, PixelIDValueEnum pixelID)</div></div>
+<div class="ttc" id="anamespaceitk_1_1simple_html_a1b84496cd167eae879a4ee37e1a6cb8a"><div class="ttname"><a href="namespaceitk_1_1simple.html#a1b84496cd167eae879a4ee37e1a6cb8a">itk::simple::DiscreteGaussian</a></div><div class="ttdeci">Image DiscreteGaussian(const Image &amp;image1, std::vector&lt; double &gt; variance=std::vector&lt; double &gt;(3, 1.0), unsigned int maximumKernelWidth=32u, std::vector&lt; double &gt; maximumError=std::vector&lt; double &gt;(3, 0.01), bool useImageSpacing=true)</div><div class="ttdoc">Blurs an image by separable convolution with discrete gaussian kernels. This filter performs Gaussian...</div></div>
 <div class="ttc" id="aclassitk_1_1simple_1_1ResampleImageFilter_html"><div class="ttname"><a href="classitk_1_1simple_1_1ResampleImageFilter.html">itk::simple::ResampleImageFilter</a></div><div class="ttdoc">Resample an image via a coordinate transform.</div><div class="ttdef"><b>Definition:</b> <a href="sitkResampleImageFilter_8h_source.html#l00053">sitkResampleImageFilter.h:53</a></div></div>
 <div class="ttc" id="anamespaceitk_1_1simple_html_a598a7e0680ee92d0f8f50c51ef1c15b1"><div class="ttname"><a href="namespaceitk_1_1simple.html#a598a7e0680ee92d0f8f50c51ef1c15b1">itk::simple::Compose</a></div><div class="ttdeci">Image Compose(const Image &amp;image1, const Image &amp;image2, const Image &amp;image3, const Image &amp;image4, const Image &amp;image5)</div><div class="ttdoc">ComposeImageFilter combine several scalar images into a multicomponent image.</div></div>
 <div class="ttc" id="aclassitk_1_1simple_1_1ImageRegistrationMethod_html"><div class="ttname"><a href="classitk_1_1simple_1_1ImageRegistrationMethod.html">itk::simple::ImageRegistrationMethod</a></div><div class="ttdoc">An interface method to the modular ITKv4 registration framework.</div><div class="ttdef"><b>Definition:</b> <a href="sitkImageRegistrationMethod_8h_source.html#l00089">sitkImageRegistrationMethod.h:89</a></div></div>
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Apr 24 2020 02:50:48 for SimpleITK by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Apr 30 2020 02:48:30 for SimpleITK by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

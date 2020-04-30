@@ -26,7 +26,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">SimpleITK
-   &#160;<span id="projectnumber">2.0.0rc1.post173</span>
+   &#160;<span id="projectnumber">2.0.0rc1.post177</span>
    </div>
   </td>
  </tr>
@@ -103,7 +103,7 @@ $(function() {
 <div class="line">  <span class="comment">// at this point img, contains the same buffer as in</span></div>
 <div class="line"> </div>
 <div class="line">  <span class="comment">// use some useful filters in ITK</span></div>
-<div class="line">  img = <a name="a8"></a><a class="code" href="namespaceitk_1_1simple.html#a587998d947f9c09853040c9f7782fbe5">sitk::GrayscaleErode</a>( img , {3, 3, 3} );</div>
+<div class="line">  img = <a name="a8"></a><a class="code" href="namespaceitk_1_1simple.html#ab62041bd297dcc18b91808f91cb64ebf">sitk::GrayscaleErode</a>( img , {3, 3, 3} );</div>
 <div class="line"> </div>
 <div class="line">  <a class="code" href="namespaceitk_1_1simple.html#a86cb9e226d455efca3ba034dc2154605">sitk::Show</a>( img );</div>
 <div class="line"> </div>
@@ -127,6 +127,7 @@ $(function() {
 </div><!-- fragment --> </div><!-- contents -->
 <div class="ttc" id="aclassitk_1_1simple_1_1Image_html"><div class="ttname"><a href="classitk_1_1simple_1_1Image.html">itk::simple::Image</a></div><div class="ttdoc">The Image class for SimpleITK.</div><div class="ttdef"><b>Definition:</b> <a href="sitkImage_8h_source.html#l00075">sitkImage.h:75</a></div></div>
 <div class="ttc" id="anamespaceitk_html_a5037a19c1b11bcb33173a2a3e3d8b8a0"><div class="ttname"><a href="https://www.itk.org/Doxygen/html/namespaceitk.html#a5037a19c1b11bcb33173a2a3e3d8b8a0">uint8_t</a></div><div class="ttdeci">::uint8_t uint8_t</div></div>
+<div class="ttc" id="anamespaceitk_1_1simple_html_ab62041bd297dcc18b91808f91cb64ebf"><div class="ttname"><a href="namespaceitk_1_1simple.html#ab62041bd297dcc18b91808f91cb64ebf">itk::simple::GrayscaleErode</a></div><div class="ttdeci">Image GrayscaleErode(const Image &amp;image1, std::vector&lt; unsigned int &gt; kernelRadius=std::vector&lt; uint32_t &gt;(3, 1), KernelEnum kernelType=itk::simple::sitkBall)</div><div class="ttdoc">Grayscale erosion of an image.</div></div>
 <div class="ttc" id="aclassitk_1_1simple_1_1Image_html_a23c033eda3bbd6f37eba8cad254e2cc8"><div class="ttname"><a href="classitk_1_1simple_1_1Image.html#a23c033eda3bbd6f37eba8cad254e2cc8">itk::simple::Image::GetBufferAsUInt8</a></div><div class="ttdeci">uint8_t * GetBufferAsUInt8()</div><div class="ttdoc">Get a pointer to the image buffer.</div></div>
 <div class="ttc" id="anamespaceitk_1_1simple_html_a86cb9e226d455efca3ba034dc2154605"><div class="ttname"><a href="namespaceitk_1_1simple.html#a86cb9e226d455efca3ba034dc2154605">itk::simple::Show</a></div><div class="ttdeci">void SITKIO_EXPORT Show(const Image &amp;image, const std::string &amp;title=&quot;&quot;, const bool debugOn=ProcessObject::GetGlobalDefaultDebug())</div></div>
 <div class="ttc" id="aSimpleITK_8h_html"><div class="ttname"><a href="SimpleITK_8h.html">SimpleITK.h</a></div></div>
@@ -135,14 +136,13 @@ $(function() {
 <div class="ttc" id="aclassitk_1_1simple_1_1ImportImageFilter_html_ab9eca69658af4258ad54d438f2d37d03"><div class="ttname"><a href="classitk_1_1simple_1_1ImportImageFilter.html#ab9eca69658af4258ad54d438f2d37d03">itk::simple::ImportImageFilter::SetBufferAsUInt8</a></div><div class="ttdeci">Self &amp; SetBufferAsUInt8(uint8_t *buffer, unsigned int numberOfComponents=1)</div></div>
 <div class="ttc" id="aclassitk_1_1simple_1_1ImportImageFilter_html"><div class="ttname"><a href="classitk_1_1simple_1_1ImportImageFilter.html">itk::simple::ImportImageFilter</a></div><div class="ttdoc">Compose a 2D or 3D image and return a smart pointer to a SimpleITK image.</div><div class="ttdef"><b>Definition:</b> <a href="sitkImportImageFilter_8h_source.html#l00047">sitkImportImageFilter.h:47</a></div></div>
 <div class="ttc" id="anamespaceitk_1_1simple_html_ae40bd64640f4014fba1a8a872ab4df98a07153aa69823432ba773112b71f31813"><div class="ttname"><a href="namespaceitk_1_1simple.html#ae40bd64640f4014fba1a8a872ab4df98a07153aa69823432ba773112b71f31813">itk::simple::sitkUInt8</a></div><div class="ttdeci">@ sitkUInt8</div><div class="ttdoc">Unsigned 8 bit integer.</div><div class="ttdef"><b>Definition:</b> <a href="sitkPixelIDValues_8h_source.html#l00092">sitkPixelIDValues.h:92</a></div></div>
-<div class="ttc" id="anamespaceitk_1_1simple_html_a587998d947f9c09853040c9f7782fbe5"><div class="ttname"><a href="namespaceitk_1_1simple.html#a587998d947f9c09853040c9f7782fbe5">itk::simple::GrayscaleErode</a></div><div class="ttdeci">Image GrayscaleErode(const Image &amp;image1, const std::vector&lt; unsigned int &gt; &amp;kernelRadius=std::vector&lt; uint32_t &gt;(3, 1), KernelEnum kernelType=itk::simple::sitkBall)</div><div class="ttdoc">Grayscale erosion of an image.</div></div>
 <div class="ttc" id="aclassitk_1_1simple_1_1ImportImageFilter_html_a8500809633172066aa925ca2b5ea7a41"><div class="ttname"><a href="classitk_1_1simple_1_1ImportImageFilter.html#a8500809633172066aa925ca2b5ea7a41">itk::simple::ImportImageFilter::SetOrigin</a></div><div class="ttdeci">Self &amp; SetOrigin(const std::vector&lt; double &gt; &amp;origin)</div></div>
 <div class="ttc" id="aclassitk_1_1simple_1_1ImportImageFilter_html_afb166d8101e46d63ebed7b6592dc71e3"><div class="ttname"><a href="classitk_1_1simple_1_1ImportImageFilter.html#afb166d8101e46d63ebed7b6592dc71e3">itk::simple::ImportImageFilter::SetSpacing</a></div><div class="ttdeci">Self &amp; SetSpacing(const std::vector&lt; double &gt; &amp;spacing)</div></div>
 <div class="ttc" id="aclassitk_1_1simple_1_1ImportImageFilter_html_a49a13cc260d27888b733ba5c2b4dbc21"><div class="ttname"><a href="classitk_1_1simple_1_1ImportImageFilter.html#a49a13cc260d27888b733ba5c2b4dbc21">itk::simple::ImportImageFilter::Execute</a></div><div class="ttdeci">Image Execute() override</div><div class="ttdoc">Set/Get The output PixelType of the image.</div></div>
 <div class="ttc" id="anamespaceitk_1_1simple_html"><div class="ttname"><a href="namespaceitk_1_1simple.html">itk::simple</a></div><div class="ttdef"><b>Definition:</b> <a href="sitkAdditionalProcedures_8h_source.html#l00029">sitkAdditionalProcedures.h:29</a></div></div>
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Apr 24 2020 02:50:48 for SimpleITK by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Apr 30 2020 02:48:30 for SimpleITK by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

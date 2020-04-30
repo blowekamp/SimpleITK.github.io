@@ -26,7 +26,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">SimpleITK
-   &#160;<span id="projectnumber">2.0.0rc1.post173</span>
+   &#160;<span id="projectnumber">2.0.0rc1.post177</span>
    </div>
   </td>
  </tr>
@@ -111,10 +111,10 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a6c9661a83ff2751d194b60018d7a83d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a04388245a72e8c6470674239e1d09809"><td class="memItemLeft" align="right" valign="top">std::vector&lt; unsigned int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1CropImageFilter.html#a04388245a72e8c6470674239e1d09809">GetUpperBoundaryCropSize</a> () const</td></tr>
 <tr class="separator:a04388245a72e8c6470674239e1d09809"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad4aa42ec45e6ed810220529bd29eff94"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classitk_1_1simple_1_1ImageFilter.html#a425df9cfde5122a435e1eedd6086480b">Self</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1CropImageFilter.html#ad4aa42ec45e6ed810220529bd29eff94">SetLowerBoundaryCropSize</a> (const std::vector&lt; unsigned int &gt; &amp;LowerBoundaryCropSize)</td></tr>
-<tr class="separator:ad4aa42ec45e6ed810220529bd29eff94"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a13261c2904be0b2343030309855aa93f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classitk_1_1simple_1_1ImageFilter.html#a425df9cfde5122a435e1eedd6086480b">Self</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1CropImageFilter.html#a13261c2904be0b2343030309855aa93f">SetUpperBoundaryCropSize</a> (const std::vector&lt; unsigned int &gt; &amp;UpperBoundaryCropSize)</td></tr>
-<tr class="separator:a13261c2904be0b2343030309855aa93f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae542bc598fddba2fc47eb81899c4fd98"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classitk_1_1simple_1_1ImageFilter.html#a425df9cfde5122a435e1eedd6086480b">Self</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1CropImageFilter.html#ae542bc598fddba2fc47eb81899c4fd98">SetLowerBoundaryCropSize</a> (std::vector&lt; unsigned int &gt; LowerBoundaryCropSize)</td></tr>
+<tr class="separator:ae542bc598fddba2fc47eb81899c4fd98"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af35b5b570e7e49a71adf05b243d73dd3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classitk_1_1simple_1_1ImageFilter.html#a425df9cfde5122a435e1eedd6086480b">Self</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1CropImageFilter.html#af35b5b570e7e49a71adf05b243d73dd3">SetUpperBoundaryCropSize</a> (std::vector&lt; unsigned int &gt; UpperBoundaryCropSize)</td></tr>
+<tr class="separator:af35b5b570e7e49a71adf05b243d73dd3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6bdfc009d8572ed3e40a5a8b26e1222e"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1CropImageFilter.html#a6bdfc009d8572ed3e40a5a8b26e1222e">ToString</a> () const</td></tr>
 <tr class="separator:a6bdfc009d8572ed3e40a5a8b26e1222e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9be252e6ea6b23e042aba7cc2925c97a"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1CropImageFilter.html#a9be252e6ea6b23e042aba7cc2925c97a">~CropImageFilter</a> ()</td></tr>
@@ -277,7 +277,7 @@ Additional Inherited Members</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Decrease the image size by cropping the image by an <a class="elRef" href="https://www.itk.org/Doxygen/html/structitk_1_1Size.html">itk::Size</a> at both the upper and lower bounds of the largest possible region. </p>
 <p><a class="el" href="classitk_1_1simple_1_1CropImageFilter.html" title="Decrease the image size by cropping the image by an itk::Size at both the upper and lower bounds of t...">CropImageFilter</a> changes the image boundary of an image by removing pixels outside the target region. The target region is not specified in advance, but calculated in BeforeThreadedGenerateData() .</p>
-<p>This filter uses <a class="el" href="classitk_1_1simple_1_1ExtractImageFilter.html" title="Decrease the image size by cropping the image to the selected region bounds.">ExtractImageFilter</a> to perform the cropping. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="namespaceitk_1_1simple.html#adcc2388655c0dd02bd80440dd53611b5" title="Decrease the image size by cropping the image by an itk::Size at both the upper and lower bounds of t...">itk::simple::Crop</a> for the procedural interface </dd>
+<p>This filter uses <a class="el" href="classitk_1_1simple_1_1ExtractImageFilter.html" title="Decrease the image size by cropping the image to the selected region bounds.">ExtractImageFilter</a> to perform the cropping. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="namespaceitk_1_1simple.html#a0427db78361b5f99dc4cbb155619dc48" title="Decrease the image size by cropping the image by an itk::Size at both the upper and lower bounds of t...">itk::simple::Crop</a> for the procedural interface </dd>
 <dd>
 <a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1CropImageFilter.html">itk::CropImageFilter</a> for the Doxygen on the original ITK class. </dd></dl>
 
@@ -538,8 +538,8 @@ template&lt;class TImageType &gt; </div>
 
 </div>
 </div>
-<a id="ad4aa42ec45e6ed810220529bd29eff94"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad4aa42ec45e6ed810220529bd29eff94">&#9670;&nbsp;</a></span>SetLowerBoundaryCropSize()</h2>
+<a id="ae542bc598fddba2fc47eb81899c4fd98"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae542bc598fddba2fc47eb81899c4fd98">&#9670;&nbsp;</a></span>SetLowerBoundaryCropSize()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -550,7 +550,7 @@ template&lt;class TImageType &gt; </div>
         <tr>
           <td class="memname"><a class="el" href="classitk_1_1simple_1_1ImageFilter.html#a425df9cfde5122a435e1eedd6086480b">Self</a>&amp; itk::simple::CropImageFilter::SetLowerBoundaryCropSize </td>
           <td>(</td>
-          <td class="paramtype">const std::vector&lt; unsigned int &gt; &amp;&#160;</td>
+          <td class="paramtype">std::vector&lt; unsigned int &gt;&#160;</td>
           <td class="paramname"><em>LowerBoundaryCropSize</em></td><td>)</td>
           <td></td>
         </tr>
@@ -567,8 +567,8 @@ template&lt;class TImageType &gt; </div>
 
 </div>
 </div>
-<a id="a13261c2904be0b2343030309855aa93f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a13261c2904be0b2343030309855aa93f">&#9670;&nbsp;</a></span>SetUpperBoundaryCropSize()</h2>
+<a id="af35b5b570e7e49a71adf05b243d73dd3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af35b5b570e7e49a71adf05b243d73dd3">&#9670;&nbsp;</a></span>SetUpperBoundaryCropSize()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -579,7 +579,7 @@ template&lt;class TImageType &gt; </div>
         <tr>
           <td class="memname"><a class="el" href="classitk_1_1simple_1_1ImageFilter.html#a425df9cfde5122a435e1eedd6086480b">Self</a>&amp; itk::simple::CropImageFilter::SetUpperBoundaryCropSize </td>
           <td>(</td>
-          <td class="paramtype">const std::vector&lt; unsigned int &gt; &amp;&#160;</td>
+          <td class="paramtype">std::vector&lt; unsigned int &gt;&#160;</td>
           <td class="paramname"><em>UpperBoundaryCropSize</em></td><td>)</td>
           <td></td>
         </tr>
@@ -752,7 +752,7 @@ template&lt;class TImageType &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Apr 24 2020 02:51:11 for SimpleITK by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Apr 30 2020 02:48:50 for SimpleITK by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

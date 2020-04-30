@@ -26,7 +26,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">SimpleITK
-   &#160;<span id="projectnumber">2.0.0rc1.post173</span>
+   &#160;<span id="projectnumber">2.0.0rc1.post177</span>
    </div>
   </td>
  </tr>
@@ -197,7 +197,7 @@ $(function() {
 <div class="line">    std::vector&lt;unsigned int&gt; seed;</div>
 <div class="line">    seed.push_back(atoi(argv[i]));</div>
 <div class="line">    seed.push_back(atoi(argv[i+1]));</div>
-<div class="line">    segmentationFilter.<a name="a19"></a><a class="code" href="classitk_1_1simple_1_1ConnectedThresholdImageFilter.html#aee5e213b7d07cda37dd088049eba889a">AddSeed</a>(seed);</div>
+<div class="line">    segmentationFilter.<a name="a19"></a><a class="code" href="classitk_1_1simple_1_1ConnectedThresholdImageFilter.html#a92e6062c37f64b202b05b5b19e357074">AddSeed</a>(seed);</div>
 <div class="line">    std::cout &lt;&lt; <span class="stringliteral">&quot;Adding a seed at &quot;</span>;</div>
 <div class="line">    <span class="keywordflow">for</span>( <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> j = 0; j &lt; seed.size(); ++i )</div>
 <div class="line">      {</div>
@@ -229,6 +229,7 @@ $(function() {
 <div class="ttc" id="aSimpleITK_8h_html"><div class="ttname"><a href="SimpleITK_8h.html">SimpleITK.h</a></div></div>
 <div class="ttc" id="aitkImage_8h_html"><div class="ttname"><a href="https://www.itk.org/Doxygen/html/itkImage_8h.html">itkImage.h</a></div></div>
 <div class="ttc" id="aclassitk_1_1simple_1_1ImageFileReader_html_ad5f34a4f287eee8979bbfafa34901072"><div class="ttname"><a href="classitk_1_1simple_1_1ImageFileReader.html#ad5f34a4f287eee8979bbfafa34901072">itk::simple::ImageFileReader::SetFileName</a></div><div class="ttdeci">Self &amp; SetFileName(const std::string &amp;fn)</div></div>
+<div class="ttc" id="aclassitk_1_1simple_1_1ConnectedThresholdImageFilter_html_a92e6062c37f64b202b05b5b19e357074"><div class="ttname"><a href="classitk_1_1simple_1_1ConnectedThresholdImageFilter.html#a92e6062c37f64b202b05b5b19e357074">itk::simple::ConnectedThresholdImageFilter::AddSeed</a></div><div class="ttdeci">Self &amp; AddSeed(std::vector&lt; unsigned int &gt; idx)</div><div class="ttdef"><b>Definition:</b> <a href="sitkConnectedThresholdImageFilter_8h_source.html#l00127">sitkConnectedThresholdImageFilter.h:127</a></div></div>
 <div class="ttc" id="aclassitk_1_1simple_1_1Image_html_a43163c72ca1a49abf615b3dc71e01a36"><div class="ttname"><a href="classitk_1_1simple_1_1Image.html#a43163c72ca1a49abf615b3dc71e01a36">itk::simple::Image::GetDimension</a></div><div class="ttdeci">unsigned int GetDimension() const</div></div>
 <div class="ttc" id="aclassitk_1_1simple_1_1CastImageFilter_html"><div class="ttname"><a href="classitk_1_1simple_1_1CastImageFilter.html">itk::simple::CastImageFilter</a></div><div class="ttdoc">A hybrid cast image filter to convert images to other types of images.</div><div class="ttdef"><b>Definition:</b> <a href="sitkCastImageFilter_8h_source.html#l00041">sitkCastImageFilter.h:41</a></div></div>
 <div class="ttc" id="anamespaceitk_1_1simple_html_ae40bd64640f4014fba1a8a872ab4df98a31ef682ba5b93b71ceeb7b9c084834f7"><div class="ttname"><a href="namespaceitk_1_1simple.html#ae40bd64640f4014fba1a8a872ab4df98a31ef682ba5b93b71ceeb7b9c084834f7">itk::simple::sitkFloat32</a></div><div class="ttdeci">@ sitkFloat32</div><div class="ttdoc">32 bit float</div><div class="ttdef"><b>Definition:</b> <a href="sitkPixelIDValues_8h_source.html#l00100">sitkPixelIDValues.h:100</a></div></div>
@@ -237,7 +238,6 @@ $(function() {
 <div class="ttc" id="aclassitk_1_1simple_1_1ConnectedThresholdImageFilter_html_a487db7325f429c382f318b8d4a824718"><div class="ttname"><a href="classitk_1_1simple_1_1ConnectedThresholdImageFilter.html#a487db7325f429c382f318b8d4a824718">itk::simple::ConnectedThresholdImageFilter::SetUpper</a></div><div class="ttdeci">Self &amp; SetUpper(double Upper)</div><div class="ttdef"><b>Definition:</b> <a href="sitkConnectedThresholdImageFilter_8h_source.html#l00071">sitkConnectedThresholdImageFilter.h:71</a></div></div>
 <div class="ttc" id="aclassitk_1_1simple_1_1ImageFileReader_html_ab8d91d4ca4ee13f704d72205d344837e"><div class="ttname"><a href="classitk_1_1simple_1_1ImageFileReader.html#ab8d91d4ca4ee13f704d72205d344837e">itk::simple::ImageFileReader::Execute</a></div><div class="ttdeci">Image Execute() override</div><div class="ttdoc">Set/Get The output PixelType of the image.</div></div>
 <div class="ttc" id="aclassitk_1_1simple_1_1CastImageFilter_html_ad2959e0f67b8b42713de9ce1372a8970"><div class="ttname"><a href="classitk_1_1simple_1_1CastImageFilter.html#ad2959e0f67b8b42713de9ce1372a8970">itk::simple::CastImageFilter::SetOutputPixelType</a></div><div class="ttdeci">Self &amp; SetOutputPixelType(PixelIDValueEnum pixelID)</div></div>
-<div class="ttc" id="aclassitk_1_1simple_1_1ConnectedThresholdImageFilter_html_aee5e213b7d07cda37dd088049eba889a"><div class="ttname"><a href="classitk_1_1simple_1_1ConnectedThresholdImageFilter.html#aee5e213b7d07cda37dd088049eba889a">itk::simple::ConnectedThresholdImageFilter::AddSeed</a></div><div class="ttdeci">Self &amp; AddSeed(const std::vector&lt; unsigned int &gt; &amp;idx)</div><div class="ttdef"><b>Definition:</b> <a href="sitkConnectedThresholdImageFilter_8h_source.html#l00127">sitkConnectedThresholdImageFilter.h:127</a></div></div>
 <div class="ttc" id="aclassitk_1_1Image_html"><div class="ttname"><a href="https://www.itk.org/Doxygen/html/classitk_1_1Image.html">itk::Image</a></div><div class="ttdef"><b>Definition:</b> <a href="sitkPixelIDTypes_8h_source.html#l00026">sitkPixelIDTypes.h:26</a></div></div>
 <div class="ttc" id="anamespaceitk_1_1simple_html"><div class="ttname"><a href="namespaceitk_1_1simple.html">itk::simple</a></div><div class="ttdef"><b>Definition:</b> <a href="sitkAdditionalProcedures_8h_source.html#l00029">sitkAdditionalProcedures.h:29</a></div></div>
 <div class="ttc" id="anamespaceitk_1_1GTest_1_1TypedefsAndConstructors_1_1Dimension2_html_a3c1343e7d285fc01106df9e0c28d5154"><div class="ttname"><a href="https://www.itk.org/Doxygen/html/namespaceitk_1_1GTest_1_1TypedefsAndConstructors_1_1Dimension2.html#a3c1343e7d285fc01106df9e0c28d5154">Dimension</a></div><div class="ttdeci">constexpr unsigned int Dimension</div></div>
@@ -245,7 +245,7 @@ $(function() {
 <div class="ttc" id="aclassitk_1_1simple_1_1CastImageFilter_html_a6dd7e906b7da687abf864cca1729ec9c"><div class="ttname"><a href="classitk_1_1simple_1_1CastImageFilter.html#a6dd7e906b7da687abf864cca1729ec9c">itk::simple::CastImageFilter::Execute</a></div><div class="ttdeci">Image Execute(const Image &amp;)</div></div>
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Apr 24 2020 02:50:48 for SimpleITK by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Apr 30 2020 02:48:30 for SimpleITK by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

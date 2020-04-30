@@ -26,7 +26,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">SimpleITK
-   &#160;<span id="projectnumber">2.0.0rc1.post173</span>
+   &#160;<span id="projectnumber">2.0.0rc1.post177</span>
    </div>
   </td>
  </tr>
@@ -135,10 +135,10 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:aac085ad473a03934e255bdb8f54e07d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8f36b162d7d3474e9ada5458f547af63"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classitk_1_1simple_1_1ImageFilter.html#a425df9cfde5122a435e1eedd6086480b">Self</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1CollidingFrontsImageFilter.html#a8f36b162d7d3474e9ada5458f547af63">SetNegativeEpsilon</a> (double NegativeEpsilon)</td></tr>
 <tr class="separator:a8f36b162d7d3474e9ada5458f547af63"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaee902ccf4aa64daec81af2132800987"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classitk_1_1simple_1_1ImageFilter.html#a425df9cfde5122a435e1eedd6086480b">Self</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1CollidingFrontsImageFilter.html#aaee902ccf4aa64daec81af2132800987">SetSeedPoints1</a> (const std::vector&lt; std::vector&lt; unsigned int &gt; &gt; &amp;SeedPoints1)</td></tr>
-<tr class="separator:aaee902ccf4aa64daec81af2132800987"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a914c4bbf4da362d30f0320839d7ccf37"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classitk_1_1simple_1_1ImageFilter.html#a425df9cfde5122a435e1eedd6086480b">Self</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1CollidingFrontsImageFilter.html#a914c4bbf4da362d30f0320839d7ccf37">SetSeedPoints2</a> (const std::vector&lt; std::vector&lt; unsigned int &gt; &gt; &amp;SeedPoints2)</td></tr>
-<tr class="separator:a914c4bbf4da362d30f0320839d7ccf37"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a363d9c79a7ca03a5a6fe13b1f889fd52"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classitk_1_1simple_1_1ImageFilter.html#a425df9cfde5122a435e1eedd6086480b">Self</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1CollidingFrontsImageFilter.html#a363d9c79a7ca03a5a6fe13b1f889fd52">SetSeedPoints1</a> (std::vector&lt; std::vector&lt; unsigned int &gt; &gt; SeedPoints1)</td></tr>
+<tr class="separator:a363d9c79a7ca03a5a6fe13b1f889fd52"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a10460835d09b9070ca823ec9da1da528"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classitk_1_1simple_1_1ImageFilter.html#a425df9cfde5122a435e1eedd6086480b">Self</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1CollidingFrontsImageFilter.html#a10460835d09b9070ca823ec9da1da528">SetSeedPoints2</a> (std::vector&lt; std::vector&lt; unsigned int &gt; &gt; SeedPoints2)</td></tr>
+<tr class="separator:a10460835d09b9070ca823ec9da1da528"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abbc4439f9b99887d7344149a0eeab47e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classitk_1_1simple_1_1ImageFilter.html#a425df9cfde5122a435e1eedd6086480b">Self</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1CollidingFrontsImageFilter.html#abbc4439f9b99887d7344149a0eeab47e">SetStopOnTargets</a> (bool StopOnTargets)</td></tr>
 <tr class="separator:abbc4439f9b99887d7344149a0eeab47e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae524dbf486e7159b975af59da5e57fb5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classitk_1_1simple_1_1ImageFilter.html#a425df9cfde5122a435e1eedd6086480b">Self</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1CollidingFrontsImageFilter.html#ae524dbf486e7159b975af59da5e57fb5">StopOnTargetsOff</a> ()</td></tr>
@@ -316,7 +316,7 @@ Additional Inherited Members</h2></td></tr>
 <p>If StopOnTargets is On, then each front will stop as soon as all seeds of the other front have been reached. This can markedly speed up the execution of the filter, since wave propagation does not take place on the complete image.</p>
 <p>Optionally, a connectivity criterion can be applied to the resulting dot product image. In this case, the only negative region in the output image is the one connected to the seeds.</p>
 <dl class="section author"><dt>Author</dt><dd>Luca Antiga Ph.D. Biomedical Technologies Laboratory, Bioengineering Department, Mario Negri Institute, Italy. </dd></dl>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="namespaceitk_1_1simple.html#a4bb90e8705f971e1af973c96b772a887" title="Selects a region of space where two independent fronts run towards each other.">itk::simple::CollidingFronts</a> for the procedural interface </dd>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="namespaceitk_1_1simple.html#a0ba7b947a2e9654bb7ebfbab7be70c5b" title="Selects a region of space where two independent fronts run towards each other.">itk::simple::CollidingFronts</a> for the procedural interface </dd>
 <dd>
 <a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1CollidingFrontsImageFilter.html">itk::CollidingFrontsImageFilter</a> for the Doxygen on the original ITK class. </dd></dl>
 
@@ -869,8 +869,8 @@ template&lt;class TImageType &gt; </div>
 
 </div>
 </div>
-<a id="aaee902ccf4aa64daec81af2132800987"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aaee902ccf4aa64daec81af2132800987">&#9670;&nbsp;</a></span>SetSeedPoints1()</h2>
+<a id="a363d9c79a7ca03a5a6fe13b1f889fd52"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a363d9c79a7ca03a5a6fe13b1f889fd52">&#9670;&nbsp;</a></span>SetSeedPoints1()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -881,7 +881,7 @@ template&lt;class TImageType &gt; </div>
         <tr>
           <td class="memname"><a class="el" href="classitk_1_1simple_1_1ImageFilter.html#a425df9cfde5122a435e1eedd6086480b">Self</a>&amp; itk::simple::CollidingFrontsImageFilter::SetSeedPoints1 </td>
           <td>(</td>
-          <td class="paramtype">const std::vector&lt; std::vector&lt; unsigned int &gt; &gt; &amp;&#160;</td>
+          <td class="paramtype">std::vector&lt; std::vector&lt; unsigned int &gt; &gt;&#160;</td>
           <td class="paramname"><em>SeedPoints1</em></td><td>)</td>
           <td></td>
         </tr>
@@ -898,8 +898,8 @@ template&lt;class TImageType &gt; </div>
 
 </div>
 </div>
-<a id="a914c4bbf4da362d30f0320839d7ccf37"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a914c4bbf4da362d30f0320839d7ccf37">&#9670;&nbsp;</a></span>SetSeedPoints2()</h2>
+<a id="a10460835d09b9070ca823ec9da1da528"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a10460835d09b9070ca823ec9da1da528">&#9670;&nbsp;</a></span>SetSeedPoints2()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -910,7 +910,7 @@ template&lt;class TImageType &gt; </div>
         <tr>
           <td class="memname"><a class="el" href="classitk_1_1simple_1_1ImageFilter.html#a425df9cfde5122a435e1eedd6086480b">Self</a>&amp; itk::simple::CollidingFrontsImageFilter::SetSeedPoints2 </td>
           <td>(</td>
-          <td class="paramtype">const std::vector&lt; std::vector&lt; unsigned int &gt; &gt; &amp;&#160;</td>
+          <td class="paramtype">std::vector&lt; std::vector&lt; unsigned int &gt; &gt;&#160;</td>
           <td class="paramname"><em>SeedPoints2</em></td><td>)</td>
           <td></td>
         </tr>
@@ -1214,7 +1214,7 @@ template&lt;class TImageType &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Apr 24 2020 02:51:10 for SimpleITK by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Apr 30 2020 02:48:50 for SimpleITK by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

@@ -26,7 +26,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">SimpleITK
-   &#160;<span id="projectnumber">2.0.0rc1.post173</span>
+   &#160;<span id="projectnumber">2.0.0rc1.post177</span>
    </div>
   </td>
  </tr>
@@ -109,8 +109,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:abca1508b976cd26974f4deb2f471e2a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab7614251fdfeca3fbee55a486d60db60"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classitk_1_1simple_1_1ImageFilter.html#a425df9cfde5122a435e1eedd6086480b">Self</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1BinShrinkImageFilter.html#ab7614251fdfeca3fbee55a486d60db60">SetShrinkFactor</a> (unsigned int s)</td></tr>
 <tr class="separator:ab7614251fdfeca3fbee55a486d60db60"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8b5eb98506bfa42496db4953557c6246"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classitk_1_1simple_1_1ImageFilter.html#a425df9cfde5122a435e1eedd6086480b">Self</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1BinShrinkImageFilter.html#a8b5eb98506bfa42496db4953557c6246">SetShrinkFactors</a> (const std::vector&lt; unsigned int &gt; &amp;ShrinkFactors)</td></tr>
-<tr class="separator:a8b5eb98506bfa42496db4953557c6246"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a61d20b91cc5fec23e984d9bcc1b3c03e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classitk_1_1simple_1_1ImageFilter.html#a425df9cfde5122a435e1eedd6086480b">Self</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1BinShrinkImageFilter.html#a61d20b91cc5fec23e984d9bcc1b3c03e">SetShrinkFactors</a> (std::vector&lt; unsigned int &gt; ShrinkFactors)</td></tr>
+<tr class="separator:a61d20b91cc5fec23e984d9bcc1b3c03e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adc7866cf1fc41129d537dc31b5baed3f"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1BinShrinkImageFilter.html#adc7866cf1fc41129d537dc31b5baed3f">ToString</a> () const</td></tr>
 <tr class="separator:adc7866cf1fc41129d537dc31b5baed3f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a15b999956133e69173a37a0b8199e59c"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1BinShrinkImageFilter.html#a15b999956133e69173a37a0b8199e59c">~BinShrinkImageFilter</a> ()</td></tr>
@@ -275,7 +275,7 @@ Additional Inherited Members</h2></td></tr>
 </p>
 <p>This filter is implemented so that the starting extent of the first pixel of the output matches that of the input.</p>
 <p>The change in image geometry from a 5x5 image binned by a factor of 2x2.</p>
-<p>This code was contributed in the Insight Journal paper: "BinShrink: A multi-resolution filter with cache efficient averaging" by Lowekamp B., Chen D. <a href="https://hdl.handle.net/10380/3450">https://hdl.handle.net/10380/3450</a> </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="namespaceitk_1_1simple.html#aa1ce4a483a9938adf67aa96983dbb49d" title="Reduce the size of an image by an integer factor in each dimension while performing averaging of an i...">itk::simple::BinShrink</a> for the procedural interface </dd>
+<p>This code was contributed in the Insight Journal paper: "BinShrink: A multi-resolution filter with cache efficient averaging" by Lowekamp B., Chen D. <a href="https://hdl.handle.net/10380/3450">https://hdl.handle.net/10380/3450</a> </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="namespaceitk_1_1simple.html#a5146a5e1eb67d0a049a2aa33da897401" title="Reduce the size of an image by an integer factor in each dimension while performing averaging of an i...">itk::simple::BinShrink</a> for the procedural interface </dd>
 <dd>
 <a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1BinShrinkImageFilter.html">itk::BinShrinkImageFilter</a> for the Doxygen on the original ITK class. </dd></dl>
 
@@ -519,8 +519,8 @@ template&lt;class TImageType &gt; </div>
 
 </div>
 </div>
-<a id="a8b5eb98506bfa42496db4953557c6246"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8b5eb98506bfa42496db4953557c6246">&#9670;&nbsp;</a></span>SetShrinkFactors()</h2>
+<a id="a61d20b91cc5fec23e984d9bcc1b3c03e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a61d20b91cc5fec23e984d9bcc1b3c03e">&#9670;&nbsp;</a></span>SetShrinkFactors()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -531,7 +531,7 @@ template&lt;class TImageType &gt; </div>
         <tr>
           <td class="memname"><a class="el" href="classitk_1_1simple_1_1ImageFilter.html#a425df9cfde5122a435e1eedd6086480b">Self</a>&amp; itk::simple::BinShrinkImageFilter::SetShrinkFactors </td>
           <td>(</td>
-          <td class="paramtype">const std::vector&lt; unsigned int &gt; &amp;&#160;</td>
+          <td class="paramtype">std::vector&lt; unsigned int &gt;&#160;</td>
           <td class="paramname"><em>ShrinkFactors</em></td><td>)</td>
           <td></td>
         </tr>
@@ -656,7 +656,7 @@ template&lt;class TImageType &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Apr 24 2020 02:51:10 for SimpleITK by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Apr 30 2020 02:48:49 for SimpleITK by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

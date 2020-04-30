@@ -26,7 +26,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">SimpleITK
-   &#160;<span id="projectnumber">2.0.0rc1.post173</span>
+   &#160;<span id="projectnumber">2.0.0rc1.post177</span>
    </div>
   </td>
  </tr>
@@ -108,8 +108,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a1d3c8bfca85d04e7e851e920530caea1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0236b3cc97be227f8bfe087630c930b3"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1PermuteAxesImageFilter.html#a0236b3cc97be227f8bfe087630c930b3">PermuteAxesImageFilter</a> ()</td></tr>
 <tr class="separator:a0236b3cc97be227f8bfe087630c930b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af684b128151b35486c1f6241a1ec3a41"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classitk_1_1simple_1_1ImageFilter.html#a425df9cfde5122a435e1eedd6086480b">Self</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1PermuteAxesImageFilter.html#af684b128151b35486c1f6241a1ec3a41">SetOrder</a> (const std::vector&lt; unsigned int &gt; &amp;Order)</td></tr>
-<tr class="separator:af684b128151b35486c1f6241a1ec3a41"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aab8054ff131c937a9acb60f344ac70e2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classitk_1_1simple_1_1ImageFilter.html#a425df9cfde5122a435e1eedd6086480b">Self</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1PermuteAxesImageFilter.html#aab8054ff131c937a9acb60f344ac70e2">SetOrder</a> (std::vector&lt; unsigned int &gt; Order)</td></tr>
+<tr class="separator:aab8054ff131c937a9acb60f344ac70e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afe70368ea8506c71655fdd67cf66b7cb"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1PermuteAxesImageFilter.html#afe70368ea8506c71655fdd67cf66b7cb">ToString</a> () const</td></tr>
 <tr class="separator:afe70368ea8506c71655fdd67cf66b7cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5f4ea7c97920f2b31862ce5754e44e02"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1PermuteAxesImageFilter.html#a5f4ea7c97920f2b31862ce5754e44e02">~PermuteAxesImageFilter</a> ()</td></tr>
@@ -274,7 +274,7 @@ Additional Inherited Members</h2></td></tr>
 <div class="textblock"><p>Permutes the image axes according to a user specified order. </p>
 <p>PermuateAxesImageFilter permutes the image axes according to a user specified order. The permutation order is set via method SetOrder( order ) where the input is an array of ImageDimension number of unsigned int. The elements of the array must be a rearrangment of the numbers from 0 to ImageDimension - 1.</p>
 <p>The i-th axis of the output image corresponds with the order[i]-th axis of the input image.</p>
-<p>The output meta image information (LargestPossibleRegion, spacing, origin) is computed by permuting the corresponding input meta information. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="namespaceitk_1_1simple.html#a54b56129cba5ac661a622eab0727ec4c" title="Permutes the image axes according to a user specified order.">itk::simple::PermuteAxes</a> for the procedural interface </dd>
+<p>The output meta image information (LargestPossibleRegion, spacing, origin) is computed by permuting the corresponding input meta information. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="namespaceitk_1_1simple.html#a892cc754413ba3b60c731aac05dddc65" title="Permutes the image axes according to a user specified order.">itk::simple::PermuteAxes</a> for the procedural interface </dd>
 <dd>
 <a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1PermuteAxesImageFilter.html">itk::PermuteAxesImageFilter</a> for the Doxygen on the original ITK class. </dd></dl>
 
@@ -489,8 +489,8 @@ template&lt;class TImageType &gt; </div>
 
 </div>
 </div>
-<a id="af684b128151b35486c1f6241a1ec3a41"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af684b128151b35486c1f6241a1ec3a41">&#9670;&nbsp;</a></span>SetOrder()</h2>
+<a id="aab8054ff131c937a9acb60f344ac70e2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aab8054ff131c937a9acb60f344ac70e2">&#9670;&nbsp;</a></span>SetOrder()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -501,7 +501,7 @@ template&lt;class TImageType &gt; </div>
         <tr>
           <td class="memname"><a class="el" href="classitk_1_1simple_1_1ImageFilter.html#a425df9cfde5122a435e1eedd6086480b">Self</a>&amp; itk::simple::PermuteAxesImageFilter::SetOrder </td>
           <td>(</td>
-          <td class="paramtype">const std::vector&lt; unsigned int &gt; &amp;&#160;</td>
+          <td class="paramtype">std::vector&lt; unsigned int &gt;&#160;</td>
           <td class="paramname"><em>Order</em></td><td>)</td>
           <td></td>
         </tr>
@@ -651,7 +651,7 @@ template&lt;class TImageType &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Apr 24 2020 02:51:16 for SimpleITK by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Apr 30 2020 02:48:54 for SimpleITK by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

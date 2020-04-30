@@ -26,7 +26,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">SimpleITK
-   &#160;<span id="projectnumber">2.0.0rc1.post173</span>
+   &#160;<span id="projectnumber">2.0.0rc1.post177</span>
    </div>
   </td>
  </tr>
@@ -115,10 +115,10 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ae59f4fe99e88ad13051e83c969db995a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2523dd5b665db3f512ab895a27aa5787"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classitk_1_1simple_1_1ImageFilter.html#a425df9cfde5122a435e1eedd6086480b">Self</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1SmoothingRecursiveGaussianImageFilter.html#a2523dd5b665db3f512ab895a27aa5787">SetNormalizeAcrossScale</a> (bool NormalizeAcrossScale)</td></tr>
 <tr class="separator:a2523dd5b665db3f512ab895a27aa5787"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad593ac08f346cb48940340d00b5b1095"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classitk_1_1simple_1_1ImageFilter.html#a425df9cfde5122a435e1eedd6086480b">Self</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1SmoothingRecursiveGaussianImageFilter.html#ad593ac08f346cb48940340d00b5b1095">SetSigma</a> (const std::vector&lt; double &gt; &amp;Sigma)</td></tr>
-<tr class="separator:ad593ac08f346cb48940340d00b5b1095"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aff3be8b79ac61cfd1648f215e914ae74"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classitk_1_1simple_1_1ImageFilter.html#a425df9cfde5122a435e1eedd6086480b">Self</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1SmoothingRecursiveGaussianImageFilter.html#aff3be8b79ac61cfd1648f215e914ae74">SetSigma</a> (double value)</td></tr>
 <tr class="separator:aff3be8b79ac61cfd1648f215e914ae74"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acc71181d185664bd4cc34fedf78d0efd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classitk_1_1simple_1_1ImageFilter.html#a425df9cfde5122a435e1eedd6086480b">Self</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1SmoothingRecursiveGaussianImageFilter.html#acc71181d185664bd4cc34fedf78d0efd">SetSigma</a> (std::vector&lt; double &gt; Sigma)</td></tr>
+<tr class="separator:acc71181d185664bd4cc34fedf78d0efd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab0a3946bf08a8a0cc6ec8f582f6f9106"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1SmoothingRecursiveGaussianImageFilter.html#ab0a3946bf08a8a0cc6ec8f582f6f9106">SmoothingRecursiveGaussianImageFilter</a> ()</td></tr>
 <tr class="separator:ab0a3946bf08a8a0cc6ec8f582f6f9106"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a014faeaf11271474e59dcb8aeeb15fab"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1SmoothingRecursiveGaussianImageFilter.html#a014faeaf11271474e59dcb8aeeb15fab">ToString</a> () const</td></tr>
@@ -634,39 +634,8 @@ template&lt;class TImageType &gt; </div>
 
 </div>
 </div>
-<a id="ad593ac08f346cb48940340d00b5b1095"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad593ac08f346cb48940340d00b5b1095">&#9670;&nbsp;</a></span>SetSigma() <span class="overload">[1/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="classitk_1_1simple_1_1ImageFilter.html#a425df9cfde5122a435e1eedd6086480b">Self</a>&amp; itk::simple::SmoothingRecursiveGaussianImageFilter::SetSigma </td>
-          <td>(</td>
-          <td class="paramtype">const std::vector&lt; double &gt; &amp;&#160;</td>
-          <td class="paramname"><em>Sigma</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Set the standard deviation of the Gaussian used for smoothing. Sigma is measured in the units of image spacing. You may use the method SetSigma to set the same value across each axis or use the method SetSigmaArray if you need different values along each axis. </p>
-<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="SimpleGaussian_2SimpleGaussian_8cxx-example.html#a5">SimpleGaussian/SimpleGaussian.cxx</a>.</dd>
-</dl>
-
-<p class="definition">Definition at line <a class="el" href="sitkSmoothingRecursiveGaussianImageFilter_8h_source.html#l00062">62</a> of file <a class="el" href="sitkSmoothingRecursiveGaussianImageFilter_8h_source.html">sitkSmoothingRecursiveGaussianImageFilter.h</a>.</p>
-
-</div>
-</div>
 <a id="aff3be8b79ac61cfd1648f215e914ae74"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aff3be8b79ac61cfd1648f215e914ae74">&#9670;&nbsp;</a></span>SetSigma() <span class="overload">[2/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#aff3be8b79ac61cfd1648f215e914ae74">&#9670;&nbsp;</a></span>SetSigma() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -691,6 +660,37 @@ template&lt;class TImageType &gt; </div>
 <p>Set the values of the Sigma vector all to value </p>
 
 <p class="definition">Definition at line <a class="el" href="sitkSmoothingRecursiveGaussianImageFilter_8h_source.html#l00065">65</a> of file <a class="el" href="sitkSmoothingRecursiveGaussianImageFilter_8h_source.html">sitkSmoothingRecursiveGaussianImageFilter.h</a>.</p>
+
+</div>
+</div>
+<a id="acc71181d185664bd4cc34fedf78d0efd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acc71181d185664bd4cc34fedf78d0efd">&#9670;&nbsp;</a></span>SetSigma() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classitk_1_1simple_1_1ImageFilter.html#a425df9cfde5122a435e1eedd6086480b">Self</a>&amp; itk::simple::SmoothingRecursiveGaussianImageFilter::SetSigma </td>
+          <td>(</td>
+          <td class="paramtype">std::vector&lt; double &gt;&#160;</td>
+          <td class="paramname"><em>Sigma</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Set the standard deviation of the Gaussian used for smoothing. Sigma is measured in the units of image spacing. You may use the method SetSigma to set the same value across each axis or use the method SetSigmaArray if you need different values along each axis. </p>
+<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="SimpleGaussian_2SimpleGaussian_8cxx-example.html#a5">SimpleGaussian/SimpleGaussian.cxx</a>.</dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="sitkSmoothingRecursiveGaussianImageFilter_8h_source.html#l00062">62</a> of file <a class="el" href="sitkSmoothingRecursiveGaussianImageFilter_8h_source.html">sitkSmoothingRecursiveGaussianImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -850,7 +850,7 @@ template&lt;class TImageType &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Apr 24 2020 02:51:17 for SimpleITK by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Apr 30 2020 02:48:55 for SimpleITK by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

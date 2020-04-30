@@ -26,7 +26,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">SimpleITK
-   &#160;<span id="projectnumber">2.0.0rc1.post173</span>
+   &#160;<span id="projectnumber">2.0.0rc1.post177</span>
    </div>
   </td>
  </tr>
@@ -135,10 +135,10 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:aa4cfb04760345d02ff8ac61d6d864a47"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a07ecef48266d86e81c6e82b434cb105f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classitk_1_1simple_1_1ImageFilter.html#a425df9cfde5122a435e1eedd6086480b">Self</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1IsolatedConnectedImageFilter.html#a07ecef48266d86e81c6e82b434cb105f">SetReplaceValue</a> (<a class="elRef" href="https://www.itk.org/Doxygen/html/namespaceitk.html#a5037a19c1b11bcb33173a2a3e3d8b8a0">uint8_t</a> ReplaceValue)</td></tr>
 <tr class="separator:a07ecef48266d86e81c6e82b434cb105f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4e3bca9999963431e9633da697c5001b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classitk_1_1simple_1_1ImageFilter.html#a425df9cfde5122a435e1eedd6086480b">Self</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1IsolatedConnectedImageFilter.html#a4e3bca9999963431e9633da697c5001b">SetSeed1</a> (const std::vector&lt; unsigned int &gt; &amp;Seed1)</td></tr>
-<tr class="separator:a4e3bca9999963431e9633da697c5001b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a289c371f6670ae410690bb5ff973916a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classitk_1_1simple_1_1ImageFilter.html#a425df9cfde5122a435e1eedd6086480b">Self</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1IsolatedConnectedImageFilter.html#a289c371f6670ae410690bb5ff973916a">SetSeed2</a> (const std::vector&lt; unsigned int &gt; &amp;Seed2)</td></tr>
-<tr class="separator:a289c371f6670ae410690bb5ff973916a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2e2b11a2c160d56de01a8014e4875d1a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classitk_1_1simple_1_1ImageFilter.html#a425df9cfde5122a435e1eedd6086480b">Self</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1IsolatedConnectedImageFilter.html#a2e2b11a2c160d56de01a8014e4875d1a">SetSeed1</a> (std::vector&lt; unsigned int &gt; Seed1)</td></tr>
+<tr class="separator:a2e2b11a2c160d56de01a8014e4875d1a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac541c254349d0dac8def56b8206900c7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classitk_1_1simple_1_1ImageFilter.html#a425df9cfde5122a435e1eedd6086480b">Self</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1IsolatedConnectedImageFilter.html#ac541c254349d0dac8def56b8206900c7">SetSeed2</a> (std::vector&lt; unsigned int &gt; Seed2)</td></tr>
+<tr class="separator:ac541c254349d0dac8def56b8206900c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6c98bcefd75d309b64a5725cedaba2d8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classitk_1_1simple_1_1ImageFilter.html#a425df9cfde5122a435e1eedd6086480b">Self</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1IsolatedConnectedImageFilter.html#a6c98bcefd75d309b64a5725cedaba2d8">SetUpper</a> (double Upper)</td></tr>
 <tr class="separator:a6c98bcefd75d309b64a5725cedaba2d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acec815745fc494270395e64a3f760548"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1IsolatedConnectedImageFilter.html#acec815745fc494270395e64a3f760548">ToString</a> () const</td></tr>
@@ -318,7 +318,7 @@ Additional Inherited Members</h2></td></tr>
 <p>The algorithm labels pixels with ReplaceValue that are connected to Seeds1 AND NOT connected to Seeds2. When finding the threshold to separate two dark regions surrounded by bright regions, given a fixed lower threshold, the filter adjusts the upper threshold until the two sets of seeds are not connected. The algorithm uses a binary search to adjust the upper threshold, starting at Upper. The reverse is true for finding the threshold to separate two bright regions. Lower defaults to the smallest possible value for the InputImagePixelType, and Upper defaults to the largest possible value for the InputImagePixelType.</p>
 <p>The user can also supply the Lower and Upper values to restrict the search. However, if the range is too restrictive, it could happen that no isolating threshold can be found between the user specified Lower and Upper values. Therefore, unless the user is sure of the bounds to set, it is recommended that the user set these values to the lowest and highest intensity values in the image, respectively.</p>
 <p>The user can specify more than one seed for both regions to separate. The algorithm will try find the threshold that ensures that all of the first seeds are contained in the resulting segmentation and all of the second seeds are not contained in the segmentation.</p>
-<p>It is possible that the algorithm may not be able to find the isolating threshold because no such threshold exists. The user can check for this by querying the <a class="el" href="classitk_1_1simple_1_1IsolatedConnectedImageFilter.html#af9b9e8e62e8efe355a42785c2c19e296">GetThresholdingFailed()</a> flag. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="namespaceitk_1_1simple.html#a8e6cfe48bb34e76c2986101f758a809c" title="Label pixels that are connected to one set of seeds but not another.">itk::simple::IsolatedConnected</a> for the procedural interface </dd>
+<p>It is possible that the algorithm may not be able to find the isolating threshold because no such threshold exists. The user can check for this by querying the <a class="el" href="classitk_1_1simple_1_1IsolatedConnectedImageFilter.html#af9b9e8e62e8efe355a42785c2c19e296">GetThresholdingFailed()</a> flag. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="namespaceitk_1_1simple.html#a4b59093835cec2d332bf0e5fb3c1dd54" title="Label pixels that are connected to one set of seeds but not another.">itk::simple::IsolatedConnected</a> for the procedural interface </dd>
 <dd>
 <a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1IsolatedConnectedImageFilter.html">itk::IsolatedConnectedImageFilter</a> for the Doxygen on the original ITK class. </dd></dl>
 
@@ -928,8 +928,8 @@ template&lt;class TImageType &gt; </div>
 
 </div>
 </div>
-<a id="a4e3bca9999963431e9633da697c5001b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4e3bca9999963431e9633da697c5001b">&#9670;&nbsp;</a></span>SetSeed1()</h2>
+<a id="a2e2b11a2c160d56de01a8014e4875d1a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2e2b11a2c160d56de01a8014e4875d1a">&#9670;&nbsp;</a></span>SetSeed1()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -940,7 +940,7 @@ template&lt;class TImageType &gt; </div>
         <tr>
           <td class="memname"><a class="el" href="classitk_1_1simple_1_1ImageFilter.html#a425df9cfde5122a435e1eedd6086480b">Self</a>&amp; itk::simple::IsolatedConnectedImageFilter::SetSeed1 </td>
           <td>(</td>
-          <td class="paramtype">const std::vector&lt; unsigned int &gt; &amp;&#160;</td>
+          <td class="paramtype">std::vector&lt; unsigned int &gt;&#160;</td>
           <td class="paramname"><em>Seed1</em></td><td>)</td>
           <td></td>
         </tr>
@@ -957,8 +957,8 @@ template&lt;class TImageType &gt; </div>
 
 </div>
 </div>
-<a id="a289c371f6670ae410690bb5ff973916a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a289c371f6670ae410690bb5ff973916a">&#9670;&nbsp;</a></span>SetSeed2()</h2>
+<a id="ac541c254349d0dac8def56b8206900c7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac541c254349d0dac8def56b8206900c7">&#9670;&nbsp;</a></span>SetSeed2()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -969,7 +969,7 @@ template&lt;class TImageType &gt; </div>
         <tr>
           <td class="memname"><a class="el" href="classitk_1_1simple_1_1ImageFilter.html#a425df9cfde5122a435e1eedd6086480b">Self</a>&amp; itk::simple::IsolatedConnectedImageFilter::SetSeed2 </td>
           <td>(</td>
-          <td class="paramtype">const std::vector&lt; unsigned int &gt; &amp;&#160;</td>
+          <td class="paramtype">std::vector&lt; unsigned int &gt;&#160;</td>
           <td class="paramname"><em>Seed2</em></td><td>)</td>
           <td></td>
         </tr>
@@ -1315,7 +1315,7 @@ template&lt;class TImageType &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Apr 24 2020 02:51:14 for SimpleITK by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Apr 30 2020 02:48:53 for SimpleITK by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

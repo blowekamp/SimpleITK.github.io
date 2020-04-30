@@ -26,7 +26,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">SimpleITK
-   &#160;<span id="projectnumber">2.0.0rc1.post173</span>
+   &#160;<span id="projectnumber">2.0.0rc1.post177</span>
    </div>
   </td>
  </tr>
@@ -107,8 +107,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a3a6c519897e367dfc43b0869549e8aaf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a06e346d8b096b9fbb7f05360e87a43a2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classitk_1_1simple_1_1ImageFilter.html#a425df9cfde5122a435e1eedd6086480b">Self</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1ShrinkImageFilter.html#a06e346d8b096b9fbb7f05360e87a43a2">SetShrinkFactor</a> (unsigned int s)</td></tr>
 <tr class="separator:a06e346d8b096b9fbb7f05360e87a43a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7640a1c0c7708edca28a2f97f66d0c81"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classitk_1_1simple_1_1ImageFilter.html#a425df9cfde5122a435e1eedd6086480b">Self</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1ShrinkImageFilter.html#a7640a1c0c7708edca28a2f97f66d0c81">SetShrinkFactors</a> (const std::vector&lt; unsigned int &gt; &amp;ShrinkFactors)</td></tr>
-<tr class="separator:a7640a1c0c7708edca28a2f97f66d0c81"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaf589121835a41df8a81e6abcbff7d3b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classitk_1_1simple_1_1ImageFilter.html#a425df9cfde5122a435e1eedd6086480b">Self</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1ShrinkImageFilter.html#aaf589121835a41df8a81e6abcbff7d3b">SetShrinkFactors</a> (std::vector&lt; unsigned int &gt; ShrinkFactors)</td></tr>
+<tr class="separator:aaf589121835a41df8a81e6abcbff7d3b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acb4d56393188eed65d90e1fd8e572a62"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1ShrinkImageFilter.html#acb4d56393188eed65d90e1fd8e572a62">ShrinkImageFilter</a> ()</td></tr>
 <tr class="separator:acb4d56393188eed65d90e1fd8e572a62"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7f2eb8a909fb75b5c846af285f714c8c"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1ShrinkImageFilter.html#a7f2eb8a909fb75b5c846af285f714c8c">ToString</a> () const</td></tr>
@@ -271,7 +271,7 @@ Additional Inherited Members</h2></td></tr>
 <p><a class="el" href="classitk_1_1simple_1_1ShrinkImageFilter.html" title="Reduce the size of an image by an integer factor in each dimension.">ShrinkImageFilter</a> reduces the size of an image by an integer factor in each dimension. The algorithm implemented is a simple subsample. The output image size in each dimension is given by:</p>
 <p>outputSize[j] = max( std::floor(inputSize[j]/shrinkFactor[j]), 1 );</p>
 <p>NOTE: The physical centers of the input and output will be the same. Because of this, the Origin of the output may not be the same as the Origin of the input. Since this filter produces an image which is a different resolution, origin and with different pixel spacing than its input image, it needs to override several of the methods defined in <a class="el" href="classitk_1_1simple_1_1ProcessObject.html" title="Base class for SimpleITK classes based on ProcessObject.">ProcessObject</a> in order to properly manage the pipeline execution model. In particular, this filter overrides <a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1ProcessObject.html#ade67a54c973bfaf739184c906da7c77a">ProcessObject::GenerateInputRequestedRegion()</a> and <a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1ProcessObject.html#abe61fb6b7de8c443e7af1561bd722736">ProcessObject::GenerateOutputInformation()</a> .</p>
-<p>This filter is implemented as a multithreaded filter. It provides a DynamicThreadedGenerateData() method for its implementation. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="namespaceitk_1_1simple.html#a29427b8c42fbef013f5e08cb47676d7d" title="Reduce the size of an image by an integer factor in each dimension.">itk::simple::Shrink</a> for the procedural interface </dd>
+<p>This filter is implemented as a multithreaded filter. It provides a DynamicThreadedGenerateData() method for its implementation. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="namespaceitk_1_1simple.html#aaca314de51c97b118c0d6c356dd98efa" title="Reduce the size of an image by an integer factor in each dimension.">itk::simple::Shrink</a> for the procedural interface </dd>
 <dd>
 <a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1ShrinkImageFilter.html">itk::ShrinkImageFilter</a> for the Doxygen on the original ITK class. </dd></dl>
 
@@ -515,8 +515,8 @@ template&lt;class TImageType &gt; </div>
 
 </div>
 </div>
-<a id="a7640a1c0c7708edca28a2f97f66d0c81"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7640a1c0c7708edca28a2f97f66d0c81">&#9670;&nbsp;</a></span>SetShrinkFactors()</h2>
+<a id="aaf589121835a41df8a81e6abcbff7d3b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaf589121835a41df8a81e6abcbff7d3b">&#9670;&nbsp;</a></span>SetShrinkFactors()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -527,7 +527,7 @@ template&lt;class TImageType &gt; </div>
         <tr>
           <td class="memname"><a class="el" href="classitk_1_1simple_1_1ImageFilter.html#a425df9cfde5122a435e1eedd6086480b">Self</a>&amp; itk::simple::ShrinkImageFilter::SetShrinkFactors </td>
           <td>(</td>
-          <td class="paramtype">const std::vector&lt; unsigned int &gt; &amp;&#160;</td>
+          <td class="paramtype">std::vector&lt; unsigned int &gt;&#160;</td>
           <td class="paramname"><em>ShrinkFactors</em></td><td>)</td>
           <td></td>
         </tr>
@@ -652,7 +652,7 @@ template&lt;class TImageType &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Apr 24 2020 02:51:17 for SimpleITK by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Apr 30 2020 02:48:55 for SimpleITK by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

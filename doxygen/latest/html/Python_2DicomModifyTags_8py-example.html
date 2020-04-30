@@ -26,7 +26,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">SimpleITK
-   &#160;<span id="projectnumber">2.0.0rc1.post173</span>
+   &#160;<span id="projectnumber">2.0.0rc1.post177</span>
    </div>
   </td>
  </tr>
@@ -82,7 +82,7 @@ $(function() {
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;image = <a class="code" href="namespaceitk_1_1simple.html#a62a1be75703e22b14339e6409858ab61">sitk.ReadImage</a>( sys.argv[1] )</div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160; </div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="comment"># Modify the image (mean)</span></div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;mean_image = <a class="code" href="namespaceitk_1_1simple.html#a7741bdab441c52d049328d5deba364a1">sitk.BoxMean</a>( image, [3,3,1] )</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;mean_image = <a class="code" href="namespaceitk_1_1simple.html#a93ad4652432f6b0da9c986594a09c9c6">sitk.BoxMean</a>( image, [3,3,1] )</div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160; </div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="comment"># Save the modified image:</span></div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="comment"># We do not provide a method that copies all keys blindly. Our intent is</span></div>
@@ -121,10 +121,10 @@ $(function() {
 </div><!-- fragment --> </div><!-- contents -->
 <div class="ttc" id="anamespaceitk_1_1simple_html_a8537644286a43ff1566326c2109057ab"><div class="ttname"><a href="namespaceitk_1_1simple.html#a8537644286a43ff1566326c2109057ab">itk::simple::WriteImage</a></div><div class="ttdeci">SITKIO_EXPORT void WriteImage(const Image &amp;image, const std::vector&lt; std::string &gt; &amp;fileNames, bool useCompression=false, int compressionLevel=-1)</div></div>
 <div class="ttc" id="anamespaceitk_1_1simple_html_a62a1be75703e22b14339e6409858ab61"><div class="ttname"><a href="namespaceitk_1_1simple.html#a62a1be75703e22b14339e6409858ab61">itk::simple::ReadImage</a></div><div class="ttdeci">SITKIO_EXPORT Image ReadImage(const std::vector&lt; std::string &gt; &amp;fileNames, PixelIDValueEnum outputPixelType=sitkUnknown, const std::string &amp;imageIO=&quot;&quot;)</div><div class="ttdoc">ReadImage is a procedural interface to the ImageSeriesReader class which is convenient for most image...</div></div>
-<div class="ttc" id="anamespaceitk_1_1simple_html_a7741bdab441c52d049328d5deba364a1"><div class="ttname"><a href="namespaceitk_1_1simple.html#a7741bdab441c52d049328d5deba364a1">itk::simple::BoxMean</a></div><div class="ttdeci">Image BoxMean(const Image &amp;image1, const std::vector&lt; unsigned int &gt; &amp;radius=std::vector&lt; unsigned int &gt;(3, 1))</div><div class="ttdoc">Implements a fast rectangular mean filter using the accumulator approach.</div></div>
+<div class="ttc" id="anamespaceitk_1_1simple_html_a93ad4652432f6b0da9c986594a09c9c6"><div class="ttname"><a href="namespaceitk_1_1simple.html#a93ad4652432f6b0da9c986594a09c9c6">itk::simple::BoxMean</a></div><div class="ttdeci">Image BoxMean(const Image &amp;image1, std::vector&lt; unsigned int &gt; radius=std::vector&lt; unsigned int &gt;(3, 1))</div><div class="ttdoc">Implements a fast rectangular mean filter using the accumulator approach.</div></div>
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Apr 24 2020 02:50:48 for SimpleITK by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Apr 30 2020 02:48:30 for SimpleITK by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

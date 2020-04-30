@@ -26,7 +26,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">SimpleITK
-   &#160;<span id="projectnumber">2.0.0rc1.post173</span>
+   &#160;<span id="projectnumber">2.0.0rc1.post177</span>
    </div>
   </td>
  </tr>
@@ -134,14 +134,14 @@ $(function() {
 <div class="line">  std::vector&lt;unsigned int&gt; radius;</div>
 <div class="line">  radius.push_back( 2 );</div>
 <div class="line">  radius.push_back( 2 );</div>
-<div class="line">  segmentationFilter.<a name="a14"></a><a class="code" href="classitk_1_1simple_1_1NeighborhoodConnectedImageFilter.html#a5c633121b147f4b541f6c9e03621dbea">SetRadius</a>( radius );</div>
+<div class="line">  segmentationFilter.<a name="a14"></a><a class="code" href="classitk_1_1simple_1_1NeighborhoodConnectedImageFilter.html#a6cffaba0daccc4d73f2cb26e784c0ebc">SetRadius</a>( radius );</div>
 <div class="line"> </div>
 <div class="line">  <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 5; i+1 &lt; argc; i+=2)</div>
 <div class="line">    {</div>
 <div class="line">    std::vector&lt;unsigned int&gt; seed;</div>
 <div class="line">    seed.push_back(atoi(argv[i]));</div>
 <div class="line">    seed.push_back(atoi(argv[i+1]));</div>
-<div class="line">    segmentationFilter.<a name="a15"></a><a class="code" href="classitk_1_1simple_1_1NeighborhoodConnectedImageFilter.html#af6cd1aeda57cff76bb4df0beeaec8438">AddSeed</a>(seed);</div>
+<div class="line">    segmentationFilter.<a name="a15"></a><a class="code" href="classitk_1_1simple_1_1NeighborhoodConnectedImageFilter.html#a2defacd3b5ecaf6e79e0b5eb6119c8da">AddSeed</a>(seed);</div>
 <div class="line">    std::cout &lt;&lt; <span class="stringliteral">&quot;Adding a seed at &quot;</span>;</div>
 <div class="line">    <span class="keywordflow">for</span>( <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> j = 0; j &lt; seed.size(); ++j )</div>
 <div class="line">      {</div>
@@ -167,27 +167,27 @@ $(function() {
 <div class="ttc" id="aclassitk_1_1simple_1_1NeighborhoodConnectedImageFilter_html"><div class="ttname"><a href="classitk_1_1simple_1_1NeighborhoodConnectedImageFilter.html">itk::simple::NeighborhoodConnectedImageFilter</a></div><div class="ttdoc">Label pixels that are connected to a seed and lie within a neighborhood.</div><div class="ttdef"><b>Definition:</b> <a href="sitkNeighborhoodConnectedImageFilter_8h_source.html#l00042">sitkNeighborhoodConnectedImageFilter.h:42</a></div></div>
 <div class="ttc" id="aclassitk_1_1simple_1_1NeighborhoodConnectedImageFilter_html_a81f1a54369db0bd5654d625c77f19332"><div class="ttname"><a href="classitk_1_1simple_1_1NeighborhoodConnectedImageFilter.html#a81f1a54369db0bd5654d625c77f19332">itk::simple::NeighborhoodConnectedImageFilter::Execute</a></div><div class="ttdeci">Image Execute(const Image &amp;image1)</div></div>
 <div class="ttc" id="aclassitk_1_1simple_1_1ImageFileWriter_html_abb96ddbf0ed9c182bb105c6f3f3f08d0"><div class="ttname"><a href="classitk_1_1simple_1_1ImageFileWriter.html#abb96ddbf0ed9c182bb105c6f3f3f08d0">itk::simple::ImageFileWriter::SetFileName</a></div><div class="ttdeci">Self &amp; SetFileName(const std::string &amp;fileName)</div></div>
+<div class="ttc" id="aclassitk_1_1simple_1_1NeighborhoodConnectedImageFilter_html_a6cffaba0daccc4d73f2cb26e784c0ebc"><div class="ttname"><a href="classitk_1_1simple_1_1NeighborhoodConnectedImageFilter.html#a6cffaba0daccc4d73f2cb26e784c0ebc">itk::simple::NeighborhoodConnectedImageFilter::SetRadius</a></div><div class="ttdeci">Self &amp; SetRadius(std::vector&lt; unsigned int &gt; Radius)</div><div class="ttdef"><b>Definition:</b> <a href="sitkNeighborhoodConnectedImageFilter_8h_source.html#l00081">sitkNeighborhoodConnectedImageFilter.h:81</a></div></div>
 <div class="ttc" id="asitkImageFileWriter_8h_html"><div class="ttname"><a href="sitkImageFileWriter_8h.html">sitkImageFileWriter.h</a></div></div>
 <div class="ttc" id="asitkImage_8h_html"><div class="ttname"><a href="sitkImage_8h.html">sitkImage.h</a></div></div>
 <div class="ttc" id="aclassitk_1_1simple_1_1ImageFileWriter_html_a7f0091401d89ab256870b93d88cb0a6e"><div class="ttname"><a href="classitk_1_1simple_1_1ImageFileWriter.html#a7f0091401d89ab256870b93d88cb0a6e">itk::simple::ImageFileWriter::Execute</a></div><div class="ttdeci">Self &amp; Execute(const Image &amp;)</div></div>
 <div class="ttc" id="aclassitk_1_1simple_1_1ImageFileReader_html"><div class="ttname"><a href="classitk_1_1simple_1_1ImageFileReader.html">itk::simple::ImageFileReader</a></div><div class="ttdoc">Read an image file and return a SimpleITK Image.</div><div class="ttdef"><b>Definition:</b> <a href="sitkImageFileReader_8h_source.html#l00060">sitkImageFileReader.h:60</a></div></div>
 <div class="ttc" id="aclassitk_1_1simple_1_1ImageFileReader_html_ad5f34a4f287eee8979bbfafa34901072"><div class="ttname"><a href="classitk_1_1simple_1_1ImageFileReader.html#ad5f34a4f287eee8979bbfafa34901072">itk::simple::ImageFileReader::SetFileName</a></div><div class="ttdeci">Self &amp; SetFileName(const std::string &amp;fn)</div></div>
-<div class="ttc" id="aclassitk_1_1simple_1_1NeighborhoodConnectedImageFilter_html_a5c633121b147f4b541f6c9e03621dbea"><div class="ttname"><a href="classitk_1_1simple_1_1NeighborhoodConnectedImageFilter.html#a5c633121b147f4b541f6c9e03621dbea">itk::simple::NeighborhoodConnectedImageFilter::SetRadius</a></div><div class="ttdeci">Self &amp; SetRadius(const std::vector&lt; unsigned int &gt; &amp;Radius)</div><div class="ttdef"><b>Definition:</b> <a href="sitkNeighborhoodConnectedImageFilter_8h_source.html#l00081">sitkNeighborhoodConnectedImageFilter.h:81</a></div></div>
 <div class="ttc" id="aclassitk_1_1simple_1_1CurvatureFlowImageFilter_html"><div class="ttname"><a href="classitk_1_1simple_1_1CurvatureFlowImageFilter.html">itk::simple::CurvatureFlowImageFilter</a></div><div class="ttdoc">Denoise an image using curvature driven flow.</div><div class="ttdef"><b>Definition:</b> <a href="sitkCurvatureFlowImageFilter_8h_source.html#l00072">sitkCurvatureFlowImageFilter.h:72</a></div></div>
 <div class="ttc" id="aclassitk_1_1simple_1_1CurvatureFlowImageFilter_html_af563173a3483ce40b1e11940d3e82d35"><div class="ttname"><a href="classitk_1_1simple_1_1CurvatureFlowImageFilter.html#af563173a3483ce40b1e11940d3e82d35">itk::simple::CurvatureFlowImageFilter::SetNumberOfIterations</a></div><div class="ttdeci">Self &amp; SetNumberOfIterations(uint32_t NumberOfIterations)</div><div class="ttdef"><b>Definition:</b> <a href="sitkCurvatureFlowImageFilter_8h_source.html#l00099">sitkCurvatureFlowImageFilter.h:99</a></div></div>
 <div class="ttc" id="aclassitk_1_1simple_1_1CurvatureFlowImageFilter_html_a8fd35a6d053e8c342f6fdf545ee42d4c"><div class="ttname"><a href="classitk_1_1simple_1_1CurvatureFlowImageFilter.html#a8fd35a6d053e8c342f6fdf545ee42d4c">itk::simple::CurvatureFlowImageFilter::SetTimeStep</a></div><div class="ttdeci">Self &amp; SetTimeStep(double TimeStep)</div><div class="ttdef"><b>Definition:</b> <a href="sitkCurvatureFlowImageFilter_8h_source.html#l00090">sitkCurvatureFlowImageFilter.h:90</a></div></div>
 <div class="ttc" id="asitkImageFileReader_8h_html"><div class="ttname"><a href="sitkImageFileReader_8h.html">sitkImageFileReader.h</a></div></div>
 <div class="ttc" id="aclassitk_1_1simple_1_1NeighborhoodConnectedImageFilter_html_ac68ce4c20be2f2f44832abdc929d9355"><div class="ttname"><a href="classitk_1_1simple_1_1NeighborhoodConnectedImageFilter.html#ac68ce4c20be2f2f44832abdc929d9355">itk::simple::NeighborhoodConnectedImageFilter::SetLower</a></div><div class="ttdeci">Self &amp; SetLower(double Lower)</div><div class="ttdef"><b>Definition:</b> <a href="sitkNeighborhoodConnectedImageFilter_8h_source.html#l00061">sitkNeighborhoodConnectedImageFilter.h:61</a></div></div>
-<div class="ttc" id="aclassitk_1_1simple_1_1NeighborhoodConnectedImageFilter_html_af6cd1aeda57cff76bb4df0beeaec8438"><div class="ttname"><a href="classitk_1_1simple_1_1NeighborhoodConnectedImageFilter.html#af6cd1aeda57cff76bb4df0beeaec8438">itk::simple::NeighborhoodConnectedImageFilter::AddSeed</a></div><div class="ttdeci">Self &amp; AddSeed(const std::vector&lt; unsigned int &gt; &amp;idx)</div><div class="ttdef"><b>Definition:</b> <a href="sitkNeighborhoodConnectedImageFilter_8h_source.html#l00128">sitkNeighborhoodConnectedImageFilter.h:128</a></div></div>
 <div class="ttc" id="asitkCurvatureFlowImageFilter_8h_html"><div class="ttname"><a href="sitkCurvatureFlowImageFilter_8h.html">sitkCurvatureFlowImageFilter.h</a></div></div>
 <div class="ttc" id="aclassitk_1_1simple_1_1ImageFileReader_html_ab8d91d4ca4ee13f704d72205d344837e"><div class="ttname"><a href="classitk_1_1simple_1_1ImageFileReader.html#ab8d91d4ca4ee13f704d72205d344837e">itk::simple::ImageFileReader::Execute</a></div><div class="ttdeci">Image Execute() override</div><div class="ttdoc">Set/Get The output PixelType of the image.</div></div>
+<div class="ttc" id="aclassitk_1_1simple_1_1NeighborhoodConnectedImageFilter_html_a2defacd3b5ecaf6e79e0b5eb6119c8da"><div class="ttname"><a href="classitk_1_1simple_1_1NeighborhoodConnectedImageFilter.html#a2defacd3b5ecaf6e79e0b5eb6119c8da">itk::simple::NeighborhoodConnectedImageFilter::AddSeed</a></div><div class="ttdeci">Self &amp; AddSeed(std::vector&lt; unsigned int &gt; idx)</div><div class="ttdef"><b>Definition:</b> <a href="sitkNeighborhoodConnectedImageFilter_8h_source.html#l00128">sitkNeighborhoodConnectedImageFilter.h:128</a></div></div>
 <div class="ttc" id="anamespaceitk_1_1simple_html"><div class="ttname"><a href="namespaceitk_1_1simple.html">itk::simple</a></div><div class="ttdef"><b>Definition:</b> <a href="sitkAdditionalProcedures_8h_source.html#l00029">sitkAdditionalProcedures.h:29</a></div></div>
 <div class="ttc" id="aclassitk_1_1simple_1_1NeighborhoodConnectedImageFilter_html_a8d8381deede49d7a002da72c826788ed"><div class="ttname"><a href="classitk_1_1simple_1_1NeighborhoodConnectedImageFilter.html#a8d8381deede49d7a002da72c826788ed">itk::simple::NeighborhoodConnectedImageFilter::SetUpper</a></div><div class="ttdeci">Self &amp; SetUpper(double Upper)</div><div class="ttdef"><b>Definition:</b> <a href="sitkNeighborhoodConnectedImageFilter_8h_source.html#l00071">sitkNeighborhoodConnectedImageFilter.h:71</a></div></div>
 <div class="ttc" id="asitkNeighborhoodConnectedImageFilter_8h_html"><div class="ttname"><a href="sitkNeighborhoodConnectedImageFilter_8h.html">sitkNeighborhoodConnectedImageFilter.h</a></div></div>
 <div class="ttc" id="aclassitk_1_1simple_1_1ImageFileWriter_html"><div class="ttname"><a href="classitk_1_1simple_1_1ImageFileWriter.html">itk::simple::ImageFileWriter</a></div><div class="ttdoc">Write out a SimpleITK image to the specified file location.</div><div class="ttdef"><b>Definition:</b> <a href="sitkImageFileWriter_8h_source.html#l00048">sitkImageFileWriter.h:48</a></div></div>
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Apr 24 2020 02:50:48 for SimpleITK by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Apr 30 2020 02:48:30 for SimpleITK by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

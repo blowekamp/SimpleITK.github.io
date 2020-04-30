@@ -26,7 +26,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">SimpleITK
-   &#160;<span id="projectnumber">2.0.0rc1.post173</span>
+   &#160;<span id="projectnumber">2.0.0rc1.post177</span>
    </div>
   </td>
  </tr>
@@ -113,10 +113,10 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a52682d7527bd44364ec66a03a787c442"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2529b1b363de15abfd529ac2e58c025f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classitk_1_1simple_1_1ImageFilter.html#a425df9cfde5122a435e1eedd6086480b">Self</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1MirrorPadImageFilter.html#a2529b1b363de15abfd529ac2e58c025f">SetDecayBase</a> (double DecayBase)</td></tr>
 <tr class="separator:a2529b1b363de15abfd529ac2e58c025f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4cbd5e323ef026e6d75911a3c8ff082c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classitk_1_1simple_1_1ImageFilter.html#a425df9cfde5122a435e1eedd6086480b">Self</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1MirrorPadImageFilter.html#a4cbd5e323ef026e6d75911a3c8ff082c">SetPadLowerBound</a> (const std::vector&lt; unsigned int &gt; &amp;PadLowerBound)</td></tr>
-<tr class="separator:a4cbd5e323ef026e6d75911a3c8ff082c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5bbd5e665fa56ef889a0c2e1d4b6e6f9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classitk_1_1simple_1_1ImageFilter.html#a425df9cfde5122a435e1eedd6086480b">Self</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1MirrorPadImageFilter.html#a5bbd5e665fa56ef889a0c2e1d4b6e6f9">SetPadUpperBound</a> (const std::vector&lt; unsigned int &gt; &amp;PadUpperBound)</td></tr>
-<tr class="separator:a5bbd5e665fa56ef889a0c2e1d4b6e6f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac49c9bc4019c5943a3f3660f1e4096db"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classitk_1_1simple_1_1ImageFilter.html#a425df9cfde5122a435e1eedd6086480b">Self</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1MirrorPadImageFilter.html#ac49c9bc4019c5943a3f3660f1e4096db">SetPadLowerBound</a> (std::vector&lt; unsigned int &gt; PadLowerBound)</td></tr>
+<tr class="separator:ac49c9bc4019c5943a3f3660f1e4096db"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a115f8df14ecf83f7db90b3c7713006cd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classitk_1_1simple_1_1ImageFilter.html#a425df9cfde5122a435e1eedd6086480b">Self</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1MirrorPadImageFilter.html#a115f8df14ecf83f7db90b3c7713006cd">SetPadUpperBound</a> (std::vector&lt; unsigned int &gt; PadUpperBound)</td></tr>
+<tr class="separator:a115f8df14ecf83f7db90b3c7713006cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abeac02455f1fa4a76450cf4b45eaf1f5"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1MirrorPadImageFilter.html#abeac02455f1fa4a76450cf4b45eaf1f5">ToString</a> () const</td></tr>
 <tr class="separator:abeac02455f1fa4a76450cf4b45eaf1f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af43ffb8d2b7443f3f35c4ecc22e1debd"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1MirrorPadImageFilter.html#af43ffb8d2b7443f3f35c4ecc22e1debd">~MirrorPadImageFilter</a> ()</td></tr>
@@ -284,7 +284,7 @@ Additional Inherited Members</h2></td></tr>
 <p>Exponential decay in the bounds is enabled when DecayBase has to be in the range (0.0, 1.0]. When it is 1.0 it is disabled. The decay rate is based on the Manhattan distance.</p>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="classitk_1_1simple_1_1WrapPadImageFilter.html" title="Increase the image size by padding with replicants of the input image value.">WrapPadImageFilter</a> , <a class="el" href="classitk_1_1simple_1_1ConstantPadImageFilter.html" title="Increase the image size by padding with a constant value.">ConstantPadImageFilter</a> </dd>
 <dd>
-<a class="el" href="namespaceitk_1_1simple.html#a00dac9751225a04f47c3ec60bf64a5a5" title="Increase the image size by padding with replicants of the input image value.">itk::simple::MirrorPad</a> for the procedural interface </dd>
+<a class="el" href="namespaceitk_1_1simple.html#a985c0c8e1c4cbf5d17457157dc79e9f4" title="Increase the image size by padding with replicants of the input image value.">itk::simple::MirrorPad</a> for the procedural interface </dd>
 <dd>
 <a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1MirrorPadImageFilter.html">itk::MirrorPadImageFilter</a> for the Doxygen on the original ITK class. </dd></dl>
 
@@ -582,8 +582,8 @@ template&lt;class TImageType &gt; </div>
 
 </div>
 </div>
-<a id="a4cbd5e323ef026e6d75911a3c8ff082c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4cbd5e323ef026e6d75911a3c8ff082c">&#9670;&nbsp;</a></span>SetPadLowerBound()</h2>
+<a id="ac49c9bc4019c5943a3f3660f1e4096db"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac49c9bc4019c5943a3f3660f1e4096db">&#9670;&nbsp;</a></span>SetPadLowerBound()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -594,7 +594,7 @@ template&lt;class TImageType &gt; </div>
         <tr>
           <td class="memname"><a class="el" href="classitk_1_1simple_1_1ImageFilter.html#a425df9cfde5122a435e1eedd6086480b">Self</a>&amp; itk::simple::MirrorPadImageFilter::SetPadLowerBound </td>
           <td>(</td>
-          <td class="paramtype">const std::vector&lt; unsigned int &gt; &amp;&#160;</td>
+          <td class="paramtype">std::vector&lt; unsigned int &gt;&#160;</td>
           <td class="paramname"><em>PadLowerBound</em></td><td>)</td>
           <td></td>
         </tr>
@@ -610,8 +610,8 @@ template&lt;class TImageType &gt; </div>
 
 </div>
 </div>
-<a id="a5bbd5e665fa56ef889a0c2e1d4b6e6f9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5bbd5e665fa56ef889a0c2e1d4b6e6f9">&#9670;&nbsp;</a></span>SetPadUpperBound()</h2>
+<a id="a115f8df14ecf83f7db90b3c7713006cd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a115f8df14ecf83f7db90b3c7713006cd">&#9670;&nbsp;</a></span>SetPadUpperBound()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -622,7 +622,7 @@ template&lt;class TImageType &gt; </div>
         <tr>
           <td class="memname"><a class="el" href="classitk_1_1simple_1_1ImageFilter.html#a425df9cfde5122a435e1eedd6086480b">Self</a>&amp; itk::simple::MirrorPadImageFilter::SetPadUpperBound </td>
           <td>(</td>
-          <td class="paramtype">const std::vector&lt; unsigned int &gt; &amp;&#160;</td>
+          <td class="paramtype">std::vector&lt; unsigned int &gt;&#160;</td>
           <td class="paramname"><em>PadUpperBound</em></td><td>)</td>
           <td></td>
         </tr>
@@ -794,7 +794,7 @@ template&lt;class TImageType &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Apr 24 2020 02:51:15 for SimpleITK by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Apr 30 2020 02:48:54 for SimpleITK by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

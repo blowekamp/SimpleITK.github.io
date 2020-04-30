@@ -26,7 +26,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">SimpleITK
-   &#160;<span id="projectnumber">2.0.0rc1.post173</span>
+   &#160;<span id="projectnumber">2.0.0rc1.post177</span>
    </div>
   </td>
  </tr>
@@ -107,8 +107,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:acf67a1da171b0fe8ef1f6dfd96ee55a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0f6489b4300b046176d0f217db686ac1"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1CheckerBoardImageFilter.html#a0f6489b4300b046176d0f217db686ac1">GetName</a> () const</td></tr>
 <tr class="separator:a0f6489b4300b046176d0f217db686ac1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abd4bb51bd78d42a4764abdbcb03a0e38"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classitk_1_1simple_1_1ImageFilter.html#a425df9cfde5122a435e1eedd6086480b">Self</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1CheckerBoardImageFilter.html#abd4bb51bd78d42a4764abdbcb03a0e38">SetCheckerPattern</a> (const std::vector&lt; <a class="elRef" href="https://www.itk.org/Doxygen/html/namespaceitk.html#a575b8e3e1ee797dd1bbaf9724ed68f92">uint32_t</a> &gt; &amp;CheckerPattern)</td></tr>
-<tr class="separator:abd4bb51bd78d42a4764abdbcb03a0e38"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3fce7cc40d6509edf35becfb1965ebf4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classitk_1_1simple_1_1ImageFilter.html#a425df9cfde5122a435e1eedd6086480b">Self</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1CheckerBoardImageFilter.html#a3fce7cc40d6509edf35becfb1965ebf4">SetCheckerPattern</a> (std::vector&lt; <a class="elRef" href="https://www.itk.org/Doxygen/html/namespaceitk.html#a575b8e3e1ee797dd1bbaf9724ed68f92">uint32_t</a> &gt; CheckerPattern)</td></tr>
+<tr class="separator:a3fce7cc40d6509edf35becfb1965ebf4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a44b40046a1134321d490bf9d08154b3e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classitk_1_1simple_1_1ImageFilter.html#a425df9cfde5122a435e1eedd6086480b">Self</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1CheckerBoardImageFilter.html#a44b40046a1134321d490bf9d08154b3e">SetCheckerPattern</a> (<a class="elRef" href="https://www.itk.org/Doxygen/html/namespaceitk.html#a575b8e3e1ee797dd1bbaf9724ed68f92">uint32_t</a> value)</td></tr>
 <tr class="separator:a44b40046a1134321d490bf9d08154b3e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a13891238f4c2880ac27d10a0493b3c43"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1CheckerBoardImageFilter.html#a13891238f4c2880ac27d10a0493b3c43">ToString</a> () const</td></tr>
@@ -269,7 +269,7 @@ Additional Inherited Members</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Combines two images in a checkerboard pattern. </p>
 <p><a class="el" href="classitk_1_1simple_1_1CheckerBoardImageFilter.html" title="Combines two images in a checkerboard pattern.">CheckerBoardImageFilter</a> takes two input images that must have the same dimension, size, origin and spacing and produces an output image of the same size by combining the pixels from the two input images in a checkerboard pattern. This filter is commonly used for visually comparing two images, in particular for evaluating the results of an image registration process.</p>
-<p>This filter is implemented as a multithreaded filter. It provides a DynamicThreadedGenerateData() method for its implementation. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="namespaceitk_1_1simple.html#a8ba0ff305d8a4b88aa9d211609d3ba5b" title="Combines two images in a checkerboard pattern.">itk::simple::CheckerBoard</a> for the procedural interface </dd>
+<p>This filter is implemented as a multithreaded filter. It provides a DynamicThreadedGenerateData() method for its implementation. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="namespaceitk_1_1simple.html#afd3b56dbbf02dfaac4fcf0f245f3b696" title="Combines two images in a checkerboard pattern.">itk::simple::CheckerBoard</a> for the procedural interface </dd>
 <dd>
 <a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1CheckerBoardImageFilter.html">itk::CheckerBoardImageFilter</a> for the Doxygen on the original ITK class. </dd></dl>
 
@@ -504,8 +504,8 @@ template&lt;class TImageType &gt; </div>
 
 </div>
 </div>
-<a id="abd4bb51bd78d42a4764abdbcb03a0e38"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abd4bb51bd78d42a4764abdbcb03a0e38">&#9670;&nbsp;</a></span>SetCheckerPattern() <span class="overload">[1/2]</span></h2>
+<a id="a3fce7cc40d6509edf35becfb1965ebf4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3fce7cc40d6509edf35becfb1965ebf4">&#9670;&nbsp;</a></span>SetCheckerPattern() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -516,7 +516,7 @@ template&lt;class TImageType &gt; </div>
         <tr>
           <td class="memname"><a class="el" href="classitk_1_1simple_1_1ImageFilter.html#a425df9cfde5122a435e1eedd6086480b">Self</a>&amp; itk::simple::CheckerBoardImageFilter::SetCheckerPattern </td>
           <td>(</td>
-          <td class="paramtype">const std::vector&lt; <a class="elRef" href="https://www.itk.org/Doxygen/html/namespaceitk.html#a575b8e3e1ee797dd1bbaf9724ed68f92">uint32_t</a> &gt; &amp;&#160;</td>
+          <td class="paramtype">std::vector&lt; <a class="elRef" href="https://www.itk.org/Doxygen/html/namespaceitk.html#a575b8e3e1ee797dd1bbaf9724ed68f92">uint32_t</a> &gt;&#160;</td>
           <td class="paramname"><em>CheckerPattern</em></td><td>)</td>
           <td></td>
         </tr>
@@ -670,7 +670,7 @@ template&lt;class TImageType &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Apr 24 2020 02:51:10 for SimpleITK by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Apr 30 2020 02:48:50 for SimpleITK by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

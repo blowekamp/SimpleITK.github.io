@@ -26,7 +26,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">SimpleITK
-   &#160;<span id="projectnumber">2.0.0rc1.post173</span>
+   &#160;<span id="projectnumber">2.0.0rc1.post177</span>
    </div>
   </td>
  </tr>
@@ -136,8 +136,8 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a28f52432617de761ad2066809dbca8a9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classitk_1_1simple_1_1ImageFilter.html#a425df9cfde5122a435e1eedd6086480b">Self</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1SLICImageFilter.html#a28f52432617de761ad2066809dbca8a9">SetSpatialProximityWeight</a> (double SpatialProximityWeight)</td></tr>
 <tr class="memdesc:a28f52432617de761ad2066809dbca8a9"><td class="mdescLeft">&#160;</td><td class="mdescRight">The spatial weight for the distance function. Increasing this value makes the superpixel shape more regular, but more varied in image values. The range of the pixel values and image dimension can effect the appropriate value.  <a href="classitk_1_1simple_1_1SLICImageFilter.html#a28f52432617de761ad2066809dbca8a9">More...</a><br /></td></tr>
 <tr class="separator:a28f52432617de761ad2066809dbca8a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a52f681eb297a10908c062e3d737723df"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classitk_1_1simple_1_1ImageFilter.html#a425df9cfde5122a435e1eedd6086480b">Self</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1SLICImageFilter.html#a52f681eb297a10908c062e3d737723df">SetSuperGridSize</a> (const std::vector&lt; unsigned int &gt; &amp;SuperGridSize)</td></tr>
-<tr class="separator:a52f681eb297a10908c062e3d737723df"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a45b12754d78bf58c6a6caf52cd1852a3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classitk_1_1simple_1_1ImageFilter.html#a425df9cfde5122a435e1eedd6086480b">Self</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1SLICImageFilter.html#a45b12754d78bf58c6a6caf52cd1852a3">SetSuperGridSize</a> (std::vector&lt; unsigned int &gt; SuperGridSize)</td></tr>
+<tr class="separator:a45b12754d78bf58c6a6caf52cd1852a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2761d23898b11fd5f0114067b94adb71"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1SLICImageFilter.html#a2761d23898b11fd5f0114067b94adb71">SLICImageFilter</a> ()</td></tr>
 <tr class="separator:a2761d23898b11fd5f0114067b94adb71"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab22847a97df50e0049c0e149d92a0d13"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1SLICImageFilter.html#ab22847a97df50e0049c0e149d92a0d13">ToString</a> () const</td></tr>
@@ -314,7 +314,7 @@ Additional Inherited Members</h2></td></tr>
 <p>The distance between a pixel and a cluster is the sum of squares of the difference between their joint range and domains ( index and value ). The computation is done in index space with scales provided by the SpatialProximityWeight parameters.</p>
 <p>The output is a label image with each label representing a superpixel cluster. Every pixel in the output is labeled, and the starting label id is zero.</p>
 <p>This code was contributed in the Insight Journal paper: "Scalable Simple Linear Iterative Clustering (SSLIC) Using a
-Generic and Parallel Approach" by Lowekamp B. C., Chen D. T., Yaniv Z., Yoo T. S. <a href="https://hdl.handle.net/1926/3596">https://hdl.handle.net/1926/3596</a> </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="namespaceitk_1_1simple.html#a98f7004b11762df8123df920781087c1" title="Simple Linear Iterative Clustering (SLIC) super-pixel segmentation.">itk::simple::SLIC</a> for the procedural interface </dd>
+Generic and Parallel Approach" by Lowekamp B. C., Chen D. T., Yaniv Z., Yoo T. S. <a href="https://hdl.handle.net/1926/3596">https://hdl.handle.net/1926/3596</a> </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="namespaceitk_1_1simple.html#aae628fab608d59771a8e075247ed22dd" title="Simple Linear Iterative Clustering (SLIC) super-pixel segmentation.">itk::simple::SLIC</a> for the procedural interface </dd>
 <dd>
 <a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1SLICImageFilter.html">itk::SLICImageFilter</a> for the Doxygen on the original ITK class. </dd></dl>
 
@@ -896,8 +896,8 @@ template&lt;class TImageType &gt; </div>
 
 </div>
 </div>
-<a id="a52f681eb297a10908c062e3d737723df"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a52f681eb297a10908c062e3d737723df">&#9670;&nbsp;</a></span>SetSuperGridSize()</h2>
+<a id="a45b12754d78bf58c6a6caf52cd1852a3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a45b12754d78bf58c6a6caf52cd1852a3">&#9670;&nbsp;</a></span>SetSuperGridSize()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -908,7 +908,7 @@ template&lt;class TImageType &gt; </div>
         <tr>
           <td class="memname"><a class="el" href="classitk_1_1simple_1_1ImageFilter.html#a425df9cfde5122a435e1eedd6086480b">Self</a>&amp; itk::simple::SLICImageFilter::SetSuperGridSize </td>
           <td>(</td>
-          <td class="paramtype">const std::vector&lt; unsigned int &gt; &amp;&#160;</td>
+          <td class="paramtype">std::vector&lt; unsigned int &gt;&#160;</td>
           <td class="paramname"><em>SuperGridSize</em></td><td>)</td>
           <td></td>
         </tr>
@@ -1176,7 +1176,7 @@ template&lt;class TImageType &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Apr 24 2020 02:51:17 for SimpleITK by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Apr 30 2020 02:48:55 for SimpleITK by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

@@ -26,7 +26,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">SimpleITK
-   &#160;<span id="projectnumber">2.0.0rc1.post173</span>
+   &#160;<span id="projectnumber">2.0.0rc1.post177</span>
    </div>
   </td>
  </tr>
@@ -92,7 +92,7 @@ $(function() {
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="comment"># Threshold the value [0,2), results in values inside the range 1, 0 otherwise</span></div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;boundary = <a class="code" href="namespaceitk_1_1simple.html#a9422e1bef3de9588cc00f94666cff7b7">sitk.BinaryThreshold</a>( image, 0, upperThreshold, 1, 0 )</div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160; </div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;boundary = <a class="code" href="namespaceitk_1_1simple.html#a91054497addaaaf726ae03276a1d9f16">sitk.BinaryMorphologicalClosing</a>( boundary, [1]*image.GetDimension() )</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;boundary = <a class="code" href="namespaceitk_1_1simple.html#a37461020f4b83ab083d010ba3b641ede">sitk.BinaryMorphologicalClosing</a>( boundary, [1]*image.GetDimension() )</div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160; </div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="comment"># Remove any label pixel not connected to the boarder</span></div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;boundary = <a class="code" href="namespaceitk_1_1simple.html#a57affa9aef810811b3a078f64a98ca98">sitk.BinaryGrindPeak</a>( boundary )</div>
@@ -117,11 +117,11 @@ $(function() {
 <div class="ttc" id="anamespaceitk_1_1simple_html_a86cb9e226d455efca3ba034dc2154605"><div class="ttname"><a href="namespaceitk_1_1simple.html#a86cb9e226d455efca3ba034dc2154605">itk::simple::Show</a></div><div class="ttdeci">void SITKIO_EXPORT Show(const Image &amp;image, const std::string &amp;title=&quot;&quot;, const bool debugOn=ProcessObject::GetGlobalDefaultDebug())</div></div>
 <div class="ttc" id="anamespaceitk_1_1simple_html_a57affa9aef810811b3a078f64a98ca98"><div class="ttname"><a href="namespaceitk_1_1simple.html#a57affa9aef810811b3a078f64a98ca98">itk::simple::BinaryGrindPeak</a></div><div class="ttdeci">Image BinaryGrindPeak(const Image &amp;image1, bool fullyConnected=false, double foregroundValue=1.0, double backgroundValue=0)</div><div class="ttdoc">Remove the objects not connected to the boundary of the image.</div></div>
 <div class="ttc" id="anamespaceitk_1_1simple_html_a62a1be75703e22b14339e6409858ab61"><div class="ttname"><a href="namespaceitk_1_1simple.html#a62a1be75703e22b14339e6409858ab61">itk::simple::ReadImage</a></div><div class="ttdeci">SITKIO_EXPORT Image ReadImage(const std::vector&lt; std::string &gt; &amp;fileNames, PixelIDValueEnum outputPixelType=sitkUnknown, const std::string &amp;imageIO=&quot;&quot;)</div><div class="ttdoc">ReadImage is a procedural interface to the ImageSeriesReader class which is convenient for most image...</div></div>
+<div class="ttc" id="anamespaceitk_1_1simple_html_a37461020f4b83ab083d010ba3b641ede"><div class="ttname"><a href="namespaceitk_1_1simple.html#a37461020f4b83ab083d010ba3b641ede">itk::simple::BinaryMorphologicalClosing</a></div><div class="ttdeci">Image BinaryMorphologicalClosing(const Image &amp;image1, std::vector&lt; unsigned int &gt; kernelRadius=std::vector&lt; uint32_t &gt;(3, 1), KernelEnum kernelType=itk::simple::sitkBall, double foregroundValue=1.0, bool safeBorder=true)</div><div class="ttdoc">binary morphological closing of an image.</div></div>
 <div class="ttc" id="anamespaceitk_1_1simple_html_af8c9d7cc96a299a05890e9c3db911885"><div class="ttname"><a href="namespaceitk_1_1simple.html#af8c9d7cc96a299a05890e9c3db911885">itk::simple::Cast</a></div><div class="ttdeci">Image Cast(const Image &amp;image, PixelIDValueEnum pixelID)</div></div>
-<div class="ttc" id="anamespaceitk_1_1simple_html_a91054497addaaaf726ae03276a1d9f16"><div class="ttname"><a href="namespaceitk_1_1simple.html#a91054497addaaaf726ae03276a1d9f16">itk::simple::BinaryMorphologicalClosing</a></div><div class="ttdeci">Image BinaryMorphologicalClosing(const Image &amp;image1, const std::vector&lt; unsigned int &gt; &amp;kernelRadius=std::vector&lt; uint32_t &gt;(3, 1), KernelEnum kernelType=itk::simple::sitkBall, double foregroundValue=1.0, bool safeBorder=true)</div><div class="ttdoc">binary morphological closing of an image.</div></div>
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Apr 24 2020 02:50:48 for SimpleITK by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Apr 30 2020 02:48:30 for SimpleITK by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

@@ -26,7 +26,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">SimpleITK
-   &#160;<span id="projectnumber">2.0.0rc1.post173</span>
+   &#160;<span id="projectnumber">2.0.0rc1.post177</span>
    </div>
   </td>
  </tr>
@@ -90,8 +90,8 @@ $(function() {
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    maskImage = <a class="code" href="namespaceitk_1_1simple.html#abd8938530991f8e4b5bd819b8432ef54">sitk.OtsuThreshold</a>( inputImage, 0, 1, 200 )</div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160; </div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="keywordflow">if</span> len ( sys.argv ) &gt; 3:</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    inputImage = <a class="code" href="namespaceitk_1_1simple.html#a29427b8c42fbef013f5e08cb47676d7d">sitk.Shrink</a>( inputImage, [ int(sys.argv[3]) ] * inputImage.GetDimension() )</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    maskImage = <a class="code" href="namespaceitk_1_1simple.html#a29427b8c42fbef013f5e08cb47676d7d">sitk.Shrink</a>( maskImage, [ int(sys.argv[3]) ] * inputImage.GetDimension() )</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    inputImage = <a class="code" href="namespaceitk_1_1simple.html#aaca314de51c97b118c0d6c356dd98efa">sitk.Shrink</a>( inputImage, [ int(sys.argv[3]) ] * inputImage.GetDimension() )</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    maskImage = <a class="code" href="namespaceitk_1_1simple.html#aaca314de51c97b118c0d6c356dd98efa">sitk.Shrink</a>( maskImage, [ int(sys.argv[3]) ] * inputImage.GetDimension() )</div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160; </div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;inputImage = <a class="code" href="namespaceitk_1_1simple.html#af8c9d7cc96a299a05890e9c3db911885">sitk.Cast</a>( inputImage, sitk.sitkFloat32 )</div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160; </div>
@@ -119,11 +119,11 @@ $(function() {
 <div class="ttc" id="anamespaceitk_1_1simple_html_a86cb9e226d455efca3ba034dc2154605"><div class="ttname"><a href="namespaceitk_1_1simple.html#a86cb9e226d455efca3ba034dc2154605">itk::simple::Show</a></div><div class="ttdeci">void SITKIO_EXPORT Show(const Image &amp;image, const std::string &amp;title=&quot;&quot;, const bool debugOn=ProcessObject::GetGlobalDefaultDebug())</div></div>
 <div class="ttc" id="anamespaceitk_1_1simple_html_a62a1be75703e22b14339e6409858ab61"><div class="ttname"><a href="namespaceitk_1_1simple.html#a62a1be75703e22b14339e6409858ab61">itk::simple::ReadImage</a></div><div class="ttdeci">SITKIO_EXPORT Image ReadImage(const std::vector&lt; std::string &gt; &amp;fileNames, PixelIDValueEnum outputPixelType=sitkUnknown, const std::string &amp;imageIO=&quot;&quot;)</div><div class="ttdoc">ReadImage is a procedural interface to the ImageSeriesReader class which is convenient for most image...</div></div>
 <div class="ttc" id="aclassitk_1_1simple_1_1N4BiasFieldCorrectionImageFilter_html"><div class="ttname"><a href="classitk_1_1simple_1_1N4BiasFieldCorrectionImageFilter.html">itk::simple::N4BiasFieldCorrectionImageFilter</a></div><div class="ttdoc">Implementation of the N4 bias field correction algorithm.</div><div class="ttdef"><b>Definition:</b> <a href="sitkN4BiasFieldCorrectionImageFilter_8h_source.html#l00074">sitkN4BiasFieldCorrectionImageFilter.h:74</a></div></div>
+<div class="ttc" id="anamespaceitk_1_1simple_html_aaca314de51c97b118c0d6c356dd98efa"><div class="ttname"><a href="namespaceitk_1_1simple.html#aaca314de51c97b118c0d6c356dd98efa">itk::simple::Shrink</a></div><div class="ttdeci">Image Shrink(const Image &amp;image1, std::vector&lt; unsigned int &gt; shrinkFactors=std::vector&lt; unsigned int &gt;(3, 1))</div><div class="ttdoc">Reduce the size of an image by an integer factor in each dimension.</div></div>
 <div class="ttc" id="anamespaceitk_1_1simple_html_af8c9d7cc96a299a05890e9c3db911885"><div class="ttname"><a href="namespaceitk_1_1simple.html#af8c9d7cc96a299a05890e9c3db911885">itk::simple::Cast</a></div><div class="ttdeci">Image Cast(const Image &amp;image, PixelIDValueEnum pixelID)</div></div>
-<div class="ttc" id="anamespaceitk_1_1simple_html_a29427b8c42fbef013f5e08cb47676d7d"><div class="ttname"><a href="namespaceitk_1_1simple.html#a29427b8c42fbef013f5e08cb47676d7d">itk::simple::Shrink</a></div><div class="ttdeci">Image Shrink(const Image &amp;image1, const std::vector&lt; unsigned int &gt; &amp;shrinkFactors=std::vector&lt; unsigned int &gt;(3, 1))</div><div class="ttdoc">Reduce the size of an image by an integer factor in each dimension.</div></div>
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Apr 24 2020 02:50:48 for SimpleITK by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Apr 30 2020 02:48:30 for SimpleITK by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>
