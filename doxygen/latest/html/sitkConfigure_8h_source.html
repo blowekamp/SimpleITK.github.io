@@ -26,7 +26,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">SimpleITK
-   &#160;<span id="projectnumber">2.0.0rc1.post184</span>
+   &#160;<span id="projectnumber">2.0.0rc1.post193</span>
    </div>
   </td>
  </tr>
@@ -83,26 +83,27 @@ $(function() {
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="comment">/* #undef SITK_SimpleITKExplit_STATIC */</span></div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160; </div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="comment">// defined if compiler supports using template keyword to disambiguate</span></div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="comment">// dependent names</span></div>
-<div class="line"><a name="l00032"></a><span class="lineno"><a class="line" href="sitkConfigure_8h.html#ab7e6f09f229658c493bd78f1adeef2e0">   32</a></span>&#160;<span class="preprocessor">#define SITK_HAS_TEMPLATE_DISAMBIGUATOR_DEPENDENT_NAME</span></div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160; </div>
-<div class="line"><a name="l00034"></a><span class="lineno"><a class="line" href="sitkConfigure_8h.html#a39fd386f1ea91e74909284488b8aac01">   34</a></span>&#160;<span class="preprocessor">#define SITK_INT64_PIXELIDS</span></div>
-<div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="sitkConfigure_8h.html#a2022a51173ccf8ad34454c85a1a1b7b3">   35</a></span>&#160;<span class="preprocessor">#define SITK_4D_IMAGES</span></div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160; </div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="comment">/* #undef SITK_EXPLICIT_INSTANTIATION */</span></div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160; </div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="comment">// Include ITK version reported in CMake with SITK prefix, so that</span></div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="comment">// SimpleITK doesn&#39;t need ITK header in our headers.</span></div>
-<div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="sitkConfigure_8h.html#abe8f677016fb03fc96078db291608377">   41</a></span>&#160;<span class="preprocessor">#define SITK_ITK_VERSION_MAJOR 5</span></div>
-<div class="line"><a name="l00042"></a><span class="lineno"><a class="line" href="sitkConfigure_8h.html#ac1b2b36299dc2c9ebcaafe2d6519a576">   42</a></span>&#160;<span class="preprocessor">#define SITK_ITK_VERSION_MINOR 2</span></div>
-<div class="line"><a name="l00043"></a><span class="lineno"><a class="line" href="sitkConfigure_8h.html#a450174e078818d62a430ff77c70ddf29">   43</a></span>&#160;<span class="preprocessor">#define SITK_ITK_VERSION_PATCH 0</span></div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160; </div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="preprocessor">#endif // sitkConfigure_h</span></div>
+<div class="line"><a name="l00030"></a><span class="lineno"><a class="line" href="sitkConfigure_8h.html#aede15605722ddda23926e91409b05e52">   30</a></span>&#160;<span class="preprocessor">#define SITK_MAX_DIMENSION 4</span></div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160; </div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="comment">// defined if compiler supports using template keyword to disambiguate</span></div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="comment">// dependent names</span></div>
+<div class="line"><a name="l00034"></a><span class="lineno"><a class="line" href="sitkConfigure_8h.html#ab7e6f09f229658c493bd78f1adeef2e0">   34</a></span>&#160;<span class="preprocessor">#define SITK_HAS_TEMPLATE_DISAMBIGUATOR_DEPENDENT_NAME</span></div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160; </div>
+<div class="line"><a name="l00036"></a><span class="lineno"><a class="line" href="sitkConfigure_8h.html#a39fd386f1ea91e74909284488b8aac01">   36</a></span>&#160;<span class="preprocessor">#define SITK_INT64_PIXELIDS</span></div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160; </div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="comment">/* #undef SITK_EXPLICIT_INSTANTIATION */</span></div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160; </div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="comment">// Include ITK version reported in CMake with SITK prefix, so that</span></div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="comment">// SimpleITK doesn&#39;t need ITK header in our headers.</span></div>
+<div class="line"><a name="l00042"></a><span class="lineno"><a class="line" href="sitkConfigure_8h.html#abe8f677016fb03fc96078db291608377">   42</a></span>&#160;<span class="preprocessor">#define SITK_ITK_VERSION_MAJOR 5</span></div>
+<div class="line"><a name="l00043"></a><span class="lineno"><a class="line" href="sitkConfigure_8h.html#ac1b2b36299dc2c9ebcaafe2d6519a576">   43</a></span>&#160;<span class="preprocessor">#define SITK_ITK_VERSION_MINOR 2</span></div>
+<div class="line"><a name="l00044"></a><span class="lineno"><a class="line" href="sitkConfigure_8h.html#a450174e078818d62a430ff77c70ddf29">   44</a></span>&#160;<span class="preprocessor">#define SITK_ITK_VERSION_PATCH 0</span></div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160; </div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="preprocessor">#endif // sitkConfigure_h</span></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat May 2 2020 02:51:07 for SimpleITK by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed May 6 2020 02:52:27 for SimpleITK by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

@@ -26,7 +26,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">SimpleITK
-   &#160;<span id="projectnumber">2.0.0rc1.post184</span>
+   &#160;<span id="projectnumber">2.0.0rc1.post193</span>
    </div>
   </td>
  </tr>
@@ -195,7 +195,7 @@ Private Attributes</h2></td></tr>
 <tr class="separator:ab73bda85bb2ea60192b51f9857de18bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abe8657d1327a6f3e43930bdbaa8d5061"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="classitk_1_1simple_1_1detail_1_1MemberFunctionFactory.html">detail::MemberFunctionFactory</a>&lt; <a class="el" href="classitk_1_1simple_1_1ExtractImageFilter.html#a4b322ca8f0f9390944609ff20a48bc1f">MemberFunctionType</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1ExtractImageFilter.html#abe8657d1327a6f3e43930bdbaa8d5061">m_MemberFactory</a></td></tr>
 <tr class="separator:abe8657d1327a6f3e43930bdbaa8d5061"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af5963d6ac1004d1ac775e2bbc313f8ab"><td class="memItemLeft" align="right" valign="top">std::vector&lt; unsigned int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1ExtractImageFilter.html#af5963d6ac1004d1ac775e2bbc313f8ab">m_Size</a> {std::vector&lt;unsigned int&gt;(4, 1)}</td></tr>
+<tr class="memitem:af5963d6ac1004d1ac775e2bbc313f8ab"><td class="memItemLeft" align="right" valign="top">std::vector&lt; unsigned int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1ExtractImageFilter.html#af5963d6ac1004d1ac775e2bbc313f8ab">m_Size</a> {std::vector&lt;unsigned int&gt;(<a class="el" href="sitkConfigure_8h.html#aede15605722ddda23926e91409b05e52">SITK_MAX_DIMENSION</a>, 1)}</td></tr>
 <tr class="separator:af5963d6ac1004d1ac775e2bbc313f8ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
@@ -302,7 +302,7 @@ Additional Inherited Members</h2></td></tr>
 <dl class="section note"><dt>Note</dt><dd>This filter is derived from <a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1InPlaceImageFilter.html">InPlaceImageFilter</a> . When the input to this filter matched the output requested region, like with streaming filter for input, then setting this filter to run in-place will result in no copying of the bulk pixel data.</dd></dl>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="classitk_1_1simple_1_1CropImageFilter.html" title="Decrease the image size by cropping the image by an itk::Size at both the upper and lower bounds of t...">CropImageFilter</a> </dd>
 <dd>
-<a class="el" href="namespaceitk_1_1simple.html#afa75b3d462a755f93ed77dba16d7b392" title="Decrease the image size by cropping the image to the selected region bounds.">itk::simple::Extract</a> for the procedural interface </dd>
+<a class="el" href="namespaceitk_1_1simple.html#a9488a2d18d3e3f48dbcc1ea3d945608e" title="Decrease the image size by cropping the image to the selected region bounds.">itk::simple::Extract</a> for the procedural interface </dd>
 <dd>
 <a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1ExtractImageFilter.html">itk::ExtractImageFilter</a>&lt;InputImageType, typename InputImageType::template Rebind for the Doxygen on the original ITK class. </dd></dl>
 
@@ -861,7 +861,7 @@ template&lt;class TImageType &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::vector&lt;unsigned int&gt; itk::simple::ExtractImageFilter::m_Size {std::vector&lt;unsigned int&gt;(4, 1)}</td>
+          <td class="memname">std::vector&lt;unsigned int&gt; itk::simple::ExtractImageFilter::m_Size {std::vector&lt;unsigned int&gt;(<a class="el" href="sitkConfigure_8h.html#aede15605722ddda23926e91409b05e52">SITK_MAX_DIMENSION</a>, 1)}</td>
         </tr>
       </table>
   </td>
@@ -881,7 +881,7 @@ template&lt;class TImageType &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat May 2 2020 02:51:31 for SimpleITK by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed May 6 2020 02:52:51 for SimpleITK by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>
