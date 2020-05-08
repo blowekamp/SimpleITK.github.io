@@ -26,7 +26,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">SimpleITK
-   &#160;<span id="projectnumber">2.0.0rc1.post195</span>
+   &#160;<span id="projectnumber">2.0.0rc1.post200</span>
    </div>
   </td>
  </tr>
@@ -52,7 +52,8 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
-<a href="#namespaces">Namespaces</a>  </div>
+<a href="#namespaces">Namespaces</a> &#124;
+<a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
 <div class="title">sitkMemberFunctionFactoryBase.h File Reference</div>  </div>
 </div><!--header-->
@@ -66,6 +67,7 @@ $(function() {
 <code>#include &quot;Ancillary/FunctionTraits.h&quot;</code><br />
 <code>#include &lt;unordered_map&gt;</code><br />
 <code>#include &lt;functional&gt;</code><br />
+<code>#include &lt;tuple&gt;</code><br />
 </div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Include dependency graph for sitkMemberFunctionFactoryBase.h:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
@@ -89,8 +91,9 @@ $(function() {
 Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structitk_1_1simple_1_1detail_1_1hash.html">itk::simple::detail::hash&lt; T &gt;</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structitk_1_1simple_1_1detail_1_1hash_3_01std_1_1pair_3_01int_00_01int_01_4_01_4.html">itk::simple::detail::hash&lt; std::pair&lt; int, int &gt; &gt;</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A specialization of the hash function.  <a href="structitk_1_1simple_1_1detail_1_1hash_3_01std_1_1pair_3_01int_00_01int_01_4_01_4.html#details">More...</a><br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structitk_1_1simple_1_1detail_1_1hash_3_01std_1_1pair_3_01S_00_01T_01_4_01_4.html">itk::simple::detail::hash&lt; std::pair&lt; S, T &gt; &gt;</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structitk_1_1simple_1_1detail_1_1hash_3_01std_1_1tuple_3_01TupleArgs_8_8_8_01_4_01_4.html">itk::simple::detail::hash&lt; std::tuple&lt; TupleArgs... &gt; &gt;</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1detail_1_1MemberFunctionFactoryBase.html">itk::simple::detail::MemberFunctionFactoryBase</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A base class for the <a class="el" href="classitk_1_1simple_1_1detail_1_1MemberFunctionFactory.html" title="A class used to instantiate and generate function object to templated member functions.">MemberFunctionFactory</a>.  <a href="classitk_1_1simple_1_1detail_1_1MemberFunctionFactoryBase.html#details">More...</a><br /></td></tr>
@@ -116,11 +119,17 @@ Namespaces</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:namespaceitk_1_1simple_1_1detail"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceitk_1_1simple_1_1detail.html">itk::simple::detail</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:ae1cd7202d95189e9bfb9059225e53e1c"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:ae1cd7202d95189e9bfb9059225e53e1c"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceitk_1_1simple_1_1detail.html#ae1cd7202d95189e9bfb9059225e53e1c">itk::simple::detail::hash_combine</a> (std::size_t &amp;seed, const T &amp;val)</td></tr>
+<tr class="separator:ae1cd7202d95189e9bfb9059225e53e1c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu May 7 2020 02:50:34 for SimpleITK by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri May 8 2020 02:50:52 for SimpleITK by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

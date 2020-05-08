@@ -26,7 +26,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">SimpleITK
-   &#160;<span id="projectnumber">2.0.0rc1.post195</span>
+   &#160;<span id="projectnumber">2.0.0rc1.post200</span>
    </div>
   </td>
  </tr>
@@ -87,12 +87,12 @@ $(function() {
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160; </div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> TMemberFunctionPo<span class="keywordtype">int</span>er&gt;</div>
 <div class="line"><a name="l00055"></a><span class="lineno"><a class="line" href="classitk_1_1simple_1_1detail_1_1MemberFunctionFactory.html">   55</a></span>&#160;<span class="keyword">class </span><a class="code" href="classitk_1_1simple_1_1detail_1_1MemberFunctionFactory.html">MemberFunctionFactory</a></div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;  : <span class="keyword">protected</span> <a class="code" href="classitk_1_1simple_1_1detail_1_1MemberFunctionFactoryBase.html">MemberFunctionFactoryBase</a>&lt;TMemberFunctionPointer, int&gt;</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;  : <span class="keyword">protected</span> <a class="code" href="classitk_1_1simple_1_1detail_1_1MemberFunctionFactoryBase.html">MemberFunctionFactoryBase</a>&lt;TMemberFunctionPointer, std::pair&lt;unsigned int, int&gt; &gt;</div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;{</div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160; </div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;<span class="keyword">public</span>:</div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160; </div>
-<div class="line"><a name="l00061"></a><span class="lineno"><a class="line" href="classitk_1_1simple_1_1detail_1_1MemberFunctionFactory.html#a3e39135963c29fd18f88fd8e9b1d6b0a">   61</a></span>&#160;  <span class="keyword">using</span> <a class="code" href="classitk_1_1simple_1_1detail_1_1MemberFunctionFactoryBase.html">Superclass</a> = <a class="code" href="classitk_1_1simple_1_1detail_1_1MemberFunctionFactoryBase.html">MemberFunctionFactoryBase&lt;TMemberFunctionPointer, int&gt;</a>;</div>
+<div class="line"><a name="l00061"></a><span class="lineno"><a class="line" href="classitk_1_1simple_1_1detail_1_1MemberFunctionFactory.html#ad8c6206a36103b9a2e8f77f643b40234">   61</a></span>&#160;  <span class="keyword">using</span> <a class="code" href="classitk_1_1simple_1_1detail_1_1MemberFunctionFactoryBase.html">Superclass</a> = <a class="code" href="classitk_1_1simple_1_1detail_1_1MemberFunctionFactoryBase.html">MemberFunctionFactoryBase&lt;TMemberFunctionPointer, std::pair&lt;unsigned int, int&gt;</a>&gt;;</div>
 <div class="line"><a name="l00062"></a><span class="lineno"><a class="line" href="classitk_1_1simple_1_1detail_1_1MemberFunctionFactory.html#ac5a38df978fb2d44e9c04db52b288ec9">   62</a></span>&#160;  <span class="keyword">using</span> <a class="code" href="classitk_1_1simple_1_1detail_1_1MemberFunctionFactory.html">Self</a> = <a class="code" href="classitk_1_1simple_1_1detail_1_1MemberFunctionFactory.html#a2a678fe2aead7cdc732ed934de47d70f">MemberFunctionFactory</a>;</div>
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160; </div>
 <div class="line"><a name="l00064"></a><span class="lineno"><a class="line" href="classitk_1_1simple_1_1detail_1_1MemberFunctionFactory.html#ac1966e20ec8d3f92671bf20f6395ff02">   64</a></span>&#160;  <span class="keyword">using</span> <a class="code" href="classitk_1_1simple_1_1detail_1_1MemberFunctionFactory.html#ac1966e20ec8d3f92671bf20f6395ff02">MemberFunctionType</a> = TMemberFunctionPointer;</div>
@@ -179,10 +179,10 @@ $(function() {
 <div class="ttc" id="aclassitk_1_1simple_1_1detail_1_1MemberFunctionFactory_html_ace50fcbec64583aa917a0d1a44a5efab"><div class="ttname"><a href="classitk_1_1simple_1_1detail_1_1MemberFunctionFactory.html#ace50fcbec64583aa917a0d1a44a5efab">itk::simple::detail::MemberFunctionFactory::RegisterMemberFunctions</a></div><div class="ttdeci">std::enable_if&lt;(VImageDimensionStop &gt; VImageDimension)&gt;::type RegisterMemberFunctions()</div><div class="ttdoc">Registers all member functions in TPixelIDTypeList and simple::InstantiatedPixelIDTypeList over itk::...</div><div class="ttdef"><b>Definition:</b> <a href="sitkMemberFunctionFactory_8h_source.html#l00144">sitkMemberFunctionFactory.h:144</a></div></div>
 <div class="ttc" id="anamespaceitk_1_1simple_html_ae47036246a9a1312411ce2fc6d296d1d"><div class="ttname"><a href="namespaceitk_1_1simple.html#ae47036246a9a1312411ce2fc6d296d1d">itk::simple::PixelIDValueType</a></div><div class="ttdeci">int PixelIDValueType</div><div class="ttdef"><b>Definition:</b> <a href="sitkPixelIDValues_8h_source.html#l00032">sitkPixelIDValues.h:32</a></div></div>
 <div class="ttc" id="aclassitk_1_1simple_1_1detail_1_1MemberFunctionFactory_html_a2a678fe2aead7cdc732ed934de47d70f"><div class="ttname"><a href="classitk_1_1simple_1_1detail_1_1MemberFunctionFactory.html#a2a678fe2aead7cdc732ed934de47d70f">itk::simple::detail::MemberFunctionFactory::MemberFunctionFactory</a></div><div class="ttdeci">MemberFunctionFactory(ObjectType *pObject)</div><div class="ttdoc">Constructor which permanently binds the constructed object to pObject.</div></div>
-<div class="ttc" id="aclassitk_1_1simple_1_1detail_1_1MemberFunctionFactoryBase_html"><div class="ttname"><a href="classitk_1_1simple_1_1detail_1_1MemberFunctionFactoryBase.html">itk::simple::detail::MemberFunctionFactoryBase</a></div><div class="ttdoc">A base class for the MemberFunctionFactory.</div><div class="ttdef"><b>Definition:</b> <a href="sitkMemberFunctionFactoryBase_8h_source.html#l00057">sitkMemberFunctionFactoryBase.h:57</a></div></div>
+<div class="ttc" id="aclassitk_1_1simple_1_1detail_1_1MemberFunctionFactoryBase_html"><div class="ttname"><a href="classitk_1_1simple_1_1detail_1_1MemberFunctionFactoryBase.html">itk::simple::detail::MemberFunctionFactoryBase</a></div><div class="ttdoc">A base class for the MemberFunctionFactory.</div><div class="ttdef"><b>Definition:</b> <a href="sitkMemberFunctionFactoryBase_8h_source.html#l00102">sitkMemberFunctionFactoryBase.h:102</a></div></div>
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu May 7 2020 02:50:32 for SimpleITK by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri May 8 2020 02:50:49 for SimpleITK by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>
