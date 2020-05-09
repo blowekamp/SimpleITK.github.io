@@ -46,7 +46,7 @@ if (edges && edges.length) {
         </defs>
 
 <script type="text/javascript">
-var viewWidth = 7599;
+var viewWidth = 7559;
 var viewHeight = 218;
 var sectionId = 'dynsection-1';
 </script>
@@ -54,13 +54,13 @@ var sectionId = 'dynsection-1';
 <svg id="graph" class="graph">
 <g id="viewport">
 <title>sitkProcessObject.h</title>
-<polygon fill="#ffffff" stroke="transparent" points="-4,4 -4,-214 7594.5,-214 7594.5,4 -4,4"/>
+<polygon fill="#ffffff" stroke="transparent" points="-4,4 -4,-214 7554.5,-214 7554.5,4 -4,4"/>
 <!-- Node1 -->
 <g id="node1" class="node">
 <title>Node1</title>
 <g id="a_node1"><a xlink:title=" ">
-<polygon fill="#bfbfbf" stroke="#000000" points="6780.5,-190.5 6780.5,-209.5 6893.5,-209.5 6893.5,-190.5 6780.5,-190.5"/>
-<text text-anchor="middle" x="6837" y="-197.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">sitkProcessObject.h</text>
+<polygon fill="#bfbfbf" stroke="#000000" points="6740.5,-190.5 6740.5,-209.5 6853.5,-209.5 6853.5,-190.5 6740.5,-190.5"/>
+<text text-anchor="middle" x="6797" y="-197.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">sitkProcessObject.h</text>
 </a>
 </g>
 </g>
@@ -68,168 +68,168 @@ var sectionId = 'dynsection-1';
 <g id="node2" class="node">
 <title>Node2</title>
 <g id="a_node2"><a xlink:href="sitkImageFilter_8h.html" target="_top" xlink:title=" ">
-<polygon fill="#ffffff" stroke="#ff0000" points="3107,-129 3107,-148 3205,-148 3205,-129 3107,-129"/>
-<text text-anchor="middle" x="3156" y="-136" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">sitkImageFilter.h</text>
+<polygon fill="#ffffff" stroke="#ff0000" points="3073,-129 3073,-148 3171,-148 3171,-129 3073,-129"/>
+<text text-anchor="middle" x="3122" y="-136" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">sitkImageFilter.h</text>
 </a>
 </g>
 </g>
 <!-- Node1&#45;&gt;Node2 -->
 <g id="edge1" class="edge">
 <title>Node1&#45;&gt;Node2</title>
-<path fill="none" stroke="#191970" d="M6770.1242,-198.8827C6308.7304,-191.174 3604.2613,-145.9893 3205.186,-139.3218"/>
-<polygon fill="#191970" stroke="#191970" points="6770.2296,-202.3848 6780.2867,-199.0525 6770.3466,-195.3858 6770.2296,-202.3848"/>
+<path fill="none" stroke="#191970" d="M6730.2332,-198.8827C6269.5915,-191.174 3569.5306,-145.9893 3171.1059,-139.3218"/>
+<polygon fill="#191970" stroke="#191970" points="6730.322,-202.3846 6740.3792,-199.0525 6730.4391,-195.3855 6730.322,-202.3846"/>
 </g>
 <!-- Node4 -->
 <g id="node4" class="node">
 <title>Node4</title>
 <g id="a_node4"><a xlink:href="SimpleITK_8h.html" target="_top" xlink:title=" ">
-<polygon fill="#ffffff" stroke="#000000" points="6598.5,-.5 6598.5,-19.5 6673.5,-19.5 6673.5,-.5 6598.5,-.5"/>
-<text text-anchor="middle" x="6636" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">SimpleITK.h</text>
+<polygon fill="#ffffff" stroke="#000000" points="6539.5,-.5 6539.5,-19.5 6614.5,-19.5 6614.5,-.5 6539.5,-.5"/>
+<text text-anchor="middle" x="6577" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">SimpleITK.h</text>
 </a>
 </g>
 </g>
 <!-- Node1&#45;&gt;Node4 -->
-<g id="edge51" class="edge">
+<g id="edge52" class="edge">
 <title>Node1&#45;&gt;Node4</title>
-<path fill="none" stroke="#191970" d="M6769.8334,-197.867C6652.3448,-193.4386 6419.5998,-181.2929 6395,-154 6385.7756,-143.7658 6386.2428,-133.6366 6395,-123 6447.9639,-58.6694 6508.5499,-131.5016 6579,-87 6605.5768,-70.2121 6623.9797,-36.243 6631.792,-19.6123"/>
-<polygon fill="#191970" stroke="#191970" points="6770.0253,-201.3764 6780.1474,-198.2471 6770.2831,-194.3811 6770.0253,-201.3764"/>
+<path fill="none" stroke="#191970" d="M6729.8334,-197.867C6612.3448,-193.4386 6379.5998,-181.2929 6355,-154 6345.7756,-143.7658 6346.2428,-133.6366 6355,-123 6407.9639,-58.6694 6472.8044,-137.6137 6539,-87 6561.382,-69.8866 6571.4278,-36.0726 6575.1531,-19.5454"/>
+<polygon fill="#191970" stroke="#191970" points="6730.0253,-201.3764 6740.1474,-198.2471 6730.2831,-194.3811 6730.0253,-201.3764"/>
 </g>
-<!-- Node6 -->
-<g id="node6" class="node">
-<title>Node6</title>
-<g id="a_node6"><a xlink:href="sitkHashImageFilter_8h.html" target="_top" xlink:title=" ">
-<polygon fill="#ffffff" stroke="#000000" points="6448,-62 6448,-81 6570,-81 6570,-62 6448,-62"/>
-<text text-anchor="middle" x="6509" y="-69" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">sitkHashImageFilter.h</text>
+<!-- Node7 -->
+<g id="node7" class="node">
+<title>Node7</title>
+<g id="a_node7"><a xlink:href="sitkHashImageFilter_8h.html" target="_top" xlink:title=" ">
+<polygon fill="#ffffff" stroke="#000000" points="6408,-62 6408,-81 6530,-81 6530,-62 6408,-62"/>
+<text text-anchor="middle" x="6469" y="-69" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">sitkHashImageFilter.h</text>
 </a>
 </g>
 </g>
-<!-- Node1&#45;&gt;Node6 -->
-<g id="edge50" class="edge">
-<title>Node1&#45;&gt;Node6</title>
-<path fill="none" stroke="#191970" d="M6770.2093,-198.4198C6645.6408,-194.7783 6387.9732,-183.7055 6361,-154 6351.738,-143.7998 6353.0175,-134.2297 6361,-123 6373.2946,-105.7041 6425.5632,-90.3637 6464.522,-81.0181"/>
-<polygon fill="#191970" stroke="#191970" points="6770.2959,-201.9235 6780.3915,-198.7095 6770.4951,-194.9264 6770.2959,-201.9235"/>
+<!-- Node1&#45;&gt;Node7 -->
+<g id="edge51" class="edge">
+<title>Node1&#45;&gt;Node7</title>
+<path fill="none" stroke="#191970" d="M6730.2093,-198.4198C6605.6408,-194.7783 6347.9732,-183.7055 6321,-154 6311.738,-143.7998 6313.0175,-134.2297 6321,-123 6333.2946,-105.7041 6385.5632,-90.3637 6424.522,-81.0181"/>
+<polygon fill="#191970" stroke="#191970" points="6730.2959,-201.9235 6740.3915,-198.7095 6730.4951,-194.9264 6730.2959,-201.9235"/>
 </g>
 <!-- Node303 -->
 <g id="node43" class="node">
 <title>Node303</title>
 <g id="a_node43"><a xlink:href="sitkCenteredTransformInitializerFilter_8h.html" target="_top" xlink:title=" ">
-<polygon fill="#ffffff" stroke="#000000" points="6403.5,-123.5 6403.5,-153.5 6576.5,-153.5 6576.5,-123.5 6403.5,-123.5"/>
-<text text-anchor="start" x="6411.5" y="-141.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">sitkCenteredTransformInitializer</text>
-<text text-anchor="middle" x="6490" y="-130.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">Filter.h</text>
+<polygon fill="#ffffff" stroke="#000000" points="6363.5,-123.5 6363.5,-153.5 6536.5,-153.5 6536.5,-123.5 6363.5,-123.5"/>
+<text text-anchor="start" x="6371.5" y="-141.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">sitkCenteredTransformInitializer</text>
+<text text-anchor="middle" x="6450" y="-130.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">Filter.h</text>
 </a>
 </g>
 </g>
 <!-- Node1&#45;&gt;Node303 -->
-<g id="edge46" class="edge">
+<g id="edge47" class="edge">
 <title>Node1&#45;&gt;Node303</title>
-<path fill="none" stroke="#191970" d="M6773.0551,-188.6668C6717.2768,-178.781 6635.9317,-164.364 6574.7431,-153.5193"/>
-<polygon fill="#191970" stroke="#191970" points="6772.7046,-192.1592 6783.162,-190.4581 6773.9263,-185.2666 6772.7046,-192.1592"/>
+<path fill="none" stroke="#191970" d="M6733.0551,-188.6668C6677.2768,-178.781 6595.9317,-164.364 6534.7431,-153.5193"/>
+<polygon fill="#191970" stroke="#191970" points="6732.7046,-192.1592 6743.162,-190.4581 6733.9263,-185.2666 6732.7046,-192.1592"/>
 </g>
 <!-- Node304 -->
 <g id="node44" class="node">
 <title>Node304</title>
 <g id="a_node44"><a xlink:href="sitkCenteredVersorTransformInitializerFilter_8h.html" target="_top" xlink:title=" ">
-<polygon fill="#ffffff" stroke="#000000" points="6595,-123.5 6595,-153.5 6753,-153.5 6753,-123.5 6595,-123.5"/>
-<text text-anchor="start" x="6603" y="-141.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">sitkCenteredVersorTransform</text>
-<text text-anchor="middle" x="6674" y="-130.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">InitializerFilter.h</text>
+<polygon fill="#ffffff" stroke="#000000" points="6555,-123.5 6555,-153.5 6713,-153.5 6713,-123.5 6555,-123.5"/>
+<text text-anchor="start" x="6563" y="-141.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">sitkCenteredVersorTransform</text>
+<text text-anchor="middle" x="6634" y="-130.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">InitializerFilter.h</text>
 </a>
 </g>
 </g>
 <!-- Node1&#45;&gt;Node304 -->
-<g id="edge48" class="edge">
+<g id="edge49" class="edge">
 <title>Node1&#45;&gt;Node304</title>
-<path fill="none" stroke="#191970" d="M6802.109,-186.8356C6776.2202,-177.0678 6740.8797,-163.7338 6713.8743,-153.5446"/>
-<polygon fill="#191970" stroke="#191970" points="6800.9395,-190.1351 6811.5313,-190.3906 6803.4106,-183.5858 6800.9395,-190.1351"/>
+<path fill="none" stroke="#191970" d="M6762.109,-186.8356C6736.2202,-177.0678 6700.8797,-163.7338 6673.8743,-153.5446"/>
+<polygon fill="#191970" stroke="#191970" points="6760.9395,-190.1351 6771.5313,-190.3906 6763.4106,-183.5858 6760.9395,-190.1351"/>
 </g>
 <!-- Node305 -->
 <g id="node45" class="node">
 <title>Node305</title>
 <g id="a_node45"><a xlink:href="sitkImageReaderBase_8h.html" target="_top" xlink:title=" ">
-<polygon fill="#ffffff" stroke="#ff0000" points="6771,-129 6771,-148 6903,-148 6903,-129 6771,-129"/>
-<text text-anchor="middle" x="6837" y="-136" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">sitkImageReaderBase.h</text>
+<polygon fill="#ffffff" stroke="#ff0000" points="6731,-129 6731,-148 6863,-148 6863,-129 6731,-129"/>
+<text text-anchor="middle" x="6797" y="-136" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">sitkImageReaderBase.h</text>
 </a>
 </g>
 </g>
 <!-- Node1&#45;&gt;Node305 -->
-<g id="edge52" class="edge">
+<g id="edge53" class="edge">
 <title>Node1&#45;&gt;Node305</title>
-<path fill="none" stroke="#191970" d="M6837,-180.2462C6837,-169.5519 6837,-156.814 6837,-148.2449"/>
-<polygon fill="#191970" stroke="#191970" points="6833.5001,-180.3906 6837,-190.3906 6840.5001,-180.3907 6833.5001,-180.3906"/>
+<path fill="none" stroke="#191970" d="M6797,-180.2462C6797,-169.5519 6797,-156.814 6797,-148.2449"/>
+<polygon fill="#191970" stroke="#191970" points="6793.5001,-180.3906 6797,-190.3906 6800.5001,-180.3907 6793.5001,-180.3906"/>
 </g>
 <!-- Node309 -->
 <g id="node46" class="node">
 <title>Node309</title>
 <g id="a_node46"><a xlink:href="sitkImageFileWriter_8h.html" target="_top" xlink:title=" ">
-<polygon fill="#ffffff" stroke="#000000" points="6921.5,-129 6921.5,-148 7040.5,-148 7040.5,-129 6921.5,-129"/>
-<text text-anchor="middle" x="6981" y="-136" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">sitkImageFileWriter.h</text>
+<polygon fill="#ffffff" stroke="#000000" points="6881.5,-129 6881.5,-148 7000.5,-148 7000.5,-129 6881.5,-129"/>
+<text text-anchor="middle" x="6941" y="-136" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">sitkImageFileWriter.h</text>
 </a>
 </g>
 </g>
 <!-- Node1&#45;&gt;Node309 -->
-<g id="edge53" class="edge">
+<g id="edge54" class="edge">
 <title>Node1&#45;&gt;Node309</title>
-<path fill="none" stroke="#191970" d="M6868.9778,-186.3428C6896.2064,-174.7139 6934.627,-158.3051 6958.658,-148.0419"/>
-<polygon fill="#191970" stroke="#191970" points="6867.3217,-183.2442 6859.5,-190.3906 6870.0711,-189.6817 6867.3217,-183.2442"/>
+<path fill="none" stroke="#191970" d="M6828.9778,-186.3428C6856.2064,-174.7139 6894.627,-158.3051 6918.658,-148.0419"/>
+<polygon fill="#191970" stroke="#191970" points="6827.3217,-183.2442 6819.5,-190.3906 6830.0711,-189.6817 6827.3217,-183.2442"/>
 </g>
 <!-- Node310 -->
 <g id="node47" class="node">
 <title>Node310</title>
 <g id="a_node47"><a xlink:href="sitkImageSeriesWriter_8h.html" target="_top" xlink:title=" ">
-<polygon fill="#ffffff" stroke="#000000" points="7058.5,-129 7058.5,-148 7191.5,-148 7191.5,-129 7058.5,-129"/>
-<text text-anchor="middle" x="7125" y="-136" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">sitkImageSeriesWriter.h</text>
+<polygon fill="#ffffff" stroke="#000000" points="7018.5,-129 7018.5,-148 7151.5,-148 7151.5,-129 7018.5,-129"/>
+<text text-anchor="middle" x="7085" y="-136" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">sitkImageSeriesWriter.h</text>
 </a>
 </g>
 </g>
 <!-- Node1&#45;&gt;Node310 -->
-<g id="edge55" class="edge">
+<g id="edge56" class="edge">
 <title>Node1&#45;&gt;Node310</title>
-<path fill="none" stroke="#191970" d="M6891.5423,-188.3529C6946.1889,-176.6836 7029.2985,-158.9363 7080.2112,-148.0643"/>
-<polygon fill="#191970" stroke="#191970" points="6890.7326,-184.9469 6881.684,-190.4581 6892.1945,-191.7925 6890.7326,-184.9469"/>
+<path fill="none" stroke="#191970" d="M6851.5423,-188.3529C6906.1889,-176.6836 6989.2985,-158.9363 7040.2112,-148.0643"/>
+<polygon fill="#191970" stroke="#191970" points="6850.7326,-184.9469 6841.684,-190.4581 6852.1945,-191.7925 6850.7326,-184.9469"/>
 </g>
 <!-- Node311 -->
 <g id="node48" class="node">
 <title>Node311</title>
 <g id="a_node48"><a xlink:href="sitkImageViewer_8h.html" target="_top" xlink:title=" ">
-<polygon fill="#ffffff" stroke="#000000" points="7209.5,-129 7209.5,-148 7316.5,-148 7316.5,-129 7209.5,-129"/>
-<text text-anchor="middle" x="7263" y="-136" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">sitkImageViewer.h</text>
+<polygon fill="#ffffff" stroke="#000000" points="7169.5,-129 7169.5,-148 7276.5,-148 7276.5,-129 7169.5,-129"/>
+<text text-anchor="middle" x="7223" y="-136" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">sitkImageViewer.h</text>
 </a>
 </g>
 </g>
 <!-- Node1&#45;&gt;Node311 -->
-<g id="edge57" class="edge">
+<g id="edge58" class="edge">
 <title>Node1&#45;&gt;Node311</title>
-<path fill="none" stroke="#191970" d="M6903.7761,-193.9732C6977.0644,-186.799 7098.0053,-173.311 7201,-154 7209.8332,-152.3438 7219.2836,-150.184 7228.0764,-148.0049"/>
-<polygon fill="#191970" stroke="#191970" points="6903.3739,-190.4957 6893.7579,-194.9436 6904.0488,-197.4631 6903.3739,-190.4957"/>
+<path fill="none" stroke="#191970" d="M6863.7761,-193.9732C6937.0644,-186.799 7058.0053,-173.311 7161,-154 7169.8332,-152.3438 7179.2836,-150.184 7188.0764,-148.0049"/>
+<polygon fill="#191970" stroke="#191970" points="6863.3739,-190.4957 6853.7579,-194.9436 6864.0488,-197.4631 6863.3739,-190.4957"/>
 </g>
 <!-- Node312 -->
 <g id="node49" class="node">
 <title>Node312</title>
 <g id="a_node49"><a xlink:href="sitkShow_8h.html" target="_top" xlink:title=" ">
-<polygon fill="#ffffff" stroke="#000000" points="7334.5,-129 7334.5,-148 7403.5,-148 7403.5,-129 7334.5,-129"/>
-<text text-anchor="middle" x="7369" y="-136" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">sitkShow.h</text>
+<polygon fill="#ffffff" stroke="#000000" points="7294.5,-129 7294.5,-148 7363.5,-148 7363.5,-129 7294.5,-129"/>
+<text text-anchor="middle" x="7329" y="-136" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">sitkShow.h</text>
 </a>
 </g>
 </g>
 <!-- Node1&#45;&gt;Node312 -->
-<g id="edge59" class="edge">
+<g id="edge60" class="edge">
 <title>Node1&#45;&gt;Node312</title>
-<path fill="none" stroke="#191970" d="M6903.7116,-195.8137C7018.1949,-188.2804 7247.3409,-171.5798 7326,-154 7332.5053,-152.5461 7339.3711,-150.3775 7345.6605,-148.1198"/>
-<polygon fill="#191970" stroke="#191970" points="6903.4168,-192.3254 6893.6665,-196.4705 6903.8736,-199.3105 6903.4168,-192.3254"/>
+<path fill="none" stroke="#191970" d="M6863.7116,-195.8137C6978.1949,-188.2804 7207.3409,-171.5798 7286,-154 7292.5053,-152.5461 7299.3711,-150.3775 7305.6605,-148.1198"/>
+<polygon fill="#191970" stroke="#191970" points="6863.4168,-192.3254 6853.6665,-196.4705 6863.8736,-199.3105 6863.4168,-192.3254"/>
 </g>
 <!-- Node313 -->
 <g id="node50" class="node">
 <title>Node313</title>
 <g id="a_node50"><a xlink:href="sitkImageRegistrationMethod_8h.html" target="_top" xlink:title=" ">
-<polygon fill="#ffffff" stroke="#000000" points="7421.5,-129 7421.5,-148 7590.5,-148 7590.5,-129 7421.5,-129"/>
-<text text-anchor="middle" x="7506" y="-136" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">sitkImageRegistrationMethod.h</text>
+<polygon fill="#ffffff" stroke="#000000" points="7381.5,-129 7381.5,-148 7550.5,-148 7550.5,-129 7381.5,-129"/>
+<text text-anchor="middle" x="7466" y="-136" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">sitkImageRegistrationMethod.h</text>
 </a>
 </g>
 </g>
 <!-- Node1&#45;&gt;Node313 -->
-<g id="edge61" class="edge">
+<g id="edge62" class="edge">
 <title>Node1&#45;&gt;Node313</title>
-<path fill="none" stroke="#191970" d="M6903.625,-196.5334C7011.0924,-190.5254 7229.2511,-176.6077 7413,-154 7426.1593,-152.3809 7440.3017,-150.2347 7453.4877,-148.057"/>
-<polygon fill="#191970" stroke="#191970" points="6903.3664,-193.0422 6893.5754,-197.0901 6903.7537,-200.0315 6903.3664,-193.0422"/>
+<path fill="none" stroke="#191970" d="M6863.625,-196.5334C6971.0924,-190.5254 7189.2511,-176.6077 7373,-154 7386.1593,-152.3809 7400.3017,-150.2347 7413.4877,-148.057"/>
+<polygon fill="#191970" stroke="#191970" points="6863.3664,-193.0422 6853.5754,-197.0901 6863.7537,-200.0315 6863.3664,-193.0422"/>
 </g>
 <!-- Node3 -->
 <g id="node3" class="node">
@@ -244,14 +244,14 @@ var sectionId = 'dynsection-1';
 <!-- Node2&#45;&gt;Node3 -->
 <g id="edge2" class="edge">
 <title>Node2&#45;&gt;Node3</title>
-<path fill="none" stroke="#191970" d="M3096.7523,-137.9785C2703.8062,-134.4528 480.1563,-113.4455 180,-87 175.4981,-86.6034 170.8889,-86.1227 166.2428,-85.5798"/>
-<polygon fill="#191970" stroke="#191970" points="3096.7396,-141.4784 3106.7706,-138.0681 3096.8023,-134.4787 3096.7396,-141.4784"/>
+<path fill="none" stroke="#191970" d="M3062.5199,-137.9636C2671.5555,-134.3713 476.4948,-113.1528 180,-87 175.4982,-86.6029 170.889,-86.1219 166.2429,-85.5787"/>
+<polygon fill="#191970" stroke="#191970" points="3062.7272,-141.4656 3072.7589,-138.0575 3062.7915,-134.4659 3062.7272,-141.4656"/>
 </g>
 <!-- Node2&#45;&gt;Node4 -->
-<g id="edge10" class="edge">
+<g id="edge12" class="edge">
 <title>Node2&#45;&gt;Node4</title>
-<path fill="none" stroke="#191970" d="M3096.6761,-138.0276C2682.5203,-134.6623 239.2238,-113.6867 213,-87 203.3432,-77.1728 203.2926,-65.7772 213,-56 243.0158,-25.7685 6074.5918,-11.3239 6598.4619,-10.0871"/>
-<polygon fill="#191970" stroke="#191970" points="3096.9013,-141.5294 3106.9293,-138.1107 3096.9581,-134.5297 3096.9013,-141.5294"/>
+<path fill="none" stroke="#191970" d="M3062.7101,-138.0156C2651.4356,-134.5881 238.9046,-113.3672 213,-87 203.3442,-77.1718 203.2929,-65.7775 213,-56 242.7315,-26.0528 6017.795,-11.3562 6539.4076,-10.0898"/>
+<polygon fill="#191970" stroke="#191970" points="3062.8663,-141.5169 3072.8951,-138.1002 3062.9246,-134.5171 3062.8663,-141.5169"/>
 </g>
 <!-- Node5 -->
 <g id="node5" class="node">
@@ -265,638 +265,644 @@ var sectionId = 'dynsection-1';
 <!-- Node2&#45;&gt;Node5 -->
 <g id="edge4" class="edge">
 <title>Node2&#45;&gt;Node5</title>
-<path fill="none" stroke="#191970" d="M3096.585,-138.1325C2716.4441,-135.685 632.0922,-120.798 351,-87 340.151,-85.6955 328.5058,-83.4247 317.9292,-81.017"/>
-<polygon fill="#191970" stroke="#191970" points="3096.7908,-141.6337 3106.813,-138.1979 3096.8356,-134.6339 3096.7908,-141.6337"/>
+<path fill="none" stroke="#191970" d="M3062.7037,-138.1189C2685.5787,-135.5994 628.5345,-120.402 351,-87 340.1511,-85.6943 328.506,-83.4231 317.9294,-81.0155"/>
+<polygon fill="#191970" stroke="#191970" points="3062.8303,-141.6197 3072.8533,-138.1863 3062.8768,-134.6199 3062.8303,-141.6197"/>
+</g>
+<!-- Node6 -->
+<g id="node6" class="node">
+<title>Node6</title>
+<g id="a_node6"><a xlink:href="sitkExtractImageFilter_8h.html" target="_top" xlink:title=" ">
+<polygon fill="#ffffff" stroke="#000000" points="360,-62 360,-81 492,-81 492,-62 360,-62"/>
+<text text-anchor="middle" x="426" y="-69" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">sitkExtractImageFilter.h</text>
+</a>
+</g>
 </g>
 <!-- Node2&#45;&gt;Node6 -->
 <g id="edge6" class="edge">
 <title>Node2&#45;&gt;Node6</title>
-<path fill="none" stroke="#191970" d="M3215.3253,-138.2925C3631.5955,-136.7408 6107.2986,-125.9196 6439,-87 6450.0025,-85.709 6461.8153,-83.4423 6472.5453,-81.0343"/>
-<polygon fill="#191970" stroke="#191970" points="3215.0109,-134.7935 3205.0239,-138.3305 3215.0368,-141.7934 3215.0109,-134.7935"/>
-</g>
-<!-- Node7 -->
-<g id="node7" class="node">
-<title>Node7</title>
-<g id="a_node7"><a xlink:href="sitkLandmarkBasedTransformInitializerFilter_8h.html" target="_top" xlink:title=" ">
-<polygon fill="#ffffff" stroke="#000000" points="360,-56.5 360,-86.5 522,-86.5 522,-56.5 360,-56.5"/>
-<text text-anchor="start" x="368" y="-74.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">sitkLandmarkBasedTransform</text>
-<text text-anchor="middle" x="441" y="-63.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">InitializerFilter.h</text>
-</a>
-</g>
+<path fill="none" stroke="#191970" d="M3062.7656,-137.9909C2697.9397,-134.7686 762.9975,-116.3933 501,-87 489.3725,-85.6955 476.8766,-83.4563 465.4832,-81.0792"/>
+<polygon fill="#191970" stroke="#191970" points="3062.8182,-141.4914 3072.8486,-138.0796 3062.8798,-134.4917 3062.8182,-141.4914"/>
 </g>
 <!-- Node2&#45;&gt;Node7 -->
 <g id="edge8" class="edge">
 <title>Node2&#45;&gt;Node7</title>
-<path fill="none" stroke="#191970" d="M3096.6874,-137.8741C2731.3786,-133.9478 793.8507,-112.0682 531,-87 528.159,-86.7291 525.2725,-86.4196 522.3611,-86.0783"/>
-<polygon fill="#191970" stroke="#191970" points="3096.7468,-141.3749 3106.7838,-137.9824 3096.8219,-134.3753 3096.7468,-141.3749"/>
+<path fill="none" stroke="#191970" d="M3181.2396,-138.2909C3596.8165,-136.7292 6067.9112,-125.8525 6399,-87 6410.0025,-85.7089 6421.8153,-83.4421 6432.5453,-81.0341"/>
+<polygon fill="#191970" stroke="#191970" points="3181.2255,-134.7909 3171.2386,-138.3282 3181.2516,-141.7908 3181.2255,-134.7909"/>
 </g>
 <!-- Node8 -->
 <g id="node8" class="node">
 <title>Node8</title>
-<g id="a_node8"><a xlink:href="sitkAbsImageFilter_8h.html" target="_top" xlink:title=" ">
-<polygon fill="#ffffff" stroke="#ff0000" points="540,-62 540,-81 656,-81 656,-62 540,-62"/>
-<text text-anchor="middle" x="598" y="-69" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">sitkAbsImageFilter.h</text>
+<g id="a_node8"><a xlink:href="sitkLandmarkBasedTransformInitializerFilter_8h.html" target="_top" xlink:title=" ">
+<polygon fill="#ffffff" stroke="#000000" points="510,-56.5 510,-86.5 672,-86.5 672,-56.5 510,-56.5"/>
+<text text-anchor="start" x="518" y="-74.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">sitkLandmarkBasedTransform</text>
+<text text-anchor="middle" x="591" y="-63.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">InitializerFilter.h</text>
 </a>
 </g>
 </g>
 <!-- Node2&#45;&gt;Node8 -->
-<g id="edge11" class="edge">
+<g id="edge10" class="edge">
 <title>Node2&#45;&gt;Node8</title>
-<path fill="none" stroke="#191970" d="M3096.9051,-138.0103C2743.1668,-134.9815 912.9868,-117.9109 665,-87 654.4557,-85.6857 643.1451,-83.4118 632.8754,-81.0045"/>
-<polygon fill="#191970" stroke="#191970" points="3096.9075,-141.5103 3106.9371,-138.0958 3096.9673,-134.5106 3096.9075,-141.5103"/>
+<path fill="none" stroke="#191970" d="M3062.7357,-137.7809C2712.8796,-133.4652 924.4472,-110.3993 681,-87 678.1592,-86.727 675.2729,-86.4157 672.3616,-86.0729"/>
+<polygon fill="#191970" stroke="#191970" points="3062.8613,-141.2826 3072.9036,-137.906 3062.9475,-134.2832 3062.8613,-141.2826"/>
 </g>
-<!-- Node11 -->
+<!-- Node9 -->
 <g id="node9" class="node">
-<title>Node11</title>
-<g id="a_node9"><a xlink:href="sitkAbsoluteValueDifferenceImageFilter_8h.html" target="_top" xlink:title=" ">
-<polygon fill="#ffffff" stroke="#ff0000" points="674.5,-56.5 674.5,-86.5 829.5,-86.5 829.5,-56.5 674.5,-56.5"/>
-<text text-anchor="start" x="682.5" y="-74.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">sitkAbsoluteValueDifference</text>
-<text text-anchor="middle" x="752" y="-63.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">ImageFilter.h</text>
+<title>Node9</title>
+<g id="a_node9"><a xlink:href="sitkAbsImageFilter_8h.html" target="_top" xlink:title=" ">
+<polygon fill="#ffffff" stroke="#ff0000" points="690,-62 690,-81 806,-81 806,-62 690,-62"/>
+<text text-anchor="middle" x="748" y="-69" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">sitkAbsImageFilter.h</text>
 </a>
 </g>
 </g>
-<!-- Node2&#45;&gt;Node11 -->
-<g id="edge12" class="edge">
-<title>Node2&#45;&gt;Node11</title>
-<path fill="none" stroke="#191970" d="M3096.7669,-137.7379C2757.5465,-133.2996 1068.4083,-110.1798 838,-87 835.2829,-86.7267 832.5227,-86.4151 829.739,-86.0721"/>
-<polygon fill="#191970" stroke="#191970" points="3096.8273,-141.2389 3106.8722,-137.8698 3096.9187,-134.2395 3096.8273,-141.2389"/>
+<!-- Node2&#45;&gt;Node9 -->
+<g id="edge13" class="edge">
+<title>Node2&#45;&gt;Node9</title>
+<path fill="none" stroke="#191970" d="M3062.7558,-137.9043C2724.4049,-134.405 1043.6181,-115.688 815,-87 804.5753,-85.6919 793.4006,-83.4515 783.2233,-81.0745"/>
+<polygon fill="#191970" stroke="#191970" points="3062.801,-141.4048 3072.8365,-138.0081 3062.8732,-134.4052 3062.801,-141.4048"/>
 </g>
 <!-- Node12 -->
 <g id="node10" class="node">
 <title>Node12</title>
-<g id="a_node10"><a xlink:href="sitkAcosImageFilter_8h.html" target="_top" xlink:title=" ">
-<polygon fill="#ffffff" stroke="#ff0000" points="847.5,-62 847.5,-81 968.5,-81 968.5,-62 847.5,-62"/>
-<text text-anchor="middle" x="908" y="-69" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">sitkAcosImageFilter.h</text>
+<g id="a_node10"><a xlink:href="sitkAbsoluteValueDifferenceImageFilter_8h.html" target="_top" xlink:title=" ">
+<polygon fill="#ffffff" stroke="#ff0000" points="824.5,-56.5 824.5,-86.5 979.5,-86.5 979.5,-56.5 824.5,-56.5"/>
+<text text-anchor="start" x="832.5" y="-74.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">sitkAbsoluteValueDifference</text>
+<text text-anchor="middle" x="902" y="-63.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">ImageFilter.h</text>
 </a>
 </g>
 </g>
 <!-- Node2&#45;&gt;Node12 -->
-<g id="edge13" class="edge">
+<g id="edge14" class="edge">
 <title>Node2&#45;&gt;Node12</title>
-<path fill="none" stroke="#191970" d="M3096.6928,-137.7978C2769.5437,-133.8307 1192.2629,-113.4587 977,-87 966.2763,-85.6819 954.7719,-83.4385 944.2905,-81.0616"/>
-<polygon fill="#191970" stroke="#191970" points="3096.863,-141.3 3106.9046,-137.9212 3096.9477,-134.3005 3096.863,-141.3"/>
+<path fill="none" stroke="#191970" d="M3062.3894,-138.3043C2761.3979,-137.1267 1406.5773,-129.5151 988,-87 985.2832,-86.7241 982.5232,-86.4103 979.7397,-86.0654"/>
+<polygon fill="#191970" stroke="#191970" points="3062.6354,-141.8052 3072.6488,-138.3435 3062.6623,-134.8052 3062.6354,-141.8052"/>
 </g>
 <!-- Node13 -->
 <g id="node11" class="node">
 <title>Node13</title>
-<g id="a_node11"><a xlink:href="sitkAdaptiveHistogramEqualizationImageFilter_8h.html" target="_top" xlink:title=" ">
-<polygon fill="#ffffff" stroke="#ff0000" points="986.5,-56.5 986.5,-86.5 1175.5,-86.5 1175.5,-56.5 986.5,-56.5"/>
-<text text-anchor="start" x="994.5" y="-74.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">sitkAdaptiveHistogramEqualization</text>
-<text text-anchor="middle" x="1081" y="-63.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">ImageFilter.h</text>
+<g id="a_node11"><a xlink:href="sitkAcosImageFilter_8h.html" target="_top" xlink:title=" ">
+<polygon fill="#ffffff" stroke="#ff0000" points="997.5,-62 997.5,-81 1118.5,-81 1118.5,-62 997.5,-62"/>
+<text text-anchor="middle" x="1058" y="-69" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">sitkAcosImageFilter.h</text>
 </a>
 </g>
 </g>
 <!-- Node2&#45;&gt;Node13 -->
-<g id="edge14" class="edge">
+<g id="edge15" class="edge">
 <title>Node2&#45;&gt;Node13</title>
-<path fill="none" stroke="#191970" d="M3096.3866,-137.9228C2809.6075,-134.9963 1570.0569,-120.5988 1185,-87 1181.9084,-86.7302 1178.7688,-86.428 1175.6012,-86.0986"/>
-<polygon fill="#191970" stroke="#191970" points="3096.5436,-141.4245 3106.5786,-138.0261 3096.6146,-134.4249 3096.5436,-141.4245"/>
+<path fill="none" stroke="#191970" d="M3062.7992,-137.6609C2752.7702,-133.1741 1323.0162,-111.3098 1127,-87 1116.2778,-85.6702 1104.7738,-83.4231 1094.2924,-81.0465"/>
+<polygon fill="#191970" stroke="#191970" points="3062.8768,-141.1623 3072.9263,-137.807 3062.9779,-134.163 3062.8768,-141.1623"/>
 </g>
 <!-- Node14 -->
 <g id="node12" class="node">
 <title>Node14</title>
-<g id="a_node12"><a xlink:href="sitkAddImageFilter_8h.html" target="_top" xlink:title=" ">
-<polygon fill="#ffffff" stroke="#ff0000" points="1194,-62 1194,-81 1310,-81 1310,-62 1194,-62"/>
-<text text-anchor="middle" x="1252" y="-69" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">sitkAddImageFilter.h</text>
+<g id="a_node12"><a xlink:href="sitkAdaptiveHistogramEqualizationImageFilter_8h.html" target="_top" xlink:title=" ">
+<polygon fill="#ffffff" stroke="#ff0000" points="1136.5,-56.5 1136.5,-86.5 1325.5,-86.5 1325.5,-56.5 1136.5,-56.5"/>
+<text text-anchor="start" x="1144.5" y="-74.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">sitkAdaptiveHistogramEqualization</text>
+<text text-anchor="middle" x="1231" y="-63.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">ImageFilter.h</text>
 </a>
 </g>
 </g>
 <!-- Node2&#45;&gt;Node14 -->
-<g id="edge15" class="edge">
+<g id="edge16" class="edge">
 <title>Node2&#45;&gt;Node14</title>
-<path fill="none" stroke="#191970" d="M3096.797,-137.5425C2801.8875,-132.6787 1498.4364,-110.0368 1319,-87 1308.5791,-85.6621 1297.4055,-83.4125 1287.2282,-81.036"/>
-<polygon fill="#191970" stroke="#191970" points="3096.8026,-141.043 3106.8589,-137.708 3096.9178,-134.044 3096.8026,-141.043"/>
+<path fill="none" stroke="#191970" d="M3062.3669,-137.7376C2792.2519,-134.1375 1681.6524,-117.7173 1335,-87 1331.9088,-86.7261 1328.7695,-86.4202 1325.6021,-86.0878"/>
+<polygon fill="#191970" stroke="#191970" points="3062.6935,-141.2422 3072.7391,-137.8751 3062.7863,-134.2428 3062.6935,-141.2422"/>
 </g>
-<!-- Node16 -->
+<!-- Node15 -->
 <g id="node13" class="node">
-<title>Node16</title>
-<g id="a_node13"><a xlink:href="sitkAdditiveGaussianNoiseImageFilter_8h.html" target="_top" xlink:title=" ">
-<polygon fill="#ffffff" stroke="#ff0000" points="1328,-56.5 1328,-86.5 1476,-86.5 1476,-56.5 1328,-56.5"/>
-<text text-anchor="start" x="1336" y="-74.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">sitkAdditiveGaussianNoise</text>
-<text text-anchor="middle" x="1402" y="-63.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">ImageFilter.h</text>
+<title>Node15</title>
+<g id="a_node13"><a xlink:href="sitkAddImageFilter_8h.html" target="_top" xlink:title=" ">
+<polygon fill="#ffffff" stroke="#ff0000" points="1344,-62 1344,-81 1460,-81 1460,-62 1344,-62"/>
+<text text-anchor="middle" x="1402" y="-69" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">sitkAddImageFilter.h</text>
 </a>
 </g>
 </g>
-<!-- Node2&#45;&gt;Node16 -->
-<g id="edge16" class="edge">
-<title>Node2&#45;&gt;Node16</title>
-<path fill="none" stroke="#191970" d="M3096.4446,-137.8937C2837.3588,-135.0667 1806.9703,-121.8159 1485,-87 1482.0852,-86.6848 1479.1193,-86.3243 1476.128,-85.9274"/>
-<polygon fill="#191970" stroke="#191970" points="3096.7327,-141.3969 3106.77,-138.0052 3096.8084,-134.3973 3096.7327,-141.3969"/>
+<!-- Node2&#45;&gt;Node15 -->
+<g id="edge17" class="edge">
+<title>Node2&#45;&gt;Node15</title>
+<path fill="none" stroke="#191970" d="M3062.6203,-138.2109C2805.4561,-136.7185 1786.5146,-128.2671 1469,-87 1458.5812,-85.6459 1447.4083,-83.3912 1437.2309,-81.015"/>
+<polygon fill="#191970" stroke="#191970" points="3062.8515,-141.7121 3072.8713,-138.269 3062.8913,-134.7123 3062.8515,-141.7121"/>
 </g>
 <!-- Node17 -->
 <g id="node14" class="node">
 <title>Node17</title>
-<g id="a_node14"><a xlink:href="sitkAggregateLabelMapFilter_8h.html" target="_top" xlink:title=" ">
-<polygon fill="#ffffff" stroke="#ff0000" points="1494,-62 1494,-81 1658,-81 1658,-62 1494,-62"/>
-<text text-anchor="middle" x="1576" y="-69" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">sitkAggregateLabelMapFilter.h</text>
+<g id="a_node14"><a xlink:href="sitkAdditiveGaussianNoiseImageFilter_8h.html" target="_top" xlink:title=" ">
+<polygon fill="#ffffff" stroke="#ff0000" points="1478,-56.5 1478,-86.5 1626,-86.5 1626,-56.5 1478,-56.5"/>
+<text text-anchor="start" x="1486" y="-74.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">sitkAdditiveGaussianNoise</text>
+<text text-anchor="middle" x="1552" y="-63.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">ImageFilter.h</text>
 </a>
 </g>
 </g>
 <!-- Node2&#45;&gt;Node17 -->
-<g id="edge17" class="edge">
+<g id="edge18" class="edge">
 <title>Node2&#45;&gt;Node17</title>
-<path fill="none" stroke="#191970" d="M3096.3473,-137.5066C2855.1562,-133.3245 1951.4594,-116.013 1667,-87 1653.2886,-85.6015 1638.5199,-83.3934 1624.9516,-81.0775"/>
-<polygon fill="#191970" stroke="#191970" points="3096.6018,-141.0114 3106.6607,-137.6844 3096.7225,-134.0125 3096.6018,-141.0114"/>
+<path fill="none" stroke="#191970" d="M3062.4141,-137.6308C2821.4949,-133.9318 1918.8376,-118.2395 1635,-87 1632.0858,-86.6793 1629.1204,-86.314 1626.1295,-85.9132"/>
+<polygon fill="#191970" stroke="#191970" points="3062.6636,-141.1349 3072.7158,-137.7879 3062.7703,-134.1358 3062.6636,-141.1349"/>
 </g>
 <!-- Node18 -->
 <g id="node15" class="node">
 <title>Node18</title>
-<g id="a_node15"><a xlink:href="sitkAndImageFilter_8h.html" target="_top" xlink:title=" ">
-<polygon fill="#ffffff" stroke="#ff0000" points="1676,-62 1676,-81 1792,-81 1792,-62 1676,-62"/>
-<text text-anchor="middle" x="1734" y="-69" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">sitkAndImageFilter.h</text>
+<g id="a_node15"><a xlink:href="sitkAggregateLabelMapFilter_8h.html" target="_top" xlink:title=" ">
+<polygon fill="#ffffff" stroke="#ff0000" points="1644,-62 1644,-81 1808,-81 1808,-62 1644,-62"/>
+<text text-anchor="middle" x="1726" y="-69" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">sitkAggregateLabelMapFilter.h</text>
 </a>
 </g>
 </g>
 <!-- Node2&#45;&gt;Node18 -->
-<g id="edge18" class="edge">
+<g id="edge19" class="edge">
 <title>Node2&#45;&gt;Node18</title>
-<path fill="none" stroke="#191970" d="M3096.8417,-137.7421C2870.196,-134.607 2057.097,-121.1762 1801,-87 1790.7042,-85.626 1779.6683,-83.3958 1769.5843,-81.0499"/>
-<polygon fill="#191970" stroke="#191970" points="3096.8252,-141.2421 3106.8722,-137.8794 3096.921,-134.2427 3096.8252,-141.2421"/>
+<path fill="none" stroke="#191970" d="M3062.5266,-137.176C2840.9542,-132.0839 2063.5458,-112.7528 1817,-87 1803.2921,-85.5682 1788.5245,-83.3491 1774.9561,-81.0333"/>
+<polygon fill="#191970" stroke="#191970" points="3062.5757,-140.6779 3072.6532,-137.4076 3062.7359,-133.6797 3062.5757,-140.6779"/>
 </g>
 <!-- Node19 -->
 <g id="node16" class="node">
 <title>Node19</title>
-<g id="a_node16"><a xlink:href="sitkAntiAliasBinaryImageFilter_8h.html" target="_top" xlink:title=" ">
-<polygon fill="#ffffff" stroke="#ff0000" points="1810,-56.5 1810,-86.5 1950,-86.5 1950,-56.5 1810,-56.5"/>
-<text text-anchor="start" x="1818" y="-74.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">sitkAntiAliasBinaryImage</text>
-<text text-anchor="middle" x="1880" y="-63.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">Filter.h</text>
+<g id="a_node16"><a xlink:href="sitkAndImageFilter_8h.html" target="_top" xlink:title=" ">
+<polygon fill="#ffffff" stroke="#ff0000" points="1826,-62 1826,-81 1942,-81 1942,-62 1826,-62"/>
+<text text-anchor="middle" x="1884" y="-69" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">sitkAndImageFilter.h</text>
 </a>
 </g>
 </g>
 <!-- Node2&#45;&gt;Node19 -->
-<g id="edge19" class="edge">
+<g id="edge20" class="edge">
 <title>Node2&#45;&gt;Node19</title>
-<path fill="none" stroke="#191970" d="M3096.6166,-137.1315C2887.1072,-132.1179 2183.067,-113.6473 1959,-87 1956.0854,-86.6534 1953.1174,-86.2593 1950.1243,-85.828"/>
-<polygon fill="#191970" stroke="#191970" points="3096.7193,-140.6348 3106.7998,-137.3739 3096.886,-133.6368 3096.7193,-140.6348"/>
+<path fill="none" stroke="#191970" d="M3062.8236,-137.3333C2856.4622,-133.0403 2169.3542,-116.8022 1951,-87 1940.7083,-85.5953 1929.6737,-83.3553 1919.5897,-81.0098"/>
+<polygon fill="#191970" stroke="#191970" points="3062.7891,-140.8332 3072.8592,-137.5405 3062.9336,-133.8347 3062.7891,-140.8332"/>
 </g>
 <!-- Node20 -->
 <g id="node17" class="node">
 <title>Node20</title>
-<g id="a_node17"><a xlink:href="sitkApproximateSignedDistanceMapImageFilter_8h.html" target="_top" xlink:title=" ">
-<polygon fill="#ffffff" stroke="#ff0000" points="1968.5,-56.5 1968.5,-86.5 2141.5,-86.5 2141.5,-56.5 1968.5,-56.5"/>
-<text text-anchor="start" x="1976.5" y="-74.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">sitkApproximateSignedDistance</text>
-<text text-anchor="middle" x="2055" y="-63.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">MapImageFilter.h</text>
+<g id="a_node17"><a xlink:href="sitkAntiAliasBinaryImageFilter_8h.html" target="_top" xlink:title=" ">
+<polygon fill="#ffffff" stroke="#ff0000" points="1960,-56.5 1960,-86.5 2100,-86.5 2100,-56.5 1960,-56.5"/>
+<text text-anchor="start" x="1968" y="-74.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">sitkAntiAliasBinaryImage</text>
+<text text-anchor="middle" x="2030" y="-63.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">Filter.h</text>
 </a>
 </g>
 </g>
 <!-- Node2&#45;&gt;Node20 -->
-<g id="edge20" class="edge">
+<g id="edge21" class="edge">
 <title>Node2&#45;&gt;Node20</title>
-<path fill="none" stroke="#191970" d="M3096.6178,-137.75C2940.8906,-135.2876 2508.033,-125.2538 2150,-87 2147.2583,-86.7071 2144.4753,-86.3875 2141.6678,-86.0459"/>
-<polygon fill="#191970" stroke="#191970" points="3096.8564,-141.2539 3106.909,-137.9079 3096.9639,-134.2548 3096.8564,-141.2539"/>
+<path fill="none" stroke="#191970" d="M3062.521,-136.595C2874.6617,-130.4019 2295.4399,-109.91 2109,-87 2106.0868,-86.642 2103.1199,-86.2385 2100.1278,-85.7992"/>
+<polygon fill="#191970" stroke="#191970" points="3062.6413,-140.1007 3072.7508,-136.9308 3062.8711,-133.1045 3062.6413,-140.1007"/>
 </g>
 <!-- Node21 -->
 <g id="node18" class="node">
 <title>Node21</title>
-<g id="a_node18"><a xlink:href="sitkAsinImageFilter_8h.html" target="_top" xlink:title=" ">
-<polygon fill="#ffffff" stroke="#ff0000" points="2159.5,-62 2159.5,-81 2278.5,-81 2278.5,-62 2159.5,-62"/>
-<text text-anchor="middle" x="2219" y="-69" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">sitkAsinImageFilter.h</text>
+<g id="a_node18"><a xlink:href="sitkApproximateSignedDistanceMapImageFilter_8h.html" target="_top" xlink:title=" ">
+<polygon fill="#ffffff" stroke="#ff0000" points="2118.5,-56.5 2118.5,-86.5 2291.5,-86.5 2291.5,-56.5 2118.5,-56.5"/>
+<text text-anchor="start" x="2126.5" y="-74.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">sitkApproximateSignedDistance</text>
+<text text-anchor="middle" x="2205" y="-63.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">MapImageFilter.h</text>
 </a>
 </g>
 </g>
 <!-- Node2&#45;&gt;Node21 -->
-<g id="edge21" class="edge">
+<g id="edge22" class="edge">
 <title>Node2&#45;&gt;Node21</title>
-<path fill="none" stroke="#191970" d="M3096.5547,-136.228C2927.268,-129.5585 2444.755,-109.1088 2288,-87 2277.6662,-85.5425 2266.5878,-83.3441 2256.3986,-81.0575"/>
-<polygon fill="#191970" stroke="#191970" points="3096.6405,-139.734 3106.77,-136.6287 3096.9149,-132.7394 3096.6405,-139.734"/>
+<path fill="none" stroke="#191970" d="M3062.5763,-136.798C2927.0025,-132.4734 2584.5807,-119.0507 2300,-87 2297.26,-86.6914 2294.4785,-86.3582 2291.6723,-86.0048"/>
+<polygon fill="#191970" stroke="#191970" points="3062.6414,-140.3016 3072.7464,-137.1176 3062.8614,-133.3051 3062.6414,-140.3016"/>
 </g>
 <!-- Node22 -->
 <g id="node19" class="node">
 <title>Node22</title>
-<g id="a_node19"><a xlink:href="sitkAtan2ImageFilter_8h.html" target="_top" xlink:title=" ">
-<polygon fill="#ffffff" stroke="#ff0000" points="2297,-62 2297,-81 2423,-81 2423,-62 2297,-62"/>
-<text text-anchor="middle" x="2360" y="-69" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">sitkAtan2ImageFilter.h</text>
+<g id="a_node19"><a xlink:href="sitkAsinImageFilter_8h.html" target="_top" xlink:title=" ">
+<polygon fill="#ffffff" stroke="#ff0000" points="2309.5,-62 2309.5,-81 2428.5,-81 2428.5,-62 2309.5,-62"/>
+<text text-anchor="middle" x="2369" y="-69" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">sitkAsinImageFilter.h</text>
 </a>
 </g>
 </g>
 <!-- Node2&#45;&gt;Node22 -->
-<g id="edge22" class="edge">
+<g id="edge23" class="edge">
 <title>Node2&#45;&gt;Node22</title>
-<path fill="none" stroke="#191970" d="M3096.5316,-137.1062C2972.4439,-133.5755 2677.1087,-121.9231 2432,-87 2421.3668,-85.485 2409.9597,-83.2954 2399.4314,-81.037"/>
-<polygon fill="#191970" stroke="#191970" points="3096.4926,-140.6063 3106.5858,-137.385 3096.6868,-133.609 3096.4926,-140.6063"/>
+<path fill="none" stroke="#191970" d="M3062.7952,-136.9461C2943.8173,-133.1847 2667.4673,-121.2254 2438,-87 2427.7996,-85.4786 2416.8642,-83.2868 2406.7745,-81.0283"/>
+<polygon fill="#191970" stroke="#191970" points="3062.689,-140.4444 3072.7921,-137.2544 3062.9048,-133.4477 3062.689,-140.4444"/>
 </g>
 <!-- Node23 -->
 <g id="node20" class="node">
 <title>Node23</title>
-<g id="a_node20"><a xlink:href="sitkAtanImageFilter_8h.html" target="_top" xlink:title=" ">
-<polygon fill="#ffffff" stroke="#ff0000" points="2441,-62 2441,-81 2561,-81 2561,-62 2441,-62"/>
-<text text-anchor="middle" x="2501" y="-69" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">sitkAtanImageFilter.h</text>
+<g id="a_node20"><a xlink:href="sitkAtan2ImageFilter_8h.html" target="_top" xlink:title=" ">
+<polygon fill="#ffffff" stroke="#ff0000" points="2447,-62 2447,-81 2573,-81 2573,-62 2447,-62"/>
+<text text-anchor="middle" x="2510" y="-69" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">sitkAtan2ImageFilter.h</text>
 </a>
 </g>
 </g>
 <!-- Node2&#45;&gt;Node23 -->
-<g id="edge23" class="edge">
+<g id="edge24" class="edge">
 <title>Node2&#45;&gt;Node23</title>
-<path fill="none" stroke="#191970" d="M3096.5309,-135.8969C2990.3074,-130.6649 2761.1744,-116.7373 2570,-87 2559.9306,-85.4337 2549.1375,-83.2537 2539.1483,-81.0226"/>
-<polygon fill="#191970" stroke="#191970" points="3096.57,-139.4029 3106.7277,-136.391 3096.9088,-132.4111 3096.57,-139.4029"/>
+<path fill="none" stroke="#191970" d="M3062.8205,-135.1284C2963.162,-128.9433 2755.705,-113.8862 2582,-87 2571.6386,-85.3962 2560.5277,-83.2296 2550.2106,-81.0252"/>
+<polygon fill="#191970" stroke="#191970" points="3062.7943,-138.6333 3072.9898,-135.7518 3063.2227,-131.6464 3062.7943,-138.6333"/>
 </g>
 <!-- Node24 -->
 <g id="node21" class="node">
 <title>Node24</title>
-<g id="a_node21"><a xlink:href="sitkBSplineDecompositionImageFilter_8h.html" target="_top" xlink:title=" ">
-<polygon fill="#ffffff" stroke="#ff0000" points="2579.5,-56.5 2579.5,-86.5 2724.5,-86.5 2724.5,-56.5 2579.5,-56.5"/>
-<text text-anchor="start" x="2587.5" y="-74.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">sitkBSplineDecomposition</text>
-<text text-anchor="middle" x="2652" y="-63.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">ImageFilter.h</text>
+<g id="a_node21"><a xlink:href="sitkAtanImageFilter_8h.html" target="_top" xlink:title=" ">
+<polygon fill="#ffffff" stroke="#ff0000" points="2591,-62 2591,-81 2711,-81 2711,-62 2591,-62"/>
+<text text-anchor="middle" x="2651" y="-69" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">sitkAtanImageFilter.h</text>
 </a>
 </g>
 </g>
 <!-- Node2&#45;&gt;Node24 -->
-<g id="edge24" class="edge">
+<g id="edge25" class="edge">
 <title>Node2&#45;&gt;Node24</title>
-<path fill="none" stroke="#191970" d="M3096.8815,-132.5836C3014.9426,-124.0919 2862.3229,-107.2221 2733,-87 2730.3123,-86.5797 2727.5774,-86.1365 2724.817,-85.6759"/>
-<polygon fill="#191970" stroke="#191970" points="3096.6936,-136.0827 3106.9998,-133.6268 3097.4115,-129.1196 3096.6936,-136.0827"/>
+<path fill="none" stroke="#191970" d="M3062.6927,-132.6569C2984.0363,-124.5072 2841.0333,-108.299 2720,-87 2710.4474,-85.319 2700.2197,-83.1994 2690.6432,-81.072"/>
+<polygon fill="#191970" stroke="#191970" points="3062.5847,-136.1642 3072.8903,-133.7056 3063.3008,-129.2009 3062.5847,-136.1642"/>
 </g>
 <!-- Node25 -->
 <g id="node22" class="node">
 <title>Node25</title>
-<g id="a_node22"><a xlink:href="sitkBilateralImageFilter_8h.html" target="_top" xlink:title=" ">
-<polygon fill="#ffffff" stroke="#ff0000" points="2742.5,-62 2742.5,-81 2881.5,-81 2881.5,-62 2742.5,-62"/>
-<text text-anchor="middle" x="2812" y="-69" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">sitkBilateralImageFilter.h</text>
+<g id="a_node22"><a xlink:href="sitkBSplineDecompositionImageFilter_8h.html" target="_top" xlink:title=" ">
+<polygon fill="#ffffff" stroke="#ff0000" points="2729.5,-56.5 2729.5,-86.5 2874.5,-86.5 2874.5,-56.5 2729.5,-56.5"/>
+<text text-anchor="start" x="2737.5" y="-74.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">sitkBSplineDecomposition</text>
+<text text-anchor="middle" x="2802" y="-63.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">ImageFilter.h</text>
 </a>
 </g>
 </g>
 <!-- Node2&#45;&gt;Node25 -->
-<g id="edge25" class="edge">
+<g id="edge26" class="edge">
 <title>Node2&#45;&gt;Node25</title>
-<path fill="none" stroke="#191970" d="M3096.6347,-126.9946C3042.9241,-116.5775 2961.6546,-100.7968 2891,-87 2881.1233,-85.0714 2870.5532,-83.0015 2860.461,-81.0224"/>
-<polygon fill="#191970" stroke="#191970" points="3096.1824,-130.472 3106.6659,-128.9399 3097.5151,-123.6 3096.1824,-130.472"/>
+<path fill="none" stroke="#191970" d="M3066.5302,-126.886C3013.161,-115.7118 2932.2001,-98.7606 2873.9061,-86.5553"/>
+<polygon fill="#191970" stroke="#191970" points="3065.9866,-130.348 3076.4916,-128.9717 3067.4212,-123.4966 3065.9866,-130.348"/>
 </g>
 <!-- Node26 -->
 <g id="node23" class="node">
 <title>Node26</title>
-<g id="a_node23"><a xlink:href="sitkBinShrinkImageFilter_8h.html" target="_top" xlink:title=" ">
-<polygon fill="#ffffff" stroke="#ff0000" points="2900,-62 2900,-81 3044,-81 3044,-62 2900,-62"/>
-<text text-anchor="middle" x="2972" y="-69" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">sitkBinShrinkImageFilter.h</text>
+<g id="a_node23"><a xlink:href="sitkBilateralImageFilter_8h.html" target="_top" xlink:title=" ">
+<polygon fill="#ffffff" stroke="#ff0000" points="2892.5,-62 2892.5,-81 3031.5,-81 3031.5,-62 2892.5,-62"/>
+<text text-anchor="middle" x="2962" y="-69" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">sitkBilateralImageFilter.h</text>
 </a>
 </g>
 </g>
 <!-- Node2&#45;&gt;Node26 -->
-<g id="edge26" class="edge">
+<g id="edge27" class="edge">
 <title>Node2&#45;&gt;Node26</title>
-<path fill="none" stroke="#191970" d="M3120.0678,-125.416C3084.3025,-112.3928 3030.2637,-92.7156 2998.3138,-81.0817"/>
-<polygon fill="#191970" stroke="#191970" points="3119.0433,-128.7677 3129.6373,-128.9005 3121.4384,-122.1902 3119.0433,-128.7677"/>
+<path fill="none" stroke="#191970" d="M3089.5507,-124.9118C3058.4526,-111.8895 3012.3079,-92.5664 2984.8816,-81.0817"/>
+<polygon fill="#191970" stroke="#191970" points="3088.5001,-128.2663 3099.0759,-128.9005 3091.2039,-121.8096 3088.5001,-128.2663"/>
 </g>
 <!-- Node27 -->
 <g id="node24" class="node">
 <title>Node27</title>
-<g id="a_node24"><a xlink:href="sitkBinaryClosingByReconstructionImageFilter_8h.html" target="_top" xlink:title=" ">
-<polygon fill="#ffffff" stroke="#ff0000" points="3062.5,-56.5 3062.5,-86.5 3249.5,-86.5 3249.5,-56.5 3062.5,-56.5"/>
-<text text-anchor="start" x="3070.5" y="-74.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">sitkBinaryClosingByReconstruction</text>
-<text text-anchor="middle" x="3156" y="-63.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">ImageFilter.h</text>
+<g id="a_node24"><a xlink:href="sitkBinShrinkImageFilter_8h.html" target="_top" xlink:title=" ">
+<polygon fill="#ffffff" stroke="#ff0000" points="3050,-62 3050,-81 3194,-81 3194,-62 3050,-62"/>
+<text text-anchor="middle" x="3122" y="-69" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">sitkBinShrinkImageFilter.h</text>
 </a>
 </g>
 </g>
 <!-- Node2&#45;&gt;Node27 -->
-<g id="edge27" class="edge">
+<g id="edge28" class="edge">
 <title>Node2&#45;&gt;Node27</title>
-<path fill="none" stroke="#191970" d="M3156,-118.7758C3156,-108.4641 3156,-96.0437 3156,-86.5218"/>
-<polygon fill="#191970" stroke="#191970" points="3152.5001,-118.9005 3156,-128.9005 3159.5001,-118.9006 3152.5001,-118.9005"/>
+<path fill="none" stroke="#191970" d="M3122,-118.6079C3122,-106.214 3122,-90.8263 3122,-81.0817"/>
+<polygon fill="#191970" stroke="#191970" points="3118.5001,-118.9005 3122,-128.9005 3125.5001,-118.9006 3118.5001,-118.9005"/>
 </g>
 <!-- Node28 -->
 <g id="node25" class="node">
 <title>Node28</title>
-<g id="a_node25"><a xlink:href="sitkBinaryContourImageFilter_8h.html" target="_top" xlink:title=" ">
-<polygon fill="#ffffff" stroke="#ff0000" points="3267.5,-62 3267.5,-81 3434.5,-81 3434.5,-62 3267.5,-62"/>
-<text text-anchor="middle" x="3351" y="-69" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">sitkBinaryContourImageFilter.h</text>
+<g id="a_node25"><a xlink:href="sitkBinaryClosingByReconstructionImageFilter_8h.html" target="_top" xlink:title=" ">
+<polygon fill="#ffffff" stroke="#ff0000" points="3212.5,-56.5 3212.5,-86.5 3399.5,-86.5 3399.5,-56.5 3212.5,-56.5"/>
+<text text-anchor="start" x="3220.5" y="-74.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">sitkBinaryClosingByReconstruction</text>
+<text text-anchor="middle" x="3306" y="-63.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">ImageFilter.h</text>
 </a>
 </g>
 </g>
 <!-- Node2&#45;&gt;Node28 -->
-<g id="edge28" class="edge">
+<g id="edge29" class="edge">
 <title>Node2&#45;&gt;Node28</title>
-<path fill="none" stroke="#191970" d="M3193.5955,-125.5826C3231.4938,-112.5611 3289.1084,-92.7653 3323.1131,-81.0817"/>
-<polygon fill="#191970" stroke="#191970" points="3192.2588,-122.341 3183.9387,-128.9005 3194.5334,-128.9611 3192.2588,-122.341"/>
+<path fill="none" stroke="#191970" d="M3157.8099,-125.4605C3188.4668,-114.2974 3232.6154,-98.2216 3264.7462,-86.5218"/>
+<polygon fill="#191970" stroke="#191970" points="3156.5616,-122.1902 3148.3627,-128.9005 3158.9567,-128.7677 3156.5616,-122.1902"/>
 </g>
 <!-- Node29 -->
 <g id="node26" class="node">
 <title>Node29</title>
-<g id="a_node26"><a xlink:href="sitkBinaryDilateImageFilter_8h.html" target="_top" xlink:title=" ">
-<polygon fill="#ffffff" stroke="#ff0000" points="3452,-62 3452,-81 3610,-81 3610,-62 3452,-62"/>
-<text text-anchor="middle" x="3531" y="-69" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">sitkBinaryDilateImageFilter.h</text>
+<g id="a_node26"><a xlink:href="sitkBinaryContourImageFilter_8h.html" target="_top" xlink:title=" ">
+<polygon fill="#ffffff" stroke="#ff0000" points="3417.5,-62 3417.5,-81 3584.5,-81 3584.5,-62 3417.5,-62"/>
+<text text-anchor="middle" x="3501" y="-69" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">sitkBinaryContourImageFilter.h</text>
 </a>
 </g>
 </g>
 <!-- Node2&#45;&gt;Node29 -->
-<g id="edge29" class="edge">
+<g id="edge30" class="edge">
 <title>Node2&#45;&gt;Node29</title>
-<path fill="none" stroke="#191970" d="M3214.8694,-127.982C3287.0199,-115.0911 3408.2285,-93.4352 3477.7258,-81.0183"/>
-<polygon fill="#191970" stroke="#191970" points="3214.2532,-124.5366 3205.0247,-129.7409 3215.4844,-131.4275 3214.2532,-124.5366"/>
+<path fill="none" stroke="#191970" d="M3181.0937,-128.0534C3253.9221,-115.1787 3376.6458,-93.4835 3447.0343,-81.0401"/>
+<polygon fill="#191970" stroke="#191970" points="3180.3971,-124.6221 3171.1591,-129.8096 3181.6157,-131.5153 3180.3971,-124.6221"/>
 </g>
 <!-- Node30 -->
 <g id="node27" class="node">
 <title>Node30</title>
-<g id="a_node27"><a xlink:href="sitkBinaryErodeImageFilter_8h.html" target="_top" xlink:title=" ">
-<polygon fill="#ffffff" stroke="#ff0000" points="3628.5,-62 3628.5,-81 3785.5,-81 3785.5,-62 3628.5,-62"/>
-<text text-anchor="middle" x="3707" y="-69" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">sitkBinaryErodeImageFilter.h</text>
+<g id="a_node27"><a xlink:href="sitkBinaryDilateImageFilter_8h.html" target="_top" xlink:title=" ">
+<polygon fill="#ffffff" stroke="#ff0000" points="3602,-62 3602,-81 3760,-81 3760,-62 3602,-62"/>
+<text text-anchor="middle" x="3681" y="-69" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">sitkBinaryDilateImageFilter.h</text>
 </a>
 </g>
 </g>
 <!-- Node2&#45;&gt;Node30 -->
-<g id="edge30" class="edge">
+<g id="edge31" class="edge">
 <title>Node2&#45;&gt;Node30</title>
-<path fill="none" stroke="#191970" d="M3215.2081,-133.1298C3303.4039,-124.8554 3474.4172,-107.7528 3619,-87 3630.9774,-85.2808 3643.8254,-83.1703 3655.9017,-81.0666"/>
-<polygon fill="#191970" stroke="#191970" points="3214.7597,-129.6563 3205.1283,-134.0708 3215.4104,-136.626 3214.7597,-129.6563"/>
+<path fill="none" stroke="#191970" d="M3181.5189,-133.2516C3271.0303,-125.0739 3445.538,-108.0256 3593,-87 3605.1325,-85.2701 3618.1573,-83.1318 3630.3682,-81.0019"/>
+<polygon fill="#191970" stroke="#191970" points="3180.9354,-129.7901 3171.2933,-134.1809 3181.569,-136.7614 3180.9354,-129.7901"/>
 </g>
 <!-- Node31 -->
 <g id="node28" class="node">
 <title>Node31</title>
-<g id="a_node28"><a xlink:href="sitkBinaryFillholeImageFilter_8h.html" target="_top" xlink:title=" ">
-<polygon fill="#ffffff" stroke="#ff0000" points="3804,-62 3804,-81 3968,-81 3968,-62 3804,-62"/>
-<text text-anchor="middle" x="3886" y="-69" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">sitkBinaryFillholeImageFilter.h</text>
+<g id="a_node28"><a xlink:href="sitkBinaryErodeImageFilter_8h.html" target="_top" xlink:title=" ">
+<polygon fill="#ffffff" stroke="#ff0000" points="3778.5,-62 3778.5,-81 3935.5,-81 3935.5,-62 3778.5,-62"/>
+<text text-anchor="middle" x="3857" y="-69" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">sitkBinaryErodeImageFilter.h</text>
 </a>
 </g>
 </g>
 <!-- Node2&#45;&gt;Node31 -->
-<g id="edge31" class="edge">
+<g id="edge32" class="edge">
 <title>Node2&#45;&gt;Node31</title>
-<path fill="none" stroke="#191970" d="M3215.5499,-135.4145C3328.6069,-129.1752 3581.9988,-113.3653 3794,-87 3807.0195,-85.3808 3821.0105,-83.2346 3834.0548,-81.0568"/>
-<polygon fill="#191970" stroke="#191970" points="3215.1712,-131.9298 3205.3773,-135.9708 3215.5535,-138.9194 3215.1712,-131.9298"/>
+<path fill="none" stroke="#191970" d="M3181.5444,-135.6541C3295.7973,-129.7746 3553.5711,-114.4833 3769,-87 3781.6184,-85.3902 3795.1819,-83.2214 3807.7904,-81.0168"/>
+<polygon fill="#191970" stroke="#191970" points="3181.0783,-132.1733 3171.2693,-136.1774 3181.4344,-139.1642 3181.0783,-132.1733"/>
 </g>
 <!-- Node32 -->
 <g id="node29" class="node">
 <title>Node32</title>
-<g id="a_node29"><a xlink:href="sitkBinaryGrindPeakImageFilter_8h.html" target="_top" xlink:title=" ">
-<polygon fill="#ffffff" stroke="#ff0000" points="3986.5,-56.5 3986.5,-86.5 4133.5,-86.5 4133.5,-56.5 3986.5,-56.5"/>
-<text text-anchor="start" x="3994.5" y="-74.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">sitkBinaryGrindPeakImage</text>
-<text text-anchor="middle" x="4060" y="-63.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">Filter.h</text>
+<g id="a_node29"><a xlink:href="sitkBinaryFillholeImageFilter_8h.html" target="_top" xlink:title=" ">
+<polygon fill="#ffffff" stroke="#ff0000" points="3954,-62 3954,-81 4118,-81 4118,-62 3954,-62"/>
+<text text-anchor="middle" x="4036" y="-69" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">sitkBinaryFillholeImageFilter.h</text>
 </a>
 </g>
 </g>
 <!-- Node2&#45;&gt;Node32 -->
-<g id="edge32" class="edge">
+<g id="edge33" class="edge">
 <title>Node2&#45;&gt;Node32</title>
-<path fill="none" stroke="#191970" d="M3215.4061,-137.2559C3350.9278,-133.8761 3693.1504,-122.2732 3977,-87 3980.0549,-86.6204 3983.167,-86.1987 3986.3066,-85.7445"/>
-<polygon fill="#191970" stroke="#191970" points="3215.1515,-133.761 3205.2397,-137.5036 3215.3221,-140.7589 3215.1515,-133.761"/>
+<path fill="none" stroke="#191970" d="M3181.4356,-136.9027C3317.034,-132.794 3659.5032,-119.7873 3944,-87 3957.3554,-85.4608 3971.7215,-83.2904 3985.039,-81.0598"/>
+<polygon fill="#191970" stroke="#191970" points="3181.1549,-133.4094 3171.2636,-137.2058 3181.3635,-140.4063 3181.1549,-133.4094"/>
 </g>
 <!-- Node33 -->
 <g id="node30" class="node">
 <title>Node33</title>
-<g id="a_node30"><a xlink:href="sitkBinaryImageToLabelMapFilter_8h.html" target="_top" xlink:title=" ">
-<polygon fill="#ffffff" stroke="#ff0000" points="4152,-56.5 4152,-86.5 4306,-86.5 4306,-56.5 4152,-56.5"/>
-<text text-anchor="start" x="4160" y="-74.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">sitkBinaryImageToLabelMap</text>
-<text text-anchor="middle" x="4229" y="-63.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">Filter.h</text>
+<g id="a_node30"><a xlink:href="sitkBinaryGrindPeakImageFilter_8h.html" target="_top" xlink:title=" ">
+<polygon fill="#ffffff" stroke="#ff0000" points="4136.5,-56.5 4136.5,-86.5 4283.5,-86.5 4283.5,-56.5 4136.5,-56.5"/>
+<text text-anchor="start" x="4144.5" y="-74.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">sitkBinaryGrindPeakImage</text>
+<text text-anchor="middle" x="4210" y="-63.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">Filter.h</text>
 </a>
 </g>
 </g>
 <!-- Node2&#45;&gt;Node33 -->
-<g id="edge33" class="edge">
+<g id="edge34" class="edge">
 <title>Node2&#45;&gt;Node33</title>
-<path fill="none" stroke="#191970" d="M3215.3265,-137.9638C3368.9589,-136.0206 3792.202,-127.1383 4142,-87 4145.2008,-86.6327 4148.4619,-86.2214 4151.7519,-85.7757"/>
-<polygon fill="#191970" stroke="#191970" points="3215.1244,-134.4659 3205.1677,-138.087 3215.2094,-141.4653 3215.1244,-134.4659"/>
+<path fill="none" stroke="#191970" d="M3181.3227,-136.5017C3368.012,-130.0486 3942.0378,-108.9105 4127,-87 4130.057,-86.6379 4133.1709,-86.2309 4136.312,-85.7887"/>
+<polygon fill="#191970" stroke="#191970" points="3181.0285,-133.0096 3171.1549,-136.8518 3181.2695,-140.0055 3181.0285,-133.0096"/>
 </g>
 <!-- Node34 -->
 <g id="node31" class="node">
 <title>Node34</title>
-<g id="a_node31"><a xlink:href="sitkBinaryMagnitudeImageFilter_8h.html" target="_top" xlink:title=" ">
-<polygon fill="#ffffff" stroke="#ff0000" points="4324,-56.5 4324,-86.5 4472,-86.5 4472,-56.5 4324,-56.5"/>
-<text text-anchor="start" x="4332" y="-74.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">sitkBinaryMagnitudeImage</text>
-<text text-anchor="middle" x="4398" y="-63.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">Filter.h</text>
+<g id="a_node31"><a xlink:href="sitkBinaryImageToLabelMapFilter_8h.html" target="_top" xlink:title=" ">
+<polygon fill="#ffffff" stroke="#ff0000" points="4302,-56.5 4302,-86.5 4456,-86.5 4456,-56.5 4302,-56.5"/>
+<text text-anchor="start" x="4310" y="-74.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">sitkBinaryImageToLabelMap</text>
+<text text-anchor="middle" x="4379" y="-63.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">Filter.h</text>
 </a>
 </g>
 </g>
 <!-- Node2&#45;&gt;Node34 -->
-<g id="edge34" class="edge">
+<g id="edge35" class="edge">
 <title>Node2&#45;&gt;Node34</title>
-<path fill="none" stroke="#191970" d="M3215.5314,-136.9597C3420.8542,-131.4744 4098.6574,-111.8829 4315,-87 4317.9126,-86.665 4320.8766,-86.2878 4323.8664,-85.8769"/>
-<polygon fill="#191970" stroke="#191970" points="3215.1583,-133.4683 3205.2549,-137.233 3215.3445,-140.4658 3215.1583,-133.4683"/>
+<path fill="none" stroke="#191970" d="M3181.077,-136.9354C3387.0991,-131.3172 4073.1437,-111.205 4292,-87 4295.2023,-86.6458 4298.4646,-86.2455 4301.7557,-85.8089"/>
+<polygon fill="#191970" stroke="#191970" points="3180.9591,-133.4372 3171.0578,-137.2075 3181.1492,-140.4347 3180.9591,-133.4372"/>
 </g>
 <!-- Node35 -->
 <g id="node32" class="node">
 <title>Node35</title>
-<g id="a_node32"><a xlink:href="sitkBinaryMedianImageFilter_8h.html" target="_top" xlink:title=" ">
-<polygon fill="#ffffff" stroke="#ff0000" points="4490,-62 4490,-81 4654,-81 4654,-62 4490,-62"/>
-<text text-anchor="middle" x="4572" y="-69" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">sitkBinaryMedianImageFilter.h</text>
+<g id="a_node32"><a xlink:href="sitkBinaryMagnitudeImageFilter_8h.html" target="_top" xlink:title=" ">
+<polygon fill="#ffffff" stroke="#ff0000" points="4474,-56.5 4474,-86.5 4622,-86.5 4622,-56.5 4474,-56.5"/>
+<text text-anchor="start" x="4482" y="-74.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">sitkBinaryMagnitudeImage</text>
+<text text-anchor="middle" x="4548" y="-63.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">Filter.h</text>
 </a>
 </g>
 </g>
 <!-- Node2&#45;&gt;Node35 -->
-<g id="edge35" class="edge">
+<g id="edge36" class="edge">
 <title>Node2&#45;&gt;Node35</title>
-<path fill="none" stroke="#191970" d="M3215.2502,-137.2217C3438.6858,-132.2416 4230.2512,-113.1164 4481,-87 4494.7083,-85.5722 4509.4761,-83.3545 4523.0444,-81.0387"/>
-<polygon fill="#191970" stroke="#191970" points="3214.9641,-133.727 3205.0443,-137.4481 3215.1195,-140.7253 3214.9641,-133.727"/>
+<path fill="none" stroke="#191970" d="M3181.3073,-137.3812C3406.7845,-132.948 4210.7758,-115.4574 4465,-87 4467.9136,-86.6739 4470.8785,-86.3041 4473.8689,-85.8995"/>
+<polygon fill="#191970" stroke="#191970" points="3180.9417,-133.8875 3171.012,-137.5824 3181.0786,-140.8862 3180.9417,-133.8875"/>
 </g>
 <!-- Node36 -->
 <g id="node33" class="node">
 <title>Node36</title>
-<g id="a_node33"><a xlink:href="sitkBinaryMinMaxCurvatureFlowImageFilter_8h.html" target="_top" xlink:title=" ">
-<polygon fill="#ffffff" stroke="#ff0000" points="4672,-56.5 4672,-86.5 4824,-86.5 4824,-56.5 4672,-56.5"/>
-<text text-anchor="start" x="4680" y="-74.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">sitkBinaryMinMaxCurvature</text>
-<text text-anchor="middle" x="4748" y="-63.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">FlowImageFilter.h</text>
+<g id="a_node33"><a xlink:href="sitkBinaryMedianImageFilter_8h.html" target="_top" xlink:title=" ">
+<polygon fill="#ffffff" stroke="#ff0000" points="4640,-62 4640,-81 4804,-81 4804,-62 4640,-62"/>
+<text text-anchor="middle" x="4722" y="-69" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">sitkBinaryMedianImageFilter.h</text>
 </a>
 </g>
 </g>
 <!-- Node2&#45;&gt;Node36 -->
-<g id="edge36" class="edge">
+<g id="edge37" class="edge">
 <title>Node2&#45;&gt;Node36</title>
-<path fill="none" stroke="#191970" d="M3215.2093,-137.6345C3457.5803,-133.9126 4374.8123,-118.0318 4663,-87 4665.8337,-86.6949 4668.7149,-86.3497 4671.6211,-85.972"/>
-<polygon fill="#191970" stroke="#191970" points="3215.1323,-134.1352 3205.1869,-137.7874 3215.2391,-141.1344 3215.1323,-134.1352"/>
+<path fill="none" stroke="#191970" d="M3181.2782,-137.5444C3423.9329,-133.4676 4342.2534,-116.3834 4631,-87 4644.8711,-85.5884 4659.8241,-83.3462 4673.5217,-81.0008"/>
+<polygon fill="#191970" stroke="#191970" points="3181.1842,-134.0454 3171.2441,-137.712 3181.3012,-141.0444 3181.1842,-134.0454"/>
 </g>
 <!-- Node37 -->
 <g id="node34" class="node">
 <title>Node37</title>
-<g id="a_node34"><a xlink:href="sitkBinaryMorphologicalClosingImageFilter_8h.html" target="_top" xlink:title=" ">
-<polygon fill="#ffffff" stroke="#ff0000" points="4842,-56.5 4842,-86.5 5012,-86.5 5012,-56.5 4842,-56.5"/>
-<text text-anchor="start" x="4850" y="-74.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">sitkBinaryMorphologicalClosing</text>
-<text text-anchor="middle" x="4927" y="-63.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">ImageFilter.h</text>
+<g id="a_node34"><a xlink:href="sitkBinaryMinMaxCurvatureFlowImageFilter_8h.html" target="_top" xlink:title=" ">
+<polygon fill="#ffffff" stroke="#ff0000" points="4822,-56.5 4822,-86.5 4974,-86.5 4974,-56.5 4822,-56.5"/>
+<text text-anchor="start" x="4830" y="-74.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">sitkBinaryMinMaxCurvature</text>
+<text text-anchor="middle" x="4898" y="-63.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">FlowImageFilter.h</text>
 </a>
 </g>
 </g>
 <!-- Node2&#45;&gt;Node37 -->
-<g id="edge37" class="edge">
+<g id="edge38" class="edge">
 <title>Node2&#45;&gt;Node37</title>
-<path fill="none" stroke="#191970" d="M3215.7518,-137.7298C3475.6949,-134.215 4509.5208,-118.4963 4833,-87 4835.8808,-86.7195 4838.8071,-86.4049 4841.7591,-86.0622"/>
-<polygon fill="#191970" stroke="#191970" points="3215.3444,-134.2348 3205.3923,-137.8689 3215.4384,-141.2342 3215.3444,-134.2348"/>
+<path fill="none" stroke="#191970" d="M3181.0115,-137.8909C3441.0958,-135.0238 4486.5777,-121.5357 4813,-87 4815.8342,-86.7001 4818.716,-86.3594 4821.6226,-85.9855"/>
+<polygon fill="#191970" stroke="#191970" points="3180.9728,-134.3911 3171.0117,-138.0002 3181.0494,-141.3906 3180.9728,-134.3911"/>
 </g>
 <!-- Node38 -->
 <g id="node35" class="node">
 <title>Node38</title>
-<g id="a_node35"><a xlink:href="sitkBinaryMorphologicalOpeningImageFilter_8h.html" target="_top" xlink:title=" ">
-<polygon fill="#ffffff" stroke="#ff0000" points="5030.5,-56.5 5030.5,-86.5 5205.5,-86.5 5205.5,-56.5 5030.5,-56.5"/>
-<text text-anchor="start" x="5038.5" y="-74.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">sitkBinaryMorphologicalOpening</text>
-<text text-anchor="middle" x="5118" y="-63.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">ImageFilter.h</text>
+<g id="a_node35"><a xlink:href="sitkBinaryMorphologicalClosingImageFilter_8h.html" target="_top" xlink:title=" ">
+<polygon fill="#ffffff" stroke="#ff0000" points="4992,-56.5 4992,-86.5 5162,-86.5 5162,-56.5 4992,-56.5"/>
+<text text-anchor="start" x="5000" y="-74.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">sitkBinaryMorphologicalClosing</text>
+<text text-anchor="middle" x="5077" y="-63.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">ImageFilter.h</text>
 </a>
 </g>
 </g>
 <!-- Node2&#45;&gt;Node38 -->
-<g id="edge38" class="edge">
+<g id="edge39" class="edge">
 <title>Node2&#45;&gt;Node38</title>
-<path fill="none" stroke="#191970" d="M3215.5255,-137.9058C3492.6471,-134.9786 4658.208,-120.8485 5021,-87 5024.0564,-86.7148 5027.1626,-86.3931 5030.2964,-86.0415"/>
-<polygon fill="#191970" stroke="#191970" points="3215.2424,-134.4085 3205.2796,-138.0132 3215.3158,-141.4081 3215.2424,-134.4085"/>
+<path fill="none" stroke="#191970" d="M3181.4016,-137.9427C3457.9458,-135.1815 4621.0716,-121.6859 4983,-87 4985.8813,-86.7239 4988.8079,-86.4131 4991.7602,-86.0736"/>
+<polygon fill="#191970" stroke="#191970" points="3181.1419,-134.445 3171.1771,-138.0439 3181.2113,-141.4446 3181.1419,-134.445"/>
 </g>
 <!-- Node39 -->
 <g id="node36" class="node">
 <title>Node39</title>
-<g id="a_node36"><a xlink:href="sitkBinaryNotImageFilter_8h.html" target="_top" xlink:title=" ">
-<polygon fill="#ffffff" stroke="#ff0000" points="5224,-62 5224,-81 5370,-81 5370,-62 5224,-62"/>
-<text text-anchor="middle" x="5297" y="-69" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">sitkBinaryNotImageFilter.h</text>
+<g id="a_node36"><a xlink:href="sitkBinaryMorphologicalOpeningImageFilter_8h.html" target="_top" xlink:title=" ">
+<polygon fill="#ffffff" stroke="#ff0000" points="5180.5,-56.5 5180.5,-86.5 5355.5,-86.5 5355.5,-56.5 5180.5,-56.5"/>
+<text text-anchor="start" x="5188.5" y="-74.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">sitkBinaryMorphologicalOpening</text>
+<text text-anchor="middle" x="5268" y="-63.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">ImageFilter.h</text>
 </a>
 </g>
 </g>
 <!-- Node2&#45;&gt;Node39 -->
-<g id="edge39" class="edge">
+<g id="edge40" class="edge">
 <title>Node2&#45;&gt;Node39</title>
-<path fill="none" stroke="#191970" d="M3215.4028,-138.2941C3509.4747,-137.0792 4811.3492,-129.361 5214,-87 5226.829,-85.6503 5240.6456,-83.397 5253.255,-81.0208"/>
-<polygon fill="#191970" stroke="#191970" points="3215.3557,-134.7942 3205.37,-138.3346 3215.3841,-141.7941 3215.3557,-134.7942"/>
+<path fill="none" stroke="#191970" d="M3181.5571,-138.0761C3475.0903,-135.823 4769.7919,-123.9313 5171,-87 5174.0568,-86.7186 5177.1633,-86.4002 5180.2973,-86.0513"/>
+<polygon fill="#191970" stroke="#191970" points="3181.1101,-134.5793 3171.137,-138.1553 3181.1633,-141.5791 3181.1101,-134.5793"/>
 </g>
 <!-- Node40 -->
 <g id="node37" class="node">
 <title>Node40</title>
-<g id="a_node37"><a xlink:href="sitkBinaryOpeningByReconstructionImageFilter_8h.html" target="_top" xlink:title=" ">
-<polygon fill="#ffffff" stroke="#ff0000" points="5388.5,-56.5 5388.5,-86.5 5579.5,-86.5 5579.5,-56.5 5388.5,-56.5"/>
-<text text-anchor="start" x="5396.5" y="-74.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">sitkBinaryOpeningByReconstruction</text>
-<text text-anchor="middle" x="5484" y="-63.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">ImageFilter.h</text>
+<g id="a_node37"><a xlink:href="sitkBinaryNotImageFilter_8h.html" target="_top" xlink:title=" ">
+<polygon fill="#ffffff" stroke="#ff0000" points="5374,-62 5374,-81 5520,-81 5520,-62 5374,-62"/>
+<text text-anchor="middle" x="5447" y="-69" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">sitkBinaryNotImageFilter.h</text>
 </a>
 </g>
 </g>
 <!-- Node2&#45;&gt;Node40 -->
-<g id="edge40" class="edge">
+<g id="edge41" class="edge">
 <title>Node2&#45;&gt;Node40</title>
-<path fill="none" stroke="#191970" d="M3215.082,-138.1193C3522.4091,-135.9884 4940.905,-124.267 5379,-87 5382.1213,-86.7345 5385.291,-86.4359 5388.4891,-86.1098"/>
-<polygon fill="#191970" stroke="#191970" points="3215.0189,-134.6195 3205.0432,-138.1882 3215.067,-141.6194 3215.0189,-134.6195"/>
+<path fill="none" stroke="#191970" d="M3181.3832,-137.7105C3514.2785,-133.2077 5141.6918,-110.1574 5364,-87 5376.8304,-85.6635 5390.6475,-83.4143 5403.2568,-81.0378"/>
+<polygon fill="#191970" stroke="#191970" points="3180.9519,-134.2159 3171,-137.8506 3181.0464,-141.2152 3180.9519,-134.2159"/>
 </g>
 <!-- Node41 -->
 <g id="node38" class="node">
 <title>Node41</title>
-<g id="a_node38"><a xlink:href="sitkBinaryProjectionImageFilter_8h.html" target="_top" xlink:title=" ">
-<polygon fill="#ffffff" stroke="#ff0000" points="5598,-56.5 5598,-86.5 5744,-86.5 5744,-56.5 5598,-56.5"/>
-<text text-anchor="start" x="5606" y="-74.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">sitkBinaryProjectionImage</text>
-<text text-anchor="middle" x="5671" y="-63.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">Filter.h</text>
+<g id="a_node38"><a xlink:href="sitkBinaryOpeningByReconstructionImageFilter_8h.html" target="_top" xlink:title=" ">
+<polygon fill="#ffffff" stroke="#ff0000" points="5538.5,-56.5 5538.5,-86.5 5729.5,-86.5 5729.5,-56.5 5538.5,-56.5"/>
+<text text-anchor="start" x="5546.5" y="-74.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">sitkBinaryOpeningByReconstruction</text>
+<text text-anchor="middle" x="5634" y="-63.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">ImageFilter.h</text>
 </a>
 </g>
 </g>
 <!-- Node2&#45;&gt;Node41 -->
-<g id="edge41" class="edge">
+<g id="edge42" class="edge">
 <title>Node2&#45;&gt;Node41</title>
-<path fill="none" stroke="#191970" d="M3215.3314,-137.825C3564.601,-133.7743 5345.6859,-112.0217 5588,-87 5591.2079,-86.6687 5594.4774,-86.28 5597.7742,-85.846"/>
-<polygon fill="#191970" stroke="#191970" points="3215.1381,-134.3269 3205.1792,-137.9425 3215.2191,-141.3265 3215.1381,-134.3269"/>
+<path fill="none" stroke="#191970" d="M3181.2279,-138.2396C3503.8513,-136.668 5052.3322,-127.1233 5529,-87 5532.1215,-86.7372 5535.2915,-86.441 5538.4897,-86.117"/>
+<polygon fill="#191970" stroke="#191970" points="3181.1376,-134.7399 3171.1545,-138.288 3181.1713,-141.7398 3181.1376,-134.7399"/>
 </g>
 <!-- Node42 -->
 <g id="node39" class="node">
 <title>Node42</title>
-<g id="a_node39"><a xlink:href="sitkBinaryPruningImageFilter_8h.html" target="_top" xlink:title=" ">
-<polygon fill="#ffffff" stroke="#ff0000" points="5762,-62 5762,-81 5928,-81 5928,-62 5762,-62"/>
-<text text-anchor="middle" x="5845" y="-69" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">sitkBinaryPruningImageFilter.h</text>
+<g id="a_node39"><a xlink:href="sitkBinaryProjectionImageFilter_8h.html" target="_top" xlink:title=" ">
+<polygon fill="#ffffff" stroke="#ff0000" points="5748,-56.5 5748,-86.5 5894,-86.5 5894,-56.5 5748,-56.5"/>
+<text text-anchor="start" x="5756" y="-74.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">sitkBinaryProjectionImage</text>
+<text text-anchor="middle" x="5821" y="-63.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">Filter.h</text>
 </a>
 </g>
 </g>
 <!-- Node2&#45;&gt;Node42 -->
-<g id="edge42" class="edge">
+<g id="edge43" class="edge">
 <title>Node2&#45;&gt;Node42</title>
-<path fill="none" stroke="#191970" d="M3215.2594,-137.8484C3578.1319,-133.7885 5493.0488,-111.3423 5753,-87 5767.1916,-85.6711 5782.4975,-83.4242 5796.4748,-81.0476"/>
-<polygon fill="#191970" stroke="#191970" points="3215.1879,-134.3488 3205.2277,-137.9603 3215.2661,-141.3484 3215.1879,-134.3488"/>
+<path fill="none" stroke="#191970" d="M3181.1142,-137.9218C3545.2002,-134.2828 5476.2333,-113.8334 5738,-87 5741.2081,-86.6711 5744.4778,-86.2843 5747.7749,-85.852"/>
+<polygon fill="#191970" stroke="#191970" points="3181.0162,-134.4225 3171.0516,-138.0221 3181.086,-141.4221 3181.0162,-134.4225"/>
 </g>
 <!-- Node43 -->
 <g id="node40" class="node">
 <title>Node43</title>
-<g id="a_node40"><a xlink:href="sitkBinaryReconstructionByDilationImageFilter_8h.html" target="_top" xlink:title=" ">
-<polygon fill="#ffffff" stroke="#ff0000" points="5946,-56.5 5946,-86.5 6084,-86.5 6084,-56.5 5946,-56.5"/>
-<text text-anchor="start" x="5954" y="-74.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">sitkBinaryReconstruction</text>
-<text text-anchor="middle" x="6015" y="-63.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">ByDilationImageFilter.h</text>
+<g id="a_node40"><a xlink:href="sitkBinaryPruningImageFilter_8h.html" target="_top" xlink:title=" ">
+<polygon fill="#ffffff" stroke="#ff0000" points="5912,-62 5912,-81 6078,-81 6078,-62 5912,-62"/>
+<text text-anchor="middle" x="5995" y="-69" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">sitkBinaryPruningImageFilter.h</text>
 </a>
 </g>
 </g>
 <!-- Node2&#45;&gt;Node43 -->
-<g id="edge43" class="edge">
+<g id="edge44" class="edge">
 <title>Node2&#45;&gt;Node43</title>
-<path fill="none" stroke="#191970" d="M3215.1981,-138.0359C3592.8233,-134.9917 5657.9946,-117.0638 5937,-87 5939.8827,-86.6894 5942.8173,-86.3254 5945.7759,-85.919"/>
-<polygon fill="#191970" stroke="#191970" points="3215.0079,-134.5372 3205.0364,-138.1175 3215.0642,-141.537 3215.0079,-134.5372"/>
+<path fill="none" stroke="#191970" d="M3181.1877,-137.9322C3558.7479,-134.2403 5623.5847,-112.9801 5903,-87 5917.1924,-85.6804 5932.4987,-83.4365 5946.4759,-81.0596"/>
+<polygon fill="#191970" stroke="#191970" points="3180.9931,-134.4339 3171.0278,-138.0313 3181.0614,-141.4335 3180.9931,-134.4339"/>
 </g>
 <!-- Node44 -->
 <g id="node41" class="node">
 <title>Node44</title>
-<g id="a_node41"><a xlink:href="sitkBinaryReconstructionByErosionImageFilter_8h.html" target="_top" xlink:title=" ">
-<polygon fill="#ffffff" stroke="#ff0000" points="6102,-56.5 6102,-86.5 6240,-86.5 6240,-56.5 6102,-56.5"/>
-<text text-anchor="start" x="6110" y="-74.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">sitkBinaryReconstruction</text>
-<text text-anchor="middle" x="6171" y="-63.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">ByErosionImageFilter.h</text>
+<g id="a_node41"><a xlink:href="sitkBinaryReconstructionByDilationImageFilter_8h.html" target="_top" xlink:title=" ">
+<polygon fill="#ffffff" stroke="#ff0000" points="6096,-56.5 6096,-86.5 6234,-86.5 6234,-56.5 6096,-56.5"/>
+<text text-anchor="start" x="6104" y="-74.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">sitkBinaryReconstruction</text>
+<text text-anchor="middle" x="6165" y="-63.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">ByDilationImageFilter.h</text>
 </a>
 </g>
 </g>
 <!-- Node2&#45;&gt;Node44 -->
-<g id="edge44" class="edge">
+<g id="edge45" class="edge">
 <title>Node2&#45;&gt;Node44</title>
-<path fill="none" stroke="#191970" d="M3215.3921,-138.097C3605.7766,-135.3633 5797.5542,-118.6884 6093,-87 6095.8828,-86.6908 6098.8175,-86.328 6101.7763,-85.9225"/>
-<polygon fill="#191970" stroke="#191970" points="3215.1436,-134.5985 3205.1683,-138.1682 3215.1925,-141.5983 3215.1436,-134.5985"/>
+<path fill="none" stroke="#191970" d="M3181.3315,-138.1079C3573.7117,-135.4305 5788.5773,-118.9827 6087,-87 6089.8828,-86.691 6092.8176,-86.3285 6095.7763,-85.9232"/>
+<polygon fill="#191970" stroke="#191970" points="3181.0343,-134.6098 3171.0583,-138.1777 3181.0819,-141.6096 3181.0343,-134.6098"/>
 </g>
 <!-- Node45 -->
 <g id="node42" class="node">
 <title>Node45</title>
-<g id="a_node42"><a xlink:href="sitkBinaryThinningImageFilter_8h.html" target="_top" xlink:title=" ">
-<polygon fill="#ffffff" stroke="#ff0000" points="6258.5,-62 6258.5,-81 6429.5,-81 6429.5,-62 6258.5,-62"/>
-<text text-anchor="middle" x="6344" y="-69" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">sitkBinaryThinningImageFilter.h</text>
+<g id="a_node42"><a xlink:href="sitkBinaryReconstructionByErosionImageFilter_8h.html" target="_top" xlink:title=" ">
+<polygon fill="#ffffff" stroke="#ff0000" points="6252,-56.5 6252,-86.5 6390,-86.5 6390,-56.5 6252,-56.5"/>
+<text text-anchor="start" x="6260" y="-74.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">sitkBinaryReconstruction</text>
+<text text-anchor="middle" x="6321" y="-63.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">ByErosionImageFilter.h</text>
 </a>
 </g>
 </g>
 <!-- Node2&#45;&gt;Node45 -->
-<g id="edge45" class="edge">
+<g id="edge46" class="edge">
 <title>Node2&#45;&gt;Node45</title>
-<path fill="none" stroke="#191970" d="M3215.3198,-138.031C3617.3779,-134.784 5936.5031,-114.946 6249,-87 6263.6473,-85.6901 6279.4502,-83.4492 6293.8834,-81.0722"/>
-<polygon fill="#191970" stroke="#191970" points="3215.051,-134.533 3205.0796,-138.1135 3215.1075,-141.5328 3215.051,-134.533"/>
+<path fill="none" stroke="#191970" d="M3181.2478,-138.1636C3585.2523,-135.7853 5928.0436,-120.6164 6243,-87 6245.883,-86.6923 6248.8178,-86.3308 6251.7767,-85.9263"/>
+<polygon fill="#191970" stroke="#191970" points="3181.2158,-134.6637 3171.2365,-138.2223 3181.2569,-141.6635 3181.2158,-134.6637"/>
 </g>
 <!-- Node3&#45;&gt;Node4 -->
 <g id="edge3" class="edge">
 <title>Node3&#45;&gt;Node4</title>
-<path fill="none" stroke="#191970" d="M176.6032,-56.2966C177.7414,-56.1924 178.874,-56.0934 180,-56 520.9537,-27.7079 6085.4177,-11.5362 6598.2092,-10.1041"/>
-<polygon fill="#191970" stroke="#191970" points="175.8265,-52.858 166.2381,-57.365 176.5442,-59.8211 175.8265,-52.858"/>
+<path fill="none" stroke="#191970" d="M176.6032,-56.2967C177.7414,-56.1925 178.8741,-56.0935 180,-56 517.7506,-27.9625 6028.6272,-11.5675 6539.1634,-10.1068"/>
+<polygon fill="#191970" stroke="#191970" points="175.8264,-52.8581 166.2381,-57.3653 176.5443,-59.8212 175.8264,-52.8581"/>
 </g>
 <!-- Node5&#45;&gt;Node4 -->
 <g id="edge5" class="edge">
 <title>Node5&#45;&gt;Node4</title>
-<path fill="none" stroke="#191970" d="M327.5742,-59.8244C335.3425,-58.2485 343.3668,-56.8751 351,-56 681.7274,-18.0846 6094.3606,-10.654 6598.433,-10.0434"/>
-<polygon fill="#191970" stroke="#191970" points="326.5991,-56.4543 317.5641,-61.9878 328.0778,-63.2963 326.5991,-56.4543"/>
+<path fill="none" stroke="#191970" d="M327.5743,-59.8249C335.3425,-58.2489 343.3669,-56.8753 351,-56 678.5377,-18.4387 6037.6993,-10.6901 6539.4011,-10.0462"/>
+<polygon fill="#191970" stroke="#191970" points="326.5991,-56.4547 317.5642,-61.9882 328.0779,-63.2968 326.5991,-56.4547"/>
 </g>
 <!-- Node6&#45;&gt;Node4 -->
 <g id="edge7" class="edge">
 <title>Node6&#45;&gt;Node4</title>
-<path fill="none" stroke="#191970" d="M6538.1557,-57.3813C6562.1063,-45.7832 6595.3805,-29.6701 6616.2956,-19.5419"/>
-<polygon fill="#191970" stroke="#191970" points="6536.3186,-54.3821 6528.8438,-61.8906 6539.3695,-60.6823 6536.3186,-54.3821"/>
+<path fill="none" stroke="#191970" d="M474.7241,-59.989C483.4279,-58.3457 492.4471,-56.9073 501,-56 820.7009,-22.0864 6042.6859,-11.0465 6539.1718,-10.0723"/>
+<polygon fill="#191970" stroke="#191970" points="473.8185,-56.6006 464.6983,-61.9925 475.1903,-63.4649 473.8185,-56.6006"/>
 </g>
 <!-- Node7&#45;&gt;Node4 -->
 <g id="edge9" class="edge">
 <title>Node7&#45;&gt;Node4</title>
-<path fill="none" stroke="#191970" d="M532.5097,-56.0781C947.2753,-26.9844 6106.3606,-11.5196 6598.3775,-10.1064"/>
-<polygon fill="#191970" stroke="#191970" points="532.0515,-52.6033 522.357,-56.8772 532.6008,-59.5817 532.0515,-52.6033"/>
+<path fill="none" stroke="#191970" d="M6494.6127,-56.915C6514.9139,-45.3546 6542.6946,-29.535 6560.2435,-19.5419"/>
+<polygon fill="#191970" stroke="#191970" points="6492.8329,-53.9007 6485.875,-61.8906 6496.2968,-59.9836 6492.8329,-53.9007"/>
+</g>
+<!-- Node8&#45;&gt;Node4 -->
+<g id="edge11" class="edge">
+<title>Node8&#45;&gt;Node4</title>
+<path fill="none" stroke="#191970" d="M682.4558,-56.0841C1084.9723,-27.9317 6055.3034,-11.6415 6539.1764,-10.1175"/>
+<polygon fill="#191970" stroke="#191970" points="682.0519,-52.605 672.3571,-56.8781 682.6007,-59.5835 682.0519,-52.605"/>
 </g>
 <!-- Node303&#45;&gt;Node4 -->
-<g id="edge47" class="edge">
+<g id="edge48" class="edge">
 <title>Node303&#45;&gt;Node4</title>
-<path fill="none" stroke="#191970" d="M6562.9078,-119.6783C6580.9438,-112.0524 6598.846,-101.5003 6612,-87 6629.5929,-67.6064 6634.2897,-35.4596 6635.5435,-19.5394"/>
-<polygon fill="#191970" stroke="#191970" points="6561.4994,-116.4715 6553.4883,-123.4049 6564.0747,-122.9806 6561.4994,-116.4715"/>
+<path fill="none" stroke="#191970" d="M6530.5405,-119.3081C6546.6538,-111.8094 6561.754,-101.4097 6572,-87 6586.4391,-66.6932 6582.5358,-35.2469 6579.3217,-19.5681"/>
+<polygon fill="#191970" stroke="#191970" points="6528.7877,-116.2507 6520.9652,-123.3963 6531.5364,-122.6885 6528.7877,-116.2507"/>
 </g>
 <!-- Node304&#45;&gt;Node4 -->
-<g id="edge49" class="edge">
+<g id="edge50" class="edge">
 <title>Node304&#45;&gt;Node4</title>
-<path fill="none" stroke="#191970" d="M6666.7839,-113.3953C6662.0601,-97.0359 6655.7243,-75.2338 6650,-56 6646.2377,-43.3585 6641.7866,-28.799 6638.9301,-19.5045"/>
-<polygon fill="#191970" stroke="#191970" points="6663.4998,-114.6387 6669.6327,-123.278 6670.2259,-112.6998 6663.4998,-114.6387"/>
+<path fill="none" stroke="#191970" d="M6628.9873,-113.2012C6625.1079,-96.4427 6618.8845,-74.2662 6610,-56 6603.3796,-42.3886 6592.7824,-28.5071 6585.3888,-19.606"/>
+<polygon fill="#191970" stroke="#191970" points="6625.6479,-114.3141 6631.2026,-123.336 6632.4864,-112.8192 6625.6479,-114.3141"/>
 </g>
 <!-- Node309&#45;&gt;Node4 -->
-<g id="edge54" class="edge">
+<g id="edge55" class="edge">
 <title>Node309&#45;&gt;Node4</title>
-<path fill="none" stroke="#191970" d="M6945.7193,-125.3592C6876.1777,-99.4575 6722.8647,-42.3539 6661.8181,-19.6163"/>
-<polygon fill="#191970" stroke="#191970" points="6944.758,-128.736 6955.3508,-128.9466 6947.2014,-122.1763 6944.758,-128.736"/>
+<path fill="none" stroke="#191970" d="M6904.2263,-125.5181C6831.0682,-99.6917 6668.7805,-42.4005 6604.2399,-19.6163"/>
+<polygon fill="#191970" stroke="#191970" points="6903.3434,-128.918 6913.9382,-128.9466 6905.6737,-122.3173 6903.3434,-128.918"/>
 </g>
 <!-- Node310&#45;&gt;Node4 -->
-<g id="edge56" class="edge">
+<g id="edge57" class="edge">
 <title>Node310&#45;&gt;Node4</title>
-<path fill="none" stroke="#191970" d="M7080.0402,-126.2634C7020.0988,-109.9937 6910.6726,-80.4475 6817,-56 6767.5896,-43.1044 6710.4662,-28.6648 6673.823,-19.4622"/>
-<polygon fill="#191970" stroke="#191970" points="7079.366,-129.707 7089.9338,-128.9502 7081.2006,-122.9517 7079.366,-129.707"/>
+<path fill="none" stroke="#191970" d="M7038.9745,-126.3081C6977.1832,-109.9976 6863.9508,-80.3106 6767,-56 6714.1635,-42.7512 6652.8957,-28.0339 6614.5371,-18.8972"/>
+<polygon fill="#191970" stroke="#191970" points="7038.2421,-129.7346 7048.8043,-128.9046 7040.0298,-122.9668 7038.2421,-129.7346"/>
 </g>
 <!-- Node311&#45;&gt;Node4 -->
-<g id="edge58" class="edge">
+<g id="edge59" class="edge">
 <title>Node311&#45;&gt;Node4</title>
-<path fill="none" stroke="#191970" d="M7215.6295,-126.4743C7210.6951,-125.2764 7205.7496,-124.0984 7201,-123 7061.549,-90.7488 7026.3977,-83.8423 6886,-56 6810.8946,-41.1059 6722.7613,-25.2714 6673.7566,-16.6124"/>
-<polygon fill="#191970" stroke="#191970" points="7215.1297,-129.9555 7225.6759,-128.9418 7216.7994,-123.1575 7215.1297,-129.9555"/>
+<path fill="none" stroke="#191970" d="M7176.2308,-126.5905C7171.0982,-125.3483 7165.9436,-124.1286 7161,-123 7017.6417,-90.2722 6981.4139,-83.7008 6837,-56 6757.9913,-40.8449 6665.1176,-24.85 6614.5211,-16.2893"/>
+<polygon fill="#191970" stroke="#191970" points="7175.467,-130.0068 7186.0128,-128.9891 7177.1341,-123.2082 7175.467,-130.0068"/>
 </g>
 <!-- Node312&#45;&gt;Node4 -->
-<g id="edge60" class="edge">
+<g id="edge61" class="edge">
 <title>Node312&#45;&gt;Node4</title>
-<path fill="none" stroke="#191970" d="M7335.0646,-125.7143C7332.0186,-124.7349 7328.9656,-123.8129 7326,-123 7082.2048,-56.1693 6778.4495,-23.2919 6673.6164,-13.3522"/>
-<polygon fill="#191970" stroke="#191970" points="7334.0603,-129.0695 7344.6547,-128.9748 7336.3136,-122.4421 7334.0603,-129.0695"/>
+<path fill="none" stroke="#191970" d="M7295.0678,-125.7027C7292.0211,-124.7258 7288.9671,-123.8076 7286,-123 7034.6387,-54.5846 6721.1412,-22.5621 6614.5014,-13.1098"/>
+<polygon fill="#191970" stroke="#191970" points="7294.0646,-129.0582 7304.659,-128.9591 7296.3151,-122.4299 7294.0646,-129.0582"/>
 </g>
 <!-- Node313&#45;&gt;Node4 -->
-<g id="edge62" class="edge">
+<g id="edge63" class="edge">
 <title>Node313&#45;&gt;Node4</title>
-<path fill="none" stroke="#191970" d="M7455.5794,-126.6783C7378.5016,-108.9879 7226.561,-75.6146 7096,-56 6940.0404,-32.5697 6752.4821,-18.0064 6673.7217,-12.5025"/>
-<polygon fill="#191970" stroke="#191970" points="7454.9693,-130.1294 7465.4998,-128.9636 7456.5407,-123.308 7454.9693,-130.1294"/>
+<path fill="none" stroke="#191970" d="M7417.3504,-126.5574C7342.8119,-108.6768 7195.6601,-75.0209 7069,-56 6900.3847,-30.6786 6697.0331,-16.9483 6614.5137,-12.0736"/>
+<polygon fill="#191970" stroke="#191970" points="7416.8349,-130.0333 7427.3765,-128.9726 7418.4743,-123.2279 7416.8349,-130.0333"/>
 </g>
 </g>
 </svg>
