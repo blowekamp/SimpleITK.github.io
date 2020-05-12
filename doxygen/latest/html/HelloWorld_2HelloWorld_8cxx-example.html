@@ -26,7 +26,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">SimpleITK
-   &#160;<span id="projectnumber">2.0.0rc1.post207</span>
+   &#160;<span id="projectnumber">2.0.0rc1.post210</span>
    </div>
   </td>
  </tr>
@@ -95,9 +95,7 @@ $(function() {
 <div class="line">  <span class="comment">// Create eye images</span></div>
 <div class="line">  std::vector&lt;double&gt; eyeSize ( 2, 5.0 );</div>
 <div class="line">  std::vector&lt;double&gt; eye1Center ( 2, 48.0 );</div>
-<div class="line">  std::vector&lt;double&gt; eye2Center;</div>
-<div class="line">  eye2Center.push_back( 80.0 );</div>
-<div class="line">  eye2Center.push_back( 48.0 );</div>
+<div class="line">  std::vector&lt;double&gt; eye2Center = { 80.0, 48.0 };</div>
 <div class="line">  <a class="code" href="classitk_1_1simple_1_1Image.html">sitk::Image</a> eye1 = <a class="code" href="namespaceitk_1_1simple.html#a01437b37d92c605393fa2fa04b335144">sitk::GaussianSource</a>( pixelType, imageSize, eyeSize, eye1Center, 150 );</div>
 <div class="line">  <a class="code" href="classitk_1_1simple_1_1Image.html">sitk::Image</a> eye2 = <a class="code" href="namespaceitk_1_1simple.html#a01437b37d92c605393fa2fa04b335144">sitk::GaussianSource</a>( pixelType, imageSize, eyeSize, eye2Center, 150 );</div>
 <div class="line"> </div>
@@ -106,23 +104,15 @@ $(function() {
 <div class="line">  face = <a name="a3"></a><a class="code" href="namespaceitk_1_1simple.html#aea13be645bbf2b4998a88a9e3f837901">sitk::BinaryThreshold</a>( face, 200, 255, 255 );</div>
 <div class="line"> </div>
 <div class="line">  <span class="comment">// Create the mouth</span></div>
-<div class="line">  std::vector&lt;double&gt; mouthRadii;</div>
-<div class="line">  mouthRadii.push_back( 30.0 );</div>
-<div class="line">  mouthRadii.push_back( 20.0 );</div>
-<div class="line">  std::vector&lt;double&gt; mouthCenter;</div>
-<div class="line">  mouthCenter.push_back( 64.0 );</div>
-<div class="line">  mouthCenter.push_back( 76.0 );</div>
+<div class="line">  std::vector&lt;double&gt; mouthRadii = { 30.0, 20.0 };</div>
+<div class="line">  std::vector&lt;double&gt; mouthCenter = { 64.0, 76.0 };</div>
 <div class="line">  <a class="code" href="classitk_1_1simple_1_1Image.html">sitk::Image</a> mouth = 255 - <a class="code" href="namespaceitk_1_1simple.html#aea13be645bbf2b4998a88a9e3f837901">sitk::BinaryThreshold</a>(</div>
 <div class="line">                              <a class="code" href="namespaceitk_1_1simple.html#a01437b37d92c605393fa2fa04b335144">sitk::GaussianSource</a>(pixelType, imageSize, mouthRadii, mouthCenter),</div>
 <div class="line">                              200, 255, 255 );</div>
 <div class="line"> </div>
 <div class="line">  <span class="comment">// Paste the mouth onto the face</span></div>
-<div class="line">  std::vector&lt;unsigned int&gt; mouthSize;</div>
-<div class="line">  mouthSize.push_back( 64 );</div>
-<div class="line">  mouthSize.push_back( 18 );</div>
-<div class="line">  std::vector&lt;int&gt; mouthLoc;</div>
-<div class="line">  mouthLoc.push_back( 32 );</div>
-<div class="line">  mouthLoc.push_back( 76 );</div>
+<div class="line">  std::vector&lt;unsigned int&gt; mouthSize = { 64, 18 };</div>
+<div class="line">  std::vector&lt;int&gt; mouthLoc = { 32, 76 };</div>
 <div class="line">  face = <a name="a4"></a><a class="code" href="namespaceitk_1_1simple.html#a5656d83fb762803efed52d7217f14a2d">sitk::Paste</a>( face, mouth, mouthSize, mouthLoc, mouthLoc );</div>
 <div class="line"> </div>
 <div class="line">  <span class="comment">// Apply the face to the original image</span></div>
@@ -145,7 +135,7 @@ $(function() {
 <div class="ttc" id="anamespaceitk_1_1simple_html_aea13be645bbf2b4998a88a9e3f837901"><div class="ttname"><a href="namespaceitk_1_1simple.html#aea13be645bbf2b4998a88a9e3f837901">itk::simple::BinaryThreshold</a></div><div class="ttdeci">Image BinaryThreshold(Image &amp;&amp;image1, double lowerThreshold=0.0, double upperThreshold=255.0, uint8_t insideValue=1u, uint8_t outsideValue=0u)</div><div class="ttdoc">Binarize an input image by thresholding.</div></div>
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat May 9 2020 02:54:06 for SimpleITK by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue May 12 2020 02:51:44 for SimpleITK by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>
