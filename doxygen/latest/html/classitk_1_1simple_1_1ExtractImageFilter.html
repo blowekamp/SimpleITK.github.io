@@ -26,7 +26,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">SimpleITK
-   &#160;<span id="projectnumber">2.0.0rc1.post210</span>
+   &#160;<span id="projectnumber">2.0.0rc1.post222</span>
    </div>
   </td>
  </tr>
@@ -200,7 +200,7 @@ Private Member Functions</h2></td></tr>
 Private Attributes</h2></td></tr>
 <tr class="memitem:ac81da73b9ead5e40117cfb8bf59ffbee"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classitk_1_1simple_1_1ExtractImageFilter.html#aeb3454c7136722790d3b657643e2cce8">DirectionCollapseToStrategyType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1ExtractImageFilter.html#ac81da73b9ead5e40117cfb8bf59ffbee">m_DirectionCollapseToStrategy</a> {<a class="el" href="classitk_1_1simple_1_1ExtractImageFilter.html#aeb3454c7136722790d3b657643e2cce8a1ac4c64513f940403ecb72083a88691f">itk::simple::ExtractImageFilter::DIRECTIONCOLLAPSETOGUESS</a>}</td></tr>
 <tr class="separator:ac81da73b9ead5e40117cfb8bf59ffbee"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a965346cef935ac3793d913e677b9843a"><td class="memItemLeft" align="right" valign="top">std::vector&lt; int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1ExtractImageFilter.html#a965346cef935ac3793d913e677b9843a">m_Index</a> {std::vector&lt;int&gt;(4, 0)}</td></tr>
+<tr class="memitem:a965346cef935ac3793d913e677b9843a"><td class="memItemLeft" align="right" valign="top">std::vector&lt; int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1ExtractImageFilter.html#a965346cef935ac3793d913e677b9843a">m_Index</a> {std::vector&lt;int&gt;(<a class="el" href="sitkConfigure_8h.html#aede15605722ddda23926e91409b05e52">SITK_MAX_DIMENSION</a>, 0)}</td></tr>
 <tr class="separator:a965346cef935ac3793d913e677b9843a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab73bda85bb2ea60192b51f9857de18bb"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1ExtractImageFilter.html#ab73bda85bb2ea60192b51f9857de18bb">m_InPlace</a> {false}</td></tr>
 <tr class="separator:ab73bda85bb2ea60192b51f9857de18bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -311,7 +311,7 @@ Additional Inherited Members</h2></td></tr>
 <p>This filter is implemented as a multithreaded filter. It provides a DynamicThreadedGenerateData() method for its implementation.</p>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="classitk_1_1simple_1_1CropImageFilter.html" title="Decrease the image size by cropping the image by an itk::Size at both the upper and lower bounds of t...">CropImageFilter</a> </dd>
 <dd>
-<a class="el" href="namespaceitk_1_1simple.html#a9488a2d18d3e3f48dbcc1ea3d945608e" title="Decrease the image size by cropping the image to the selected region bounds.">itk::simple::Extract</a> for the procedural interface </dd>
+<a class="el" href="namespaceitk_1_1simple.html#ac3635ca15424dfea39bb7f083d1c5b00" title="Decrease the image size by cropping the image to the selected region bounds.">itk::simple::Extract</a> for the procedural interface </dd>
 <dd>
 <a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1ExtractImageFilter.html">itk::ExtractImageFilter</a> for the Doxygen on the original ITK class. </dd></dl>
 
@@ -896,7 +896,7 @@ template&lt;class TImageType , unsigned int OutputDimension&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::vector&lt;int&gt; itk::simple::ExtractImageFilter::m_Index {std::vector&lt;int&gt;(4, 0)}</td>
+          <td class="memname">std::vector&lt;int&gt; itk::simple::ExtractImageFilter::m_Index {std::vector&lt;int&gt;(<a class="el" href="sitkConfigure_8h.html#aede15605722ddda23926e91409b05e52">SITK_MAX_DIMENSION</a>, 0)}</td>
         </tr>
       </table>
   </td>
@@ -988,7 +988,7 @@ template&lt;class TImageType , unsigned int OutputDimension&gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue May 12 2020 02:52:09 for SimpleITK by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed May 13 2020 02:52:07 for SimpleITK by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>
