@@ -26,7 +26,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">SimpleITK
-   &#160;<span id="projectnumber">2.0.0rc1.post222</span>
+   &#160;<span id="projectnumber">2.0.0rc1.post224</span>
    </div>
   </td>
  </tr>
@@ -101,7 +101,7 @@ $(function() {
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="comment"># Paste the mouth into the face</span></div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;mouthSize = [64, 18]</div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;mouthLoc  = [32, 76]</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;face      = <a class="code" href="namespaceitk_1_1simple.html#a85acad7d2d2f0485ab5317beaac5e347">sitk.Paste</a>(face, mouth, mouthSize, mouthLoc, mouthLoc)</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;face      = <a class="code" href="namespaceitk_1_1simple.html#a00ff279cee6369150239d6a9cc307f52">sitk.Paste</a>(face, mouth, mouthSize, mouthLoc, mouthLoc)</div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160; </div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="comment"># Apply the face to the original image</span></div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;image = image+face</div>
@@ -113,10 +113,10 @@ $(function() {
 <div class="ttc" id="anamespaceitk_1_1simple_html_a9422e1bef3de9588cc00f94666cff7b7"><div class="ttname"><a href="namespaceitk_1_1simple.html#a9422e1bef3de9588cc00f94666cff7b7">itk::simple::BinaryThreshold</a></div><div class="ttdeci">Image BinaryThreshold(const Image &amp;image1, double lowerThreshold=0.0, double upperThreshold=255.0, uint8_t insideValue=1u, uint8_t outsideValue=0u)</div><div class="ttdoc">Binarize an input image by thresholding.</div></div>
 <div class="ttc" id="anamespaceitk_1_1simple_html_a01437b37d92c605393fa2fa04b335144"><div class="ttname"><a href="namespaceitk_1_1simple.html#a01437b37d92c605393fa2fa04b335144">itk::simple::GaussianSource</a></div><div class="ttdeci">Image GaussianSource(PixelIDValueEnum outputPixelType=itk::simple::sitkFloat32, std::vector&lt; unsigned int &gt; size=std::vector&lt; unsigned int &gt;(3, 64), std::vector&lt; double &gt; sigma=std::vector&lt; double &gt;(3, 16.0), std::vector&lt; double &gt; mean=std::vector&lt; double &gt;(3, 32.0), double scale=255, std::vector&lt; double &gt; origin=std::vector&lt; double &gt;(3, 0.0), std::vector&lt; double &gt; spacing=std::vector&lt; double &gt;(3, 1.0), std::vector&lt; double &gt; direction=std::vector&lt; double &gt;(), bool normalized=false)</div><div class="ttdoc">Generate an n-dimensional image of a Gaussian.</div></div>
 <div class="ttc" id="anamespaceitk_1_1simple_html_a86cb9e226d455efca3ba034dc2154605"><div class="ttname"><a href="namespaceitk_1_1simple.html#a86cb9e226d455efca3ba034dc2154605">itk::simple::Show</a></div><div class="ttdeci">void SITKIO_EXPORT Show(const Image &amp;image, const std::string &amp;title=&quot;&quot;, const bool debugOn=ProcessObject::GetGlobalDefaultDebug())</div></div>
-<div class="ttc" id="anamespaceitk_1_1simple_html_a85acad7d2d2f0485ab5317beaac5e347"><div class="ttname"><a href="namespaceitk_1_1simple.html#a85acad7d2d2f0485ab5317beaac5e347">itk::simple::Paste</a></div><div class="ttdeci">Image Paste(const Image &amp;destinationImage, const Image &amp;sourceImage, std::vector&lt; unsigned int &gt; sourceSize=std::vector&lt; unsigned int &gt;(3, 1), std::vector&lt; int &gt; sourceIndex=std::vector&lt; int &gt;(3, 0), std::vector&lt; int &gt; destinationIndex=std::vector&lt; int &gt;(3, 0))</div><div class="ttdoc">Paste an image into another image.</div></div>
+<div class="ttc" id="anamespaceitk_1_1simple_html_a00ff279cee6369150239d6a9cc307f52"><div class="ttname"><a href="namespaceitk_1_1simple.html#a00ff279cee6369150239d6a9cc307f52">itk::simple::Paste</a></div><div class="ttdeci">Image Paste(const Image &amp;destinationImage, const Image &amp;sourceImage, std::vector&lt; unsigned int &gt; sourceSize=std::vector&lt; unsigned int &gt;(SITK_MAX_DIMENSION, 1), std::vector&lt; int &gt; sourceIndex=std::vector&lt; int &gt;(SITK_MAX_DIMENSION, 0), std::vector&lt; int &gt; destinationIndex=std::vector&lt; int &gt;(SITK_MAX_DIMENSION, 0))</div><div class="ttdoc">Paste an image into another image.</div></div>
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed May 13 2020 02:51:41 for SimpleITK by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu May 14 2020 02:50:43 for SimpleITK by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

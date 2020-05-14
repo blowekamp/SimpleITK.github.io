@@ -26,7 +26,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">SimpleITK
-   &#160;<span id="projectnumber">2.0.0rc1.post222</span>
+   &#160;<span id="projectnumber">2.0.0rc1.post224</span>
    </div>
   </td>
  </tr>
@@ -176,15 +176,15 @@ Private Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
-<tr class="memitem:a326c1c813f8c017390b76c48c94f612d"><td class="memItemLeft" align="right" valign="top">std::vector&lt; int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1PasteImageFilter.html#a326c1c813f8c017390b76c48c94f612d">m_DestinationIndex</a> {std::vector&lt;int&gt;(3, 0)}</td></tr>
+<tr class="memitem:a326c1c813f8c017390b76c48c94f612d"><td class="memItemLeft" align="right" valign="top">std::vector&lt; int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1PasteImageFilter.html#a326c1c813f8c017390b76c48c94f612d">m_DestinationIndex</a> {std::vector&lt;int&gt;(<a class="el" href="sitkConfigure_8h.html#aede15605722ddda23926e91409b05e52">SITK_MAX_DIMENSION</a>, 0)}</td></tr>
 <tr class="separator:a326c1c813f8c017390b76c48c94f612d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0e6e58a9b5cc0961c88952f9ff261cb3"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1PasteImageFilter.html#a0e6e58a9b5cc0961c88952f9ff261cb3">m_InPlace</a> {false}</td></tr>
 <tr class="separator:a0e6e58a9b5cc0961c88952f9ff261cb3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9b2f9c54b6991a3b35b651879e19d818"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="classitk_1_1simple_1_1detail_1_1MemberFunctionFactory.html">detail::MemberFunctionFactory</a>&lt; <a class="el" href="classitk_1_1simple_1_1PasteImageFilter.html#a641bb04885f761847cbad8738b010ce0">MemberFunctionType</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1PasteImageFilter.html#a9b2f9c54b6991a3b35b651879e19d818">m_MemberFactory</a></td></tr>
 <tr class="separator:a9b2f9c54b6991a3b35b651879e19d818"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acb6cb3ae25fdc4e96451055107128477"><td class="memItemLeft" align="right" valign="top">std::vector&lt; int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1PasteImageFilter.html#acb6cb3ae25fdc4e96451055107128477">m_SourceIndex</a> {std::vector&lt;int&gt;(3, 0)}</td></tr>
+<tr class="memitem:acb6cb3ae25fdc4e96451055107128477"><td class="memItemLeft" align="right" valign="top">std::vector&lt; int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1PasteImageFilter.html#acb6cb3ae25fdc4e96451055107128477">m_SourceIndex</a> {std::vector&lt;int&gt;(<a class="el" href="sitkConfigure_8h.html#aede15605722ddda23926e91409b05e52">SITK_MAX_DIMENSION</a>, 0)}</td></tr>
 <tr class="separator:acb6cb3ae25fdc4e96451055107128477"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af8f37b176d232592bcb9061790cfb018"><td class="memItemLeft" align="right" valign="top">std::vector&lt; unsigned int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1PasteImageFilter.html#af8f37b176d232592bcb9061790cfb018">m_SourceSize</a> {std::vector&lt;unsigned int&gt;(3, 1)}</td></tr>
+<tr class="memitem:af8f37b176d232592bcb9061790cfb018"><td class="memItemLeft" align="right" valign="top">std::vector&lt; unsigned int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1PasteImageFilter.html#af8f37b176d232592bcb9061790cfb018">m_SourceSize</a> {std::vector&lt;unsigned int&gt;(<a class="el" href="sitkConfigure_8h.html#aede15605722ddda23926e91409b05e52">SITK_MAX_DIMENSION</a>, 1)}</td></tr>
 <tr class="separator:af8f37b176d232592bcb9061790cfb018"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
@@ -283,7 +283,7 @@ Additional Inherited Members</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Paste an image into another image. </p>
 <p><a class="el" href="classitk_1_1simple_1_1PasteImageFilter.html" title="Paste an image into another image.">PasteImageFilter</a> allows you to take a section of one image and paste into another image. The <a class="el" href="classitk_1_1simple_1_1PasteImageFilter.html#ab9ddb8d36c357d3a4914ef1a8a168e5f">SetDestinationIndex()</a> method prescribes where in the first input to start pasting data from the second input. The SetSourceRegion method prescribes the section of the second image to paste into the first. If the output requested region does not include the SourceRegion after it has been repositioned to DestinationIndex, then the output will just be a copy of the input.</p>
-<p>The two inputs and output image will have the same pixel type. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="namespaceitk_1_1simple.html#a5656d83fb762803efed52d7217f14a2d" title="Paste an image into another image.">itk::simple::Paste</a> for the procedural interface </dd>
+<p>The two inputs and output image will have the same pixel type. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="namespaceitk_1_1simple.html#a5d2ed1a71d7b79964862563ba93e0a76" title="Paste an image into another image.">itk::simple::Paste</a> for the procedural interface </dd>
 <dd>
 <a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1PasteImageFilter.html">itk::PasteImageFilter</a> for the Doxygen on the original ITK class. </dd></dl>
 
@@ -749,7 +749,7 @@ template&lt;class TImageType &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::vector&lt;int&gt; itk::simple::PasteImageFilter::m_DestinationIndex {std::vector&lt;int&gt;(3, 0)}</td>
+          <td class="memname">std::vector&lt;int&gt; itk::simple::PasteImageFilter::m_DestinationIndex {std::vector&lt;int&gt;(<a class="el" href="sitkConfigure_8h.html#aede15605722ddda23926e91409b05e52">SITK_MAX_DIMENSION</a>, 0)}</td>
         </tr>
       </table>
   </td>
@@ -821,7 +821,7 @@ template&lt;class TImageType &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::vector&lt;int&gt; itk::simple::PasteImageFilter::m_SourceIndex {std::vector&lt;int&gt;(3, 0)}</td>
+          <td class="memname">std::vector&lt;int&gt; itk::simple::PasteImageFilter::m_SourceIndex {std::vector&lt;int&gt;(<a class="el" href="sitkConfigure_8h.html#aede15605722ddda23926e91409b05e52">SITK_MAX_DIMENSION</a>, 0)}</td>
         </tr>
       </table>
   </td>
@@ -845,7 +845,7 @@ template&lt;class TImageType &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::vector&lt;unsigned int&gt; itk::simple::PasteImageFilter::m_SourceSize {std::vector&lt;unsigned int&gt;(3, 1)}</td>
+          <td class="memname">std::vector&lt;unsigned int&gt; itk::simple::PasteImageFilter::m_SourceSize {std::vector&lt;unsigned int&gt;(<a class="el" href="sitkConfigure_8h.html#aede15605722ddda23926e91409b05e52">SITK_MAX_DIMENSION</a>, 1)}</td>
         </tr>
       </table>
   </td>
@@ -865,7 +865,7 @@ template&lt;class TImageType &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed May 13 2020 02:52:12 for SimpleITK by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu May 14 2020 02:51:12 for SimpleITK by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>
