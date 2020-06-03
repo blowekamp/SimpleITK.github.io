@@ -26,7 +26,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">SimpleITK
-   &#160;<span id="projectnumber">2.0.0rc1.post262</span>
+   &#160;<span id="projectnumber">2.0.0rc1.post264</span>
    </div>
   </td>
  </tr>
@@ -99,6 +99,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:acd242a35621920f5569b92308e03319a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af284771ff17859d74a1acd4320e6c2db"><td class="memItemLeft" align="right" valign="top">std::vector&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1VersorTransform.html#af284771ff17859d74a1acd4320e6c2db">GetMatrix</a> () const</td></tr>
 <tr class="separator:af284771ff17859d74a1acd4320e6c2db"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8ca2db112410a45bd1a571b95956c390"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1VersorTransform.html#a8ca2db112410a45bd1a571b95956c390">GetName</a> () const override</td></tr>
+<tr class="separator:a8ca2db112410a45bd1a571b95956c390"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac1de7893950ed458d231502cf58103e9"><td class="memItemLeft" align="right" valign="top">std::vector&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1VersorTransform.html#ac1de7893950ed458d231502cf58103e9">GetVersor</a> () const</td></tr>
 <tr class="separator:ac1de7893950ed458d231502cf58103e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac5b8b5b4160ba16427c52e62e5409b72"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classitk_1_1simple_1_1VersorTransform.html">VersorTransform</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1VersorTransform.html#ac5b8b5b4160ba16427c52e62e5409b72">operator=</a> (const <a class="el" href="classitk_1_1simple_1_1VersorTransform.html">VersorTransform</a> &amp;)</td></tr>
@@ -134,8 +136,6 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a08e4374bbcfa134181d0b7f67c1d0450 inherit pub_methods_classitk_1_1simple_1_1Transform"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classitk_1_1simple_1_1Transform.html">Transform</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1Transform.html#a08e4374bbcfa134181d0b7f67c1d0450">GetInverse</a> () const</td></tr>
 <tr class="memdesc:a08e4374bbcfa134181d0b7f67c1d0450 inherit pub_methods_classitk_1_1simple_1_1Transform"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return a new inverse transform of the same type as this.  <a href="classitk_1_1simple_1_1Transform.html#a08e4374bbcfa134181d0b7f67c1d0450">More...</a><br /></td></tr>
 <tr class="separator:a08e4374bbcfa134181d0b7f67c1d0450 inherit pub_methods_classitk_1_1simple_1_1Transform"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a55044eb06829e88a8960d53db179de62 inherit pub_methods_classitk_1_1simple_1_1Transform"><td class="memItemLeft" align="right" valign="top">virtual std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1Transform.html#a55044eb06829e88a8960d53db179de62">GetName</a> () const</td></tr>
-<tr class="separator:a55044eb06829e88a8960d53db179de62 inherit pub_methods_classitk_1_1simple_1_1Transform"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a98c5efd3f51215ed20ba043926aa028a inherit pub_methods_classitk_1_1simple_1_1Transform"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1Transform.html#a98c5efd3f51215ed20ba043926aa028a">GetNumberOfFixedParameters</a> () const</td></tr>
 <tr class="separator:a98c5efd3f51215ed20ba043926aa028a inherit pub_methods_classitk_1_1simple_1_1Transform"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a669adf5fd241bc7f5cb88a8163d826d7 inherit pub_methods_classitk_1_1simple_1_1Transform"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1Transform.html#a669adf5fd241bc7f5cb88a8163d826d7">GetNumberOfParameters</a> () const</td></tr>
@@ -485,6 +485,36 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="a8ca2db112410a45bd1a571b95956c390"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8ca2db112410a45bd1a571b95956c390">&#9670;&nbsp;</a></span>GetName()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string itk::simple::VersorTransform::GetName </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Name of this class </p>
+
+<p>Reimplemented from <a class="el" href="classitk_1_1simple_1_1Transform.html#a55044eb06829e88a8960d53db179de62">itk::simple::Transform</a>.</p>
+
+<p class="definition">Definition at line <a class="el" href="sitkVersorTransform_8h_source.html#l00063">63</a> of file <a class="el" href="sitkVersorTransform_8h_source.html">sitkVersorTransform.h</a>.</p>
+
+</div>
+</div>
 <a id="ac1de7893950ed458d231502cf58103e9"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ac1de7893950ed458d231502cf58103e9">&#9670;&nbsp;</a></span>GetVersor()</h2>
 
@@ -717,7 +747,7 @@ template&lt;typename TransformType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkVersorTransform_8h_source.html#l00091">91</a> of file <a class="el" href="sitkVersorTransform_8h_source.html">sitkVersorTransform.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkVersorTransform_8h_source.html#l00094">94</a> of file <a class="el" href="sitkVersorTransform_8h_source.html">sitkVersorTransform.h</a>.</p>
 
 </div>
 </div>
@@ -741,7 +771,7 @@ template&lt;typename TransformType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkVersorTransform_8h_source.html#l00095">95</a> of file <a class="el" href="sitkVersorTransform_8h_source.html">sitkVersorTransform.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkVersorTransform_8h_source.html#l00098">98</a> of file <a class="el" href="sitkVersorTransform_8h_source.html">sitkVersorTransform.h</a>.</p>
 
 </div>
 </div>
@@ -765,7 +795,7 @@ template&lt;typename TransformType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkVersorTransform_8h_source.html#l00094">94</a> of file <a class="el" href="sitkVersorTransform_8h_source.html">sitkVersorTransform.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkVersorTransform_8h_source.html#l00097">97</a> of file <a class="el" href="sitkVersorTransform_8h_source.html">sitkVersorTransform.h</a>.</p>
 
 </div>
 </div>
@@ -789,7 +819,7 @@ template&lt;typename TransformType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkVersorTransform_8h_source.html#l00090">90</a> of file <a class="el" href="sitkVersorTransform_8h_source.html">sitkVersorTransform.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkVersorTransform_8h_source.html#l00093">93</a> of file <a class="el" href="sitkVersorTransform_8h_source.html">sitkVersorTransform.h</a>.</p>
 
 </div>
 </div>
@@ -813,7 +843,7 @@ template&lt;typename TransformType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkVersorTransform_8h_source.html#l00096">96</a> of file <a class="el" href="sitkVersorTransform_8h_source.html">sitkVersorTransform.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkVersorTransform_8h_source.html#l00099">99</a> of file <a class="el" href="sitkVersorTransform_8h_source.html">sitkVersorTransform.h</a>.</p>
 
 </div>
 </div>
@@ -837,7 +867,7 @@ template&lt;typename TransformType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkVersorTransform_8h_source.html#l00092">92</a> of file <a class="el" href="sitkVersorTransform_8h_source.html">sitkVersorTransform.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkVersorTransform_8h_source.html#l00095">95</a> of file <a class="el" href="sitkVersorTransform_8h_source.html">sitkVersorTransform.h</a>.</p>
 
 </div>
 </div>
@@ -861,7 +891,7 @@ template&lt;typename TransformType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkVersorTransform_8h_source.html#l00093">93</a> of file <a class="el" href="sitkVersorTransform_8h_source.html">sitkVersorTransform.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkVersorTransform_8h_source.html#l00096">96</a> of file <a class="el" href="sitkVersorTransform_8h_source.html">sitkVersorTransform.h</a>.</p>
 
 </div>
 </div>
@@ -871,7 +901,7 @@ template&lt;typename TransformType &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jun 2 2020 02:51:45 for SimpleITK by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Jun 3 2020 02:50:33 for SimpleITK by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>
