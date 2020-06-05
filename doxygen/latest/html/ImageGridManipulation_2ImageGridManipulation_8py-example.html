@@ -26,7 +26,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">SimpleITK
-   &#160;<span id="projectnumber">2.0.0rc1.post264</span>
+   &#160;<span id="projectnumber">2.0.0rc1.post267</span>
    </div>
   </td>
  </tr>
@@ -51,7 +51,7 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 <div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">#!/usr/bin/env python</span></div>
-<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment">#=========================================================================</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment"># =========================================================================</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment">#</span></div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment">#  Copyright NumFOCUS</span></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment">#</span></div>
@@ -67,16 +67,16 @@ $(function() {
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="comment">#  See the License for the specific language governing permissions and</span></div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="comment">#  limitations under the License.</span></div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="comment">#</span></div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="comment">#=========================================================================</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="comment"># =========================================================================</span></div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160; </div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="keyword">from</span> __future__ <span class="keyword">import</span> print_function</div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160; </div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="keyword">import</span> SimpleITK <span class="keyword">as</span> sitk</div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="keyword">import</span> sys</div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160; </div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="keywordflow">if</span> len ( sys.argv ) &lt; 3:</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    print( <span class="stringliteral">&quot;Usage: &quot;</span> +sys.argv[0]+ <span class="stringliteral">&quot; &lt;input-1&gt; &lt;input-2&gt;&quot;</span> )</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    sys.exit ( 1 )</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="keywordflow">if</span> len(sys.argv) &lt; 3:</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    print(<span class="stringliteral">&quot;Usage: &quot;</span> + sys.argv[0] + <span class="stringliteral">&quot; &lt;input-1&gt; &lt;input-2&gt;&quot;</span>)</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    sys.exit(1)</div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160; </div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="comment"># Two vector images of same pixel type and dimension expected</span></div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;image_1 = <a class="code" href="namespaceitk_1_1simple.html#a62a1be75703e22b14339e6409858ab61">sitk.ReadImage</a>(sys.argv[1])</div>
@@ -94,23 +94,26 @@ $(function() {
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160; </div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="comment"># Recompose image (should be same as joined_image)</span></div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;compose = <a class="code" href="classitk_1_1simple_1_1ComposeImageFilter.html">sitk.ComposeImageFilter</a>()</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;composed_image = compose.Execute(channel1_image, channel2_image, channel3_image)</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160; </div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="comment"># Select same subregion using image slicing operator</span></div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;sliced_image = composed_image[100:400, 100:400, 0]</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160; </div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="comment"># Select same subregion using ExtractImageFilter</span></div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;extract = <a class="code" href="classitk_1_1simple_1_1ExtractImageFilter.html">sitk.ExtractImageFilter</a>()</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;extract.SetSize([300, 300, 0])</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;extract.SetIndex([100, 100, 0])</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;extracted_image = extract.Execute(composed_image)</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160; </div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="comment"># Select same subregion using CropImageFilter (NOTE: CropImageFilter cannot reduce dimensions</span></div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="comment"># unlike ExtractImageFilter, so cropped_image is a three dimensional image with depth of 1)</span></div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;crop = <a class="code" href="classitk_1_1simple_1_1CropImageFilter.html">sitk.CropImageFilter</a>()</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;crop.SetLowerBoundaryCropSize([100, 100, 0])</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;crop.SetUpperBoundaryCropSize([composed_image.GetWidth()-400, composed_image.GetHeight()-400, 1])</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;cropped_image = crop.Execute(composed_image)</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;composed_image = compose.Execute(channel1_image, channel2_image,</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;                                 channel3_image)</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160; </div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="comment"># Select same subregion using image slicing operator</span></div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;sliced_image = composed_image[100:400, 100:400, 0]</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160; </div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="comment"># Select same subregion using ExtractImageFilter</span></div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;extract = <a class="code" href="classitk_1_1simple_1_1ExtractImageFilter.html">sitk.ExtractImageFilter</a>()</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;extract.SetSize([300, 300, 0])</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;extract.SetIndex([100, 100, 0])</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;extracted_image = extract.Execute(composed_image)</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160; </div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="comment"># Select same sub-region using CropImageFilter (NOTE: CropImageFilter cannot</span></div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="comment"># reduce dimensions unlike ExtractImageFilter, so cropped_image is a three</span></div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;<span class="comment"># dimensional image with depth of 1)</span></div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;crop = <a class="code" href="classitk_1_1simple_1_1CropImageFilter.html">sitk.CropImageFilter</a>()</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;crop.SetLowerBoundaryCropSize([100, 100, 0])</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;crop.SetUpperBoundaryCropSize([composed_image.GetWidth() - 400,</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;                               composed_image.GetHeight() - 400, 1])</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;cropped_image = crop.Execute(composed_image)</div>
 </div><!-- fragment --> </div><!-- contents -->
 <div class="ttc" id="aclassitk_1_1simple_1_1JoinSeriesImageFilter_html"><div class="ttname"><a href="classitk_1_1simple_1_1JoinSeriesImageFilter.html">itk::simple::JoinSeriesImageFilter</a></div><div class="ttdoc">Join N-D images into an (N+1)-D image.</div><div class="ttdef"><b>Definition:</b> <a href="sitkJoinSeriesImageFilter_8h_source.html#l00048">sitkJoinSeriesImageFilter.h:48</a></div></div>
 <div class="ttc" id="anamespaceitk_1_1simple_html_a62a1be75703e22b14339e6409858ab61"><div class="ttname"><a href="namespaceitk_1_1simple.html#a62a1be75703e22b14339e6409858ab61">itk::simple::ReadImage</a></div><div class="ttdeci">SITKIO_EXPORT Image ReadImage(const std::vector&lt; std::string &gt; &amp;fileNames, PixelIDValueEnum outputPixelType=sitkUnknown, const std::string &amp;imageIO=&quot;&quot;)</div><div class="ttdoc">ReadImage is a procedural interface to the ImageSeriesReader class which is convenient for most image...</div></div>
@@ -120,7 +123,7 @@ $(function() {
 <div class="ttc" id="aclassitk_1_1simple_1_1CropImageFilter_html"><div class="ttname"><a href="classitk_1_1simple_1_1CropImageFilter.html">itk::simple::CropImageFilter</a></div><div class="ttdoc">Decrease the image size by cropping the image by an itk::Size at both the upper and lower bounds of t...</div><div class="ttdef"><b>Definition:</b> <a href="sitkCropImageFilter_8h_source.html#l00044">sitkCropImageFilter.h:44</a></div></div>
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Jun 3 2020 02:50:04 for SimpleITK by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Jun 5 2020 02:52:34 for SimpleITK by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

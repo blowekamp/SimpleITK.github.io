@@ -26,7 +26,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">SimpleITK
-   &#160;<span id="projectnumber">2.0.0rc1.post264</span>
+   &#160;<span id="projectnumber">2.0.0rc1.post267</span>
    </div>
   </td>
  </tr>
@@ -51,7 +51,7 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 <div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">#!/usr/bin/env python</span></div>
-<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment">#=========================================================================</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment"># =========================================================================</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment">#</span></div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment">#  Copyright NumFOCUS</span></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment">#</span></div>
@@ -67,7 +67,7 @@ $(function() {
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="comment">#  See the License for the specific language governing permissions and</span></div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="comment">#  limitations under the License.</span></div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="comment">#</span></div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="comment">#=========================================================================</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="comment"># =========================================================================</span></div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160; </div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="keyword">from</span> __future__ <span class="keyword">import</span> print_function</div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160; </div>
@@ -75,44 +75,44 @@ $(function() {
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="keyword">import</span> sys</div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="keyword">import</span> os</div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160; </div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="keywordflow">if</span> len ( sys.argv ) &lt; 2:</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    print( <span class="stringliteral">&quot;Usage: N4BiasFieldCorrection inputImage &quot;</span> + \</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;        <span class="stringliteral">&quot;outputImage [shrinkFactor] [maskImage] [numberOfIterations] &quot;</span> +\</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;        <span class="stringliteral">&quot;[numberOfFittingLevels]&quot;</span> )</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    sys.exit ( 1 )</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="keywordflow">if</span> len(sys.argv) &lt; 2:</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    print(<span class="stringliteral">&quot;Usage: N4BiasFieldCorrection inputImage &quot;</span> +</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;          <span class="stringliteral">&quot;outputImage [shrinkFactor] [maskImage] [numberOfIterations] &quot;</span> +</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;          <span class="stringliteral">&quot;[numberOfFittingLevels]&quot;</span>)</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    sys.exit(1)</div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160; </div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160; </div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;inputImage = <a class="code" href="namespaceitk_1_1simple.html#a62a1be75703e22b14339e6409858ab61">sitk.ReadImage</a>( sys.argv[1] )</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160; </div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="keywordflow">if</span> len ( sys.argv ) &gt; 4:</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    maskImage = <a class="code" href="namespaceitk_1_1simple.html#a62a1be75703e22b14339e6409858ab61">sitk.ReadImage</a>( sys.argv[4], sitk.sitkUint8 )</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="keywordflow">else</span>:</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    maskImage = <a class="code" href="namespaceitk_1_1simple.html#abd8938530991f8e4b5bd819b8432ef54">sitk.OtsuThreshold</a>( inputImage, 0, 1, 200 )</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160; </div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="keywordflow">if</span> len ( sys.argv ) &gt; 3:</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    inputImage = <a class="code" href="namespaceitk_1_1simple.html#aaca314de51c97b118c0d6c356dd98efa">sitk.Shrink</a>( inputImage, [ int(sys.argv[3]) ] * inputImage.GetDimension() )</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    maskImage = <a class="code" href="namespaceitk_1_1simple.html#aaca314de51c97b118c0d6c356dd98efa">sitk.Shrink</a>( maskImage, [ int(sys.argv[3]) ] * inputImage.GetDimension() )</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160; </div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;inputImage = <a class="code" href="namespaceitk_1_1simple.html#af8c9d7cc96a299a05890e9c3db911885">sitk.Cast</a>( inputImage, sitk.sitkFloat32 )</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160; </div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;corrector = <a class="code" href="classitk_1_1simple_1_1N4BiasFieldCorrectionImageFilter.html">sitk.N4BiasFieldCorrectionImageFilter</a>();</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160; </div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;numberFittingLevels = 4</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160; </div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="keywordflow">if</span> len ( sys.argv ) &gt; 6:</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    numberFittingLevels = int( sys.argv[6] )</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160; </div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="keywordflow">if</span> len ( sys.argv ) &gt; 5:</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    corrector.SetMaximumNumberOfIterations( [ int( sys.argv[5] ) ] *numberFittingLevels  )</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160; </div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160; </div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;output = corrector.Execute( inputImage, maskImage )</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160; </div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;<a class="code" href="namespaceitk_1_1simple.html#a8537644286a43ff1566326c2109057ab">sitk.WriteImage</a>( output, sys.argv[2] )</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160; </div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;inputImage = <a class="code" href="namespaceitk_1_1simple.html#a62a1be75703e22b14339e6409858ab61">sitk.ReadImage</a>(sys.argv[1])</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160; </div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="keywordflow">if</span> len(sys.argv) &gt; 4:</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    maskImage = <a class="code" href="namespaceitk_1_1simple.html#a62a1be75703e22b14339e6409858ab61">sitk.ReadImage</a>(sys.argv[4], sitk.sitkUint8)</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="keywordflow">else</span>:</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    maskImage = <a class="code" href="namespaceitk_1_1simple.html#abd8938530991f8e4b5bd819b8432ef54">sitk.OtsuThreshold</a>(inputImage, 0, 1, 200)</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160; </div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="keywordflow">if</span> len(sys.argv) &gt; 3:</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    inputImage = <a class="code" href="namespaceitk_1_1simple.html#aaca314de51c97b118c0d6c356dd98efa">sitk.Shrink</a>(inputImage,</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;                             [int(sys.argv[3])] * inputImage.GetDimension())</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    maskImage = <a class="code" href="namespaceitk_1_1simple.html#aaca314de51c97b118c0d6c356dd98efa">sitk.Shrink</a>(maskImage,</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;                            [int(sys.argv[3])] * inputImage.GetDimension())</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160; </div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;inputImage = <a class="code" href="namespaceitk_1_1simple.html#af8c9d7cc96a299a05890e9c3db911885">sitk.Cast</a>(inputImage, sitk.sitkFloat32)</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160; </div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;corrector = <a class="code" href="classitk_1_1simple_1_1N4BiasFieldCorrectionImageFilter.html">sitk.N4BiasFieldCorrectionImageFilter</a>()</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160; </div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;numberFittingLevels = 4</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160; </div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="keywordflow">if</span> len(sys.argv) &gt; 6:</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    numberFittingLevels = int(sys.argv[6])</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160; </div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="keywordflow">if</span> len(sys.argv) &gt; 5:</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    corrector.SetMaximumNumberOfIterations([int(sys.argv[5])]</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;                                           * numberFittingLevels)</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160; </div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;output = corrector.Execute(inputImage, maskImage)</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160; </div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<a class="code" href="namespaceitk_1_1simple.html#a8537644286a43ff1566326c2109057ab">sitk.WriteImage</a>(output, sys.argv[2])</div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160; </div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<span class="keywordflow">if</span> ( <span class="keywordflow">not</span> <span class="stringliteral">&quot;SITK_NOSHOW&quot;</span> <span class="keywordflow">in</span> os.environ ):</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <a class="code" href="namespaceitk_1_1simple.html#a86cb9e226d455efca3ba034dc2154605">sitk.Show</a>( output, <span class="stringliteral">&quot;N4 Corrected&quot;</span> )</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<span class="keywordflow">if</span> (<span class="stringliteral">&quot;SITK_NOSHOW&quot;</span> <span class="keywordflow">not</span> <span class="keywordflow">in</span> os.environ):</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <a class="code" href="namespaceitk_1_1simple.html#a86cb9e226d455efca3ba034dc2154605">sitk.Show</a>(output, <span class="stringliteral">&quot;N4 Corrected&quot;</span>)</div>
 </div><!-- fragment --> </div><!-- contents -->
 <div class="ttc" id="anamespaceitk_1_1simple_html_abd8938530991f8e4b5bd819b8432ef54"><div class="ttname"><a href="namespaceitk_1_1simple.html#abd8938530991f8e4b5bd819b8432ef54">itk::simple::OtsuThreshold</a></div><div class="ttdeci">Image OtsuThreshold(const Image &amp;image, uint8_t insideValue=1u, uint8_t outsideValue=0u, uint32_t numberOfHistogramBins=128u, bool maskOutput=true, uint8_t maskValue=255u, bool returnBinMidpoint=false)</div><div class="ttdoc">Threshold an image using the Otsu Threshold.</div></div>
 <div class="ttc" id="anamespaceitk_1_1simple_html_a8537644286a43ff1566326c2109057ab"><div class="ttname"><a href="namespaceitk_1_1simple.html#a8537644286a43ff1566326c2109057ab">itk::simple::WriteImage</a></div><div class="ttdeci">SITKIO_EXPORT void WriteImage(const Image &amp;image, const std::vector&lt; std::string &gt; &amp;fileNames, bool useCompression=false, int compressionLevel=-1)</div></div>
@@ -123,7 +123,7 @@ $(function() {
 <div class="ttc" id="anamespaceitk_1_1simple_html_af8c9d7cc96a299a05890e9c3db911885"><div class="ttname"><a href="namespaceitk_1_1simple.html#af8c9d7cc96a299a05890e9c3db911885">itk::simple::Cast</a></div><div class="ttdeci">Image Cast(const Image &amp;image, PixelIDValueEnum pixelID)</div></div>
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Jun 3 2020 02:50:04 for SimpleITK by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Jun 5 2020 02:52:34 for SimpleITK by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>
