@@ -26,7 +26,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">SimpleITK
-   &#160;<span id="projectnumber">2.0.0rc1.post267</span>
+   &#160;<span id="projectnumber">2.0.0rc1.post271</span>
    </div>
   </td>
  </tr>
@@ -71,120 +71,119 @@ $(function() {
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160; </div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="keyword">import</span> argparse</div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="keyword">import</span> os</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="keyword">import</span> sys</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="keyword">import</span> tempfile</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160; </div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="keyword">import</span> SimpleITK <span class="keyword">as</span> sitk</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="keyword">import</span> tempfile</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160; </div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="keyword">import</span> SimpleITK <span class="keyword">as</span> sitk</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160; </div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160; </div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160; </div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="keyword">def </span>read_raw(binary_file_name, image_size, sitk_pixel_type, image_spacing=None,</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;             image_origin=None, big_endian=False):</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <span class="stringliteral">&quot;&quot;&quot;</span></div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="stringliteral">    Read a raw binary scalar image.</span></div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="stringliteral"></span> </div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="stringliteral">    Parameters</span></div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="stringliteral">    ----------</span></div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="stringliteral">    binary_file_name (str): Raw, binary image file content.</span></div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="stringliteral">    image_size (tuple like): Size of image (e.g. [2048,2048])</span></div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="stringliteral">    sitk_pixel_type (SimpleITK pixel type: Pixel type of data (e.g.</span></div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="stringliteral">        sitk.sitkUInt16).</span></div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="stringliteral">    image_spacing (tuple like): Optional image spacing, if none given assumed</span></div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="stringliteral">        to be [1]*dim.</span></div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="stringliteral">    image_origin (tuple like): Optional image origin, if none given assumed to</span></div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="stringliteral">        be [0]*dim.</span></div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="stringliteral">    big_endian (bool): Optional byte order indicator, if True big endian, else</span></div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="stringliteral">        little endian.</span></div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="stringliteral"></span> </div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="stringliteral">    Returns</span></div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="stringliteral">    -------</span></div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="stringliteral">    SimpleITK image or None if fails.</span></div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="stringliteral">    &quot;&quot;&quot;</span></div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160; </div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    pixel_dict = {sitk.sitkUInt8: <span class="stringliteral">&#39;MET_UCHAR&#39;</span>,</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;                  sitk.sitkInt8: <span class="stringliteral">&#39;MET_CHAR&#39;</span>,</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;                  sitk.sitkUInt16: <span class="stringliteral">&#39;MET_USHORT&#39;</span>,</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;                  sitk.sitkInt16: <span class="stringliteral">&#39;MET_SHORT&#39;</span>,</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;                  sitk.sitkUInt32: <span class="stringliteral">&#39;MET_UINT&#39;</span>,</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;                  sitk.sitkInt32: <span class="stringliteral">&#39;MET_INT&#39;</span>,</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;                  sitk.sitkUInt64: <span class="stringliteral">&#39;MET_ULONG_LONG&#39;</span>,</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;                  sitk.sitkInt64: <span class="stringliteral">&#39;MET_LONG_LONG&#39;</span>,</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;                  sitk.sitkFloat32: <span class="stringliteral">&#39;MET_FLOAT&#39;</span>,</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;                  sitk.sitkFloat64: <span class="stringliteral">&#39;MET_DOUBLE&#39;</span>}</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    direction_cosine = [<span class="stringliteral">&#39;1 0 0 1&#39;</span>, <span class="stringliteral">&#39;1 0 0 0 1 0 0 0 1&#39;</span>,</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;                        <span class="stringliteral">&#39;1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1&#39;</span>]</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    dim = len(image_size)</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    header = [<span class="stringliteral">&#39;ObjectType = Image\n&#39;</span>.encode(),</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;              (<span class="stringliteral">&#39;NDims = {0}\n&#39;</span>.format(dim)).encode(),</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;              (<span class="stringliteral">&#39;DimSize = &#39;</span> + <span class="stringliteral">&#39; &#39;</span>.join([str(v) <span class="keywordflow">for</span> v <span class="keywordflow">in</span> image_size]) + <span class="stringliteral">&#39;\n&#39;</span>)</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;              .encode(),</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;              (<span class="stringliteral">&#39;ElementSpacing = &#39;</span> + (<span class="stringliteral">&#39; &#39;</span>.join([str(v) <span class="keywordflow">for</span> v <span class="keywordflow">in</span> image_spacing])</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;                                      <span class="keywordflow">if</span> image_spacing <span class="keywordflow">else</span> <span class="stringliteral">&#39; &#39;</span>.join(</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;                  [<span class="stringliteral">&#39;1&#39;</span>] * dim)) + <span class="stringliteral">&#39;\n&#39;</span>).encode(),</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;              (<span class="stringliteral">&#39;Offset = &#39;</span> + (</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;                  <span class="stringliteral">&#39; &#39;</span>.join([str(v) <span class="keywordflow">for</span> v <span class="keywordflow">in</span> image_origin]) <span class="keywordflow">if</span> image_origin</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;                  <span class="keywordflow">else</span> <span class="stringliteral">&#39; &#39;</span>.join([<span class="stringliteral">&#39;0&#39;</span>] * dim) + <span class="stringliteral">&#39;\n&#39;</span>)).encode(),</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;              (<span class="stringliteral">&#39;TransformMatrix = &#39;</span> + direction_cosine[dim - 2] + <span class="stringliteral">&#39;\n&#39;</span>)</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;              .encode(),</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;              (<span class="stringliteral">&#39;ElementType = &#39;</span> + pixel_dict[sitk_pixel_type] + <span class="stringliteral">&#39;\n&#39;</span>).encode(),</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;              <span class="stringliteral">&#39;BinaryData = True\n&#39;</span>.encode(),</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;              (<span class="stringliteral">&#39;BinaryDataByteOrderMSB = &#39;</span> + str(big_endian) + <span class="stringliteral">&#39;\n&#39;</span>).encode(),</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;              <span class="comment"># ElementDataFile must be the last entry in the header</span></div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;              (<span class="stringliteral">&#39;ElementDataFile = &#39;</span> + os.path.abspath(</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;                  binary_file_name) + <span class="stringliteral">&#39;\n&#39;</span>).encode()]</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    fp = tempfile.NamedTemporaryFile(suffix=<span class="stringliteral">&#39;.mhd&#39;</span>, delete=<span class="keyword">False</span>)</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160; </div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    print(header)</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160; </div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    <span class="comment"># Not using the tempfile with a context manager and auto-delete</span></div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    <span class="comment"># because on windows we can&#39;t open the file a second time for ReadImage.</span></div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    fp.writelines(header)</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    fp.close()</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    img = <a class="code" href="namespaceitk_1_1simple.html#a62a1be75703e22b14339e6409858ab61">sitk.ReadImage</a>(fp.name)</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    os.remove(fp.name)</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    <span class="keywordflow">return</span> img</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="keyword">def </span>read_raw(binary_file_name, image_size, sitk_pixel_type, image_spacing=None,</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;             image_origin=None, big_endian=False):</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <span class="stringliteral">&quot;&quot;&quot;</span></div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="stringliteral">    Read a raw binary scalar image.</span></div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="stringliteral"></span> </div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="stringliteral">    Parameters</span></div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="stringliteral">    ----------</span></div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="stringliteral">    binary_file_name (str): Raw, binary image file content.</span></div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="stringliteral">    image_size (tuple like): Size of image (e.g. [2048,2048])</span></div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="stringliteral">    sitk_pixel_type (SimpleITK pixel type: Pixel type of data (e.g.</span></div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="stringliteral">        sitk.sitkUInt16).</span></div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="stringliteral">    image_spacing (tuple like): Optional image spacing, if none given assumed</span></div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="stringliteral">        to be [1]*dim.</span></div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="stringliteral">    image_origin (tuple like): Optional image origin, if none given assumed to</span></div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="stringliteral">        be [0]*dim.</span></div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="stringliteral">    big_endian (bool): Optional byte order indicator, if True big endian, else</span></div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="stringliteral">        little endian.</span></div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="stringliteral"></span> </div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="stringliteral">    Returns</span></div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="stringliteral">    -------</span></div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="stringliteral">    SimpleITK image or None if fails.</span></div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="stringliteral">    &quot;&quot;&quot;</span></div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160; </div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    pixel_dict = {sitk.sitkUInt8: <span class="stringliteral">&#39;MET_UCHAR&#39;</span>,</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;                  sitk.sitkInt8: <span class="stringliteral">&#39;MET_CHAR&#39;</span>,</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;                  sitk.sitkUInt16: <span class="stringliteral">&#39;MET_USHORT&#39;</span>,</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;                  sitk.sitkInt16: <span class="stringliteral">&#39;MET_SHORT&#39;</span>,</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;                  sitk.sitkUInt32: <span class="stringliteral">&#39;MET_UINT&#39;</span>,</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;                  sitk.sitkInt32: <span class="stringliteral">&#39;MET_INT&#39;</span>,</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;                  sitk.sitkUInt64: <span class="stringliteral">&#39;MET_ULONG_LONG&#39;</span>,</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;                  sitk.sitkInt64: <span class="stringliteral">&#39;MET_LONG_LONG&#39;</span>,</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;                  sitk.sitkFloat32: <span class="stringliteral">&#39;MET_FLOAT&#39;</span>,</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;                  sitk.sitkFloat64: <span class="stringliteral">&#39;MET_DOUBLE&#39;</span>}</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    direction_cosine = [<span class="stringliteral">&#39;1 0 0 1&#39;</span>, <span class="stringliteral">&#39;1 0 0 0 1 0 0 0 1&#39;</span>,</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;                        <span class="stringliteral">&#39;1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1&#39;</span>]</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    dim = len(image_size)</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    header = [<span class="stringliteral">&#39;ObjectType = Image\n&#39;</span>.encode(),</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;              (<span class="stringliteral">&#39;NDims = {0}\n&#39;</span>.format(dim)).encode(),</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;              (<span class="stringliteral">&#39;DimSize = &#39;</span> + <span class="stringliteral">&#39; &#39;</span>.join([str(v) <span class="keywordflow">for</span> v <span class="keywordflow">in</span> image_size]) + <span class="stringliteral">&#39;\n&#39;</span>)</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;              .encode(),</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;              (<span class="stringliteral">&#39;ElementSpacing = &#39;</span> + (<span class="stringliteral">&#39; &#39;</span>.join([str(v) <span class="keywordflow">for</span> v <span class="keywordflow">in</span> image_spacing])</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;                                      <span class="keywordflow">if</span> image_spacing <span class="keywordflow">else</span> <span class="stringliteral">&#39; &#39;</span>.join(</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;                  [<span class="stringliteral">&#39;1&#39;</span>] * dim)) + <span class="stringliteral">&#39;\n&#39;</span>).encode(),</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;              (<span class="stringliteral">&#39;Offset = &#39;</span> + (</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;                  <span class="stringliteral">&#39; &#39;</span>.join([str(v) <span class="keywordflow">for</span> v <span class="keywordflow">in</span> image_origin]) <span class="keywordflow">if</span> image_origin</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;                  <span class="keywordflow">else</span> <span class="stringliteral">&#39; &#39;</span>.join([<span class="stringliteral">&#39;0&#39;</span>] * dim) + <span class="stringliteral">&#39;\n&#39;</span>)).encode(),</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;              (<span class="stringliteral">&#39;TransformMatrix = &#39;</span> + direction_cosine[dim - 2] + <span class="stringliteral">&#39;\n&#39;</span>)</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;              .encode(),</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;              (<span class="stringliteral">&#39;ElementType = &#39;</span> + pixel_dict[sitk_pixel_type] + <span class="stringliteral">&#39;\n&#39;</span>).encode(),</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;              <span class="stringliteral">&#39;BinaryData = True\n&#39;</span>.encode(),</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;              (<span class="stringliteral">&#39;BinaryDataByteOrderMSB = &#39;</span> + str(big_endian) + <span class="stringliteral">&#39;\n&#39;</span>).encode(),</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;              <span class="comment"># ElementDataFile must be the last entry in the header</span></div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;              (<span class="stringliteral">&#39;ElementDataFile = &#39;</span> + os.path.abspath(</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;                  binary_file_name) + <span class="stringliteral">&#39;\n&#39;</span>).encode()]</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    fp = tempfile.NamedTemporaryFile(suffix=<span class="stringliteral">&#39;.mhd&#39;</span>, delete=<span class="keyword">False</span>)</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160; </div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    print(header)</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160; </div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    <span class="comment"># Not using the tempfile with a context manager and auto-delete</span></div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    <span class="comment"># because on windows we can&#39;t open the file a second time for ReadImage.</span></div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    fp.writelines(header)</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    fp.close()</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    img = <a class="code" href="namespaceitk_1_1simple.html#a62a1be75703e22b14339e6409858ab61">sitk.ReadImage</a>(fp.name)</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    os.remove(fp.name)</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    <span class="keywordflow">return</span> img</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160; </div>
 <div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160; </div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160; </div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;parser = argparse.ArgumentParser()</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;parser.add_argument(<span class="stringliteral">&#39;raw_file_name&#39;</span>, help=<span class="stringliteral">&#39;path to raw binary image file&#39;</span>)</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;parser.add_argument(<span class="stringliteral">&#39;out_file_name&#39;</span>,</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;                    help=<span class="stringliteral">&#39;output file name when image read as little endian&#39;</span>)</div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;parser.add_argument(<span class="stringliteral">&quot;big_endian&quot;</span>, type=<span class="keyword">lambda</span> v: v.lower() <span class="keywordflow">in</span> {<span class="stringliteral">&quot;1&quot;</span>, <span class="stringliteral">&quot;true&quot;</span>},</div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;                    help=<span class="stringliteral">&quot;\&#39;false\&#39; for little ending or \&#39;true\&#39;for big endian&quot;</span></div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;                    )</div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;parser.add_argument(<span class="stringliteral">&#39;sitk_pixel_type&#39;</span>,</div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;                    help=<span class="stringliteral">&quot;SimpleITK pixel type (e.g. sitk.sitkUInt16)&quot;</span>)</div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;parser.add_argument(<span class="stringliteral">&#39;sz&#39;</span>, nargs=<span class="stringliteral">&#39;+&#39;</span>, help=<span class="stringliteral">&quot;image size, x,y,...&quot;</span>,</div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;                    type=int)</div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;args = parser.parse_args()</div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160; </div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;string_to_pixelType = {<span class="stringliteral">&quot;sitkUInt8&quot;</span>: sitk.sitkUInt8,</div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;                       <span class="stringliteral">&quot;sitkInt8&quot;</span>: sitk.sitkInt8,</div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;                       <span class="stringliteral">&quot;sitkUInt16&quot;</span>: sitk.sitkUInt16,</div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;                       <span class="stringliteral">&quot;sitkInt16&quot;</span>: sitk.sitkInt16,</div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;                       <span class="stringliteral">&quot;sitkUInt32&quot;</span>: sitk.sitkUInt32,</div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;                       <span class="stringliteral">&quot;sitkInt32&quot;</span>: sitk.sitkInt32,</div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;                       <span class="stringliteral">&quot;sitkUInt64&quot;</span>: sitk.sitkUInt64,</div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;                       <span class="stringliteral">&quot;sitkInt64&quot;</span>: sitk.sitkInt64,</div>
-<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;                       <span class="stringliteral">&quot;sitkFloat32&quot;</span>: sitk.sitkFloat32,</div>
-<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;                       <span class="stringliteral">&quot;sitkFloat64&quot;</span>: sitk.sitkFloat64}</div>
-<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160; </div>
-<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;<span class="comment"># Read the image using both big and little endian</span></div>
-<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;image = read_raw(binary_file_name=args.raw_file_name,</div>
-<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;                 image_size=args.sz,</div>
-<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;                 sitk_pixel_type=string_to_pixelType[args.sitk_pixel_type],</div>
-<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;                 big_endian=args.big_endian)</div>
-<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160; </div>
-<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;<a class="code" href="namespaceitk_1_1simple.html#a8537644286a43ff1566326c2109057ab">sitk.WriteImage</a>(image, args.out_file_name)</div>
-<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160; </div>
-<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;<span class="keywordflow">if</span> <span class="stringliteral">&quot;SITK_NOSHOW&quot;</span> <span class="keywordflow">not</span> <span class="keywordflow">in</span> os.environ:</div>
-<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;    <a class="code" href="namespaceitk_1_1simple.html#a86cb9e226d455efca3ba034dc2154605">sitk.Show</a>(image, <span class="stringliteral">&#39;raw converted&#39;</span>)</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;parser = argparse.ArgumentParser()</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;parser.add_argument(<span class="stringliteral">&#39;raw_file_name&#39;</span>, help=<span class="stringliteral">&#39;path to raw binary image file&#39;</span>)</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;parser.add_argument(<span class="stringliteral">&#39;out_file_name&#39;</span>,</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;                    help=<span class="stringliteral">&#39;output file name when image read as little endian&#39;</span>)</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;parser.add_argument(<span class="stringliteral">&quot;big_endian&quot;</span>, type=<span class="keyword">lambda</span> v: v.lower() <span class="keywordflow">in</span> {<span class="stringliteral">&quot;1&quot;</span>, <span class="stringliteral">&quot;true&quot;</span>},</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;                    help=<span class="stringliteral">&quot;\&#39;false\&#39; for little ending or \&#39;true\&#39;for big &quot;</span></div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;                    <span class="stringliteral">&quot;endian&quot;</span>)</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;parser.add_argument(<span class="stringliteral">&#39;sitk_pixel_type&#39;</span>,</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;                    help=<span class="stringliteral">&quot;SimpleITK pixel type (e.g. sitk.sitkUInt16)&quot;</span>)</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;parser.add_argument(<span class="stringliteral">&#39;sz&#39;</span>, nargs=<span class="stringliteral">&#39;+&#39;</span>, help=<span class="stringliteral">&quot;image size, x,y,...&quot;</span>,</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;                    type=int)</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;args = parser.parse_args()</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160; </div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;string_to_pixelType = {<span class="stringliteral">&quot;sitkUInt8&quot;</span>: sitk.sitkUInt8,</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;                       <span class="stringliteral">&quot;sitkInt8&quot;</span>: sitk.sitkInt8,</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;                       <span class="stringliteral">&quot;sitkUInt16&quot;</span>: sitk.sitkUInt16,</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;                       <span class="stringliteral">&quot;sitkInt16&quot;</span>: sitk.sitkInt16,</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;                       <span class="stringliteral">&quot;sitkUInt32&quot;</span>: sitk.sitkUInt32,</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;                       <span class="stringliteral">&quot;sitkInt32&quot;</span>: sitk.sitkInt32,</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;                       <span class="stringliteral">&quot;sitkUInt64&quot;</span>: sitk.sitkUInt64,</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;                       <span class="stringliteral">&quot;sitkInt64&quot;</span>: sitk.sitkInt64,</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;                       <span class="stringliteral">&quot;sitkFloat32&quot;</span>: sitk.sitkFloat32,</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;                       <span class="stringliteral">&quot;sitkFloat64&quot;</span>: sitk.sitkFloat64}</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160; </div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;<span class="comment"># Read the image using both big and little endian</span></div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;image = read_raw(binary_file_name=args.raw_file_name,</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;                 image_size=args.sz,</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;                 sitk_pixel_type=string_to_pixelType[args.sitk_pixel_type],</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;                 big_endian=args.big_endian)</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160; </div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;<a class="code" href="namespaceitk_1_1simple.html#a8537644286a43ff1566326c2109057ab">sitk.WriteImage</a>(image, args.out_file_name)</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160; </div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;<span class="keywordflow">if</span> <span class="stringliteral">&quot;SITK_NOSHOW&quot;</span> <span class="keywordflow">not</span> <span class="keywordflow">in</span> os.environ:</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;    <a class="code" href="namespaceitk_1_1simple.html#a86cb9e226d455efca3ba034dc2154605">sitk.Show</a>(image, <span class="stringliteral">&#39;raw converted&#39;</span>)</div>
 </div><!-- fragment --> </div><!-- contents -->
 <div class="ttc" id="anamespaceitk_1_1simple_html_a8537644286a43ff1566326c2109057ab"><div class="ttname"><a href="namespaceitk_1_1simple.html#a8537644286a43ff1566326c2109057ab">itk::simple::WriteImage</a></div><div class="ttdeci">SITKIO_EXPORT void WriteImage(const Image &amp;image, const std::vector&lt; std::string &gt; &amp;fileNames, bool useCompression=false, int compressionLevel=-1)</div></div>
 <div class="ttc" id="anamespaceitk_1_1simple_html_a86cb9e226d455efca3ba034dc2154605"><div class="ttname"><a href="namespaceitk_1_1simple.html#a86cb9e226d455efca3ba034dc2154605">itk::simple::Show</a></div><div class="ttdeci">void SITKIO_EXPORT Show(const Image &amp;image, const std::string &amp;title=&quot;&quot;, const bool debugOn=ProcessObject::GetGlobalDefaultDebug())</div></div>
 <div class="ttc" id="anamespaceitk_1_1simple_html_a62a1be75703e22b14339e6409858ab61"><div class="ttname"><a href="namespaceitk_1_1simple.html#a62a1be75703e22b14339e6409858ab61">itk::simple::ReadImage</a></div><div class="ttdeci">SITKIO_EXPORT Image ReadImage(const std::vector&lt; std::string &gt; &amp;fileNames, PixelIDValueEnum outputPixelType=sitkUnknown, const std::string &amp;imageIO=&quot;&quot;)</div><div class="ttdoc">ReadImage is a procedural interface to the ImageSeriesReader class which is convenient for most image...</div></div>
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Jun 5 2020 02:52:34 for SimpleITK by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Jun 6 2020 02:49:16 for SimpleITK by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

@@ -26,7 +26,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">SimpleITK
-   &#160;<span id="projectnumber">2.0.0rc1.post267</span>
+   &#160;<span id="projectnumber">2.0.0rc1.post271</span>
    </div>
   </td>
  </tr>
@@ -82,69 +82,68 @@ $(function() {
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160; </div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160; </div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="keywordflow">if</span> len(sys.argv) &lt; 4:</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    print(<span class="stringliteral">&quot;Usage: {0} &lt;fixedImageFilter&gt; &lt;movingImageFile&gt; &quot;</span> +</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;          <span class="stringliteral">&quot;[initialTransformFile] &lt;outputTransformFile&gt;&quot;</span></div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;          .format(sys.argv[0]))</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    sys.exit(1)</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160; </div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;fixed = <a class="code" href="namespaceitk_1_1simple.html#a62a1be75703e22b14339e6409858ab61">sitk.ReadImage</a>(sys.argv[1])</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160; </div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;moving = <a class="code" href="namespaceitk_1_1simple.html#a62a1be75703e22b14339e6409858ab61">sitk.ReadImage</a>(sys.argv[2])</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160; </div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;matcher = <a class="code" href="classitk_1_1simple_1_1HistogramMatchingImageFilter.html">sitk.HistogramMatchingImageFilter</a>()</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="keywordflow">if</span> (fixed.GetPixelID() <span class="keywordflow">in</span> (sitk.sitkUInt8, sitk.sitkInt8)):</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    matcher.SetNumberOfHistogramLevels(128)</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="keywordflow">else</span>:</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    matcher.SetNumberOfHistogramLevels(1024)</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;matcher.SetNumberOfMatchPoints(7)</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;matcher.ThresholdAtMeanIntensityOn()</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;moving = matcher.Execute(moving, fixed)</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160; </div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="comment"># The fast symmetric forces Demons Registration Filter</span></div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="comment"># Note there is a whole family of Demons Registration algorithms included in</span></div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="comment"># SimpleITK</span></div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;demons = <a class="code" href="classitk_1_1simple_1_1FastSymmetricForcesDemonsRegistrationFilter.html">sitk.FastSymmetricForcesDemonsRegistrationFilter</a>()</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;demons.SetNumberOfIterations(200)</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="comment"># Standard deviation for Gaussian smoothing of displacement field</span></div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;demons.SetStandardDeviations(1.0)</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160; </div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;demons.AddCommand(sitk.sitkIterationEvent, <span class="keyword">lambda</span>: command_iteration(demons))</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160; </div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="keywordflow">if</span> len(sys.argv) &gt; 4:</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    initialTransform = <a class="code" href="namespaceitk_1_1simple.html#a2c0bd020eb148e4d2595f603c9d884b8">sitk.ReadTransform</a>(sys.argv[3])</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    sys.argv[-1] = sys.argv.pop()</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160; </div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    toDisplacementFilter = <a class="code" href="classitk_1_1simple_1_1TransformToDisplacementFieldFilter.html">sitk.TransformToDisplacementFieldFilter</a>()</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    toDisplacementFilter.SetReferenceImage(fixed)</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160; </div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    displacementField = toDisplacementFilter.Execute(initialTransform)</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160; </div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    displacementField = demons.Execute(fixed, moving, displacementField)</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160; </div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;<span class="keywordflow">else</span>:</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160; </div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    displacementField = demons.Execute(fixed, moving)</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160; </div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;print(<span class="stringliteral">&quot;-------&quot;</span>)</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;print(<span class="stringliteral">&quot;Number Of Iterations: {0}&quot;</span>.format(demons.GetElapsedIterations()))</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;print(<span class="stringliteral">&quot; RMS: {0}&quot;</span>.format(demons.GetRMSChange()))</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160; </div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;outTx = <a class="code" href="classitk_1_1simple_1_1DisplacementFieldTransform.html">sitk.DisplacementFieldTransform</a>(displacementField)</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160; </div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;<a class="code" href="namespaceitk_1_1simple.html#aaa096d3d36b98fb95bf5eb12e24821f3">sitk.WriteTransform</a>(outTx, sys.argv[3])</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160; </div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;<span class="keywordflow">if</span> (<span class="stringliteral">&quot;SITK_NOSHOW&quot;</span> <span class="keywordflow">not</span> <span class="keywordflow">in</span> os.environ):</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    resampler = <a class="code" href="classitk_1_1simple_1_1ResampleImageFilter.html">sitk.ResampleImageFilter</a>()</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    resampler.SetReferenceImage(fixed)</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    resampler.SetInterpolator(sitk.sitkLinear)</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    resampler.SetDefaultPixelValue(100)</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    resampler.SetTransform(outTx)</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160; </div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    out = resampler.Execute(moving)</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    simg1 = <a class="code" href="namespaceitk_1_1simple.html#af8c9d7cc96a299a05890e9c3db911885">sitk.Cast</a>(<a class="code" href="namespaceitk_1_1simple.html#a8d78adbcb368cae2d47c09df908d5398">sitk.RescaleIntensity</a>(fixed), sitk.sitkUInt8)</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    simg2 = <a class="code" href="namespaceitk_1_1simple.html#af8c9d7cc96a299a05890e9c3db911885">sitk.Cast</a>(<a class="code" href="namespaceitk_1_1simple.html#a8d78adbcb368cae2d47c09df908d5398">sitk.RescaleIntensity</a>(out), sitk.sitkUInt8)</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    cimg = <a class="code" href="namespaceitk_1_1simple.html#a598a7e0680ee92d0f8f50c51ef1c15b1">sitk.Compose</a>(simg1, simg2, simg1 // 2. + simg2 // 2.)</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    <a class="code" href="namespaceitk_1_1simple.html#a86cb9e226d455efca3ba034dc2154605">sitk.Show</a>(cimg, <span class="stringliteral">&quot;DeformableRegistration1 Composition&quot;</span>)</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    print(<span class="stringliteral">&quot;Usage:&quot;</span>, sys.argv[0], <span class="stringliteral">&quot;&lt;fixedImageFilter&gt; &lt;movingImageFile&gt;&quot;</span>,</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;          <span class="stringliteral">&quot;[initialTransformFile] &lt;outputTransformFile&gt;&quot;</span>)</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    sys.exit(1)</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160; </div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;fixed = <a class="code" href="namespaceitk_1_1simple.html#a62a1be75703e22b14339e6409858ab61">sitk.ReadImage</a>(sys.argv[1])</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160; </div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;moving = <a class="code" href="namespaceitk_1_1simple.html#a62a1be75703e22b14339e6409858ab61">sitk.ReadImage</a>(sys.argv[2])</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160; </div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;matcher = <a class="code" href="classitk_1_1simple_1_1HistogramMatchingImageFilter.html">sitk.HistogramMatchingImageFilter</a>()</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="keywordflow">if</span> (fixed.GetPixelID() <span class="keywordflow">in</span> (sitk.sitkUInt8, sitk.sitkInt8)):</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    matcher.SetNumberOfHistogramLevels(128)</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="keywordflow">else</span>:</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    matcher.SetNumberOfHistogramLevels(1024)</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;matcher.SetNumberOfMatchPoints(7)</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;matcher.ThresholdAtMeanIntensityOn()</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;moving = matcher.Execute(moving, fixed)</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160; </div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="comment"># The fast symmetric forces Demons Registration Filter</span></div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="comment"># Note there is a whole family of Demons Registration algorithms included in</span></div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="comment"># SimpleITK</span></div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;demons = <a class="code" href="classitk_1_1simple_1_1FastSymmetricForcesDemonsRegistrationFilter.html">sitk.FastSymmetricForcesDemonsRegistrationFilter</a>()</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;demons.SetNumberOfIterations(200)</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="comment"># Standard deviation for Gaussian smoothing of displacement field</span></div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;demons.SetStandardDeviations(1.0)</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160; </div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;demons.AddCommand(sitk.sitkIterationEvent, <span class="keyword">lambda</span>: command_iteration(demons))</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160; </div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="keywordflow">if</span> len(sys.argv) &gt; 4:</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    initialTransform = <a class="code" href="namespaceitk_1_1simple.html#a2c0bd020eb148e4d2595f603c9d884b8">sitk.ReadTransform</a>(sys.argv[3])</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    sys.argv[-1] = sys.argv.pop()</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160; </div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    toDisplacementFilter = <a class="code" href="classitk_1_1simple_1_1TransformToDisplacementFieldFilter.html">sitk.TransformToDisplacementFieldFilter</a>()</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    toDisplacementFilter.SetReferenceImage(fixed)</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160; </div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    displacementField = toDisplacementFilter.Execute(initialTransform)</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160; </div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    displacementField = demons.Execute(fixed, moving, displacementField)</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160; </div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;<span class="keywordflow">else</span>:</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160; </div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    displacementField = demons.Execute(fixed, moving)</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160; </div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;print(<span class="stringliteral">&quot;-------&quot;</span>)</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;print(<span class="stringliteral">&quot;Number Of Iterations: {0}&quot;</span>.format(demons.GetElapsedIterations()))</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;print(<span class="stringliteral">&quot; RMS: {0}&quot;</span>.format(demons.GetRMSChange()))</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160; </div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;outTx = <a class="code" href="classitk_1_1simple_1_1DisplacementFieldTransform.html">sitk.DisplacementFieldTransform</a>(displacementField)</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160; </div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;<a class="code" href="namespaceitk_1_1simple.html#aaa096d3d36b98fb95bf5eb12e24821f3">sitk.WriteTransform</a>(outTx, sys.argv[3])</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160; </div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;<span class="keywordflow">if</span> (<span class="stringliteral">&quot;SITK_NOSHOW&quot;</span> <span class="keywordflow">not</span> <span class="keywordflow">in</span> os.environ):</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    resampler = <a class="code" href="classitk_1_1simple_1_1ResampleImageFilter.html">sitk.ResampleImageFilter</a>()</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    resampler.SetReferenceImage(fixed)</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    resampler.SetInterpolator(sitk.sitkLinear)</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    resampler.SetDefaultPixelValue(100)</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    resampler.SetTransform(outTx)</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160; </div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    out = resampler.Execute(moving)</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    simg1 = <a class="code" href="namespaceitk_1_1simple.html#af8c9d7cc96a299a05890e9c3db911885">sitk.Cast</a>(<a class="code" href="namespaceitk_1_1simple.html#a8d78adbcb368cae2d47c09df908d5398">sitk.RescaleIntensity</a>(fixed), sitk.sitkUInt8)</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    simg2 = <a class="code" href="namespaceitk_1_1simple.html#af8c9d7cc96a299a05890e9c3db911885">sitk.Cast</a>(<a class="code" href="namespaceitk_1_1simple.html#a8d78adbcb368cae2d47c09df908d5398">sitk.RescaleIntensity</a>(out), sitk.sitkUInt8)</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    cimg = <a class="code" href="namespaceitk_1_1simple.html#a598a7e0680ee92d0f8f50c51ef1c15b1">sitk.Compose</a>(simg1, simg2, simg1 // 2. + simg2 // 2.)</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    <a class="code" href="namespaceitk_1_1simple.html#a86cb9e226d455efca3ba034dc2154605">sitk.Show</a>(cimg, <span class="stringliteral">&quot;DeformableRegistration1 Composition&quot;</span>)</div>
 </div><!-- fragment --> </div><!-- contents -->
 <div class="ttc" id="aclassitk_1_1simple_1_1FastSymmetricForcesDemonsRegistrationFilter_html"><div class="ttname"><a href="classitk_1_1simple_1_1FastSymmetricForcesDemonsRegistrationFilter.html">itk::simple::FastSymmetricForcesDemonsRegistrationFilter</a></div><div class="ttdoc">Deformably register two images using a symmetric forces demons algorithm.</div><div class="ttdef"><b>Definition:</b> <a href="sitkFastSymmetricForcesDemonsRegistrationFilter_8h_source.html#l00067">sitkFastSymmetricForcesDemonsRegistrationFilter.h:67</a></div></div>
 <div class="ttc" id="anamespaceitk_1_1simple_html_aaa096d3d36b98fb95bf5eb12e24821f3"><div class="ttname"><a href="namespaceitk_1_1simple.html#aaa096d3d36b98fb95bf5eb12e24821f3">itk::simple::WriteTransform</a></div><div class="ttdeci">SITKCommon_EXPORT void WriteTransform(const Transform &amp;transform, const std::string &amp;filename)</div></div>
@@ -160,7 +159,7 @@ $(function() {
 <div class="ttc" id="anamespaceitk_1_1simple_html_a2c0bd020eb148e4d2595f603c9d884b8"><div class="ttname"><a href="namespaceitk_1_1simple.html#a2c0bd020eb148e4d2595f603c9d884b8">itk::simple::ReadTransform</a></div><div class="ttdeci">SITKCommon_EXPORT Transform ReadTransform(const std::string &amp;filename)</div></div>
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Jun 5 2020 02:52:34 for SimpleITK by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Jun 6 2020 02:49:16 for SimpleITK by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>
