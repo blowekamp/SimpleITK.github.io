@@ -26,7 +26,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">SimpleITK
-   &#160;<span id="projectnumber">2.0.0rc1.post273</span>
+   &#160;<span id="projectnumber">2.0.0rc1.post283</span>
    </div>
   </td>
  </tr>
@@ -1812,6 +1812,18 @@ $(function() {
 <li>m_PermuteOrder
 : <a class="el" href="classitk_1_1simple_1_1DICOMOrientImageFilter.html#a0f1bfe621b829002d6a0991e0bfa8241">itk::simple::DICOMOrientImageFilter</a>
 </li>
+<li>m_pfAddTransform
+: <a class="el" href="classitk_1_1simple_1_1CompositeTransform.html#a6ef31bd5038eb29d475eac2d8f6c1c6c">itk::simple::CompositeTransform</a>
+</li>
+<li>m_pfBackTransform
+: <a class="el" href="classitk_1_1simple_1_1CompositeTransform.html#af2c576283d077f35cf1a270e272522ce">itk::simple::CompositeTransform</a>
+</li>
+<li>m_pfClearTransformQueue
+: <a class="el" href="classitk_1_1simple_1_1CompositeTransform.html#a68091359faa6be0736f7ee1712a2a22b">itk::simple::CompositeTransform</a>
+</li>
+<li>m_pfFlattenTransform
+: <a class="el" href="classitk_1_1simple_1_1CompositeTransform.html#a29c886b5be5fb0d8a7415ef3404ed52d">itk::simple::CompositeTransform</a>
+</li>
 <li>m_pfGetAngle
 : <a class="el" href="classitk_1_1simple_1_1Euler2DTransform.html#a5c97db8ca5a591a4b180f5037480be72">itk::simple::Euler2DTransform</a>
 , <a class="el" href="classitk_1_1simple_1_1Similarity2DTransform.html#a9d8b801f2bdcc8699f4e52d0e8021139">itk::simple::Similarity2DTransform</a>
@@ -1981,6 +1993,9 @@ $(function() {
 <li>m_pfGetMinimumIndex
 : <a class="el" href="classitk_1_1simple_1_1LabelIntensityStatisticsImageFilter.html#a762b91a65044617221e47a9604422d35">itk::simple::LabelIntensityStatisticsImageFilter</a>
 </li>
+<li>m_pfGetNthTransform
+: <a class="el" href="classitk_1_1simple_1_1CompositeTransform.html#afba16fbcf13080ce37a216ea650887b5">itk::simple::CompositeTransform</a>
+</li>
 <li>m_pfGetNumberOfPixels
 : <a class="el" href="classitk_1_1simple_1_1LabelIntensityStatisticsImageFilter.html#a539c0c79849ff27ae9d354e358f701a7">itk::simple::LabelIntensityStatisticsImageFilter</a>
 , <a class="el" href="classitk_1_1simple_1_1LabelShapeStatisticsImageFilter.html#a8e51e10b8efbbc56d9eb72c483f69647">itk::simple::LabelShapeStatisticsImageFilter</a>
@@ -1988,6 +2003,9 @@ $(function() {
 <li>m_pfGetNumberOfPixelsOnBorder
 : <a class="el" href="classitk_1_1simple_1_1LabelIntensityStatisticsImageFilter.html#ab279a77bf942b6d429eb9078fe052d30">itk::simple::LabelIntensityStatisticsImageFilter</a>
 , <a class="el" href="classitk_1_1simple_1_1LabelShapeStatisticsImageFilter.html#a82b9228e6bb3cfa37e335dd435298622">itk::simple::LabelShapeStatisticsImageFilter</a>
+</li>
+<li>m_pfGetNumberOfTransforms
+: <a class="el" href="classitk_1_1simple_1_1CompositeTransform.html#a2fd9a430315d056075f1c58b1486fb8c">itk::simple::CompositeTransform</a>
 </li>
 <li>m_pfGetOffset
 : <a class="el" href="classitk_1_1simple_1_1TranslationTransform.html#a5f13efd430666731b321f50d002481da">itk::simple::TranslationTransform</a>
@@ -2138,6 +2156,9 @@ $(function() {
 <li>m_pfHasMetaDataKey
 : <a class="el" href="classitk_1_1simple_1_1ImageFileReader.html#a14b4266060b6f4d281a46cd1050250cd">itk::simple::ImageFileReader</a>
 , <a class="el" href="classitk_1_1simple_1_1ImageSeriesReader.html#a16aaf228b2c9856fd54a249f9365521d">itk::simple::ImageSeriesReader</a>
+</li>
+<li>m_pfRemoveTransform
+: <a class="el" href="classitk_1_1simple_1_1CompositeTransform.html#af734704263bdcccc99b83cfb5663ff65">itk::simple::CompositeTransform</a>
 </li>
 <li>m_pfRotate
 : <a class="el" href="classitk_1_1simple_1_1AffineTransform.html#a881e6d882c559c39572ec6f9f090c2ad">itk::simple::AffineTransform</a>
@@ -2842,7 +2863,7 @@ $(function() {
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Jun 10 2020 02:50:07 for SimpleITK by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Jun 11 2020 02:53:35 for SimpleITK by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

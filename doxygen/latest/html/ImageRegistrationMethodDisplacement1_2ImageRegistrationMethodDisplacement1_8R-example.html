@@ -26,7 +26,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">SimpleITK
-   &#160;<span id="projectnumber">2.0.0rc1.post273</span>
+   &#160;<span id="projectnumber">2.0.0rc1.post283</span>
    </div>
   </td>
  </tr>
@@ -120,17 +120,17 @@ $(function() {
 <div class="line">                                estimateLearningRate = &#39;EachIteration&#39;)</div>
 <div class="line">R$SetOptimizerScalesFromPhysicalShift()</div>
 <div class="line"> </div>
-<div class="line">R$SetInitialTransform(initialTx, inPlace=TRUE)</div>
+<div class="line">R$SetInitialTransform(initialTx)</div>
 <div class="line"> </div>
 <div class="line">R$SetInterpolator(&#39;sitkLinear&#39;)</div>
 <div class="line"> </div>
 <div class="line">R$AddCommand( &#39;sitkIterationEvent&#39;, function() commandIteration(R) )</div>
 <div class="line">R$AddCommand( &#39;sitkMultiResolutionIterationEvent&#39;, function() commandMultiIteration(R) )</div>
 <div class="line"> </div>
-<div class="line">outTx &lt;- R$Execute(fixed, moving)</div>
+<div class="line">outTx1 &lt;- R$Execute(fixed, moving)</div>
 <div class="line"> </div>
 <div class="line">cat(&quot;-------\n&quot;)</div>
-<div class="line">outTx</div>
+<div class="line">outTx1</div>
 <div class="line">cat(&quot;Optimizer stop condition:&quot;, R$GetOptimizerStopConditionDescription(), &#39;\n&#39;)</div>
 <div class="line">cat(&quot;Iteration:&quot;, R$GetOptimizerIteration(), &#39;\n&#39;)</div>
 <div class="line">cat(&quot;Metric value:&quot;, R$GetMetricValue(), &#39;\n&#39;)</div>
@@ -143,7 +143,7 @@ $(function() {
 <div class="line">displacementTx$SetSmoothingGaussianOnUpdate(varianceForUpdateField=0.0,</div>
 <div class="line">                                            varianceForTotalField=1.5)</div>
 <div class="line"> </div>
-<div class="line">R$SetMovingInitialTransform(outTx)</div>
+<div class="line">R$SetMovingInitialTransform(outTx1)</div>
 <div class="line">R$SetInitialTransform(displacementTx, inPlace=TRUE)</div>
 <div class="line"> </div>
 <div class="line">R$SetMetricAsANTSNeighborhoodCorrelation(4)</div>
@@ -159,19 +159,25 @@ $(function() {
 <div class="line">                                convergenceWindowSize=10,</div>
 <div class="line">                                estimateLearningRate = &#39;EachIteration&#39;)</div>
 <div class="line"> </div>
-<div class="line">outTx$AddTransform( R$Execute(fixed, moving) )</div>
+<div class="line">R$Execute(fixed, moving)</div>
+<div class="line"> </div>
+<div class="line"> </div>
 <div class="line"> </div>
 <div class="line">cat(&quot;-------\n&quot;)</div>
-<div class="line">outTx</div>
+<div class="line">displacementTx</div>
 <div class="line">cat(&quot;Optimizer stop condition:&quot;, R$GetOptimizerStopConditionDescription(), &#39;\n&#39;)</div>
 <div class="line">cat(&quot;Iteration:&quot;, R$GetOptimizerIteration(), &#39;\n&#39;)</div>
 <div class="line">cat(&quot;Metric value:&quot;, R$GetMetricValue(), &#39;\n&#39;)</div>
+<div class="line"> </div>
+<div class="line">outTx &lt;- CompositeTransform(outTx1$GetDimension())</div>
+<div class="line">outTx$AddTransform(outTx1)</div>
+<div class="line">outTx$AddTransform(displacementTx)</div>
 <div class="line"> </div>
 <div class="line">WriteTransform(outTx,  args[[3]])</div>
 </div><!-- fragment --> </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Jun 10 2020 02:49:41 for SimpleITK by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Jun 11 2020 02:53:05 for SimpleITK by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

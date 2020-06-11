@@ -16,7 +16,7 @@
 <polygon fill="#ffffff" stroke="#000000" points="0,-.5 0,-52.5 162,-52.5 162,-.5 0,-.5"/>
 <text text-anchor="start" x="8" y="-40.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">itk::simple::detail</text>
 <text text-anchor="start" x="8" y="-29.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">::MemberFunctionFactoryBase</text>
-<text text-anchor="start" x="8" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">&lt; MemberFunction2Type, std</text>
+<text text-anchor="start" x="8" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">&lt; MemberFunction1Type, std</text>
 <text text-anchor="middle" x="81" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">::pair&lt; unsigned int, int &gt; &gt;</text>
 </a>
 </g>
@@ -28,7 +28,7 @@
 <polygon fill="#ffffff" stroke="#000000" points="198,-6 198,-47 346,-47 346,-6 198,-6"/>
 <text text-anchor="start" x="206" y="-35" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">itk::simple::detail</text>
 <text text-anchor="start" x="206" y="-24" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">::MemberFunctionFactory</text>
-<text text-anchor="middle" x="272" y="-13" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">&lt; MemberFunction2Type &gt;</text>
+<text text-anchor="middle" x="272" y="-13" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">&lt; MemberFunction1Type &gt;</text>
 </a>
 </g>
 </g>
