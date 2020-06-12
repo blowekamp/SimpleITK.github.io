@@ -26,7 +26,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">SimpleITK
-   &#160;<span id="projectnumber">2.0.0rc1.post283</span>
+   &#160;<span id="projectnumber">2.0.0rc1.post285</span>
    </div>
   </td>
  </tr>
@@ -170,6 +170,10 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ab5c7a8075dafe9dbccb16cc6a48b4209 inherit pub_methods_classitk_1_1simple_1_1ProcessObject"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9460b4db255ff2c6bfc4a89c274cf8c8 inherit pub_methods_classitk_1_1simple_1_1ProcessObject"><td class="memItemLeft" align="right" valign="top">virtual unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1ProcessObject.html#a9460b4db255ff2c6bfc4a89c274cf8c8">GetNumberOfThreads</a> () const</td></tr>
 <tr class="separator:a9460b4db255ff2c6bfc4a89c274cf8c8 inherit pub_methods_classitk_1_1simple_1_1ProcessObject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac3a2fc4905baba0a0e89836f9f9d29a5 inherit pub_methods_classitk_1_1simple_1_1ProcessObject"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1ProcessObject.html#ac3a2fc4905baba0a0e89836f9f9d29a5">SetNumberOfWorkUnits</a> (unsigned int n)</td></tr>
+<tr class="separator:ac3a2fc4905baba0a0e89836f9f9d29a5 inherit pub_methods_classitk_1_1simple_1_1ProcessObject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0f948e61d6a7c7c2cc545f6d41e3ee67 inherit pub_methods_classitk_1_1simple_1_1ProcessObject"><td class="memItemLeft" align="right" valign="top">virtual unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1ProcessObject.html#a0f948e61d6a7c7c2cc545f6d41e3ee67">GetNumberOfWorkUnits</a> () const</td></tr>
+<tr class="separator:a0f948e61d6a7c7c2cc545f6d41e3ee67 inherit pub_methods_classitk_1_1simple_1_1ProcessObject"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-types"></a>
 Private Types</h2></td></tr>
@@ -221,10 +225,6 @@ Additional Inherited Members</h2></td></tr>
 <tr class="separator:a99d3df8ad7db82bc587edaa8706d135a inherit pub_static_methods_classitk_1_1simple_1_1ProcessObject"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9291fc959c13302dedcd4724a8c9e4e0 inherit pub_static_methods_classitk_1_1simple_1_1ProcessObject"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1ProcessObject.html#a9291fc959c13302dedcd4724a8c9e4e0">GetGlobalWarningDisplay</a> ()</td></tr>
 <tr class="separator:a9291fc959c13302dedcd4724a8c9e4e0 inherit pub_static_methods_classitk_1_1simple_1_1ProcessObject"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a305b43330f9feb26325eadfc30695bd9 inherit pub_static_methods_classitk_1_1simple_1_1ProcessObject"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1ProcessObject.html#a305b43330f9feb26325eadfc30695bd9">SetGlobalDefaultNumberOfThreads</a> (unsigned int n)</td></tr>
-<tr class="separator:a305b43330f9feb26325eadfc30695bd9 inherit pub_static_methods_classitk_1_1simple_1_1ProcessObject"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a221890f07ca4ed272230cf6349e621c4 inherit pub_static_methods_classitk_1_1simple_1_1ProcessObject"><td class="memItemLeft" align="right" valign="top">static unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1ProcessObject.html#a221890f07ca4ed272230cf6349e621c4">GetGlobalDefaultNumberOfThreads</a> ()</td></tr>
-<tr class="separator:a221890f07ca4ed272230cf6349e621c4 inherit pub_static_methods_classitk_1_1simple_1_1ProcessObject"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae31f487c7d7220c38120128ef02ed74d inherit pub_static_methods_classitk_1_1simple_1_1ProcessObject"><td class="memItemLeft" align="right" valign="top">static double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1ProcessObject.html#ae31f487c7d7220c38120128ef02ed74d">GetGlobalDefaultCoordinateTolerance</a> ()</td></tr>
 <tr class="memdesc:ae31f487c7d7220c38120128ef02ed74d inherit pub_static_methods_classitk_1_1simple_1_1ProcessObject"><td class="mdescLeft">&#160;</td><td class="mdescRight">Access the global tolerance to determine congruent spaces.  <a href="classitk_1_1simple_1_1ProcessObject.html#ae31f487c7d7220c38120128ef02ed74d">More...</a><br /></td></tr>
 <tr class="separator:ae31f487c7d7220c38120128ef02ed74d inherit pub_static_methods_classitk_1_1simple_1_1ProcessObject"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -237,6 +237,17 @@ Additional Inherited Members</h2></td></tr>
 <tr class="memitem:ad1cc5e0e79385e91d5f48eab25c59bf4 inherit pub_static_methods_classitk_1_1simple_1_1ProcessObject"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1ProcessObject.html#ad1cc5e0e79385e91d5f48eab25c59bf4">SetGlobalDefaultDirectionTolerance</a> (double)</td></tr>
 <tr class="memdesc:ad1cc5e0e79385e91d5f48eab25c59bf4 inherit pub_static_methods_classitk_1_1simple_1_1ProcessObject"><td class="mdescLeft">&#160;</td><td class="mdescRight">Access the global tolerance to determine congruent spaces.  <a href="classitk_1_1simple_1_1ProcessObject.html#ad1cc5e0e79385e91d5f48eab25c59bf4">More...</a><br /></td></tr>
 <tr class="separator:ad1cc5e0e79385e91d5f48eab25c59bf4 inherit pub_static_methods_classitk_1_1simple_1_1ProcessObject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a709f1c6f88d214826f2e864aff85abd4 inherit pub_static_methods_classitk_1_1simple_1_1ProcessObject"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1ProcessObject.html#a709f1c6f88d214826f2e864aff85abd4">SetGlobalDefaultThreader</a> (const std::string &amp;threader)</td></tr>
+<tr class="memdesc:a709f1c6f88d214826f2e864aff85abd4 inherit pub_static_methods_classitk_1_1simple_1_1ProcessObject"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set/Get the default threader used for process objects.  <a href="classitk_1_1simple_1_1ProcessObject.html#a709f1c6f88d214826f2e864aff85abd4">More...</a><br /></td></tr>
+<tr class="separator:a709f1c6f88d214826f2e864aff85abd4 inherit pub_static_methods_classitk_1_1simple_1_1ProcessObject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae9c58a7a09e7ff0acd98e387f8c45d0d inherit pub_static_methods_classitk_1_1simple_1_1ProcessObject"><td class="memItemLeft" align="right" valign="top">static std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1ProcessObject.html#ae9c58a7a09e7ff0acd98e387f8c45d0d">GetGlobalDefaultThreader</a> ()</td></tr>
+<tr class="memdesc:ae9c58a7a09e7ff0acd98e387f8c45d0d inherit pub_static_methods_classitk_1_1simple_1_1ProcessObject"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set/Get the default threader used for process objects.  <a href="classitk_1_1simple_1_1ProcessObject.html#ae9c58a7a09e7ff0acd98e387f8c45d0d">More...</a><br /></td></tr>
+<tr class="separator:ae9c58a7a09e7ff0acd98e387f8c45d0d inherit pub_static_methods_classitk_1_1simple_1_1ProcessObject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a305b43330f9feb26325eadfc30695bd9 inherit pub_static_methods_classitk_1_1simple_1_1ProcessObject"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1ProcessObject.html#a305b43330f9feb26325eadfc30695bd9">SetGlobalDefaultNumberOfThreads</a> (unsigned int n)</td></tr>
+<tr class="separator:a305b43330f9feb26325eadfc30695bd9 inherit pub_static_methods_classitk_1_1simple_1_1ProcessObject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a221890f07ca4ed272230cf6349e621c4 inherit pub_static_methods_classitk_1_1simple_1_1ProcessObject"><td class="memItemLeft" align="right" valign="top">static unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1ProcessObject.html#a221890f07ca4ed272230cf6349e621c4">GetGlobalDefaultNumberOfThreads</a> ()</td></tr>
+<tr class="memdesc:a221890f07ca4ed272230cf6349e621c4 inherit pub_static_methods_classitk_1_1simple_1_1ProcessObject"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set/Get the default threader used for process objects.  <a href="classitk_1_1simple_1_1ProcessObject.html#a221890f07ca4ed272230cf6349e621c4">More...</a><br /></td></tr>
+<tr class="separator:a221890f07ca4ed272230cf6349e621c4 inherit pub_static_methods_classitk_1_1simple_1_1ProcessObject"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_methods_classitk_1_1simple_1_1ImageFilter"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_classitk_1_1simple_1_1ImageFilter')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="classitk_1_1simple_1_1ImageFilter.html">itk::simple::ImageFilter</a></td></tr>
 <tr class="memitem:a7028f1c183f8535e006a903182ecdbcc inherit pro_methods_classitk_1_1simple_1_1ImageFilter"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1ImageFilter.html#a7028f1c183f8535e006a903182ecdbcc">CheckImageMatchingDimension</a> (const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> &amp;image1, const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> &amp;image2, const std::string &amp;image2Name)</td></tr>
 <tr class="separator:a7028f1c183f8535e006a903182ecdbcc inherit pro_methods_classitk_1_1simple_1_1ImageFilter"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -975,7 +986,7 @@ template&lt;class TImageType &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Jun 11 2020 02:53:32 for SimpleITK by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Jun 12 2020 02:53:42 for SimpleITK by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

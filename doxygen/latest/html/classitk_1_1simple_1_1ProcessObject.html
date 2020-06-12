@@ -26,7 +26,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">SimpleITK
-   &#160;<span id="projectnumber">2.0.0rc1.post283</span>
+   &#160;<span id="projectnumber">2.0.0rc1.post285</span>
    </div>
   </td>
  </tr>
@@ -139,6 +139,11 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ab5c7a8075dafe9dbccb16cc6a48b4209"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9460b4db255ff2c6bfc4a89c274cf8c8"><td class="memItemLeft" align="right" valign="top">virtual unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1ProcessObject.html#a9460b4db255ff2c6bfc4a89c274cf8c8">GetNumberOfThreads</a> () const</td></tr>
 <tr class="separator:a9460b4db255ff2c6bfc4a89c274cf8c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr><td colspan="2"><div class="groupHeader"></div></td></tr>
+<tr class="memitem:ac3a2fc4905baba0a0e89836f9f9d29a5"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1ProcessObject.html#ac3a2fc4905baba0a0e89836f9f9d29a5">SetNumberOfWorkUnits</a> (unsigned int n)</td></tr>
+<tr class="separator:ac3a2fc4905baba0a0e89836f9f9d29a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0f948e61d6a7c7c2cc545f6d41e3ee67"><td class="memItemLeft" align="right" valign="top">virtual unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1ProcessObject.html#a0f948e61d6a7c7c2cc545f6d41e3ee67">GetNumberOfWorkUnits</a> () const</td></tr>
+<tr class="separator:a0f948e61d6a7c7c2cc545f6d41e3ee67"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
@@ -160,11 +165,6 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a9291fc959c13302dedcd4724a8c9e4e0"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1ProcessObject.html#a9291fc959c13302dedcd4724a8c9e4e0">GetGlobalWarningDisplay</a> ()</td></tr>
 <tr class="separator:a9291fc959c13302dedcd4724a8c9e4e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr><td colspan="2"><div class="groupHeader"></div></td></tr>
-<tr class="memitem:a305b43330f9feb26325eadfc30695bd9"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1ProcessObject.html#a305b43330f9feb26325eadfc30695bd9">SetGlobalDefaultNumberOfThreads</a> (unsigned int n)</td></tr>
-<tr class="separator:a305b43330f9feb26325eadfc30695bd9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a221890f07ca4ed272230cf6349e621c4"><td class="memItemLeft" align="right" valign="top">static unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1ProcessObject.html#a221890f07ca4ed272230cf6349e621c4">GetGlobalDefaultNumberOfThreads</a> ()</td></tr>
-<tr class="separator:a221890f07ca4ed272230cf6349e621c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr><td colspan="2"><div class="groupHeader"></div></td></tr>
 <tr class="memitem:ae31f487c7d7220c38120128ef02ed74d"><td class="memItemLeft" align="right" valign="top">static double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1ProcessObject.html#ae31f487c7d7220c38120128ef02ed74d">GetGlobalDefaultCoordinateTolerance</a> ()</td></tr>
 <tr class="memdesc:ae31f487c7d7220c38120128ef02ed74d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Access the global tolerance to determine congruent spaces.  <a href="classitk_1_1simple_1_1ProcessObject.html#ae31f487c7d7220c38120128ef02ed74d">More...</a><br /></td></tr>
 <tr class="separator:ae31f487c7d7220c38120128ef02ed74d"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -177,6 +177,18 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memitem:ad1cc5e0e79385e91d5f48eab25c59bf4"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1ProcessObject.html#ad1cc5e0e79385e91d5f48eab25c59bf4">SetGlobalDefaultDirectionTolerance</a> (double)</td></tr>
 <tr class="memdesc:ad1cc5e0e79385e91d5f48eab25c59bf4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Access the global tolerance to determine congruent spaces.  <a href="classitk_1_1simple_1_1ProcessObject.html#ad1cc5e0e79385e91d5f48eab25c59bf4">More...</a><br /></td></tr>
 <tr class="separator:ad1cc5e0e79385e91d5f48eab25c59bf4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr><td colspan="2"><div class="groupHeader"></div></td></tr>
+<tr class="memitem:a709f1c6f88d214826f2e864aff85abd4"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1ProcessObject.html#a709f1c6f88d214826f2e864aff85abd4">SetGlobalDefaultThreader</a> (const std::string &amp;threader)</td></tr>
+<tr class="memdesc:a709f1c6f88d214826f2e864aff85abd4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set/Get the default threader used for process objects.  <a href="classitk_1_1simple_1_1ProcessObject.html#a709f1c6f88d214826f2e864aff85abd4">More...</a><br /></td></tr>
+<tr class="separator:a709f1c6f88d214826f2e864aff85abd4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae9c58a7a09e7ff0acd98e387f8c45d0d"><td class="memItemLeft" align="right" valign="top">static std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1ProcessObject.html#ae9c58a7a09e7ff0acd98e387f8c45d0d">GetGlobalDefaultThreader</a> ()</td></tr>
+<tr class="memdesc:ae9c58a7a09e7ff0acd98e387f8c45d0d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set/Get the default threader used for process objects.  <a href="classitk_1_1simple_1_1ProcessObject.html#ae9c58a7a09e7ff0acd98e387f8c45d0d">More...</a><br /></td></tr>
+<tr class="separator:ae9c58a7a09e7ff0acd98e387f8c45d0d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a305b43330f9feb26325eadfc30695bd9"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1ProcessObject.html#a305b43330f9feb26325eadfc30695bd9">SetGlobalDefaultNumberOfThreads</a> (unsigned int n)</td></tr>
+<tr class="separator:a305b43330f9feb26325eadfc30695bd9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a221890f07ca4ed272230cf6349e621c4"><td class="memItemLeft" align="right" valign="top">static unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1ProcessObject.html#a221890f07ca4ed272230cf6349e621c4">GetGlobalDefaultNumberOfThreads</a> ()</td></tr>
+<tr class="memdesc:a221890f07ca4ed272230cf6349e621c4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set/Get the default threader used for process objects.  <a href="classitk_1_1simple_1_1ProcessObject.html#a221890f07ca4ed272230cf6349e621c4">More...</a><br /></td></tr>
+<tr class="separator:a221890f07ca4ed272230cf6349e621c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
@@ -241,6 +253,8 @@ Private Attributes</h2></td></tr>
 <tr class="separator:ae1b973f64cadf19eb678cafe4083176a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af92dfabcc3435c3abc8fac4f6372bfca"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1ProcessObject.html#af92dfabcc3435c3abc8fac4f6372bfca">m_NumberOfThreads</a></td></tr>
 <tr class="separator:af92dfabcc3435c3abc8fac4f6372bfca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8835267dbc18af17fd96759dfd0bd681"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1ProcessObject.html#a8835267dbc18af17fd96759dfd0bd681">m_NumberOfWorkUnits</a></td></tr>
+<tr class="separator:a8835267dbc18af17fd96759dfd0bd681"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7d2f3ad9dc2a83b96039289c26413a77"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1ProcessObject.html#a7d2f3ad9dc2a83b96039289c26413a77">m_ProgressMeasurement</a></td></tr>
 <tr class="separator:a7d2f3ad9dc2a83b96039289c26413a77"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -522,7 +536,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkProcessObject_8h_source.html#l00280">280</a> of file <a class="el" href="sitkProcessObject_8h_source.html">sitkProcessObject.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkProcessObject_8h_source.html#l00342">342</a> of file <a class="el" href="sitkProcessObject_8h_source.html">sitkProcessObject.h</a>.</p>
 
 <p class="reference">References <a class="el" href="classitk_1_1simple_1_1Image.html#a43163c72ca1a49abf615b3dc71e01a36">itk::simple::Image::GetDimension()</a>, <a class="el" href="classitk_1_1simple_1_1Image.html#a5642d24314cdf67121ce9130805d7195">itk::simple::Image::GetITKBase()</a>, <a class="el" href="classitk_1_1simple_1_1Image.html#ad195963d0b257560819b833b9cfe18d6">itk::simple::Image::GetPixelIDTypeAsString()</a>, <a class="el" href="namespaceitk_1_1simple.html#a43ef3b3e17763bf8f3ee4a5fc8307dbf">itk::simple::GetPixelIDValueAsString()</a>, and <a class="el" href="sitkMacro_8h_source.html#l00071">sitkExceptionMacro</a>.</p>
 
@@ -554,7 +568,7 @@ template&lt;class TPixelType , unsigned int VImageDimension, unsigned int VLengt
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkProcessObject_8h_source.html#l00306">306</a> of file <a class="el" href="sitkProcessObject_8h_source.html">sitkProcessObject.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkProcessObject_8h_source.html#l00368">368</a> of file <a class="el" href="sitkProcessObject_8h_source.html">sitkProcessObject.h</a>.</p>
 
 <p class="reference">References <a class="el" href="namespaceitk_1_1simple.html#a447983820b6cc20cb1fb53fd1d5b0940">itk::simple::GetVectorImageFromImage()</a>.</p>
 
@@ -586,7 +600,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkProcessObject_8h_source.html#l00298">298</a> of file <a class="el" href="sitkProcessObject_8h_source.html">sitkProcessObject.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkProcessObject_8h_source.html#l00360">360</a> of file <a class="el" href="sitkProcessObject_8h_source.html">sitkProcessObject.h</a>.</p>
 
 </div>
 </div>
@@ -800,7 +814,53 @@ template&lt;class TImageType &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Set the number of threads that all new process objects are initialized with. </p>
+
+<p>Set/Get the default threader used for process objects. </p>
+<p>The possible available multi-threaders are:</p><ul>
+<li>"POOL" <a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1PoolMultiThreader.html">itk::PoolMultiThreader</a></li>
+<li>"TBB" itk::TBBThreader (optional)</li>
+<li>"PLATFORM" itk::PlatformMultiThreader</li>
+</ul>
+<p>The default and the available multi-threaders are dependent upon ITK's configuration. See the ITK documentation for more details about the behavior of the multi-threaders.</p>
+<p>The environment variable "ITK_GLOBAL_DEFAULT_THREADER" can be used to initialize this value.</p>
+<p>The set method returns true when the threader string is valid and ITK's default is updated, otherwise false is returned. The threader argument is not case sensitive.</p>
+<dl class="section see"><dt>See also</dt><dd><a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1MultiThreaderBase.html">itk::MultiThreaderBase</a> <a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1PoolMultiThreader.html">itk::PoolMultiThreader</a> itk::TBBThreader itk::PlatformMultiThreader </dd></dl>
+
+</div>
+</div>
+<a id="ae9c58a7a09e7ff0acd98e387f8c45d0d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae9c58a7a09e7ff0acd98e387f8c45d0d">&#9670;&nbsp;</a></span>GetGlobalDefaultThreader()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static std::string itk::simple::ProcessObject::GetGlobalDefaultThreader </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Set/Get the default threader used for process objects. </p>
+<p>The possible available multi-threaders are:</p><ul>
+<li>"POOL" <a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1PoolMultiThreader.html">itk::PoolMultiThreader</a></li>
+<li>"TBB" itk::TBBThreader (optional)</li>
+<li>"PLATFORM" itk::PlatformMultiThreader</li>
+</ul>
+<p>The default and the available multi-threaders are dependent upon ITK's configuration. See the ITK documentation for more details about the behavior of the multi-threaders.</p>
+<p>The environment variable "ITK_GLOBAL_DEFAULT_THREADER" can be used to initialize this value.</p>
+<p>The set method returns true when the threader string is valid and ITK's default is updated, otherwise false is returned. The threader argument is not case sensitive.</p>
+<dl class="section see"><dt>See also</dt><dd><a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1MultiThreaderBase.html">itk::MultiThreaderBase</a> <a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1PoolMultiThreader.html">itk::PoolMultiThreader</a> itk::TBBThreader itk::PlatformMultiThreader </dd></dl>
 
 </div>
 </div>
@@ -907,7 +967,37 @@ template&lt;class TImageType &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>The number of threads used when executing a filter if the filter is multi-threaded </p>
+<p>The number of threads used when executing a filter if the filter is multi-threaded.</p>
+<p>With ITK version 5, this parameter now corresponds to <a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1MultiThreaderBase.html#a1dd2a7346f5804bc71477975c8da559c">itk::MultiThreaderBase::SetMaximumNumberOfThreads</a> and the corresponding get method. The is clamped to be limited by the "global" maximum.</p>
+<dl class="section note"><dt>Note</dt><dd>The "POOL" multi-threader cannot reduce the number of threads. As the "POOL" multi-threader has a single instance of a thread pool, the number of threads will increased for subsequent processes. </dd></dl>
+
+</div>
+</div>
+<a id="a0f948e61d6a7c7c2cc545f6d41e3ee67"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0f948e61d6a7c7c2cc545f6d41e3ee67">&#9670;&nbsp;</a></span>GetNumberOfWorkUnits()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual unsigned int itk::simple::ProcessObject::GetNumberOfWorkUnits </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>The work (image) is requested to be divided into this number of sub-tasks.</p>
+<p>If zero then, the default number from the process object and the multi-threader will be used.</p>
+<dl class="section note"><dt>Note</dt><dd>The "PLATFORM" multi-threader set the number of threads equal to the number of work units. </dd></dl>
 
 </div>
 </div>
@@ -1371,7 +1461,46 @@ template&lt;class TImageType &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Set the number of threads that all new process objects are initialized with. </p>
+<p>Set the number of threads with which new process objects are initialized.</p>
+<p>If the environment variable "ITK_GLOBAL_DEFAULT_NUMBER_OF_THREADS" is defined, then this value is initialized as defined in the environment. Otherwise, the value will be initialized with the number of virtual CPUs on the system.</p>
+<dl class="section note"><dt>Note</dt><dd>After the "POOL" multi-thread initially constructs the thread pool, this value will has no effect on the thread pool. </dd></dl>
+
+</div>
+</div>
+<a id="a709f1c6f88d214826f2e864aff85abd4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a709f1c6f88d214826f2e864aff85abd4">&#9670;&nbsp;</a></span>SetGlobalDefaultThreader()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static bool itk::simple::ProcessObject::SetGlobalDefaultThreader </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>threader</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Set/Get the default threader used for process objects. </p>
+<p>The possible available multi-threaders are:</p><ul>
+<li>"POOL" <a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1PoolMultiThreader.html">itk::PoolMultiThreader</a></li>
+<li>"TBB" itk::TBBThreader (optional)</li>
+<li>"PLATFORM" itk::PlatformMultiThreader</li>
+</ul>
+<p>The default and the available multi-threaders are dependent upon ITK's configuration. See the ITK documentation for more details about the behavior of the multi-threaders.</p>
+<p>The environment variable "ITK_GLOBAL_DEFAULT_THREADER" can be used to initialize this value.</p>
+<p>The set method returns true when the threader string is valid and ITK's default is updated, otherwise false is returned. The threader argument is not case sensitive.</p>
+<dl class="section see"><dt>See also</dt><dd><a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1MultiThreaderBase.html">itk::MultiThreaderBase</a> <a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1PoolMultiThreader.html">itk::PoolMultiThreader</a> itk::TBBThreader itk::PlatformMultiThreader </dd></dl>
 
 </div>
 </div>
@@ -1426,7 +1555,38 @@ template&lt;class TImageType &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>The number of threads used when executing a filter if the filter is multi-threaded </p>
+<p>The number of threads used when executing a filter if the filter is multi-threaded.</p>
+<p>With ITK version 5, this parameter now corresponds to <a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1MultiThreaderBase.html#a1dd2a7346f5804bc71477975c8da559c">itk::MultiThreaderBase::SetMaximumNumberOfThreads</a> and the corresponding get method. The is clamped to be limited by the "global" maximum.</p>
+<dl class="section note"><dt>Note</dt><dd>The "POOL" multi-threader cannot reduce the number of threads. As the "POOL" multi-threader has a single instance of a thread pool, the number of threads will increased for subsequent processes. </dd></dl>
+
+</div>
+</div>
+<a id="ac3a2fc4905baba0a0e89836f9f9d29a5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac3a2fc4905baba0a0e89836f9f9d29a5">&#9670;&nbsp;</a></span>SetNumberOfWorkUnits()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void itk::simple::ProcessObject::SetNumberOfWorkUnits </td>
+          <td>(</td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>n</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>The work (image) is requested to be divided into this number of sub-tasks.</p>
+<p>If zero then, the default number from the process object and the multi-threader will be used.</p>
+<dl class="section note"><dt>Note</dt><dd>The "PLATFORM" multi-threader set the number of threads equal to the number of work units. </dd></dl>
 
 </div>
 </div>
@@ -1571,7 +1731,7 @@ template&lt;typename T &gt; </div>
 <p>Output operator to os with conversion to a printable type.</p>
 <p>That is char types are presumed to be numbers, and converted to int. </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkProcessObject_8h_source.html#l00324">324</a> of file <a class="el" href="sitkProcessObject_8h_source.html">sitkProcessObject.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkProcessObject_8h_source.html#l00386">386</a> of file <a class="el" href="sitkProcessObject_8h_source.html">sitkProcessObject.h</a>.</p>
 
 </div>
 </div>
@@ -1634,7 +1794,7 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkProcessObject_8h_source.html#l00272">272</a> of file <a class="el" href="sitkProcessObject_8h_source.html">sitkProcessObject.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkProcessObject_8h_source.html#l00334">334</a> of file <a class="el" href="sitkProcessObject_8h_source.html">sitkProcessObject.h</a>.</p>
 
 </div>
 </div>
@@ -1659,7 +1819,7 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkProcessObject_8h_source.html#l00354">354</a> of file <a class="el" href="sitkProcessObject_8h_source.html">sitkProcessObject.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkProcessObject_8h_source.html#l00417">417</a> of file <a class="el" href="sitkProcessObject_8h_source.html">sitkProcessObject.h</a>.</p>
 
 </div>
 </div>
@@ -1683,7 +1843,7 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkProcessObject_8h_source.html#l00352">352</a> of file <a class="el" href="sitkProcessObject_8h_source.html">sitkProcessObject.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkProcessObject_8h_source.html#l00415">415</a> of file <a class="el" href="sitkProcessObject_8h_source.html">sitkProcessObject.h</a>.</p>
 
 </div>
 </div>
@@ -1707,7 +1867,7 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkProcessObject_8h_source.html#l00348">348</a> of file <a class="el" href="sitkProcessObject_8h_source.html">sitkProcessObject.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkProcessObject_8h_source.html#l00410">410</a> of file <a class="el" href="sitkProcessObject_8h_source.html">sitkProcessObject.h</a>.</p>
 
 </div>
 </div>
@@ -1731,7 +1891,31 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkProcessObject_8h_source.html#l00350">350</a> of file <a class="el" href="sitkProcessObject_8h_source.html">sitkProcessObject.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkProcessObject_8h_source.html#l00412">412</a> of file <a class="el" href="sitkProcessObject_8h_source.html">sitkProcessObject.h</a>.</p>
+
+</div>
+</div>
+<a id="a8835267dbc18af17fd96759dfd0bd681"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8835267dbc18af17fd96759dfd0bd681">&#9670;&nbsp;</a></span>m_NumberOfWorkUnits</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned int itk::simple::ProcessObject::m_NumberOfWorkUnits</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="sitkProcessObject_8h_source.html#l00413">413</a> of file <a class="el" href="sitkProcessObject_8h_source.html">sitkProcessObject.h</a>.</p>
 
 </div>
 </div>
@@ -1755,7 +1939,7 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkProcessObject_8h_source.html#l00357">357</a> of file <a class="el" href="sitkProcessObject_8h_source.html">sitkProcessObject.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkProcessObject_8h_source.html#l00420">420</a> of file <a class="el" href="sitkProcessObject_8h_source.html">sitkProcessObject.h</a>.</p>
 
 </div>
 </div>
@@ -1765,7 +1949,7 @@ template&lt;typename T &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Jun 11 2020 02:53:32 for SimpleITK by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Jun 12 2020 02:53:42 for SimpleITK by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>
