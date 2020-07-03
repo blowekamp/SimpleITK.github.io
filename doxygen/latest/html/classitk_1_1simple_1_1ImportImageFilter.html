@@ -1,6 +1,17 @@
+<!-- HTML header for doxygen 1.8.17-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
+<!-- Google Tag Manager -->
+<script>
+  (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push(
+  {'gtm.start': new Date().getTime(),event:'gtm.js'}
+  );var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-N38XC8T');
+</script>
+<!-- End Google Tag Manager -->
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.17"/>
@@ -15,10 +26,21 @@
     jax: ["input/TeX","output/HTML-CSS"],
 });
 </script>
-<script type="text/javascript" async="async" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
+<script type="text/javascript" async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="customdoxygen.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-N38XC8T"
+                  height="0" width="0" style="display:none;visibility:hidden"></iframe>
+</noscript>
+<!-- End Google Tag Manager (noscript) -->
+<script>
+  $(function(){
+  $("#datetime").load("datetime.txt");
+  });
+</script>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
 <div id="titlearea">
 <table cellspacing="0" cellpadding="0">
@@ -26,7 +48,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">SimpleITK
-   &#160;<span id="projectnumber">2.0.0rc1.post295</span>
+   &#160;<span id="projectnumber">2.0.0rc2.post17</span>
    </div>
   </td>
  </tr>
@@ -294,6 +316,10 @@ Friends</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
+<tr class="inherit_header pub_static_methods_classitk_1_1simple_1_1ImageReaderBase"><td colspan="2" onclick="javascript:toggleInherit('pub_static_methods_classitk_1_1simple_1_1ImageReaderBase')"><img src="closed.png" alt="-"/>&#160;Static Public Member Functions inherited from <a class="el" href="classitk_1_1simple_1_1ImageReaderBase.html">itk::simple::ImageReaderBase</a></td></tr>
+<tr class="memitem:a41ccbdd5ee84d67658c437ba46f95bd5 inherit pub_static_methods_classitk_1_1simple_1_1ImageReaderBase"><td class="memItemLeft" align="right" valign="top">static std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1ImageReaderBase.html#a41ccbdd5ee84d67658c437ba46f95bd5">GetImageIOFromFileName</a> (const std::string &amp;<a class="elRef" href="https://www.itk.org/Doxygen/html/itkTestDriverInclude_8h.html#ac81f9269c8d57eed4d5b56f054fc84de">fileName</a>)</td></tr>
+<tr class="memdesc:a41ccbdd5ee84d67658c437ba46f95bd5 inherit pub_static_methods_classitk_1_1simple_1_1ImageReaderBase"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the automatic ImageIO from the <a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1ImageIOFactory.html">ImageIOFactory</a>.  <a href="classitk_1_1simple_1_1ImageReaderBase.html#a41ccbdd5ee84d67658c437ba46f95bd5">More...</a><br /></td></tr>
+<tr class="separator:a41ccbdd5ee84d67658c437ba46f95bd5 inherit pub_static_methods_classitk_1_1simple_1_1ImageReaderBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_static_methods_classitk_1_1simple_1_1ProcessObject"><td colspan="2" onclick="javascript:toggleInherit('pub_static_methods_classitk_1_1simple_1_1ProcessObject')"><img src="closed.png" alt="-"/>&#160;Static Public Member Functions inherited from <a class="el" href="classitk_1_1simple_1_1ProcessObject.html">itk::simple::ProcessObject</a></td></tr>
 <tr class="memitem:a80afc0c06779af36ac5e31d945fbe586 inherit pub_static_methods_classitk_1_1simple_1_1ProcessObject"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1ProcessObject.html#a80afc0c06779af36ac5e31d945fbe586">GetGlobalDefaultDebug</a> ()</td></tr>
 <tr class="separator:a80afc0c06779af36ac5e31d945fbe586 inherit pub_static_methods_classitk_1_1simple_1_1ProcessObject"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1274,11 +1300,14 @@ template&lt;class TImageType &gt; </div>
 <li><a class="el" href="sitkImportImageFilter_8h_source.html">sitkImportImageFilter.h</a></li>
 </ul>
 </div><!-- contents -->
+<!-- HTML footer for doxygen 1.8.17-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Jun 24 2020 02:53:55 for SimpleITK by &#160;<a href="http://www.doxygen.org/index.html">
+    Generated on <span id="datetime">unknown</span> for SimpleITK by &#160;
+    <a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
-</a> 1.8.17
+</a> 1.8.17 | <a href="https://simpleitk.org/privacy_policy.html">
+      Privacy Policy</a>
 </small></address>
 </body>
 </html>

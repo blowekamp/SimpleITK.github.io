@@ -1,6 +1,17 @@
+<!-- HTML header for doxygen 1.8.17-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
+<!-- Google Tag Manager -->
+<script>
+  (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push(
+  {'gtm.start': new Date().getTime(),event:'gtm.js'}
+  );var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-N38XC8T');
+</script>
+<!-- End Google Tag Manager -->
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.17"/>
@@ -15,10 +26,21 @@
     jax: ["input/TeX","output/HTML-CSS"],
 });
 </script>
-<script type="text/javascript" async="async" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
+<script type="text/javascript" async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="customdoxygen.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-N38XC8T"
+                  height="0" width="0" style="display:none;visibility:hidden"></iframe>
+</noscript>
+<!-- End Google Tag Manager (noscript) -->
+<script>
+  $(function(){
+  $("#datetime").load("datetime.txt");
+  });
+</script>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
 <div id="titlearea">
 <table cellspacing="0" cellpadding="0">
@@ -26,7 +48,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">SimpleITK
-   &#160;<span id="projectnumber">2.0.0rc1.post295</span>
+   &#160;<span id="projectnumber">2.0.0rc2.post17</span>
    </div>
   </td>
  </tr>
@@ -120,42 +142,43 @@ $(function() {
 <div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;      <span class="keyword">virtual</span> std::string GetImageIO( ) <span class="keyword">const</span>;</div>
 <div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;      <span class="comment">/* @} */</span></div>
 <div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160; </div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160; </div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    <span class="keyword">protected</span>:</div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160; </div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;      <a class="codeRef" href="https://www.itk.org/Doxygen/html/classitk_1_1SmartPointer.html">itk::SmartPointer&lt;ImageIOBase&gt;</a> GetImageIOBase(<span class="keyword">const</span> std::string &amp;fileName);</div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160; </div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;      <span class="keywordtype">void</span> GetPixelIDFromImageIO( <span class="keyword">const</span> std::string &amp;fileName,</div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;                                  <a class="code" href="namespaceitk_1_1simple.html#ae47036246a9a1312411ce2fc6d296d1d">PixelIDValueType</a> &amp;outPixelType,</div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;                                  <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> &amp; outDimensions );</div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;      <span class="keywordtype">void</span> GetPixelIDFromImageIO( <span class="keyword">const</span> <a class="codeRef" href="https://www.itk.org/Doxygen/html/classitk_1_1ImageIOBase.html">itk::ImageIOBase</a>* iobase,</div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;                                  <a class="code" href="namespaceitk_1_1simple.html#ae47036246a9a1312411ce2fc6d296d1d">PixelIDValueType</a> &amp;outPixelType,</div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;                                  <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> &amp; outDimensions );</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;      <span class="keyword">static</span> std::string GetImageIOFromFileName(<span class="keyword">const</span> std::string &amp;fileName);</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160; </div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;    <span class="keyword">protected</span>:</div>
 <div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160; </div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;      <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> GetDimensionFromImageIO( <span class="keyword">const</span> std::string &amp;fileName, <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> i );</div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;      <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> GetDimensionFromImageIO( <span class="keyword">const</span> <a class="codeRef" href="https://www.itk.org/Doxygen/html/classitk_1_1ImageIOBase.html">itk::ImageIOBase</a>* iobase, <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> i );</div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160; </div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160; </div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;    <span class="keyword">private</span>:</div>
-<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160; </div>
-<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;      <a class="code" href="namespaceitk_1_1simple.html#ae47036246a9a1312411ce2fc6d296d1d">PixelIDValueType</a> ExecuteInternalReadScalar( <span class="keywordtype">int</span> componentType );</div>
-<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160; </div>
-<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;      <a class="code" href="namespaceitk_1_1simple.html#ae47036246a9a1312411ce2fc6d296d1d">PixelIDValueType</a> ExecuteInternalReadVector( <span class="keywordtype">int</span> componentType );</div>
-<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160; </div>
-<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;      <a class="code" href="namespaceitk_1_1simple.html#ae47036246a9a1312411ce2fc6d296d1d">PixelIDValueType</a> ExecuteInternalReadComplex( <span class="keywordtype">int</span> componentType );</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;      <a class="codeRef" href="https://www.itk.org/Doxygen/html/classitk_1_1SmartPointer.html">itk::SmartPointer&lt;ImageIOBase&gt;</a> GetImageIOBase(<span class="keyword">const</span> std::string &amp;fileName);</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160; </div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;      <span class="keywordtype">void</span> GetPixelIDFromImageIO( <span class="keyword">const</span> std::string &amp;fileName,</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;                                  <a class="code" href="namespaceitk_1_1simple.html#ae47036246a9a1312411ce2fc6d296d1d">PixelIDValueType</a> &amp;outPixelType,</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;                                  <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> &amp; outDimensions );</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;      <span class="keywordtype">void</span> GetPixelIDFromImageIO( <span class="keyword">const</span> <a class="codeRef" href="https://www.itk.org/Doxygen/html/classitk_1_1ImageIOBase.html">itk::ImageIOBase</a>* iobase,</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;                                  <a class="code" href="namespaceitk_1_1simple.html#ae47036246a9a1312411ce2fc6d296d1d">PixelIDValueType</a> &amp;outPixelType,</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;                                  <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> &amp; outDimensions );</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160; </div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;      <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> GetDimensionFromImageIO( <span class="keyword">const</span> std::string &amp;fileName, <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> i );</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;      <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> GetDimensionFromImageIO( <span class="keyword">const</span> <a class="codeRef" href="https://www.itk.org/Doxygen/html/classitk_1_1ImageIOBase.html">itk::ImageIOBase</a>* iobase, <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> i );</div>
 <div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160; </div>
 <div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160; </div>
-<div class="line"><a name="l00124"></a><span class="lineno"><a class="line" href="classitk_1_1simple_1_1ImageReaderBase.html#a42d3dc683d2c169be7a7733ff0b723c6">  124</a></span>&#160;      <a class="code" href="namespaceitk_1_1simple.html#ae40bd64640f4014fba1a8a872ab4df98">PixelIDValueEnum</a> <a class="code" href="classitk_1_1simple_1_1ImageReaderBase.html#a42d3dc683d2c169be7a7733ff0b723c6">m_OutputPixelType</a>;</div>
-<div class="line"><a name="l00125"></a><span class="lineno"><a class="line" href="classitk_1_1simple_1_1ImageReaderBase.html#aac3285b7fef8b98f0ac86eef38e01c0c">  125</a></span>&#160;      <span class="keywordtype">bool</span>             <a class="code" href="classitk_1_1simple_1_1ImageReaderBase.html#aac3285b7fef8b98f0ac86eef38e01c0c">m_LoadPrivateTags</a>;</div>
-<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160; </div>
-<div class="line"><a name="l00127"></a><span class="lineno"><a class="line" href="classitk_1_1simple_1_1ImageReaderBase.html#aa4536d3af517177d93009d5dffcd6b91">  127</a></span>&#160;      std::string      <a class="code" href="classitk_1_1simple_1_1ImageReaderBase.html#aa4536d3af517177d93009d5dffcd6b91">m_ImageIOName</a>;</div>
-<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160; </div>
-<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;    };</div>
-<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;  }</div>
-<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;}</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;    <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160; </div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;      <a class="code" href="namespaceitk_1_1simple.html#ae47036246a9a1312411ce2fc6d296d1d">PixelIDValueType</a> ExecuteInternalReadScalar( <span class="keywordtype">int</span> componentType );</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160; </div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;      <a class="code" href="namespaceitk_1_1simple.html#ae47036246a9a1312411ce2fc6d296d1d">PixelIDValueType</a> ExecuteInternalReadVector( <span class="keywordtype">int</span> componentType );</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160; </div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;      <a class="code" href="namespaceitk_1_1simple.html#ae47036246a9a1312411ce2fc6d296d1d">PixelIDValueType</a> ExecuteInternalReadComplex( <span class="keywordtype">int</span> componentType );</div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160; </div>
 <div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160; </div>
-<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160; </div>
-<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;<span class="preprocessor">#endif // sitkImageReaderBase_h</span></div>
+<div class="line"><a name="l00133"></a><span class="lineno"><a class="line" href="classitk_1_1simple_1_1ImageReaderBase.html#a42d3dc683d2c169be7a7733ff0b723c6">  133</a></span>&#160;      <a class="code" href="namespaceitk_1_1simple.html#ae40bd64640f4014fba1a8a872ab4df98">PixelIDValueEnum</a> <a class="code" href="classitk_1_1simple_1_1ImageReaderBase.html#a42d3dc683d2c169be7a7733ff0b723c6">m_OutputPixelType</a>;</div>
+<div class="line"><a name="l00134"></a><span class="lineno"><a class="line" href="classitk_1_1simple_1_1ImageReaderBase.html#aac3285b7fef8b98f0ac86eef38e01c0c">  134</a></span>&#160;      <span class="keywordtype">bool</span>             <a class="code" href="classitk_1_1simple_1_1ImageReaderBase.html#aac3285b7fef8b98f0ac86eef38e01c0c">m_LoadPrivateTags</a>;</div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160; </div>
+<div class="line"><a name="l00136"></a><span class="lineno"><a class="line" href="classitk_1_1simple_1_1ImageReaderBase.html#aa4536d3af517177d93009d5dffcd6b91">  136</a></span>&#160;      std::string      <a class="code" href="classitk_1_1simple_1_1ImageReaderBase.html#aa4536d3af517177d93009d5dffcd6b91">m_ImageIOName</a>;</div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160; </div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;    };</div>
+<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;  }</div>
+<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;}</div>
+<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160; </div>
+<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160; </div>
+<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;<span class="preprocessor">#endif // sitkImageReaderBase_h</span></div>
 </div><!-- fragment --></div><!-- contents -->
 <div class="ttc" id="aclassitk_1_1simple_1_1Image_html"><div class="ttname"><a href="classitk_1_1simple_1_1Image.html">itk::simple::Image</a></div><div class="ttdoc">The Image class for SimpleITK.</div><div class="ttdef"><b>Definition:</b> <a href="sitkImage_8h_source.html#l00075">sitkImage.h:75</a></div></div>
 <div class="ttc" id="aclassitk_1_1ImageIOBase_html"><div class="ttname"><a href="https://www.itk.org/Doxygen/html/classitk_1_1ImageIOBase.html">itk::ImageIOBase</a></div></div>
@@ -163,21 +186,24 @@ $(function() {
 <div class="ttc" id="aclassitk_1_1SmartPointer_html"><div class="ttname"><a href="https://www.itk.org/Doxygen/html/classitk_1_1SmartPointer.html">itk::SmartPointer</a></div><div class="ttdef"><b>Definition:</b> <a href="sitkImage_8h_source.html#l00037">sitkImage.h:37</a></div></div>
 <div class="ttc" id="anamespaceitk_1_1simple_html_ae40bd64640f4014fba1a8a872ab4df98"><div class="ttname"><a href="namespaceitk_1_1simple.html#ae40bd64640f4014fba1a8a872ab4df98">itk::simple::PixelIDValueEnum</a></div><div class="ttdeci">PixelIDValueEnum</div><div class="ttdoc">Enumerated values of pixelIDs.</div><div class="ttdef"><b>Definition:</b> <a href="sitkPixelIDValues_8h_source.html#l00090">sitkPixelIDValues.h:90</a></div></div>
 <div class="ttc" id="anamespaceitk_1_1simple_1_1ioutils_html_a6bcd447009067e0328a6a61f35039bad"><div class="ttname"><a href="namespaceitk_1_1simple_1_1ioutils.html#a6bcd447009067e0328a6a61f35039bad">itk::simple::ioutils::GetRegisteredImageIOs</a></div><div class="ttdeci">SITKIO_HIDDEN std::vector&lt; std::string &gt; GetRegisteredImageIOs()</div></div>
-<div class="ttc" id="aclassitk_1_1simple_1_1ImageReaderBase_html_aa4536d3af517177d93009d5dffcd6b91"><div class="ttname"><a href="classitk_1_1simple_1_1ImageReaderBase.html#aa4536d3af517177d93009d5dffcd6b91">itk::simple::ImageReaderBase::m_ImageIOName</a></div><div class="ttdeci">std::string m_ImageIOName</div><div class="ttdoc">Set/Get The output PixelType of the image.</div><div class="ttdef"><b>Definition:</b> <a href="sitkImageReaderBase_8h_source.html#l00127">sitkImageReaderBase.h:127</a></div></div>
-<div class="ttc" id="aclassitk_1_1simple_1_1ImageReaderBase_html_a42d3dc683d2c169be7a7733ff0b723c6"><div class="ttname"><a href="classitk_1_1simple_1_1ImageReaderBase.html#a42d3dc683d2c169be7a7733ff0b723c6">itk::simple::ImageReaderBase::m_OutputPixelType</a></div><div class="ttdeci">PixelIDValueEnum m_OutputPixelType</div><div class="ttdoc">Set/Get The output PixelType of the image.</div><div class="ttdef"><b>Definition:</b> <a href="sitkImageReaderBase_8h_source.html#l00124">sitkImageReaderBase.h:124</a></div></div>
+<div class="ttc" id="aclassitk_1_1simple_1_1ImageReaderBase_html_aa4536d3af517177d93009d5dffcd6b91"><div class="ttname"><a href="classitk_1_1simple_1_1ImageReaderBase.html#aa4536d3af517177d93009d5dffcd6b91">itk::simple::ImageReaderBase::m_ImageIOName</a></div><div class="ttdeci">std::string m_ImageIOName</div><div class="ttdoc">Set/Get The output PixelType of the image.</div><div class="ttdef"><b>Definition:</b> <a href="sitkImageReaderBase_8h_source.html#l00136">sitkImageReaderBase.h:136</a></div></div>
+<div class="ttc" id="aclassitk_1_1simple_1_1ImageReaderBase_html_a42d3dc683d2c169be7a7733ff0b723c6"><div class="ttname"><a href="classitk_1_1simple_1_1ImageReaderBase.html#a42d3dc683d2c169be7a7733ff0b723c6">itk::simple::ImageReaderBase::m_OutputPixelType</a></div><div class="ttdeci">PixelIDValueEnum m_OutputPixelType</div><div class="ttdoc">Set/Get The output PixelType of the image.</div><div class="ttdef"><b>Definition:</b> <a href="sitkImageReaderBase_8h_source.html#l00133">sitkImageReaderBase.h:133</a></div></div>
 <div class="ttc" id="asitkProcessObject_8h_html"><div class="ttname"><a href="sitkProcessObject_8h.html">sitkProcessObject.h</a></div></div>
 <div class="ttc" id="asitkPixelIDValues_8h_html"><div class="ttname"><a href="sitkPixelIDValues_8h.html">sitkPixelIDValues.h</a></div></div>
 <div class="ttc" id="aclassitk_1_1simple_1_1ImageReaderBase_html"><div class="ttname"><a href="classitk_1_1simple_1_1ImageReaderBase.html">itk::simple::ImageReaderBase</a></div><div class="ttdoc">An abract base class for image readers.</div><div class="ttdef"><b>Definition:</b> <a href="sitkImageReaderBase_8h_source.html#l00039">sitkImageReaderBase.h:39</a></div></div>
 <div class="ttc" id="anamespaceitk_html"><div class="ttname"><a href="namespaceitk.html">itk</a></div></div>
-<div class="ttc" id="aclassitk_1_1simple_1_1ImageReaderBase_html_aac3285b7fef8b98f0ac86eef38e01c0c"><div class="ttname"><a href="classitk_1_1simple_1_1ImageReaderBase.html#aac3285b7fef8b98f0ac86eef38e01c0c">itk::simple::ImageReaderBase::m_LoadPrivateTags</a></div><div class="ttdeci">bool m_LoadPrivateTags</div><div class="ttdoc">Set/Get The output PixelType of the image.</div><div class="ttdef"><b>Definition:</b> <a href="sitkImageReaderBase_8h_source.html#l00125">sitkImageReaderBase.h:125</a></div></div>
+<div class="ttc" id="aclassitk_1_1simple_1_1ImageReaderBase_html_aac3285b7fef8b98f0ac86eef38e01c0c"><div class="ttname"><a href="classitk_1_1simple_1_1ImageReaderBase.html#aac3285b7fef8b98f0ac86eef38e01c0c">itk::simple::ImageReaderBase::m_LoadPrivateTags</a></div><div class="ttdeci">bool m_LoadPrivateTags</div><div class="ttdoc">Set/Get The output PixelType of the image.</div><div class="ttdef"><b>Definition:</b> <a href="sitkImageReaderBase_8h_source.html#l00134">sitkImageReaderBase.h:134</a></div></div>
 <div class="ttc" id="aclassitk_1_1simple_1_1ProcessObject_html"><div class="ttname"><a href="classitk_1_1simple_1_1ProcessObject.html">itk::simple::ProcessObject</a></div><div class="ttdoc">Base class for SimpleITK classes based on ProcessObject.</div><div class="ttdef"><b>Definition:</b> <a href="sitkProcessObject_8h_source.html#l00051">sitkProcessObject.h:51</a></div></div>
 <div class="ttc" id="asitkIO_8h_html"><div class="ttname"><a href="sitkIO_8h.html">sitkIO.h</a></div></div>
 <div class="ttc" id="anamespaceitk_1_1simple_html_ae47036246a9a1312411ce2fc6d296d1d"><div class="ttname"><a href="namespaceitk_1_1simple.html#ae47036246a9a1312411ce2fc6d296d1d">itk::simple::PixelIDValueType</a></div><div class="ttdeci">int PixelIDValueType</div><div class="ttdef"><b>Definition:</b> <a href="sitkPixelIDValues_8h_source.html#l00032">sitkPixelIDValues.h:32</a></div></div>
+<!-- HTML footer for doxygen 1.8.17-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Jun 24 2020 02:53:27 for SimpleITK by &#160;<a href="http://www.doxygen.org/index.html">
+    Generated on <span id="datetime">unknown</span> for SimpleITK by &#160;
+    <a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
-</a> 1.8.17
+</a> 1.8.17 | <a href="https://simpleitk.org/privacy_policy.html">
+      Privacy Policy</a>
 </small></address>
 </body>
 </html>

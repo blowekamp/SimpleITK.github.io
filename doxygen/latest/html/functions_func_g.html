@@ -1,6 +1,17 @@
+<!-- HTML header for doxygen 1.8.17-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
+<!-- Google Tag Manager -->
+<script>
+  (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push(
+  {'gtm.start': new Date().getTime(),event:'gtm.js'}
+  );var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-N38XC8T');
+</script>
+<!-- End Google Tag Manager -->
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.17"/>
@@ -15,10 +26,21 @@
     jax: ["input/TeX","output/HTML-CSS"],
 });
 </script>
-<script type="text/javascript" async="async" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
+<script type="text/javascript" async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="customdoxygen.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-N38XC8T"
+                  height="0" width="0" style="display:none;visibility:hidden"></iframe>
+</noscript>
+<!-- End Google Tag Manager (noscript) -->
+<script>
+  $(function(){
+  $("#datetime").load("datetime.txt");
+  });
+</script>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
 <div id="titlearea">
 <table cellspacing="0" cellpadding="0">
@@ -26,7 +48,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">SimpleITK
-   &#160;<span id="projectnumber">2.0.0rc1.post295</span>
+   &#160;<span id="projectnumber">2.0.0rc2.post17</span>
    </div>
   </td>
  </tr>
@@ -710,6 +732,9 @@ $(function() {
 : <a class="el" href="classitk_1_1simple_1_1ImageFileWriter.html#af22e47ad1c48edaa6d42547fbaa4075e">itk::simple::ImageFileWriter</a>
 , <a class="el" href="classitk_1_1simple_1_1ImageReaderBase.html#a35cb814f9ef5670df9890e6d104556c8">itk::simple::ImageReaderBase</a>
 , <a class="el" href="classitk_1_1simple_1_1ImageSeriesWriter.html#af67308e03fef13cfd8b6d259e1d8cc63">itk::simple::ImageSeriesWriter</a>
+</li>
+<li>GetImageIOFromFileName()
+: <a class="el" href="classitk_1_1simple_1_1ImageReaderBase.html#a41ccbdd5ee84d67658c437ba46f95bd5">itk::simple::ImageReaderBase</a>
 </li>
 <li>GetIndex()
 : <a class="el" href="classitk_1_1simple_1_1ExtractImageFilter.html#a8e6e202cc3f99adeff09d1ecdfca5d56">itk::simple::ExtractImageFilter</a>
@@ -1910,7 +1935,7 @@ $(function() {
 , <a class="el" href="classitk_1_1simple_1_1PimpleImageBase.html#ab0918ff36bb437d912fc52bf349fd4bf">itk::simple::PimpleImageBase</a>
 </li>
 <li>GetPixelIDFromImageIO()
-: <a class="el" href="classitk_1_1simple_1_1ImageReaderBase.html#a43d24919234d5791600c6c09513b1bfa">itk::simple::ImageReaderBase</a>
+: <a class="el" href="classitk_1_1simple_1_1ImageReaderBase.html#ab39bec2edc245a2f0e33c4d9a7952787">itk::simple::ImageReaderBase</a>
 </li>
 <li>GetPixelIDTypeAsString()
 : <a class="el" href="classitk_1_1simple_1_1Image.html#ad195963d0b257560819b833b9cfe18d6">itk::simple::Image</a>
@@ -2605,11 +2630,14 @@ $(function() {
 </li>
 </ul>
 </div><!-- contents -->
+<!-- HTML footer for doxygen 1.8.17-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Jun 24 2020 02:54:01 for SimpleITK by &#160;<a href="http://www.doxygen.org/index.html">
+    Generated on <span id="datetime">unknown</span> for SimpleITK by &#160;
+    <a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
-</a> 1.8.17
+</a> 1.8.17 | <a href="https://simpleitk.org/privacy_policy.html">
+      Privacy Policy</a>
 </small></address>
 </body>
 </html>
