@@ -48,7 +48,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">SimpleITK
-   &#160;<span id="projectnumber">2.0.0rc2.post27</span>
+   &#160;<span id="projectnumber">2.0.0rc2.post38</span>
    </div>
   </td>
  </tr>
@@ -22837,25 +22837,8 @@ template&lt;typename T &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Display an image using Fiji, ImageJ or another application.</p>
-<p>This function requires that Fiji ( <a href="https://fiji.sc">https://fiji.sc</a> ) or ImageJ (<a href="http://rsb.info.nih.gov/ij/">http://rsb.info.nih.gov/ij/</a>) be properly installed for Mac and Windows, and in the user's path for Linux. ImageJ must have a plugin for reading Nifti formatted files (<a href="http://www.loci.wisc.edu/bio-formats/imagej">http://www.loci.wisc.edu/bio-formats/imagej</a>).</p>
-<p>Nifti is the default file format used to export images. A different format can be chosen by setting the SITK_SHOW_EXTENSION environment variable. For example, set SITK_SHOW_EXTENSION to ".png" to use PNG format.</p>
-<p>The user can specify an application other than ImageJ to view images via the SITK_SHOW_COMMAND environment variable.</p>
-<p>The user can also select applications specifically for color images or 3D images using the SITK_SHOW_COLOR_COMMAND and SITK_SHOW_3D_COMMAND environment variables.</p>
-<p>SITK_SHOW_COMMAND, SITK_SHOW_COLOR_COMMAND and SITK_SHOW_3D_COMMAND allow the following tokens in their strings. </p><pre class="fragment">\li \c "%a"  for the ImageJ application
-\li \c "%f"  for SimpleITK's temporary image file
-</pre><p>For example, the default SITK_SHOW_COMMAND string on Linux systems is:</p>
-<div class="fragment"><div class="line">%a -o %f</div>
-</div><!-- fragment --><p>After token substitution it may become:</p>
-<div class="fragment"><div class="line">ImageJ -o /tmp/Temp-65535-0.nii</div>
-</div><!-- fragment --><p>For another example, the default SITK_SHOW_COLOR_COMMAND string on Mac OS X is:</p>
-<div class="fragment"><div class="line">open -a %a -n --args -eval \<span class="stringliteral">&#39;open(\&quot;%f\&quot;); run(\&quot;Make Composite\&quot;, \&quot;display=Composite\&quot;); \&#39;</span></div>
-</div><!-- fragment --><p>After token substitution the string may become:</p>
-<div class="fragment"><div class="line">open -a ImageJ64 -n --args -eval <span class="stringliteral">&#39;open(&quot;/tmp/TempFile-20238-0.nii&quot;); run(&quot;Make Composite&quot;, &quot;display=Composite&quot;);&#39;</span></div>
-</div><!-- fragment --><p>The string after <code>"-eval"</code> is an ImageJ macro the opens the file and runs ImageJ's Make Composite command to display the image in color.</p>
-<p>If the <code>"%f"</code> token is not found in the command string, the temporary file name is automatically appended to the command argument list.</p>
-<p>When invoked, Show searches for Fiji first, and then ImageJ. Fiji is the most update-to-date version of ImageJ and includes a lot of plugins which facilitate scientific image analysis. By default, for a 64-bit build of SimpleITK on Macs, sitkShow searches for ImageJ64.app. For a 32-bit Mac build, sitkShow searches for ImageJ.app. If the user prefers a different version of ImageJ (or a different image viewer altogether), it can be specified using the SITK_SHOW_COMMAND environment variable.</p>
-<p>The boolean parameter debugOn prints the search path Show uses to find ImageJ, the full path to the ImageJ it found, and the full command line used to invoke ImageJ. </p>
+<p>Display an image in an external viewer (Fiji by default)</p>
+<p>This function directly calls the execute method of <a class="el" href="classitk_1_1simple_1_1ImageViewer.html" title="Display an image in an external viewer (Fiji by default)">ImageViewer</a> in order to support a procedural API </p>
 <dl class="section examples"><dt>Examples</dt><dd><a class="el" href="BufferImportExport_8cxx-example.html#a7">BufferImportExport.cxx</a>, and <a class="el" href="HelloWorld_2HelloWorld_8cxx-example.html#a5">HelloWorld/HelloWorld.cxx</a>.</dd>
 </dl>
 
