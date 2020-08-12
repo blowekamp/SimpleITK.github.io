@@ -48,7 +48,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">SimpleITK
-   &#160;<span id="projectnumber">2.0.0rc2.post38</span>
+   &#160;<span id="projectnumber">2.0.0rc2.post50</span>
    </div>
   </td>
  </tr>
@@ -1633,8 +1633,10 @@ Functions</h2></td></tr>
 <tr class="memdesc:ab497ae7f567890fe8fc7f0f7180ad4a2"><td class="mdescLeft">&#160;</td><td class="mdescRight">A function which does nothing.  <a href="namespaceitk_1_1simple.html#ab497ae7f567890fe8fc7f0f7180ad4a2">More...</a><br /></td></tr>
 <tr class="separator:ab497ae7f567890fe8fc7f0f7180ad4a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aee1844ed9be481d8ed9cc4c7049d588d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="sitkIO_8h.html#aef9ccf1c7e28e86fbc79f1a7cd0fd0d5">SITKIO_EXPORT</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceitk_1_1simple.html#aee1844ed9be481d8ed9cc4c7049d588d">WriteImage</a> (const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> &amp;image, const std::string &amp;<a class="elRef" href="https://www.itk.org/Doxygen/html/itkTestDriverInclude_8h.html#ac81f9269c8d57eed4d5b56f054fc84de">fileName</a>, bool useCompression=false, int compressionLevel=-1)</td></tr>
+<tr class="memdesc:aee1844ed9be481d8ed9cc4c7049d588d"><td class="mdescLeft">&#160;</td><td class="mdescRight">WriteImage is a procedural interface to the <a class="el" href="classitk_1_1simple_1_1ImageFileWriter.html" title="Write out a SimpleITK image to the specified file location.">ImageFileWriter</a>. class which is convenient for many image writing tasks.  <a href="namespaceitk_1_1simple.html#aee1844ed9be481d8ed9cc4c7049d588d">More...</a><br /></td></tr>
 <tr class="separator:aee1844ed9be481d8ed9cc4c7049d588d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8537644286a43ff1566326c2109057ab"><td class="memItemLeft" align="right" valign="top"><a class="el" href="sitkIO_8h.html#aef9ccf1c7e28e86fbc79f1a7cd0fd0d5">SITKIO_EXPORT</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceitk_1_1simple.html#a8537644286a43ff1566326c2109057ab">WriteImage</a> (const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> &amp;image, const std::vector&lt; std::string &gt; &amp;fileNames, bool useCompression=false, int compressionLevel=-1)</td></tr>
+<tr class="memdesc:a8537644286a43ff1566326c2109057ab"><td class="mdescLeft">&#160;</td><td class="mdescRight">WriteImage is a procedural interface to the <a class="el" href="classitk_1_1simple_1_1ImageSeriesWriter.html" title="Writer series of image from a SimpleITK image.">ImageSeriesWriter</a>. class which is convenient for many image writing tasks.  <a href="namespaceitk_1_1simple.html#a8537644286a43ff1566326c2109057ab">More...</a><br /></td></tr>
 <tr class="separator:a8537644286a43ff1566326c2109057ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aaa096d3d36b98fb95bf5eb12e24821f3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="sitkCommon_8h.html#ab09867679406ccae193848f08fdc3444">SITKCommon_EXPORT</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceitk_1_1simple.html#aaa096d3d36b98fb95bf5eb12e24821f3">WriteTransform</a> (const <a class="el" href="classitk_1_1simple_1_1Transform.html">Transform</a> &amp;transform, const std::string &amp;filename)</td></tr>
 <tr class="separator:aaa096d3d36b98fb95bf5eb12e24821f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -21070,7 +21072,7 @@ template&lt;typename T &gt; </div>
   </table>
   </dd>
 </dl>
-<p>Note that when reading a series of images that have meta-data associated with them (e.g. a DICOM series) the resulting image will have an empty meta-data dictionary. If you need the meta-data dictionaries associated with each slice then you should use the <a class="el" href="classitk_1_1simple_1_1ImageSeriesReader.html" title="Read series of image files into a SimpleITK image.">ImageSeriesReader</a> class.</p>
+<dl class="section note"><dt>Note</dt><dd>When reading a series of images that have meta-data associated with them (e.g. a DICOM series) the resulting image will have an empty meta-data dictionary. If you need the meta-data dictionaries associated with each slice then you should use the <a class="el" href="classitk_1_1simple_1_1ImageSeriesReader.html" title="Read series of image files into a SimpleITK image.">ImageSeriesReader</a> class.</dd></dl>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="classitk_1_1simple_1_1ImageFileReader.html" title="Read an image file and return a SimpleITK Image.">itk::simple::ImageFileReader</a> for reading a single file. </dd>
 <dd>
 <a class="el" href="classitk_1_1simple_1_1ImageSeriesReader.html" title="Read series of image files into a SimpleITK image.">itk::simple::ImageSeriesReader</a> for reading a series and meta-data dictionaries. </dd></dl>
@@ -26468,6 +26470,18 @@ template&lt;typename T &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>WriteImage is a procedural interface to the <a class="el" href="classitk_1_1simple_1_1ImageFileWriter.html" title="Write out a SimpleITK image to the specified file location.">ImageFileWriter</a>. class which is convenient for many image writing tasks. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">image</td><td>the input image to be written </td></tr>
+    <tr><td class="paramname">fileName</td><td>the filename of an <a class="el" href="classitk_1_1simple_1_1Image.html" title="The Image class for SimpleITK.">Image</a> e.g. "cthead.mha" </td></tr>
+    <tr><td class="paramname">useCompression</td><td>request to compress the written file </td></tr>
+    <tr><td class="paramname">compressionLevel</td><td>a hint for the amount of compression to be applied during writing</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classitk_1_1simple_1_1ImageFileWriter.html" title="Write out a SimpleITK image to the specified file location.">itk::simple::ImageFileWriter</a> for writing a single file. </dd></dl>
 <dl class="section examples"><dt>Examples</dt><dd><a class="el" href="CppCMake_2Source_2sitk_example_8cxx-example.html#a3">CppCMake/Source/sitk_example.cxx</a>, <a class="el" href="DicomSeriesReader_2DicomSeriesReader_8cxx-example.html#a6">DicomSeriesReader/DicomSeriesReader.cxx</a>, <a class="el" href="FastMarchingSegmentation_2FastMarchingSegmentation_8cxx-example.html#a27">FastMarchingSegmentation/FastMarchingSegmentation.cxx</a>, and <a class="el" href="SimpleGaussianFunctional_8cxx-example.html#a5">SimpleGaussianFunctional.cxx</a>.</dd>
 </dl>
 
@@ -26510,6 +26524,18 @@ template&lt;typename T &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>WriteImage is a procedural interface to the <a class="el" href="classitk_1_1simple_1_1ImageSeriesWriter.html" title="Writer series of image from a SimpleITK image.">ImageSeriesWriter</a>. class which is convenient for many image writing tasks. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">image</td><td>the input image to be written </td></tr>
+    <tr><td class="paramname">fileNames</td><td>a vector of filenames of length equal to the number of slices in the image. </td></tr>
+    <tr><td class="paramname">useCompression</td><td>request to compress the written file </td></tr>
+    <tr><td class="paramname">compressionLevel</td><td>a hint for the amount of compression to be applied during writing.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classitk_1_1simple_1_1ImageFileWriter.html" title="Write out a SimpleITK image to the specified file location.">itk::simple::ImageFileWriter</a> for writing a single file. </dd></dl>
 
 </div>
 </div>
