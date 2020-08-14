@@ -48,7 +48,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">SimpleITK
-   &#160;<span id="projectnumber">2.0.0rc2.post50</span>
+   &#160;<span id="projectnumber">2.0.0rc2.post57</span>
    </div>
   </td>
  </tr>
@@ -135,7 +135,7 @@ $(function() {
 <div class="line">  <span class="comment">// Paste the mouth onto the face</span></div>
 <div class="line">  std::vector&lt;unsigned int&gt; mouthSize = { 64, 18 };</div>
 <div class="line">  std::vector&lt;int&gt; mouthLoc = { 32, 76 };</div>
-<div class="line">  face = <a name="a4"></a><a class="code" href="namespaceitk_1_1simple.html#a5d2ed1a71d7b79964862563ba93e0a76">sitk::Paste</a>( face, mouth, mouthSize, mouthLoc, mouthLoc );</div>
+<div class="line">  face = <a name="a4"></a><a class="code" href="namespaceitk_1_1simple.html#a2f785657d8bcc8138feed88362bde7a3">sitk::Paste</a>( face, mouth, mouthSize, mouthLoc, mouthLoc );</div>
 <div class="line"> </div>
 <div class="line">  <span class="comment">// Apply the face to the original image</span></div>
 <div class="line">  image = image + face;</div>
@@ -150,8 +150,8 @@ $(function() {
 <div class="ttc" id="anamespaceitk_1_1simple_html_a86cb9e226d455efca3ba034dc2154605"><div class="ttname"><a href="namespaceitk_1_1simple.html#a86cb9e226d455efca3ba034dc2154605">itk::simple::Show</a></div><div class="ttdeci">void SITKIO_EXPORT Show(const Image &amp;image, const std::string &amp;title=&quot;&quot;, const bool debugOn=ProcessObject::GetGlobalDefaultDebug())</div></div>
 <div class="ttc" id="aSimpleITK_8h_html"><div class="ttname"><a href="SimpleITK_8h.html">SimpleITK.h</a></div></div>
 <div class="ttc" id="anamespaceitk_1_1simple_html_ae40bd64640f4014fba1a8a872ab4df98"><div class="ttname"><a href="namespaceitk_1_1simple.html#ae40bd64640f4014fba1a8a872ab4df98">itk::simple::PixelIDValueEnum</a></div><div class="ttdeci">PixelIDValueEnum</div><div class="ttdoc">Enumerated values of pixelIDs.</div><div class="ttdef"><b>Definition:</b> <a href="sitkPixelIDValues_8h_source.html#l00090">sitkPixelIDValues.h:90</a></div></div>
+<div class="ttc" id="anamespaceitk_1_1simple_html_a2f785657d8bcc8138feed88362bde7a3"><div class="ttname"><a href="namespaceitk_1_1simple.html#a2f785657d8bcc8138feed88362bde7a3">itk::simple::Paste</a></div><div class="ttdeci">Image Paste(Image &amp;&amp;destinationImage, const Image &amp;sourceImage, std::vector&lt; unsigned int &gt; sourceSize=std::vector&lt; unsigned int &gt;(SITK_MAX_DIMENSION, 1), std::vector&lt; int &gt; sourceIndex=std::vector&lt; int &gt;(SITK_MAX_DIMENSION, 0), std::vector&lt; int &gt; destinationIndex=std::vector&lt; int &gt;(SITK_MAX_DIMENSION, 0), std::vector&lt; bool &gt; DestinationSkipAxes=std::vector&lt; bool &gt;())</div><div class="ttdoc">Paste an image into another image.</div></div>
 <div class="ttc" id="anamespaceitk_1_1simple_html_ae40bd64640f4014fba1a8a872ab4df98a07153aa69823432ba773112b71f31813"><div class="ttname"><a href="namespaceitk_1_1simple.html#ae40bd64640f4014fba1a8a872ab4df98a07153aa69823432ba773112b71f31813">itk::simple::sitkUInt8</a></div><div class="ttdeci">@ sitkUInt8</div><div class="ttdoc">Unsigned 8 bit integer.</div><div class="ttdef"><b>Definition:</b> <a href="sitkPixelIDValues_8h_source.html#l00092">sitkPixelIDValues.h:92</a></div></div>
-<div class="ttc" id="anamespaceitk_1_1simple_html_a5d2ed1a71d7b79964862563ba93e0a76"><div class="ttname"><a href="namespaceitk_1_1simple.html#a5d2ed1a71d7b79964862563ba93e0a76">itk::simple::Paste</a></div><div class="ttdeci">Image Paste(Image &amp;&amp;destinationImage, const Image &amp;sourceImage, std::vector&lt; unsigned int &gt; sourceSize=std::vector&lt; unsigned int &gt;(SITK_MAX_DIMENSION, 1), std::vector&lt; int &gt; sourceIndex=std::vector&lt; int &gt;(SITK_MAX_DIMENSION, 0), std::vector&lt; int &gt; destinationIndex=std::vector&lt; int &gt;(SITK_MAX_DIMENSION, 0))</div><div class="ttdoc">Paste an image into another image.</div></div>
 <div class="ttc" id="asitkImageOperators_8h_html"><div class="ttname"><a href="sitkImageOperators_8h.html">sitkImageOperators.h</a></div></div>
 <div class="ttc" id="anamespaceitk_1_1simple_html"><div class="ttname"><a href="namespaceitk_1_1simple.html">itk::simple</a></div><div class="ttdef"><b>Definition:</b> <a href="sitkAdditionalProcedures_8h_source.html#l00029">sitkAdditionalProcedures.h:29</a></div></div>
 <div class="ttc" id="anamespaceitk_1_1simple_html_aea13be645bbf2b4998a88a9e3f837901"><div class="ttname"><a href="namespaceitk_1_1simple.html#aea13be645bbf2b4998a88a9e3f837901">itk::simple::BinaryThreshold</a></div><div class="ttdeci">Image BinaryThreshold(Image &amp;&amp;image1, double lowerThreshold=0.0, double upperThreshold=255.0, uint8_t insideValue=1u, uint8_t outsideValue=0u)</div><div class="ttdoc">Binarize an input image by thresholding.</div></div>
