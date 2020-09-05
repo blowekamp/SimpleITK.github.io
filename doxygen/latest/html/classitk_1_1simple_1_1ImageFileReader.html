@@ -48,7 +48,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">SimpleITK
-   &#160;<span id="projectnumber">2.0.0rc3.post21</span>
+   &#160;<span id="projectnumber">2.0.0rc3.post25</span>
    </div>
   </td>
  </tr>
@@ -423,7 +423,7 @@ Additional Inherited Members</h2></td></tr>
 <p>An interface is also provided to access the information from the underlying itk::ImageIO. This information can be loaded with the ReadImageInformation method. The information is from the itk::ImageIO interface. In some degenerate cases reading the bulk data may produce different results. Please see <a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1ImageFileReader.html">itk::ImageFileReader</a> for more details.</p>
 <p>Reading takes place by the ITK ImageIO factory mechanism. ITK contains many ImageIO classes which are responsible for reading separate file formats. By default, each ImageIO is asked if it "can read" the file, and the first one which "can read" the format is used. The list of available ImageIOs can be obtained using the GetRegisteredImageIOs method. The ImageIO used can be overridden with the SetImageIO method. This is useful in cases when multiple ImageIOs "can read" the file and the user wants to select a specific IO (not the first).</p>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="namespaceitk_1_1simple.html#af50ad403a7aa88acbb78e5b2d1099b9c" title="ReadImage is a procedural interface to the ImageFileReader class which is convenient for most image r...">itk::simple::ReadImage</a> for the procedural interface </dd></dl>
-<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="FilterProgressReporting_2FilterProgressReporting_8cxx-example.html#_a3">FilterProgressReporting/FilterProgressReporting.cxx</a>, <a class="el" href="ITKIntegration_2ITKIntegration_8cxx-example.html#_a0">ITKIntegration/ITKIntegration.cxx</a>, <a class="el" href="Segmentation_2ConnectedThresholdImageFilter_8cxx-example.html#_a0">Segmentation/ConnectedThresholdImageFilter.cxx</a>, <a class="el" href="Segmentation_2NeighborhoodConnectedImageFilter_8cxx-example.html#_a0">Segmentation/NeighborhoodConnectedImageFilter.cxx</a>, and <a class="el" href="SimpleGaussian_2SimpleGaussian_8cxx-example.html#_a0">SimpleGaussian/SimpleGaussian.cxx</a>.</dd>
+<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="CppInPlace_2CppInPlace_8cxx-example.html#_a11">CppInPlace/CppInPlace.cxx</a>, <a class="el" href="FilterProgressReporting_2FilterProgressReporting_8cxx-example.html#_a3">FilterProgressReporting/FilterProgressReporting.cxx</a>, <a class="el" href="ITKIntegration_2ITKIntegration_8cxx-example.html#_a0">ITKIntegration/ITKIntegration.cxx</a>, <a class="el" href="Segmentation_2ConnectedThresholdImageFilter_8cxx-example.html#_a0">Segmentation/ConnectedThresholdImageFilter.cxx</a>, <a class="el" href="Segmentation_2NeighborhoodConnectedImageFilter_8cxx-example.html#_a0">Segmentation/NeighborhoodConnectedImageFilter.cxx</a>, and <a class="el" href="SimpleGaussian_2SimpleGaussian_8cxx-example.html#_a0">SimpleGaussian/SimpleGaussian.cxx</a>.</dd>
 </dl>
 
 <p class="definition">Definition at line <a class="el" href="sitkImageFileReader_8h_source.html#l00060">60</a> of file <a class="el" href="sitkImageFileReader_8h_source.html">sitkImageFileReader.h</a>.</p>
@@ -543,7 +543,7 @@ Additional Inherited Members</h2></td></tr>
 <p>By default the value is sitkUnknown, which enable the output pixel type to be same as the file. If the pixel type is specified then the <a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1ConvertPixelBuffer.html">itk::ConvertPixelBuffer</a> will be used to convert the pixels. </p>
 
 <p>Implements <a class="el" href="classitk_1_1simple_1_1ImageReaderBase.html#a01ce8e9187cada5b600a1464ddaad47f">itk::simple::ImageReaderBase</a>.</p>
-<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="FilterProgressReporting_2FilterProgressReporting_8cxx-example.html#a6">FilterProgressReporting/FilterProgressReporting.cxx</a>, <a class="el" href="ITKIntegration_2ITKIntegration_8cxx-example.html#a3">ITKIntegration/ITKIntegration.cxx</a>, <a class="el" href="Segmentation_2ConnectedThresholdImageFilter_8cxx-example.html#a3">Segmentation/ConnectedThresholdImageFilter.cxx</a>, <a class="el" href="Segmentation_2NeighborhoodConnectedImageFilter_8cxx-example.html#a3">Segmentation/NeighborhoodConnectedImageFilter.cxx</a>, and <a class="el" href="SimpleGaussian_2SimpleGaussian_8cxx-example.html#a3">SimpleGaussian/SimpleGaussian.cxx</a>.</dd>
+<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="CppInPlace_2CppInPlace_8cxx-example.html#a13">CppInPlace/CppInPlace.cxx</a>, <a class="el" href="FilterProgressReporting_2FilterProgressReporting_8cxx-example.html#a6">FilterProgressReporting/FilterProgressReporting.cxx</a>, <a class="el" href="ITKIntegration_2ITKIntegration_8cxx-example.html#a3">ITKIntegration/ITKIntegration.cxx</a>, <a class="el" href="Segmentation_2ConnectedThresholdImageFilter_8cxx-example.html#a3">Segmentation/ConnectedThresholdImageFilter.cxx</a>, <a class="el" href="Segmentation_2NeighborhoodConnectedImageFilter_8cxx-example.html#a3">Segmentation/NeighborhoodConnectedImageFilter.cxx</a>, and <a class="el" href="SimpleGaussian_2SimpleGaussian_8cxx-example.html#a3">SimpleGaussian/SimpleGaussian.cxx</a>.</dd>
 </dl>
 
 </div>
@@ -1014,7 +1014,7 @@ template&lt;class TImageType &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="FilterProgressReporting_2FilterProgressReporting_8cxx-example.html#a4">FilterProgressReporting/FilterProgressReporting.cxx</a>, <a class="el" href="ITKIntegration_2ITKIntegration_8cxx-example.html#a1">ITKIntegration/ITKIntegration.cxx</a>, <a class="el" href="Segmentation_2ConnectedThresholdImageFilter_8cxx-example.html#a1">Segmentation/ConnectedThresholdImageFilter.cxx</a>, <a class="el" href="Segmentation_2NeighborhoodConnectedImageFilter_8cxx-example.html#a1">Segmentation/NeighborhoodConnectedImageFilter.cxx</a>, and <a class="el" href="SimpleGaussian_2SimpleGaussian_8cxx-example.html#a1">SimpleGaussian/SimpleGaussian.cxx</a>.</dd>
+<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="CppInPlace_2CppInPlace_8cxx-example.html#a12">CppInPlace/CppInPlace.cxx</a>, <a class="el" href="FilterProgressReporting_2FilterProgressReporting_8cxx-example.html#a4">FilterProgressReporting/FilterProgressReporting.cxx</a>, <a class="el" href="ITKIntegration_2ITKIntegration_8cxx-example.html#a1">ITKIntegration/ITKIntegration.cxx</a>, <a class="el" href="Segmentation_2ConnectedThresholdImageFilter_8cxx-example.html#a1">Segmentation/ConnectedThresholdImageFilter.cxx</a>, <a class="el" href="Segmentation_2NeighborhoodConnectedImageFilter_8cxx-example.html#a1">Segmentation/NeighborhoodConnectedImageFilter.cxx</a>, and <a class="el" href="SimpleGaussian_2SimpleGaussian_8cxx-example.html#a1">SimpleGaussian/SimpleGaussian.cxx</a>.</dd>
 </dl>
 
 </div>
