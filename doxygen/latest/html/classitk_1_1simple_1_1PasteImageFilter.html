@@ -48,7 +48,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">SimpleITK
-   &#160;<span id="projectnumber">2.0.0rc3.post27</span>
+   &#160;<span id="projectnumber">2.0.0rc3.post35</span>
    </div>
   </td>
  </tr>
@@ -343,6 +343,8 @@ Additional Inherited Members</h2></td></tr>
 <p><a class="el" href="classitk_1_1simple_1_1PasteImageFilter.html" title="Paste an image (or a constant value) into another image.">PasteImageFilter</a> allows a region in a destination image to be filled with a source image or a constant pixel value. The <a class="el" href="classitk_1_1simple_1_1PasteImageFilter.html#ab9ddb8d36c357d3a4914ef1a8a168e5f">SetDestinationIndex()</a> method prescribes where in the destination input to start pasting data from the source input. The SetSourceRegion method prescribes the section of the second image to paste into the first. When a constant pixel value is set, the SourceRegion describes the size of the region filled. If the output requested region does not include the SourceRegion after it has been repositioned to DestinationIndex, then the output will just be a copy of the input.</p>
 <p>This filter supports running "InPlace" to efficiently reuses the destination image buffer for the output, removing the need to copy the destination pixels to the output.</p>
 <p>When the source image is a lower dimension than the destination image then the DestinationSkipAxes parameter specifies which axes in the destination image are set to 1 when copying the region or filling with a constant. </p>
+<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="SliceBySliceDecorator_2SliceBySliceDecorator_8cxx-example.html#_a5">SliceBySliceDecorator/SliceBySliceDecorator.cxx</a>.</dd>
+</dl>
 
 <p class="definition">Definition at line <a class="el" href="sitkPasteImageFilter_8h_source.html#l00055">55</a> of file <a class="el" href="sitkPasteImageFilter_8h_source.html">sitkPasteImageFilter.h</a>.</p>
 </div><h2 class="groupheader">Member Typedef Documentation</h2>
@@ -556,6 +558,8 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Execute the filter on the input image </p>
+<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="SliceBySliceDecorator_2SliceBySliceDecorator_8cxx-example.html#a10">SliceBySliceDecorator/SliceBySliceDecorator.cxx</a>.</dd>
+</dl>
 
 </div>
 </div>
@@ -917,6 +921,8 @@ template&lt;class TImageType , unsigned int OutputDimension&gt; </div>
 </table>
 </div><div class="memdoc">
 <p>Set/Get the destination index (where in the first input the second input will be pasted. </p>
+<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="SliceBySliceDecorator_2SliceBySliceDecorator_8cxx-example.html#a9">SliceBySliceDecorator/SliceBySliceDecorator.cxx</a>.</dd>
+</dl>
 
 <p class="definition">Definition at line <a class="el" href="sitkPasteImageFilter_8h_source.html#l00089">89</a> of file <a class="el" href="sitkPasteImageFilter_8h_source.html">sitkPasteImageFilter.h</a>.</p>
 
@@ -1004,6 +1010,8 @@ template&lt;class TImageType , unsigned int OutputDimension&gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
+<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="SliceBySliceDecorator_2SliceBySliceDecorator_8cxx-example.html#a6">SliceBySliceDecorator/SliceBySliceDecorator.cxx</a>.</dd>
+</dl>
 
 <p class="definition">Definition at line <a class="el" href="sitkPasteImageFilter_8h_source.html#l00072">72</a> of file <a class="el" href="sitkPasteImageFilter_8h_source.html">sitkPasteImageFilter.h</a>.</p>
 
