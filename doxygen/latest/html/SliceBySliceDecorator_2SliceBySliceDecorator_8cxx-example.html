@@ -48,7 +48,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">SimpleITK
-   &#160;<span id="projectnumber">2.0.0rc3.post35</span>
+   &#160;<span id="projectnumber">2.0.0rc3.post37</span>
    </div>
   </td>
  </tr>
@@ -157,7 +157,7 @@ $(function() {
 <div class="line">        extract_size.begin(), extract_size.begin() + iter_dim));</div>
 <div class="line"> </div>
 <div class="line"> </div>
-<div class="line">    <span class="keywordflow">while</span> (extract_index.back() &lt; image.<a class="code" href="classitk_1_1simple_1_1Image.html#ade45738b2c906a51f23532aa972f6169">GetSize</a>().back())</div>
+<div class="line">    <span class="keywordflow">while</span> (<span class="keyword">static_cast&lt;</span><span class="keywordtype">unsigned</span> <span class="keywordtype">int</span><span class="keyword">&gt;</span>(extract_index.back()) &lt; image.<a class="code" href="classitk_1_1simple_1_1Image.html#ade45738b2c906a51f23532aa972f6169">GetSize</a>().back())</div>
 <div class="line">    {</div>
 <div class="line">      extractor.<a name="a7"></a><a class="code" href="classitk_1_1simple_1_1ExtractImageFilter.html#ad8d1f59257e990bbe594f41c25a74304">SetIndex</a>(extract_index);</div>
 <div class="line"> </div>
@@ -174,7 +174,7 @@ $(function() {
 <div class="line">      <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a name="a11"></a>e = iter_dim; e + 1 &lt; dim; ++e)</div>
 <div class="line">      {</div>
 <div class="line">        <span class="comment">// if the index element is beyond the size, propagate to next element.</span></div>
-<div class="line">        <span class="keywordflow">if</span> (extract_index[e] &gt; image.<a class="code" href="classitk_1_1simple_1_1Image.html#ade45738b2c906a51f23532aa972f6169">GetSize</a>()[e])</div>
+<div class="line">        <span class="keywordflow">if</span> (<span class="keyword">static_cast&lt;</span><span class="keywordtype">unsigned</span> <span class="keywordtype">int</span><span class="keyword">&gt;</span>(extract_index[e]) &gt; image.<a class="code" href="classitk_1_1simple_1_1Image.html#ade45738b2c906a51f23532aa972f6169">GetSize</a>()[e])</div>
 <div class="line">        {</div>
 <div class="line">          extract_index[e] = 0;</div>
 <div class="line">          ++extract_index[e + 1];</div>
