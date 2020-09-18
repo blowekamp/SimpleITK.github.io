@@ -48,7 +48,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">SimpleITK
-   &#160;<span id="projectnumber">2.1.0.dev1</span>
+   &#160;<span id="projectnumber">2.0.0</span>
    </div>
   </td>
  </tr>
@@ -93,7 +93,7 @@ $(function() {
 <div class="line"><span class="keyword">import</span> org.itk.simple.*;</div>
 <div class="line"> </div>
 <div class="line"> </div>
-<div class="line"><span class="keyword">class </span>IterationUpdate  <span class="keyword">extends</span> <a name="a0"></a><a class="codeRef" href="https://www.itk.org/Doxygen/html/namespaceitk.html#af2b97d337bf8035236a54a91fdcf040a">Command</a> {</div>
+<div class="line"><span class="keyword">class </span>IterationUpdate  <span class="keyword">extends</span> Command {</div>
 <div class="line"> </div>
 <div class="line">  <span class="keyword">private</span> ImageRegistrationMethod m_Method;</div>
 <div class="line"> </div>
@@ -122,7 +122,7 @@ $(function() {
 <div class="line">    }</div>
 <div class="line"> </div>
 <div class="line">  org.itk.simple.ImageFileReader reader = <span class="keyword">new</span> org.itk.simple.ImageFileReader();</div>
-<div class="line">  reader.setOutputPixelType( <a name="a1"></a><a class="code" href="namespaceitk_1_1simple.html#ae40bd64640f4014fba1a8a872ab4df98">PixelIDValueEnum</a>.sitkFloat32 );</div>
+<div class="line">  reader.setOutputPixelType( <a name="a0"></a><a class="code" href="namespaceitk_1_1simple.html#ae40bd64640f4014fba1a8a872ab4df98">PixelIDValueEnum</a>.sitkFloat32 );</div>
 <div class="line"> </div>
 <div class="line">  reader.setFileName(argv[0]);</div>
 <div class="line">  Image fixed = reader.execute();</div>
@@ -141,10 +141,10 @@ $(function() {
 <div class="line">                                              numberOfIterations,</div>
 <div class="line">                                              relaxationFactor );</div>
 <div class="line">  R.setInitialTransform( <span class="keyword">new</span> org.itk.simple.TranslationTransform( fixed.getDimension() ) );</div>
-<div class="line">  R.setInterpolator( <a name="a2"></a><a class="code" href="namespaceitk_1_1simple.html#a7cb1ef8bd02c669c02ea2f9f5aa374e5">InterpolatorEnum</a>.sitkLinear );</div>
+<div class="line">  R.setInterpolator( <a name="a1"></a><a class="code" href="namespaceitk_1_1simple.html#a7cb1ef8bd02c669c02ea2f9f5aa374e5">InterpolatorEnum</a>.sitkLinear );</div>
 <div class="line"> </div>
 <div class="line">  IterationUpdate cmd = <span class="keyword">new</span> IterationUpdate(R);</div>
-<div class="line">  R.addCommand( <a name="a3"></a><a class="code" href="namespaceitk_1_1simple.html#aa7399868984d99493c5a307cce373ace">EventEnum</a>.sitkIterationEvent, cmd);</div>
+<div class="line">  R.addCommand( <a name="a2"></a><a class="code" href="namespaceitk_1_1simple.html#aa7399868984d99493c5a307cce373ace">EventEnum</a>.sitkIterationEvent, cmd);</div>
 <div class="line"> </div>
 <div class="line">  org.itk.simple.Transform outTx = R.execute( fixed, moving );</div>
 <div class="line"> </div>
@@ -163,7 +163,6 @@ $(function() {
 <div class="ttc" id="anamespaceitk_1_1simple_html_a7cb1ef8bd02c669c02ea2f9f5aa374e5"><div class="ttname"><a href="namespaceitk_1_1simple.html#a7cb1ef8bd02c669c02ea2f9f5aa374e5">itk::simple::InterpolatorEnum</a></div><div class="ttdeci">InterpolatorEnum</div><div class="ttdef"><b>Definition:</b> <a href="sitkInterpolator_8h_source.html#l00030">sitkInterpolator.h:30</a></div></div>
 <div class="ttc" id="anamespaceitk_1_1simple_html_aa7399868984d99493c5a307cce373ace"><div class="ttname"><a href="namespaceitk_1_1simple.html#aa7399868984d99493c5a307cce373ace">itk::simple::EventEnum</a></div><div class="ttdeci">EventEnum</div><div class="ttdoc">Events which can be observed from ProcessObject.</div><div class="ttdef"><b>Definition:</b> <a href="sitkEvent_8h_source.html#l00031">sitkEvent.h:31</a></div></div>
 <div class="ttc" id="anamespaceitk_1_1simple_html_ae40bd64640f4014fba1a8a872ab4df98"><div class="ttname"><a href="namespaceitk_1_1simple.html#ae40bd64640f4014fba1a8a872ab4df98">itk::simple::PixelIDValueEnum</a></div><div class="ttdeci">PixelIDValueEnum</div><div class="ttdoc">Enumerated values of pixelIDs.</div><div class="ttdef"><b>Definition:</b> <a href="sitkPixelIDValues_8h_source.html#l00090">sitkPixelIDValues.h:90</a></div></div>
-<div class="ttc" id="anamespaceitk_html_af2b97d337bf8035236a54a91fdcf040a"><div class="ttname"><a href="https://www.itk.org/Doxygen/html/namespaceitk.html#af2b97d337bf8035236a54a91fdcf040a">Command</a></div><div class="ttdeci">class ITK_FORWARD_EXPORT Command</div></div>
 <!-- HTML footer for doxygen 1.8.17-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
