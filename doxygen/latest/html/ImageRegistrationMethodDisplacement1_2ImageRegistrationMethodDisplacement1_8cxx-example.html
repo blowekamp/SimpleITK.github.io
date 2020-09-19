@@ -48,7 +48,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">SimpleITK
-   &#160;<span id="projectnumber">2.0.0</span>
+   &#160;<span id="projectnumber">2.1.0.dev3</span>
    </div>
   </td>
  </tr>
@@ -199,40 +199,40 @@ $(function() {
 <div class="line">  {</div>
 <div class="line">  <span class="keywordtype">double</span> learningRate = 1.0;</div>
 <div class="line">  <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> numberOfIterations = 100;</div>
-<div class="line">  <span class="keywordtype">double</span> convergenceMinimumValue = 1e-6;</div>
+<div class="line">  <span class="keywordtype">double</span> convergenceMinimumValue = 1<a name="a14"></a>e-6;</div>
 <div class="line">  <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> convergenceWindowSize = 10;</div>
-<div class="line">  <a name="a14"></a><a class="code" href="classitk_1_1simple_1_1ImageRegistrationMethod.html#ac174f5723bed30eb278ac0d79dc7b93e">sitk::ImageRegistrationMethod::EstimateLearningRateType</a> estimateLearningRate = R.<a name="a15"></a><a class="code" href="classitk_1_1simple_1_1ImageRegistrationMethod.html#ac174f5723bed30eb278ac0d79dc7b93eaa6230360d9bff56331d5f6544f3c31ec">EachIteration</a>;</div>
-<div class="line">  R.<a name="a16"></a><a class="code" href="classitk_1_1simple_1_1ImageRegistrationMethod.html#ac4435d5eaed201dc37fec4395c982b0c">SetOptimizerAsGradientDescent</a>( learningRate,</div>
+<div class="line">  <a name="a15"></a><a class="code" href="classitk_1_1simple_1_1ImageRegistrationMethod.html#ac174f5723bed30eb278ac0d79dc7b93e">sitk::ImageRegistrationMethod::EstimateLearningRateType</a> estimateLearningRate = R.<a name="a16"></a><a class="code" href="classitk_1_1simple_1_1ImageRegistrationMethod.html#ac174f5723bed30eb278ac0d79dc7b93eaa6230360d9bff56331d5f6544f3c31ec">EachIteration</a>;</div>
+<div class="line">  R.<a name="a17"></a><a class="code" href="classitk_1_1simple_1_1ImageRegistrationMethod.html#ac4435d5eaed201dc37fec4395c982b0c">SetOptimizerAsGradientDescent</a>( learningRate,</div>
 <div class="line">                                   numberOfIterations,</div>
 <div class="line">                                   convergenceMinimumValue,</div>
 <div class="line">                                   convergenceWindowSize,</div>
 <div class="line">                                   estimateLearningRate</div>
 <div class="line">    );</div>
 <div class="line">  }</div>
-<div class="line">  R.<a name="a17"></a><a class="code" href="classitk_1_1simple_1_1ImageRegistrationMethod.html#a53934282121e152d37781ffa5224ec5f">SetOptimizerScalesFromPhysicalShift</a>();</div>
+<div class="line">  R.<a name="a18"></a><a class="code" href="classitk_1_1simple_1_1ImageRegistrationMethod.html#a53934282121e152d37781ffa5224ec5f">SetOptimizerScalesFromPhysicalShift</a>();</div>
 <div class="line"> </div>
-<div class="line">  R.<a name="a18"></a><a class="code" href="classitk_1_1simple_1_1ImageRegistrationMethod.html#a6d2a1b1dd30453ca0d9b1c670b6bfd29">SetInitialTransform</a>(initialTx);</div>
+<div class="line">  R.<a name="a19"></a><a class="code" href="classitk_1_1simple_1_1ImageRegistrationMethod.html#a6d2a1b1dd30453ca0d9b1c670b6bfd29">SetInitialTransform</a>(initialTx);</div>
 <div class="line"> </div>
-<div class="line">  R.<a name="a19"></a><a class="code" href="classitk_1_1simple_1_1ImageRegistrationMethod.html#a146e309a54daed77b95f6b379ef1f8d2">SetInterpolator</a>(<a name="a20"></a><a class="code" href="namespaceitk_1_1simple.html#a7cb1ef8bd02c669c02ea2f9f5aa374e5ab1d3c20fe43968ed72c71ae2a59d860a">sitk::sitkLinear</a>);</div>
+<div class="line">  R.<a name="a20"></a><a class="code" href="classitk_1_1simple_1_1ImageRegistrationMethod.html#a146e309a54daed77b95f6b379ef1f8d2">SetInterpolator</a>(<a name="a21"></a><a class="code" href="namespaceitk_1_1simple.html#a7cb1ef8bd02c669c02ea2f9f5aa374e5ab1d3c20fe43968ed72c71ae2a59d860a">sitk::sitkLinear</a>);</div>
 <div class="line"> </div>
 <div class="line">  IterationUpdate cmd(R);</div>
-<div class="line">  R.<a name="a21"></a><a class="code" href="classitk_1_1simple_1_1ProcessObject.html#a2199e5cca19b45d504676a595e1f6cfd">AddCommand</a>( <a name="a22"></a><a class="code" href="namespaceitk_1_1simple.html#aa7399868984d99493c5a307cce373acead234b8019e5aea11dca7617461145faa">sitk::sitkIterationEvent</a>, cmd);</div>
+<div class="line">  R.<a name="a22"></a><a class="code" href="classitk_1_1simple_1_1ProcessObject.html#a2199e5cca19b45d504676a595e1f6cfd">AddCommand</a>( <a name="a23"></a><a class="code" href="namespaceitk_1_1simple.html#aa7399868984d99493c5a307cce373acead234b8019e5aea11dca7617461145faa">sitk::sitkIterationEvent</a>, cmd);</div>
 <div class="line"> </div>
 <div class="line">  MultiResolutionIterationUpdate cmd2(R);</div>
-<div class="line">  R.<a class="code" href="classitk_1_1simple_1_1ProcessObject.html#a2199e5cca19b45d504676a595e1f6cfd">AddCommand</a>( <a name="a23"></a><a class="code" href="namespaceitk_1_1simple.html#aa7399868984d99493c5a307cce373aceaaafcbf2ae5e753431bbde962cc2fb8cf">sitk::sitkMultiResolutionIterationEvent</a>, cmd2);</div>
+<div class="line">  R.<a class="code" href="classitk_1_1simple_1_1ProcessObject.html#a2199e5cca19b45d504676a595e1f6cfd">AddCommand</a>( <a name="a24"></a><a class="code" href="namespaceitk_1_1simple.html#aa7399868984d99493c5a307cce373aceaaafcbf2ae5e753431bbde962cc2fb8cf">sitk::sitkMultiResolutionIterationEvent</a>, cmd2);</div>
 <div class="line"> </div>
-<div class="line">  <a class="code" href="classitk_1_1simple_1_1Transform.html">sitk::Transform</a> outTx1 = R.<a name="a24"></a><a class="code" href="classitk_1_1simple_1_1ImageRegistrationMethod.html#a3ba46dbf038828c8f2952875b8f6e0de">Execute</a>( fixed, moving );</div>
+<div class="line">  <a class="code" href="classitk_1_1simple_1_1Transform.html">sitk::Transform</a> outTx1 = R.<a name="a25"></a><a class="code" href="classitk_1_1simple_1_1ImageRegistrationMethod.html#a3ba46dbf038828c8f2952875b8f6e0de">Execute</a>( fixed, moving );</div>
 <div class="line"> </div>
 <div class="line">  std::cout &lt;&lt; <span class="stringliteral">&quot;-------&quot;</span> &lt;&lt; std::endl;</div>
-<div class="line">  std::cout &lt;&lt; outTx1.<a name="a25"></a><a class="code" href="classitk_1_1simple_1_1Transform.html#a27e02b327b0d6939bf2676c76b53bfee">ToString</a>() &lt;&lt; std::endl;</div>
-<div class="line">  std::cout &lt;&lt; <span class="stringliteral">&quot;Optimizer stop condition: &quot;</span> &lt;&lt; R.<a name="a26"></a><a class="code" href="classitk_1_1simple_1_1ImageRegistrationMethod.html#a6f2bf8c8b205dcaf6c4e1a0613b365b0">GetOptimizerStopConditionDescription</a>() &lt;&lt; std::endl;</div>
-<div class="line">  std::cout &lt;&lt; <span class="stringliteral">&quot; Iteration: &quot;</span> &lt;&lt; R.<a name="a27"></a><a class="code" href="classitk_1_1simple_1_1ImageRegistrationMethod.html#ad3f2e8373e1d7375a4bffeec2a506ff4">GetOptimizerIteration</a>() &lt;&lt; std::endl;</div>
-<div class="line">  std::cout &lt;&lt; <span class="stringliteral">&quot; Metric value: &quot;</span> &lt;&lt; R.<a name="a28"></a><a class="code" href="classitk_1_1simple_1_1ImageRegistrationMethod.html#ad4ebd9d40e13f50444f0cb205f9805f4">GetMetricValue</a>() &lt;&lt; std::endl;</div>
+<div class="line">  std::cout &lt;&lt; outTx1.<a name="a26"></a><a class="code" href="classitk_1_1simple_1_1Transform.html#a27e02b327b0d6939bf2676c76b53bfee">ToString</a>() &lt;&lt; std::endl;</div>
+<div class="line">  std::cout &lt;&lt; <span class="stringliteral">&quot;Optimizer stop condition: &quot;</span> &lt;&lt; R.<a name="a27"></a><a class="code" href="classitk_1_1simple_1_1ImageRegistrationMethod.html#a6f2bf8c8b205dcaf6c4e1a0613b365b0">GetOptimizerStopConditionDescription</a>() &lt;&lt; std::endl;</div>
+<div class="line">  std::cout &lt;&lt; <span class="stringliteral">&quot; Iteration: &quot;</span> &lt;&lt; R.<a name="a28"></a><a class="code" href="classitk_1_1simple_1_1ImageRegistrationMethod.html#ad3f2e8373e1d7375a4bffeec2a506ff4">GetOptimizerIteration</a>() &lt;&lt; std::endl;</div>
+<div class="line">  std::cout &lt;&lt; <span class="stringliteral">&quot; Metric value: &quot;</span> &lt;&lt; R.<a name="a29"></a><a class="code" href="classitk_1_1simple_1_1ImageRegistrationMethod.html#ad4ebd9d40e13f50444f0cb205f9805f4">GetMetricValue</a>() &lt;&lt; std::endl;</div>
 <div class="line"> </div>
 <div class="line"> </div>
-<div class="line">  <a class="code" href="classitk_1_1simple_1_1Image.html">sitk::Image</a> displacementField = <a class="code" href="classitk_1_1simple_1_1Image.html">sitk::Image</a>(fixed.<a name="a29"></a><a class="code" href="classitk_1_1simple_1_1Image.html#ade45738b2c906a51f23532aa972f6169">GetSize</a>(), <a name="a30"></a><a class="code" href="namespaceitk_1_1simple.html#ae40bd64640f4014fba1a8a872ab4df98a624d95835b3688632be3dad3a7d9e7e0">sitk::sitkVectorFloat64</a>);</div>
-<div class="line">  displacementField.<a name="a31"></a><a class="code" href="classitk_1_1simple_1_1Image.html#afa8a4757400c414e809d1767ee616bd0">CopyInformation</a>(fixed);</div>
-<div class="line">  <a name="_a32"></a><a class="code" href="classitk_1_1simple_1_1DisplacementFieldTransform.html">sitk::DisplacementFieldTransform</a> displacementTx(displacementField);</div>
+<div class="line">  <a class="code" href="classitk_1_1simple_1_1Image.html">sitk::Image</a> displacementField = <a class="code" href="classitk_1_1simple_1_1Image.html">sitk::Image</a>(fixed.<a name="a30"></a><a class="code" href="classitk_1_1simple_1_1Image.html#ade45738b2c906a51f23532aa972f6169">GetSize</a>(), <a name="a31"></a><a class="code" href="namespaceitk_1_1simple.html#ae40bd64640f4014fba1a8a872ab4df98a624d95835b3688632be3dad3a7d9e7e0">sitk::sitkVectorFloat64</a>);</div>
+<div class="line">  displacementField.<a name="a32"></a><a class="code" href="classitk_1_1simple_1_1Image.html#afa8a4757400c414e809d1767ee616bd0">CopyInformation</a>(fixed);</div>
+<div class="line">  <a name="_a33"></a><a class="code" href="classitk_1_1simple_1_1DisplacementFieldTransform.html">sitk::DisplacementFieldTransform</a> displacementTx(displacementField);</div>
 <div class="line">  <span class="keyword">const</span> <span class="keywordtype">double</span> varianceForUpdateField = 0.0;</div>
 <div class="line">  <span class="keyword">const</span> <span class="keywordtype">double</span> varianceForTotalField = 1.5;</div>
 <div class="line">  displacementTx.SetSmoothingGaussianOnUpdate(varianceForUpdateField,</div>
@@ -240,10 +240,10 @@ $(function() {
 <div class="line"> </div>
 <div class="line"> </div>
 <div class="line"> </div>
-<div class="line">  R.<a name="a33"></a><a class="code" href="classitk_1_1simple_1_1ImageRegistrationMethod.html#af86feba02bae666a840d0b76a6972a18">SetMovingInitialTransform</a>(outTx1);</div>
+<div class="line">  R.<a name="a34"></a><a class="code" href="classitk_1_1simple_1_1ImageRegistrationMethod.html#af86feba02bae666a840d0b76a6972a18">SetMovingInitialTransform</a>(outTx1);</div>
 <div class="line">  R.<a class="code" href="classitk_1_1simple_1_1ImageRegistrationMethod.html#a6d2a1b1dd30453ca0d9b1c670b6bfd29">SetInitialTransform</a>(displacementTx, <span class="keyword">true</span>);</div>
 <div class="line"> </div>
-<div class="line">  R.<a name="a34"></a><a class="code" href="classitk_1_1simple_1_1ImageRegistrationMethod.html#a4538df297ea487b728a37bd2769e6beb">SetMetricAsANTSNeighborhoodCorrelation</a>(4);</div>
+<div class="line">  R.<a name="a35"></a><a class="code" href="classitk_1_1simple_1_1ImageRegistrationMethod.html#a4538df297ea487b728a37bd2769e6beb">SetMetricAsANTSNeighborhoodCorrelation</a>(4);</div>
 <div class="line">  R.<a class="code" href="classitk_1_1simple_1_1ImageRegistrationMethod.html#a0eef00a5e101e0b5d0133ed6b35f2959">MetricUseFixedImageGradientFilterOff</a>();</div>
 <div class="line">  R.<a class="code" href="classitk_1_1simple_1_1ImageRegistrationMethod.html#a0eef00a5e101e0b5d0133ed6b35f2959">MetricUseFixedImageGradientFilterOff</a>();</div>
 <div class="line"> </div>
@@ -281,8 +281,8 @@ $(function() {
 <div class="line">  std::cout &lt;&lt; <span class="stringliteral">&quot; Metric value: &quot;</span> &lt;&lt; R.<a class="code" href="classitk_1_1simple_1_1ImageRegistrationMethod.html#ad4ebd9d40e13f50444f0cb205f9805f4">GetMetricValue</a>() &lt;&lt; std::endl;</div>
 <div class="line"> </div>
 <div class="line"> </div>
-<div class="line">  <a name="_a35"></a><a class="code" href="classitk_1_1simple_1_1CompositeTransform.html">sitk::CompositeTransform</a> outTx( {outTx1, displacementTx} );</div>
-<div class="line">  <a name="a36"></a><a class="code" href="namespaceitk_1_1simple.html#aaa096d3d36b98fb95bf5eb12e24821f3">sitk::WriteTransform</a>(outTx, argv[3]);</div>
+<div class="line">  <a name="_a36"></a><a class="code" href="classitk_1_1simple_1_1CompositeTransform.html">sitk::CompositeTransform</a> outTx( {outTx1, displacementTx} );</div>
+<div class="line">  <a name="a37"></a><a class="code" href="namespaceitk_1_1simple.html#aaa096d3d36b98fb95bf5eb12e24821f3">sitk::WriteTransform</a>(outTx, argv[3]);</div>
 <div class="line"> </div>
 <div class="line">  <span class="keywordflow">return</span> 0;</div>
 <div class="line">}</div>

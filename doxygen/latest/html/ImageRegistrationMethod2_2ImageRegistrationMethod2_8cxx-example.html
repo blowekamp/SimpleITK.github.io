@@ -48,7 +48,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">SimpleITK
-   &#160;<span id="projectnumber">2.0.0</span>
+   &#160;<span id="projectnumber">2.1.0.dev3</span>
    </div>
   </td>
  </tr>
@@ -157,28 +157,28 @@ $(function() {
 <div class="line"> </div>
 <div class="line">  <span class="keyword">const</span> <span class="keywordtype">double</span> learningRate = 1;</div>
 <div class="line">  <span class="keyword">const</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> numberOfIterations = 200;</div>
-<div class="line">  <span class="keyword">const</span> <span class="keywordtype">double</span> convergenceMinimumValue = 1e-4;</div>
+<div class="line">  <span class="keyword">const</span> <span class="keywordtype">double</span> convergenceMinimumValue = 1<a name="a9"></a>e-4;</div>
 <div class="line">  <span class="keyword">const</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> convergenceWindowSize=5;</div>
-<div class="line">  R.<a name="a9"></a><a class="code" href="classitk_1_1simple_1_1ImageRegistrationMethod.html#a519188e4f1813f6aacf49756e0b2c27e">SetOptimizerAsGradientDescentLineSearch</a> ( learningRate,</div>
+<div class="line">  R.<a name="a10"></a><a class="code" href="classitk_1_1simple_1_1ImageRegistrationMethod.html#a519188e4f1813f6aacf49756e0b2c27e">SetOptimizerAsGradientDescentLineSearch</a> ( learningRate,</div>
 <div class="line">                                              numberOfIterations,</div>
 <div class="line">                                              convergenceMinimumValue,</div>
 <div class="line">                                              convergenceWindowSize);</div>
 <div class="line"> </div>
-<div class="line">  R.<a name="a10"></a><a class="code" href="classitk_1_1simple_1_1ImageRegistrationMethod.html#a6d2a1b1dd30453ca0d9b1c670b6bfd29">SetInitialTransform</a>( <a name="_a11"></a><a class="code" href="classitk_1_1simple_1_1TranslationTransform.html">sitk::TranslationTransform</a>( fixed.<a name="a12"></a><a class="code" href="classitk_1_1simple_1_1Image.html#a43163c72ca1a49abf615b3dc71e01a36">GetDimension</a>() ) );</div>
-<div class="line">  R.<a name="a13"></a><a class="code" href="classitk_1_1simple_1_1ImageRegistrationMethod.html#a146e309a54daed77b95f6b379ef1f8d2">SetInterpolator</a>( <a name="a14"></a><a class="code" href="namespaceitk_1_1simple.html#a7cb1ef8bd02c669c02ea2f9f5aa374e5ab1d3c20fe43968ed72c71ae2a59d860a">sitk::sitkLinear</a> );</div>
+<div class="line">  R.<a name="a11"></a><a class="code" href="classitk_1_1simple_1_1ImageRegistrationMethod.html#a6d2a1b1dd30453ca0d9b1c670b6bfd29">SetInitialTransform</a>( <a name="_a12"></a><a class="code" href="classitk_1_1simple_1_1TranslationTransform.html">sitk::TranslationTransform</a>( fixed.<a name="a13"></a><a class="code" href="classitk_1_1simple_1_1Image.html#a43163c72ca1a49abf615b3dc71e01a36">GetDimension</a>() ) );</div>
+<div class="line">  R.<a name="a14"></a><a class="code" href="classitk_1_1simple_1_1ImageRegistrationMethod.html#a146e309a54daed77b95f6b379ef1f8d2">SetInterpolator</a>( <a name="a15"></a><a class="code" href="namespaceitk_1_1simple.html#a7cb1ef8bd02c669c02ea2f9f5aa374e5ab1d3c20fe43968ed72c71ae2a59d860a">sitk::sitkLinear</a> );</div>
 <div class="line"> </div>
 <div class="line">  IterationUpdate cmd(R);</div>
-<div class="line">  R.<a name="a15"></a><a class="code" href="classitk_1_1simple_1_1ProcessObject.html#a2199e5cca19b45d504676a595e1f6cfd">AddCommand</a>( <a name="a16"></a><a class="code" href="namespaceitk_1_1simple.html#aa7399868984d99493c5a307cce373acead234b8019e5aea11dca7617461145faa">sitk::sitkIterationEvent</a>, cmd);</div>
+<div class="line">  R.<a name="a16"></a><a class="code" href="classitk_1_1simple_1_1ProcessObject.html#a2199e5cca19b45d504676a595e1f6cfd">AddCommand</a>( <a name="a17"></a><a class="code" href="namespaceitk_1_1simple.html#aa7399868984d99493c5a307cce373acead234b8019e5aea11dca7617461145faa">sitk::sitkIterationEvent</a>, cmd);</div>
 <div class="line"> </div>
-<div class="line">  <a name="_a17"></a><a class="code" href="classitk_1_1simple_1_1Transform.html">sitk::Transform</a> outTx = R.<a name="a18"></a><a class="code" href="classitk_1_1simple_1_1ImageRegistrationMethod.html#a3ba46dbf038828c8f2952875b8f6e0de">Execute</a>( fixed, moving );</div>
+<div class="line">  <a name="_a18"></a><a class="code" href="classitk_1_1simple_1_1Transform.html">sitk::Transform</a> outTx = R.<a name="a19"></a><a class="code" href="classitk_1_1simple_1_1ImageRegistrationMethod.html#a3ba46dbf038828c8f2952875b8f6e0de">Execute</a>( fixed, moving );</div>
 <div class="line"> </div>
 <div class="line">  std::cout &lt;&lt; <span class="stringliteral">&quot;-------&quot;</span> &lt;&lt; std::endl;</div>
-<div class="line">  std::cout &lt;&lt; outTx.<a name="a19"></a><a class="code" href="classitk_1_1simple_1_1Transform.html#a27e02b327b0d6939bf2676c76b53bfee">ToString</a>() &lt;&lt; std::endl;</div>
-<div class="line">  std::cout &lt;&lt; <span class="stringliteral">&quot;Optimizer stop condition: &quot;</span> &lt;&lt; R.<a name="a20"></a><a class="code" href="classitk_1_1simple_1_1ImageRegistrationMethod.html#a6f2bf8c8b205dcaf6c4e1a0613b365b0">GetOptimizerStopConditionDescription</a>() &lt;&lt; std::endl;</div>
-<div class="line">  std::cout &lt;&lt; <span class="stringliteral">&quot; Iteration: &quot;</span> &lt;&lt; R.<a name="a21"></a><a class="code" href="classitk_1_1simple_1_1ImageRegistrationMethod.html#ad3f2e8373e1d7375a4bffeec2a506ff4">GetOptimizerIteration</a>() &lt;&lt; std::endl;</div>
-<div class="line">  std::cout &lt;&lt; <span class="stringliteral">&quot; Metric value: &quot;</span> &lt;&lt; R.<a name="a22"></a><a class="code" href="classitk_1_1simple_1_1ImageRegistrationMethod.html#ad4ebd9d40e13f50444f0cb205f9805f4">GetMetricValue</a>() &lt;&lt; std::endl;</div>
+<div class="line">  std::cout &lt;&lt; outTx.<a name="a20"></a><a class="code" href="classitk_1_1simple_1_1Transform.html#a27e02b327b0d6939bf2676c76b53bfee">ToString</a>() &lt;&lt; std::endl;</div>
+<div class="line">  std::cout &lt;&lt; <span class="stringliteral">&quot;Optimizer stop condition: &quot;</span> &lt;&lt; R.<a name="a21"></a><a class="code" href="classitk_1_1simple_1_1ImageRegistrationMethod.html#a6f2bf8c8b205dcaf6c4e1a0613b365b0">GetOptimizerStopConditionDescription</a>() &lt;&lt; std::endl;</div>
+<div class="line">  std::cout &lt;&lt; <span class="stringliteral">&quot; Iteration: &quot;</span> &lt;&lt; R.<a name="a22"></a><a class="code" href="classitk_1_1simple_1_1ImageRegistrationMethod.html#ad3f2e8373e1d7375a4bffeec2a506ff4">GetOptimizerIteration</a>() &lt;&lt; std::endl;</div>
+<div class="line">  std::cout &lt;&lt; <span class="stringliteral">&quot; Metric value: &quot;</span> &lt;&lt; R.<a name="a23"></a><a class="code" href="classitk_1_1simple_1_1ImageRegistrationMethod.html#ad4ebd9d40e13f50444f0cb205f9805f4">GetMetricValue</a>() &lt;&lt; std::endl;</div>
 <div class="line"> </div>
-<div class="line">  <a name="a23"></a><a class="code" href="namespaceitk_1_1simple.html#aaa096d3d36b98fb95bf5eb12e24821f3">sitk::WriteTransform</a>(outTx, argv[3]);</div>
+<div class="line">  <a name="a24"></a><a class="code" href="namespaceitk_1_1simple.html#aaa096d3d36b98fb95bf5eb12e24821f3">sitk::WriteTransform</a>(outTx, argv[3]);</div>
 <div class="line"> </div>
 <div class="line"> </div>
 <div class="line">  <span class="keywordflow">return</span> 0;</div>

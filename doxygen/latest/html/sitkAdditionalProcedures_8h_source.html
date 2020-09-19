@@ -48,7 +48,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">SimpleITK
-   &#160;<span id="projectnumber">2.0.0</span>
+   &#160;<span id="projectnumber">2.1.0.dev3</span>
    </div>
   </td>
  </tr>
@@ -135,9 +135,9 @@ $(function() {
 <div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;<a class="code" href="sitkBasicFilters_8h.html#a8c00663d3a7bae36066e320f83381283">SITKBasicFilters_EXPORT</a> <a class="code" href="classitk_1_1simple_1_1Image.html">Image</a> <a class="code" href="namespaceitk_1_1simple.html#a050098ab1d2b732c8497d9e16c6d57ac">PatchBasedDenoising</a> (<span class="keyword">const</span> <a class="code" href="classitk_1_1simple_1_1Image.html">Image</a>&amp; image1,</div>
 <div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;                                                   <a class="code" href="classitk_1_1simple_1_1PatchBasedDenoisingImageFilter.html#a557b8bea001e946b87c7a3ef86a01018">itk::simple::PatchBasedDenoisingImageFilter::NoiseModelType</a> noiseModel,</div>
 <div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;                                                   <span class="keywordtype">double</span> kernelBandwidthSigma = 400.0,</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;                                                   uint32_t patchRadius = 4u,</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;                                                   uint32_t numberOfIterations = 1u,</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;                                                   uint32_t numberOfSamplePatches = 200u,</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;                                                   <a class="codeRef" href="https://www.itk.org/Doxygen/html/namespaceitk.html#a575b8e3e1ee797dd1bbaf9724ed68f92">uint32_t</a> patchRadius = 4u,</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;                                                   <a class="codeRef" href="https://www.itk.org/Doxygen/html/namespaceitk.html#a575b8e3e1ee797dd1bbaf9724ed68f92">uint32_t</a> numberOfIterations = 1u,</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;                                                   <a class="codeRef" href="https://www.itk.org/Doxygen/html/namespaceitk.html#a575b8e3e1ee797dd1bbaf9724ed68f92">uint32_t</a> numberOfSamplePatches = 200u,</div>
 <div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;                                                   <span class="keywordtype">double</span> sampleVariance = 400.0,</div>
 <div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;                                                   <span class="keywordtype">double</span> noiseSigma = 0.0,</div>
 <div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;                                                   <span class="keywordtype">double</span> noiseModelFidelityWeight = 0.0 );</div>
@@ -147,9 +147,9 @@ $(function() {
 <div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160; </div>
 <div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;<a class="code" href="sitkBasicFilters_8h.html#a8c00663d3a7bae36066e320f83381283">SITKBasicFilters_EXPORT</a> <a class="code" href="classitk_1_1simple_1_1Image.html">Image</a> <a class="code" href="namespaceitk_1_1simple.html#a050098ab1d2b732c8497d9e16c6d57ac">PatchBasedDenoising</a> (<span class="keyword">const</span> <a class="code" href="classitk_1_1simple_1_1Image.html">Image</a>&amp; image1,</div>
 <div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;                                                   <span class="keywordtype">double</span> kernelBandwidthSigma = 400.0,</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;                                                   uint32_t patchRadius = 4u,</div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;                                                   uint32_t numberOfIterations = 1u,</div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;                                                   uint32_t numberOfSamplePatches = 200u,</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;                                                   <a class="codeRef" href="https://www.itk.org/Doxygen/html/namespaceitk.html#a575b8e3e1ee797dd1bbaf9724ed68f92">uint32_t</a> patchRadius = 4u,</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;                                                   <a class="codeRef" href="https://www.itk.org/Doxygen/html/namespaceitk.html#a575b8e3e1ee797dd1bbaf9724ed68f92">uint32_t</a> numberOfIterations = 1u,</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;                                                   <a class="codeRef" href="https://www.itk.org/Doxygen/html/namespaceitk.html#a575b8e3e1ee797dd1bbaf9724ed68f92">uint32_t</a> numberOfSamplePatches = 200u,</div>
 <div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;                                                   <span class="keywordtype">double</span> sampleVariance = 400.0);</div>
 <div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160; </div>
@@ -183,9 +183,10 @@ $(function() {
 <div class="ttc" id="asitkPatchBasedDenoisingImageFilter_8h_html"><div class="ttname"><a href="sitkPatchBasedDenoisingImageFilter_8h.html">sitkPatchBasedDenoisingImageFilter.h</a></div></div>
 <div class="ttc" id="asitkInterpolator_8h_html"><div class="ttname"><a href="sitkInterpolator_8h.html">sitkInterpolator.h</a></div></div>
 <div class="ttc" id="asitkTransform_8h_html"><div class="ttname"><a href="sitkTransform_8h.html">sitkTransform.h</a></div></div>
-<div class="ttc" id="anamespaceitk_html"><div class="ttname"><a href="namespaceitk.html">itk</a></div><div class="ttdef"><b>Definition:</b> <a href="itkHashImageFilter_8h_source.html#l00028">itkHashImageFilter.h:28</a></div></div>
+<div class="ttc" id="anamespaceitk_html"><div class="ttname"><a href="namespaceitk.html">itk</a></div></div>
 <div class="ttc" id="anamespaceitk_1_1simple_html_a050098ab1d2b732c8497d9e16c6d57ac"><div class="ttname"><a href="namespaceitk_1_1simple.html#a050098ab1d2b732c8497d9e16c6d57ac">itk::simple::PatchBasedDenoising</a></div><div class="ttdeci">Image PatchBasedDenoising(const Image &amp;image1, itk::simple::PatchBasedDenoisingImageFilter::NoiseModelType noiseModel, double kernelBandwidthSigma=400.0, uint32_t patchRadius=4u, uint32_t numberOfIterations=1u, uint32_t numberOfSamplePatches=200u, double sampleVariance=400.0, double noiseSigma=0.0, double noiseModelFidelityWeight=0.0)</div><div class="ttdoc">itk::simple::PatchBasedDenoisingImageFilter Procedural Interface</div></div>
 <div class="ttc" id="anamespaceitk_1_1simple_html_a16b509428a5455a4e9282fb295eadc8f"><div class="ttname"><a href="namespaceitk_1_1simple.html#a16b509428a5455a4e9282fb295eadc8f">itk::simple::Resample</a></div><div class="ttdeci">Image Resample(const Image &amp;image1, Transform transform=itk::simple::Transform(), InterpolatorEnum interpolator=itk::simple::sitkLinear, double defaultPixelValue=0.0, PixelIDValueEnum outputPixelType=sitkUnknown, bool useNearestNeighborExtrapolator=false)</div><div class="ttdoc">itk::simple::ResampleImageFilter Procedural Interface</div></div>
+<div class="ttc" id="anamespaceitk_html_a575b8e3e1ee797dd1bbaf9724ed68f92"><div class="ttname"><a href="https://www.itk.org/Doxygen/html/namespaceitk.html#a575b8e3e1ee797dd1bbaf9724ed68f92">itk::uint32_t</a></div><div class="ttdeci">::uint32_t uint32_t</div></div>
 <div class="ttc" id="anamespaceitk_1_1simple_html_ae40bd64640f4014fba1a8a872ab4df98a25f496c19c2388217b9fede6686144ac"><div class="ttname"><a href="namespaceitk_1_1simple.html#ae40bd64640f4014fba1a8a872ab4df98a25f496c19c2388217b9fede6686144ac">itk::simple::sitkUnknown</a></div><div class="ttdeci">@ sitkUnknown</div><div class="ttdef"><b>Definition:</b> <a href="sitkPixelIDValues_8h_source.html#l00091">sitkPixelIDValues.h:91</a></div></div>
 <!-- HTML footer for doxygen 1.8.17-->
 <!-- start footer part -->

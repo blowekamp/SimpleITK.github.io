@@ -48,7 +48,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">SimpleITK
-   &#160;<span id="projectnumber">2.0.0</span>
+   &#160;<span id="projectnumber">2.1.0.dev3</span>
    </div>
   </td>
  </tr>
@@ -157,10 +157,10 @@ class itk::simple::detail::DualMemberFunctionFactory&lt; TMemberFunctionPointer 
   </table>
   </dd>
 </dl>
-<p>Example member function and pointer: </p><div class="fragment"><div class="line">type alias Image::Pointer (<a class="code" href="classitk_1_1simple_1_1detail_1_1DualMemberFunctionFactory.html#a9e88cbc9fa2d4f0e30b7a35a145e8c37">Self</a>::*<a class="code" href="classitk_1_1simple_1_1detail_1_1DualMemberFunctionFactory.html#a29fb24191fca3ab4a8b666f3980198ca">MemberFunctionType</a>)( Image::Pointer );</div>
+<p>Example member function and pointer: </p><div class="fragment"><div class="line">type alias <a class="codeRef" href="https://www.itk.org/Doxygen/html/classitk_1_1Image.html#af2d85a74c5b98b8a5f7edff2d7b1c2d8">Image::Pointer</a> (<a class="code" href="classitk_1_1simple_1_1detail_1_1DualMemberFunctionFactory.html#a9e88cbc9fa2d4f0e30b7a35a145e8c37">Self</a>::*<a class="code" href="classitk_1_1simple_1_1detail_1_1DualMemberFunctionFactory.html#a29fb24191fca3ab4a8b666f3980198ca">MemberFunctionType</a>)( <a class="codeRef" href="https://www.itk.org/Doxygen/html/classitk_1_1Image.html#af2d85a74c5b98b8a5f7edff2d7b1c2d8">Image::Pointer</a> );</div>
 <div class="line"> </div>
 <div class="line"><span class="keyword">template</span>&lt;<span class="keyword">typename</span> TImageType1, TImageType2&gt;</div>
-<div class="line">Image::Pointer ExecuteInternal( Image::Pointer );</div>
+<div class="line"><a class="codeRef" href="https://www.itk.org/Doxygen/html/classitk_1_1Image.html#af2d85a74c5b98b8a5f7edff2d7b1c2d8">Image::Pointer</a> ExecuteInternal( <a class="codeRef" href="https://www.itk.org/Doxygen/html/classitk_1_1Image.html#af2d85a74c5b98b8a5f7edff2d7b1c2d8">Image::Pointer</a> );</div>
 </div><!-- fragment --><p>The provided Addressor will instantiate the templeted member functions by taking the address in the RegisterMethods. Later they can be retrieve with the GetMemberFunction method, which returns a function object with the same arguments as the templated member function pointer.</p>
 <p>An instance of a <a class="el" href="classitk_1_1simple_1_1detail_1_1MemberFunctionFactory.html" title="A class used to instantiate and generate function object to templated member functions.">MemberFunctionFactory</a> is bound to a specific instance of an object, so that the returned function object does not need to have the calling object specified.</p>
 <dl class="section warning"><dt>Warning</dt><dd>Use this class with caution because it can instantiate a combinatorial number of methods.</dd></dl>
@@ -540,6 +540,7 @@ template&lt;typename TMemberFunctionPointer &gt; </div>
 <li><a class="el" href="sitkDualMemberFunctionFactory_8h_source.html">sitkDualMemberFunctionFactory.h</a></li>
 </ul>
 </div><!-- contents -->
+<div class="ttc" id="aclassitk_1_1Image_html_af2d85a74c5b98b8a5f7edff2d7b1c2d8"><div class="ttname"><a href="https://www.itk.org/Doxygen/html/classitk_1_1Image.html#af2d85a74c5b98b8a5f7edff2d7b1c2d8">itk::Image::Pointer</a></div><div class="ttdeci">SmartPointer&lt; Self &gt; Pointer</div></div>
 <div class="ttc" id="aclassitk_1_1simple_1_1detail_1_1DualMemberFunctionFactory_html_a95e65d5a73f69e5653647ad4b3dfb3e4"><div class="ttname"><a href="classitk_1_1simple_1_1detail_1_1DualMemberFunctionFactory.html#a95e65d5a73f69e5653647ad4b3dfb3e4">itk::simple::detail::DualMemberFunctionFactory::ObjectType</a></div><div class="ttdeci">typename ::detail::FunctionTraits&lt; MemberFunctionType &gt;::ClassType ObjectType</div><div class="ttdef"><b>Definition:</b> <a href="sitkDualMemberFunctionFactory_8h_source.html#l00075">sitkDualMemberFunctionFactory.h:75</a></div></div>
 <div class="ttc" id="aclassitk_1_1simple_1_1detail_1_1DualMemberFunctionFactory_html_a9e88cbc9fa2d4f0e30b7a35a145e8c37"><div class="ttname"><a href="classitk_1_1simple_1_1detail_1_1DualMemberFunctionFactory.html#a9e88cbc9fa2d4f0e30b7a35a145e8c37">itk::simple::detail::DualMemberFunctionFactory::Self</a></div><div class="ttdeci">DualMemberFunctionFactory Self</div><div class="ttdef"><b>Definition:</b> <a href="sitkDualMemberFunctionFactory_8h_source.html#l00072">sitkDualMemberFunctionFactory.h:72</a></div></div>
 <div class="ttc" id="aclassitk_1_1simple_1_1detail_1_1DualMemberFunctionFactory_html_a29fb24191fca3ab4a8b666f3980198ca"><div class="ttname"><a href="classitk_1_1simple_1_1detail_1_1DualMemberFunctionFactory.html#a29fb24191fca3ab4a8b666f3980198ca">itk::simple::detail::DualMemberFunctionFactory::MemberFunctionType</a></div><div class="ttdeci">TMemberFunctionPointer MemberFunctionType</div><div class="ttdef"><b>Definition:</b> <a href="sitkDualMemberFunctionFactory_8h_source.html#l00074">sitkDualMemberFunctionFactory.h:74</a></div></div>

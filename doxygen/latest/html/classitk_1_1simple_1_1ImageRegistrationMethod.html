@@ -48,7 +48,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">SimpleITK
-   &#160;<span id="projectnumber">2.0.0</span>
+   &#160;<span id="projectnumber">2.1.0.dev3</span>
    </div>
   </td>
  </tr>
@@ -147,7 +147,7 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a3ba46dbf038828c8f2952875b8f6e0de"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abecac2c528260c9148e54e0b30df904e"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1ImageRegistrationMethod.html#abecac2c528260c9148e54e0b30df904e">GetCurrentLevel</a> () const</td></tr>
 <tr class="separator:abecac2c528260c9148e54e0b30df904e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2080f33eb72bb0d9442c3974d8cd7116"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1ImageRegistrationMethod.html#a2080f33eb72bb0d9442c3974d8cd7116">GetMetricNumberOfValidPoints</a> () const</td></tr>
+<tr class="memitem:a2080f33eb72bb0d9442c3974d8cd7116"><td class="memItemLeft" align="right" valign="top"><a class="elRef" href="https://www.itk.org/Doxygen/html/namespaceitk.html#a6678d19d4b40c05a613784037bc2bd00">uint64_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1ImageRegistrationMethod.html#a2080f33eb72bb0d9442c3974d8cd7116">GetMetricNumberOfValidPoints</a> () const</td></tr>
 <tr class="separator:a2080f33eb72bb0d9442c3974d8cd7116"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0f9dd66bf8523a56733d2752e7044102"><td class="memItemLeft" align="right" valign="top">const std::vector&lt; double &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1ImageRegistrationMethod.html#a0f9dd66bf8523a56733d2752e7044102">GetMetricSamplingPercentagePerLevel</a> () const</td></tr>
 <tr class="memdesc:a0f9dd66bf8523a56733d2752e7044102"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the percentage of pixels used for metric evaluation. <br  />
@@ -205,34 +205,34 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:aa49fdfae5950c2ec6e01a75df59078f6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classitk_1_1simple_1_1ProcessObject.html#ae243e549c853648a3e5600ed49b630ce">Self</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1ImageRegistrationMethod.html#aa49fdfae5950c2ec6e01a75df59078f6">SetMetricSamplingStrategy</a> (<a class="el" href="classitk_1_1simple_1_1ImageRegistrationMethod.html#a867a66cfcf7fbf5200a6010c8f937c0c">MetricSamplingStrategyType</a> strategy)</td></tr>
 <tr class="memdesc:aa49fdfae5950c2ec6e01a75df59078f6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set sampling strategy for sample generation.  <a href="classitk_1_1simple_1_1ImageRegistrationMethod.html#aa49fdfae5950c2ec6e01a75df59078f6">More...</a><br /></td></tr>
 <tr class="separator:aa49fdfae5950c2ec6e01a75df59078f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a00958795ad3a47cf49c04e9458ca66ba"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classitk_1_1simple_1_1ProcessObject.html#ae243e549c853648a3e5600ed49b630ce">Self</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1ImageRegistrationMethod.html#a00958795ad3a47cf49c04e9458ca66ba">SetOptimizerAsAmoeba</a> (double simplexDelta, unsigned int numberOfIterations, double parametersConvergenceTolerance=1e-8, double functionConvergenceTolerance=1e-4, bool withRestarts=false)</td></tr>
+<tr class="memitem:a00958795ad3a47cf49c04e9458ca66ba"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classitk_1_1simple_1_1ProcessObject.html#ae243e549c853648a3e5600ed49b630ce">Self</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1ImageRegistrationMethod.html#a00958795ad3a47cf49c04e9458ca66ba">SetOptimizerAsAmoeba</a> (double simplexDelta, unsigned int numberOfIterations, double parametersConvergenceTolerance=1<a class="elRef" href="https://www.itk.org/Doxygen/html/namespaceitk_1_1Math.html#af105436026645171db6a4a3000ee8482">e</a>-8, double functionConvergenceTolerance=1<a class="elRef" href="https://www.itk.org/Doxygen/html/namespaceitk_1_1Math.html#af105436026645171db6a4a3000ee8482">e</a>-4, bool withRestarts=false)</td></tr>
 <tr class="memdesc:a00958795ad3a47cf49c04e9458ca66ba"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set optimizer to Nelder-Mead downhill simplex algorithm.  <a href="classitk_1_1simple_1_1ImageRegistrationMethod.html#a00958795ad3a47cf49c04e9458ca66ba">More...</a><br /></td></tr>
 <tr class="separator:a00958795ad3a47cf49c04e9458ca66ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a036b6ae123c5b649519de8a19978b39d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classitk_1_1simple_1_1ProcessObject.html#ae243e549c853648a3e5600ed49b630ce">Self</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1ImageRegistrationMethod.html#a036b6ae123c5b649519de8a19978b39d">SetOptimizerAsConjugateGradientLineSearch</a> (double learningRate, unsigned int numberOfIterations, double convergenceMinimumValue=1e-6, unsigned int convergenceWindowSize=10, double lineSearchLowerLimit=0, double lineSearchUpperLimit=5.0, double lineSearchEpsilon=0.01, unsigned int lineSearchMaximumIterations=20, <a class="el" href="classitk_1_1simple_1_1ImageRegistrationMethod.html#ac174f5723bed30eb278ac0d79dc7b93e">EstimateLearningRateType</a> estimateLearningRate=<a class="el" href="classitk_1_1simple_1_1ImageRegistrationMethod.html#ac174f5723bed30eb278ac0d79dc7b93ea08db5018557d2f71e403b6a23e7a0434">Once</a>, double maximumStepSizeInPhysicalUnits=0.0)</td></tr>
+<tr class="memitem:a036b6ae123c5b649519de8a19978b39d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classitk_1_1simple_1_1ProcessObject.html#ae243e549c853648a3e5600ed49b630ce">Self</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1ImageRegistrationMethod.html#a036b6ae123c5b649519de8a19978b39d">SetOptimizerAsConjugateGradientLineSearch</a> (double learningRate, unsigned int numberOfIterations, double convergenceMinimumValue=1<a class="elRef" href="https://www.itk.org/Doxygen/html/namespaceitk_1_1Math.html#af105436026645171db6a4a3000ee8482">e</a>-6, unsigned int convergenceWindowSize=10, double lineSearchLowerLimit=0, double lineSearchUpperLimit=5.0, double lineSearchEpsilon=0.01, unsigned int lineSearchMaximumIterations=20, <a class="el" href="classitk_1_1simple_1_1ImageRegistrationMethod.html#ac174f5723bed30eb278ac0d79dc7b93e">EstimateLearningRateType</a> estimateLearningRate=<a class="el" href="classitk_1_1simple_1_1ImageRegistrationMethod.html#ac174f5723bed30eb278ac0d79dc7b93ea08db5018557d2f71e403b6a23e7a0434">Once</a>, double maximumStepSizeInPhysicalUnits=0.0)</td></tr>
 <tr class="memdesc:a036b6ae123c5b649519de8a19978b39d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Conjugate gradient descent optimizer with a golden section line search for nonlinear optimization.  <a href="classitk_1_1simple_1_1ImageRegistrationMethod.html#a036b6ae123c5b649519de8a19978b39d">More...</a><br /></td></tr>
 <tr class="separator:a036b6ae123c5b649519de8a19978b39d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1adad59854b31c92f4525e81c481e1a1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classitk_1_1simple_1_1ProcessObject.html#ae243e549c853648a3e5600ed49b630ce">Self</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1ImageRegistrationMethod.html#a1adad59854b31c92f4525e81c481e1a1">SetOptimizerAsExhaustive</a> (const std::vector&lt; unsigned int &gt; &amp;numberOfSteps, double stepLength=1.0)</td></tr>
 <tr class="memdesc:a1adad59854b31c92f4525e81c481e1a1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the optimizer to sample the metric at regular steps.  <a href="classitk_1_1simple_1_1ImageRegistrationMethod.html#a1adad59854b31c92f4525e81c481e1a1">More...</a><br /></td></tr>
 <tr class="separator:a1adad59854b31c92f4525e81c481e1a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac4435d5eaed201dc37fec4395c982b0c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classitk_1_1simple_1_1ProcessObject.html#ae243e549c853648a3e5600ed49b630ce">Self</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1ImageRegistrationMethod.html#ac4435d5eaed201dc37fec4395c982b0c">SetOptimizerAsGradientDescent</a> (double learningRate, unsigned int numberOfIterations, double convergenceMinimumValue=1e-6, unsigned int convergenceWindowSize=10, <a class="el" href="classitk_1_1simple_1_1ImageRegistrationMethod.html#ac174f5723bed30eb278ac0d79dc7b93e">EstimateLearningRateType</a> estimateLearningRate=<a class="el" href="classitk_1_1simple_1_1ImageRegistrationMethod.html#ac174f5723bed30eb278ac0d79dc7b93ea08db5018557d2f71e403b6a23e7a0434">Once</a>, double maximumStepSizeInPhysicalUnits=0.0)</td></tr>
+<tr class="memitem:ac4435d5eaed201dc37fec4395c982b0c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classitk_1_1simple_1_1ProcessObject.html#ae243e549c853648a3e5600ed49b630ce">Self</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1ImageRegistrationMethod.html#ac4435d5eaed201dc37fec4395c982b0c">SetOptimizerAsGradientDescent</a> (double learningRate, unsigned int numberOfIterations, double convergenceMinimumValue=1<a class="elRef" href="https://www.itk.org/Doxygen/html/namespaceitk_1_1Math.html#af105436026645171db6a4a3000ee8482">e</a>-6, unsigned int convergenceWindowSize=10, <a class="el" href="classitk_1_1simple_1_1ImageRegistrationMethod.html#ac174f5723bed30eb278ac0d79dc7b93e">EstimateLearningRateType</a> estimateLearningRate=<a class="el" href="classitk_1_1simple_1_1ImageRegistrationMethod.html#ac174f5723bed30eb278ac0d79dc7b93ea08db5018557d2f71e403b6a23e7a0434">Once</a>, double maximumStepSizeInPhysicalUnits=0.0)</td></tr>
 <tr class="memdesc:ac4435d5eaed201dc37fec4395c982b0c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gradient descent optimizer.  <a href="classitk_1_1simple_1_1ImageRegistrationMethod.html#ac4435d5eaed201dc37fec4395c982b0c">More...</a><br /></td></tr>
 <tr class="separator:ac4435d5eaed201dc37fec4395c982b0c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a519188e4f1813f6aacf49756e0b2c27e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classitk_1_1simple_1_1ProcessObject.html#ae243e549c853648a3e5600ed49b630ce">Self</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1ImageRegistrationMethod.html#a519188e4f1813f6aacf49756e0b2c27e">SetOptimizerAsGradientDescentLineSearch</a> (double learningRate, unsigned int numberOfIterations, double convergenceMinimumValue=1e-6, unsigned int convergenceWindowSize=10, double lineSearchLowerLimit=0, double lineSearchUpperLimit=5.0, double lineSearchEpsilon=0.01, unsigned int lineSearchMaximumIterations=20, <a class="el" href="classitk_1_1simple_1_1ImageRegistrationMethod.html#ac174f5723bed30eb278ac0d79dc7b93e">EstimateLearningRateType</a> estimateLearningRate=<a class="el" href="classitk_1_1simple_1_1ImageRegistrationMethod.html#ac174f5723bed30eb278ac0d79dc7b93ea08db5018557d2f71e403b6a23e7a0434">Once</a>, double maximumStepSizeInPhysicalUnits=0.0)</td></tr>
+<tr class="memitem:a519188e4f1813f6aacf49756e0b2c27e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classitk_1_1simple_1_1ProcessObject.html#ae243e549c853648a3e5600ed49b630ce">Self</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1ImageRegistrationMethod.html#a519188e4f1813f6aacf49756e0b2c27e">SetOptimizerAsGradientDescentLineSearch</a> (double learningRate, unsigned int numberOfIterations, double convergenceMinimumValue=1<a class="elRef" href="https://www.itk.org/Doxygen/html/namespaceitk_1_1Math.html#af105436026645171db6a4a3000ee8482">e</a>-6, unsigned int convergenceWindowSize=10, double lineSearchLowerLimit=0, double lineSearchUpperLimit=5.0, double lineSearchEpsilon=0.01, unsigned int lineSearchMaximumIterations=20, <a class="el" href="classitk_1_1simple_1_1ImageRegistrationMethod.html#ac174f5723bed30eb278ac0d79dc7b93e">EstimateLearningRateType</a> estimateLearningRate=<a class="el" href="classitk_1_1simple_1_1ImageRegistrationMethod.html#ac174f5723bed30eb278ac0d79dc7b93ea08db5018557d2f71e403b6a23e7a0434">Once</a>, double maximumStepSizeInPhysicalUnits=0.0)</td></tr>
 <tr class="memdesc:a519188e4f1813f6aacf49756e0b2c27e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gradient descent optimizer with a golden section line search.  <a href="classitk_1_1simple_1_1ImageRegistrationMethod.html#a519188e4f1813f6aacf49756e0b2c27e">More...</a><br /></td></tr>
 <tr class="separator:a519188e4f1813f6aacf49756e0b2c27e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae43da980abadee74b7dd62d2270d6cff"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classitk_1_1simple_1_1ProcessObject.html#ae243e549c853648a3e5600ed49b630ce">Self</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1ImageRegistrationMethod.html#ae43da980abadee74b7dd62d2270d6cff">SetOptimizerAsLBFGS2</a> (double solutionAccuracy=1e-5, unsigned int numberOfIterations=0, unsigned int hessianApproximateAccuracy=6, unsigned int deltaConvergenceDistance=0, double deltaConvergenceTolerance=1e-5, unsigned int lineSearchMaximumEvaluations=40, double lineSearchMinimumStep=1e-20, double lineSearchMaximumStep=1e20, double lineSearchAccuracy=1e-4)</td></tr>
+<tr class="memitem:ae43da980abadee74b7dd62d2270d6cff"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classitk_1_1simple_1_1ProcessObject.html#ae243e549c853648a3e5600ed49b630ce">Self</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1ImageRegistrationMethod.html#ae43da980abadee74b7dd62d2270d6cff">SetOptimizerAsLBFGS2</a> (double solutionAccuracy=1<a class="elRef" href="https://www.itk.org/Doxygen/html/namespaceitk_1_1Math.html#af105436026645171db6a4a3000ee8482">e</a>-5, unsigned int numberOfIterations=0, unsigned int hessianApproximateAccuracy=6, unsigned int deltaConvergenceDistance=0, double deltaConvergenceTolerance=1<a class="elRef" href="https://www.itk.org/Doxygen/html/namespaceitk_1_1Math.html#af105436026645171db6a4a3000ee8482">e</a>-5, unsigned int lineSearchMaximumEvaluations=40, double lineSearchMinimumStep=1<a class="elRef" href="https://www.itk.org/Doxygen/html/namespaceitk_1_1Math.html#af105436026645171db6a4a3000ee8482">e</a>-20, double lineSearchMaximumStep=1e20, double lineSearchAccuracy=1<a class="elRef" href="https://www.itk.org/Doxygen/html/namespaceitk_1_1Math.html#af105436026645171db6a4a3000ee8482">e</a>-4)</td></tr>
 <tr class="memdesc:ae43da980abadee74b7dd62d2270d6cff"><td class="mdescLeft">&#160;</td><td class="mdescRight">Limited memory Broyden Fletcher Goldfarb Shannon minimization without bounds.  <a href="classitk_1_1simple_1_1ImageRegistrationMethod.html#ae43da980abadee74b7dd62d2270d6cff">More...</a><br /></td></tr>
 <tr class="separator:ae43da980abadee74b7dd62d2270d6cff"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abbc7ac9efb6de282513e41a8a8d81db7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classitk_1_1simple_1_1ProcessObject.html#ae243e549c853648a3e5600ed49b630ce">Self</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1ImageRegistrationMethod.html#abbc7ac9efb6de282513e41a8a8d81db7">SetOptimizerAsLBFGSB</a> (double gradientConvergenceTolerance=1e-5, unsigned int numberOfIterations=500, unsigned int maximumNumberOfCorrections=5, unsigned int maximumNumberOfFunctionEvaluations=2000, double costFunctionConvergenceFactor=1e+7, double lowerBound=std::numeric_limits&lt; double &gt;::min(), double upperBound=std::numeric_limits&lt; double &gt;::max(), bool trace=false)</td></tr>
+<tr class="memitem:abbc7ac9efb6de282513e41a8a8d81db7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classitk_1_1simple_1_1ProcessObject.html#ae243e549c853648a3e5600ed49b630ce">Self</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1ImageRegistrationMethod.html#abbc7ac9efb6de282513e41a8a8d81db7">SetOptimizerAsLBFGSB</a> (double gradientConvergenceTolerance=1<a class="elRef" href="https://www.itk.org/Doxygen/html/namespaceitk_1_1Math.html#af105436026645171db6a4a3000ee8482">e</a>-5, unsigned int numberOfIterations=500, unsigned int maximumNumberOfCorrections=5, unsigned int maximumNumberOfFunctionEvaluations=2000, double costFunctionConvergenceFactor=1<a class="elRef" href="https://www.itk.org/Doxygen/html/namespaceitk_1_1Math.html#af105436026645171db6a4a3000ee8482">e</a>+7, double lowerBound=std::numeric_limits&lt; double &gt;::min(), double upperBound=std::numeric_limits&lt; double &gt;::max(), bool trace=false)</td></tr>
 <tr class="memdesc:abbc7ac9efb6de282513e41a8a8d81db7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Limited memory Broyden Fletcher Goldfarb Shannon minimization with simple bounds.  <a href="classitk_1_1simple_1_1ImageRegistrationMethod.html#abbc7ac9efb6de282513e41a8a8d81db7">More...</a><br /></td></tr>
 <tr class="separator:abbc7ac9efb6de282513e41a8a8d81db7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a639ef731516c311b8d3c957bc8690f95"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classitk_1_1simple_1_1ProcessObject.html#ae243e549c853648a3e5600ed49b630ce">Self</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1ImageRegistrationMethod.html#a639ef731516c311b8d3c957bc8690f95">SetOptimizerAsOnePlusOneEvolutionary</a> (unsigned int numberOfIterations=100, double epsilon=1.5e-4, double initialRadius=1.01, double growthFactor=-1.0, double shrinkFactor=-1.0, unsigned int seed=<a class="el" href="namespaceitk_1_1simple.html#aa044c932b88a9e29176dafbf2a67ed10aa0288037bc3529e2fedbf3881487f38f">sitkWallClock</a>)</td></tr>
+<tr class="memitem:a639ef731516c311b8d3c957bc8690f95"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classitk_1_1simple_1_1ProcessObject.html#ae243e549c853648a3e5600ed49b630ce">Self</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1ImageRegistrationMethod.html#a639ef731516c311b8d3c957bc8690f95">SetOptimizerAsOnePlusOneEvolutionary</a> (unsigned int numberOfIterations=100, double epsilon=1.5<a class="elRef" href="https://www.itk.org/Doxygen/html/namespaceitk_1_1Math.html#af105436026645171db6a4a3000ee8482">e</a>-4, double initialRadius=1.01, double growthFactor=-1.0, double shrinkFactor=-1.0, unsigned int seed=<a class="el" href="namespaceitk_1_1simple.html#aa044c932b88a9e29176dafbf2a67ed10aa0288037bc3529e2fedbf3881487f38f">sitkWallClock</a>)</td></tr>
 <tr class="memdesc:a639ef731516c311b8d3c957bc8690f95"><td class="mdescLeft">&#160;</td><td class="mdescRight">1+1 evolutionary optimizer strategy.  <a href="classitk_1_1simple_1_1ImageRegistrationMethod.html#a639ef731516c311b8d3c957bc8690f95">More...</a><br /></td></tr>
 <tr class="separator:a639ef731516c311b8d3c957bc8690f95"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4ff0087be840b776dc46254e93d35693"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classitk_1_1simple_1_1ProcessObject.html#ae243e549c853648a3e5600ed49b630ce">Self</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1ImageRegistrationMethod.html#a4ff0087be840b776dc46254e93d35693">SetOptimizerAsPowell</a> (unsigned int numberOfIterations=100, unsigned int maximumLineIterations=100, double stepLength=1, double stepTolerance=1e-6, double valueTolerance=1e-6)</td></tr>
+<tr class="memitem:a4ff0087be840b776dc46254e93d35693"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classitk_1_1simple_1_1ProcessObject.html#ae243e549c853648a3e5600ed49b630ce">Self</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1ImageRegistrationMethod.html#a4ff0087be840b776dc46254e93d35693">SetOptimizerAsPowell</a> (unsigned int numberOfIterations=100, unsigned int maximumLineIterations=100, double stepLength=1, double stepTolerance=1<a class="elRef" href="https://www.itk.org/Doxygen/html/namespaceitk_1_1Math.html#af105436026645171db6a4a3000ee8482">e</a>-6, double valueTolerance=1<a class="elRef" href="https://www.itk.org/Doxygen/html/namespaceitk_1_1Math.html#af105436026645171db6a4a3000ee8482">e</a>-6)</td></tr>
 <tr class="memdesc:a4ff0087be840b776dc46254e93d35693"><td class="mdescLeft">&#160;</td><td class="mdescRight">Powell optimization using Brent line search.  <a href="classitk_1_1simple_1_1ImageRegistrationMethod.html#a4ff0087be840b776dc46254e93d35693">More...</a><br /></td></tr>
 <tr class="separator:a4ff0087be840b776dc46254e93d35693"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a313f10b51023516ff9a6fe89429dde72"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classitk_1_1simple_1_1ProcessObject.html#ae243e549c853648a3e5600ed49b630ce">Self</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1ImageRegistrationMethod.html#a313f10b51023516ff9a6fe89429dde72">SetOptimizerAsRegularStepGradientDescent</a> (double learningRate, double minStep, unsigned int numberOfIterations, double relaxationFactor=0.5, double gradientMagnitudeTolerance=1e-4, <a class="el" href="classitk_1_1simple_1_1ImageRegistrationMethod.html#ac174f5723bed30eb278ac0d79dc7b93e">EstimateLearningRateType</a> estimateLearningRate=<a class="el" href="classitk_1_1simple_1_1ImageRegistrationMethod.html#ac174f5723bed30eb278ac0d79dc7b93eabad67956be064662c2a0c879364a0ea0">Never</a>, double maximumStepSizeInPhysicalUnits=0.0)</td></tr>
+<tr class="memitem:a313f10b51023516ff9a6fe89429dde72"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classitk_1_1simple_1_1ProcessObject.html#ae243e549c853648a3e5600ed49b630ce">Self</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1ImageRegistrationMethod.html#a313f10b51023516ff9a6fe89429dde72">SetOptimizerAsRegularStepGradientDescent</a> (double learningRate, double minStep, unsigned int numberOfIterations, double relaxationFactor=0.5, double gradientMagnitudeTolerance=1<a class="elRef" href="https://www.itk.org/Doxygen/html/namespaceitk_1_1Math.html#af105436026645171db6a4a3000ee8482">e</a>-4, <a class="el" href="classitk_1_1simple_1_1ImageRegistrationMethod.html#ac174f5723bed30eb278ac0d79dc7b93e">EstimateLearningRateType</a> estimateLearningRate=<a class="el" href="classitk_1_1simple_1_1ImageRegistrationMethod.html#ac174f5723bed30eb278ac0d79dc7b93eabad67956be064662c2a0c879364a0ea0">Never</a>, double maximumStepSizeInPhysicalUnits=0.0)</td></tr>
 <tr class="memdesc:a313f10b51023516ff9a6fe89429dde72"><td class="mdescLeft">&#160;</td><td class="mdescRight">Regular Step Gradient descent optimizer.  <a href="classitk_1_1simple_1_1ImageRegistrationMethod.html#a313f10b51023516ff9a6fe89429dde72">More...</a><br /></td></tr>
 <tr class="separator:a313f10b51023516ff9a6fe89429dde72"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad445b588abd6985f7d8b0b81cd0cfb9e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classitk_1_1simple_1_1ProcessObject.html#ae243e549c853648a3e5600ed49b630ce">Self</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1ImageRegistrationMethod.html#ad445b588abd6985f7d8b0b81cd0cfb9e">SetOptimizerScales</a> (const std::vector&lt; double &gt; &amp;scales)</td></tr>
@@ -293,7 +293,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:a4f632865f7147f8688db9144a97dbb9c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set transform mapping to the fixed domain.  <a href="classitk_1_1simple_1_1ImageRegistrationMethod.html#a4f632865f7147f8688db9144a97dbb9c">More...</a><br /></td></tr>
 <tr class="separator:a4f632865f7147f8688db9144a97dbb9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr><td colspan="2"><div class="groupHeader"></div></td></tr>
-<tr class="memitem:a13bd9ce78df20aefd4e9b289967d283d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classitk_1_1simple_1_1ProcessObject.html#ae243e549c853648a3e5600ed49b630ce">Self</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1ImageRegistrationMethod.html#a13bd9ce78df20aefd4e9b289967d283d">SetVirtualDomain</a> (const std::vector&lt; uint32_t &gt; &amp;virtualSize, const std::vector&lt; double &gt; &amp;virtualOrigin, const std::vector&lt; double &gt; &amp;virtualSpacing, const std::vector&lt; double &gt; &amp;virtualDirection)</td></tr>
+<tr class="memitem:a13bd9ce78df20aefd4e9b289967d283d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classitk_1_1simple_1_1ProcessObject.html#ae243e549c853648a3e5600ed49b630ce">Self</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1ImageRegistrationMethod.html#a13bd9ce78df20aefd4e9b289967d283d">SetVirtualDomain</a> (const std::vector&lt; <a class="elRef" href="https://www.itk.org/Doxygen/html/namespaceitk.html#a575b8e3e1ee797dd1bbaf9724ed68f92">uint32_t</a> &gt; &amp;virtualSize, const std::vector&lt; double &gt; &amp;virtualOrigin, const std::vector&lt; double &gt; &amp;virtualSpacing, const std::vector&lt; double &gt; &amp;virtualDirection)</td></tr>
 <tr class="memdesc:a13bd9ce78df20aefd4e9b289967d283d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the virtual domain used for sampling.  <a href="classitk_1_1simple_1_1ImageRegistrationMethod.html#a13bd9ce78df20aefd4e9b289967d283d">More...</a><br /></td></tr>
 <tr class="separator:a13bd9ce78df20aefd4e9b289967d283d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8870229ec76c7d076f28dca543e63ec8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classitk_1_1simple_1_1ProcessObject.html#ae243e549c853648a3e5600ed49b630ce">Self</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1ImageRegistrationMethod.html#a8870229ec76c7d076f28dca543e63ec8">SetVirtualDomainFromImage</a> (const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> &amp;virtualImage)</td></tr>
@@ -350,7 +350,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:a5bcdeab30706d217e4545c95d3283ad5 inherit pub_methods_classitk_1_1simple_1_1ProcessObject"><td class="mdescLeft">&#160;</td><td class="mdescRight">Directly add a callback to observe an event.  <a href="classitk_1_1simple_1_1ProcessObject.html#a5bcdeab30706d217e4545c95d3283ad5">More...</a><br /></td></tr>
 <tr class="separator:a5bcdeab30706d217e4545c95d3283ad5 inherit pub_methods_classitk_1_1simple_1_1ProcessObject"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2199e5cca19b45d504676a595e1f6cfd inherit pub_methods_classitk_1_1simple_1_1ProcessObject"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1ProcessObject.html#a2199e5cca19b45d504676a595e1f6cfd">AddCommand</a> (<a class="el" href="namespaceitk_1_1simple.html#aa7399868984d99493c5a307cce373ace">itk::simple::EventEnum</a> event, <a class="el" href="classitk_1_1simple_1_1Command.html">itk::simple::Command</a> &amp;cmd)</td></tr>
-<tr class="memdesc:a2199e5cca19b45d504676a595e1f6cfd inherit pub_methods_classitk_1_1simple_1_1ProcessObject"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a <a class="el" href="classitk_1_1simple_1_1Command.html" title="An implementation of the Command design pattern for callback.">Command</a> Object to observer the event.  <a href="classitk_1_1simple_1_1ProcessObject.html#a2199e5cca19b45d504676a595e1f6cfd">More...</a><br /></td></tr>
+<tr class="memdesc:a2199e5cca19b45d504676a595e1f6cfd inherit pub_methods_classitk_1_1simple_1_1ProcessObject"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a <a class="el" href="classitk_1_1simple_1_1Command.html" title="An implementation of the Command design pattern for callback.">Command</a> <a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1Object.html">Object</a> to observer the event.  <a href="classitk_1_1simple_1_1ProcessObject.html#a2199e5cca19b45d504676a595e1f6cfd">More...</a><br /></td></tr>
 <tr class="separator:a2199e5cca19b45d504676a595e1f6cfd inherit pub_methods_classitk_1_1simple_1_1ProcessObject"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a49e54c03a8cf639ecf01db730518285b inherit pub_methods_classitk_1_1simple_1_1ProcessObject"><td class="memItemLeft" align="right" valign="top">virtual float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1ProcessObject.html#a49e54c03a8cf639ecf01db730518285b">GetProgress</a> () const</td></tr>
 <tr class="memdesc:a49e54c03a8cf639ecf01db730518285b inherit pub_methods_classitk_1_1simple_1_1ProcessObject"><td class="mdescLeft">&#160;</td><td class="mdescRight">An Active Measurement of the progress of execution.  <a href="classitk_1_1simple_1_1ProcessObject.html#a49e54c03a8cf639ecf01db730518285b">More...</a><br /></td></tr>
@@ -384,18 +384,18 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
-<tr class="memitem:a9ab8f5c96cc66245ff47fa821590d182"><td class="memItemLeft" align="right" valign="top">unsigned long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1ImageRegistrationMethod.html#a9ab8f5c96cc66245ff47fa821590d182">AddITKObserver</a> (const itk::EventObject &amp;, itk::Command *) override</td></tr>
+<tr class="memitem:a9ab8f5c96cc66245ff47fa821590d182"><td class="memItemLeft" align="right" valign="top">unsigned long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1ImageRegistrationMethod.html#a9ab8f5c96cc66245ff47fa821590d182">AddITKObserver</a> (const <a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1EventObject.html">itk::EventObject</a> &amp;, <a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1Command.html">itk::Command</a> *) override</td></tr>
 <tr class="separator:a9ab8f5c96cc66245ff47fa821590d182"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a68a59531b0c20596f202d4e6ead68ab7"><td class="memTemplParams" colspan="2">template&lt;class TImageType &gt; </td></tr>
-<tr class="memitem:a68a59531b0c20596f202d4e6ead68ab7"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classitk_1_1ImageToImageMetricv4.html">itk::ImageToImageMetricv4</a>&lt; TImageType, TImageType, TImageType, double, <a class="el" href="classitk_1_1DefaultImageToImageMetricTraitsv4.html">itk::DefaultImageToImageMetricTraitsv4</a>&lt; TImageType, TImageType, TImageType, double &gt; &gt; *&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1ImageRegistrationMethod.html#a68a59531b0c20596f202d4e6ead68ab7">CreateMetric</a> ()</td></tr>
+<tr class="memitem:a68a59531b0c20596f202d4e6ead68ab7"><td class="memTemplItemLeft" align="right" valign="top"><a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1ImageToImageMetricv4.html">itk::ImageToImageMetricv4</a>&lt; TImageType, TImageType, TImageType, double, <a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1DefaultImageToImageMetricTraitsv4.html">itk::DefaultImageToImageMetricTraitsv4</a>&lt; TImageType, TImageType, TImageType, double &gt; &gt; *&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1ImageRegistrationMethod.html#a68a59531b0c20596f202d4e6ead68ab7">CreateMetric</a> ()</td></tr>
 <tr class="separator:a68a59531b0c20596f202d4e6ead68ab7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab03e3c28f64cca62aabbae85329cffdf"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classitk_1_1ObjectToObjectOptimizerBaseTemplate.html">itk::ObjectToObjectOptimizerBaseTemplate</a>&lt; double &gt; *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1ImageRegistrationMethod.html#ab03e3c28f64cca62aabbae85329cffdf">CreateOptimizer</a> (unsigned int numberOfTransformParameters)</td></tr>
+<tr class="memitem:ab03e3c28f64cca62aabbae85329cffdf"><td class="memItemLeft" align="right" valign="top"><a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1ObjectToObjectOptimizerBaseTemplate.html">itk::ObjectToObjectOptimizerBaseTemplate</a>&lt; double &gt; *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1ImageRegistrationMethod.html#ab03e3c28f64cca62aabbae85329cffdf">CreateOptimizer</a> (unsigned int numberOfTransformParameters)</td></tr>
 <tr class="separator:ab03e3c28f64cca62aabbae85329cffdf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6ebe121b2035fea7d4e7f2cba9347718"><td class="memTemplParams" colspan="2">template&lt;typename TMetric &gt; </td></tr>
-<tr class="memitem:a6ebe121b2035fea7d4e7f2cba9347718"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classitk_1_1RegistrationParameterScalesEstimator.html">itk::RegistrationParameterScalesEstimator</a>&lt; TMetric &gt; *&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1ImageRegistrationMethod.html#a6ebe121b2035fea7d4e7f2cba9347718">CreateScalesEstimator</a> ()</td></tr>
+<tr class="memitem:a6ebe121b2035fea7d4e7f2cba9347718"><td class="memTemplItemLeft" align="right" valign="top"><a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1RegistrationParameterScalesEstimator.html">itk::RegistrationParameterScalesEstimator</a>&lt; TMetric &gt; *&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1ImageRegistrationMethod.html#a6ebe121b2035fea7d4e7f2cba9347718">CreateScalesEstimator</a> ()</td></tr>
 <tr class="separator:a6ebe121b2035fea7d4e7f2cba9347718"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab9e4b7f464600a9eedeb80dd3c687d88"><td class="memTemplParams" colspan="2">template&lt;unsigned int VDimension&gt; </td></tr>
-<tr class="memitem:ab9e4b7f464600a9eedeb80dd3c687d88"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classitk_1_1SpatialObject.html">itk::SpatialObject</a>&lt; VDimension &gt; *&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1ImageRegistrationMethod.html#ab9e4b7f464600a9eedeb80dd3c687d88">CreateSpatialObjectMask</a> (const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> &amp;mask)</td></tr>
+<tr class="memitem:ab9e4b7f464600a9eedeb80dd3c687d88"><td class="memTemplItemLeft" align="right" valign="top"><a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1SpatialObject.html">itk::SpatialObject</a>&lt; VDimension &gt; *&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1ImageRegistrationMethod.html#ab9e4b7f464600a9eedeb80dd3c687d88">CreateSpatialObjectMask</a> (const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> &amp;mask)</td></tr>
 <tr class="separator:ab9e4b7f464600a9eedeb80dd3c687d88"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae8a78c27be845f7a52bd943da4b5e451"><td class="memTemplParams" colspan="2">template&lt;typename TTransformAdaptorPointer , typename TRegistrationMethod &gt; </td></tr>
 <tr class="memitem:ae8a78c27be845f7a52bd943da4b5e451"><td class="memTemplItemLeft" align="right" valign="top">std::vector&lt; TTransformAdaptorPointer &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1ImageRegistrationMethod.html#ae8a78c27be845f7a52bd943da4b5e451">CreateTransformParametersAdaptor</a> (TRegistrationMethod *method)</td></tr>
@@ -408,15 +408,15 @@ Protected Member Functions</h2></td></tr>
 <tr class="separator:a9693e788c337621628258e1a176c1c90"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8fd1a983c3879e96eb19b34a94f61ab6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1ImageRegistrationMethod.html#a8fd1a983c3879e96eb19b34a94f61ab6">OnActiveProcessDelete</a> () noexcept override</td></tr>
 <tr class="separator:a8fd1a983c3879e96eb19b34a94f61ab6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a43dddaf1ac106f7a28253c7f5f173419"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1ImageRegistrationMethod.html#a43dddaf1ac106f7a28253c7f5f173419">PreUpdate</a> (itk::ProcessObject *p) override</td></tr>
+<tr class="memitem:a43dddaf1ac106f7a28253c7f5f173419"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1ImageRegistrationMethod.html#a43dddaf1ac106f7a28253c7f5f173419">PreUpdate</a> (<a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1ProcessObject.html">itk::ProcessObject</a> *p) override</td></tr>
 <tr class="separator:a43dddaf1ac106f7a28253c7f5f173419"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab285f367ad4223a044eaed205fdf1b54"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1ImageRegistrationMethod.html#ab285f367ad4223a044eaed205fdf1b54">RemoveITKObserver</a> (<a class="el" href="structitk_1_1simple_1_1ProcessObject_1_1EventCommand.html">EventCommand</a> &amp;e) override</td></tr>
+<tr class="memitem:ab285f367ad4223a044eaed205fdf1b54"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1ImageRegistrationMethod.html#ab285f367ad4223a044eaed205fdf1b54">RemoveITKObserver</a> (<a class="el" href="structitk_1_1simple_1_1ProcessObject_1_1EventCommand.html">EventCommand</a> &amp;<a class="elRef" href="https://www.itk.org/Doxygen/html/namespaceitk_1_1Math.html#af105436026645171db6a4a3000ee8482">e</a>) override</td></tr>
 <tr class="separator:ab285f367ad4223a044eaed205fdf1b54"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa9b448d11d839ffbbbd6e27878edac32"><td class="memTemplParams" colspan="2">template&lt;class TImageType &gt; </td></tr>
-<tr class="memitem:aa9b448d11d839ffbbbd6e27878edac32"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1ImageRegistrationMethod.html#aa9b448d11d839ffbbbd6e27878edac32">SetupMetric</a> (<a class="el" href="classitk_1_1ImageToImageMetricv4.html">itk::ImageToImageMetricv4</a>&lt; TImageType, TImageType, TImageType, double, <a class="el" href="classitk_1_1DefaultImageToImageMetricTraitsv4.html">itk::DefaultImageToImageMetricTraitsv4</a>&lt; TImageType, TImageType, TImageType, double &gt; &gt; *, const TImageType *, const TImageType *)</td></tr>
+<tr class="memitem:aa9b448d11d839ffbbbd6e27878edac32"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1ImageRegistrationMethod.html#aa9b448d11d839ffbbbd6e27878edac32">SetupMetric</a> (<a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1ImageToImageMetricv4.html">itk::ImageToImageMetricv4</a>&lt; TImageType, TImageType, TImageType, double, <a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1DefaultImageToImageMetricTraitsv4.html">itk::DefaultImageToImageMetricTraitsv4</a>&lt; TImageType, TImageType, TImageType, double &gt; &gt; *, const TImageType *, const TImageType *)</td></tr>
 <tr class="separator:aa9b448d11d839ffbbbd6e27878edac32"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_methods_classitk_1_1simple_1_1ProcessObject"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_classitk_1_1simple_1_1ProcessObject')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="classitk_1_1simple_1_1ProcessObject.html">itk::simple::ProcessObject</a></td></tr>
-<tr class="memitem:ac6e7565c31a709c60f0c7b35ba3c0674 inherit pro_methods_classitk_1_1simple_1_1ProcessObject"><td class="memItemLeft" align="right" valign="top">virtual itk::ProcessObject *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1ProcessObject.html#ac6e7565c31a709c60f0c7b35ba3c0674">GetActiveProcess</a> ()</td></tr>
+<tr class="memitem:ac6e7565c31a709c60f0c7b35ba3c0674 inherit pro_methods_classitk_1_1simple_1_1ProcessObject"><td class="memItemLeft" align="right" valign="top">virtual <a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1ProcessObject.html">itk::ProcessObject</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1ProcessObject.html#ac6e7565c31a709c60f0c7b35ba3c0674">GetActiveProcess</a> ()</td></tr>
 <tr class="separator:ac6e7565c31a709c60f0c7b35ba3c0674 inherit pro_methods_classitk_1_1simple_1_1ProcessObject"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa1b035e3e262391d3e89409efcefaa53 inherit pro_methods_classitk_1_1simple_1_1ProcessObject"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1ProcessObject.html#aa1b035e3e262391d3e89409efcefaa53">onCommandDelete</a> (const <a class="el" href="classitk_1_1simple_1_1Command.html">itk::simple::Command</a> *cmd) noexcept</td></tr>
 <tr class="separator:aa1b035e3e262391d3e89409efcefaa53 inherit pro_methods_classitk_1_1simple_1_1ProcessObject"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -486,7 +486,7 @@ Private Types</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
-<tr class="memitem:a515e04555f8338f9541f85fd5aa808c7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classitk_1_1ObjectToObjectOptimizerBaseTemplate.html">itk::ObjectToObjectOptimizerBaseTemplate</a>&lt; double &gt; *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1ImageRegistrationMethod.html#a515e04555f8338f9541f85fd5aa808c7">m_ActiveOptimizer</a></td></tr>
+<tr class="memitem:a515e04555f8338f9541f85fd5aa808c7"><td class="memItemLeft" align="right" valign="top"><a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1ObjectToObjectOptimizerBaseTemplate.html">itk::ObjectToObjectOptimizerBaseTemplate</a>&lt; double &gt; *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1ImageRegistrationMethod.html#a515e04555f8338f9541f85fd5aa808c7">m_ActiveOptimizer</a></td></tr>
 <tr class="separator:a515e04555f8338f9541f85fd5aa808c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad919ae95d65d7995c74f70efb267a93d"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="classitk_1_1simple_1_1detail_1_1MemberFunctionFactory.html">detail::MemberFunctionFactory</a>&lt; <a class="el" href="classitk_1_1simple_1_1ImageRegistrationMethod.html#a192ea994e5c38c8bd12b61b557909b55">EvaluateMemberFunctionType</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1ImageRegistrationMethod.html#ad919ae95d65d7995c74f70efb267a93d">m_EvaluateMemberFactory</a></td></tr>
 <tr class="separator:ad919ae95d65d7995c74f70efb267a93d"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -530,7 +530,7 @@ Private Attributes</h2></td></tr>
 <tr class="separator:a7832f05d4d2002dc4001a07beeb878d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a21dd15173cbe618a166e30c11c5aa4d5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classitk_1_1simple_1_1Transform.html">Transform</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1ImageRegistrationMethod.html#a21dd15173cbe618a166e30c11c5aa4d5">m_MovingInitialTransform</a></td></tr>
 <tr class="separator:a21dd15173cbe618a166e30c11c5aa4d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a90fb17cc93cedf485dd9b105449bf96a"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1ImageRegistrationMethod.html#a90fb17cc93cedf485dd9b105449bf96a">m_NumberOfValidPoints</a></td></tr>
+<tr class="memitem:a90fb17cc93cedf485dd9b105449bf96a"><td class="memItemLeft" align="right" valign="top"><a class="elRef" href="https://www.itk.org/Doxygen/html/namespaceitk.html#a6678d19d4b40c05a613784037bc2bd00">uint64_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1ImageRegistrationMethod.html#a90fb17cc93cedf485dd9b105449bf96a">m_NumberOfValidPoints</a></td></tr>
 <tr class="separator:a90fb17cc93cedf485dd9b105449bf96a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4e488fdfa272ef1b7d50607abeb71ed1"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1ImageRegistrationMethod.html#a4e488fdfa272ef1b7d50607abeb71ed1">m_OptimizerConvergenceMinimumValue</a></td></tr>
 <tr class="separator:a4e488fdfa272ef1b7d50607abeb71ed1"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -630,7 +630,7 @@ Private Attributes</h2></td></tr>
 <tr class="separator:a47800c260b2fe91bfa72b1e80806ea3b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ace1ad475a4f6709d439c4b64e1a62e7d"><td class="memItemLeft" align="right" valign="top">std::function&lt; unsigned int()&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1ImageRegistrationMethod.html#ace1ad475a4f6709d439c4b64e1a62e7d">m_pfGetCurrentLevel</a></td></tr>
 <tr class="separator:ace1ad475a4f6709d439c4b64e1a62e7d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abb8102a6661511630d76aa9f9bd77df2"><td class="memItemLeft" align="right" valign="top">std::function&lt; uint64_t()&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1ImageRegistrationMethod.html#abb8102a6661511630d76aa9f9bd77df2">m_pfGetMetricNumberOfValidPoints</a></td></tr>
+<tr class="memitem:abb8102a6661511630d76aa9f9bd77df2"><td class="memItemLeft" align="right" valign="top">std::function&lt; <a class="elRef" href="https://www.itk.org/Doxygen/html/namespaceitk.html#a6678d19d4b40c05a613784037bc2bd00">uint64_t</a>()&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1ImageRegistrationMethod.html#abb8102a6661511630d76aa9f9bd77df2">m_pfGetMetricNumberOfValidPoints</a></td></tr>
 <tr class="separator:abb8102a6661511630d76aa9f9bd77df2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae44c93cbd62f854eb78d22c76e7c37c4"><td class="memItemLeft" align="right" valign="top">std::function&lt; double()&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1ImageRegistrationMethod.html#ae44c93cbd62f854eb78d22c76e7c37c4">m_pfGetMetricValue</a></td></tr>
 <tr class="separator:ae44c93cbd62f854eb78d22c76e7c37c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -646,7 +646,7 @@ Private Attributes</h2></td></tr>
 <tr class="separator:a571ed853d861eaf7492ec868ab8de232"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad6fa2359904f3a967cd1eef6b9b11195"><td class="memItemLeft" align="right" valign="top">std::function&lt; std::string()&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1ImageRegistrationMethod.html#ad6fa2359904f3a967cd1eef6b9b11195">m_pfGetOptimizerStopConditionDescription</a></td></tr>
 <tr class="separator:ad6fa2359904f3a967cd1eef6b9b11195"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a42b8c0ec375dd91297446b1c3caf77d3"><td class="memItemLeft" align="right" valign="top">std::function&lt; void(<a class="el" href="namespaceitk.html#aad7d99b5b2fe2dbf1d5e67a1917bf40a">itk::TransformBase</a> *outTransform)&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1ImageRegistrationMethod.html#a42b8c0ec375dd91297446b1c3caf77d3">m_pfUpdateWithBestValue</a></td></tr>
+<tr class="memitem:a42b8c0ec375dd91297446b1c3caf77d3"><td class="memItemLeft" align="right" valign="top">std::function&lt; void(<a class="elRef" href="https://www.itk.org/Doxygen/html/namespaceitk.html#aad7d99b5b2fe2dbf1d5e67a1917bf40a">itk::TransformBase</a> *outTransform)&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1ImageRegistrationMethod.html#a42b8c0ec375dd91297446b1c3caf77d3">m_pfUpdateWithBestValue</a></td></tr>
 <tr class="separator:a42b8c0ec375dd91297446b1c3caf77d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a69d360bdc8de44e52d9a94677370c36a"><td class="memItemLeft" align="right" valign="top">std::vector&lt; unsigned int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1ImageRegistrationMethod.html#a69d360bdc8de44e52d9a94677370c36a">m_ShrinkFactorsPerLevel</a></td></tr>
 <tr class="separator:a69d360bdc8de44e52d9a94677370c36a"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -662,7 +662,7 @@ Private Attributes</h2></td></tr>
 <tr class="separator:a598ecef8e9b221e826f6bebd4c1e96cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a62c6d487473a39312e90ec7ffc29cedb"><td class="memItemLeft" align="right" valign="top">std::vector&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1ImageRegistrationMethod.html#a62c6d487473a39312e90ec7ffc29cedb">m_VirtualDomainOrigin</a></td></tr>
 <tr class="separator:a62c6d487473a39312e90ec7ffc29cedb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af42b2c6c19e8c5366fa7353fcf3f8723"><td class="memItemLeft" align="right" valign="top">std::vector&lt; uint32_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1ImageRegistrationMethod.html#af42b2c6c19e8c5366fa7353fcf3f8723">m_VirtualDomainSize</a></td></tr>
+<tr class="memitem:af42b2c6c19e8c5366fa7353fcf3f8723"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="elRef" href="https://www.itk.org/Doxygen/html/namespaceitk.html#a575b8e3e1ee797dd1bbaf9724ed68f92">uint32_t</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1ImageRegistrationMethod.html#af42b2c6c19e8c5366fa7353fcf3f8723">m_VirtualDomainSize</a></td></tr>
 <tr class="separator:af42b2c6c19e8c5366fa7353fcf3f8723"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1cd68cc7b8c55e2959ec3b5d61c0ff79"><td class="memItemLeft" align="right" valign="top">std::vector&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1ImageRegistrationMethod.html#a1cd68cc7b8c55e2959ec3b5d61c0ff79">m_VirtualDomainSpacing</a></td></tr>
 <tr class="separator:a1cd68cc7b8c55e2959ec3b5d61c0ff79"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -719,12 +719,12 @@ Additional Inherited Members</h2></td></tr>
 <tr class="memitem:a67907b08b54629fd19450469a51634a3 inherit pro_static_methods_classitk_1_1simple_1_1ProcessObject"><td class="memTemplItemLeft" align="right" valign="top">static TImageType::ConstPointer&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1ProcessObject.html#a67907b08b54629fd19450469a51634a3">CastImageToITK</a> (const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> &amp;img)</td></tr>
 <tr class="separator:a67907b08b54629fd19450469a51634a3 inherit pro_static_methods_classitk_1_1simple_1_1ProcessObject"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af780ef8c7fc1b712f585bbb04deb6221 inherit pro_static_methods_classitk_1_1simple_1_1ProcessObject"><td class="memTemplParams" colspan="2">template&lt;class TPixelType , unsigned int VImageDimension, unsigned int VLength, template&lt; typename, unsigned int &gt; class TVector&gt; </td></tr>
-<tr class="memitem:af780ef8c7fc1b712f585bbb04deb6221 inherit pro_static_methods_classitk_1_1simple_1_1ProcessObject"><td class="memTemplItemLeft" align="right" valign="top">static <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1ProcessObject.html#af780ef8c7fc1b712f585bbb04deb6221">CastITKToImage</a> (<a class="el" href="classitk_1_1Image.html">itk::Image</a>&lt; TVector&lt; TPixelType, VLength &gt;, VImageDimension &gt; *img)</td></tr>
+<tr class="memitem:af780ef8c7fc1b712f585bbb04deb6221 inherit pro_static_methods_classitk_1_1simple_1_1ProcessObject"><td class="memTemplItemLeft" align="right" valign="top">static <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1ProcessObject.html#af780ef8c7fc1b712f585bbb04deb6221">CastITKToImage</a> (<a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1Image.html">itk::Image</a>&lt; TVector&lt; TPixelType, VLength &gt;, VImageDimension &gt; *img)</td></tr>
 <tr class="separator:af780ef8c7fc1b712f585bbb04deb6221 inherit pro_static_methods_classitk_1_1simple_1_1ProcessObject"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adaf3d80da77d09da69a35af6dfadf234 inherit pro_static_methods_classitk_1_1simple_1_1ProcessObject"><td class="memTemplParams" colspan="2">template&lt;class TImageType &gt; </td></tr>
 <tr class="memitem:adaf3d80da77d09da69a35af6dfadf234 inherit pro_static_methods_classitk_1_1simple_1_1ProcessObject"><td class="memTemplItemLeft" align="right" valign="top">static <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1ProcessObject.html#adaf3d80da77d09da69a35af6dfadf234">CastITKToImage</a> (TImageType *img)</td></tr>
 <tr class="separator:adaf3d80da77d09da69a35af6dfadf234 inherit pro_static_methods_classitk_1_1simple_1_1ProcessObject"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9f41bd863907f43953fc7bf867356256 inherit pro_static_methods_classitk_1_1simple_1_1ProcessObject"><td class="memItemLeft" align="right" valign="top">static const itk::EventObject &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1ProcessObject.html#a9f41bd863907f43953fc7bf867356256">GetITKEventObject</a> (<a class="el" href="namespaceitk_1_1simple.html#aa7399868984d99493c5a307cce373ace">EventEnum</a> e)</td></tr>
+<tr class="memitem:a9f41bd863907f43953fc7bf867356256 inherit pro_static_methods_classitk_1_1simple_1_1ProcessObject"><td class="memItemLeft" align="right" valign="top">static const <a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1EventObject.html">itk::EventObject</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1ProcessObject.html#a9f41bd863907f43953fc7bf867356256">GetITKEventObject</a> (<a class="el" href="namespaceitk_1_1simple.html#aa7399868984d99493c5a307cce373ace">EventEnum</a> <a class="elRef" href="https://www.itk.org/Doxygen/html/namespaceitk_1_1Math.html#af105436026645171db6a4a3000ee8482">e</a>)</td></tr>
 <tr class="separator:a9f41bd863907f43953fc7bf867356256 inherit pro_static_methods_classitk_1_1simple_1_1ProcessObject"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0a7bd7ac012339b7d4ed0fc003632fda inherit pro_static_methods_classitk_1_1simple_1_1ProcessObject"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
 <tr class="memitem:a0a7bd7ac012339b7d4ed0fc003632fda inherit pro_static_methods_classitk_1_1simple_1_1ProcessObject"><td class="memTemplItemLeft" align="right" valign="top">static std::ostream &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1ProcessObject.html#a0a7bd7ac012339b7d4ed0fc003632fda">ToStringHelper</a> (std::ostream &amp;os, const T &amp;v)</td></tr>
@@ -744,11 +744,11 @@ Additional Inherited Members</h2></td></tr>
 <li>smoothing of the fixed and moving images</li>
 </ul>
 <p>Multiple stages are handled by linking multiple instantiations of this class where the output transform is added to the optional composite transform input.</p>
-<dl class="section see"><dt>See also</dt><dd>itk::ImageRegistrationMethodv4 </dd>
+<dl class="section see"><dt>See also</dt><dd><a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1ImageRegistrationMethodv4.html">itk::ImageRegistrationMethodv4</a> </dd>
 <dd>
-<a class="el" href="classitk_1_1ImageToImageMetricv4.html">itk::ImageToImageMetricv4</a> </dd>
+<a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1ImageToImageMetricv4.html">itk::ImageToImageMetricv4</a> </dd>
 <dd>
-<a class="el" href="classitk_1_1ObjectToObjectOptimizerBaseTemplate.html">itk::ObjectToObjectOptimizerBaseTemplate</a> </dd></dl>
+<a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1ObjectToObjectOptimizerBaseTemplate.html">itk::ObjectToObjectOptimizerBaseTemplate</a> </dd></dl>
 <dl class="section examples"><dt>Examples</dt><dd><a class="el" href="ImageRegistrationMethod1_2ImageRegistrationMethod1_8cxx-example.html#_a1">ImageRegistrationMethod1/ImageRegistrationMethod1.cxx</a>, <a class="el" href="ImageRegistrationMethod2_2ImageRegistrationMethod2_8cxx-example.html#_a1">ImageRegistrationMethod2/ImageRegistrationMethod2.cxx</a>, <a class="el" href="ImageRegistrationMethodBSpline1_2ImageRegistrationMethodBSpline1_8cxx-example.html#_a1">ImageRegistrationMethodBSpline1/ImageRegistrationMethodBSpline1.cxx</a>, <a class="el" href="ImageRegistrationMethodBSpline3_2ImageRegistrationMethodBSpline3_8cxx-example.html#_a1">ImageRegistrationMethodBSpline3/ImageRegistrationMethodBSpline3.cxx</a>, and <a class="el" href="ImageRegistrationMethodDisplacement1_2ImageRegistrationMethodDisplacement1_8cxx-example.html#_a1">ImageRegistrationMethodDisplacement1/ImageRegistrationMethodDisplacement1.cxx</a>.</dd>
 </dl>
 
@@ -854,7 +854,7 @@ Additional Inherited Members</h2></td></tr>
 <tr><td class="fieldname"><a id="ac174f5723bed30eb278ac0d79dc7b93eaa6230360d9bff56331d5f6544f3c31ec"></a>EachIteration&#160;</td><td class="fielddoc"><p>Estimate learning rate at each iteration. </p>
 </td></tr>
 </table>
-<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="ImageRegistrationMethodDisplacement1_2ImageRegistrationMethodDisplacement1_8cxx-example.html#a14">ImageRegistrationMethodDisplacement1/ImageRegistrationMethodDisplacement1.cxx</a>.</dd>
+<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="ImageRegistrationMethodDisplacement1_2ImageRegistrationMethodDisplacement1_8cxx-example.html#a15">ImageRegistrationMethodDisplacement1/ImageRegistrationMethodDisplacement1.cxx</a>.</dd>
 </dl>
 
 <p class="definition">Definition at line <a class="el" href="sitkImageRegistrationMethod_8h_source.html#l00255">255</a> of file <a class="el" href="sitkImageRegistrationMethod_8h_source.html">sitkImageRegistrationMethod.h</a>.</p>
@@ -1036,13 +1036,13 @@ Additional Inherited Members</h2></td></tr>
         <tr>
           <td class="memname">unsigned long itk::simple::ImageRegistrationMethod::AddITKObserver </td>
           <td>(</td>
-          <td class="paramtype">const itk::EventObject &amp;&#160;</td>
+          <td class="paramtype">const <a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1EventObject.html">itk::EventObject</a> &amp;&#160;</td>
           <td class="paramname">, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">itk::Command *&#160;</td>
+          <td class="paramtype"><a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1Command.html">itk::Command</a> *&#160;</td>
           <td class="paramname">&#160;</td>
         </tr>
         <tr>
@@ -1074,7 +1074,7 @@ template&lt;class TImageType &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classitk_1_1ImageToImageMetricv4.html">itk::ImageToImageMetricv4</a>&lt;TImageType, TImageType, TImageType, double, <a class="el" href="classitk_1_1DefaultImageToImageMetricTraitsv4.html">itk::DefaultImageToImageMetricTraitsv4</a>&lt; TImageType, TImageType, TImageType, double &gt; &gt;* itk::simple::ImageRegistrationMethod::CreateMetric </td>
+          <td class="memname"><a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1ImageToImageMetricv4.html">itk::ImageToImageMetricv4</a>&lt;TImageType, TImageType, TImageType, double, <a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1DefaultImageToImageMetricTraitsv4.html">itk::DefaultImageToImageMetricTraitsv4</a>&lt; TImageType, TImageType, TImageType, double &gt; &gt;* itk::simple::ImageRegistrationMethod::CreateMetric </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -1099,7 +1099,7 @@ template&lt;class TImageType &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classitk_1_1ObjectToObjectOptimizerBaseTemplate.html">itk::ObjectToObjectOptimizerBaseTemplate</a>&lt;double&gt;* itk::simple::ImageRegistrationMethod::CreateOptimizer </td>
+          <td class="memname"><a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1ObjectToObjectOptimizerBaseTemplate.html">itk::ObjectToObjectOptimizerBaseTemplate</a>&lt;double&gt;* itk::simple::ImageRegistrationMethod::CreateOptimizer </td>
           <td>(</td>
           <td class="paramtype">unsigned int&#160;</td>
           <td class="paramname"><em>numberOfTransformParameters</em></td><td>)</td>
@@ -1127,7 +1127,7 @@ template&lt;typename TMetric &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classitk_1_1RegistrationParameterScalesEstimator.html">itk::RegistrationParameterScalesEstimator</a>&lt; TMetric &gt;* itk::simple::ImageRegistrationMethod::CreateScalesEstimator </td>
+          <td class="memname"><a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1RegistrationParameterScalesEstimator.html">itk::RegistrationParameterScalesEstimator</a>&lt; TMetric &gt;* itk::simple::ImageRegistrationMethod::CreateScalesEstimator </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -1154,7 +1154,7 @@ template&lt;unsigned int VDimension&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classitk_1_1SpatialObject.html">itk::SpatialObject</a>&lt;VDimension&gt;* itk::simple::ImageRegistrationMethod::CreateSpatialObjectMask </td>
+          <td class="memname"><a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1SpatialObject.html">itk::SpatialObject</a>&lt;VDimension&gt;* itk::simple::ImageRegistrationMethod::CreateSpatialObjectMask </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> &amp;&#160;</td>
           <td class="paramname"><em>mask</em></td><td>)</td>
@@ -1263,7 +1263,7 @@ template&lt;class TImage &gt; </div>
 </div><div class="memdoc">
 
 <p>Optimize the configured registration problem. </p>
-<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="ImageRegistrationMethod1_2ImageRegistrationMethod1_8cxx-example.html#a16">ImageRegistrationMethod1/ImageRegistrationMethod1.cxx</a>, <a class="el" href="ImageRegistrationMethod2_2ImageRegistrationMethod2_8cxx-example.html#a18">ImageRegistrationMethod2/ImageRegistrationMethod2.cxx</a>, <a class="el" href="ImageRegistrationMethodBSpline1_2ImageRegistrationMethodBSpline1_8cxx-example.html#a18">ImageRegistrationMethodBSpline1/ImageRegistrationMethodBSpline1.cxx</a>, <a class="el" href="ImageRegistrationMethodBSpline3_2ImageRegistrationMethodBSpline3_8cxx-example.html#a21">ImageRegistrationMethodBSpline3/ImageRegistrationMethodBSpline3.cxx</a>, and <a class="el" href="ImageRegistrationMethodDisplacement1_2ImageRegistrationMethodDisplacement1_8cxx-example.html#a24">ImageRegistrationMethodDisplacement1/ImageRegistrationMethodDisplacement1.cxx</a>.</dd>
+<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="ImageRegistrationMethod1_2ImageRegistrationMethod1_8cxx-example.html#a16">ImageRegistrationMethod1/ImageRegistrationMethod1.cxx</a>, <a class="el" href="ImageRegistrationMethod2_2ImageRegistrationMethod2_8cxx-example.html#a19">ImageRegistrationMethod2/ImageRegistrationMethod2.cxx</a>, <a class="el" href="ImageRegistrationMethodBSpline1_2ImageRegistrationMethodBSpline1_8cxx-example.html#a19">ImageRegistrationMethodBSpline1/ImageRegistrationMethodBSpline1.cxx</a>, <a class="el" href="ImageRegistrationMethodBSpline3_2ImageRegistrationMethodBSpline3_8cxx-example.html#a22">ImageRegistrationMethodBSpline3/ImageRegistrationMethodBSpline3.cxx</a>, and <a class="el" href="ImageRegistrationMethodDisplacement1_2ImageRegistrationMethodDisplacement1_8cxx-example.html#a25">ImageRegistrationMethodDisplacement1/ImageRegistrationMethodDisplacement1.cxx</a>.</dd>
 </dl>
 
 </div>
@@ -1349,7 +1349,7 @@ template&lt;class TImage &gt; </div>
 <p>Set transform mapping to the fixed domain. </p>
 <p>This transform is used to map from the virtual domain to the fixed image domain.</p>
 <p>By default this transform is an identity, and not used.</p>
-<dl class="section see"><dt>See also</dt><dd>itk::ImageRegistrationMethodv4::SetFixedInitialTransform </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1ImageRegistrationMethodv4.html#ad885a8c8c4e08447be32ffcc0badd423">itk::ImageRegistrationMethodv4::SetFixedInitialTransform</a> </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="sitkImageRegistrationMethod_8h_source.html#l00198">198</a> of file <a class="el" href="sitkImageRegistrationMethod_8h_source.html">sitkImageRegistrationMethod.h</a>.</p>
 
@@ -1381,7 +1381,7 @@ template&lt;class TImage &gt; </div>
 <p>Set the initial transform and parameters to optimize. </p>
 <p>This transform is applied before the MovingInitialTransform, to map from the virtual image domain to the moving image domain.</p>
 <p>If the inPlace flag is explicitly false, then the ITK registration will internally make a copy, and the transform will not be accessible during registration. Otherwise, the accessible InitialTransform value will be the same object used during registration, and will have a modified value upon completion.</p>
-<dl class="section see"><dt>See also</dt><dd>itk::ImageRegistrationMethodv4::SetInitialTransform </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1ImageRegistrationMethodv4.html#a34f0656aaaa1d50c97e5a9c85ea39563">itk::ImageRegistrationMethodv4::SetInitialTransform</a> </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="sitkImageRegistrationMethod_8h_source.html#l00142">142</a> of file <a class="el" href="sitkImageRegistrationMethod_8h_source.html">sitkImageRegistrationMethod.h</a>.</p>
 
@@ -1413,7 +1413,7 @@ template&lt;class TImage &gt; </div>
 <p>Set the initial transform and parameters to optimize. </p>
 <p>This transform is applied before the MovingInitialTransform, to map from the virtual image domain to the moving image domain.</p>
 <p>If the inPlace flag is explicitly false, then the ITK registration will internally make a copy, and the transform will not be accessible during registration. Otherwise, the accessible InitialTransform value will be the same object used during registration, and will have a modified value upon completion.</p>
-<dl class="section see"><dt>See also</dt><dd>itk::ImageRegistrationMethodv4::SetInitialTransform </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1ImageRegistrationMethodv4.html#a34f0656aaaa1d50c97e5a9c85ea39563">itk::ImageRegistrationMethodv4::SetInitialTransform</a> </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="sitkImageRegistrationMethod_8h_source.html#l00144">144</a> of file <a class="el" href="sitkImageRegistrationMethod_8h_source.html">sitkImageRegistrationMethod.h</a>.</p>
 
@@ -1455,7 +1455,7 @@ template&lt;class TImage &gt; </div>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">uint64_t itk::simple::ImageRegistrationMethod::GetMetricNumberOfValidPoints </td>
+          <td class="memname"><a class="elRef" href="https://www.itk.org/Doxygen/html/namespaceitk.html#a6678d19d4b40c05a613784037bc2bd00">uint64_t</a> itk::simple::ImageRegistrationMethod::GetMetricNumberOfValidPoints </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -1501,7 +1501,7 @@ template&lt;class TImage &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="ImageRegistrationMethod1_2ImageRegistrationMethod1_8cxx-example.html#a20">ImageRegistrationMethod1/ImageRegistrationMethod1.cxx</a>, <a class="el" href="ImageRegistrationMethod2_2ImageRegistrationMethod2_8cxx-example.html#a22">ImageRegistrationMethod2/ImageRegistrationMethod2.cxx</a>, <a class="el" href="ImageRegistrationMethodBSpline1_2ImageRegistrationMethodBSpline1_8cxx-example.html#a22">ImageRegistrationMethodBSpline1/ImageRegistrationMethodBSpline1.cxx</a>, <a class="el" href="ImageRegistrationMethodBSpline3_2ImageRegistrationMethodBSpline3_8cxx-example.html#a25">ImageRegistrationMethodBSpline3/ImageRegistrationMethodBSpline3.cxx</a>, and <a class="el" href="ImageRegistrationMethodDisplacement1_2ImageRegistrationMethodDisplacement1_8cxx-example.html#a28">ImageRegistrationMethodDisplacement1/ImageRegistrationMethodDisplacement1.cxx</a>.</dd>
+<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="ImageRegistrationMethod1_2ImageRegistrationMethod1_8cxx-example.html#a20">ImageRegistrationMethod1/ImageRegistrationMethod1.cxx</a>, <a class="el" href="ImageRegistrationMethod2_2ImageRegistrationMethod2_8cxx-example.html#a23">ImageRegistrationMethod2/ImageRegistrationMethod2.cxx</a>, <a class="el" href="ImageRegistrationMethodBSpline1_2ImageRegistrationMethodBSpline1_8cxx-example.html#a23">ImageRegistrationMethodBSpline1/ImageRegistrationMethodBSpline1.cxx</a>, <a class="el" href="ImageRegistrationMethodBSpline3_2ImageRegistrationMethodBSpline3_8cxx-example.html#a26">ImageRegistrationMethodBSpline3/ImageRegistrationMethodBSpline3.cxx</a>, and <a class="el" href="ImageRegistrationMethodDisplacement1_2ImageRegistrationMethodDisplacement1_8cxx-example.html#a29">ImageRegistrationMethodDisplacement1/ImageRegistrationMethodDisplacement1.cxx</a>.</dd>
 </dl>
 
 </div>
@@ -1532,7 +1532,7 @@ template&lt;class TImage &gt; </div>
 <p>Set a fixed transform component towards moving domain. </p>
 <p>The InitialTransform is added to this transform to form the composite transform which maps from the virtual domain to the moving image's domain. The parameters of this transform are not optimized. This is an advanced option used when the output transformed with be composed into a composite transform.</p>
 <p>By default this transform is an identity, and not used.</p>
-<dl class="section see"><dt>See also</dt><dd>itk::ImageRegistrationMethodv4::SetMovingInitialTransform </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1ImageRegistrationMethodv4.html#a14fb79cd0cf570e342ae39c2b5009e37">itk::ImageRegistrationMethodv4::SetMovingInitialTransform</a> </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="sitkImageRegistrationMethod_8h_source.html#l00182">182</a> of file <a class="el" href="sitkImageRegistrationMethod_8h_source.html">sitkImageRegistrationMethod.h</a>.</p>
 
@@ -1601,7 +1601,7 @@ template&lt;class TImage &gt; </div>
 </div><div class="memdoc">
 <p>Active measurements which can be obtained during call backs.</p>
 <p>This is a measurement. Its value is updated in the Execute methods, so the value will only be valid after an execution. </p>
-<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="ImageRegistrationMethod1_2ImageRegistrationMethod1_8cxx-example.html#a19">ImageRegistrationMethod1/ImageRegistrationMethod1.cxx</a>, <a class="el" href="ImageRegistrationMethod2_2ImageRegistrationMethod2_8cxx-example.html#a21">ImageRegistrationMethod2/ImageRegistrationMethod2.cxx</a>, <a class="el" href="ImageRegistrationMethodBSpline1_2ImageRegistrationMethodBSpline1_8cxx-example.html#a21">ImageRegistrationMethodBSpline1/ImageRegistrationMethodBSpline1.cxx</a>, <a class="el" href="ImageRegistrationMethodBSpline3_2ImageRegistrationMethodBSpline3_8cxx-example.html#a24">ImageRegistrationMethodBSpline3/ImageRegistrationMethodBSpline3.cxx</a>, and <a class="el" href="ImageRegistrationMethodDisplacement1_2ImageRegistrationMethodDisplacement1_8cxx-example.html#a27">ImageRegistrationMethodDisplacement1/ImageRegistrationMethodDisplacement1.cxx</a>.</dd>
+<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="ImageRegistrationMethod1_2ImageRegistrationMethod1_8cxx-example.html#a19">ImageRegistrationMethod1/ImageRegistrationMethod1.cxx</a>, <a class="el" href="ImageRegistrationMethod2_2ImageRegistrationMethod2_8cxx-example.html#a22">ImageRegistrationMethod2/ImageRegistrationMethod2.cxx</a>, <a class="el" href="ImageRegistrationMethodBSpline1_2ImageRegistrationMethodBSpline1_8cxx-example.html#a22">ImageRegistrationMethodBSpline1/ImageRegistrationMethodBSpline1.cxx</a>, <a class="el" href="ImageRegistrationMethodBSpline3_2ImageRegistrationMethodBSpline3_8cxx-example.html#a25">ImageRegistrationMethodBSpline3/ImageRegistrationMethodBSpline3.cxx</a>, and <a class="el" href="ImageRegistrationMethodDisplacement1_2ImageRegistrationMethodDisplacement1_8cxx-example.html#a28">ImageRegistrationMethodDisplacement1/ImageRegistrationMethodDisplacement1.cxx</a>.</dd>
 </dl>
 
 </div>
@@ -1675,7 +1675,7 @@ template&lt;class TImage &gt; </div>
       </table>
 </div><div class="memdoc">
 <p>Measurement updated at the end of execution. </p>
-<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="ImageRegistrationMethod1_2ImageRegistrationMethod1_8cxx-example.html#a18">ImageRegistrationMethod1/ImageRegistrationMethod1.cxx</a>, <a class="el" href="ImageRegistrationMethod2_2ImageRegistrationMethod2_8cxx-example.html#a20">ImageRegistrationMethod2/ImageRegistrationMethod2.cxx</a>, <a class="el" href="ImageRegistrationMethodBSpline1_2ImageRegistrationMethodBSpline1_8cxx-example.html#a20">ImageRegistrationMethodBSpline1/ImageRegistrationMethodBSpline1.cxx</a>, <a class="el" href="ImageRegistrationMethodBSpline3_2ImageRegistrationMethodBSpline3_8cxx-example.html#a23">ImageRegistrationMethodBSpline3/ImageRegistrationMethodBSpline3.cxx</a>, and <a class="el" href="ImageRegistrationMethodDisplacement1_2ImageRegistrationMethodDisplacement1_8cxx-example.html#a26">ImageRegistrationMethodDisplacement1/ImageRegistrationMethodDisplacement1.cxx</a>.</dd>
+<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="ImageRegistrationMethod1_2ImageRegistrationMethod1_8cxx-example.html#a18">ImageRegistrationMethod1/ImageRegistrationMethod1.cxx</a>, <a class="el" href="ImageRegistrationMethod2_2ImageRegistrationMethod2_8cxx-example.html#a21">ImageRegistrationMethod2/ImageRegistrationMethod2.cxx</a>, <a class="el" href="ImageRegistrationMethodBSpline1_2ImageRegistrationMethodBSpline1_8cxx-example.html#a21">ImageRegistrationMethodBSpline1/ImageRegistrationMethodBSpline1.cxx</a>, <a class="el" href="ImageRegistrationMethodBSpline3_2ImageRegistrationMethodBSpline3_8cxx-example.html#a24">ImageRegistrationMethodBSpline3/ImageRegistrationMethodBSpline3.cxx</a>, and <a class="el" href="ImageRegistrationMethodDisplacement1_2ImageRegistrationMethodDisplacement1_8cxx-example.html#a27">ImageRegistrationMethodDisplacement1/ImageRegistrationMethodDisplacement1.cxx</a>.</dd>
 </dl>
 
 </div>
@@ -1696,7 +1696,7 @@ template&lt;class TImage &gt; </div>
 </div><div class="memdoc">
 
 <p>A per parameter weighting array for the optimizer. </p>
-<p>Allows setting of a per-local-parameter weighting array. If unset, the weights are treated as identity. Weights are multiplied by the gradient at the same time scaling is applied. Weights are similar to the scales but not estimated, and may be used, for example, to easily mask out a particular parameter during optimization to hold it constant. Or they may be used to apply another kind of prior knowledge. </p>
+<p>Allows setting of a per-local-parameter weighting array. If unset, the weights are treated as identity. Weights are multiplied by the gradient at the same time scaling is applied. Weights are similar to the scales but not estimated, and may be used, for example, to easily mask out a particular parameter during optimization to hold it constant. <a class="elRef" href="https://www.itk.org/Doxygen/html/structitk_1_1Or.html">Or</a> they may be used to apply another kind of prior knowledge. </p>
 
 </div>
 </div>
@@ -1756,7 +1756,7 @@ template&lt;class TImage &gt; </div>
 
 <p>Enable image gradient computation by a filter. </p>
 <p>By default the image gradient is computed by itk::GradientRecursiveGaussianImageFiter. If disabled then a central difference function with be computed as needed.</p>
-<dl class="section see"><dt>See also</dt><dd>itk::ImageToImageMetricv4::SetUseFixedImageGradientFilter </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1ImageToImageMetricv4.html#addfecebdd9e7f3846601f50cdc5e95fb">itk::ImageToImageMetricv4::SetUseFixedImageGradientFilter</a> </dd></dl>
 <dl class="section examples"><dt>Examples</dt><dd><a class="el" href="ImageRegistrationMethodDisplacement1_2ImageRegistrationMethodDisplacement1_8cxx-example.html#a13">ImageRegistrationMethodDisplacement1/ImageRegistrationMethodDisplacement1.cxx</a>.</dd>
 </dl>
 
@@ -1789,7 +1789,7 @@ template&lt;class TImage &gt; </div>
 
 <p>Enable image gradient computation by a filter. </p>
 <p>By default the image gradient is computed by itk::GradientRecursiveGaussianImageFiter. If disabled then a central difference function with be computed as needed.</p>
-<dl class="section see"><dt>See also</dt><dd>itk::ImageToImageMetricv4::SetUseFixedImageGradientFilter </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1ImageToImageMetricv4.html#addfecebdd9e7f3846601f50cdc5e95fb">itk::ImageToImageMetricv4::SetUseFixedImageGradientFilter</a> </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="sitkImageRegistrationMethod_8h_source.html#l00520">520</a> of file <a class="el" href="sitkImageRegistrationMethod_8h_source.html">sitkImageRegistrationMethod.h</a>.</p>
 
@@ -1820,7 +1820,7 @@ template&lt;class TImage &gt; </div>
 
 <p>Enable image gradient computation by a filter. </p>
 <p>By default the image gradient is computed by itk::GradientRecursiveGaussianImageFiter. If disabled then a central difference function will be computed for each sample as needed.</p>
-<dl class="section see"><dt>See also</dt><dd>itk::ImageToImageMetricv4::SetUseMovingImageGradientFilter </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1ImageToImageMetricv4.html#a21a73b9885b24300c04fd754fd7e3c05">itk::ImageToImageMetricv4::SetUseMovingImageGradientFilter</a> </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="sitkImageRegistrationMethod_8h_source.html#l00537">537</a> of file <a class="el" href="sitkImageRegistrationMethod_8h_source.html">sitkImageRegistrationMethod.h</a>.</p>
 
@@ -1851,7 +1851,7 @@ template&lt;class TImage &gt; </div>
 
 <p>Enable image gradient computation by a filter. </p>
 <p>By default the image gradient is computed by itk::GradientRecursiveGaussianImageFiter. If disabled then a central difference function will be computed for each sample as needed.</p>
-<dl class="section see"><dt>See also</dt><dd>itk::ImageToImageMetricv4::SetUseMovingImageGradientFilter </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1ImageToImageMetricv4.html#a21a73b9885b24300c04fd754fd7e3c05">itk::ImageToImageMetricv4::SetUseMovingImageGradientFilter</a> </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="sitkImageRegistrationMethod_8h_source.html#l00536">536</a> of file <a class="el" href="sitkImageRegistrationMethod_8h_source.html">sitkImageRegistrationMethod.h</a>.</p>
 
@@ -1896,7 +1896,7 @@ template&lt;class TImage &gt; </div>
         <tr>
           <td class="memname">void itk::simple::ImageRegistrationMethod::PreUpdate </td>
           <td>(</td>
-          <td class="paramtype">itk::ProcessObject *&#160;</td>
+          <td class="paramtype"><a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1ProcessObject.html">itk::ProcessObject</a> *&#160;</td>
           <td class="paramname"><em>p</em></td><td>)</td>
           <td></td>
         </tr>
@@ -1967,7 +1967,7 @@ template&lt;class TImage &gt; </div>
 <p>Set transform mapping to the fixed domain. </p>
 <p>This transform is used to map from the virtual domain to the fixed image domain.</p>
 <p>By default this transform is an identity, and not used.</p>
-<dl class="section see"><dt>See also</dt><dd>itk::ImageRegistrationMethodv4::SetFixedInitialTransform </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1ImageRegistrationMethodv4.html#ad885a8c8c4e08447be32ffcc0badd423">itk::ImageRegistrationMethodv4::SetFixedInitialTransform</a> </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="sitkImageRegistrationMethod_8h_source.html#l00196">196</a> of file <a class="el" href="sitkImageRegistrationMethod_8h_source.html">sitkImageRegistrationMethod.h</a>.</p>
 
@@ -1992,8 +1992,8 @@ template&lt;class TImage &gt; </div>
 <p>Set the initial transform and parameters to optimize. </p>
 <p>This transform is applied before the MovingInitialTransform, to map from the virtual image domain to the moving image domain.</p>
 <p>If the inPlace flag is explicitly false, then the ITK registration will internally make a copy, and the transform will not be accessible during registration. Otherwise, the accessible InitialTransform value will be the same object used during registration, and will have a modified value upon completion.</p>
-<dl class="section see"><dt>See also</dt><dd>itk::ImageRegistrationMethodv4::SetInitialTransform </dd></dl>
-<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="ImageRegistrationMethod1_2ImageRegistrationMethod1_8cxx-example.html#a8">ImageRegistrationMethod1/ImageRegistrationMethod1.cxx</a>, <a class="el" href="ImageRegistrationMethod2_2ImageRegistrationMethod2_8cxx-example.html#a10">ImageRegistrationMethod2/ImageRegistrationMethod2.cxx</a>, <a class="el" href="ImageRegistrationMethodBSpline1_2ImageRegistrationMethodBSpline1_8cxx-example.html#a12">ImageRegistrationMethodBSpline1/ImageRegistrationMethodBSpline1.cxx</a>, and <a class="el" href="ImageRegistrationMethodDisplacement1_2ImageRegistrationMethodDisplacement1_8cxx-example.html#a18">ImageRegistrationMethodDisplacement1/ImageRegistrationMethodDisplacement1.cxx</a>.</dd>
+<dl class="section see"><dt>See also</dt><dd><a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1ImageRegistrationMethodv4.html#a34f0656aaaa1d50c97e5a9c85ea39563">itk::ImageRegistrationMethodv4::SetInitialTransform</a> </dd></dl>
+<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="ImageRegistrationMethod1_2ImageRegistrationMethod1_8cxx-example.html#a8">ImageRegistrationMethod1/ImageRegistrationMethod1.cxx</a>, <a class="el" href="ImageRegistrationMethod2_2ImageRegistrationMethod2_8cxx-example.html#a11">ImageRegistrationMethod2/ImageRegistrationMethod2.cxx</a>, <a class="el" href="ImageRegistrationMethodBSpline1_2ImageRegistrationMethodBSpline1_8cxx-example.html#a13">ImageRegistrationMethodBSpline1/ImageRegistrationMethodBSpline1.cxx</a>, and <a class="el" href="ImageRegistrationMethodDisplacement1_2ImageRegistrationMethodDisplacement1_8cxx-example.html#a19">ImageRegistrationMethodDisplacement1/ImageRegistrationMethodDisplacement1.cxx</a>.</dd>
 </dl>
 
 </div>
@@ -2027,7 +2027,7 @@ template&lt;class TImage &gt; </div>
 <p>Set the initial transform and parameters to optimize. </p>
 <p>This transform is applied before the MovingInitialTransform, to map from the virtual image domain to the moving image domain.</p>
 <p>If the inPlace flag is explicitly false, then the ITK registration will internally make a copy, and the transform will not be accessible during registration. Otherwise, the accessible InitialTransform value will be the same object used during registration, and will have a modified value upon completion.</p>
-<dl class="section see"><dt>See also</dt><dd>itk::ImageRegistrationMethodv4::SetInitialTransform </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1ImageRegistrationMethodv4.html#a34f0656aaaa1d50c97e5a9c85ea39563">itk::ImageRegistrationMethodv4::SetInitialTransform</a> </dd></dl>
 
 </div>
 </div>
@@ -2066,8 +2066,8 @@ template&lt;class TImage &gt; </div>
 <p>Set an initial BSpline transform to optimize. </p>
 <p>A specialization of SetInitialTransform for BSplineTransforms which can take an additional scaleFactors parameter. The scaleFactors specifies the a isotropic scaling factor per level for the BSpline transform mesh size with respect to the initial transform. For example to double the BSpline mesh resolution at each of 3 levels the vector [1,2,4] should be provided.</p>
 <p>If a per level scale factor is 0 or omitted than no transform adapter will be created for that level.</p>
-<dl class="section see"><dt>See also</dt><dd>itk::BSplineTransformParametersAdaptor </dd></dl>
-<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="ImageRegistrationMethodBSpline3_2ImageRegistrationMethodBSpline3_8cxx-example.html#a14">ImageRegistrationMethodBSpline3/ImageRegistrationMethodBSpline3.cxx</a>.</dd>
+<dl class="section see"><dt>See also</dt><dd><a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1BSplineTransformParametersAdaptor.html">itk::BSplineTransformParametersAdaptor</a> </dd></dl>
+<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="ImageRegistrationMethodBSpline3_2ImageRegistrationMethodBSpline3_8cxx-example.html#a15">ImageRegistrationMethodBSpline3/ImageRegistrationMethodBSpline3.cxx</a>.</dd>
 </dl>
 
 </div>
@@ -2097,7 +2097,7 @@ template&lt;class TImage &gt; </div>
 </div><div class="memdoc">
 
 <p>Set and get the interpolator to use. </p>
-<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="ImageRegistrationMethod1_2ImageRegistrationMethod1_8cxx-example.html#a11">ImageRegistrationMethod1/ImageRegistrationMethod1.cxx</a>, <a class="el" href="ImageRegistrationMethod2_2ImageRegistrationMethod2_8cxx-example.html#a13">ImageRegistrationMethod2/ImageRegistrationMethod2.cxx</a>, <a class="el" href="ImageRegistrationMethodBSpline1_2ImageRegistrationMethodBSpline1_8cxx-example.html#a13">ImageRegistrationMethodBSpline1/ImageRegistrationMethodBSpline1.cxx</a>, <a class="el" href="ImageRegistrationMethodBSpline3_2ImageRegistrationMethodBSpline3_8cxx-example.html#a12">ImageRegistrationMethodBSpline3/ImageRegistrationMethodBSpline3.cxx</a>, and <a class="el" href="ImageRegistrationMethodDisplacement1_2ImageRegistrationMethodDisplacement1_8cxx-example.html#a19">ImageRegistrationMethodDisplacement1/ImageRegistrationMethodDisplacement1.cxx</a>.</dd>
+<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="ImageRegistrationMethod1_2ImageRegistrationMethod1_8cxx-example.html#a11">ImageRegistrationMethod1/ImageRegistrationMethod1.cxx</a>, <a class="el" href="ImageRegistrationMethod2_2ImageRegistrationMethod2_8cxx-example.html#a14">ImageRegistrationMethod2/ImageRegistrationMethod2.cxx</a>, <a class="el" href="ImageRegistrationMethodBSpline1_2ImageRegistrationMethodBSpline1_8cxx-example.html#a14">ImageRegistrationMethodBSpline1/ImageRegistrationMethodBSpline1.cxx</a>, <a class="el" href="ImageRegistrationMethodBSpline3_2ImageRegistrationMethodBSpline3_8cxx-example.html#a13">ImageRegistrationMethodBSpline3/ImageRegistrationMethodBSpline3.cxx</a>, and <a class="el" href="ImageRegistrationMethodDisplacement1_2ImageRegistrationMethodDisplacement1_8cxx-example.html#a20">ImageRegistrationMethodDisplacement1/ImageRegistrationMethodDisplacement1.cxx</a>.</dd>
 </dl>
 
 <p class="definition">Definition at line <a class="el" href="sitkImageRegistrationMethod_8h_source.html#l00117">117</a> of file <a class="el" href="sitkImageRegistrationMethod_8h_source.html">sitkImageRegistrationMethod.h</a>.</p>
@@ -2121,8 +2121,8 @@ template&lt;class TImage &gt; </div>
 </div><div class="memdoc">
 
 <p>Use normalized cross correlation using a small neighborhood for each voxel between two images, with speed optimizations for dense registration. </p>
-<dl class="section see"><dt>See also</dt><dd>itk::ANTSNeighborhoodCorrelationImageToImageMetricv4 </dd></dl>
-<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="ImageRegistrationMethodDisplacement1_2ImageRegistrationMethodDisplacement1_8cxx-example.html#a34">ImageRegistrationMethodDisplacement1/ImageRegistrationMethodDisplacement1.cxx</a>.</dd>
+<dl class="section see"><dt>See also</dt><dd><a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1ANTSNeighborhoodCorrelationImageToImageMetricv4.html">itk::ANTSNeighborhoodCorrelationImageToImageMetricv4</a> </dd></dl>
+<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="ImageRegistrationMethodDisplacement1_2ImageRegistrationMethodDisplacement1_8cxx-example.html#a35">ImageRegistrationMethodDisplacement1/ImageRegistrationMethodDisplacement1.cxx</a>.</dd>
 </dl>
 
 </div>
@@ -2143,7 +2143,7 @@ template&lt;class TImage &gt; </div>
 </div><div class="memdoc">
 
 <p>Use negative normalized cross correlation image metric. </p>
-<dl class="section see"><dt>See also</dt><dd>itk::CorrelationImageToImageMetricv4 </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1CorrelationImageToImageMetricv4.html">itk::CorrelationImageToImageMetricv4</a> </dd></dl>
 <dl class="section examples"><dt>Examples</dt><dd><a class="el" href="ImageRegistrationMethodBSpline1_2ImageRegistrationMethodBSpline1_8cxx-example.html#a10">ImageRegistrationMethodBSpline1/ImageRegistrationMethodBSpline1.cxx</a>.</dd>
 </dl>
 
@@ -2166,7 +2166,7 @@ template&lt;class TImage &gt; </div>
 </div><div class="memdoc">
 
 <p>Use demons image metric. </p>
-<dl class="section see"><dt>See also</dt><dd>itk::DemonsImageToImageMetricv4 </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1DemonsImageToImageMetricv4.html">itk::DemonsImageToImageMetricv4</a> </dd></dl>
 
 </div>
 </div>
@@ -2197,7 +2197,7 @@ template&lt;class TImage &gt; </div>
 </div><div class="memdoc">
 
 <p>Use mutual information between two images. </p>
-<dl class="section see"><dt>See also</dt><dd>itk::JointHistogramMutualInformationImageToImageMetricv4 </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1JointHistogramMutualInformationImageToImageMetricv4.html">itk::JointHistogramMutualInformationImageToImageMetricv4</a> </dd></dl>
 <dl class="section examples"><dt>Examples</dt><dd><a class="el" href="ImageRegistrationMethod2_2ImageRegistrationMethod2_8cxx-example.html#a8">ImageRegistrationMethod2/ImageRegistrationMethod2.cxx</a>, <a class="el" href="ImageRegistrationMethodBSpline3_2ImageRegistrationMethodBSpline3_8cxx-example.html#a10">ImageRegistrationMethodBSpline3/ImageRegistrationMethodBSpline3.cxx</a>, and <a class="el" href="ImageRegistrationMethodDisplacement1_2ImageRegistrationMethodDisplacement1_8cxx-example.html#a12">ImageRegistrationMethodDisplacement1/ImageRegistrationMethodDisplacement1.cxx</a>.</dd>
 </dl>
 
@@ -2220,7 +2220,7 @@ template&lt;class TImage &gt; </div>
 </div><div class="memdoc">
 
 <p>Use the mutual information between two images to be registered using the method of Mattes et al. </p>
-<dl class="section see"><dt>See also</dt><dd>itk::MattesMutualInformationImageToImageMetricv4 </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1MattesMutualInformationImageToImageMetricv4.html">itk::MattesMutualInformationImageToImageMetricv4</a> </dd></dl>
 
 </div>
 </div>
@@ -2240,7 +2240,7 @@ template&lt;class TImage &gt; </div>
 </div><div class="memdoc">
 
 <p>Use negative means squares image metric. </p>
-<dl class="section see"><dt>See also</dt><dd>itk::MeanSquaresImageToImageMetricv4 </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1MeanSquaresImageToImageMetricv4.html">itk::MeanSquaresImageToImageMetricv4</a> </dd></dl>
 <dl class="section examples"><dt>Examples</dt><dd><a class="el" href="ImageRegistrationMethod1_2ImageRegistrationMethod1_8cxx-example.html#a6">ImageRegistrationMethod1/ImageRegistrationMethod1.cxx</a>.</dd>
 </dl>
 
@@ -2264,7 +2264,7 @@ template&lt;class TImage &gt; </div>
 
 <p>Set an image mask in order to restrict the sampled points for the metric. </p>
 <p>The image is expected to be in the same physical space as the FixedImage, and if the pixel type is not UInt8 than the image will base cast.</p>
-<dl class="section see"><dt>See also</dt><dd>itk::ImageToImageMetricv4::SetFixedImageMask </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1ImageToImageMetricv4.html#a39cfa36bfb797b5ac7784943a594487f">itk::ImageToImageMetricv4::SetFixedImageMask</a> </dd></dl>
 
 </div>
 </div>
@@ -2286,7 +2286,7 @@ template&lt;class TImage &gt; </div>
 
 <p>Set an image mask in order to restrict the sampled points for the metric in the moving image space. </p>
 <p>The image is expected to be in the same physical space as the MovingImage, and if the pixel type is not UInt8 than the image will base cast.</p>
-<dl class="section see"><dt>See also</dt><dd>itk::ImageToImageMetricv4::SetMovingImageMask </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1ImageToImageMetricv4.html#a61f237afc6cbc0ee6000f873ca35cf51">itk::ImageToImageMetricv4::SetMovingImageMask</a> </dd></dl>
 
 </div>
 </div>
@@ -2320,7 +2320,7 @@ template&lt;class TImage &gt; </div>
 <p>The percentage is of the number of pixels in the virtual domain per level after the shrink factor has been applied.</p>
 <p>The seed parameter is used to seed the pseudo-random number generator used in generating the sampling set of points. If the seed parameter is 0, then the wall clock is used, otherwise the fixed seed is used for reproducible behavior.</p>
 <p>When providing multiple values the number of entries must match the number of shrink factors and smoothing sigmas. If a single value is given, then the same percentage is used for all levels.</p>
-<dl class="section see"><dt>See also</dt><dd>itk::ImageRegistrationMethodv4::SetMetricSamplingPercentage </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1ImageRegistrationMethodv4.html#a9705f26f83cdb36c397496a46c7234e1">itk::ImageRegistrationMethodv4::SetMetricSamplingPercentage</a> </dd></dl>
 
 </div>
 </div>
@@ -2354,7 +2354,7 @@ template&lt;class TImage &gt; </div>
 <p>The percentage is of the number of pixels in the virtual domain per level after the shrink factor has been applied.</p>
 <p>The seed parameter is used to seed the pseudo-random number generator used in generating the sampling set of points. If the seed parameter is 0, then the wall clock is used, otherwise the fixed seed is used for reproducible behavior.</p>
 <p>When providing multiple values the number of entries must match the number of shrink factors and smoothing sigmas. If a single value is given, then the same percentage is used for all levels.</p>
-<dl class="section see"><dt>See also</dt><dd>itk::ImageRegistrationMethodv4::SetMetricSamplingPercentage </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1ImageRegistrationMethodv4.html#a9705f26f83cdb36c397496a46c7234e1">itk::ImageRegistrationMethodv4::SetMetricSamplingPercentage</a> </dd></dl>
 
 </div>
 </div>
@@ -2375,7 +2375,7 @@ template&lt;class TImage &gt; </div>
 </div><div class="memdoc">
 
 <p>Set sampling strategy for sample generation. </p>
-<dl class="section see"><dt>See also</dt><dd>itk::ImageRegistrationMethodv4::SetMetricSamplingStrategy </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1ImageRegistrationMethodv4.html#afe72791d0d08e58b63edb368718df9e5">itk::ImageRegistrationMethodv4::SetMetricSamplingStrategy</a> </dd></dl>
 
 </div>
 </div>
@@ -2397,7 +2397,7 @@ template&lt;class TImage &gt; </div>
 
 <p>Enable image gradient computation by a filter. </p>
 <p>By default the image gradient is computed by itk::GradientRecursiveGaussianImageFiter. If disabled then a central difference function with be computed as needed.</p>
-<dl class="section see"><dt>See also</dt><dd>itk::ImageToImageMetricv4::SetUseFixedImageGradientFilter </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1ImageToImageMetricv4.html#addfecebdd9e7f3846601f50cdc5e95fb">itk::ImageToImageMetricv4::SetUseFixedImageGradientFilter</a> </dd></dl>
 
 </div>
 </div>
@@ -2419,7 +2419,7 @@ template&lt;class TImage &gt; </div>
 
 <p>Enable image gradient computation by a filter. </p>
 <p>By default the image gradient is computed by itk::GradientRecursiveGaussianImageFiter. If disabled then a central difference function will be computed for each sample as needed.</p>
-<dl class="section see"><dt>See also</dt><dd>itk::ImageToImageMetricv4::SetUseMovingImageGradientFilter </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1ImageToImageMetricv4.html#a21a73b9885b24300c04fd754fd7e3c05">itk::ImageToImageMetricv4::SetUseMovingImageGradientFilter</a> </dd></dl>
 
 </div>
 </div>
@@ -2450,8 +2450,8 @@ template&lt;class TImage &gt; </div>
 <p>Set a fixed transform component towards moving domain. </p>
 <p>The InitialTransform is added to this transform to form the composite transform which maps from the virtual domain to the moving image's domain. The parameters of this transform are not optimized. This is an advanced option used when the output transformed with be composed into a composite transform.</p>
 <p>By default this transform is an identity, and not used.</p>
-<dl class="section see"><dt>See also</dt><dd>itk::ImageRegistrationMethodv4::SetMovingInitialTransform </dd></dl>
-<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="ImageRegistrationMethodDisplacement1_2ImageRegistrationMethodDisplacement1_8cxx-example.html#a33">ImageRegistrationMethodDisplacement1/ImageRegistrationMethodDisplacement1.cxx</a>.</dd>
+<dl class="section see"><dt>See also</dt><dd><a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1ImageRegistrationMethodv4.html#a14fb79cd0cf570e342ae39c2b5009e37">itk::ImageRegistrationMethodv4::SetMovingInitialTransform</a> </dd></dl>
+<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="ImageRegistrationMethodDisplacement1_2ImageRegistrationMethodDisplacement1_8cxx-example.html#a34">ImageRegistrationMethodDisplacement1/ImageRegistrationMethodDisplacement1.cxx</a>.</dd>
 </dl>
 
 <p class="definition">Definition at line <a class="el" href="sitkImageRegistrationMethod_8h_source.html#l00180">180</a> of file <a class="el" href="sitkImageRegistrationMethod_8h_source.html">sitkImageRegistrationMethod.h</a>.</p>
@@ -2480,13 +2480,13 @@ template&lt;class TImage &gt; </div>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>parametersConvergenceTolerance</em> = <code>1e-8</code>, </td>
+          <td class="paramname"><em>parametersConvergenceTolerance</em> = <code>1<a class="elRef" href="https://www.itk.org/Doxygen/html/namespaceitk_1_1Math.html#af105436026645171db6a4a3000ee8482">e</a>-8</code>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>functionConvergenceTolerance</em> = <code>1e-4</code>, </td>
+          <td class="paramname"><em>functionConvergenceTolerance</em> = <code>1<a class="elRef" href="https://www.itk.org/Doxygen/html/namespaceitk_1_1Math.html#af105436026645171db6a4a3000ee8482">e</a>-4</code>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -2503,7 +2503,7 @@ template&lt;class TImage &gt; </div>
 </div><div class="memdoc">
 
 <p>Set optimizer to Nelder-Mead downhill simplex algorithm. </p>
-<dl class="section see"><dt>See also</dt><dd>itk::AmoebaOptimizerv4 </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1AmoebaOptimizerv4.html">itk::AmoebaOptimizerv4</a> </dd></dl>
 
 </div>
 </div>
@@ -2529,7 +2529,7 @@ template&lt;class TImage &gt; </div>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>convergenceMinimumValue</em> = <code>1e-6</code>, </td>
+          <td class="paramname"><em>convergenceMinimumValue</em> = <code>1<a class="elRef" href="https://www.itk.org/Doxygen/html/namespaceitk_1_1Math.html#af105436026645171db6a4a3000ee8482">e</a>-6</code>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -2582,7 +2582,7 @@ template&lt;class TImage &gt; </div>
 </div><div class="memdoc">
 
 <p>Conjugate gradient descent optimizer with a golden section line search for nonlinear optimization. </p>
-<dl class="section see"><dt>See also</dt><dd>itk::ConjugateGradientLineSearchOptimizerv4Template </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1ConjugateGradientLineSearchOptimizerv4Template.html">itk::ConjugateGradientLineSearchOptimizerv4Template</a> </dd></dl>
 
 </div>
 </div>
@@ -2617,7 +2617,7 @@ template&lt;class TImage &gt; </div>
 <p>The resulting transform and value at the end of execution is the best location.</p>
 <p>The OptimizerScales can be used to perform anisotropic sampling.</p>
 <dl class="section note"><dt>Note</dt><dd>This optimizer is not suitable for use in conjunction with the multiple scales.</dd></dl>
-<dl class="section see"><dt>See also</dt><dd>itk::ExhaustiveOptimizerv4 </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1ExhaustiveOptimizerv4.html">itk::ExhaustiveOptimizerv4</a> </dd></dl>
 
 </div>
 </div>
@@ -2643,7 +2643,7 @@ template&lt;class TImage &gt; </div>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>convergenceMinimumValue</em> = <code>1e-6</code>, </td>
+          <td class="paramname"><em>convergenceMinimumValue</em> = <code>1<a class="elRef" href="https://www.itk.org/Doxygen/html/namespaceitk_1_1Math.html#af105436026645171db6a4a3000ee8482">e</a>-6</code>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -2672,8 +2672,8 @@ template&lt;class TImage &gt; </div>
 </div><div class="memdoc">
 
 <p>Gradient descent optimizer. </p>
-<dl class="section see"><dt>See also</dt><dd>itk::GradientDescentOptimizerv4Template </dd></dl>
-<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="ImageRegistrationMethodDisplacement1_2ImageRegistrationMethodDisplacement1_8cxx-example.html#a16">ImageRegistrationMethodDisplacement1/ImageRegistrationMethodDisplacement1.cxx</a>.</dd>
+<dl class="section see"><dt>See also</dt><dd><a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1GradientDescentOptimizerv4Template.html">itk::GradientDescentOptimizerv4Template</a> </dd></dl>
+<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="ImageRegistrationMethodDisplacement1_2ImageRegistrationMethodDisplacement1_8cxx-example.html#a17">ImageRegistrationMethodDisplacement1/ImageRegistrationMethodDisplacement1.cxx</a>.</dd>
 </dl>
 
 </div>
@@ -2700,7 +2700,7 @@ template&lt;class TImage &gt; </div>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>convergenceMinimumValue</em> = <code>1e-6</code>, </td>
+          <td class="paramname"><em>convergenceMinimumValue</em> = <code>1<a class="elRef" href="https://www.itk.org/Doxygen/html/namespaceitk_1_1Math.html#af105436026645171db6a4a3000ee8482">e</a>-6</code>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -2753,8 +2753,8 @@ template&lt;class TImage &gt; </div>
 </div><div class="memdoc">
 
 <p>Gradient descent optimizer with a golden section line search. </p>
-<dl class="section see"><dt>See also</dt><dd>itk::GradientDescentLineSearchOptimizerv4Template </dd></dl>
-<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="ImageRegistrationMethod2_2ImageRegistrationMethod2_8cxx-example.html#a9">ImageRegistrationMethod2/ImageRegistrationMethod2.cxx</a>, and <a class="el" href="ImageRegistrationMethodBSpline3_2ImageRegistrationMethodBSpline3_8cxx-example.html#a11">ImageRegistrationMethodBSpline3/ImageRegistrationMethodBSpline3.cxx</a>.</dd>
+<dl class="section see"><dt>See also</dt><dd><a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1GradientDescentLineSearchOptimizerv4Template.html">itk::GradientDescentLineSearchOptimizerv4Template</a> </dd></dl>
+<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="ImageRegistrationMethod2_2ImageRegistrationMethod2_8cxx-example.html#a10">ImageRegistrationMethod2/ImageRegistrationMethod2.cxx</a>, and <a class="el" href="ImageRegistrationMethodBSpline3_2ImageRegistrationMethodBSpline3_8cxx-example.html#a12">ImageRegistrationMethodBSpline3/ImageRegistrationMethodBSpline3.cxx</a>.</dd>
 </dl>
 
 </div>
@@ -2769,7 +2769,7 @@ template&lt;class TImage &gt; </div>
           <td class="memname"><a class="el" href="classitk_1_1simple_1_1ProcessObject.html#ae243e549c853648a3e5600ed49b630ce">Self</a>&amp; itk::simple::ImageRegistrationMethod::SetOptimizerAsLBFGS2 </td>
           <td>(</td>
           <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>solutionAccuracy</em> = <code>1e-5</code>, </td>
+          <td class="paramname"><em>solutionAccuracy</em> = <code>1<a class="elRef" href="https://www.itk.org/Doxygen/html/namespaceitk_1_1Math.html#af105436026645171db6a4a3000ee8482">e</a>-5</code>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -2793,7 +2793,7 @@ template&lt;class TImage &gt; </div>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>deltaConvergenceTolerance</em> = <code>1e-5</code>, </td>
+          <td class="paramname"><em>deltaConvergenceTolerance</em> = <code>1<a class="elRef" href="https://www.itk.org/Doxygen/html/namespaceitk_1_1Math.html#af105436026645171db6a4a3000ee8482">e</a>-5</code>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -2805,7 +2805,7 @@ template&lt;class TImage &gt; </div>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>lineSearchMinimumStep</em> = <code>1e-20</code>, </td>
+          <td class="paramname"><em>lineSearchMinimumStep</em> = <code>1<a class="elRef" href="https://www.itk.org/Doxygen/html/namespaceitk_1_1Math.html#af105436026645171db6a4a3000ee8482">e</a>-20</code>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -2817,7 +2817,7 @@ template&lt;class TImage &gt; </div>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>lineSearchAccuracy</em> = <code>1e-4</code>&#160;</td>
+          <td class="paramname"><em>lineSearchAccuracy</em> = <code>1<a class="elRef" href="https://www.itk.org/Doxygen/html/namespaceitk_1_1Math.html#af105436026645171db6a4a3000ee8482">e</a>-4</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -2834,7 +2834,7 @@ template&lt;class TImage &gt; </div>
 <li>the delta convergence which ensures the decrease of the metric</li>
 <li>maximum number of iterations</li>
 </ul>
-<dl class="section see"><dt>See also</dt><dd>itk::LBFGS2Optimizerv4 </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1LBFGS2Optimizerv4.html">itk::LBFGS2Optimizerv4</a> </dd></dl>
 
 </div>
 </div>
@@ -2848,7 +2848,7 @@ template&lt;class TImage &gt; </div>
           <td class="memname"><a class="el" href="classitk_1_1simple_1_1ProcessObject.html#ae243e549c853648a3e5600ed49b630ce">Self</a>&amp; itk::simple::ImageRegistrationMethod::SetOptimizerAsLBFGSB </td>
           <td>(</td>
           <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>gradientConvergenceTolerance</em> = <code>1e-5</code>, </td>
+          <td class="paramname"><em>gradientConvergenceTolerance</em> = <code>1<a class="elRef" href="https://www.itk.org/Doxygen/html/namespaceitk_1_1Math.html#af105436026645171db6a4a3000ee8482">e</a>-5</code>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -2872,7 +2872,7 @@ template&lt;class TImage &gt; </div>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>costFunctionConvergenceFactor</em> = <code>1e+7</code>, </td>
+          <td class="paramname"><em>costFunctionConvergenceFactor</em> = <code>1<a class="elRef" href="https://www.itk.org/Doxygen/html/namespaceitk_1_1Math.html#af105436026645171db6a4a3000ee8482">e</a>+7</code>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -2902,8 +2902,8 @@ template&lt;class TImage &gt; </div>
 
 <p>Limited memory Broyden Fletcher Goldfarb Shannon minimization with simple bounds. </p>
 <p>The default parameters utilize LBFGSB in unbounded mode.</p>
-<dl class="section see"><dt>See also</dt><dd>itk::LBFGSBOptimizerv4 </dd></dl>
-<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="ImageRegistrationMethodBSpline1_2ImageRegistrationMethodBSpline1_8cxx-example.html#a11">ImageRegistrationMethodBSpline1/ImageRegistrationMethodBSpline1.cxx</a>.</dd>
+<dl class="section see"><dt>See also</dt><dd><a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1LBFGSBOptimizerv4.html">itk::LBFGSBOptimizerv4</a> </dd></dl>
+<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="ImageRegistrationMethodBSpline1_2ImageRegistrationMethodBSpline1_8cxx-example.html#a12">ImageRegistrationMethodBSpline1/ImageRegistrationMethodBSpline1.cxx</a>.</dd>
 </dl>
 
 </div>
@@ -2924,7 +2924,7 @@ template&lt;class TImage &gt; </div>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>epsilon</em> = <code>1.5e-4</code>, </td>
+          <td class="paramname"><em>epsilon</em> = <code>1.5<a class="elRef" href="https://www.itk.org/Doxygen/html/namespaceitk_1_1Math.html#af105436026645171db6a4a3000ee8482">e</a>-4</code>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -2960,7 +2960,7 @@ template&lt;class TImage &gt; </div>
 
 <p>1+1 evolutionary optimizer strategy. </p>
 <p>The seed parameter is used to seed the pseudo-random number generator. If the seed parameter is 0, then the wall clock is used to seed, otherwise the fixed seed is used for reproducible behavior.</p>
-<dl class="section see"><dt>See also</dt><dd>itk::OnePlusOneEvolutionaryOptimizerv4 </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1OnePlusOneEvolutionaryOptimizerv4.html">itk::OnePlusOneEvolutionaryOptimizerv4</a> </dd></dl>
 
 </div>
 </div>
@@ -2992,13 +2992,13 @@ template&lt;class TImage &gt; </div>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>stepTolerance</em> = <code>1e-6</code>, </td>
+          <td class="paramname"><em>stepTolerance</em> = <code>1<a class="elRef" href="https://www.itk.org/Doxygen/html/namespaceitk_1_1Math.html#af105436026645171db6a4a3000ee8482">e</a>-6</code>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>valueTolerance</em> = <code>1e-6</code>&#160;</td>
+          <td class="paramname"><em>valueTolerance</em> = <code>1<a class="elRef" href="https://www.itk.org/Doxygen/html/namespaceitk_1_1Math.html#af105436026645171db6a4a3000ee8482">e</a>-6</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -3009,7 +3009,7 @@ template&lt;class TImage &gt; </div>
 </div><div class="memdoc">
 
 <p>Powell optimization using Brent line search. </p>
-<dl class="section see"><dt>See also</dt><dd>itk::PowellOptimizerv4 </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1PowellOptimizerv4.html">itk::PowellOptimizerv4</a> </dd></dl>
 
 </div>
 </div>
@@ -3047,7 +3047,7 @@ template&lt;class TImage &gt; </div>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>gradientMagnitudeTolerance</em> = <code>1e-4</code>, </td>
+          <td class="paramname"><em>gradientMagnitudeTolerance</em> = <code>1<a class="elRef" href="https://www.itk.org/Doxygen/html/namespaceitk_1_1Math.html#af105436026645171db6a4a3000ee8482">e</a>-4</code>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -3070,7 +3070,7 @@ template&lt;class TImage &gt; </div>
 </div><div class="memdoc">
 
 <p>Regular Step Gradient descent optimizer. </p>
-<dl class="section see"><dt>See also</dt><dd>itk::RegularStepGradientDescentOptimizerv4 </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1RegularStepGradientDescentOptimizerv4.html">itk::RegularStepGradientDescentOptimizerv4</a> </dd></dl>
 <dl class="section examples"><dt>Examples</dt><dd><a class="el" href="ImageRegistrationMethod1_2ImageRegistrationMethod1_8cxx-example.html#a7">ImageRegistrationMethod1/ImageRegistrationMethod1.cxx</a>.</dd>
 </dl>
 
@@ -3123,7 +3123,7 @@ template&lt;class TImage &gt; </div>
 </div><div class="memdoc">
 
 <p>Estimate scales from maximum voxel shift in index space cause by parameter change. </p>
-<dl class="section see"><dt>See also</dt><dd>itk::RegistrationParameterScalesFromIndexShift </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1RegistrationParameterScalesFromIndexShift.html">itk::RegistrationParameterScalesFromIndexShift</a> </dd></dl>
 
 </div>
 </div>
@@ -3145,7 +3145,7 @@ template&lt;class TImage &gt; </div>
 
 <p>Estimate scales from Jacobian norms. </p>
 <p>This scales estimator works well with versor based transforms.</p>
-<dl class="section see"><dt>See also</dt><dd>itk::RegistrationParameterScalesFromJacobian </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1RegistrationParameterScalesFromJacobian.html">itk::RegistrationParameterScalesFromJacobian</a> </dd></dl>
 
 </div>
 </div>
@@ -3176,8 +3176,8 @@ template&lt;class TImage &gt; </div>
 </div><div class="memdoc">
 
 <p>Estimating scales of transform parameters a step sizes, from the maximum voxel shift in physical space caused by a parameter change. </p>
-<dl class="section see"><dt>See also</dt><dd>itk::RegistrationParameterScalesFromPhysicalShift </dd></dl>
-<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="ImageRegistrationMethodDisplacement1_2ImageRegistrationMethodDisplacement1_8cxx-example.html#a17">ImageRegistrationMethodDisplacement1/ImageRegistrationMethodDisplacement1.cxx</a>.</dd>
+<dl class="section see"><dt>See also</dt><dd><a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1RegistrationParameterScalesFromPhysicalShift.html">itk::RegistrationParameterScalesFromPhysicalShift</a> </dd></dl>
+<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="ImageRegistrationMethodDisplacement1_2ImageRegistrationMethodDisplacement1_8cxx-example.html#a18">ImageRegistrationMethodDisplacement1/ImageRegistrationMethodDisplacement1.cxx</a>.</dd>
 </dl>
 
 </div>
@@ -3199,7 +3199,7 @@ template&lt;class TImage &gt; </div>
 </div><div class="memdoc">
 
 <p>A per parameter weighting array for the optimizer. </p>
-<p>Allows setting of a per-local-parameter weighting array. If unset, the weights are treated as identity. Weights are multiplied by the gradient at the same time scaling is applied. Weights are similar to the scales but not estimated, and may be used, for example, to easily mask out a particular parameter during optimization to hold it constant. Or they may be used to apply another kind of prior knowledge. </p>
+<p>Allows setting of a per-local-parameter weighting array. If unset, the weights are treated as identity. Weights are multiplied by the gradient at the same time scaling is applied. Weights are similar to the scales but not estimated, and may be used, for example, to easily mask out a particular parameter during optimization to hold it constant. <a class="elRef" href="https://www.itk.org/Doxygen/html/structitk_1_1Or.html">Or</a> they may be used to apply another kind of prior knowledge. </p>
 
 </div>
 </div>
@@ -3221,8 +3221,8 @@ template&lt;class TImage &gt; </div>
 
 <p>Set the isotropic shrink factors for each level. </p>
 <p>The virtual domain image is shrunk by this factor relative to the full size of the original virtual domain.</p>
-<dl class="section see"><dt>See also</dt><dd>itk::ImageRegistrationMethodv4::SetShrinkFactorsPerLevel </dd></dl>
-<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="ImageRegistrationMethodBSpline3_2ImageRegistrationMethodBSpline3_8cxx-example.html#a15">ImageRegistrationMethodBSpline3/ImageRegistrationMethodBSpline3.cxx</a>, and <a class="el" href="ImageRegistrationMethodDisplacement1_2ImageRegistrationMethodDisplacement1_8cxx-example.html#a10">ImageRegistrationMethodDisplacement1/ImageRegistrationMethodDisplacement1.cxx</a>.</dd>
+<dl class="section see"><dt>See also</dt><dd><a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1ImageRegistrationMethodv4.html#aa72b833d13511869317cbd6df2c6b432">itk::ImageRegistrationMethodv4::SetShrinkFactorsPerLevel</a> </dd></dl>
+<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="ImageRegistrationMethodBSpline3_2ImageRegistrationMethodBSpline3_8cxx-example.html#a16">ImageRegistrationMethodBSpline3/ImageRegistrationMethodBSpline3.cxx</a>, and <a class="el" href="ImageRegistrationMethodDisplacement1_2ImageRegistrationMethodDisplacement1_8cxx-example.html#a10">ImageRegistrationMethodDisplacement1/ImageRegistrationMethodDisplacement1.cxx</a>.</dd>
 </dl>
 
 </div>
@@ -3244,7 +3244,7 @@ template&lt;class TImage &gt; </div>
 </div><div class="memdoc">
 
 <p>Enable the smoothing sigmas for each level in physical units (default) or in terms of voxels. </p>
-<dl class="section see"><dt>See also</dt><dd>itk::ImageRegistrationMethodv4::SetSmoothingSigmasAreSpecifiedInPhysicalUnits </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1ImageRegistrationMethodv4.html#aba2fcdec6b60423b5f655258ef43d8a2">itk::ImageRegistrationMethodv4::SetSmoothingSigmasAreSpecifiedInPhysicalUnits</a> </dd></dl>
 
 </div>
 </div>
@@ -3266,8 +3266,8 @@ template&lt;class TImage &gt; </div>
 
 <p>Set the sigmas of Gaussian used for smoothing. </p>
 <p>The smoothing is applied to both the fixed and the moving images at each level. The number of smoothing sigmas must match the number of shrink factors.</p>
-<dl class="section see"><dt>See also</dt><dd>itk::ImageRegistrationMethodv4::SetSmoothingSigmasPerLevel </dd></dl>
-<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="ImageRegistrationMethodBSpline3_2ImageRegistrationMethodBSpline3_8cxx-example.html#a16">ImageRegistrationMethodBSpline3/ImageRegistrationMethodBSpline3.cxx</a>, and <a class="el" href="ImageRegistrationMethodDisplacement1_2ImageRegistrationMethodDisplacement1_8cxx-example.html#a11">ImageRegistrationMethodDisplacement1/ImageRegistrationMethodDisplacement1.cxx</a>.</dd>
+<dl class="section see"><dt>See also</dt><dd><a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1ImageRegistrationMethodv4.html#ae7ce4559b3545f5c52c86a2b88fab532">itk::ImageRegistrationMethodv4::SetSmoothingSigmasPerLevel</a> </dd></dl>
+<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="ImageRegistrationMethodBSpline3_2ImageRegistrationMethodBSpline3_8cxx-example.html#a17">ImageRegistrationMethodBSpline3/ImageRegistrationMethodBSpline3.cxx</a>, and <a class="el" href="ImageRegistrationMethodDisplacement1_2ImageRegistrationMethodDisplacement1_8cxx-example.html#a11">ImageRegistrationMethodDisplacement1/ImageRegistrationMethodDisplacement1.cxx</a>.</dd>
 </dl>
 
 </div>
@@ -3286,7 +3286,7 @@ template&lt;class TImageType &gt; </div>
         <tr>
           <td class="memname">void itk::simple::ImageRegistrationMethod::SetupMetric </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classitk_1_1ImageToImageMetricv4.html">itk::ImageToImageMetricv4</a>&lt; TImageType, TImageType, TImageType, double, <a class="el" href="classitk_1_1DefaultImageToImageMetricTraitsv4.html">itk::DefaultImageToImageMetricTraitsv4</a>&lt; TImageType, TImageType, TImageType, double &gt; &gt; *&#160;</td>
+          <td class="paramtype"><a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1ImageToImageMetricv4.html">itk::ImageToImageMetricv4</a>&lt; TImageType, TImageType, TImageType, double, <a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1DefaultImageToImageMetricTraitsv4.html">itk::DefaultImageToImageMetricTraitsv4</a>&lt; TImageType, TImageType, TImageType, double &gt; &gt; *&#160;</td>
           <td class="paramname">, </td>
         </tr>
         <tr>
@@ -3325,7 +3325,7 @@ template&lt;class TImageType &gt; </div>
         <tr>
           <td class="memname"><a class="el" href="classitk_1_1simple_1_1ProcessObject.html#ae243e549c853648a3e5600ed49b630ce">Self</a>&amp; itk::simple::ImageRegistrationMethod::SetVirtualDomain </td>
           <td>(</td>
-          <td class="paramtype">const std::vector&lt; uint32_t &gt; &amp;&#160;</td>
+          <td class="paramtype">const std::vector&lt; <a class="elRef" href="https://www.itk.org/Doxygen/html/namespaceitk.html#a575b8e3e1ee797dd1bbaf9724ed68f92">uint32_t</a> &gt; &amp;&#160;</td>
           <td class="paramname"><em>virtualSize</em>, </td>
         </tr>
         <tr>
@@ -3402,7 +3402,7 @@ template&lt;class TImageType &gt; </div>
 </div><div class="memdoc">
 
 <p>Enable the smoothing sigmas for each level in physical units (default) or in terms of voxels. </p>
-<dl class="section see"><dt>See also</dt><dd>itk::ImageRegistrationMethodv4::SetSmoothingSigmasAreSpecifiedInPhysicalUnits </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1ImageRegistrationMethodv4.html#aba2fcdec6b60423b5f655258ef43d8a2">itk::ImageRegistrationMethodv4::SetSmoothingSigmasAreSpecifiedInPhysicalUnits</a> </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="sitkImageRegistrationMethod_8h_source.html#l00568">568</a> of file <a class="el" href="sitkImageRegistrationMethod_8h_source.html">sitkImageRegistrationMethod.h</a>.</p>
 
@@ -3432,7 +3432,7 @@ template&lt;class TImageType &gt; </div>
 </div><div class="memdoc">
 
 <p>Enable the smoothing sigmas for each level in physical units (default) or in terms of voxels. </p>
-<dl class="section see"><dt>See also</dt><dd>itk::ImageRegistrationMethodv4::SetSmoothingSigmasAreSpecifiedInPhysicalUnits </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1ImageRegistrationMethodv4.html#aba2fcdec6b60423b5f655258ef43d8a2">itk::ImageRegistrationMethodv4::SetSmoothingSigmasAreSpecifiedInPhysicalUnits</a> </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="sitkImageRegistrationMethod_8h_source.html#l00567">567</a> of file <a class="el" href="sitkImageRegistrationMethod_8h_source.html">sitkImageRegistrationMethod.h</a>.</p>
 
@@ -3462,7 +3462,7 @@ template&lt;class TImageType &gt; </div>
 </div><div class="memdoc">
 
 <p>Print the information about the object to a string. </p>
-<p>If called when the process is being executed ( during a callback ), the ITK Optimizer and <a class="el" href="classitk_1_1simple_1_1Transform.html" title="A simplified wrapper around a variety of ITK transforms.">Transform</a> objects will be printed. </p>
+<p>If called when the process is being executed ( during a callback ), the ITK <a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1Optimizer.html">Optimizer</a> and <a class="el" href="classitk_1_1simple_1_1Transform.html" title="A simplified wrapper around a variety of ITK transforms.">Transform</a> objects will be printed. </p>
 
 <p>Reimplemented from <a class="el" href="classitk_1_1simple_1_1ProcessObject.html#abe7f5d7aac9fb533c61f69cb2baeaf9c">itk::simple::ProcessObject</a>.</p>
 
@@ -3504,7 +3504,7 @@ template&lt;class TImageType &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classitk_1_1ObjectToObjectOptimizerBaseTemplate.html">itk::ObjectToObjectOptimizerBaseTemplate</a>&lt;double&gt;* itk::simple::ImageRegistrationMethod::m_ActiveOptimizer</td>
+          <td class="memname"><a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1ObjectToObjectOptimizerBaseTemplate.html">itk::ObjectToObjectOptimizerBaseTemplate</a>&lt;double&gt;* itk::simple::ImageRegistrationMethod::m_ActiveOptimizer</td>
         </tr>
       </table>
   </td>
@@ -4032,7 +4032,7 @@ template&lt;class TImageType &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">uint64_t itk::simple::ImageRegistrationMethod::m_NumberOfValidPoints</td>
+          <td class="memname"><a class="elRef" href="https://www.itk.org/Doxygen/html/namespaceitk.html#a6678d19d4b40c05a613784037bc2bd00">uint64_t</a> itk::simple::ImageRegistrationMethod::m_NumberOfValidPoints</td>
         </tr>
       </table>
   </td>
@@ -5232,7 +5232,7 @@ template&lt;class TImageType &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::function&lt;uint64_t()&gt; itk::simple::ImageRegistrationMethod::m_pfGetMetricNumberOfValidPoints</td>
+          <td class="memname">std::function&lt;<a class="elRef" href="https://www.itk.org/Doxygen/html/namespaceitk.html#a6678d19d4b40c05a613784037bc2bd00">uint64_t</a>()&gt; itk::simple::ImageRegistrationMethod::m_pfGetMetricNumberOfValidPoints</td>
         </tr>
       </table>
   </td>
@@ -5424,7 +5424,7 @@ template&lt;class TImageType &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::function&lt;void (<a class="el" href="namespaceitk.html#aad7d99b5b2fe2dbf1d5e67a1917bf40a">itk::TransformBase</a> *outTransform)&gt; itk::simple::ImageRegistrationMethod::m_pfUpdateWithBestValue</td>
+          <td class="memname">std::function&lt;void (<a class="elRef" href="https://www.itk.org/Doxygen/html/namespaceitk.html#aad7d99b5b2fe2dbf1d5e67a1917bf40a">itk::TransformBase</a> *outTransform)&gt; itk::simple::ImageRegistrationMethod::m_pfUpdateWithBestValue</td>
         </tr>
       </table>
   </td>
@@ -5616,7 +5616,7 @@ template&lt;class TImageType &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::vector&lt;uint32_t&gt; itk::simple::ImageRegistrationMethod::m_VirtualDomainSize</td>
+          <td class="memname">std::vector&lt;<a class="elRef" href="https://www.itk.org/Doxygen/html/namespaceitk.html#a575b8e3e1ee797dd1bbaf9724ed68f92">uint32_t</a>&gt; itk::simple::ImageRegistrationMethod::m_VirtualDomainSize</td>
         </tr>
       </table>
   </td>
