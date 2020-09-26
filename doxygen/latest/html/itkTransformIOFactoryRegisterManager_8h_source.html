@@ -48,7 +48,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">SimpleITK
-   &#160;<span id="projectnumber">2.1.0.dev5</span>
+   &#160;<span id="projectnumber">2.1.0.dev8</span>
    </div>
   </td>
  </tr>
@@ -116,7 +116,7 @@ $(function() {
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="comment">//  The following code is intended to be expanded at the end of the</span></div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="comment">//  itkTransformFileReader.h and itkTransformFileWriter.h files.</span></div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="comment">//</span></div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="keywordtype">void</span>  <a class="code" href="namespaceitk.html#a1b8fdf636f608b990dd4211901362430">HDF5TransformIOFactoryRegister__Private</a>();<span class="keywordtype">void</span>  <a class="code" href="namespaceitk.html#a9f6a372c51b19beb927cea2e8f519145">MatlabTransformIOFactoryRegister__Private</a>();<span class="keywordtype">void</span>  <a class="code" href="namespaceitk.html#a5c407d34ca594e1b0ed3224fa1af720a">TxtTransformIOFactoryRegister__Private</a>();</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="keywordtype">void</span>  <a class="code" href="namespaceitk.html#a1b8fdf636f608b990dd4211901362430">HDF5TransformIOFactoryRegister__Private</a>();<span class="keywordtype">void</span>  <a class="code" href="namespaceitk.html#aa6741c3039d7e04819634a80fc39d937">MINCTransformIOFactoryRegister__Private</a>();<span class="keywordtype">void</span>  <a class="code" href="namespaceitk.html#a9f6a372c51b19beb927cea2e8f519145">MatlabTransformIOFactoryRegister__Private</a>();<span class="keywordtype">void</span>  <a class="code" href="namespaceitk.html#a5c407d34ca594e1b0ed3224fa1af720a">TxtTransformIOFactoryRegister__Private</a>();</div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160; </div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="comment">//</span></div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="comment">// The code below registers available IO helpers using static initialization in</span></div>
@@ -126,7 +126,7 @@ $(function() {
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="keyword">namespace </span>{</div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160; </div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;  void (*TransformIOFactoryRegisterRegisterList[])(void) = {</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <a class="code" href="namespaceitk.html#a1b8fdf636f608b990dd4211901362430">HDF5TransformIOFactoryRegister__Private</a>,<a class="code" href="namespaceitk.html#a9f6a372c51b19beb927cea2e8f519145">MatlabTransformIOFactoryRegister__Private</a>,<a class="code" href="namespaceitk.html#a5c407d34ca594e1b0ed3224fa1af720a">TxtTransformIOFactoryRegister__Private</a>,</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <a class="code" href="namespaceitk.html#a1b8fdf636f608b990dd4211901362430">HDF5TransformIOFactoryRegister__Private</a>,<a class="code" href="namespaceitk.html#aa6741c3039d7e04819634a80fc39d937">MINCTransformIOFactoryRegister__Private</a>,<a class="code" href="namespaceitk.html#a9f6a372c51b19beb927cea2e8f519145">MatlabTransformIOFactoryRegister__Private</a>,<a class="code" href="namespaceitk.html#a5c407d34ca594e1b0ed3224fa1af720a">TxtTransformIOFactoryRegister__Private</a>,</div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <span class="keyword">nullptr</span>};</div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;  TransformIOFactoryRegisterManager TransformIOFactoryRegisterManagerInstance(TransformIOFactoryRegisterRegisterList);</div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160; </div>
@@ -137,6 +137,7 @@ $(function() {
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;<span class="preprocessor">#endif</span></div>
 </div><!-- fragment --></div><!-- contents -->
 <div class="ttc" id="aclassitk_1_1TransformIOFactoryRegisterManager_html_aefb761ca3bfca773fe91c4861c19e4f8"><div class="ttname"><a href="classitk_1_1TransformIOFactoryRegisterManager.html#aefb761ca3bfca773fe91c4861c19e4f8">itk::TransformIOFactoryRegisterManager::TransformIOFactoryRegisterManager</a></div><div class="ttdeci">TransformIOFactoryRegisterManager(void(*list[])(void))</div><div class="ttdef"><b>Definition:</b> <a href="itkTransformIOFactoryRegisterManager_8h_source.html#l00027">itkTransformIOFactoryRegisterManager.h:27</a></div></div>
+<div class="ttc" id="anamespaceitk_html_aa6741c3039d7e04819634a80fc39d937"><div class="ttname"><a href="namespaceitk.html#aa6741c3039d7e04819634a80fc39d937">itk::MINCTransformIOFactoryRegister__Private</a></div><div class="ttdeci">void MINCTransformIOFactoryRegister__Private()</div></div>
 <div class="ttc" id="anamespaceitk_html_a5c407d34ca594e1b0ed3224fa1af720a"><div class="ttname"><a href="namespaceitk.html#a5c407d34ca594e1b0ed3224fa1af720a">itk::TxtTransformIOFactoryRegister__Private</a></div><div class="ttdeci">void TxtTransformIOFactoryRegister__Private()</div></div>
 <div class="ttc" id="anamespaceitk_html_a9f6a372c51b19beb927cea2e8f519145"><div class="ttname"><a href="namespaceitk.html#a9f6a372c51b19beb927cea2e8f519145">itk::MatlabTransformIOFactoryRegister__Private</a></div><div class="ttdeci">void MatlabTransformIOFactoryRegister__Private()</div></div>
 <div class="ttc" id="anamespaceitk_html"><div class="ttname"><a href="namespaceitk.html">itk</a></div></div>
