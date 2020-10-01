@@ -48,7 +48,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">SimpleITK
-   &#160;<span id="projectnumber">2.1.0.dev10</span>
+   &#160;<span id="projectnumber">2.1.0.dev15</span>
    </div>
   </td>
  </tr>
@@ -229,7 +229,7 @@ Static Private Attributes</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Display an image in an external viewer (Fiji by default) </p>
-<p>The <a class="el" href="classitk_1_1simple_1_1ImageViewer.html" title="Display an image in an external viewer (Fiji by default)">ImageViewer</a> class displays an image with an external image display application. By default the class will search for a Fiji ( <a href="https://fiji.sc">https://fiji.sc</a> ) executable. The image is written out to a temporary file and then passed to the application.</p>
+<p>The <a class="el" href="classitk_1_1simple_1_1ImageViewer.html" title="Display an image in an external viewer (Fiji by default)">ImageViewer</a> class displays an image with an external image display application. By default the class will search for a <a href="https://fiji.sc">Fiji</a> executable. The image is written out to a temporary file and then passed to the application.</p>
 <p>When the first <a class="el" href="classitk_1_1simple_1_1ImageViewer.html" title="Display an image in an external viewer (Fiji by default)">ImageViewer</a> object is constructed the following environment variables are queried to set up the external viewer:</p>
 <p>SITK_SHOW_EXTENSION: file format extension of the temporary image file. The default is '.mha', the <a href="https://itk.org/Wiki/ITK/MetaIO">MetaIO</a> file format.</p>
 <p>SITK_SHOW_COMMAND: The user can specify an application other than Fiji to view images.</p>
@@ -622,9 +622,10 @@ Static Private Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Set the full path to the viewing application used in the command string. </p>
-<p>The SetApplication method expects a full path name.</p>
-<p>Using this method overrides the default application search.</p>
-<p>By default, when this method is called, the command string is set to "%a %f" which simply means <em>the application path</em> followed by <em>the temporary image file</em>. </p>
+<p>The SetApplication method expects the <b>app</b> parameter to be a full path name to the display application's executable. For instance, on Windows when using Fiji, one would use the full path to the ImageJ-win64.exe such as: </p><pre class="fragment">'C:\Users\dave\Fiji.app\ImageJ-win64.exe'
+</pre><p>On Linux, <b>app</b> would be set to something like: </p><pre class="fragment">'/home/dave/bin/Fiji.app/ImageJ-linux64'
+</pre><p>Using this method overrides the default application search.</p>
+<p>By default, when this method is called, the command string is set to <code>"%a %f"</code> which simply means <em>the application path</em> followed by <em>the temporary image file</em>. </p>
 
 </div>
 </div>
@@ -973,7 +974,7 @@ Static Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkImageViewer_8h_source.html#l00223">223</a> of file <a class="el" href="sitkImageViewer_8h_source.html">sitkImageViewer.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkImageViewer_8h_source.html#l00231">231</a> of file <a class="el" href="sitkImageViewer_8h_source.html">sitkImageViewer.h</a>.</p>
 
 </div>
 </div>
@@ -997,7 +998,7 @@ Static Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkImageViewer_8h_source.html#l00221">221</a> of file <a class="el" href="sitkImageViewer_8h_source.html">sitkImageViewer.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkImageViewer_8h_source.html#l00229">229</a> of file <a class="el" href="sitkImageViewer_8h_source.html">sitkImageViewer.h</a>.</p>
 
 </div>
 </div>
@@ -1021,7 +1022,7 @@ Static Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkImageViewer_8h_source.html#l00225">225</a> of file <a class="el" href="sitkImageViewer_8h_source.html">sitkImageViewer.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkImageViewer_8h_source.html#l00233">233</a> of file <a class="el" href="sitkImageViewer_8h_source.html">sitkImageViewer.h</a>.</p>
 
 </div>
 </div>
@@ -1045,7 +1046,7 @@ Static Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkImageViewer_8h_source.html#l00206">206</a> of file <a class="el" href="sitkImageViewer_8h_source.html">sitkImageViewer.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkImageViewer_8h_source.html#l00214">214</a> of file <a class="el" href="sitkImageViewer_8h_source.html">sitkImageViewer.h</a>.</p>
 
 </div>
 </div>
@@ -1069,7 +1070,7 @@ Static Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkImageViewer_8h_source.html#l00215">215</a> of file <a class="el" href="sitkImageViewer_8h_source.html">sitkImageViewer.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkImageViewer_8h_source.html#l00223">223</a> of file <a class="el" href="sitkImageViewer_8h_source.html">sitkImageViewer.h</a>.</p>
 
 </div>
 </div>
@@ -1093,7 +1094,7 @@ Static Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkImageViewer_8h_source.html#l00218">218</a> of file <a class="el" href="sitkImageViewer_8h_source.html">sitkImageViewer.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkImageViewer_8h_source.html#l00226">226</a> of file <a class="el" href="sitkImageViewer_8h_source.html">sitkImageViewer.h</a>.</p>
 
 </div>
 </div>
@@ -1117,7 +1118,7 @@ Static Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkImageViewer_8h_source.html#l00210">210</a> of file <a class="el" href="sitkImageViewer_8h_source.html">sitkImageViewer.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkImageViewer_8h_source.html#l00218">218</a> of file <a class="el" href="sitkImageViewer_8h_source.html">sitkImageViewer.h</a>.</p>
 
 </div>
 </div>
@@ -1141,7 +1142,7 @@ Static Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkImageViewer_8h_source.html#l00214">214</a> of file <a class="el" href="sitkImageViewer_8h_source.html">sitkImageViewer.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkImageViewer_8h_source.html#l00222">222</a> of file <a class="el" href="sitkImageViewer_8h_source.html">sitkImageViewer.h</a>.</p>
 
 </div>
 </div>
@@ -1165,7 +1166,7 @@ Static Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkImageViewer_8h_source.html#l00209">209</a> of file <a class="el" href="sitkImageViewer_8h_source.html">sitkImageViewer.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkImageViewer_8h_source.html#l00217">217</a> of file <a class="el" href="sitkImageViewer_8h_source.html">sitkImageViewer.h</a>.</p>
 
 </div>
 </div>
@@ -1189,7 +1190,7 @@ Static Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkImageViewer_8h_source.html#l00213">213</a> of file <a class="el" href="sitkImageViewer_8h_source.html">sitkImageViewer.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkImageViewer_8h_source.html#l00221">221</a> of file <a class="el" href="sitkImageViewer_8h_source.html">sitkImageViewer.h</a>.</p>
 
 </div>
 </div>
@@ -1213,7 +1214,7 @@ Static Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkImageViewer_8h_source.html#l00211">211</a> of file <a class="el" href="sitkImageViewer_8h_source.html">sitkImageViewer.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkImageViewer_8h_source.html#l00219">219</a> of file <a class="el" href="sitkImageViewer_8h_source.html">sitkImageViewer.h</a>.</p>
 
 </div>
 </div>
@@ -1237,7 +1238,7 @@ Static Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkImageViewer_8h_source.html#l00205">205</a> of file <a class="el" href="sitkImageViewer_8h_source.html">sitkImageViewer.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkImageViewer_8h_source.html#l00213">213</a> of file <a class="el" href="sitkImageViewer_8h_source.html">sitkImageViewer.h</a>.</p>
 
 </div>
 </div>
@@ -1261,7 +1262,7 @@ Static Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkImageViewer_8h_source.html#l00227">227</a> of file <a class="el" href="sitkImageViewer_8h_source.html">sitkImageViewer.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkImageViewer_8h_source.html#l00235">235</a> of file <a class="el" href="sitkImageViewer_8h_source.html">sitkImageViewer.h</a>.</p>
 
 </div>
 </div>
@@ -1285,7 +1286,7 @@ Static Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkImageViewer_8h_source.html#l00220">220</a> of file <a class="el" href="sitkImageViewer_8h_source.html">sitkImageViewer.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkImageViewer_8h_source.html#l00228">228</a> of file <a class="el" href="sitkImageViewer_8h_source.html">sitkImageViewer.h</a>.</p>
 
 </div>
 </div>
