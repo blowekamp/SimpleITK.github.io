@@ -48,7 +48,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">SimpleITK
-   &#160;<span id="projectnumber">2.1.0.dev26</span>
+   &#160;<span id="projectnumber">2.1.0.dev33</span>
    </div>
   </td>
  </tr>
@@ -170,7 +170,7 @@ class itk::simple::detail::MemberFunctionFactory&lt; TMemberFunctionPointer &gt;
   </dd>
 </dl>
 <p>Example member function pointer: </p><div class="fragment"><div class="line">type alias <a class="code" href="classitk_1_1simple_1_1detail_1_1MemberFunctionFactory.html#ac5a38df978fb2d44e9c04db52b288ec9">Self</a>&amp; (<a class="code" href="classitk_1_1simple_1_1detail_1_1MemberFunctionFactory.html#ac5a38df978fb2d44e9c04db52b288ec9">Self</a>::*<a class="code" href="classitk_1_1simple_1_1detail_1_1MemberFunctionFactory.html#ac1966e20ec8d3f92671bf20f6395ff02">MemberFunctionType</a>)( Image* );</div>
-</div><!-- fragment --><p>The RegisterMemberFunctions instantiate the templeted member functions and registers the member function pointer, so that it be used for dispatch later. Later they can be retrieve with the GetMemberFunction methods, which return a function object with the same arguments as the templated member function pointer.</p>
+</div><!-- fragment --><p>The RegisterMemberFunctions instantiate the templated member functions and registers the member function pointer, so that it be used for dispatch later. Later they can be retrieve with the GetMemberFunction methods, which return a function object with the same arguments as the templated member function pointer.</p>
 <p>An instance of a <a class="el" href="classitk_1_1simple_1_1detail_1_1MemberFunctionFactory.html" title="A class used to instantiate and generate function object to templated member functions.">MemberFunctionFactory</a> is bound to a specific instance of an object, so that the returned function object does not need to have the calling object specified. </p>
 
 <p class="definition">Definition at line <a class="el" href="sitkMemberFunctionFactory_8h_source.html#l00055">55</a> of file <a class="el" href="sitkMemberFunctionFactory_8h_source.html">sitkMemberFunctionFactory.h</a>.</p>

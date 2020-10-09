@@ -160,7 +160,7 @@ var sectionId = 'dynsection-0';
 <!-- Node302 -->
 <g id="node47" class="node">
 <title>Node302</title>
-<g id="a_node47"><a xlink:href="classitk_1_1simple_1_1ImageReaderBase.html" target="_top" xlink:title="An abract base class for image readers.">
+<g id="a_node47"><a xlink:href="classitk_1_1simple_1_1ImageReaderBase.html" target="_top" xlink:title="An abstract base class for image readers.">
 <polygon fill="#ffffff" stroke="#ff0000" points="357,-874 357,-893 520,-893 520,-874 357,-874"/>
 <text text-anchor="middle" x="438.5" y="-881" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">itk::simple::ImageReaderBase</text>
 </a>

@@ -267,7 +267,7 @@
 <!-- Node309 -->
 <g id="node310" class="node">
 <title>Node309</title>
-<g id="a_node310"><a xlink:href="classitk_1_1simple_1_1ImageReaderBase.html" target="_top" xlink:title="An abract base class for image readers.">
+<g id="a_node310"><a xlink:href="classitk_1_1simple_1_1ImageReaderBase.html" target="_top" xlink:title="An abstract base class for image readers.">
 <polygon fill="#ffffff" stroke="#000000" points="376,-3553 376,-3572 539,-3572 539,-3553 376,-3553"/>
 <text text-anchor="middle" x="457.5" y="-3560" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">itk::simple::ImageReaderBase</text>
 </a>

@@ -48,7 +48,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">SimpleITK
-   &#160;<span id="projectnumber">2.1.0.dev26</span>
+   &#160;<span id="projectnumber">2.1.0.dev33</span>
    </div>
   </td>
  </tr>
@@ -169,7 +169,7 @@ class itk::simple::detail::DualMemberFunctionFactory&lt; TMemberFunctionPointer 
 <div class="line"> </div>
 <div class="line"><span class="keyword">template</span>&lt;<span class="keyword">typename</span> TImageType1, TImageType2&gt;</div>
 <div class="line"><a class="codeRef" href="https://www.itk.org/Doxygen/html/classitk_1_1Image.html#af2d85a74c5b98b8a5f7edff2d7b1c2d8">Image::Pointer</a> ExecuteInternal( <a class="codeRef" href="https://www.itk.org/Doxygen/html/classitk_1_1Image.html#af2d85a74c5b98b8a5f7edff2d7b1c2d8">Image::Pointer</a> );</div>
-</div><!-- fragment --><p>The provided Addressor will instantiate the templeted member functions by taking the address in the RegisterMethods. Later they can be retrieve with the GetMemberFunction method, which returns a function object with the same arguments as the templated member function pointer.</p>
+</div><!-- fragment --><p>The provided Addressor will instantiate the templated member functions by taking the address in the RegisterMethods. Later they can be retrieve with the GetMemberFunction method, which returns a function object with the same arguments as the templated member function pointer.</p>
 <p>An instance of a <a class="el" href="classitk_1_1simple_1_1detail_1_1MemberFunctionFactory.html" title="A class used to instantiate and generate function object to templated member functions.">MemberFunctionFactory</a> is bound to a specific instance of an object, so that the returned function object does not need to have the calling object specified.</p>
 <dl class="section warning"><dt>Warning</dt><dd>Use this class with caution because it can instantiate a combinatorial number of methods.</dd></dl>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="classitk_1_1simple_1_1detail_1_1MemberFunctionFactory.html" title="A class used to instantiate and generate function object to templated member functions.">MemberFunctionFactory</a> </dd></dl>
