@@ -48,7 +48,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">SimpleITK
-   &#160;<span id="projectnumber">2.1.0.dev41</span>
+   &#160;<span id="projectnumber">2.1.0.dev51</span>
    </div>
   </td>
  </tr>
@@ -142,6 +142,9 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a3c27e845c3327ae8cf133db1750fd18b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ade45738b2c906a51f23532aa972f6169"><td class="memItemLeft" align="right" valign="top">std::vector&lt; unsigned int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1Image.html#ade45738b2c906a51f23532aa972f6169">GetSize</a> () const</td></tr>
 <tr class="separator:ade45738b2c906a51f23532aa972f6169"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af4705e6e3ad0dcec4a8230462af81c19"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1Image.html#af4705e6e3ad0dcec4a8230462af81c19">GetSizeOfPixelComponent</a> () const</td></tr>
+<tr class="memdesc:af4705e6e3ad0dcec4a8230462af81c19"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the number of bytes per component of a pixel.  <a href="classitk_1_1simple_1_1Image.html#af4705e6e3ad0dcec4a8230462af81c19">More...</a><br /></td></tr>
+<tr class="separator:af4705e6e3ad0dcec4a8230462af81c19"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af7b9ca4a6cd1a0c77e8c5c713e447b3a"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1Image.html#af7b9ca4a6cd1a0c77e8c5c713e447b3a">GetWidth</a> () const</td></tr>
 <tr class="separator:af7b9ca4a6cd1a0c77e8c5c713e447b3a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a38b869a842f2e7aeb75fbd0a84046cca"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1Image.html#a38b869a842f2e7aeb75fbd0a84046cca">HasMetaDataKey</a> (const std::string &amp;key) const</td></tr>
@@ -975,7 +978,7 @@ template&lt;int VPixelIDValue, typename TImageType &gt; </div>
 </div><div class="memdoc">
 <p>Dispatched from the InternalInitialization method. The "enable-if" idiom is used here for method overloading. The second method is for non-instantiated image, which turn into a void pointer for the parameter. However, this second method should never be executed. </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkImage_8h_source.html#l00522">522</a> of file <a class="el" href="sitkImage_8h_source.html">sitkImage.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkImage_8h_source.html#l00529">529</a> of file <a class="el" href="sitkImage_8h_source.html">sitkImage.h</a>.</p>
 
 </div>
 </div>
@@ -1810,7 +1813,7 @@ template&lt;int VPixelIDValue, typename TImageType &gt; </div>
 </div><div class="memdoc">
 
 <p>Get the number of components for each pixel. </p>
-<p>For scalar images this methods returns 1. For vector images the number of components for each pixel is returned. </p>
+<p>For images with scalar or complex pixel types this method returns one. For images with a vector pixel type the method returns the number of vector components per pixel. </p>
 
 </div>
 </div>
@@ -1830,7 +1833,7 @@ template&lt;int VPixelIDValue, typename TImageType &gt; </div>
 </div><div class="memdoc">
 
 <p>Get the number of pixels in the image. </p>
-<p>To Calculate the total number of values stored continuously for the image's buffer, the NumberOfPixels should be multiplied by NumberOfComponentsPerPixel in order to account for multiple component images. </p>
+<p>To calculate the total number of values stored continuously for the image's buffer, the NumberOfPixels should be multiplied by NumberOfComponentsPerPixel in order to account for multiple component images. </p>
 
 </div>
 </div>
@@ -2543,6 +2546,26 @@ template&lt;int VPixelIDValue, typename TImageType &gt; </div>
 <p>Get the number of pixels the <a class="el" href="classitk_1_1simple_1_1Image.html" title="The Image class for SimpleITK.">Image</a> is in each dimension as a std::vector. The size of the vector is equal to the number of dimensions for the image. </p>
 <dl class="section examples"><dt>Examples</dt><dd><a class="el" href="CSharp_2ImageGetBuffer_8cs-example.html#a0">CSharp/ImageGetBuffer.cs</a>, <a class="el" href="DicomSeriesReader_2DicomSeriesReader_8cxx-example.html#a5">DicomSeriesReader/DicomSeriesReader.cxx</a>, <a class="el" href="ImageRegistrationMethodDisplacement1_2ImageRegistrationMethodDisplacement1_8cxx-example.html#a30">ImageRegistrationMethodDisplacement1/ImageRegistrationMethodDisplacement1.cxx</a>, and <a class="el" href="SliceBySliceDecorator_2SliceBySliceDecorator_8cxx-example.html#a1">SliceBySliceDecorator/SliceBySliceDecorator.cxx</a>.</dd>
 </dl>
+
+</div>
+</div>
+<a id="af4705e6e3ad0dcec4a8230462af81c19"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af4705e6e3ad0dcec4a8230462af81c19">&#9670;&nbsp;</a></span>GetSizeOfPixelComponent()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned int itk::simple::Image::GetSizeOfPixelComponent </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the number of bytes per component of a pixel. </p>
+<p>Returns the <code>sizeof</code> the pixel component type. </p>
 
 </div>
 </div>
@@ -3779,7 +3802,7 @@ template&lt;int VPixelIDValue, unsigned int VImageDimension&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkImage_8h_source.html#l00540">540</a> of file <a class="el" href="sitkImage_8h_source.html">sitkImage.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkImage_8h_source.html#l00547">547</a> of file <a class="el" href="sitkImage_8h_source.html">sitkImage.h</a>.</p>
 
 </div>
 </div>

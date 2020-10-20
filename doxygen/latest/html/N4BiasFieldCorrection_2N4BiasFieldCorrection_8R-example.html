@@ -48,7 +48,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">SimpleITK
-   &#160;<span id="projectnumber">2.1.0.dev41</span>
+   &#160;<span id="projectnumber">2.1.0.dev51</span>
    </div>
   </td>
  </tr>
@@ -103,7 +103,8 @@ $(function() {
 <div class="line">         &quot;[maskImage], [numberOfIterations], [numberOfFittingLevels]&quot;)</div>
 <div class="line">}</div>
 <div class="line"> </div>
-<div class="line">inputImage &lt;- ReadImage(args[[1]])</div>
+<div class="line">inputImage &lt;- ReadImage(args[[1]], &#39;sitkFloat32&#39;)</div>
+<div class="line">image &lt;- inputImage</div>
 <div class="line"> </div>
 <div class="line">if (length( args ) &gt; 4) {</div>
 <div class="line">    maskImage &lt;- ReadImage( args[[4]], &#39;sitkUint8&#39; )</div>
@@ -112,7 +113,7 @@ $(function() {
 <div class="line">}</div>
 <div class="line"> </div>
 <div class="line">if (length( args ) &gt; 3) {</div>
-<div class="line">    inputImage &lt;- Shrink( inputImage, rep(strtoi(args[3]), inputImage$GetDimension()) )</div>
+<div class="line">    image &lt;- Shrink( inputImage, rep(strtoi(args[3]), inputImage$GetDimension()) )</div>
 <div class="line">    maskImage &lt;- Shrink( maskImage, rep(strtoi(args[3]), inputImage$GetDimension()) )</div>
 <div class="line">}</div>
 <div class="line"> </div>
@@ -130,7 +131,11 @@ $(function() {
 <div class="line">    corrector$SetMaximumNumberOfIterations( rep(strtoi( args[[5]], numberFittingLevels)) )</div>
 <div class="line">}</div>
 <div class="line"> </div>
-<div class="line">output &lt;- corrector$Execute( inputImage, maskImage )</div>
+<div class="line">output &lt;- corrector$Execute( image, maskImage )</div>
+<div class="line"> </div>
+<div class="line">logBiasField &lt;- corrector$GetLogBiasFieldAsImage(inputImage)</div>
+<div class="line"> </div>
+<div class="line">output &lt;- inputImage / Exp( logBiasField )</div>
 <div class="line"> </div>
 <div class="line">WriteImage(output, args[[2]])</div>
 </div><!-- fragment --> </div><!-- contents -->
