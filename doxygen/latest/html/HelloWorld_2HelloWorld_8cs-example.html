@@ -48,7 +48,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">SimpleITK
-   &#160;<span id="projectnumber">2.1.0.dev67</span>
+   &#160;<span id="projectnumber">2.1.0.dev71</span>
    </div>
   </td>
  </tr>
@@ -138,7 +138,9 @@ $(function() {
 <div class="line">        <span class="comment">// Apply the face to the original image</span></div>
 <div class="line">        image = SimpleITK.Add( image, face );</div>
 <div class="line"> </div>
-<div class="line">        SimpleITK.Show( image, <span class="stringliteral">&quot;Hello World: CSharp&quot;</span>, <span class="keyword">true</span> );</div>
+<div class="line">        <span class="comment">// Display the results</span></div>
+<div class="line">        <span class="keywordflow">if</span> (Environment.GetEnvironmentVariable(<span class="stringliteral">&quot;SITK_NOSHOW&quot;</span>) == <span class="keyword">null</span>)</div>
+<div class="line">          SimpleITK.Show( image, <span class="stringliteral">&quot;Hello World: CSharp&quot;</span>, <span class="keyword">true</span> );</div>
 <div class="line"> </div>
 <div class="line">      } <span class="keywordflow">catch</span> (Exception ex) {</div>
 <div class="line">        Console.WriteLine(ex);</div>

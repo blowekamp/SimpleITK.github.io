@@ -48,7 +48,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">SimpleITK
-   &#160;<span id="projectnumber">2.1.0.dev67</span>
+   &#160;<span id="projectnumber">2.1.0.dev71</span>
    </div>
   </td>
  </tr>
@@ -150,7 +150,9 @@ $(function() {
 <div class="line"># Apply the face to the original image</div>
 <div class="line">image = Simpleitk.add( image, face )</div>
 <div class="line"> </div>
-<div class="line">Simpleitk.show( image, &quot;Hello World: Ruby&quot;, true )</div>
+<div class="line">if (ENV[&quot;SITK_NOSHOW&quot;] == &quot;&quot;)</div>
+<div class="line">    Simpleitk.show( image, &quot;Hello World: Ruby&quot;, true )</div>
+<div class="line">end</div>
 </div><!-- fragment --> </div><!-- contents -->
 <!-- HTML footer for doxygen 1.8.17-->
 <!-- start footer part -->

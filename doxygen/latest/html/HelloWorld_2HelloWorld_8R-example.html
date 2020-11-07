@@ -48,7 +48,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">SimpleITK
-   &#160;<span id="projectnumber">2.1.0.dev67</span>
+   &#160;<span id="projectnumber">2.1.0.dev71</span>
    </div>
   </td>
  </tr>
@@ -128,7 +128,9 @@ $(function() {
 <div class="line">image &lt;- image + face</div>
 <div class="line"> </div>
 <div class="line"># Display the results</div>
-<div class="line">Show(image, &quot;Hello World: R&quot;, debugOn=TRUE)</div>
+<div class="line">if(Sys.getenv(&quot;SITK_NOSHOW&quot;) == &quot;&quot;) {</div>
+<div class="line">    Show(image, &quot;Hello World: R&quot;, debugOn=TRUE)</div>
+<div class="line">}</div>
 </div><!-- fragment --> </div><!-- contents -->
 <!-- HTML footer for doxygen 1.8.17-->
 <!-- start footer part -->
