@@ -133,7 +133,7 @@ expectation-maximization parameter estimation," IEEE Transactions on Medical Ima
 <p>A termination threshold for the EM iteration can be defined by calling SetTerminationUpdateThreshold. The iteration terminates once no single parameter of any confusion matrix changes by less than this threshold. Alternatively, a maximum number of iterations can be specified by calling SetMaximumNumberOfIterations. The algorithm may still terminate after a smaller number of iterations if the termination threshold criterion is satisfied.</p>
 <dl class="section user"><dt>EVENTS</dt><dd>This filter invokes IterationEvent() at each iteration of the E-M algorithm. Setting the AbortGenerateData() flag will cause the algorithm to halt after the current iteration and produce results just as if it had converged. The algorithm makes no attempt to report its progress since the number of iterations needed cannot be known in advance.</dd></dl>
 <dl class="section author"><dt>Author</dt><dd>Torsten Rohlfing, SRI International, Neuroscience Program </dd></dl>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="namespaceitk_1_1simple.html#a0a4af68154b233e228753f6b77649972" title="This filter performs a pixelwise combination of an arbitrary number of input images,...">itk::simple::MultiLabelSTAPLE</a> for the procedural interface </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="namespaceitk_1_1simple.html#a683eabf6023666cdbab68e524eeac8ce" title="This filter performs a pixelwise combination of an arbitrary number of input images,...">itk::simple::MultiLabelSTAPLE</a> for the procedural interface </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="sitkMultiLabelSTAPLEImageFilter_8h_source.html#l00101">101</a> of file <a class="el" href="sitkMultiLabelSTAPLEImageFilter_8h_source.html">sitkMultiLabelSTAPLEImageFilter.h</a>.</p>
 </div><table class="memberdecls">
@@ -164,16 +164,16 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a7c34a4e33dc7cbc387a6ca8ce32c2138"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4a8135e23a22d2ef337434ffab1b129c" id="r_a4a8135e23a22d2ef337434ffab1b129c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classitk_1_1simple_1_1Image.html">Image</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4a8135e23a22d2ef337434ffab1b129c">Execute</a> (const std::vector&lt; <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> &gt; &amp;images)</td></tr>
 <tr class="separator:a4a8135e23a22d2ef337434ffab1b129c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a59df60a47bd3137fb56c9e7becae2084" id="r_a59df60a47bd3137fb56c9e7becae2084"><td class="memItemLeft" align="right" valign="top">std::vector&lt; float &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a59df60a47bd3137fb56c9e7becae2084">GetConfusionMatrix</a> (unsigned int input) const</td></tr>
-<tr class="separator:a59df60a47bd3137fb56c9e7becae2084"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4ba56cdd6c132d8f8bc7b6c4d6c956c5" id="r_a4ba56cdd6c132d8f8bc7b6c4d6c956c5"><td class="memItemLeft" align="right" valign="top">std::vector&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4ba56cdd6c132d8f8bc7b6c4d6c956c5">GetConfusionMatrix</a> (unsigned int input) const</td></tr>
+<tr class="separator:a4ba56cdd6c132d8f8bc7b6c4d6c956c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7304e980faeb40963e575a08224c770f" id="r_a7304e980faeb40963e575a08224c770f"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7304e980faeb40963e575a08224c770f">GetLabelForUndecidedPixels</a> () const</td></tr>
 <tr class="separator:a7304e980faeb40963e575a08224c770f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2da50eb7e024501af08fac033057ce75" id="r_a2da50eb7e024501af08fac033057ce75"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2da50eb7e024501af08fac033057ce75">GetMaximumNumberOfIterations</a> () const</td></tr>
 <tr class="separator:a2da50eb7e024501af08fac033057ce75"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a09ab848fc3e01603711cef8a8deea712" id="r_a09ab848fc3e01603711cef8a8deea712"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a09ab848fc3e01603711cef8a8deea712">GetName</a> () const</td></tr>
 <tr class="separator:a09ab848fc3e01603711cef8a8deea712"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a91c1281cb417485681eed679ba27404e" id="r_a91c1281cb417485681eed679ba27404e"><td class="memItemLeft" align="right" valign="top">std::vector&lt; float &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a91c1281cb417485681eed679ba27404e">GetPriorProbabilities</a> () const</td></tr>
-<tr class="separator:a91c1281cb417485681eed679ba27404e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8e980c716be9e894d2bb52180b2c9368" id="r_a8e980c716be9e894d2bb52180b2c9368"><td class="memItemLeft" align="right" valign="top">std::vector&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8e980c716be9e894d2bb52180b2c9368">GetPriorProbabilities</a> () const</td></tr>
+<tr class="separator:a8e980c716be9e894d2bb52180b2c9368"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7b9520165cf8ea61eeec4406ead40392" id="r_a7b9520165cf8ea61eeec4406ead40392"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7b9520165cf8ea61eeec4406ead40392">GetTerminationUpdateThreshold</a> () const</td></tr>
 <tr class="separator:a7b9520165cf8ea61eeec4406ead40392"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7fcfae5a6f74544e329b398100452bb3" id="r_a7fcfae5a6f74544e329b398100452bb3"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7fcfae5a6f74544e329b398100452bb3">MultiLabelSTAPLEImageFilter</a> ()</td></tr>
@@ -182,8 +182,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:aea7fbf68f27f99763344e9b6a17e541d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7c4477167daff7532d22d4323db7e124" id="r_a7c4477167daff7532d22d4323db7e124"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7c4477167daff7532d22d4323db7e124">SetMaximumNumberOfIterations</a> (unsigned int MaximumNumberOfIterations)</td></tr>
 <tr class="separator:a7c4477167daff7532d22d4323db7e124"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac5e092cd335b6c992795b6ae5263cdbe" id="r_ac5e092cd335b6c992795b6ae5263cdbe"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac5e092cd335b6c992795b6ae5263cdbe">SetPriorProbabilities</a> (std::vector&lt; float &gt; PriorProbabilities)</td></tr>
-<tr class="separator:ac5e092cd335b6c992795b6ae5263cdbe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:affbfe515f819b90a1a5a58f50087f08f" id="r_affbfe515f819b90a1a5a58f50087f08f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#affbfe515f819b90a1a5a58f50087f08f">SetPriorProbabilities</a> (std::vector&lt; double &gt; PriorProbabilities)</td></tr>
+<tr class="separator:affbfe515f819b90a1a5a58f50087f08f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a01af07fa30076eef6a27e15b77b7f9e8" id="r_a01af07fa30076eef6a27e15b77b7f9e8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a01af07fa30076eef6a27e15b77b7f9e8">SetTerminationUpdateThreshold</a> (float TerminationUpdateThreshold)</td></tr>
 <tr class="separator:a01af07fa30076eef6a27e15b77b7f9e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afc7e6c2763af4f5142ffba055ae115a1" id="r_afc7e6c2763af4f5142ffba055ae115a1"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afc7e6c2763af4f5142ffba055ae115a1">ToString</a> () const</td></tr>
@@ -258,10 +258,10 @@ Private Attributes</h2></td></tr>
 <tr class="separator:a586eca5f6df5f983c0c0d71fd1f6f8ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3b777ef32985d1323f485dee7d2d007e" id="r_a3b777ef32985d1323f485dee7d2d007e"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3b777ef32985d1323f485dee7d2d007e">m_MaximumNumberOfIterations</a> { std::numeric_limits&lt;unsigned int&gt;::max() }</td></tr>
 <tr class="separator:a3b777ef32985d1323f485dee7d2d007e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a01f2bca411738a547c402c5cc9e2dd60" id="r_a01f2bca411738a547c402c5cc9e2dd60"><td class="memItemLeft" align="right" valign="top">std::function&lt; std::vector&lt; float &gt;(unsigned int)&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a01f2bca411738a547c402c5cc9e2dd60">m_pfGetConfusionMatrix</a></td></tr>
-<tr class="separator:a01f2bca411738a547c402c5cc9e2dd60"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abd62f0379d64078a1997d69e50393035" id="r_abd62f0379d64078a1997d69e50393035"><td class="memItemLeft" align="right" valign="top">std::vector&lt; float &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abd62f0379d64078a1997d69e50393035">m_PriorProbabilities</a> { std::vector&lt;float&gt;() }</td></tr>
-<tr class="separator:abd62f0379d64078a1997d69e50393035"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9fe87a54dd3516a3579e0a7e2001a66d" id="r_a9fe87a54dd3516a3579e0a7e2001a66d"><td class="memItemLeft" align="right" valign="top">std::function&lt; std::vector&lt; double &gt;(unsigned int)&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9fe87a54dd3516a3579e0a7e2001a66d">m_pfGetConfusionMatrix</a></td></tr>
+<tr class="separator:a9fe87a54dd3516a3579e0a7e2001a66d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8f8374746b831043d497abd42169bcdc" id="r_a8f8374746b831043d497abd42169bcdc"><td class="memItemLeft" align="right" valign="top">std::vector&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8f8374746b831043d497abd42169bcdc">m_PriorProbabilities</a> { std::vector&lt;double&gt;() }</td></tr>
+<tr class="separator:a8f8374746b831043d497abd42169bcdc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a987b7bae3672f89a695301ff182b0c01" id="r_a987b7bae3672f89a695301ff182b0c01"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a987b7bae3672f89a695301ff182b0c01">m_TerminationUpdateThreshold</a> { 1e-5f }</td></tr>
 <tr class="separator:a987b7bae3672f89a695301ff182b0c01"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -651,8 +651,8 @@ template&lt;class TImageType&gt; </div>
 
 </div>
 </div>
-<a id="a59df60a47bd3137fb56c9e7becae2084" name="a59df60a47bd3137fb56c9e7becae2084"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a59df60a47bd3137fb56c9e7becae2084">&#9670;&#160;</a></span>GetConfusionMatrix()</h2>
+<a id="a4ba56cdd6c132d8f8bc7b6c4d6c956c5" name="a4ba56cdd6c132d8f8bc7b6c4d6c956c5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4ba56cdd6c132d8f8bc7b6c4d6c956c5">&#9670;&#160;</a></span>GetConfusionMatrix()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -661,7 +661,7 @@ template&lt;class TImageType&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::vector&lt; float &gt; itk::simple::MultiLabelSTAPLEImageFilter::GetConfusionMatrix </td>
+          <td class="memname">std::vector&lt; double &gt; itk::simple::MultiLabelSTAPLEImageFilter::GetConfusionMatrix </td>
           <td>(</td>
           <td class="paramtype">unsigned int</td>          <td class="paramname"><span class="paramname"><em>input</em></span></td><td>)</td>
           <td> const</td>
@@ -798,8 +798,8 @@ template&lt;class TImageType&gt; </div>
 
 </div>
 </div>
-<a id="a91c1281cb417485681eed679ba27404e" name="a91c1281cb417485681eed679ba27404e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a91c1281cb417485681eed679ba27404e">&#9670;&#160;</a></span>GetPriorProbabilities()</h2>
+<a id="a8e980c716be9e894d2bb52180b2c9368" name="a8e980c716be9e894d2bb52180b2c9368"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8e980c716be9e894d2bb52180b2c9368">&#9670;&#160;</a></span>GetPriorProbabilities()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -808,7 +808,7 @@ template&lt;class TImageType&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::vector&lt; float &gt; itk::simple::MultiLabelSTAPLEImageFilter::GetPriorProbabilities </td>
+          <td class="memname">std::vector&lt; double &gt; itk::simple::MultiLabelSTAPLEImageFilter::GetPriorProbabilities </td>
           <td>(</td>
           <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
           <td> const</td>
@@ -919,8 +919,8 @@ template&lt;class TImageType&gt; </div>
 
 </div>
 </div>
-<a id="ac5e092cd335b6c992795b6ae5263cdbe" name="ac5e092cd335b6c992795b6ae5263cdbe"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac5e092cd335b6c992795b6ae5263cdbe">&#9670;&#160;</a></span>SetPriorProbabilities()</h2>
+<a id="affbfe515f819b90a1a5a58f50087f08f" name="affbfe515f819b90a1a5a58f50087f08f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#affbfe515f819b90a1a5a58f50087f08f">&#9670;&#160;</a></span>SetPriorProbabilities()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -931,7 +931,7 @@ template&lt;class TImageType&gt; </div>
         <tr>
           <td class="memname">void itk::simple::MultiLabelSTAPLEImageFilter::SetPriorProbabilities </td>
           <td>(</td>
-          <td class="paramtype">std::vector&lt; float &gt;</td>          <td class="paramname"><span class="paramname"><em>PriorProbabilities</em></span></td><td>)</td>
+          <td class="paramtype">std::vector&lt; double &gt;</td>          <td class="paramname"><span class="paramname"><em>PriorProbabilities</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -1111,8 +1111,8 @@ template&lt;class TImageType&gt; </div>
 
 </div>
 </div>
-<a id="a01f2bca411738a547c402c5cc9e2dd60" name="a01f2bca411738a547c402c5cc9e2dd60"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a01f2bca411738a547c402c5cc9e2dd60">&#9670;&#160;</a></span>m_pfGetConfusionMatrix</h2>
+<a id="a9fe87a54dd3516a3579e0a7e2001a66d" name="a9fe87a54dd3516a3579e0a7e2001a66d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9fe87a54dd3516a3579e0a7e2001a66d">&#9670;&#160;</a></span>m_pfGetConfusionMatrix</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1121,7 +1121,7 @@ template&lt;class TImageType&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::function&lt;std::vector&lt;float&gt;(unsigned int)&gt; itk::simple::MultiLabelSTAPLEImageFilter::m_pfGetConfusionMatrix</td>
+          <td class="memname">std::function&lt;std::vector&lt;double&gt;(unsigned int)&gt; itk::simple::MultiLabelSTAPLEImageFilter::m_pfGetConfusionMatrix</td>
         </tr>
       </table>
   </td>
@@ -1137,8 +1137,8 @@ template&lt;class TImageType&gt; </div>
 
 </div>
 </div>
-<a id="abd62f0379d64078a1997d69e50393035" name="abd62f0379d64078a1997d69e50393035"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abd62f0379d64078a1997d69e50393035">&#9670;&#160;</a></span>m_PriorProbabilities</h2>
+<a id="a8f8374746b831043d497abd42169bcdc" name="a8f8374746b831043d497abd42169bcdc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8f8374746b831043d497abd42169bcdc">&#9670;&#160;</a></span>m_PriorProbabilities</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1147,7 +1147,7 @@ template&lt;class TImageType&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::vector&lt;float&gt; itk::simple::MultiLabelSTAPLEImageFilter::m_PriorProbabilities { std::vector&lt;float&gt;() }</td>
+          <td class="memname">std::vector&lt;double&gt; itk::simple::MultiLabelSTAPLEImageFilter::m_PriorProbabilities { std::vector&lt;double&gt;() }</td>
         </tr>
       </table>
   </td>
