@@ -101,7 +101,7 @@ $(function(){ initResizable(false); });
 <div class="line"><span class="lineno">   18</span><span class="comment"># =========================================================================</span></div>
 <div class="line"><span class="lineno">   19</span> </div>
 <div class="line"><span class="lineno">   20</span><span class="stringliteral">&quot;&quot;&quot; A SimpleITK example demonstrating image registration using the</span></div>
-<div class="line"><span class="lineno">   21</span><span class="stringliteral">    DisplacementFieldTransform and the JointHistogramMutualInformation</span></div>
+<div class="line"><span class="lineno">   21</span><span class="stringliteral">    DisplacementFieldTransform and the MattesMutualInformation</span></div>
 <div class="line"><span class="lineno">   22</span><span class="stringliteral">    metric.  &quot;&quot;&quot;</span></div>
 <div class="line"><span class="lineno">   23</span> </div>
 <div class="line"><span class="lineno">   24</span><span class="keyword">import</span> sys</div>
@@ -149,83 +149,88 @@ $(function(){ initResizable(false); });
 <div class="line"><span class="lineno">   66</span>R.SetShrinkFactorsPerLevel([3, 2, 1])</div>
 <div class="line"><span class="lineno">   67</span>R.SetSmoothingSigmasPerLevel([2, 1, 1])</div>
 <div class="line"><span class="lineno">   68</span> </div>
-<div class="line"><span class="lineno">   69</span>R.SetMetricAsJointHistogramMutualInformation(20)</div>
+<div class="line"><span class="lineno">   69</span>R.SetMetricAsMattesMutualInformation()</div>
 <div class="line"><span class="lineno">   70</span>R.MetricUseFixedImageGradientFilterOff()</div>
 <div class="line"><span class="lineno">   71</span> </div>
-<div class="line"><span class="lineno">   72</span>R.SetOptimizerAsGradientDescent(</div>
-<div class="line"><span class="lineno">   73</span>    learningRate=1.0,</div>
-<div class="line"><span class="lineno">   74</span>    numberOfIterations=100,</div>
-<div class="line"><span class="lineno">   75</span>    estimateLearningRate=R.EachIteration,</div>
-<div class="line"><span class="lineno">   76</span>)</div>
-<div class="line"><span class="lineno">   77</span>R.SetOptimizerScalesFromPhysicalShift()</div>
-<div class="line"><span class="lineno">   78</span> </div>
-<div class="line"><span class="lineno">   79</span>R.SetInitialTransform(initialTx)</div>
+<div class="line"><span class="lineno">   72</span><span class="comment"># Estimated once per level, not each iteration, so stage 1 is</span></div>
+<div class="line"><span class="lineno">   73</span><span class="comment"># reproducible regardless of thread count.</span></div>
+<div class="line"><span class="lineno">   74</span>R.SetOptimizerAsGradientDescent(</div>
+<div class="line"><span class="lineno">   75</span>    learningRate=1.0,</div>
+<div class="line"><span class="lineno">   76</span>    numberOfIterations=100,</div>
+<div class="line"><span class="lineno">   77</span>    estimateLearningRate=R.Once,</div>
+<div class="line"><span class="lineno">   78</span>)</div>
+<div class="line"><span class="lineno">   79</span>R.SetOptimizerScalesFromPhysicalShift()</div>
 <div class="line"><span class="lineno">   80</span> </div>
-<div class="line"><span class="lineno">   81</span>R.SetInterpolator(sitk.sitkLinear)</div>
+<div class="line"><span class="lineno">   81</span>R.SetInitialTransform(initialTx)</div>
 <div class="line"><span class="lineno">   82</span> </div>
-<div class="line"><span class="lineno">   83</span>R.AddCommand(sitk.sitkIterationEvent, <span class="keyword">lambda</span>: command_iteration(R))</div>
-<div class="line"><span class="lineno">   84</span>R.AddCommand(</div>
-<div class="line"><span class="lineno">   85</span>    sitk.sitkMultiResolutionIterationEvent,</div>
-<div class="line"><span class="lineno">   86</span>    <span class="keyword">lambda</span>: command_multiresolution_iteration(R),</div>
-<div class="line"><span class="lineno">   87</span>)</div>
-<div class="line"><span class="lineno">   88</span> </div>
-<div class="line"><span class="lineno">   89</span>outTx1 = R.Execute(fixed, moving)</div>
+<div class="line"><span class="lineno">   83</span>R.SetInterpolator(sitk.sitkLinear)</div>
+<div class="line"><span class="lineno">   84</span> </div>
+<div class="line"><span class="lineno">   85</span>R.AddCommand(sitk.sitkIterationEvent, <span class="keyword">lambda</span>: command_iteration(R))</div>
+<div class="line"><span class="lineno">   86</span>R.AddCommand(</div>
+<div class="line"><span class="lineno">   87</span>    sitk.sitkMultiResolutionIterationEvent,</div>
+<div class="line"><span class="lineno">   88</span>    <span class="keyword">lambda</span>: command_multiresolution_iteration(R),</div>
+<div class="line"><span class="lineno">   89</span>)</div>
 <div class="line"><span class="lineno">   90</span> </div>
-<div class="line"><span class="lineno">   91</span>print(<span class="stringliteral">&quot;-------&quot;</span>)</div>
-<div class="line"><span class="lineno">   92</span>print(outTx1)</div>
-<div class="line"><span class="lineno">   93</span>print(f<span class="stringliteral">&quot;Optimizer stop condition: {R.GetOptimizerStopConditionDescription()}&quot;</span>)</div>
-<div class="line"><span class="lineno">   94</span>print(f<span class="stringliteral">&quot; Iteration: {R.GetOptimizerIteration()}&quot;</span>)</div>
-<div class="line"><span class="lineno">   95</span>print(f<span class="stringliteral">&quot; Metric value: {R.GetMetricValue()}&quot;</span>)</div>
-<div class="line"><span class="lineno">   96</span> </div>
-<div class="line"><span class="lineno">   97</span>displacementField = <a class="code hl_class" href="classitk_1_1simple_1_1Image.html">sitk.Image</a>(fixed.GetSize(), sitk.sitkVectorFloat64)</div>
-<div class="line"><span class="lineno">   98</span>displacementField.CopyInformation(fixed)</div>
-<div class="line"><span class="lineno">   99</span>displacementTx = <a class="code hl_class" href="classitk_1_1simple_1_1DisplacementFieldTransform.html">sitk.DisplacementFieldTransform</a>(displacementField)</div>
-<div class="line"><span class="lineno">  100</span>del displacementField</div>
-<div class="line"><span class="lineno">  101</span>displacementTx.SetSmoothingGaussianOnUpdate(</div>
-<div class="line"><span class="lineno">  102</span>    varianceForUpdateField=0.0, varianceForTotalField=1.5</div>
-<div class="line"><span class="lineno">  103</span>)</div>
-<div class="line"><span class="lineno">  104</span> </div>
-<div class="line"><span class="lineno">  105</span>R.SetMovingInitialTransform(outTx1)</div>
-<div class="line"><span class="lineno">  106</span>R.SetInitialTransform(displacementTx, inPlace=<span class="keyword">True</span>)</div>
-<div class="line"><span class="lineno">  107</span> </div>
-<div class="line"><span class="lineno">  108</span>R.SetMetricAsANTSNeighborhoodCorrelation(4)</div>
-<div class="line"><span class="lineno">  109</span>R.MetricUseFixedImageGradientFilterOff()</div>
-<div class="line"><span class="lineno">  110</span> </div>
-<div class="line"><span class="lineno">  111</span>R.SetShrinkFactorsPerLevel([3, 2, 1])</div>
-<div class="line"><span class="lineno">  112</span>R.SetSmoothingSigmasPerLevel([2, 1, 1])</div>
-<div class="line"><span class="lineno">  113</span> </div>
-<div class="line"><span class="lineno">  114</span>R.SetOptimizerScalesFromPhysicalShift()</div>
-<div class="line"><span class="lineno">  115</span>R.SetOptimizerAsGradientDescent(</div>
-<div class="line"><span class="lineno">  116</span>    learningRate=1,</div>
-<div class="line"><span class="lineno">  117</span>    numberOfIterations=300,</div>
-<div class="line"><span class="lineno">  118</span>    estimateLearningRate=R.EachIteration,</div>
-<div class="line"><span class="lineno">  119</span>)</div>
-<div class="line"><span class="lineno">  120</span> </div>
-<div class="line"><span class="lineno">  121</span>R.Execute(fixed, moving)</div>
-<div class="line"><span class="lineno">  122</span> </div>
-<div class="line"><span class="lineno">  123</span>print(<span class="stringliteral">&quot;-------&quot;</span>)</div>
-<div class="line"><span class="lineno">  124</span>print(displacementTx)</div>
-<div class="line"><span class="lineno">  125</span>print(f<span class="stringliteral">&quot;Optimizer stop condition: {R.GetOptimizerStopConditionDescription()}&quot;</span>)</div>
-<div class="line"><span class="lineno">  126</span>print(f<span class="stringliteral">&quot; Iteration: {R.GetOptimizerIteration()}&quot;</span>)</div>
-<div class="line"><span class="lineno">  127</span>print(f<span class="stringliteral">&quot; Metric value: {R.GetMetricValue()}&quot;</span>)</div>
-<div class="line"><span class="lineno">  128</span> </div>
-<div class="line"><span class="lineno">  129</span>compositeTx = <a class="code hl_class" href="classitk_1_1simple_1_1CompositeTransform.html">sitk.CompositeTransform</a>([outTx1, displacementTx])</div>
-<div class="line"><span class="lineno">  130</span><a class="code hl_function" href="namespaceitk_1_1simple.html#af2a634ba9346fcf9c601ff1c676e5ac8">sitk.WriteTransform</a>(compositeTx, sys.argv[3])</div>
-<div class="line"><span class="lineno">  131</span> </div>
-<div class="line"><span class="lineno">  132</span><span class="keywordflow">if</span> <span class="stringliteral">&quot;SITK_NOSHOW&quot;</span> <span class="keywordflow">not</span> <span class="keywordflow">in</span> os.environ:</div>
-<div class="line"><span class="lineno">  133</span>    <a class="code hl_function" href="namespaceitk_1_1simple.html#a86cb9e226d455efca3ba034dc2154605">sitk.Show</a>(displacementTx.GetDisplacementField(), <span class="stringliteral">&quot;Displacement Field&quot;</span>)</div>
-<div class="line"><span class="lineno">  134</span> </div>
-<div class="line"><span class="lineno">  135</span>    resampler = <a class="code hl_class" href="classitk_1_1simple_1_1ResampleImageFilter.html">sitk.ResampleImageFilter</a>()</div>
-<div class="line"><span class="lineno">  136</span>    resampler.SetReferenceImage(fixed)</div>
-<div class="line"><span class="lineno">  137</span>    resampler.SetInterpolator(sitk.sitkLinear)</div>
-<div class="line"><span class="lineno">  138</span>    resampler.SetDefaultPixelValue(100)</div>
-<div class="line"><span class="lineno">  139</span>    resampler.SetTransform(compositeTx)</div>
-<div class="line"><span class="lineno">  140</span> </div>
-<div class="line"><span class="lineno">  141</span>    out = resampler.Execute(moving)</div>
-<div class="line"><span class="lineno">  142</span>    simg1 = <a class="code hl_function" href="namespaceitk_1_1simple.html#af8c9d7cc96a299a05890e9c3db911885">sitk.Cast</a>(<a class="code hl_function" href="namespaceitk_1_1simple.html#af34ebbd0c41ae0d0a7a152ac1382bac6">sitk.RescaleIntensity</a>(fixed), sitk.sitkUInt8)</div>
-<div class="line"><span class="lineno">  143</span>    simg2 = <a class="code hl_function" href="namespaceitk_1_1simple.html#af8c9d7cc96a299a05890e9c3db911885">sitk.Cast</a>(<a class="code hl_function" href="namespaceitk_1_1simple.html#af34ebbd0c41ae0d0a7a152ac1382bac6">sitk.RescaleIntensity</a>(out), sitk.sitkUInt8)</div>
-<div class="line"><span class="lineno">  144</span>    cimg = <a class="code hl_function" href="namespaceitk_1_1simple.html#a73d29c526c51f602aff2e9658c33ce0a">sitk.Compose</a>(simg1, simg2, simg1 // 2.0 + simg2 // 2.0)</div>
-<div class="line"><span class="lineno">  145</span>    <a class="code hl_function" href="namespaceitk_1_1simple.html#a86cb9e226d455efca3ba034dc2154605">sitk.Show</a>(cimg, <span class="stringliteral">&quot;ImageRegistration1 Composition&quot;</span>)</div>
+<div class="line"><span class="lineno">   91</span>outTx1 = R.Execute(fixed, moving)</div>
+<div class="line"><span class="lineno">   92</span> </div>
+<div class="line"><span class="lineno">   93</span>print(<span class="stringliteral">&quot;-------&quot;</span>)</div>
+<div class="line"><span class="lineno">   94</span>print(outTx1)</div>
+<div class="line"><span class="lineno">   95</span>print(f<span class="stringliteral">&quot;Optimizer stop condition: {R.GetOptimizerStopConditionDescription()}&quot;</span>)</div>
+<div class="line"><span class="lineno">   96</span>print(f<span class="stringliteral">&quot; Iteration: {R.GetOptimizerIteration()}&quot;</span>)</div>
+<div class="line"><span class="lineno">   97</span>print(f<span class="stringliteral">&quot; Metric value: {R.GetMetricValue()}&quot;</span>)</div>
+<div class="line"><span class="lineno">   98</span> </div>
+<div class="line"><span class="lineno">   99</span>displacementField = <a class="code hl_class" href="classitk_1_1simple_1_1Image.html">sitk.Image</a>(fixed.GetSize(), sitk.sitkVectorFloat64)</div>
+<div class="line"><span class="lineno">  100</span>displacementField.CopyInformation(fixed)</div>
+<div class="line"><span class="lineno">  101</span>displacementTx = <a class="code hl_class" href="classitk_1_1simple_1_1DisplacementFieldTransform.html">sitk.DisplacementFieldTransform</a>(displacementField)</div>
+<div class="line"><span class="lineno">  102</span>del displacementField</div>
+<div class="line"><span class="lineno">  103</span>displacementTx.SetSmoothingGaussianOnUpdate(</div>
+<div class="line"><span class="lineno">  104</span>    varianceForUpdateField=0.0, varianceForTotalField=1.5</div>
+<div class="line"><span class="lineno">  105</span>)</div>
+<div class="line"><span class="lineno">  106</span> </div>
+<div class="line"><span class="lineno">  107</span>R.SetMovingInitialTransform(outTx1)</div>
+<div class="line"><span class="lineno">  108</span>R.SetInitialTransform(displacementTx, inPlace=<span class="keyword">True</span>)</div>
+<div class="line"><span class="lineno">  109</span> </div>
+<div class="line"><span class="lineno">  110</span>R.SetMetricAsANTSNeighborhoodCorrelation(4)</div>
+<div class="line"><span class="lineno">  111</span>R.MetricUseFixedImageGradientFilterOff()</div>
+<div class="line"><span class="lineno">  112</span> </div>
+<div class="line"><span class="lineno">  113</span>R.SetShrinkFactorsPerLevel([3, 2, 1])</div>
+<div class="line"><span class="lineno">  114</span>R.SetSmoothingSigmasPerLevel([2, 1, 1])</div>
+<div class="line"><span class="lineno">  115</span> </div>
+<div class="line"><span class="lineno">  116</span><span class="comment"># Caps the per-iteration step to one voxel, keeping stage 2</span></div>
+<div class="line"><span class="lineno">  117</span><span class="comment"># reproducible regardless of thread count.</span></div>
+<div class="line"><span class="lineno">  118</span>R.SetOptimizerScalesFromPhysicalShift()</div>
+<div class="line"><span class="lineno">  119</span>R.SetOptimizerAsGradientDescent(</div>
+<div class="line"><span class="lineno">  120</span>    learningRate=1,</div>
+<div class="line"><span class="lineno">  121</span>    numberOfIterations=300,</div>
+<div class="line"><span class="lineno">  122</span>    estimateLearningRate=R.EachIteration,</div>
+<div class="line"><span class="lineno">  123</span>    maximumStepSizeInPhysicalUnits=1.0,</div>
+<div class="line"><span class="lineno">  124</span>)</div>
+<div class="line"><span class="lineno">  125</span> </div>
+<div class="line"><span class="lineno">  126</span>R.Execute(fixed, moving)</div>
+<div class="line"><span class="lineno">  127</span> </div>
+<div class="line"><span class="lineno">  128</span>print(<span class="stringliteral">&quot;-------&quot;</span>)</div>
+<div class="line"><span class="lineno">  129</span>print(displacementTx)</div>
+<div class="line"><span class="lineno">  130</span>print(f<span class="stringliteral">&quot;Optimizer stop condition: {R.GetOptimizerStopConditionDescription()}&quot;</span>)</div>
+<div class="line"><span class="lineno">  131</span>print(f<span class="stringliteral">&quot; Iteration: {R.GetOptimizerIteration()}&quot;</span>)</div>
+<div class="line"><span class="lineno">  132</span>print(f<span class="stringliteral">&quot; Metric value: {R.GetMetricValue()}&quot;</span>)</div>
+<div class="line"><span class="lineno">  133</span> </div>
+<div class="line"><span class="lineno">  134</span>compositeTx = <a class="code hl_class" href="classitk_1_1simple_1_1CompositeTransform.html">sitk.CompositeTransform</a>([outTx1, displacementTx])</div>
+<div class="line"><span class="lineno">  135</span><a class="code hl_function" href="namespaceitk_1_1simple.html#af2a634ba9346fcf9c601ff1c676e5ac8">sitk.WriteTransform</a>(compositeTx, sys.argv[3])</div>
+<div class="line"><span class="lineno">  136</span> </div>
+<div class="line"><span class="lineno">  137</span><span class="keywordflow">if</span> <span class="stringliteral">&quot;SITK_NOSHOW&quot;</span> <span class="keywordflow">not</span> <span class="keywordflow">in</span> os.environ:</div>
+<div class="line"><span class="lineno">  138</span>    <a class="code hl_function" href="namespaceitk_1_1simple.html#a86cb9e226d455efca3ba034dc2154605">sitk.Show</a>(displacementTx.GetDisplacementField(), <span class="stringliteral">&quot;Displacement Field&quot;</span>)</div>
+<div class="line"><span class="lineno">  139</span> </div>
+<div class="line"><span class="lineno">  140</span>    resampler = <a class="code hl_class" href="classitk_1_1simple_1_1ResampleImageFilter.html">sitk.ResampleImageFilter</a>()</div>
+<div class="line"><span class="lineno">  141</span>    resampler.SetReferenceImage(fixed)</div>
+<div class="line"><span class="lineno">  142</span>    resampler.SetInterpolator(sitk.sitkLinear)</div>
+<div class="line"><span class="lineno">  143</span>    resampler.SetDefaultPixelValue(100)</div>
+<div class="line"><span class="lineno">  144</span>    resampler.SetTransform(compositeTx)</div>
+<div class="line"><span class="lineno">  145</span> </div>
+<div class="line"><span class="lineno">  146</span>    out = resampler.Execute(moving)</div>
+<div class="line"><span class="lineno">  147</span>    simg1 = <a class="code hl_function" href="namespaceitk_1_1simple.html#af8c9d7cc96a299a05890e9c3db911885">sitk.Cast</a>(<a class="code hl_function" href="namespaceitk_1_1simple.html#af34ebbd0c41ae0d0a7a152ac1382bac6">sitk.RescaleIntensity</a>(fixed), sitk.sitkUInt8)</div>
+<div class="line"><span class="lineno">  148</span>    simg2 = <a class="code hl_function" href="namespaceitk_1_1simple.html#af8c9d7cc96a299a05890e9c3db911885">sitk.Cast</a>(<a class="code hl_function" href="namespaceitk_1_1simple.html#af34ebbd0c41ae0d0a7a152ac1382bac6">sitk.RescaleIntensity</a>(out), sitk.sitkUInt8)</div>
+<div class="line"><span class="lineno">  149</span>    cimg = <a class="code hl_function" href="namespaceitk_1_1simple.html#a73d29c526c51f602aff2e9658c33ce0a">sitk.Compose</a>(simg1, simg2, simg1 // 2.0 + simg2 // 2.0)</div>
+<div class="line"><span class="lineno">  150</span>    <a class="code hl_function" href="namespaceitk_1_1simple.html#a86cb9e226d455efca3ba034dc2154605">sitk.Show</a>(cimg, <span class="stringliteral">&quot;ImageRegistration1 Composition&quot;</span>)</div>
 <div class="ttc" id="aclassitk_1_1simple_1_1AffineTransform_html"><div class="ttname"><a href="classitk_1_1simple_1_1AffineTransform.html">itk::simple::AffineTransform</a></div><div class="ttdoc">An affine transformation about a fixed center with translation for a 2D or 3D coordinate.</div><div class="ttdef"><b>Definition</b> <a href="sitkAffineTransform_8h_source.html#l00033">sitkAffineTransform.h:34</a></div></div>
 <div class="ttc" id="aclassitk_1_1simple_1_1CompositeTransform_html"><div class="ttname"><a href="classitk_1_1simple_1_1CompositeTransform.html">itk::simple::CompositeTransform</a></div><div class="ttdoc">This class contains a stack of transforms and concatenates them by composition.</div><div class="ttdef"><b>Definition</b> <a href="sitkCompositeTransform_8h_source.html#l00058">sitkCompositeTransform.h:59</a></div></div>
 <div class="ttc" id="aclassitk_1_1simple_1_1DisplacementFieldTransform_html"><div class="ttname"><a href="classitk_1_1simple_1_1DisplacementFieldTransform.html">itk::simple::DisplacementFieldTransform</a></div><div class="ttdoc">A dense deformable transform over a bounded spatial domain for 2D or 3D coordinates space.</div><div class="ttdef"><b>Definition</b> <a href="sitkDisplacementFieldTransform_8h_source.html#l00034">sitkDisplacementFieldTransform.h:35</a></div></div>

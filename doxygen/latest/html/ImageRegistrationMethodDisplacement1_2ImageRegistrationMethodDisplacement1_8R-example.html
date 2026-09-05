@@ -141,14 +141,16 @@ $(function(){ initResizable(false); });
 <div class="line">R$SetShrinkFactorsPerLevel(c(3,2,1))</div>
 <div class="line">R$SetSmoothingSigmasPerLevel(c(2,1,1))</div>
 <div class="line"> </div>
-<div class="line">R$SetMetricAsJointHistogramMutualInformation(20)</div>
+<div class="line">R$SetMetricAsMattesMutualInformation()</div>
 <div class="line">R$MetricUseFixedImageGradientFilterOff()</div>
 <div class="line"> </div>
+<div class="line"># Estimated once per level, not each iteration, so stage 1 is</div>
+<div class="line"># reproducible regardless of thread count.</div>
 <div class="line">R$SetOptimizerAsGradientDescent(learningRate=1.0,</div>
 <div class="line">                                numberOfIterations=100,</div>
 <div class="line">                                convergenceMinimumValue=1e-6,</div>
 <div class="line">                                convergenceWindowSize=10,</div>
-<div class="line">                                estimateLearningRate = &#39;EachIteration&#39;)</div>
+<div class="line">                                estimateLearningRate = &#39;Once&#39;)</div>
 <div class="line">R$SetOptimizerScalesFromPhysicalShift()</div>
 <div class="line"> </div>
 <div class="line">R$SetInitialTransform(initialTx)</div>
@@ -183,12 +185,15 @@ $(function(){ initResizable(false); });
 <div class="line">R$SetShrinkFactorsPerLevel(c(3,2,1))</div>
 <div class="line">R$SetSmoothingSigmasPerLevel(c(2,1,1))</div>
 <div class="line"> </div>
+<div class="line"># Caps the per-iteration step to one voxel, keeping stage 2</div>
+<div class="line"># reproducible regardless of thread count.</div>
 <div class="line">R$SetOptimizerScalesFromPhysicalShift()</div>
 <div class="line">R$SetOptimizerAsGradientDescent(learningRate=1,</div>
 <div class="line">                                numberOfIterations=300,</div>
 <div class="line">                                convergenceMinimumValue=1e-6,</div>
 <div class="line">                                convergenceWindowSize=10,</div>
-<div class="line">                                estimateLearningRate = &#39;EachIteration&#39;)</div>
+<div class="line">                                estimateLearningRate = &#39;EachIteration&#39;,</div>
+<div class="line">                                maximumStepSizeInPhysicalUnits=1.0)</div>
 <div class="line"> </div>
 <div class="line">R$Execute(fixed, moving)</div>
 <div class="line"> </div>
