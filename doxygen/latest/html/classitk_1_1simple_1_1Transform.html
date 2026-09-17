@@ -137,6 +137,9 @@ Public Types</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
+<tr class="memitem:a2197dd8f5a4c2421616a1f82d68f76a4" id="r_a2197dd8f5a4c2421616a1f82d68f76a4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2197dd8f5a4c2421616a1f82d68f76a4">ApplyToImageMetadata</a> (<a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> &amp;image) const</td></tr>
+<tr class="memdesc:a2197dd8f5a4c2421616a1f82d68f76a4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Apply the inverse of this transform to an image's origin, spacing and direction.  <br /></td></tr>
+<tr class="separator:a2197dd8f5a4c2421616a1f82d68f76a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1cefa72a4e8b8eedf6308f7bec3a8af6" id="r_a1cefa72a4e8b8eedf6308f7bec3a8af6"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1cefa72a4e8b8eedf6308f7bec3a8af6">GetDimension</a> () const</td></tr>
 <tr class="separator:a1cefa72a4e8b8eedf6308f7bec3a8af6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a08e4374bbcfa134181d0b7f67c1d0450" id="r_a08e4374bbcfa134181d0b7f67c1d0450"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classitk_1_1simple_1_1Transform.html">Transform</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a08e4374bbcfa134181d0b7f67c1d0450">GetInverse</a> () const</td></tr>
@@ -470,6 +473,28 @@ template&lt;unsigned int NDimension&gt; </div>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a id="a2197dd8f5a4c2421616a1f82d68f76a4" name="a2197dd8f5a4c2421616a1f82d68f76a4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2197dd8f5a4c2421616a1f82d68f76a4">&#9670;&#160;</a></span>ApplyToImageMetadata()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void itk::simple::Transform::ApplyToImageMetadata </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>image</em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Apply the inverse of this transform to an image's origin, spacing and direction. </p>
+<p>This changes the image's origin, spacing, and direction such that physical points are mapped to the same voxel index as before, but as if the image itself had been transformed by this transform's inverse. This is a metadata-only operation, no resampling is performed and the pixel data is not modified.</p>
+<p>This transform must have an inverse and its dimension must match the image's dimension, otherwise an exception is thrown. This operation is only well-defined for linear transforms.</p>
+<dl class="section see"><dt>See also</dt><dd><a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1Transform.html#a226613939fab2c741fa6afa36eb9d2b8">itk::Transform::ApplyToImageMetadata</a> </dd></dl>
+
+</div>
+</div>
 <a id="a1cefa72a4e8b8eedf6308f7bec3a8af6" name="a1cefa72a4e8b8eedf6308f7bec3a8af6"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a1cefa72a4e8b8eedf6308f7bec3a8af6">&#9670;&#160;</a></span>GetDimension()</h2>
 
@@ -726,7 +751,7 @@ template&lt;typename TDisplacementType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="sitkTransform_8h_source.html#l00331">itk::simple::Transform::DisplacementInitializationMemberFunctionAddressor&lt; TMemberFunctionPointer &gt;::operator()()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="sitkTransform_8h_source.html#l00348">itk::simple::Transform::DisplacementInitializationMemberFunctionAddressor&lt; TMemberFunctionPointer &gt;::operator()()</a>.</p>
 
 </div>
 </div>
@@ -1104,7 +1129,7 @@ template&lt;class TransformType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkTransform_8h_source.html#l00340">340</a> of file <a class="el" href="sitkTransform_8h_source.html">sitkTransform.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkTransform_8h_source.html#l00357">357</a> of file <a class="el" href="sitkTransform_8h_source.html">sitkTransform.h</a>.</p>
 
 </div>
 </div>
