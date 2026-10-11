@@ -264,9 +264,9 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:afe550541bae56c86305debaf041210ee" id="r_afe550541bae56c86305debaf041210ee"><td class="memItemLeft" align="right" valign="top">static std::vector&lt; <a class="el" href="namespaceitk_1_1simple.html#a291cee3a62184bbfa1beffb4fdeceb49">PathType</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afe550541bae56c86305debaf041210ee">GetGDCMSeriesFileNames</a> (const <a class="el" href="namespaceitk_1_1simple.html#a291cee3a62184bbfa1beffb4fdeceb49">PathType</a> &amp;directory, const std::string &amp;seriesID=&quot;&quot;, bool useSeriesDetails=false, bool recursive=false, bool loadSequences=false)</td></tr>
-<tr class="memdesc:afe550541bae56c86305debaf041210ee"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generate a sequence of filenames from a directory with a DICOM data set and a series ID.  <br /></td></tr>
-<tr class="separator:afe550541bae56c86305debaf041210ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad2c751399986910593e75b256715c7fe" id="r_ad2c751399986910593e75b256715c7fe"><td class="memItemLeft" align="right" valign="top">static std::vector&lt; <a class="el" href="namespaceitk_1_1simple.html#a291cee3a62184bbfa1beffb4fdeceb49">PathType</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad2c751399986910593e75b256715c7fe">GetGDCMSeriesFileNames</a> (const <a class="el" href="namespaceitk_1_1simple.html#a291cee3a62184bbfa1beffb4fdeceb49">PathType</a> &amp;directory, const std::string &amp;seriesID=&quot;&quot;, bool useSeriesDetails=false, bool recursive=false, bool loadSequences=false, bool failOnAmbiguousOrdering=true)</td></tr>
+<tr class="memdesc:ad2c751399986910593e75b256715c7fe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generate a sequence of filenames from a directory with a DICOM data set and a series ID.  <br /></td></tr>
+<tr class="separator:ad2c751399986910593e75b256715c7fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3dc2c88b119826d5cd92ca9b3246a3c3" id="r_a3dc2c88b119826d5cd92ca9b3246a3c3"><td class="memItemLeft" align="right" valign="top">static std::vector&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3dc2c88b119826d5cd92ca9b3246a3c3">GetGDCMSeriesIDs</a> (const <a class="el" href="namespaceitk_1_1simple.html#a291cee3a62184bbfa1beffb4fdeceb49">PathType</a> &amp;directory, bool useSeriesDetails=false)</td></tr>
 <tr class="memdesc:a3dc2c88b119826d5cd92ca9b3246a3c3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get all the seriesIDs from a DICOM data set.  <br /></td></tr>
 <tr class="separator:a3dc2c88b119826d5cd92ca9b3246a3c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -436,7 +436,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkImageSeriesReader_8h_source.html#l00258">258</a> of file <a class="el" href="sitkImageSeriesReader_8h_source.html">sitkImageSeriesReader.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkImageSeriesReader_8h_source.html#l00262">262</a> of file <a class="el" href="sitkImageSeriesReader_8h_source.html">sitkImageSeriesReader.h</a>.</p>
 
 </div>
 </div>
@@ -626,8 +626,8 @@ template&lt;class TImageType&gt; </div>
 
 </div>
 </div>
-<a id="afe550541bae56c86305debaf041210ee" name="afe550541bae56c86305debaf041210ee"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afe550541bae56c86305debaf041210ee">&#9670;&#160;</a></span>GetGDCMSeriesFileNames()</h2>
+<a id="ad2c751399986910593e75b256715c7fe" name="ad2c751399986910593e75b256715c7fe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad2c751399986910593e75b256715c7fe">&#9670;&#160;</a></span>GetGDCMSeriesFileNames()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -658,7 +658,12 @@ template&lt;class TImageType&gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>loadSequences</em></span><span class="paramdefsep"> = </span><span class="paramdefval">false</span>&#160;)</td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>loadSequences</em></span><span class="paramdefsep"> = </span><span class="paramdefval">false</span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>failOnAmbiguousOrdering</em></span><span class="paramdefsep"> = </span><span class="paramdefval">true</span>&#160;)</td>
         </tr>
       </table>
   </td>
@@ -676,7 +681,8 @@ template&lt;class TImageType&gt; </div>
     <tr><td class="paramname">recursive</td><td>Recursively parse the input directory. </td></tr>
     <tr><td class="paramname">seriesID</td><td>Set the name that identifies a particular series. Default value is an empty string which will return the file names associated with the first series found in the directory. If the parameter value was obtained from a call to GDCMSeriesIDs, the value of the useSeriesDetails parameter must be the same here and in the call to GDCMSeriesIDs. </td></tr>
     <tr><td class="paramname">useSeriesDetails</td><td>Use additional series information such as ProtocolName and SeriesName to identify when a single SeriesUID contains multiple 3D volumes - as can occur with perfusion and DTI imaging. </td></tr>
-    <tr><td class="paramname">loadSequences</td><td>Parse any sequences in the DICOM data set. Loading DICOM files is faster when sequences are not needed.</td></tr>
+    <tr><td class="paramname">loadSequences</td><td>Parse any sequences in the DICOM data set. Loading DICOM files is faster when sequences are not needed. </td></tr>
+    <tr><td class="paramname">failOnAmbiguousOrdering</td><td>When true, throw an exception when a series cannot be ordered geometrically (duplicate ImagePositionPatient, inconsistent or missing ImageOrientationPatient). When false, fall back to the legacy heuristics that are not DICOM compliant, so output should be treated cautiously.</td></tr>
   </table>
   </dd>
 </dl>
@@ -785,9 +791,9 @@ template&lt;class TImageType&gt; </div>
 <dl class="section examples"><dt>Examples</dt><dd><a class="el" href="DicomSeriesReadModifyWrite_2DicomSeriesReadModifySeriesWrite_8cxx-example.html#a13">DicomSeriesReadModifyWrite/DicomSeriesReadModifySeriesWrite.cxx</a>.</dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="sitkImageSeriesReader_8h_source.html#l00245">245</a> of file <a class="el" href="sitkImageSeriesReader_8h_source.html">sitkImageSeriesReader.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkImageSeriesReader_8h_source.html#l00249">249</a> of file <a class="el" href="sitkImageSeriesReader_8h_source.html">sitkImageSeriesReader.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkImageSeriesReader_8h_source.html#l00268">m_pfGetMetaData</a>.</p>
+<p class="reference">References <a class="el" href="sitkImageSeriesReader_8h_source.html#l00272">m_pfGetMetaData</a>.</p>
 
 </div>
 </div>
@@ -816,7 +822,7 @@ template&lt;class TImageType&gt; </div>
 
 <p class="definition">Definition at line <a class="el" href="sitkImageSeriesReader_8h_source.html#l00101">101</a> of file <a class="el" href="sitkImageSeriesReader_8h_source.html">sitkImageSeriesReader.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkImageSeriesReader_8h_source.html#l00278">m_MetaDataDictionaryArrayUpdate</a>.</p>
+<p class="reference">References <a class="el" href="sitkImageSeriesReader_8h_source.html#l00282">m_MetaDataDictionaryArrayUpdate</a>.</p>
 
 </div>
 </div>
@@ -848,9 +854,9 @@ template&lt;class TImageType&gt; </div>
 <p>If the slice index is out of range, an exception will be thrown.</p>
 <p>Returns a vector of keys to the key/value entries in the file's meta-data dictionary. Iterate through with these keys to get the values. </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkImageSeriesReader_8h_source.html#l00223">223</a> of file <a class="el" href="sitkImageSeriesReader_8h_source.html">sitkImageSeriesReader.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkImageSeriesReader_8h_source.html#l00227">227</a> of file <a class="el" href="sitkImageSeriesReader_8h_source.html">sitkImageSeriesReader.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkImageSeriesReader_8h_source.html#l00266">m_pfGetMetaDataKeys</a>.</p>
+<p class="reference">References <a class="el" href="sitkImageSeriesReader_8h_source.html#l00270">m_pfGetMetaDataKeys</a>.</p>
 
 </div>
 </div>
@@ -949,9 +955,9 @@ template&lt;class TImageType&gt; </div>
 <dl class="section examples"><dt>Examples</dt><dd><a class="el" href="DicomSeriesReadModifyWrite_2DicomSeriesReadModifySeriesWrite_8cxx-example.html#a12">DicomSeriesReadModifyWrite/DicomSeriesReadModifySeriesWrite.cxx</a>.</dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="sitkImageSeriesReader_8h_source.html#l00231">231</a> of file <a class="el" href="sitkImageSeriesReader_8h_source.html">sitkImageSeriesReader.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkImageSeriesReader_8h_source.html#l00235">235</a> of file <a class="el" href="sitkImageSeriesReader_8h_source.html">sitkImageSeriesReader.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkImageSeriesReader_8h_source.html#l00267">m_pfHasMetaDataKey</a>.</p>
+<p class="reference">References <a class="el" href="sitkImageSeriesReader_8h_source.html#l00271">m_pfHasMetaDataKey</a>.</p>
 
 </div>
 </div>
@@ -1114,7 +1120,7 @@ template&lt;class TImageType&gt; </div>
 
 <p class="definition">Definition at line <a class="el" href="sitkImageSeriesReader_8h_source.html#l00096">96</a> of file <a class="el" href="sitkImageSeriesReader_8h_source.html">sitkImageSeriesReader.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkImageSeriesReader_8h_source.html#l00278">m_MetaDataDictionaryArrayUpdate</a>.</p>
+<p class="reference">References <a class="el" href="sitkImageSeriesReader_8h_source.html#l00282">m_MetaDataDictionaryArrayUpdate</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="sitkImageSeriesReader_8h_source.html#l00114">MetaDataDictionaryArrayUpdateOff()</a>, and <a class="el" href="sitkImageSeriesReader_8h_source.html#l00109">MetaDataDictionaryArrayUpdateOn()</a>.</p>
 
@@ -1206,7 +1212,7 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkImageSeriesReader_8h_source.html#l00258">258</a> of file <a class="el" href="sitkImageSeriesReader_8h_source.html">sitkImageSeriesReader.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkImageSeriesReader_8h_source.html#l00262">262</a> of file <a class="el" href="sitkImageSeriesReader_8h_source.html">sitkImageSeriesReader.h</a>.</p>
 
 </div>
 </div>
@@ -1231,7 +1237,7 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkImageSeriesReader_8h_source.html#l00274">274</a> of file <a class="el" href="sitkImageSeriesReader_8h_source.html">sitkImageSeriesReader.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkImageSeriesReader_8h_source.html#l00278">278</a> of file <a class="el" href="sitkImageSeriesReader_8h_source.html">sitkImageSeriesReader.h</a>.</p>
 
 </div>
 </div>
@@ -1255,7 +1261,7 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkImageSeriesReader_8h_source.html#l00271">271</a> of file <a class="el" href="sitkImageSeriesReader_8h_source.html">sitkImageSeriesReader.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkImageSeriesReader_8h_source.html#l00275">275</a> of file <a class="el" href="sitkImageSeriesReader_8h_source.html">sitkImageSeriesReader.h</a>.</p>
 
 </div>
 </div>
@@ -1279,7 +1285,7 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkImageSeriesReader_8h_source.html#l00280">280</a> of file <a class="el" href="sitkImageSeriesReader_8h_source.html">sitkImageSeriesReader.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkImageSeriesReader_8h_source.html#l00284">284</a> of file <a class="el" href="sitkImageSeriesReader_8h_source.html">sitkImageSeriesReader.h</a>.</p>
 
 </div>
 </div>
@@ -1303,7 +1309,7 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkImageSeriesReader_8h_source.html#l00278">278</a> of file <a class="el" href="sitkImageSeriesReader_8h_source.html">sitkImageSeriesReader.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkImageSeriesReader_8h_source.html#l00282">282</a> of file <a class="el" href="sitkImageSeriesReader_8h_source.html">sitkImageSeriesReader.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="sitkImageSeriesReader_8h_source.html#l00101">GetMetaDataDictionaryArrayUpdate()</a>, and <a class="el" href="sitkImageSeriesReader_8h_source.html#l00096">SetMetaDataDictionaryArrayUpdate()</a>.</p>
 
@@ -1329,9 +1335,9 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkImageSeriesReader_8h_source.html#l00268">268</a> of file <a class="el" href="sitkImageSeriesReader_8h_source.html">sitkImageSeriesReader.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkImageSeriesReader_8h_source.html#l00272">272</a> of file <a class="el" href="sitkImageSeriesReader_8h_source.html">sitkImageSeriesReader.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="sitkImageSeriesReader_8h_source.html#l00245">GetMetaData()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="sitkImageSeriesReader_8h_source.html#l00249">GetMetaData()</a>.</p>
 
 </div>
 </div>
@@ -1355,9 +1361,9 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkImageSeriesReader_8h_source.html#l00266">266</a> of file <a class="el" href="sitkImageSeriesReader_8h_source.html">sitkImageSeriesReader.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkImageSeriesReader_8h_source.html#l00270">270</a> of file <a class="el" href="sitkImageSeriesReader_8h_source.html">sitkImageSeriesReader.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="sitkImageSeriesReader_8h_source.html#l00223">GetMetaDataKeys()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="sitkImageSeriesReader_8h_source.html#l00227">GetMetaDataKeys()</a>.</p>
 
 </div>
 </div>
@@ -1381,9 +1387,9 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkImageSeriesReader_8h_source.html#l00267">267</a> of file <a class="el" href="sitkImageSeriesReader_8h_source.html">sitkImageSeriesReader.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkImageSeriesReader_8h_source.html#l00271">271</a> of file <a class="el" href="sitkImageSeriesReader_8h_source.html">sitkImageSeriesReader.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="sitkImageSeriesReader_8h_source.html#l00231">HasMetaDataKey()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="sitkImageSeriesReader_8h_source.html#l00235">HasMetaDataKey()</a>.</p>
 
 </div>
 </div>
@@ -1407,7 +1413,7 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkImageSeriesReader_8h_source.html#l00282">282</a> of file <a class="el" href="sitkImageSeriesReader_8h_source.html">sitkImageSeriesReader.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkImageSeriesReader_8h_source.html#l00286">286</a> of file <a class="el" href="sitkImageSeriesReader_8h_source.html">sitkImageSeriesReader.h</a>.</p>
 
 </div>
 </div>
@@ -1431,7 +1437,7 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkImageSeriesReader_8h_source.html#l00276">276</a> of file <a class="el" href="sitkImageSeriesReader_8h_source.html">sitkImageSeriesReader.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkImageSeriesReader_8h_source.html#l00280">280</a> of file <a class="el" href="sitkImageSeriesReader_8h_source.html">sitkImageSeriesReader.h</a>.</p>
 
 </div>
 </div>
