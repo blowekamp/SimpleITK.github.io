@@ -119,12 +119,13 @@ $(function(){ initResizable(false); });
 <p>The reader can handle scalar images, and vector images. Pixel types such as RGB, RGBA are loaded as multi-component images with vector pixel types. Additionally, tensor images are loaded with the pixel type being a 1-d vector.</p>
 <p>An interface is also provided to access the information from the underlying itk::ImageIO. This information can be loaded with the ReadImageInformation method. The information is from the itk::ImageIO interface. In some degenerate cases reading the bulk data may produce different results. Please see <a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1ImageFileReader.html">itk::ImageFileReader</a> for more details.</p>
 <p>Reading takes place by the ITK ImageIO factory mechanism. ITK contains many ImageIO classes which are responsible for reading separate file formats. By default, each ImageIO is asked if it "can read" the file, and the first one which "can read" the format is used. The list of available ImageIOs can be obtained using the GetRegisteredImageIOs method. The ImageIO used can be overridden with the SetImageIO method. This is useful in cases when multiple ImageIOs "can read" the file and the user wants to select a specific IO (not the first).</p>
-<dl class="section note"><dt>Note</dt><dd>DICOM tags are represented as strings in the meta-data dictionary(s), therefore "0020|000D" and "0020|000d" are different when accessing the tag value. This differs from the hexadecimal numbers they represent, 0020|000D and 0020|000d are equivalent. The ITK meta-data dictionary is string based and uses lower case to represent the hexadecimal number read from disk, so 0020|000d will work as a key and 0020|000D will not be found in the dictionary (results in an exception if attempting to access). It is recommended to use lower case when setting and accessing DICOM tags.</dd></dl>
+<dl class="section note"><dt>Note</dt><dd>DICOM tags are stored in the meta-data dictionary with string keys of the form "group|element", where the hexadecimal digits are lower case, e.g. "0020|000d". Use lower case keys when getting, setting, and querying DICOM tags.</dd></dl>
+<dl class="section warning"><dt>Warning</dt><dd>Dictionary keys are case-sensitive strings. Although 0020|000D and 0020|000d represent the same hexadecimal tag, the key "0020|000D" does not match the stored key "0020|000d". Accessing a tag with the wrong case results in an exception from GetMetaData, and HasMetaDataKey returns false.</dd></dl>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="namespaceitk_1_1simple.html#a520fe0602bf207fc44b0f9d5b67ff03d" title="ReadImage is a procedural interface to the ImageFileReader class which is convenient for most image r...">itk::simple::ReadImage</a> for the procedural interface </dd></dl>
 <dl class="section examples"><dt>Examples</dt><dd><a class="el" href="CppInPlace_2CppInPlace_8cxx-example.html#_a9">CppInPlace/CppInPlace.cxx</a>, <a class="el" href="DicomConvert_2DicomConvert_8cs-example.html#_a2">DicomConvert/DicomConvert.cs</a>, <a class="el" href="DicomConvert_2DicomConvert_8cxx-example.html#_a0">DicomConvert/DicomConvert.cxx</a>, <a class="el" href="DicomImagePrintTags_2DicomImagePrintTags_8cs-example.html#_a0">DicomImagePrintTags/DicomImagePrintTags.cs</a>, <a class="el" href="DicomImagePrintTags_2DicomImagePrintTags_8cxx-example.html#_a0">DicomImagePrintTags/DicomImagePrintTags.cxx</a>, <a class="el" href="Elastix_2Registration_2elx_8cxx-example.html#_a1">Elastix/Registration/elx.cxx</a>, <a class="el" href="Elastix_2Registration_2tfx_8cxx-example.html#_a2">Elastix/Registration/tfx.cxx</a>, <a class="el" href="FilterProgressReporting_2FilterProgressReporting_8cs-example.html#_a4">FilterProgressReporting/FilterProgressReporting.cs</a>, <a class="el" href="FilterProgressReporting_2FilterProgressReporting_8cxx-example.html#_a3">FilterProgressReporting/FilterProgressReporting.cxx</a>, <a class="el" href="ITKIntegration_2ITKIntegration_8cxx-example.html#_a0">ITKIntegration/ITKIntegration.cxx</a>, <a class="el" href="ImageIOSelection_2ImageIOSelection_8cs-example.html#_a0">ImageIOSelection/ImageIOSelection.cs</a>, <a class="el" href="ImageIOSelection_2ImageIOSelection_8cxx-example.html#_a0">ImageIOSelection/ImageIOSelection.cxx</a>, <a class="el" href="ImageRegistrationMethod1_2ImageRegistrationMethod1_8cs-example.html#_a5">ImageRegistrationMethod1/ImageRegistrationMethod1.cs</a>, <a class="el" href="ImageRegistrationMethod2_2ImageRegistrationMethod2_8cs-example.html#_a5">ImageRegistrationMethod2/ImageRegistrationMethod2.cs</a>, <a class="el" href="Segmentation_2ConnectedThresholdImageFilter_8cxx-example.html#_a0">Segmentation/ConnectedThresholdImageFilter.cxx</a>, <a class="el" href="Segmentation_2NeighborhoodConnectedImageFilter_8cxx-example.html#_a0">Segmentation/NeighborhoodConnectedImageFilter.cxx</a>, <a class="el" href="SimpleGaussian_2SimpleGaussian_8cs-example.html#_a0">SimpleGaussian/SimpleGaussian.cs</a>, <a class="el" href="SimpleGaussian_2SimpleGaussian_8cxx-example.html#_a0">SimpleGaussian/SimpleGaussian.cxx</a>, <a class="el" href="SimpleIO_2SimpleIO_8cs-example.html#_a0">SimpleIO/SimpleIO.cs</a>, and <a class="el" href="SimpleIO_2SimpleIO_8cxx-example.html#_a0">SimpleIO/SimpleIO.cxx</a>.</dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="sitkImageFileReader_8h_source.html#l00074">74</a> of file <a class="el" href="sitkImageFileReader_8h_source.html">sitkImageFileReader.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkImageFileReader_8h_source.html#l00073">73</a> of file <a class="el" href="sitkImageFileReader_8h_source.html">sitkImageFileReader.h</a>.</p>
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
 Public Types</h2></td></tr>
@@ -461,7 +462,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkImageFileReader_8h_source.html#l00253">253</a> of file <a class="el" href="sitkImageFileReader_8h_source.html">sitkImageFileReader.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkImageFileReader_8h_source.html#l00251">251</a> of file <a class="el" href="sitkImageFileReader_8h_source.html">sitkImageFileReader.h</a>.</p>
 
 </div>
 </div>
@@ -477,7 +478,7 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkImageFileReader_8h_source.html#l00077">77</a> of file <a class="el" href="sitkImageFileReader_8h_source.html">sitkImageFileReader.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkImageFileReader_8h_source.html#l00076">76</a> of file <a class="el" href="sitkImageFileReader_8h_source.html">sitkImageFileReader.h</a>.</p>
 
 </div>
 </div>
@@ -821,7 +822,7 @@ template&lt;class TImageType&gt; </div>
 
 <p>Implements <a class="el" href="classitk_1_1simple_1_1ProcessObject.html#ac8ab837a83ee6ad83c2e2e71b1e98386">itk::simple::ProcessObject</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="sitkImageFileReader_8h_source.html#l00089">89</a> of file <a class="el" href="sitkImageFileReader_8h_source.html">sitkImageFileReader.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkImageFileReader_8h_source.html#l00088">88</a> of file <a class="el" href="sitkImageFileReader_8h_source.html">sitkImageFileReader.h</a>.</p>
 
 </div>
 </div>
@@ -1036,7 +1037,7 @@ template&lt;class TImageType&gt; </div>
 <p>By default the reader loads the entire image, this is specified when the size has zero length.</p>
 <p>If specified, then the image returned from <code>Execute</code> will be of this size. If the ImageIO and file support reading just a region, then the reader will perform streaming.</p>
 <p>The dimension of the image can be reduced by specifying a dimension's size as 0. For example a size of $[10,20,30,0,0]$ results in a 3D image with size of $[10,20,30]$. This enables reading a 5D image into a 3D image. If the length of the specified size is greater than the dimension of the image file, an exception will be generated. If the size's length is less than the image's dimension then the missing values are assumed to be zero.</p>
-<p>When the dimension of the image is reduced, the direction cosine matrix will be set to the identity. However, the spacing for the selected axis will remain. The matrix from the file can still be obtained by <a class="el" href="#a4fc8d7d75b88836fdeae6c92e17058da" title="Image information methods updated via ReadImageInformation.">ImageFileReader::GetDirection</a>.</p>
+<p>When the dimension of the image is reduced, the direction cosine matrix of the output is the sub-matrix of the file's direction for the retained axes. The matrix from the file can still be obtained by <a class="el" href="#a4fc8d7d75b88836fdeae6c92e17058da" title="Image information methods updated via ReadImageInformation.">ImageFileReader::GetDirection</a>.</p>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="classitk_1_1simple_1_1ExtractImageFilter.html" title="Decrease the image size by cropping the image to the selected region bounds.">ExtractImageFilter</a> </dd></dl>
 
 </div>
@@ -1137,7 +1138,7 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkImageFileReader_8h_source.html#l00253">253</a> of file <a class="el" href="sitkImageFileReader_8h_source.html">sitkImageFileReader.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkImageFileReader_8h_source.html#l00251">251</a> of file <a class="el" href="sitkImageFileReader_8h_source.html">sitkImageFileReader.h</a>.</p>
 
 </div>
 </div>
@@ -1162,7 +1163,7 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkImageFileReader_8h_source.html#l00277">277</a> of file <a class="el" href="sitkImageFileReader_8h_source.html">sitkImageFileReader.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkImageFileReader_8h_source.html#l00275">275</a> of file <a class="el" href="sitkImageFileReader_8h_source.html">sitkImageFileReader.h</a>.</p>
 
 </div>
 </div>
@@ -1186,7 +1187,7 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkImageFileReader_8h_source.html#l00270">270</a> of file <a class="el" href="sitkImageFileReader_8h_source.html">sitkImageFileReader.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkImageFileReader_8h_source.html#l00268">268</a> of file <a class="el" href="sitkImageFileReader_8h_source.html">sitkImageFileReader.h</a>.</p>
 
 </div>
 </div>
@@ -1210,7 +1211,7 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkImageFileReader_8h_source.html#l00272">272</a> of file <a class="el" href="sitkImageFileReader_8h_source.html">sitkImageFileReader.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkImageFileReader_8h_source.html#l00270">270</a> of file <a class="el" href="sitkImageFileReader_8h_source.html">sitkImageFileReader.h</a>.</p>
 
 </div>
 </div>
@@ -1234,7 +1235,7 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkImageFileReader_8h_source.html#l00280">280</a> of file <a class="el" href="sitkImageFileReader_8h_source.html">sitkImageFileReader.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkImageFileReader_8h_source.html#l00278">278</a> of file <a class="el" href="sitkImageFileReader_8h_source.html">sitkImageFileReader.h</a>.</p>
 
 </div>
 </div>
@@ -1258,7 +1259,7 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkImageFileReader_8h_source.html#l00279">279</a> of file <a class="el" href="sitkImageFileReader_8h_source.html">sitkImageFileReader.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkImageFileReader_8h_source.html#l00277">277</a> of file <a class="el" href="sitkImageFileReader_8h_source.html">sitkImageFileReader.h</a>.</p>
 
 </div>
 </div>
@@ -1282,7 +1283,7 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkImageFileReader_8h_source.html#l00265">265</a> of file <a class="el" href="sitkImageFileReader_8h_source.html">sitkImageFileReader.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkImageFileReader_8h_source.html#l00263">263</a> of file <a class="el" href="sitkImageFileReader_8h_source.html">sitkImageFileReader.h</a>.</p>
 
 </div>
 </div>
@@ -1306,7 +1307,7 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkImageFileReader_8h_source.html#l00267">267</a> of file <a class="el" href="sitkImageFileReader_8h_source.html">sitkImageFileReader.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkImageFileReader_8h_source.html#l00265">265</a> of file <a class="el" href="sitkImageFileReader_8h_source.html">sitkImageFileReader.h</a>.</p>
 
 </div>
 </div>
@@ -1330,7 +1331,7 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkImageFileReader_8h_source.html#l00271">271</a> of file <a class="el" href="sitkImageFileReader_8h_source.html">sitkImageFileReader.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkImageFileReader_8h_source.html#l00269">269</a> of file <a class="el" href="sitkImageFileReader_8h_source.html">sitkImageFileReader.h</a>.</p>
 
 </div>
 </div>
@@ -1354,7 +1355,7 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkImageFileReader_8h_source.html#l00273">273</a> of file <a class="el" href="sitkImageFileReader_8h_source.html">sitkImageFileReader.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkImageFileReader_8h_source.html#l00271">271</a> of file <a class="el" href="sitkImageFileReader_8h_source.html">sitkImageFileReader.h</a>.</p>
 
 </div>
 </div>
@@ -1378,7 +1379,7 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkImageFileReader_8h_source.html#l00263">263</a> of file <a class="el" href="sitkImageFileReader_8h_source.html">sitkImageFileReader.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkImageFileReader_8h_source.html#l00261">261</a> of file <a class="el" href="sitkImageFileReader_8h_source.html">sitkImageFileReader.h</a>.</p>
 
 </div>
 </div>
@@ -1402,7 +1403,7 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkImageFileReader_8h_source.html#l00261">261</a> of file <a class="el" href="sitkImageFileReader_8h_source.html">sitkImageFileReader.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkImageFileReader_8h_source.html#l00259">259</a> of file <a class="el" href="sitkImageFileReader_8h_source.html">sitkImageFileReader.h</a>.</p>
 
 </div>
 </div>
@@ -1426,7 +1427,7 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkImageFileReader_8h_source.html#l00262">262</a> of file <a class="el" href="sitkImageFileReader_8h_source.html">sitkImageFileReader.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkImageFileReader_8h_source.html#l00260">260</a> of file <a class="el" href="sitkImageFileReader_8h_source.html">sitkImageFileReader.h</a>.</p>
 
 </div>
 </div>
@@ -1450,7 +1451,7 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkImageFileReader_8h_source.html#l00269">269</a> of file <a class="el" href="sitkImageFileReader_8h_source.html">sitkImageFileReader.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkImageFileReader_8h_source.html#l00267">267</a> of file <a class="el" href="sitkImageFileReader_8h_source.html">sitkImageFileReader.h</a>.</p>
 
 </div>
 </div>
@@ -1474,7 +1475,7 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkImageFileReader_8h_source.html#l00276">276</a> of file <a class="el" href="sitkImageFileReader_8h_source.html">sitkImageFileReader.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkImageFileReader_8h_source.html#l00274">274</a> of file <a class="el" href="sitkImageFileReader_8h_source.html">sitkImageFileReader.h</a>.</p>
 
 </div>
 </div>
@@ -1498,7 +1499,7 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkImageFileReader_8h_source.html#l00274">274</a> of file <a class="el" href="sitkImageFileReader_8h_source.html">sitkImageFileReader.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkImageFileReader_8h_source.html#l00272">272</a> of file <a class="el" href="sitkImageFileReader_8h_source.html">sitkImageFileReader.h</a>.</p>
 
 </div>
 </div>
