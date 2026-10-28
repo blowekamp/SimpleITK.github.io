@@ -129,6 +129,15 @@ $(function(){ initResizable(false); });
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
 Public Types</h2></td></tr>
+<tr class="memitem:abe9d0ae54a3d212bd7faeb8de4f319da" id="r_abe9d0ae54a3d212bd7faeb8de4f319da"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abe9d0ae54a3d212bd7faeb8de4f319da">DirectionCollapseStrategyType</a> { <br />
+&#160;&#160;<a class="el" href="#abe9d0ae54a3d212bd7faeb8de4f319daa9fde88c774f12c4572a0d4bfc976c87e">COLLAPSETOIDENTITY</a>
+, <br />
+&#160;&#160;<a class="el" href="#abe9d0ae54a3d212bd7faeb8de4f319daae0669b8f26ecb2f22dec2e92799f8457">COLLAPSETOSUBMATRIX</a>
+, <br />
+&#160;&#160;<a class="el" href="#abe9d0ae54a3d212bd7faeb8de4f319daa07028c6c9bd5b242e084e9104fe97406">COLLAPSETOGUESS</a>
+<br />
+ }</td></tr>
+<tr class="separator:abe9d0ae54a3d212bd7faeb8de4f319da"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2f1671c981c6971bd2f46ac055c6695a" id="r_a2f1671c981c6971bd2f46ac055c6695a"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2f1671c981c6971bd2f46ac055c6695a">Self</a> = <a class="el" href="classitk_1_1simple_1_1ImageFileReader.html">ImageFileReader</a></td></tr>
 <tr class="separator:a2f1671c981c6971bd2f46ac055c6695a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_types_classitk_1_1simple_1_1ImageReaderBase"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_types_classitk_1_1simple_1_1ImageReaderBase')"><img src="closed.png" alt="-"/>&#160;Public Types inherited from <a class="el" href="classitk_1_1simple_1_1ImageReaderBase.html">itk::simple::ImageReaderBase</a></td></tr>
@@ -142,6 +151,8 @@ Public Types</h2></td></tr>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:ab8d91d4ca4ee13f704d72205d344837e" id="r_ab8d91d4ca4ee13f704d72205d344837e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classitk_1_1simple_1_1Image.html">Image</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab8d91d4ca4ee13f704d72205d344837e">Execute</a> () override</td></tr>
 <tr class="separator:ab8d91d4ca4ee13f704d72205d344837e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac38707e1674bb188a760b8800b74198c" id="r_ac38707e1674bb188a760b8800b74198c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#abe9d0ae54a3d212bd7faeb8de4f319da">DirectionCollapseStrategyType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac38707e1674bb188a760b8800b74198c">GetDirectionCollapseToStrategy</a> () const</td></tr>
+<tr class="separator:ac38707e1674bb188a760b8800b74198c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a94def7881860fafc69161425d66f7145" id="r_a94def7881860fafc69161425d66f7145"><td class="memItemLeft" align="right" valign="top">const std::vector&lt; int &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a94def7881860fafc69161425d66f7145">GetExtractIndex</a> () const</td></tr>
 <tr class="separator:a94def7881860fafc69161425d66f7145"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa2051849f886382f164d4f26943917a6" id="r_aa2051849f886382f164d4f26943917a6"><td class="memItemLeft" align="right" valign="top">const std::vector&lt; unsigned int &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa2051849f886382f164d4f26943917a6">GetExtractSize</a> () const</td></tr>
@@ -164,6 +175,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a555326e4106daff17ef386cfa75ac9ea" id="r_a555326e4106daff17ef386cfa75ac9ea"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a555326e4106daff17ef386cfa75ac9ea">ReadImageInformation</a> ()</td></tr>
 <tr class="memdesc:a555326e4106daff17ef386cfa75ac9ea"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read only the meta-data and image information in the file.  <br /></td></tr>
 <tr class="separator:a555326e4106daff17ef386cfa75ac9ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a18ba51285e61664d6df60bdc48851df5" id="r_a18ba51285e61664d6df60bdc48851df5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a18ba51285e61664d6df60bdc48851df5">SetDirectionCollapseToStrategy</a> (<a class="el" href="#abe9d0ae54a3d212bd7faeb8de4f319da">DirectionCollapseStrategyType</a> strategy)</td></tr>
+<tr class="memdesc:a18ba51285e61664d6df60bdc48851df5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the strategy used to collapse the direction cosine matrix when the extraction reduces the image dimension.  <br /></td></tr>
+<tr class="separator:a18ba51285e61664d6df60bdc48851df5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7e716c2b3f4c8c5db2dc09e78caea75a" id="r_a7e716c2b3f4c8c5db2dc09e78caea75a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7e716c2b3f4c8c5db2dc09e78caea75a">SetExtractIndex</a> (const std::vector&lt; int &gt; &amp;index)</td></tr>
 <tr class="memdesc:a7e716c2b3f4c8c5db2dc09e78caea75a"><td class="mdescLeft">&#160;</td><td class="mdescRight">starting index from the image on disk to extract.  <br /></td></tr>
 <tr class="separator:a7e716c2b3f4c8c5db2dc09e78caea75a"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -340,6 +354,8 @@ Private Attributes</h2></td></tr>
 <tr class="separator:ad6b762fc182e907f8a5b7fe2e87e8f14"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5f5a87746b646ab766531313f21d9041" id="r_a5f5a87746b646ab766531313f21d9041"><td class="memItemLeft" align="right" valign="top">std::vector&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5f5a87746b646ab766531313f21d9041">m_Direction</a></td></tr>
 <tr class="separator:a5f5a87746b646ab766531313f21d9041"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a32ecc2c4de12babf527e7966980f223c" id="r_a32ecc2c4de12babf527e7966980f223c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#abe9d0ae54a3d212bd7faeb8de4f319da">DirectionCollapseStrategyType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a32ecc2c4de12babf527e7966980f223c">m_DirectionCollapseToStrategy</a> { <a class="el" href="#abe9d0ae54a3d212bd7faeb8de4f319daae0669b8f26ecb2f22dec2e92799f8457">COLLAPSETOSUBMATRIX</a> }</td></tr>
+<tr class="separator:a32ecc2c4de12babf527e7966980f223c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8ecf4f296c0a54eb093a7df408278d4c" id="r_a8ecf4f296c0a54eb093a7df408278d4c"><td class="memItemLeft" align="right" valign="top">std::vector&lt; int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8ecf4f296c0a54eb093a7df408278d4c">m_ExtractIndex</a></td></tr>
 <tr class="separator:a8ecf4f296c0a54eb093a7df408278d4c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2a8eac9f2b9d5bd55f38f2c64d9cd017" id="r_a2a8eac9f2b9d5bd55f38f2c64d9cd017"><td class="memItemLeft" align="right" valign="top">std::vector&lt; unsigned int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2a8eac9f2b9d5bd55f38f2c64d9cd017">m_ExtractSize</a></td></tr>
@@ -462,7 +478,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkImageFileReader_8h_source.html#l00251">251</a> of file <a class="el" href="sitkImageFileReader_8h_source.html">sitkImageFileReader.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkImageFileReader_8h_source.html#l00285">285</a> of file <a class="el" href="sitkImageFileReader_8h_source.html">sitkImageFileReader.h</a>.</p>
 
 </div>
 </div>
@@ -479,6 +495,28 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="sitkImageFileReader_8h_source.html#l00076">76</a> of file <a class="el" href="sitkImageFileReader_8h_source.html">sitkImageFileReader.h</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Enumeration Documentation</h2>
+<a id="abe9d0ae54a3d212bd7faeb8de4f319da" name="abe9d0ae54a3d212bd7faeb8de4f319da"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abe9d0ae54a3d212bd7faeb8de4f319da">&#9670;&#160;</a></span>DirectionCollapseStrategyType</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="#abe9d0ae54a3d212bd7faeb8de4f319da">itk::simple::ImageFileReader::DirectionCollapseStrategyType</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="abe9d0ae54a3d212bd7faeb8de4f319daa9fde88c774f12c4572a0d4bfc976c87e" name="abe9d0ae54a3d212bd7faeb8de4f319daa9fde88c774f12c4572a0d4bfc976c87e"></a>COLLAPSETOIDENTITY&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="abe9d0ae54a3d212bd7faeb8de4f319daae0669b8f26ecb2f22dec2e92799f8457" name="abe9d0ae54a3d212bd7faeb8de4f319daae0669b8f26ecb2f22dec2e92799f8457"></a>COLLAPSETOSUBMATRIX&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="abe9d0ae54a3d212bd7faeb8de4f319daa07028c6c9bd5b242e084e9104fe97406" name="abe9d0ae54a3d212bd7faeb8de4f319daa07028c6c9bd5b242e084e9104fe97406"></a>COLLAPSETOGUESS&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+<p class="definition">Definition at line <a class="el" href="sitkImageFileReader_8h_source.html#l00235">235</a> of file <a class="el" href="sitkImageFileReader_8h_source.html">sitkImageFileReader.h</a>.</p>
 
 </div>
 </div>
@@ -671,6 +709,23 @@ template&lt;class TImageType&gt; </div>
 <p><a class="el" href="classitk_1_1simple_1_1Image.html" title="The Image class for SimpleITK.">Image</a> information methods updated via ReadImageInformation. </p>
 <p>These accessor methods are valid after a call to ReadImageInformation or Execute. They contain the image information from the file via the itk::ImageIO. Information such as NumberOfComponents is based of the file format, so the number of components for internal types such as RGB or complex may not be described the same as with SimpleITK's <a class="el" href="classitk_1_1simple_1_1Image.html" title="The Image class for SimpleITK.">Image</a> interface.</p>
 <p>The PixelID has been converted from the ITK type to SimpleITK's interpretation, and will not change when loaded as a SimpleITK <a class="el" href="classitk_1_1simple_1_1Image.html" title="The Image class for SimpleITK.">Image</a>. </p>
+
+</div>
+</div>
+<a id="ac38707e1674bb188a760b8800b74198c" name="ac38707e1674bb188a760b8800b74198c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac38707e1674bb188a760b8800b74198c">&#9670;&#160;</a></span>GetDirectionCollapseToStrategy()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="#abe9d0ae54a3d212bd7faeb8de4f319da">DirectionCollapseStrategyType</a> itk::simple::ImageFileReader::GetDirectionCollapseToStrategy </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
 
 </div>
 </div>
@@ -997,6 +1052,30 @@ template&lt;class TImageType&gt; </div>
 
 </div>
 </div>
+<a id="a18ba51285e61664d6df60bdc48851df5" name="a18ba51285e61664d6df60bdc48851df5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a18ba51285e61664d6df60bdc48851df5">&#9670;&#160;</a></span>SetDirectionCollapseToStrategy()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void itk::simple::ImageFileReader::SetDirectionCollapseToStrategy </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="#abe9d0ae54a3d212bd7faeb8de4f319da">DirectionCollapseStrategyType</a></td>          <td class="paramname"><span class="paramname"><em>strategy</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set the strategy used to collapse the direction cosine matrix when the extraction reduces the image dimension. </p>
+<p>This only has an effect when SetExtractSize reduces the dimension of the image.</p>
+<p>COLLAPSETOIDENTITY The output has an identity direction. Use this when retaining the orientation of the collapsed image is not important.</p>
+<p>COLLAPSETOSUBMATRIX The output direction is the sub-matrix of the file's direction if it is non-singular, else an exception is thrown. This is the default.</p>
+<p>COLLAPSETOGUESS The output direction is the sub-matrix if it is non-singular, else identity. The results are difficult to anticipate, so this is discouraged.</p>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classitk_1_1simple_1_1ExtractImageFilter.html#ad46aa6e35a728a6969269e3e4e7104b6" title="Set the strategy to be used to collapse physical space dimensions.">ExtractImageFilter::SetDirectionCollapseToStrategy</a> </dd></dl>
+
+</div>
+</div>
 <a id="a7e716c2b3f4c8c5db2dc09e78caea75a" name="a7e716c2b3f4c8c5db2dc09e78caea75a"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a7e716c2b3f4c8c5db2dc09e78caea75a">&#9670;&#160;</a></span>SetExtractIndex()</h2>
 
@@ -1037,7 +1116,7 @@ template&lt;class TImageType&gt; </div>
 <p>By default the reader loads the entire image, this is specified when the size has zero length.</p>
 <p>If specified, then the image returned from <code>Execute</code> will be of this size. If the ImageIO and file support reading just a region, then the reader will perform streaming.</p>
 <p>The dimension of the image can be reduced by specifying a dimension's size as 0. For example a size of $[10,20,30,0,0]$ results in a 3D image with size of $[10,20,30]$. This enables reading a 5D image into a 3D image. If the length of the specified size is greater than the dimension of the image file, an exception will be generated. If the size's length is less than the image's dimension then the missing values are assumed to be zero.</p>
-<p>When the dimension of the image is reduced, the direction cosine matrix of the output is the sub-matrix of the file's direction for the retained axes. The matrix from the file can still be obtained by <a class="el" href="#a4fc8d7d75b88836fdeae6c92e17058da" title="Image information methods updated via ReadImageInformation.">ImageFileReader::GetDirection</a>.</p>
+<p>When the dimension of the image is reduced, the direction cosine matrix of the output is determined by the strategy set with SetDirectionCollapseToStrategy. By default it is the sub-matrix of the file's direction for the retained axes. The matrix from the file can still be obtained by <a class="el" href="#a4fc8d7d75b88836fdeae6c92e17058da" title="Image information methods updated via ReadImageInformation.">ImageFileReader::GetDirection</a>.</p>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="classitk_1_1simple_1_1ExtractImageFilter.html" title="Decrease the image size by cropping the image to the selected region bounds.">ExtractImageFilter</a> </dd></dl>
 
 </div>
@@ -1138,7 +1217,7 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkImageFileReader_8h_source.html#l00251">251</a> of file <a class="el" href="sitkImageFileReader_8h_source.html">sitkImageFileReader.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkImageFileReader_8h_source.html#l00285">285</a> of file <a class="el" href="sitkImageFileReader_8h_source.html">sitkImageFileReader.h</a>.</p>
 
 </div>
 </div>
@@ -1163,7 +1242,7 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkImageFileReader_8h_source.html#l00275">275</a> of file <a class="el" href="sitkImageFileReader_8h_source.html">sitkImageFileReader.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkImageFileReader_8h_source.html#l00309">309</a> of file <a class="el" href="sitkImageFileReader_8h_source.html">sitkImageFileReader.h</a>.</p>
 
 </div>
 </div>
@@ -1187,7 +1266,7 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkImageFileReader_8h_source.html#l00268">268</a> of file <a class="el" href="sitkImageFileReader_8h_source.html">sitkImageFileReader.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkImageFileReader_8h_source.html#l00302">302</a> of file <a class="el" href="sitkImageFileReader_8h_source.html">sitkImageFileReader.h</a>.</p>
 
 </div>
 </div>
@@ -1211,7 +1290,31 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkImageFileReader_8h_source.html#l00270">270</a> of file <a class="el" href="sitkImageFileReader_8h_source.html">sitkImageFileReader.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkImageFileReader_8h_source.html#l00304">304</a> of file <a class="el" href="sitkImageFileReader_8h_source.html">sitkImageFileReader.h</a>.</p>
+
+</div>
+</div>
+<a id="a32ecc2c4de12babf527e7966980f223c" name="a32ecc2c4de12babf527e7966980f223c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a32ecc2c4de12babf527e7966980f223c">&#9670;&#160;</a></span>m_DirectionCollapseToStrategy</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="#abe9d0ae54a3d212bd7faeb8de4f319da">DirectionCollapseStrategyType</a> itk::simple::ImageFileReader::m_DirectionCollapseToStrategy { <a class="el" href="#abe9d0ae54a3d212bd7faeb8de4f319daae0669b8f26ecb2f22dec2e92799f8457">COLLAPSETOSUBMATRIX</a> }</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="sitkImageFileReader_8h_source.html#l00314">314</a> of file <a class="el" href="sitkImageFileReader_8h_source.html">sitkImageFileReader.h</a>.</p>
 
 </div>
 </div>
@@ -1235,7 +1338,7 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkImageFileReader_8h_source.html#l00278">278</a> of file <a class="el" href="sitkImageFileReader_8h_source.html">sitkImageFileReader.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkImageFileReader_8h_source.html#l00312">312</a> of file <a class="el" href="sitkImageFileReader_8h_source.html">sitkImageFileReader.h</a>.</p>
 
 </div>
 </div>
@@ -1259,7 +1362,7 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkImageFileReader_8h_source.html#l00277">277</a> of file <a class="el" href="sitkImageFileReader_8h_source.html">sitkImageFileReader.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkImageFileReader_8h_source.html#l00311">311</a> of file <a class="el" href="sitkImageFileReader_8h_source.html">sitkImageFileReader.h</a>.</p>
 
 </div>
 </div>
@@ -1283,7 +1386,7 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkImageFileReader_8h_source.html#l00263">263</a> of file <a class="el" href="sitkImageFileReader_8h_source.html">sitkImageFileReader.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkImageFileReader_8h_source.html#l00297">297</a> of file <a class="el" href="sitkImageFileReader_8h_source.html">sitkImageFileReader.h</a>.</p>
 
 </div>
 </div>
@@ -1307,7 +1410,7 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkImageFileReader_8h_source.html#l00265">265</a> of file <a class="el" href="sitkImageFileReader_8h_source.html">sitkImageFileReader.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkImageFileReader_8h_source.html#l00299">299</a> of file <a class="el" href="sitkImageFileReader_8h_source.html">sitkImageFileReader.h</a>.</p>
 
 </div>
 </div>
@@ -1331,7 +1434,7 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkImageFileReader_8h_source.html#l00269">269</a> of file <a class="el" href="sitkImageFileReader_8h_source.html">sitkImageFileReader.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkImageFileReader_8h_source.html#l00303">303</a> of file <a class="el" href="sitkImageFileReader_8h_source.html">sitkImageFileReader.h</a>.</p>
 
 </div>
 </div>
@@ -1355,7 +1458,7 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkImageFileReader_8h_source.html#l00271">271</a> of file <a class="el" href="sitkImageFileReader_8h_source.html">sitkImageFileReader.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkImageFileReader_8h_source.html#l00305">305</a> of file <a class="el" href="sitkImageFileReader_8h_source.html">sitkImageFileReader.h</a>.</p>
 
 </div>
 </div>
@@ -1379,7 +1482,7 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkImageFileReader_8h_source.html#l00261">261</a> of file <a class="el" href="sitkImageFileReader_8h_source.html">sitkImageFileReader.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkImageFileReader_8h_source.html#l00295">295</a> of file <a class="el" href="sitkImageFileReader_8h_source.html">sitkImageFileReader.h</a>.</p>
 
 </div>
 </div>
@@ -1403,7 +1506,7 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkImageFileReader_8h_source.html#l00259">259</a> of file <a class="el" href="sitkImageFileReader_8h_source.html">sitkImageFileReader.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkImageFileReader_8h_source.html#l00293">293</a> of file <a class="el" href="sitkImageFileReader_8h_source.html">sitkImageFileReader.h</a>.</p>
 
 </div>
 </div>
@@ -1427,7 +1530,7 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkImageFileReader_8h_source.html#l00260">260</a> of file <a class="el" href="sitkImageFileReader_8h_source.html">sitkImageFileReader.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkImageFileReader_8h_source.html#l00294">294</a> of file <a class="el" href="sitkImageFileReader_8h_source.html">sitkImageFileReader.h</a>.</p>
 
 </div>
 </div>
@@ -1451,7 +1554,7 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkImageFileReader_8h_source.html#l00267">267</a> of file <a class="el" href="sitkImageFileReader_8h_source.html">sitkImageFileReader.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkImageFileReader_8h_source.html#l00301">301</a> of file <a class="el" href="sitkImageFileReader_8h_source.html">sitkImageFileReader.h</a>.</p>
 
 </div>
 </div>
@@ -1475,7 +1578,7 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkImageFileReader_8h_source.html#l00274">274</a> of file <a class="el" href="sitkImageFileReader_8h_source.html">sitkImageFileReader.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkImageFileReader_8h_source.html#l00308">308</a> of file <a class="el" href="sitkImageFileReader_8h_source.html">sitkImageFileReader.h</a>.</p>
 
 </div>
 </div>
@@ -1499,7 +1602,7 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkImageFileReader_8h_source.html#l00272">272</a> of file <a class="el" href="sitkImageFileReader_8h_source.html">sitkImageFileReader.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkImageFileReader_8h_source.html#l00306">306</a> of file <a class="el" href="sitkImageFileReader_8h_source.html">sitkImageFileReader.h</a>.</p>
 
 </div>
 </div>
