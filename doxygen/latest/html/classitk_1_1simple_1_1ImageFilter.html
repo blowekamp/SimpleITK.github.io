@@ -172,6 +172,8 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-methods" name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
+<tr class="memitem:a2469948ca901ecaa792afafca03dd471" id="r_a2469948ca901ecaa792afafca03dd471"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2469948ca901ecaa792afafca03dd471">CheckImageMatchingComponents</a> (const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> &amp;image1, const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> &amp;image2, const std::string &amp;image2Name)</td></tr>
+<tr class="separator:a2469948ca901ecaa792afafca03dd471"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7028f1c183f8535e006a903182ecdbcc" id="r_a7028f1c183f8535e006a903182ecdbcc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7028f1c183f8535e006a903182ecdbcc">CheckImageMatchingDimension</a> (const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> &amp;image1, const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> &amp;image2, const std::string &amp;image2Name)</td></tr>
 <tr class="separator:a7028f1c183f8535e006a903182ecdbcc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aaf338eefe46b3b278682ec24dccce177" id="r_aaf338eefe46b3b278682ec24dccce177"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aaf338eefe46b3b278682ec24dccce177">CheckImageMatchingPixelType</a> (const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> &amp;image1, const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> &amp;image2, const std::string &amp;image2Name)</td></tr>
@@ -335,6 +337,41 @@ Additional Inherited Members</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a id="a2469948ca901ecaa792afafca03dd471" name="a2469948ca901ecaa792afafca03dd471"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2469948ca901ecaa792afafca03dd471">&#9670;&#160;</a></span>CheckImageMatchingComponents()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void itk::simple::ImageFilter::CheckImageMatchingComponents </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>image1</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>image2</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>image2Name</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel protected">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Verify the number of components per pixel of image1 matches the number of components per pixel of image2, and if different then an exception is thrown. </p>
+
+</div>
+</div>
 <a id="a7028f1c183f8535e006a903182ecdbcc" name="a7028f1c183f8535e006a903182ecdbcc"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a7028f1c183f8535e006a903182ecdbcc">&#9670;&#160;</a></span>CheckImageMatchingDimension()</h2>
 
