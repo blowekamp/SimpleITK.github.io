@@ -170,6 +170,11 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a89c53d2ce4455afb3c3590a78902fc33" id="r_a89c53d2ce4455afb3c3590a78902fc33"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a89c53d2ce4455afb3c3590a78902fc33">SetDebug</a> (bool debugFlag)</td></tr>
 <tr class="separator:a89c53d2ce4455afb3c3590a78902fc33"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr><td colspan="2"><div class="groupHeader"></div></td></tr>
+<tr class="memitem:a0ef5bb000f4c08918d0395612535aac6" id="r_a0ef5bb000f4c08918d0395612535aac6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0ef5bb000f4c08918d0395612535aac6">SetMaximumNumberOfThreads</a> (unsigned int n)</td></tr>
+<tr class="separator:a0ef5bb000f4c08918d0395612535aac6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af8196d037ffbee57201ae85017977d6f" id="r_af8196d037ffbee57201ae85017977d6f"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af8196d037ffbee57201ae85017977d6f">GetMaximumNumberOfThreads</a> () const</td></tr>
+<tr class="separator:af8196d037ffbee57201ae85017977d6f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr><td colspan="2"><div class="groupHeader"></div></td></tr>
 <tr class="memitem:ab5c7a8075dafe9dbccb16cc6a48b4209" id="r_ab5c7a8075dafe9dbccb16cc6a48b4209"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab5c7a8075dafe9dbccb16cc6a48b4209">SetNumberOfThreads</a> (unsigned int n)</td></tr>
 <tr class="separator:ab5c7a8075dafe9dbccb16cc6a48b4209"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9460b4db255ff2c6bfc4a89c274cf8c8" id="r_a9460b4db255ff2c6bfc4a89c274cf8c8"><td class="memItemLeft" align="right" valign="top">virtual unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9460b4db255ff2c6bfc4a89c274cf8c8">GetNumberOfThreads</a> () const</td></tr>
@@ -289,8 +294,8 @@ Private Attributes</h2></td></tr>
 <tr class="separator:a5dbd376e2bffbbc62b15d7025b8e7ed7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae1b973f64cadf19eb678cafe4083176a" id="r_ae1b973f64cadf19eb678cafe4083176a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae1b973f64cadf19eb678cafe4083176a">m_Debug</a></td></tr>
 <tr class="separator:ae1b973f64cadf19eb678cafe4083176a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af92dfabcc3435c3abc8fac4f6372bfca" id="r_af92dfabcc3435c3abc8fac4f6372bfca"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af92dfabcc3435c3abc8fac4f6372bfca">m_NumberOfThreads</a></td></tr>
-<tr class="separator:af92dfabcc3435c3abc8fac4f6372bfca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a61a488694b8a17dadd6f56d4ab958e5a" id="r_a61a488694b8a17dadd6f56d4ab958e5a"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a61a488694b8a17dadd6f56d4ab958e5a">m_MaximumNumberOfThreads</a></td></tr>
+<tr class="separator:a61a488694b8a17dadd6f56d4ab958e5a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8835267dbc18af17fd96759dfd0bd681" id="r_a8835267dbc18af17fd96759dfd0bd681"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8835267dbc18af17fd96759dfd0bd681">m_NumberOfWorkUnits</a></td></tr>
 <tr class="separator:a8835267dbc18af17fd96759dfd0bd681"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7d2f3ad9dc2a83b96039289c26413a77" id="r_a7d2f3ad9dc2a83b96039289c26413a77"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7d2f3ad9dc2a83b96039289c26413a77">m_ProgressMeasurement</a></td></tr>
@@ -545,7 +550,7 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkProcessObject_8h_source.html#l00388">388</a> of file <a class="el" href="sitkProcessObject_8h_source.html">sitkProcessObject.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkProcessObject_8h_source.html#l00417">417</a> of file <a class="el" href="sitkProcessObject_8h_source.html">sitkProcessObject.h</a>.</p>
 
 <p class="reference">References <a class="el" href="classitk_1_1simple_1_1Image.html#a43163c72ca1a49abf615b3dc71e01a36">itk::simple::Image::GetDimension()</a>, <a class="el" href="classitk_1_1simple_1_1Image.html#a600c5cd0fe2345b2d0a2e09997dfa1d6">itk::simple::Image::GetITKBase()</a>, <a class="el" href="classitk_1_1simple_1_1Image.html#ad195963d0b257560819b833b9cfe18d6">itk::simple::Image::GetPixelIDTypeAsString()</a>, <a class="el" href="namespaceitk_1_1simple.html#a43ef3b3e17763bf8f3ee4a5fc8307dbf">itk::simple::GetPixelIDValueAsString()</a>, <a class="el" href="sitkPixelIDValues_8h_source.html#l00047">itk::simple::ImageTypeToPixelIDValue&lt; TImageType &gt;::Result</a>, and <a class="el" href="sitkMacro_8h_source.html#l00065">sitkExceptionMacro</a>.</p>
 
@@ -576,7 +581,7 @@ template&lt;class TPixelType, unsigned int VImageDimension, unsigned int VLength
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkProcessObject_8h_source.html#l00415">415</a> of file <a class="el" href="sitkProcessObject_8h_source.html">sitkProcessObject.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkProcessObject_8h_source.html#l00444">444</a> of file <a class="el" href="sitkProcessObject_8h_source.html">sitkProcessObject.h</a>.</p>
 
 <p class="reference">References <a class="el" href="namespaceitk_1_1simple.html#a447983820b6cc20cb1fb53fd1d5b0940">itk::simple::GetVectorImageFromImage()</a>.</p>
 
@@ -607,7 +612,7 @@ template&lt;unsigned int VImageDimension, unsigned int VLength, template&lt; uns
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkProcessObject_8h_source.html#l00426">426</a> of file <a class="el" href="sitkProcessObject_8h_source.html">sitkProcessObject.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkProcessObject_8h_source.html#l00455">455</a> of file <a class="el" href="sitkProcessObject_8h_source.html">sitkProcessObject.h</a>.</p>
 
 <p class="reference">References <a class="el" href="namespaceitk_1_1simple.html#a447983820b6cc20cb1fb53fd1d5b0940">itk::simple::GetVectorImageFromImage()</a>.</p>
 
@@ -638,7 +643,7 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkProcessObject_8h_source.html#l00404">404</a> of file <a class="el" href="sitkProcessObject_8h_source.html">sitkProcessObject.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkProcessObject_8h_source.html#l00433">433</a> of file <a class="el" href="sitkProcessObject_8h_source.html">sitkProcessObject.h</a>.</p>
 
 </div>
 </div>
@@ -957,6 +962,31 @@ template&lt;class TImageType&gt; </div>
 
 </div>
 </div>
+<a id="af8196d037ffbee57201ae85017977d6f" name="af8196d037ffbee57201ae85017977d6f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af8196d037ffbee57201ae85017977d6f">&#9670;&#160;</a></span>GetMaximumNumberOfThreads()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned int itk::simple::ProcessObject::GetMaximumNumberOfThreads </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>The maximum number of threads of the multi-threader used when executing a filter if the filter is multi-threaded.</p>
+<p>This corresponds to itk::MultiThreaderBase::SetMaximumNumberOfThreads and the corresponding get method, and is set on the filter's multi-threader when the filter is executed. It is clamped to be limited by the "global" maximum. The default is the global default number of threads at the construction of this object.</p>
+<p>The effect depends on the multi-threader:</p><ul>
+<li>"TBB": limits the maximum parallelism of the executing filter.</li>
+<li>"POOL": a value larger than the size of the single shared thread pool will increase the number of threads in the pool for all subsequent processes. The "POOL" multi-threader cannot reduce the number of threads, so this does not limit the parallelism of the filter. Use SetNumberOfWorkUnits to limit a filter.</li>
+<li>"PLATFORM": has no effect, as the filter's number of work units is applied to the multi-threader when executing, and the "PLATFORM" multi-threader's number of threads is equal to the number of work units. Use SetNumberOfWorkUnits instead.</li>
+</ul>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="#ac3a2fc4905baba0a0e89836f9f9d29a5">SetNumberOfWorkUnits</a>, <a class="el" href="#a305b43330f9feb26325eadfc30695bd9">SetGlobalDefaultNumberOfThreads</a> </dd></dl>
+
+</div>
+</div>
 <a id="ac8ab837a83ee6ad83c2e2e71b1e98386" name="ac8ab837a83ee6ad83c2e2e71b1e98386"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ac8ab837a83ee6ad83c2e2e71b1e98386">&#9670;&#160;</a></span>GetName()</h2>
 
@@ -1010,8 +1040,7 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 <p>The number of threads used when executing a filter if the filter is multi-threaded.</p>
-<p>With ITK version 5, this parameter now corresponds to itk::MultiThreaderBase::SetMaximumNumberOfThreads and the corresponding get method. The is clamped to be limited by the "global" maximum.</p>
-<dl class="section note"><dt>Note</dt><dd>The "POOL" multi-threader cannot reduce the number of threads. As the "POOL" multi-threader has a single instance of a thread pool, the number of threads will increased for subsequent processes. </dd></dl>
+<p>This is equivalent to SetMaximumNumberOfThreads and GetMaximumNumberOfThreads, which should be preferred. It sets the maximum number of threads of the multi-threader, and it has an effect only with the "POOL" and "TBB" multi-threaders, as described in SetMaximumNumberOfThreads. It does not limit the parallelism of the "PLATFORM" multi-threader, nor of the "POOL" multi-threader which cannot reduce the size of its single shared thread pool. Use SetNumberOfWorkUnits to limit the parallelism of a filter. </p>
 
 </div>
 </div>
@@ -1565,6 +1594,31 @@ template&lt;class TImageType&gt; </div>
 
 </div>
 </div>
+<a id="a0ef5bb000f4c08918d0395612535aac6" name="a0ef5bb000f4c08918d0395612535aac6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0ef5bb000f4c08918d0395612535aac6">&#9670;&#160;</a></span>SetMaximumNumberOfThreads()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void itk::simple::ProcessObject::SetMaximumNumberOfThreads </td>
+          <td>(</td>
+          <td class="paramtype">unsigned int</td>          <td class="paramname"><span class="paramname"><em>n</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>The maximum number of threads of the multi-threader used when executing a filter if the filter is multi-threaded.</p>
+<p>This corresponds to itk::MultiThreaderBase::SetMaximumNumberOfThreads and the corresponding get method, and is set on the filter's multi-threader when the filter is executed. It is clamped to be limited by the "global" maximum. The default is the global default number of threads at the construction of this object.</p>
+<p>The effect depends on the multi-threader:</p><ul>
+<li>"TBB": limits the maximum parallelism of the executing filter.</li>
+<li>"POOL": a value larger than the size of the single shared thread pool will increase the number of threads in the pool for all subsequent processes. The "POOL" multi-threader cannot reduce the number of threads, so this does not limit the parallelism of the filter. Use SetNumberOfWorkUnits to limit a filter.</li>
+<li>"PLATFORM": has no effect, as the filter's number of work units is applied to the multi-threader when executing, and the "PLATFORM" multi-threader's number of threads is equal to the number of work units. Use SetNumberOfWorkUnits instead.</li>
+</ul>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="#ac3a2fc4905baba0a0e89836f9f9d29a5">SetNumberOfWorkUnits</a>, <a class="el" href="#a305b43330f9feb26325eadfc30695bd9">SetGlobalDefaultNumberOfThreads</a> </dd></dl>
+
+</div>
+</div>
 <a id="ab5c7a8075dafe9dbccb16cc6a48b4209" name="ab5c7a8075dafe9dbccb16cc6a48b4209"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ab5c7a8075dafe9dbccb16cc6a48b4209">&#9670;&#160;</a></span>SetNumberOfThreads()</h2>
 
@@ -1588,8 +1642,7 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 <p>The number of threads used when executing a filter if the filter is multi-threaded.</p>
-<p>With ITK version 5, this parameter now corresponds to itk::MultiThreaderBase::SetMaximumNumberOfThreads and the corresponding get method. The is clamped to be limited by the "global" maximum.</p>
-<dl class="section note"><dt>Note</dt><dd>The "POOL" multi-threader cannot reduce the number of threads. As the "POOL" multi-threader has a single instance of a thread pool, the number of threads will increased for subsequent processes. </dd></dl>
+<p>This is equivalent to SetMaximumNumberOfThreads and GetMaximumNumberOfThreads, which should be preferred. It sets the maximum number of threads of the multi-threader, and it has an effect only with the "POOL" and "TBB" multi-threaders, as described in SetMaximumNumberOfThreads. It does not limit the parallelism of the "PLATFORM" multi-threader, nor of the "POOL" multi-threader which cannot reduce the size of its single shared thread pool. Use SetNumberOfWorkUnits to limit the parallelism of a filter. </p>
 
 </div>
 </div>
@@ -1741,7 +1794,7 @@ template&lt;typename T&gt; </div>
 <p>Output operator to os with conversion to a printable type.</p>
 <p>That is char types are presumed to be numbers, and converted to int. </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkProcessObject_8h_source.html#l00446">446</a> of file <a class="el" href="sitkProcessObject_8h_source.html">sitkProcessObject.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkProcessObject_8h_source.html#l00475">475</a> of file <a class="el" href="sitkProcessObject_8h_source.html">sitkProcessObject.h</a>.</p>
 
 </div>
 </div>
@@ -1797,7 +1850,7 @@ template&lt;typename T&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkProcessObject_8h_source.html#l00378">378</a> of file <a class="el" href="sitkProcessObject_8h_source.html">sitkProcessObject.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkProcessObject_8h_source.html#l00407">407</a> of file <a class="el" href="sitkProcessObject_8h_source.html">sitkProcessObject.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="classitk_1_1simple_1_1ImageRegistrationMethod.html#a9ab8f5c96cc66245ff47fa821590d182">itk::simple::ImageRegistrationMethod::AddITKObserver()</a>, and <a class="el" href="structitk_1_1simple_1_1ProcessObject_1_1EventCommand.html#adc9986481fd1d5154a4c41612215eafd">itk::simple::ProcessObject::EventCommand::EventCommand()</a>.</p>
 
@@ -1824,7 +1877,7 @@ template&lt;typename T&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkProcessObject_8h_source.html#l00481">481</a> of file <a class="el" href="sitkProcessObject_8h_source.html">sitkProcessObject.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkProcessObject_8h_source.html#l00510">510</a> of file <a class="el" href="sitkProcessObject_8h_source.html">sitkProcessObject.h</a>.</p>
 
 </div>
 </div>
@@ -1848,7 +1901,7 @@ template&lt;typename T&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkProcessObject_8h_source.html#l00479">479</a> of file <a class="el" href="sitkProcessObject_8h_source.html">sitkProcessObject.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkProcessObject_8h_source.html#l00508">508</a> of file <a class="el" href="sitkProcessObject_8h_source.html">sitkProcessObject.h</a>.</p>
 
 </div>
 </div>
@@ -1872,12 +1925,12 @@ template&lt;typename T&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkProcessObject_8h_source.html#l00474">474</a> of file <a class="el" href="sitkProcessObject_8h_source.html">sitkProcessObject.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkProcessObject_8h_source.html#l00503">503</a> of file <a class="el" href="sitkProcessObject_8h_source.html">sitkProcessObject.h</a>.</p>
 
 </div>
 </div>
-<a id="af92dfabcc3435c3abc8fac4f6372bfca" name="af92dfabcc3435c3abc8fac4f6372bfca"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af92dfabcc3435c3abc8fac4f6372bfca">&#9670;&#160;</a></span>m_NumberOfThreads</h2>
+<a id="a61a488694b8a17dadd6f56d4ab958e5a" name="a61a488694b8a17dadd6f56d4ab958e5a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a61a488694b8a17dadd6f56d4ab958e5a">&#9670;&#160;</a></span>m_MaximumNumberOfThreads</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1886,7 +1939,7 @@ template&lt;typename T&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">unsigned int itk::simple::ProcessObject::m_NumberOfThreads</td>
+          <td class="memname">unsigned int itk::simple::ProcessObject::m_MaximumNumberOfThreads</td>
         </tr>
       </table>
   </td>
@@ -1896,7 +1949,7 @@ template&lt;typename T&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkProcessObject_8h_source.html#l00476">476</a> of file <a class="el" href="sitkProcessObject_8h_source.html">sitkProcessObject.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkProcessObject_8h_source.html#l00505">505</a> of file <a class="el" href="sitkProcessObject_8h_source.html">sitkProcessObject.h</a>.</p>
 
 </div>
 </div>
@@ -1920,7 +1973,7 @@ template&lt;typename T&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkProcessObject_8h_source.html#l00477">477</a> of file <a class="el" href="sitkProcessObject_8h_source.html">sitkProcessObject.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkProcessObject_8h_source.html#l00506">506</a> of file <a class="el" href="sitkProcessObject_8h_source.html">sitkProcessObject.h</a>.</p>
 
 </div>
 </div>
@@ -1944,7 +1997,7 @@ template&lt;typename T&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkProcessObject_8h_source.html#l00484">484</a> of file <a class="el" href="sitkProcessObject_8h_source.html">sitkProcessObject.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkProcessObject_8h_source.html#l00513">513</a> of file <a class="el" href="sitkProcessObject_8h_source.html">sitkProcessObject.h</a>.</p>
 
 </div>
 </div>
